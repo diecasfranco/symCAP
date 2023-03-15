@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplW_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMAKOQUE/SMAKOQUE_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/rplW/rplW_SMAKOQUE.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplW_prot  [M=175]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    4.9e-17   61.8  23.6    4.9e-17   61.8  23.6    2.1  2  SMAKOQUE_6440  [132795 - 132433] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMAKOQUE_6440  [132795 - 132433] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.3   7.8      0.45   4.6e+03      79     106 ..       8      35 ..       1      41 [. 0.41
+   2 !   61.8  23.6   4.7e-21   4.9e-17       6      79 ..      44     117 ..      40     120 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -3.3 bits;  conditional E-value: 0.45
+      rplW_prot  79 kilnklkikanleklk.ilnklklnsnle 106
+                    +  nk + k  ++klk ++ k  +n nl 
+  SMAKOQUE_6440   8 NKCNKCN-KLRIKKLKfLFVKEYINKNLS 35 
+                    2222221.222334441234444555554 PP
+
+  == domain 2  score: 61.8 bits;  conditional E-value: 4.7e-21
+      rplW_prot   6 kkkfsnkkldpfltfkvPlfynkkeikkliykiyninfkniktmiyckrtlkkrkkgvlfkkvilklkkdy.klk 79 
+                    +k ++  + +++++f +P+++nkkei k++ ++y+i +++++t++y+k+  +kr+++++f +++ k+kk++ k+k
+  SMAKOQUE_6440  44 EKAIFTNRSNNYYSFIFPIYFNKKEIYKYLKRVYRIKITKLHTNMYYKKS-NKRILKKTFSGKKIKFKKAFfKVK 117
+                    688999999**************************************986.99****************962555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (175 nodes)
+Target sequences:                      10271  (263434 residues searched)
+Passed MSV filter:                       947  (0.0922013); expected 205.4 (0.02)
+Passed bias filter:                      142  (0.0138253); expected 205.4 (0.02)
+Passed Vit filter:                        12  (0.00116834); expected 10.3 (0.001)
+Passed Fwd filter:                         2  (0.000194723); expected 0.1 (1e-05)
+Initial search space (Z):              10271  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6008.68
+//
+[ok]

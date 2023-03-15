@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/aceF_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMOLIH/SMOLIH_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/aceF/aceF_SMOLIH.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aceF_prot  [M=371]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+   2.3e-180  598.4  37.2     4e-133  442.9  27.9    2.0  2  SM_OLIH_4006  [147451 - 148635] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SM_OLIH_4006  [147451 - 148635] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  160.9   2.5   2.3e-51     2e-47       1      95 [.       9     103 ..       9     117 .. 0.92
+   2 !  442.9  27.9  4.6e-137    4e-133      90     371 .]     118     395 .]     106     395 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 160.9 bits;  conditional E-value: 2.3e-51
+     aceF_prot   1 maeviflprlsdtmeegtvvkwhkkigdkilegdilaeietdkaiqefeaeynstllyigikegetapvnsllailgsenedissllkenktlik 95 
+                   mae+i++prlsdtm+egt+vkw+k++g+k+++g+ilaeietdkaiqefe+e+n+tlly+g++egeta++n+ll+ilg++ne+i++l+k++++  +
+  SM_OLIH_4006   9 MAEIIYMPRLSDTMKEGTIVKWYKQVGEKVSSGEILAEIETDKAIQEFESEFNATLLYRGVNEGETAKLNDLLCILGKQNEKIEYLIKKKYNKEN 103
+                   9***************************************************************************************9876543 PP
+
+  == domain 2  score: 442.9 bits;  conditional E-value: 4.6e-137
+     aceF_prot  90 nktlikkknkkilisplakkiafekgislenikgsgnngriikkdiekylkkksdkkikkvdhsnirkiiskrlinskiesphyslfleikmdnlik 186
+                   nk+++++k+k+ lisplakkia+e++i+l++ikgsg+++ri+kkdi +++kkk++   k++ +snirkii++rl +sk++sphy+lf+e+ +dnl+k
+  SM_OLIH_4006 118 NKDMNHIKEKQGLISPLAKKIALEERINLKDIKGSGPQNRIVKKDILTIIKKKAK---KIKPISNIRKIIIDRLSKSKKISPHYYLFIELPADNLMK 211
+                   7899********************************************9987654...56789********************************** PP
+
+     aceF_prot 187 lreslnekkylkkisfndlivkasalaikenpkinsswteksilyhkninigiavaledglivpvinnvdekslrkisleikekvikakekklqsne 283
+                   +++++n+  y++kisfndlivka+al++k+n++inss+++++i+yhk+inigiav++++glivpvin+vd+ks++kis+e+kekv+k+++k+++ ++
+  SM_OLIH_4006 212 FKKYINK-IYNSKISFNDLIVKATALSLKKNQEINSSFNKERIIYHKDINIGIAVYYPEGLIVPVINSVDKKSVIKISQELKEKVEKSRNKNNSPKD 307
+                   *****97.69*************************************************************************************** PP
+
+     aceF_prot 284 legstftvsnlgmfgidsftsiinqpnscilsvgsikkkpiinndkivignttkftltcdhriidgavgsdylkslkellqeplkill 371
+                   l gstft+snlgmfgid+ftsiinqpns+ilsvgsi++kpii+++ki+ignt++ftl+cdhriidgavgs++l +lke+l+ep+kil+
+  SM_OLIH_4006 308 LVGSTFTISNLGMFGIDFFTSIINQPNSSILSVGSIQRKPIIEKNKIKIGNTITFTLACDHRIIDGAVGSAFLLTLKEYLLEPMKILC 395
+                   **************************************************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (371 nodes)
+Target sequences:                       8558  (231117 residues searched)
+Passed MSV filter:                       135  (0.0157747); expected 171.2 (0.02)
+Passed bias filter:                       40  (0.00467399); expected 171.2 (0.02)
+Passed Vit filter:                         1  (0.00011685); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.00011685); expected 0.1 (1e-05)
+Initial search space (Z):               8558  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 6300.25
+//
+[ok]

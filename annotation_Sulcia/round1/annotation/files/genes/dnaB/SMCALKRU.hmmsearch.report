@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/dnaB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMCALKRU/SMCALKRU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/dnaB/dnaB_SMCALKRU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaB_prot  [M=448]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+   1.2e-213  708.6  17.0   1.4e-213  708.4  17.0    1.0  1  SM_CALKRU_6606  [47030 - 45663] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SM_CALKRU_6606  [47030 - 45663] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  708.4  17.0  1.8e-217  1.4e-213       4     447 ..      13     454 ..      10     455 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 708.4 bits;  conditional E-value: 1.8e-217
+       dnaB_prot   4 sppqaldleeavlgallidkkvfsnlieiitpeifyknenreifkviqklfnnsqpidlytvsnqlkkegkinfiggdyylikltqkvissahie 98 
+                     +ppqal+leeav+g++lid+++++++i+ii+p+ifyk++ +ei+kvi kl+n s+pid+ytvsn+lkk  k++++gg++yl++ltq++ s ahie
+  SM_CALKRU_6606  13 MPPQALNLEEAVIGGILIDQNCLDEIIDIISPDIFYKKKHKEIIKVIIKLYNSSEPIDIYTVSNELKKTSKLELVGGEFYLTQLTQRIASPAHIE 107
+                     59********************************************************************************************* PP
+
+       dnaB_prot  99 yhaniikqkfilrrlieissyiiktsykettdvvdilnyaesqlfnisq.nkfkkksekaqnlidnalsnikkiqlnnglsgipsgfksidnltg 192
+                      h++iik+kfilr+lie+s+ iik s +e++dv+++l+yaes lf+i++ +++k++++ + +l++n+++n+k    +  lsgipsgfk +d++t+
+  SM_CALKRU_6606 108 CHSQIIKDKFILRKLIETSYDIIKLSSEEKSDVFKLLDYAESSLFEINNkTNIKDNTKAISDLLNNTIKNLKDK--KGKLSGIPSGFKGLDKVTC 200
+                     ***********************************************863799******************975..578**************** PP
+
+       dnaB_prot 193 gwqksdliiiaarpgmgktsfalsmtrnivikyniptlifslemsslqlitrliyseteisseefrksvlsdfewkniltkikklknsplfiddt 287
+                     gwq+s+l iiaarpgmgktsfalsm+rnivi+++iptli+slemss ql+trli+set+i+se++++s+ls+ ew+ + +kik l +splf+ddt
+  SM_CALKRU_6606 201 GWQNSELTIIAARPGMGKTSFALSMARNIVINFKIPTLILSLEMSSAQLVTRLISSETGIPSERLKRSDLSQSEWELVKSKIKVLGESPLFLDDT 295
+                     *********************************************************************************************** PP
+
+       dnaB_prot 288 pslsvfdlrakcrrmvsqykigiiiidylqlmtvsnsnlkkplnreqeislisrslksiakelnipivaisqlsraveirggykrpllsdlresg 382
+                     ++ls+f+lr+kcrr++ ++ki+++iidylqlm  ++++ +k+l+reqe+s+isr+lk+i+ke+nipi+a+sqlsraveirgg+krp+lsdlresg
+  SM_CALKRU_6606 296 HHLSIFELRTKCRREILRNKIKLVIIDYLQLMNYGKLE-NKNLQREQEVSYISRNLKAISKEFNIPIIALSQLSRAVEIRGGRKRPILSDLRESG 389
+                     ************************************98.789***************************************************** PP
+
+       dnaB_prot 383 aieqdadivsfiyrpdyygfnnwddeesspckgeaeliiaknrngglfnlrlnfisnnvkfteie 447
+                     a+eqdadiv+fiyrp+yygf+nwd ++ + c+geae+iiaknrng+++n+r++f ++++kf ei+
+  SM_CALKRU_6606 390 ALEQDADIVAFIYRPEYYGFTNWDTGNREECQGEAEIIIAKNRNGKIDNIRMKFSQDKIKFVEID 454
+                     ***************************************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (448 nodes)
+Target sequences:                       7815  (208730 residues searched)
+Passed MSV filter:                        83  (0.0106206); expected 156.3 (0.02)
+Passed bias filter:                       29  (0.00371081); expected 156.3 (0.02)
+Passed Vit filter:                         1  (0.000127959); expected 7.8 (0.001)
+Passed Fwd filter:                         1  (0.000127959); expected 0.1 (1e-05)
+Initial search space (Z):               7815  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12100.76
+//
+[ok]

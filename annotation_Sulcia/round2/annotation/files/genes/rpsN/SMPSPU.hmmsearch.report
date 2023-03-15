@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpsN_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMPSPU/SMPSPU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/rpsN/rpsN_SMPSPU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsN_prot  [M=89]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    7.4e-57  189.3   2.5    7.4e-57  189.3   2.5    1.7  2  SMPSPU_6765  [254775 - 255122] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPSPU_6765  [254775 - 255122] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.7      0.11   1.8e+03      16      34 ..       4      22 ..       2      26 .. 0.80
+   2 !  189.3   2.5   4.8e-61   7.4e-57       1      89 []      28     116 .]      28     116 .] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 0.11
+    rpsN_prot 16 lvlkyakkrkllklnrdye 34
+                 l lk  kk +++ +  dy 
+  SMPSPU_6765  4 LHLKMIKKLNIYYIYSDYL 22
+                 6689999999999999985 PP
+
+  == domain 2  score: 189.3 bits;  conditional E-value: 4.8e-61
+    rpsN_prot   1 makeslkarqkkrkllvlkyakkrkllklnrdyeglqklprnaspvrlhnlcsltgrskgylrkfgisriefrrlasqglipgivkasw 89 
+                  m+kes+karqkkrk++vlky kkr+llk+n+dyeglqklprn+spvrlhnlcsltgrskgy+rkfgisriefrrlasqg+ipg+vkasw
+  SMPSPU_6765  28 MSKESIKARQKKRKIMVLKYLKKRELLKFNKDYEGLQKLPRNSSPVRLHNLCSLTGRSKGYMRKFGISRIEFRRLASQGFIPGVVKASW 116
+                  9**************************************************************************************** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (89 nodes)
+Target sequences:                      15564  (407989 residues searched)
+Passed MSV filter:                       247  (0.01587); expected 311.3 (0.02)
+Passed bias filter:                      101  (0.00648933); expected 311.3 (0.02)
+Passed Vit filter:                         6  (0.000385505); expected 15.6 (0.001)
+Passed Fwd filter:                         1  (6.42508e-05); expected 0.2 (1e-05)
+Initial search space (Z):              15564  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6573.64
+//
+[ok]

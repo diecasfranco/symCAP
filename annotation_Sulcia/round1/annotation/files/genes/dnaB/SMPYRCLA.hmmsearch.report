@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/dnaB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMPYRCLA/SMPYRCLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/dnaB/dnaB_SMPYRCLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaB_prot  [M=448]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+     1e-212  705.7  16.4   1.2e-212  705.4  16.4    1.0  1  PYRCLA_Sulcia_265  [10165 - 11658] 
+
+
+Domain annotation for each sequence (and alignments):
+>> PYRCLA_Sulcia_265  [10165 - 11658] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  705.4  16.4  1.4e-216  1.2e-212       2     447 ..      53     496 ..      52     497 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 705.4 bits;  conditional E-value: 1.4e-216
+          dnaB_prot   2 iksppqaldleeavlgallidkkvfsnlieiitpeifyknenreifkviqklfnnsqpidlytvsnqlkkegkinfiggdyylikltqkvis 93 
+                        i +ppqal+leeav+g++l d+++++++i+ii+p+ifyk++ +ei+kvi kl+n  +pid+ytvsn+lk + k++++gg++yl++ltq++ s
+  PYRCLA_Sulcia_265  53 IPQPPQALNLEEAVIGGILRDQNCLDEIIDIISPDIFYKKKHKEIIKVIIKLYNSYEPIDIYTVSNELKTNRKLELVGGEFYLTQLTQRIAS 144
+                        678***************************************************************************************** PP
+
+          dnaB_prot  94 sahieyhaniikqkfilrrlieissyiiktsykettdvvdilnyaesqlfnisq.nkfkkksekaqnlidnalsnikkiqlnnglsgipsgf 184
+                         ahie+h++i+k+kf+lr+lie+ss+iik sy+e++dv+++l+yae +lf+i++ +++k++++++ +l++n+++n+k ++    lsgipsgf
+  PYRCLA_Sulcia_265 145 PAHIEFHSKILKDKFLLRKLIETSSEIIKLSYEEKSDVFKLLDYAERRLFEINNkTNIKDNTKSITDLLNNTIKNMKDNK--GKLSGIPSGF 234
+                        ****************************************************863799******************9865..56******** PP
+
+          dnaB_prot 185 ksidnltggwqksdliiiaarpgmgktsfalsmtrnivikyniptlifslemsslqlitrliyseteisseefrksvlsdfewkniltkikk 276
+                        k +d++t+gwqks+l iiaarpgmgktsfalsm+rnivi+++iptli+slemss+ql+trli+set+i+s++++ s+ls++ew+ + +kik 
+  PYRCLA_Sulcia_265 235 KCLDQVTCGWQKSELTIIAARPGMGKTSFALSMARNIVINFKIPTLILSLEMSSVQLVTRLISSETGIPSDRLKMSDLSKLEWDLVKSKIKV 326
+                        ******************************************************************************************** PP
+
+          dnaB_prot 277 lknsplfiddtpslsvfdlrakcrrmvsqykigiiiidylqlmtvsnsnlkkplnreqeislisrslksiakelnipivaisqlsraveirg 368
+                        l +splfiddt++ls+f+lr+kcrr++ ++ki+++iidylqlm  ++++ +k+l+reqe+s+isr+lk+i+ke+nipi+a+sqlsraveirg
+  PYRCLA_Sulcia_265 327 LGESPLFIDDTHHLSIFELRSKCRREILRNKIKLVIIDYLQLMNYGKLE-NKNLQREQEVSYISRNLKAISKEFNIPIIALSQLSRAVEIRG 417
+                        ***********************************************98.789*************************************** PP
+
+          dnaB_prot 369 gykrpllsdlresgaieqdadivsfiyrpdyygfnnwddeesspckgeaeliiaknrngglfnlrlnfisnnvkfteie 447
+                        g+krp+lsdlresga+eqdadiv+fiyrp+yygf+nwd ++ + c+geae+iiaknrng+++n+r++f ++++kf ei+
+  PYRCLA_Sulcia_265 418 GRKRPILSDLRESGALEQDADIVAFIYRPEYYGFTNWDTGNREECQGEAEIIIAKNRNGKIDNIRMKFSQDKIKFVEID 496
+                        *****************************************************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (448 nodes)
+Target sequences:                       8592  (228038 residues searched)
+Passed MSV filter:                       116  (0.0135009); expected 171.8 (0.02)
+Passed bias filter:                       28  (0.00325885); expected 171.8 (0.02)
+Passed Vit filter:                         1  (0.000116387); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116387); expected 0.1 (1e-05)
+Initial search space (Z):               8592  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 17427.04
+//
+[ok]

@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpsJ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMTETMAC/SMTETMAC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/rpsJ/rpsJ_SMTETMAC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SMOLIH_rpsJ  [M=99]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+    7.8e-44  146.9   5.8    8.6e-44  146.8   5.8    1.0  1  TETMAC_000000041629_3455  [122122 - 122421] 
+
+
+Domain annotation for each sequence (and alignments):
+>> TETMAC_000000041629_3455  [122122 - 122421] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  146.8   5.8   1.1e-47   8.6e-44       1      97 [.       3      99 ..       3     100 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 146.8 bits;  conditional E-value: 1.1e-47
+               SMOLIH_rpsJ  1 mlnykikikafdgfvlnisviqimnyisknnikgngpihlptkkkiytilrsphvhkksreqfklyihqrfffvynvkynvlkkiyi 87
+                              mlnyki+ikafdg++ln+svi+++nyisk nik ngpi lptkkk ytilrsphvhkksreqf+l+ih+r + vynvk n+lk i +
+  TETMAC_000000041629_3455  3 MLNYKIQIKAFDGYLLNLSVIKLINYISKQNIKVNGPITLPTKKKRYTILRSPHVHKKSREQFQLFIHKRVLVVYNVKSNLLKTIDL 89
+                              89************************************************************************************* PP
+
+               SMOLIH_rpsJ 88 pscvkleitk 97
+                              ps vklei k
+  TETMAC_000000041629_3455 90 PSGVKLEIKK 99
+                              *******987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (99 nodes)
+Target sequences:                       8187  (215009 residues searched)
+Passed MSV filter:                       293  (0.0357884); expected 163.7 (0.02)
+Passed bias filter:                      103  (0.0125809); expected 163.7 (0.02)
+Passed Vit filter:                        12  (0.00146574); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000122145); expected 0.1 (1e-05)
+Initial search space (Z):               8187  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4533.86
+//
+[ok]

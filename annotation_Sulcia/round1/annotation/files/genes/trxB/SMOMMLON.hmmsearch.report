@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/trxB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMOMMLON/SMOMMLON_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/trxB/trxB_SMOMMLON.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trxB_prot  [M=312]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+    4.2e-12   44.5  22.7    5.2e-07   27.8  17.5    2.6  3  OMMLON_000000308722_5213  [99378 - 97993] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> OMMLON_000000308722_5213  [99378 - 97993] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.0   0.1   2.9e-08   0.00023       5      79 ..       5      74 ..       2      95 .. 0.74
+   2 !   27.8  17.5   6.6e-11   5.2e-07      92     281 ..     118     310 ..      88     333 .. 0.76
+   3 ?   -3.2   0.0      0.18   1.4e+03     233     260 ..     366     393 ..     357     399 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 19.0 bits;  conditional E-value: 2.9e-08
+                 trxB_prot  5 fdciiigsgpagytaaiyiaradlnhilytgsipggqllktneienypgfpkgvkgyllmenfkkqaekfgtkiy 79
+                              fd i+igsgpagy aai  a+  l+  +   +  gg  l+   i      +  +k  +l++ f+  +++fg k++
+  OMMLON_000000308722_5213  5 FDLIVIGSGPAGYVAAIRAAQLGLKTAIVEKKELGGVCLNWGCIPT----KSLLKSANLFQLFQ-TSNQFGIKVQ 74
+                              9************************999999999999887766643....44566777777665.4677887764 PP
+
+  == domain 2  score: 27.8 bits;  conditional E-value: 6.6e-11
+                 trxB_prot  92 niheilldnnkkiktktiiiatgaspkylnidnekalig.hgistcaicdgfffkkkdvaiigggdkaleeaiflsklcnriyii 175
+                               + + i ++n+++ +   +iiatga+pk l+  +  +l+  +g  +           k++ iig g   le a f   +  ++ i+
+  OMMLON_000000308722_5213 118 KENTITVNNKNQYQFSNLIIATGAKPKKLDFPKIPNLVNyKGAMSIR------EIPKNILIIGSGAIGLEFAYFYNVIGSNVIIV 196
+                               3345778889999******************9999998623433322......34689************************999 PP
+
+                 trxB_prot 176 irkskl..raskilq...kkivninnikllfnfeikkiig.kkkleylickknssneekkinvkalflaignspntkif...knk 251
+                                ++s++  +a k +     k ++ + ikll n +ik i   k k   +   + +++   +++v+ l+ aig +p t+ +   +  
+  OMMLON_000000308722_5213 197 EKNSHIlpNADKEISleiSKTFKKKGIKLLTNSRIKEIKYlKSKKTKIEIEDLQTKSSIRVKVDYLISAIGVAPYTNNLgleNVG 281
+                               99999855577766511246667899**********99751445555666677777788999999999******99854221456 PP
+
+                 trxB_prot 252 isldkngyiltkknstktnipgvfaagdvk 281
+                               i+l +ng+i  + +   tni   +a gdv 
+  OMMLON_000000308722_5213 282 IKLTQNGHIKVN-EYYETNIKNYYAIGDVI 310
+                               9*******9665.5689***********95 PP
+
+  == domain 3  score: -3.2 bits;  conditional E-value: 0.18
+                 trxB_prot 233 kalflaignspntkifknkisldkngyi 260
+                               k + + +g+ p + + k ki+ + +g+i
+  OMMLON_000000308722_5213 366 KGFEIQVGKFPFSALGKAKINGETEGFI 393
+                               5566889999999999999999999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (312 nodes)
+Target sequences:                       7913  (209987 residues searched)
+Passed MSV filter:                       144  (0.0181979); expected 158.3 (0.02)
+Passed bias filter:                       48  (0.00606597); expected 158.3 (0.02)
+Passed Vit filter:                         4  (0.000505497); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126374); expected 0.1 (1e-05)
+Initial search space (Z):               7913  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 5873.94
+//
+[ok]

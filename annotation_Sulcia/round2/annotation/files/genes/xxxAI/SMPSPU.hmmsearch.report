@@ -1,0 +1,95 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxAI_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMPSPU/SMPSPU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/xxxAI/xxxAI_SMPSPU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxAI_prot  [M=224]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+   3.4e-117  389.7  32.7   3.4e-117  389.7  32.7    2.0  2  SMPSPU_14017  [55347 - 54532] (REVERSE SENSE) 
+    3.3e-17   62.7  28.7    3.3e-17   62.7  28.7    2.3  2  SMPSPU_7348   [277533 - 278339] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPSPU_14017  [55347 - 54532] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.9   4.2     0.035   2.8e+02     136     169 ..       2      35 ..       1      50 [. 0.64
+   2 !  389.7  32.7  4.3e-121  3.4e-117       1     224 []      52     272 .]      52     272 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 0.9 bits;  conditional E-value: 0.035
+    xxxAI_prot 136 ilwlkkkk.ikiistsvknnikniknlynl.klekk 169
+                   il+l++kk  ++i  s+knni   k +y+l k++kk
+  SMPSPU_14017   2 ILFLNRKKtTQMIIFSIKNNIF--KYFYKLkKIKKK 35 
+                   6677655426899999*99985..445554134443 PP
+
+  == domain 2  score: 389.7 bits;  conditional E-value: 4.3e-121
+    xxxAI_prot   1 malkanyipeyillykkiykyefisnffikkflisyqiykkisfrkktggilasffkkklyikkikinlttlllvlegiekpgnlgailrtaeaagi 97 
+                   mal+anyipeyil+y+ki+kyefisnffikk++i+y++y+kis+rkktggi+asffkkkl+ik++ki+l++l+l+legiekpgnlgai+rta+a+gi
+  SMPSPU_14017  52 MALIANYIPEYILIYNKICKYEFISNFFIKKYMITYFLYNKISYRKKTGGIIASFFKKKLNIKNMKISLSALFLILEGIEKPGNLGAIFRTADAVGI 148
+                   9************************************************************************************************ PP
+
+    xxxAI_prot  98 davllcnntidifnpnvirsslgavftnnitidnseniilwlkkkkikiistsvknnikniknlynlklekkslaivigaeskglsenwfkssniii 194
+                   da+llcnn++difnpnvirsslg++ftn+i+i+n+++ii+wl+k++ikiistsv+ +i+n  n++++k+++ks+ai+ig+eskgls++wfk++++ii
+  SMPSPU_14017 149 DAILLCNNKVDIFNPNVIRSSLGTIFTNQIFIANYKIIISWLNKNQIKIISTSVN-KIYN--NFFIKKIKNKSFAIIIGSESKGLSDIWFKKKKNII 242
+                   *****************************************************95.5665..89********************************* PP
+
+    xxxAI_prot 195 hiplkgkidslnvststaiilfeiirqnyy 224
+                   +ip+kgkidslnvststaiil+ei+r+++y
+  SMPSPU_14017 243 NIPIKGKIDSLNVSTSTAIILYEILRKKLY 272
+                   ***************************986 PP
+
+>> SMPSPU_7348  [277533 - 278339] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -5.3  10.6         2   1.6e+04      24      65 ..      19      66 ..       2      67 .. 0.61
+   2 !   62.7  28.7   4.2e-21   3.3e-17      14     222 ..      56     266 ..      48     268 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -5.3 bits;  conditional E-value: 2
+   xxxAI_prot 24 isnf.fikkflisyqi...ykkisfrkktgg..ilasffkkklyikki 65
+                 i nf + kk li y i   y+ i ++kk     i+  ++++++++kki
+  SMPSPU_7348 19 IFNFiLNKKILIIYGInplYEAIKYKKKIYKifIIKNIYNNNYKLKKI 66
+                 445414578888886444489999999876511456667777777665 PP
+
+  == domain 2  score: 62.7 bits;  conditional E-value: 4.2e-21
+   xxxAI_prot  14 lykkiykyefisnffikkfl.isyqiykkisfrkktggilasffkkkl.yikkikinl.....ttlllvlegiekpgnlgailrtaeaagidavllcn 104
+                  +y++ yk + i +f +kk + i  +i  k   +k+  g++a +   k+ +i +i  n+       lll+l+ i    n+g+i+rt+ ++g+da+++ n
+  SMPSPU_7348  56 IYNNNYKLKKIIEFSKKKKIkIIEKINFKKFIKKNHQGVFAFINPIKFsKIENIIPNIffsgkIPLLLILDSITDVRNFGSIVRTSACTGVDAIIIHN 153
+                  6888889999999987764325555555545677888999977666763466665443222123599****************************998 PP
+
+   xxxAI_prot 105 ntidifnpnvirsslgavftnnitidns.eniilwlkkkkikiistsvknnikniknlynlklekkslaivigaeskglsenwfkssniiihipl.kg 200
+                     +i n + i++s g +f   i  +n   +ii +lk+  i++i+ + k n    +  yn++   +  a ++g e kg+s+n++   n+ +++pl k 
+  SMPSPU_7348 154 Y--NIVNSDSIKTSSGGLFKVPICKENNiIKIIKFLKNSGIQVIAVTEKTN----YICYNINYR-NPTAFILGNEEKGISKNYLSICNNTVKLPLlKN 244
+                  6..689****************998765167999**********8765554....334666654.46799************************5499 PP
+
+   xxxAI_prot 201 kidslnvststaiilfeiirqn 222
+                   + slnvs +   il+e irq+
+  SMPSPU_7348 245 SLSSLNVSVACGAILYEAIRQR 266
+                  9*******************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (224 nodes)
+Target sequences:                      15564  (407989 residues searched)
+Passed MSV filter:                      1372  (0.0881521); expected 311.3 (0.02)
+Passed bias filter:                      291  (0.018697); expected 311.3 (0.02)
+Passed Vit filter:                        20  (0.00128502); expected 15.6 (0.001)
+Passed Fwd filter:                         3  (0.000192753); expected 0.2 (1e-05)
+Initial search space (Z):              15564  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.00
+# Mc/sec: 11307.02
+//
+[ok]

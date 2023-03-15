@@ -1,0 +1,76 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMOMMLON.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/rRNA/ssrA/SMOMMLON.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence             start    end  Description
+    ------- ------ -----  --------             -----  -----  -----------
+    1.4e-14   50.1   7.4  OMMLON_000000308722  21511  21414 
+    2.1e-14   49.5  17.9  OMMLON_000000308722  21694  21514 
+
+
+Annotation for each hit  (and alignments):
+>> OMMLON_000000308722  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   50.1   7.4   1.4e-14       240       342 ..     21511     21414 ..     21526     21413 ..    144250    0.87
+
+  Alignment:
+  score: 50.1 bits
+                 ssrA   240 cttatcactaatcttatgtgaaatttgctctttgataagataaatatgtagaaaacttataatattacttgtttggacacgggttc 325  
+                            cttat actaa       t  aa tt ct  tt ata g taaatatgta aaa cttat atatt cttgtttggacacgggttc
+  OMMLON_000000308722 21511 CTTATAACTAAAT-----TAGAACTTACTACTTTATAGGCTAAATATGTAAAAATCTTATTATATTGCTTGTTTGGACACGGGTTC 21431
+                            5566666666533.....3456788889999999**************************************************** PP
+
+                 ssrA   326 gaatcccgtcagctcca 342  
+                            ga tcccgtcagctcca
+  OMMLON_000000308722 21430 GATTCCCGTCAGCTCCA 21414
+                            ***************97 PP
+
+>> OMMLON_000000308722  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   49.5  17.9   2.1e-14         1       181 [.     21694     21514 ..     21694     21498 ..    144250    0.73
+
+  Alignment:
+  score: 49.5 bits
+                 ssrA     1 ggggctggattggaattgacaacaagattaatat.ataagtaagcatatcgtgaaaagtaatgtaatcacgtaaata..tcattac 83   
+                            ggggctg  ttgg  ttgaca caag   aatat ataag  agcatatcgtgaaa gtaatg aatcacgtaaa a  tcattac
+  OMMLON_000000308722 21694 GGGGCTGATTTGGTTTTGACATCAAGT-AAATATaATAAGATAGCATATCGTGAAATGTAATGCAATCACGTAAAAAatTCATTAC 21610
+                            79**********************995.56666526899*********************************97654449****** PP
+
+                 ssrA    84 aaatga.taaccggcaaaaaaaattatgctcttgcggcttgatcaataacttt....gaattcgaatgcaagatttttttattaaa 164  
+                            aaa  a taa  ggcaaa   aatta  ctcttgc gctt a   a aa tt     g a   g a gcaa   t  ttt ttaa 
+  OMMLON_000000308722 21609 AAAAAAcTAAATGGCAAA---AATTACTCTCTTGCAGCTTAAAACAGAAATTGgttaGGACAAGCAAGCAACTATCATTTCTTAA- 21528
+                            987554278889999765...6799999***********9876555555444400004444444455555544444444444444. PP
+
+                 ssrA   165 aataaatttaatttgaa 181  
+                                  t taatt ga 
+  OMMLON_000000308722 21527 ---GGTTCTAATTGGAG 21514
+                            ...44455666666554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (288500 residues searched)
+Residues passing SSV filter:          270744  (0.938); expected (0.02)
+Residues passing bias filter:         129642  (0.449); expected (0.02)
+Residues passing Vit filter:            3617  (0.0125); expected (0.003)
+Residues passing Fwd filter:            1096  (0.0038); expected (3e-05)
+Total number of hits:                      2  (0.000967)
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.08
+# Mc/sec: 1175.60
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/rRNA/ssrA/SMOMMLON.sto
+[ok]

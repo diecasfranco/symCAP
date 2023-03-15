@@ -1,0 +1,66 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMS1196.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/rRNA/ssrA/SMS1196.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    3.9e-13   45.4  15.7  SMS1196   23121  22996 
+    4.3e-13   45.2   3.6  SMS1196   22936  22874 
+
+
+Annotation for each hit  (and alignments):
+>> SMS1196  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   45.4  15.7   3.9e-13         1       126 [.     23121     22996 ..     23121     22976 ..    144731    0.85
+
+  Alignment:
+  score: 45.4 bits
+     ssrA     1 ggggctggattggaattgacaacaagattaatat.ataagtaagcatatcgtgaaaagtaatgtaatcacgtaaata..tcattacaaatga.taacc 94   
+                ggggctg  ttgg  ttgaca caag   aatat ataag  agcatatcgtgaaa gtaatgtaatcacgtaaa a  tcattacaaa  a taa  
+  SMS1196 23121 GGGGCTGATTTGGTTTTGACATCAAGT-AAATATaATAAGATAGCATATCGTGAAATGTAATGTAATCACGTAAAAAatTCATTACAAAAAAcTAAAT 23025
+                79**********************995.55666526899*********************************97654449******987554277889 PP
+
+     ssrA    95 ggcaaaaaaaattatgctcttgcggcttgatc 126  
+                ggcaaa   aatta  ctct gc gctt a c
+  SMS1196 23024 GGCAAA---AATTACTCTCTAGCAGCTTAAGC 22996
+                999865...6799999**********997765 PP
+
+>> SMS1196  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   45.2   3.6   4.3e-13       280       342 ..     22936     22874 ..     22956     22873 ..    144731    0.92
+
+  Alignment:
+  score: 45.2 bits
+     ssrA   280 taaatatgtagaaaacttataatattacttgtttggacacgggttcgaatcccgtcagctcca 342  
+                taaatatgtagaaa cttat atatt cttgtttggacacgggttcga tcccgtcagctcca
+  SMS1196 22936 TAAATATGTAGAAATCTTATTATATTGCTTGTTTGGACACGGGTTCGATTCCCGTCAGCTCCA 22874
+                789*********************************************************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (289462 residues searched)
+Residues passing SSV filter:          273059  (0.943); expected (0.02)
+Residues passing bias filter:         160499  (0.554); expected (0.02)
+Residues passing Vit filter:            2242  (0.00775); expected (0.003)
+Residues passing Fwd filter:            1131  (0.00391); expected (3e-05)
+Total number of hits:                      2  (0.000653)
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 1304.73
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/rRNA/ssrA/SMS1196.sto
+[ok]

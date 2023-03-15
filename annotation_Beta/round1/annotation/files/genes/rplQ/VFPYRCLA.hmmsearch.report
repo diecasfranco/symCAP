@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplQ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round7//annotation/files/genomes/VFPYRCLA/VFPYRCLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round7//annotation/files/genes/rplQ/rplQ_VFPYRCLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplQ_prot  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.2e-16   54.9  20.3    3.2e-10   34.3  18.7    2.0  2  VFPYRCLA_144  [122370 - 122621]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPYRCLA_144  [122370 - 122621]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.3  18.7   2.2e-12   3.2e-10       1      56 [.       1      56 [.       1      61 [. 0.92
+   2 !   22.3   0.2   1.2e-08   1.8e-06      80     105 ..      57      82 ..      53      83 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 34.3 bits;  conditional E-value: 2.2e-12
+     rplQ_prot  1 MRHkKlkkyskklshkkslfinllkrliknellsvklkkakelkkflekkikkikk 56
+                  MRHkK kky+  +s+kks+++  +k l+++++l++k+k++ +lkk + k+ kk + 
+  VFPYRCLA_144  1 MRHKKKKKYNVGYSQKKSILRVYFKTLLTKKKLLIKKKNFFLLKKTFFKNLKKNQS 56
+                  **************************************************997554 PP
+
+  == domain 2  score: 22.3 bits;  conditional E-value: 1.2e-08
+     rplQ_prot  80 kkknkikieklgtRkgDnssliilkl 105
+                    +k+ki ++k+g+RkgD+s++i++ +
+  VFPYRCLA_144  57 SFKKKIFFYKIGPRKGDKSEMIFVYV 82 
+                   56899******************965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (106 nodes)
+Target sequences:                        148  (39410 residues searched)
+Passed MSV filter:                       135  (0.912162); expected 3.0 (0.02)
+Passed bias filter:                        4  (0.027027); expected 3.0 (0.02)
+Passed Vit filter:                         4  (0.027027); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00675676); expected 0.0 (1e-05)
+Initial search space (Z):                148  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 520.57
+//
+[ok]

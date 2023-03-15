@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplQ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round7//annotation/files/genomes/VFPYRVIR/VFPYRVIR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round7//annotation/files/genes/rplQ/rplQ_VFPYRVIR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplQ_prot  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.3e-21   69.3  18.7      2e-15   51.1  15.9    2.0  2  VFPYRVIR_146  [122284 - 122535]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPYRVIR_146  [122284 - 122535]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.1  15.9   1.3e-17     2e-15       1      54 [.       1      54 [.       1      56 [. 0.97
+   2 !   21.7   0.3   1.8e-08   2.7e-06      75     104 ..      52      81 ..      52      83 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 51.1 bits;  conditional E-value: 1.3e-17
+     rplQ_prot  1 MRHkKlkkyskklshkkslfinllkrliknellsvklkkakelkkflekkikki 54
+                  MRH+K kkys+++s+kk++f++++k++++ne+l++ +k+++++kk++ k+ikk 
+  VFPYRVIR_146  1 MRHRKKKKYSICYSQKKNIFREHFKIFLTNEKLLIRKKNFSLFKKAFFKNIKKK 54
+                  ***************************************************974 PP
+
+  == domain 2  score: 21.7 bits;  conditional E-value: 1.8e-08
+     rplQ_prot  75 lrivikkknkikieklgtRkgDnssliilk 104
+                   ++++i +k+k+++ k+g+R+gD+s++i+++
+  VFPYRVIR_146  52 KKKNIVFKKKVYFCKVGPRRGDKSEMIFVF 81 
+                   5789999*********************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (106 nodes)
+Target sequences:                        149  (38919 residues searched)
+Passed MSV filter:                       131  (0.879195); expected 3.0 (0.02)
+Passed bias filter:                       10  (0.0671141); expected 3.0 (0.02)
+Passed Vit filter:                         7  (0.0469799); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00671141); expected 0.0 (1e-05)
+Initial search space (Z):                149  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 596.02
+//
+[ok]

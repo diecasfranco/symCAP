@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxAB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMPSPU/SMPSPU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/xxxAB/xxxAB_SMPSPU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxAB_prot  [M=125]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.1e-63  212.5  17.2    1.1e-63  212.5  17.2    1.4  2  SMPSPU_9674  [210558 - 210112] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPSPU_9674  [210558 - 210112] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.4      0.34   5.3e+03     111     120 ..      14      23 ..       8      24 .. 0.57
+   2 !  212.5  17.2   7.4e-68   1.1e-63       1     123 [.      25     147 ..      25     149 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 0.34
+   xxxAB_prot 111 wwknkikilk 120
+                  +++nk+k++k
+  SMPSPU_9674  14 YYNNKLKQIK 23 
+                  4566666655 PP
+
+  == domain 2  score: 212.5 bits;  conditional E-value: 7.4e-68
+   xxxAB_prot   1 mrekikfefklnsskkllynyitapeklakwfadnvisigsryiftwngyeetcflikkkkekyvrykwekdeekkyyfeflikkklltkklyliitd 98 
+                  mreki+fef++nss+k+lynyi+ap+++++wfadnvi++++ryiftwngyeetcflikk+++k+vry+we+d++k yyfef+++k++ltk++yliitd
+  SMPSPU_9674  25 MREKINFEFRMNSSIKILYNYISAPSNMTEWFADNVIYLSNRYIFTWNGYEETCFLIKKIPYKSVRYRWEQDLDKIYYFEFFLEKEKLTKNIYLIITD 122
+                  9************************************************************************************************* PP
+
+   xxxAB_prot  99 fvkkneieksklwwknkikilkkrt 123
+                  f+kkneie+sk+wwknki+il+k++
+  SMPSPU_9674 123 FAKKNEIEESKMWWKNKIQILSKLL 147
+                  *********************9975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (125 nodes)
+Target sequences:                      15564  (407989 residues searched)
+Passed MSV filter:                      1110  (0.0713184); expected 311.3 (0.02)
+Passed bias filter:                      209  (0.0134284); expected 311.3 (0.02)
+Passed Vit filter:                         7  (0.000449756); expected 15.6 (0.001)
+Passed Fwd filter:                         1  (6.42508e-05); expected 0.2 (1e-05)
+Initial search space (Z):              15564  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9363.60
+//
+[ok]
