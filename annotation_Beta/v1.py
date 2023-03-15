@@ -3,7 +3,6 @@
 import argparse
 import time
 import os
-#test
 
 parser = argparse.ArgumentParser(description='Annotate genomes with protein coding genes, ribosomal RNA genes, and transfer RNA genes')
 
