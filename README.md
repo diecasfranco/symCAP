@@ -1,7 +1,7 @@
 # symCAP symbiosis Custom Annotation Pipeline
 Script used to annotate genomes from primary symbionts
 
-#Required software
+Required software
 HMMER http://hmmer.org/download.html
 rnammer
 tRNAscan-SE http://lowelab.ucsc.edu/tRNAscan-SE/
