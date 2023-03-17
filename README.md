@@ -11,4 +11,4 @@ rnammer
 
 [mafft](https://mafft.cbrc.jp/alignment/software/)
 
-align_nucl_by_codon2.py
+[align_nucl_by_codon2.py](https://github.com/diecasfranco/symCAP/blob/master/align_nucl_by_codon2.py)
