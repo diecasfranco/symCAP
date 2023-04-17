@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmH_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1//annotation/files/genomes/VFTRYOCC/VFTRYOCC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1//annotation/files/genes/rpmH/rpmH_VFTRYOCC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmH_prot  [M=36]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+      1e-14   47.3  18.8      1e-14   47.3  18.8    2.0  2  VFTRYOCC_80  [80989 - 81126]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTRYOCC_80  [80989 - 81126]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.3  18.8   8.1e-17     1e-14       1      36 []       1      36 [.       1      36 [. 0.98
+   2 ?    1.0   9.5     0.025       3.1      19      32 ..      32      45 ..      32      45 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 47.3 bits;  conditional E-value: 8.1e-17
+    rpmH_prot  1 mKRTYnPSkkkrkrKnGFrkrikkKkgkkiinskik 36
+                 mKRT++PS++++krK GFrkrik+K+g+ ii+ +ik
+  VFTRYOCC_80  1 MKRTFQPSNIRKKRKHGFRKRIKSKNGRNIIKKRIK 36
+                 9*******************************9998 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 0.025
+    rpmH_prot 19 rkrikkKkgkkiin 32
+                 +krikkK +++ i+
+  VFTRYOCC_80 32 KKRIKKKRKRICIK 45
+                 799******99887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (36 nodes)
+Target sequences:                        123  (31959 residues searched)
+Passed MSV filter:                       106  (0.861789); expected 2.5 (0.02)
+Passed bias filter:                       26  (0.211382); expected 2.5 (0.02)
+Passed Vit filter:                        26  (0.211382); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00813008); expected 0.0 (1e-05)
+Initial search space (Z):                123  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 288.53
+//
+[ok]
