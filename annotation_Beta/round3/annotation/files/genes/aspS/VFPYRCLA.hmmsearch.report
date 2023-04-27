@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/aspS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3//annotation/files/genomes/VFPYRCLA/VFPYRCLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3//annotation/files/genes/aspS/aspS_VFPYRCLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aspS_prot  [M=444]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.2e-64  211.0  69.3    5.8e-41  134.4  50.5    2.3  2  VFPYRCLA_45  [44607 - 43231] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPYRCLA_45  [44607 - 43231] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.4  13.1     9e-27   1.3e-24       3     113 ..       4     114 ..       2     128 .. 0.93
+   2 !  134.4  50.5   3.9e-43   5.8e-41     114     397 ..     133     415 ..     114     454 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 80.4 bits;  conditional E-value: 9e-27
+    aspS_prot   3 nfikkiievssrvktrfcgevdsllnvgkivnvvlnyklavifkgkinvrkddsniiksknivvkkiyleivslgFnskiklsekekykkRiyyikka 100
+                  nf  k i   ++++trfc+e+ ++l++g+++n+ +ny +a   kgkin+r+ddsn+ + k+ + k+i +ei  lgF  kik+++++ y+kR++ i k+
+  VFPYRCLA_45   4 NFFLKKILEEKKIRTRFCPEPSGFLHIGHLKNFYVNYTIAKKTKGKINIRIDDSNPERTKKRFEKNIPIEIFKLGFKKKIKITKTSFYFKRMFKIAKK 101
+                  666666777899************************************************************************************** PP
+
+    aspS_prot 101 fvkkdlFyidkyi 113
+                  f+k +l yid   
+  VFPYRCLA_45 102 FIKSKLAYIDSQN 114
+                  *********9765 PP
+
+  == domain 2  score: 134.4 bits;  conditional E-value: 3.9e-43
+    aspS_prot 114 ikrvlseieklyLlkkmReGlykakkFa..vkanirklkGli..dpqlfrvllvlskGlvYesY.lcnalcdRiekitfviftgeiidnk.lyywlvs 205
+                  + r    +e ly+ kkm+ Gl+   +    ++ n++ +k  +  dp ++r+ +      +Y++Y +cn++cdRie+i f+++  e+ +n+ lyy++v 
+  VFPYRCLA_45 133 CFRKRTILENLYIFKKMKSGLFNPGENIarLRINMK-SKNTCmrDPVIYRIKKKKGITNMYPNYdFCNSICDRIERINFSVCSKEFENNReLYYFIVE 229
+                  44566679**************97665401455544.44444349********999999*****9*********************99955******* PP
+
+    aspS_prot 206 lynciykkklviiqfeFdrlkieasflkkrdiknllrlrivkkwndvrvftvkglikrglekksikklalstallfanfvfkksflrrilfanlkkev 303
+                  +yn  ykkk +  q+e +rlkie++ l+kr+ik+l++ +++ +w dvr+ t +g+ +rg ++++ik++   t+++++n+ +kk+ +++i+++ +++e+
+  VFPYRCLA_45 230 KYNNFYKKKHICKQIELSRLKIEGKDLQKRKIKELIKKKKIINWGDVRLLTLRGMRNRGYSNEVIKDIIKVTGFTKSNYNIKKKQVKKIIIKRMSREI 327
+                  ************************************************************************************************** PP
+
+    aspS_prot 304 krkikvllkkvklvvinLkdkkelyvesvkkikvvyefllkkklynifFlrkkkkcvvftYFdvkikiscvsvikkinksiarlvkylknsvkk 397
+                  krki+ + k++++  i+ ++k+ ++ve++k++  +y++  +k     fFl+kk   +  + F+ k  +       k n   + l++y+++  k+
+  VFPYRCLA_45 328 KRKIVAIFKPIRIKDIK-NEKNGFFVEKKKRVSFIYNI--GKL--SFFFLKKKESLILCVSFSKKNGVKKEY-FLKENGKNKLLKLYIIKRDKI 415
+                  ************98776.67999*********999985..654..569****99888878887666555444.444566667777777654443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (444 nodes)
+Target sequences:                        148  (39410 residues searched)
+Passed MSV filter:                       100  (0.675676); expected 3.0 (0.02)
+Passed bias filter:                        2  (0.0135135); expected 3.0 (0.02)
+Passed Vit filter:                         2  (0.0135135); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00675676); expected 0.0 (1e-05)
+Initial search space (Z):                148  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 875.62
+//
+[ok]
