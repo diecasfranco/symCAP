@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/truA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genomes/SMS2949/SMS2949_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genes/truA/truA_SMS2949.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       truA_prot  [M=254]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    3.4e-25   87.9   1.1    3.7e-25   87.8   1.1    1.0  1  SMS2949_4967  [110707 - 110492] (REVERSE SENSE) 
+    9.2e-12   43.9   5.6    9.4e-12   43.9   5.6    1.0  1  SMS2949_4977  [110227 - 110084] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMS2949_4967  [110707 - 110492] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   87.8   1.1   9.2e-29   3.7e-25      12      85 ..       1      72 []       1      72 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 87.8 bits;  conditional E-value: 9.2e-29
+     truA_prot 12 ssffGwqiqkknlsiqetiekclsfllkkkikiiGagrtdtGvhaiqmfahfdltknkillnkkfksklnsflp 85
+                  ++f  wqiqk ++siqetiekc+s++l kki i+Ga+r d+G +a+qmfahfd+    +l++k f++k n +lp
+  SMS2949_4967  1 KYFIVWQIQKHQISIQETIEKCFSLILIKKITIVGASRPDSGGNALQMFAHFDYF--SVLKKKTFLKKSNFILP 72
+                  5899*************************************************98..58999********9998 PP
+
+>> SMS2949_4977  [110227 - 110084] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.9   5.6   2.3e-15   9.4e-12     175     219 ..       1      45 [.       1      48 [] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 43.9 bits;  conditional E-value: 2.3e-15
+     truA_prot 175 kwilkkkilyfrieanrflrnmvrslvGtlielGikkitikdfik 219
+                   +w+++ +++y++i+an flrnmvr+++G  +++Gi k+++ +f  
+  SMS2949_4977   1 TWKIRTRVIYIDIIANIFLRNMVRRIIGVCLYIGIIKMNLFEFFL 45 
+                   6****************************************9975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (254 nodes)
+Target sequences:                       8017  (215097 residues searched)
+Passed MSV filter:                       218  (0.0271922); expected 160.3 (0.02)
+Passed bias filter:                       44  (0.00548834); expected 160.3 (0.02)
+Passed Vit filter:                         6  (0.00074841); expected 8.0 (0.001)
+Passed Fwd filter:                         4  (0.00049894); expected 0.1 (1e-05)
+Initial search space (Z):               8017  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 16530.95
+//
+[ok]

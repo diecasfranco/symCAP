@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genomes/SMTETIMP/SMTETIMP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genes/xxxT/xxxT_SMTETIMP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxT_prot  [M=121]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.9e-21   74.3  14.7    1.1e-12   47.0   4.3    2.0  2  SMTETIMP_7262  [33198 - 32995] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMTETIMP_7262  [33198 - 32995] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.9   2.9   3.6e-13     3e-09       1      29 [.       2      31 ..       2      33 .. 0.89
+   2 !   47.0   4.3   1.4e-16   1.1e-12      58      94 ..      28      64 ..      26      68 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 35.9 bits;  conditional E-value: 3.6e-13
+      xxxT_prot  1 mslkitekcincgaceaecpnkaiye.gsk 29
+                   m++kit++c ncgace ecpn+ai e gsk
+  SMTETIMP_7262  2 MAFKITNECRNCGACELECPNNAISEdGSK 31
+                   899*********************973565 PP
+
+  == domain 2  score: 47.0 bits;  conditional E-value: 1.4e-16
+      xxxT_prot 58 epkkydyyfivpekcteclgffdepqcasvcpvdcci 94
+                   +  k + yfivpekctec+g +++p c +vcpv+c  
+  SMTETIMP_7262 28 DGSKENRYFIVPEKCTECIGKYENPPCVAVCPVNCIK 64
+                   6789999***************************964 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (121 nodes)
+Target sequences:                       8212  (214836 residues searched)
+Passed MSV filter:                       103  (0.0125426); expected 164.2 (0.02)
+Passed bias filter:                       59  (0.00718461); expected 164.2 (0.02)
+Passed Vit filter:                         1  (0.000121773); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000121773); expected 0.1 (1e-05)
+Initial search space (Z):               8212  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 5395.84
+//
+[ok]

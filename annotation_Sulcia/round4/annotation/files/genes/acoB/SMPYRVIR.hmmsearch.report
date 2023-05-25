@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/acoB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genomes/SMPYRVIR/SMPYRVIR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genes/acoB/acoB_SMPYRVIR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       acoB_prot  [M=327]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    2.2e-43  147.4   0.1    2.5e-43  147.2   0.1    1.0  1  PYRVIR_Sulcia_5058  [121690 - 121430] (REVERSE SENSE) 
+    4.4e-35  120.1   1.0    4.6e-35  120.0   1.0    1.0  1  PYRVIR_Sulcia_5065  [121445 - 121227] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> PYRVIR_Sulcia_5058  [121690 - 121430] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  147.2   0.1   5.8e-47   2.5e-43      86     169 ..       2      81 ..       1      85 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 147.2 bits;  conditional E-value: 5.8e-47
+           acoB_prot  86 fslvaldqiinnaakirqmsggqwnipivfrgptgfagqlgathsqsfeswyancpglkvvipsnpydakgllkssirdndvvi 169
+                         fslva+dqiinnaakirqmsggq  +pivfr ptgfagqlgathsqs+e+ ya+cpglkvv+psn+ydakgllks+i  ndv+i
+  PYRVIR_Sulcia_5058   2 FSLVAIDQIINNAAKIRQMSGGQ--LPIVFRCPTGFAGQLGATHSQSLENLYAHCPGLKVVVPSNAYDAKGLLKSAI--NDVII 81 
+                         9*********************9..7**************************************************9..56776 PP
+
+>> PYRVIR_Sulcia_5065  [121445 - 121227] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  120.0   1.0   1.1e-38   4.6e-35     252     321 ..       2      71 ..       1      73 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 120.0 bits;  conditional E-value: 1.1e-38
+           acoB_prot 252 ktnkllileeawplasiaseityviqqeafdyldapikritvqdtpapyaknliekwypskkdlienikk 321
+                         +tn+l+ileeawp++si+seity++q++afdyldapikrit++dtpapyaknli+ wypsk+++i++ k+
+  PYRVIR_Sulcia_5065   2 NTNRLIILEEAWPFCSISSEITYLVQKYAFDYLDAPIKRITLEDTPAPYAKNLIKLWYPSKEKIINSAKN 71 
+                         69***************************************************************99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (327 nodes)
+Target sequences:                       8559  (227337 residues searched)
+Passed MSV filter:                        48  (0.00560813); expected 171.2 (0.02)
+Passed bias filter:                       22  (0.00257039); expected 171.2 (0.02)
+Passed Vit filter:                         2  (0.000233672); expected 8.6 (0.001)
+Passed Fwd filter:                         2  (0.000233672); expected 0.1 (1e-05)
+Initial search space (Z):               8559  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 22115.61
+//
+[ok]

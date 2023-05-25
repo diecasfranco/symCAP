@@ -22,10 +22,10 @@
 # ------- Parameters to be specified before each run ------- #
 
   ### Where output folders etc. will be created
-work_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round3"
+work_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4"
 
   ### Folder with genomes to annotate. Any fasta files in that dir will be regarded as genomes for annotation
-genomes_for_annotation_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/Sulcia_TRYOCC"
+genomes_for_annotation_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/"
 
   ### Folder containing alignments of all protein-coding genes to be annotated. File names: gene_prot.fasta
 #protein_ref_dir = "/Users/Piotr/Documents/01_Cicadas/Annotation/annotation_references/protein_alignments_allcics/"
@@ -49,7 +49,7 @@ Translation_table = 11	### As defined by getorf / NCBI!
 #Blocks_to_run = ["B1", "B15", "B16", "B18"]
 #Blocks_to_run = ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B11", "B12", "B15", "B16", "B18", "B19", "B20", "B21"]
 #Blocks_to_run = ["B1", "B2", "B3", "B4", "B5", "B6", "B11", "B15", "B16", "B18", "B19", "B20", "B21"]
-Blocks_to_run = ["B1", "B2", "B3", "B4", "B5", "B6", "B11", "B12","B15", "B16", "B18", "B19", "B20", "B21"]
+Blocks_to_run = ["B1", "B2", "B3", "B4", "B5", "B6", "B12","B15", "B16", "B18", "B19", "B20", "B21"]
 #Blocks_to_run = ["B1", "B2", "B3", "B4", "B5", "B6", "B11", "B12","B15", "B18", "B19", "B20", "B21"]
 
 

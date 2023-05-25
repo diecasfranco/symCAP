@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpoD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genomes/SMPYRVIR/SMPYRVIR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genes/rpoD/rpoD_SMPYRVIR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpoD_prot  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+   1.7e-135  450.1  17.1     2e-135  449.9  17.1    1.0  1  PYRVIR_Sulcia_5052  [122665 - 121724] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> PYRVIR_Sulcia_5052  [122665 - 121724] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  449.9  17.1  2.3e-139    2e-135       3     299 ..      13     314 .]      11     314 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 449.9 bits;  conditional E-value: 2.3e-139
+           rpoD_prot   3 lkydlknlkkqiieiseseslekyleeigkipllsqeeelelaklarkelkekkl....kklstaleqlikanlrfvvsvakqyqnqGlsl 89 
+                         ++ ++++ k+++ ++ + e++ekyleei+ki+lls +ee++la+++r+ ++e+      k ++++++ lik+nlrfvvs+ak+yqnqGls+
+  PYRVIR_Sulcia_5052  13 MRPQIQKKKQKLYKNLDEETIEKYLEEIVKIKLLSYKEEIILARKIRRGYNENATqyekKIAKKCIDLLIKSNLRFVVSIAKKYQNQGLSF 103
+                         56689999***************************************998876441121446789************************** PP
+
+           rpoD_prot  90 sdlineGnlGlikGisrfderkGfkcisycvwwirqailqaiadkarcircptnklafynkvvktyskleqklkmqptvkdiseylnssek 180
+                         sdlineGn+GlikGi+rfderkG+kcisycvwwirq+ilqai++++r ircptnk+afynkv+k + k+eqk+k++pt+k+is++l+++ek
+  PYRVIR_Sulcia_5052 104 SDLINEGNMGLIKGICRFDERKGYKCISYCVWWIRQSILQAISEQSRGIRCPTNKIAFYNKVNKFILKFEQKFKIKPTIKEISDTLKCTEK 194
+                         ******************************************************************************************* PP
+
+           rpoD_prot 181 eveealknsikktsldaplleGed.tnlydvlkseespeadfklekeslkkdikrlletlsekesqvislhyGlgckpmtlekvalllklt 270
+                         ev+eal ns+k +sldapl e e+  n y++l+++++++a++kle +slk++i+++l+tl+e+e+++i+lh+Glgc+p++le++a++lklt
+  PYRVIR_Sulcia_5052 195 EVDEALLNSYKLPSLDAPLNEEEEpVNWYEILTNKNCENAEEKLELDSLKEEIQSVLKTLPEREAKIIKLHFGLGCYPHSLEEIAKILKLT 285
+                         *******************9987647***************************************************************** PP
+
+           rpoD_prot 271 rercrqieihgikrlrkssrkkllrsylc 299
+                         rercrqieih++krlr++s+ ++l+s+l+
+  PYRVIR_Sulcia_5052 286 RERCRQIEIHTLKRLRHTSKFRKLISFLY 314
+                         ***************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (300 nodes)
+Target sequences:                       8559  (227337 residues searched)
+Passed MSV filter:                        83  (0.00969739); expected 171.2 (0.02)
+Passed bias filter:                       30  (0.00350508); expected 171.2 (0.02)
+Passed Vit filter:                         1  (0.000116836); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116836); expected 0.1 (1e-05)
+Initial search space (Z):               8559  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 14224.31
+//
+[ok]

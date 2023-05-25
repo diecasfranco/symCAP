@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/hflX_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round3/annotation/files/genomes/big_SMTRYOCC/big_SMTRYOCC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round3/annotation/files/genes/hflX/hflX_big_SMTRYOCC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       hflX_prot  [M=374]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------          -----------
+     3e-142  472.3  49.8   4.4e-142  471.8  35.3    2.0  2  big_SMTRYOCC_2395  [86449 - 87687] 
+
+
+Domain annotation for each sequence (and alignments):
+>> big_SMTRYOCC_2395  [86449 - 87687] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  471.8  35.3  6.9e-146  4.4e-142       5     348 ..       9     346 ..       5     356 .. 0.95
+   2 !    3.1  11.3    0.0024        16     315     367 ..     353     403 ..     342     408 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 471.8 bits;  conditional E-value: 6.9e-146
+          hflX_prot   5 ndyikqkviivaailkfknqeqvkneinelnylaqtlgakvikifvqniknknprtfigkgkieeikkfiilkkikiaifnenlspsqlkni 96 
+                         dyi++k +++a ++k   q +v  ei eln la+tlga vik f+qnik+k p+tfigkgk+eeik fii+  ik+ ifn+nlspsq+kni
+  big_SMTRYOCC_2395   9 TDYIEKKTVLIATVMK--KQNKVLEEIYELNSLAKTLGAIVIKEFIQNIKSKKPKTFIGKGKMEEIKNFIIVNNIKLVIFNDNLSPSQFKNI 98 
+                        79***********987..566899******************************************************************** PP
+
+          hflX_prot  97 eqlfkskvvdrtkvildifykraktsyaktqiklaqykyylsklpklwthlekqrggigfrgpgeseietdrrnirtsinkltnkiklidkq 188
+                        e+ +  +vvdrtkvildif kraktsyak qiklaqyky lsklpklwthlekqrggigfrgpgeseietdrrnir sinkl  kiklidkq
+  big_SMTRYOCC_2395  99 EKTLSLEVVDRTKVILDIFSKRAKTSYAKAQIKLAQYKYALSKLPKLWTHLEKQRGGIGFRGPGESEIETDRRNIRKSINKLKKKIKLIDKQ 190
+                        ******************************************************************************************** PP
+
+          hflX_prot 189 metqrknrkhilrisllgytnvgkstlmnvlsnanvy.venkffstvdttvrkikirtkiflvsdtvgfitnlphqlrtsfkstlyemkesd 279
+                        m tqrk+rk+i+risl+gytnvgkst+mn+l+na v  v+n++fstvdttvrk+ki+ +ifl+sdtvgfi nlp ql  sfkstl e+kesd
+  big_SMTRYOCC_2395 191 MNTQRKHRKNIIRISLVGYTNVGKSTIMNLLTNAKVStVDNQLFSTVDTTVRKLKIKKQIFLLSDTVGFINNLPTQLIDSFKSTLSEIKESD 282
+                        ***********************************9548***************************************************** PP
+
+          hflX_prot 280 llihlidinknsfikditcvenillelcikigtnkklikvfnkidkcnnlntkkyfiykkygnkiifvs 348
+                        llih+idi knsfikdi  ven+lle+ ik      +ikvfnkid c+ lntkk +i k   nki  ++
+  big_SMTRYOCC_2395 283 LLIHVIDITKNSFIKDIKYVENLLLEIGIKK---NIIIKVFNKIDICSELNTKKSIINKI--NKINKIN 346
+                        **************************98884...3589****************999874..4444333 PP
+
+  == domain 2  score: 3.1 bits;  conditional E-value: 0.0024
+          hflX_prot 315 klikvfnkidkcnnlntkkyfiykkygnkiifvsaikthniellnqkicylta 367
+                        k+   +nki+k n +n k   i k     i+f+sa++   i+ll qki  lt 
+  big_SMTRYOCC_2395 353 KI-NKINKINKINKIN-KINKINKISLKNILFLSALQKKTIKLLKQKIYALTK 403
+                        22.2235555555555.3334666666789******************99885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (374 nodes)
+Target sequences:                       6423  (170848 residues searched)
+Passed MSV filter:                       136  (0.0211739); expected 128.5 (0.02)
+Passed bias filter:                       28  (0.00435933); expected 128.5 (0.02)
+Passed Vit filter:                         2  (0.000311381); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.00015569); expected 0.1 (1e-05)
+Initial search space (Z):               6423  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6126.69
+//
+[ok]
