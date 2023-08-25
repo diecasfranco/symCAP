@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplY_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMPYRVIR/SMPYRVIR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/rplY/rplY_SMPYRVIR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplY_prot  [M=197]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    3.7e-65  218.2  20.9    3.7e-65  218.2  20.9    1.7  2  PYRVIR_Sulcia_7312  [42553 - 41747] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> PYRVIR_Sulcia_7312  [42553 - 41747] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  218.2  20.9   4.3e-69   3.7e-65       1     182 [.       1     182 [.       1     197 [. 0.96
+   2 ?   -6.2   4.7         1   8.6e+03     178     184 ..     249     255 ..     224     267 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: 218.2 bits;  conditional E-value: 4.3e-69
+           rplY_prot   1 mnninlkgekkkllkkksnrelrnsGyvPcvvyrkkknikfyvllsilkkvllklkvykiilkikneykieailkeiqfhPinedvihldf 91 
+                         m+ i lk ek+ +++kk+ ++lr+sGy P +vy+k+knikf ++ ++++k++++ ++ ++i++i+n+++i++ilkeiq++Pi+e+++hldf
+  PYRVIR_Sulcia_7312   1 MKRIILKVEKRVIVNKKHIKSLRESGYTPGIVYGKNKNIKFVLDTYLVEKIIKNNTLSQFIVSINNKINITTILKEIQYNPITEKILHLDF 91 
+                         899**************************************************************************************** PP
+
+           rplY_prot  92 yelkknkkiiisvpliseGhslGvskGGeyklflkkiklkilkefvldkielnisnldiGdnlylkkiynpkyillhnkkeviasvkssrk 182
+                          el+  k+i+++vp+ + G+++Gv kGGey+ +++k+k+k+l++ ++d+ie+ni+nldiG+n+y+k+i  +k+++lh++++vi++vk+  +
+  PYRVIR_Sulcia_7312  92 LELNPRKYITYEVPIRPIGKAKGVYKGGEYISKIRKLKIKALPKNMVDHIEINIDNLDIGENYYVKNIPPKKIVILHDSNTVISTVKQIIE 182
+                         *************************************************************************************997544 PP
+
+  == domain 2  score: -6.2 bits;  conditional E-value: 1
+           rplY_prot 178 kssrkll 184
+                          +s+++ 
+  PYRVIR_Sulcia_7312 249 TKSKTKT 255
+                         2222222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (197 nodes)
+Target sequences:                       8559  (227337 residues searched)
+Passed MSV filter:                       373  (0.0435799); expected 171.2 (0.02)
+Passed bias filter:                       73  (0.00852903); expected 171.2 (0.02)
+Passed Vit filter:                         4  (0.000467344); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116836); expected 0.1 (1e-05)
+Initial search space (Z):               8559  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 7339.79
+//
+[ok]

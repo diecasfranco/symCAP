@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplX2_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMPENROR/SMPENROR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/rplX2/rplX2_SMPENROR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplX2_prot  [M=110]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    7.8e-35  118.2  18.3    7.8e-35  118.2  18.3    1.8  2  SMPENROR_1_3742  [136693 - 137118] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPENROR_1_3742  [136693 - 137118] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.1      0.31   2.7e+03      59      71 ..      15      27 ..       6      30 .. 0.52
+   2 !  118.2  18.3   8.9e-39   7.8e-35       1     105 [.      31     142 .]      31     142 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.31
+       rplX2_prot 59 nyksfdkvkklli 71
+                       ++f  ++ + i
+  SMPENROR_1_3742 15 YENNFISIRSFII 27
+                     3445555555555 PP
+
+  == domain 2  score: 118.2 bits;  conditional E-value: 8.9e-39
+       rplX2_prot   1 mkiktkdtilinsgnskgkkgkvikiikkkkralvkllnkql...ieidlsnilliyrpslnyksfdkvkkl......likvrkinkklnslfs 85 
+                      mk+k++d+i+++sgn+kg kgkvikiik  +ralv+ll+k++   i++d sn+l+iyrp ln+++f+k++k+      l k++k+ k+lnslfs
+  SMPENROR_1_3742  31 MKLKNQDNIFFKSGNHKGNKGKVIKIIK--NRALVELLTKEVkrpIKMDCSNLLVIYRPLLNHENFLKANKFqrlnkvLRKMIKMKKELNSLFS 122
+                      9**************************6..69*******9876669********************998776332222579************* PP
+
+       rplX2_prot  86 ieelknllkirdleniklrk 105
+                      +eel n+lkir+len+k+++
+  SMPENROR_1_3742 123 REELNNFLKIRSLENLKKKQ 142
+                      *****************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (110 nodes)
+Target sequences:                       8749  (235816 residues searched)
+Passed MSV filter:                       365  (0.0417191); expected 175.0 (0.02)
+Passed bias filter:                       99  (0.0113156); expected 175.0 (0.02)
+Passed Vit filter:                         3  (0.000342896); expected 8.7 (0.001)
+Passed Fwd filter:                         1  (0.000114299); expected 0.1 (1e-05)
+Initial search space (Z):               8749  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 4539.85
+//
+[ok]

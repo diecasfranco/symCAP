@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/era_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMRR05105/SMRR05105_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/era/era_SMRR05105.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SM_CARI_era  [M=270]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    6.7e-12   44.2  33.4    5.9e-07   28.0  13.0    3.5  3  SMRR05105_849  [29921 - 31231] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMRR05105_849  [29921 - 31231] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.2   5.2   5.1e-10   4.2e-06       7     157 ..       6     164 ..       3     167 .. 0.78
+   2 !   28.0  13.0   7.2e-11   5.9e-07       8     131 ..     180     318 ..     174     349 .. 0.70
+   3 ?   -6.1  10.7         1   8.1e+03      66     150 ..     311     397 ..     287     422 .. 0.52
+
+  Alignments for each domain:
+  == domain 1  score: 25.2 bits;  conditional E-value: 5.1e-10
+    SM_CARI_era   7 fvkiigypnvgkstlinaiigknisivtykanttrnniigilnlynsqiifydtpgiiinnnyik.....ky...iteadiviyiteigkn.nelf 93 
+                    ++ i+g+pnvgkstl+n + g   +i    +  tr+ i        +++ + d+ g +  n  ++     ++   i e+  vi++ +i      + 
+  SMRR05105_849   6 LISIVGHPNVGKSTLFNYLAGYRKAITHSSSGVTRDRIYCECKWKGNKFTLIDSGGYVNGNKDLQikiceQFlfaIEESTDVIFVIDILSGiLPID 101
+                    689********************999999999************************9988875541122233222456666777777755415778 PP
+
+    SM_CARI_era  94 fkkini..nkfkftiillnkidkyqnyilkneifnlksnypdfyileisallkfninkliniiinn 157
+                    +k  ni     k  +i +nkid+ ++y+       lk  + ++++l  s      in+l+n i++n
+  SMRR05105_849 102 YKISNIlqRSKKKVFIAINKIDQSKSYLYDTP-NILKLGFNEYFFL--SCYTGQGINELLNSIFSN 164
+                    88888732234667889**********98765.4488999999987..66778899*****99887 PP
+
+  == domain 2  score: 28.0 bits;  conditional E-value: 7.2e-11
+    SM_CARI_era   8 vkiigypnvgkstlinaiigknisivtykanttrnniigilnlynsqiifydtpgiiinnn......yik.....kyiteadiviyitei..g.kn 89 
+                    + ++g  nvgks+lin +++kn siv     ttr+ i  i n +n + i+ dt gii          y+      + i+ +d+ + i +i  g + 
+  SMRR05105_849 180 ITLVGRKNVGKSSLINTLLNKNQSIVCDLPGTTRDCIEVIYNKFNFKCILIDTAGIIKKKRkkedleYFSflrttQAISNSDLCFLIIDIkiGfQK 275
+                    6799****************************************************9765312222232211122457788987777654225434 PP
+
+    SM_CARI_era  90 nelffkkininkfkftiillnkidkyqny.ilkneifnlksny 131
+                     ++ + ki    fk  iil+nk d  +n  il+n   n+    
+  SMRR05105_849 276 QDIKIFKILKKNFKGIIILINKCDLIKNKsILQNLKQNIMQKI 318
+                    4555556667789***********9998536666666654432 PP
+
+  == domain 3  score: -6.1 bits;  conditional E-value: 1
+    SM_CARI_era  66 nnnyikkyiteadiviyite.igknnel..ffkkininkfkftiillnkidkyqnyilkneifnlksnypdfyileisallkfninkl 150
+                      n ++k     d+ iy+t  ++k n l  f + i+i k +   i  + ++k    ilk + ++l++   ++ i     +lk  ink+
+  SMRR05105_849 311 KQNIMQKIYPFTDLPIYFTSnFSKQNILkaFKQAISIIKKQKQKINTSYFNKIMLPILKKKQIHLRN-GRNLSIKYCVPILKKGINKF 397
+                    3455555555556666555324555543213334555554444555555555555566666555553.33455555555556666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (270 nodes)
+Target sequences:                       8126  (218437 residues searched)
+Passed MSV filter:                       283  (0.0348265); expected 162.5 (0.02)
+Passed bias filter:                       51  (0.00627615); expected 162.5 (0.02)
+Passed Vit filter:                         7  (0.000861432); expected 8.1 (0.001)
+Passed Fwd filter:                         2  (0.000246124); expected 0.1 (1e-05)
+Initial search space (Z):               8126  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 4843.78
+//
+[ok]

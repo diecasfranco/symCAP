@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rnpA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMMEETHA/SMMEETHA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/rnpA/rnpA_SMMEETHA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SMOLIH_rnpA  [M=127]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.5e-24   84.2  23.8    3.5e-24   84.2  23.8    1.7  2  SMMEETHA_5543  [99318 - 98896] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMMEETHA_5543  [99318 - 98896] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   3.9      0.12   9.9e+02      15      52 ..      10      29 ..       2      39 .. 0.33
+   2 !   84.2  23.8   4.2e-28   3.5e-24       8     124 ..      25     138 ..      19     140 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.12
+    SMOLIH_rnpA 15 fslmnnlyqifrkvkqiennllnvayiekeynekyrkk 52
+                    +l+nnl + f                    n+k +kk
+  SMMEETHA_5543 10 NNLINNLMKAFV------------------TNQKLKKK 29
+                   233333322222..................22222222 PP
+
+  == domain 2  score: 84.2 bits;  conditional E-value: 4.2e-28
+    SMOLIH_rnpA   8 nikkklifslmnnlyqifrkvkqiennllnvayiekeynekyrkkvkvalfvskkqiiksfkrnrikrlmrmsyqlnkkiitlkkqkryyllfryi 103
+                     +kkk i++    + +ifr  k+ie+n++ v yie     k   k+k+a++vskkqi ksfkrn+ikrlmr syq+n   itlk  k yy++f y+
+  SMMEETHA_5543  25 KLKKKYIINKKKIVKKIFRHGKKIESNFFKVLYIETT--NKSIFKIKLAFLVSKKQIRKSFKRNKIKRLMRRSYQFNTNQITLK-PKIYYIIFIYL 117
+                    5899******************************975..456678**************************************7.689******** PP
+
+    SMOLIH_rnpA 104 kkkitnsyeitkcfehviiki 124
+                    k+ki   yei kcfe+vi ki
+  SMMEETHA_5543 118 KQKIHKFYEINKCFENVINKI 138
+                    ******************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (127 nodes)
+Target sequences:                       8320  (218141 residues searched)
+Passed MSV filter:                       449  (0.0539663); expected 166.4 (0.02)
+Passed bias filter:                      100  (0.0120192); expected 166.4 (0.02)
+Passed Vit filter:                         9  (0.00108173); expected 8.3 (0.001)
+Passed Fwd filter:                         1  (0.000120192); expected 0.1 (1e-05)
+Initial search space (Z):               8320  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 4375.39
+//
+[ok]

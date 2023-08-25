@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxAI_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMAKOQUE/SMAKOQUE_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/xxxAI/xxxAI_SMAKOQUE.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxAI_prot  [M=224]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.5e-56  189.6  13.5    3.9e-56  189.5  13.5    1.0  1  SMAKOQUE_1692  [61163 - 61678] 
+    4.6e-13   48.6   2.5    4.6e-13   48.6   2.5    2.0  2  SMAKOQUE_1680  [60839 - 61159] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMAKOQUE_1692  [61163 - 61678] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  189.5  13.5   7.5e-60   3.9e-56      58     223 ..       3     170 ..       1     171 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 189.5 bits;  conditional E-value: 7.5e-60
+     xxxAI_prot  58 kklyikkikinlt....tlllvlegiekpgnlgailrtaeaagidavllcnntidifnpnvirsslgavftnnitidnseniilwlkkkkikiist 149
+                    k  +i++i i+++     l+l+le +ekpgn+gailrta a+g d v++c+++id++npn++rsslg+vf nni+i n++ ii+wlkk++iki +t
+  SMAKOQUE_1692   3 KEKKINNISISISpsyfPLILILENLEKPGNIGAILRTAAAVGADVVFICDENIDLYNPNIVRSSLGSVFNNNIVISNTKSIISWLKKNQIKIFTT 98 
+                    555677777776532224789*************************************************************************** PP
+
+     xxxAI_prot 150 svknnikniknlynlklekkslaivigaeskglsenwfkssniiihiplkgk.idslnvststaiilfeiirqny 223
+                    sv +  +    lyn+++++  la+vig e kgls+ wfk++  ii+ip+k k idslnvs +taiilfei rq++
+  SMAKOQUE_1692  99 SVSEYANL---LYNINFKNIPLALVIGQEKKGLSKVWFKEAYDIIKIPIKNKyIDSLNVSNATAIILFEIYRQKV 170
+                    **976654...5677788899*****************************9989*******************86 PP
+
+>> SMAKOQUE_1680  [60839 - 61159] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.9   3.0    0.0041        21     140     170 ..       4      32 ..       2      46 .. 0.72
+   2 !   48.6   2.5     9e-17   4.6e-13       1      55 [.      49     107 .]      49     107 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 3.9 bits;  conditional E-value: 0.0041
+     xxxAI_prot 140 kkkkikiistsvknnikniknlynlklekks 170
+                    kkk  ++i +s+knn   ik +y+lk +kk 
+  SMAKOQUE_1680   4 KKKTYQMIISSIKNNL--IKFIYKLKTKKKD 32 
+                    6777788888999885..6667777777664 PP
+
+  == domain 2  score: 48.6 bits;  conditional E-value: 9e-17
+     xxxAI_prot   1 malkanyipeyillykkiykyefisnffikkf....lisyqiykkisfrkktggilasf 55 
+                    +al+an++p+y+l+ k i++++f+ nff + f    li   i++ki++rkktggila f
+  SMAKOQUE_1680  49 LALNANFVPKYVLVCKDICNWKFLENFFSQSFkniiLIKKLIFQKIAYRKKTGGILAIF 107
+                    69*************************9987655558999****************977 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (224 nodes)
+Target sequences:                      10271  (263434 residues searched)
+Passed MSV filter:                       443  (0.0431311); expected 205.4 (0.02)
+Passed bias filter:                      107  (0.0104177); expected 205.4 (0.02)
+Passed Vit filter:                         6  (0.000584169); expected 10.3 (0.001)
+Passed Fwd filter:                         2  (0.000194723); expected 0.1 (1e-05)
+Initial search space (Z):              10271  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 10389.00
+//
+[ok]

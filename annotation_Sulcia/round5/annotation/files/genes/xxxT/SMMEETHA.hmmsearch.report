@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMMEETHA/SMMEETHA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/xxxT/xxxT_SMMEETHA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxT_prot  [M=121]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    8.5e-17   60.3  14.9    6.1e-11   41.4   3.1    2.0  2  SMMEETHA_7218  [37760 - 37569] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMMEETHA_7218  [37760 - 37569] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.4   3.1   7.3e-15   6.1e-11       1      29 [.       2      30 ..       2      32 .. 0.92
+   2 !   26.3   4.5   3.6e-10     3e-06      63      99 ..      30      60 ..      27      64 .] 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 41.4 bits;  conditional E-value: 7.3e-15
+      xxxT_prot  1 mslkitekcincgaceaecpnkaiyegsk 29
+                   m lkit++ci+cgace ecpnkaiye   
+  SMMEETHA_7218  2 MGLKITNECIKCGACELECPNKAIYEDES 30
+                   89************************865 PP
+
+  == domain 2  score: 26.3 bits;  conditional E-value: 3.6e-10
+      xxxT_prot 63 dyyfivpekcteclgffdepqcasvcpvdccildekn 99
+                     yfiv+ekctec+g   +  c  vcp++c   +++n
+  SMMEETHA_7218 30 SRYFIVSEKCTECIG---N-PCVKVCPMNCI--NKRN 60
+                   569***********9...3.4********84..3344 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (121 nodes)
+Target sequences:                       8320  (218141 residues searched)
+Passed MSV filter:                       123  (0.0147837); expected 166.4 (0.02)
+Passed bias filter:                       63  (0.00757212); expected 166.4 (0.02)
+Passed Vit filter:                         2  (0.000240385); expected 8.3 (0.001)
+Passed Fwd filter:                         1  (0.000120192); expected 0.1 (1e-05)
+Initial search space (Z):               8320  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 4404.61
+//
+[ok]
