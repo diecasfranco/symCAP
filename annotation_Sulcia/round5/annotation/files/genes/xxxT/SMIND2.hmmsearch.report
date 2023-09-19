@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMIND2/SMIND2_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/xxxT/xxxT_SMIND2.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxT_prot  [M=121]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    2.9e-24   84.3  14.9    7.1e-14   50.8   4.5    2.0  2  SMIND2_6710  [32403 - 32200] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMIND2_6710  [32403 - 32200] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.6   2.6   3.2e-15   2.4e-11       1      29 [.       2      31 ..       2      34 .. 0.89
+   2 !   50.8   4.5   9.3e-18   7.1e-14      58      94 ..      28      64 ..      27      68 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 42.6 bits;  conditional E-value: 3.2e-15
+    xxxT_prot  1 mslkitekcincgaceaecpnkaiye.gsk 29
+                 m+++it++cincgace ecpn+aiye gsk
+  SMIND2_6710  2 MAFQITNECINCGACELECPNNAIYEdGSK 31
+                 8899*********************94566 PP
+
+  == domain 2  score: 50.8 bits;  conditional E-value: 9.3e-18
+    xxxT_prot 58 epkkydyyfivpekcteclgffdepqcasvcpvdcci 94
+                 +  k + yfivpekctec+g +++pqc +vcpv+c  
+  SMIND2_6710 28 DGSKENRYFIVPEKCTECIGKYENPQCVAVCPVNCIK 64
+                 5679999***************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (121 nodes)
+Target sequences:                       7607  (202388 residues searched)
+Passed MSV filter:                       105  (0.0138031); expected 152.1 (0.02)
+Passed bias filter:                       61  (0.00801893); expected 152.1 (0.02)
+Passed Vit filter:                         2  (0.000262916); expected 7.6 (0.001)
+Passed Fwd filter:                         1  (0.000131458); expected 0.1 (1e-05)
+Initial search space (Z):               7607  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 4158.49
+//
+[ok]

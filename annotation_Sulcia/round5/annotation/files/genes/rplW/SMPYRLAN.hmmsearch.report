@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplW_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMPYRLAN/SMPYRLAN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/rplW/rplW_SMPYRLAN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplW_prot  [M=175]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.7e-20   72.1  21.8    2.7e-20   72.1  21.8    1.8  2  SMPYRLAN_3417  [130420 - 130746] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPYRLAN_3417  [130420 - 130746] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   2.2      0.06   5.1e+02      34      57 ..      13      24 ..       2      41 .. 0.36
+   2 !   72.1  21.8   3.1e-24   2.7e-20       6      78 ..      33     106 ..      29     109 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.06
+      rplW_prot 34 liykiyninfkniktmiyckrtlk 57
+                   l yk y            + ++l 
+  SMPYRLAN_3417 13 LFYKEY------------INKNLS 24
+                   222221............111111 PP
+
+  == domain 2  score: 72.1 bits;  conditional E-value: 3.1e-24
+      rplW_prot   6 kkkfsnkkldpfltfkvPlfynkkeikkliykiyninfkniktmiyckrtlkkrkkgvlfkkvilklkkdy.kl 78 
+                    +k ++    ++++tf +P+++nkkei+k+++++y+i +++++t+iy+k++ +kr+++++f ++  k+kk++ k+
+  SMPYRLAN_3417  33 EKAIFTNISNNYYTFIFPIYFNKKEISKYLQRVYRIKITKLHTNIYYKKKSNKRILKKTFSGKNRKFKKAFfKV 106
+                    577888889************************************************************97255 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (175 nodes)
+Target sequences:                       8587  (226697 residues searched)
+Passed MSV filter:                       819  (0.0953767); expected 171.7 (0.02)
+Passed bias filter:                      118  (0.0137417); expected 171.7 (0.02)
+Passed Vit filter:                         7  (0.000815186); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116455); expected 0.1 (1e-05)
+Initial search space (Z):               8587  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.00
+# Mc/sec: 4732.93
+//
+[ok]

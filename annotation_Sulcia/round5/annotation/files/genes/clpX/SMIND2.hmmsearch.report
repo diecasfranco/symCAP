@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/clpX_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMIND2/SMIND2_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/clpX/clpX_SMIND2.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       clpX_prot  [M=343]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+   2.3e-154  512.3  26.2   2.3e-154  512.3  26.2    1.4  2  SMIND2_6156  [56381 - 55161] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMIND2_6156  [56381 - 55161] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.1     0.096   7.3e+02     254     288 ..      25      60 ..      15      65 .. 0.67
+   2 !  512.3  26.2  3.1e-158  2.3e-154       6     342 ..      69     407 .]      62     407 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 0.096
+    clpX_prot 254 lekeslkrillepk.naiikqykklflldkinleft 288
+                  ++k+++ +il +++ +  i    k+f++ ki ++f 
+  SMIND2_6156  25 ISKKKIIKILQDYReYVCINCLIKIFFIYKIYFNFN 60 
+                  566677777777641455777777777777777764 PP
+
+  == domain 2  score: 512.3 bits;  conditional E-value: 3.1e-158
+    clpX_prot   6 kmktktpreiknfldkyviGqedakkiisvavynhykrii..eakveieksnvlligdtgtgktllakslskflnvpfaivdatslteagyvgedves 101
+                  ++   tp++ik++ldky++Gqe+akkiisv++ynhykr+i  e+k+ei+ksn+l+ig+tgtgktl+aksls+fln+p+aivdatslteagyvg+dves
+  SMIND2_6156  69 TKLFFTPKNIKYYLDKYIVGQEEAKKIISVSIYNHYKRLIlhEKKIEINKSNILIIGNTGTGKTLFAKSLSRFLNLPLAIVDATSLTEAGYVGDDVES 166
+                  333569********************************87446789**************************************************** PP
+
+    clpX_prot 102 iltkllqsanynislaekgivfideidkiskkn.dntsltrdvsgegvqqallkilegsivnvppfvgrkhpeqklikintknilfiagGafdGlkni 198
+                  il  llq+any+++laekgi+fideidkiskkn +n+s+trdvsgegvqqallkilegs vn+++++grkhpe+++++intknilf++gG+f+Gl++i
+  SMIND2_6156 167 ILAILLQKANYDLNLAEKGIIFIDEIDKISKKNiNNPSITRDVSGEGVQQALLKILEGSHVNISTQIGRKHPEKQIVSINTKNILFLSGGTFAGLEQI 264
+                  *******************************985899************************************************************* PP
+
+    clpX_prot 199 isnrlnlstiGfkknlskkinekdllkfvesedlkkfglipeliGrlpiisnlkslekeslkrillepknaiikqykklflldkinleftdsaidliv 296
+                  i+nrln+++iGf+++  ++ + k +++ ++sedl++fglipeliGr+pii++l++++k+++k+il++pkn+i+kqyk++f++dk+++ ft++ai+ i+
+  SMIND2_6156 265 IYNRLNFYQIGFQNK--RQTKTKYIFNNLKSEDLINFGLIPELIGRFPIICHLHNFTKKEYKQILFSPKNSILKQYKNMFKFDKMDFIFTKNAINSII 360
+                  ************987..5667899************************************************************************** PP
+
+    clpX_prot 297 ekaiklslGarGlkticekilkdylfnidkikesli.idkfdikkki 342
+                  +ka+kl++GarGl +iceki+++y+f ++ +k++ i i+k+ ikk+i
+  SMIND2_6156 361 KKAMKLNIGARGLYYICEKIFNKYTFYLEGLKHKTIkITKKVIKKMI 407
+                  ********************************998868999999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                       7607  (202388 residues searched)
+Passed MSV filter:                       103  (0.0135402); expected 152.1 (0.02)
+Passed bias filter:                       28  (0.00368082); expected 152.1 (0.02)
+Passed Vit filter:                         1  (0.000131458); expected 7.6 (0.001)
+Passed Fwd filter:                         1  (0.000131458); expected 0.1 (1e-05)
+Initial search space (Z):               7607  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 4651.23
+//
+[ok]

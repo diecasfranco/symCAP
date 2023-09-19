@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/tsaD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round9//annotation/files/genomes/VFOECSP1/VFOECSP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round9//annotation/files/genes/tsaD/tsaD_VFOECSP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFMEEALB_tsaD  [M=265]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence               Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------               -----------
+    1.3e-55  181.7  47.0    1.3e-55  181.7  47.0    1.4  2  OECSP1_000000207212_43  [41011 - 40064] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> OECSP1_000000207212_43  [41011 - 40064] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.2      0.18        26     166     173 ..      19      26 ..       9      45 .. 0.51
+   2 !  181.7  47.0     9e-58   1.3e-55       5     263 ..      53     313 ..      48     315 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 0.18
+           VFMEEALB_tsaD 166 kkffnnnk 173
+                             kk +n nk
+  OECSP1_000000207212_43  19 KKKINKNK 26 
+                             22222222 PP
+
+  == domain 2  score: 181.7 bits;  conditional E-value: 9e-58
+           VFMEEALB_tsaD   5 knikniklfykkvskkiikktsvisytykpglvnslniskyisigiskkfnipilkvnhikghifssffmkkiifpfisliisggnt 91 
+                              +i +ik +   +  ki+ k  vi  tykpgl nsln   y+sigis    ip++ +nhik+hi+s+f+ +k+ifpfisliisgg+ 
+  OECSP1_000000207212_43  53 SHINSIKKYLLFIPNKILNKIDVICCTYKPGLKNSLNTGIYFSIGISYSKYIPLIYINHIKAHIYSTFIYRKLIFPFISLIISGGSN 139
+                             678999999999*************************************9************************************* PP
+
+           VFMEEALB_tsaD  92 ffikvnciynykiidktvdisigdfidrifymigekeikdkiiykkykigklyvknikfkitktinf..sgilsyfkkffnnnknnk 176
+                             ++i +  iy+yk++ k+ di++gdf+dri y+++ k    k i   y ++k + kni +   k inf  sg++sy+k+++   k  k
+  OECSP1_000000207212_43 140 LIIYIKNIYSYKVLCKSNDITLGDFLDRIAYLFNYKYPGSKYIVNNY-LSKRFNKNIFLPKLKCINFsfSGLFSYIKRIYIKYKFKK 225
+                             *********************************************99.7899******999999996337***************** PP
+
+           VFMEEALB_tsaD 177 fikekicyilveyiifflfkkikeilknygrniinicggvienkliryllkkkllkekiiinfskpnfckdnalmiayftflkf.fy 262
+                             +ike+icy lv  ii +l  kik +l+ y +n i i ggvi+n ++r llk  l k  i + +    fc dna+mia++ +l + fy
+  OECSP1_000000207212_43 226 YIKEEICYSLVNLIIKLLTDKIKFFLRKYKKNSIYIGGGVIKNDIFRILLKDNLNKLNIKVYYPYKKFCTDNAFMIAFLCYLIIcFY 312
+                             *******************************************************************************99864377 PP
+
+           VFMEEALB_tsaD 263 k 263
+                             k
+  OECSP1_000000207212_43 313 K 313
+                             7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (265 nodes)
+Target sequences:                        142  (36539 residues searched)
+Passed MSV filter:                        92  (0.647887); expected 2.8 (0.02)
+Passed bias filter:                        2  (0.0140845); expected 2.8 (0.02)
+Passed Vit filter:                         2  (0.0140845); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00704225); expected 0.0 (1e-05)
+Initial search space (Z):                142  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1762.29
+//
+[ok]

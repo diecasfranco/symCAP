@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/grpE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMVIZSP/SMVIZSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/grpE/grpE_SMVIZSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       grpE_prot  [M=192]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+      4e-75  250.7  39.6    4.7e-75  250.5  39.6    1.0  1  SMVIZSP_7267  [56445 - 55864] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMVIZSP_7267  [56445 - 55864] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  250.5  39.6   5.3e-79   4.7e-75      10     192 .]      13     194 .]       5     194 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 250.5 bits;  conditional E-value: 5.3e-79
+     grpE_prot  10 ilkqtkikniyldlikfyetknkkvkkkiiklfiqfesqkerklnvlnrkylkilaeienykkrkkkekkdviekanetllldllsvledfyrslke 106
+                    +   kik iyldlikfye+k +k kkki+klfi+f+s+k+rk+n+l    +k+lae+enykkrk+ke k+ iekan++llldlls++edf+rs+k+
+  SMVIZSP_7267  13 RMTIMKIKKIYLDLIKFYEKKHLKFKKKIMKLFIKFNSYKRRKINLL----IKTLAEVENYKKRKEKELKLEIEKANCNLLLDLLSFGEDFNRSFKD 105
+                   566789***************************************98....89*******************************************9 PP
+
+     grpE_prot 107 i...kkknnvpliqGiklikekfykllkkkGlkkiktkkGdkfntdlheaisivkskdkklkGkvldviedGyklknkilkyskvlvGn 192
+                       kkk+n  +++Gik+ik+kf++llkk+GlkkiktkkG+kfntd+h+a+si+k+kd+klkGkvl+vie+Gyklkn+i+k++kv+vGn
+  SMVIZSP_7267 106 KnkdKKKDNKTFYKGIKIIKNKFFNLLKKEGLKKIKTKKGEKFNTDVHQALSIQKTKDNKLKGKVLFVIESGYKLKNQIIKFTKVIVGN 194
+                   64447899********************************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (192 nodes)
+Target sequences:                       8900  (233751 residues searched)
+Passed MSV filter:                       266  (0.0298876); expected 178.0 (0.02)
+Passed bias filter:                       53  (0.00595506); expected 178.0 (0.02)
+Passed Vit filter:                         3  (0.000337079); expected 8.9 (0.001)
+Passed Fwd filter:                         1  (0.00011236); expected 0.1 (1e-05)
+Initial search space (Z):               8900  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8558.45
+//
+[ok]
