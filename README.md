@@ -1,4 +1,4 @@
-# symCAP symbiosis Custom Annotation Pipeline
+# symCAP Symbiosis Custom Annotation Pipeline
 Script used to annotate genomes from primary symbionts
 
 # Required software
