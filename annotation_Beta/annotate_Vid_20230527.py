@@ -683,16 +683,6 @@ if "B5" in Blocks_to_run:
 
 
 
-
-
-
-
-
-
-
-
-
-
 # Block 6. Print annotation summary for each gene
 #### Requires: Prot_seq_list from "Block5"
 
@@ -1070,18 +1060,6 @@ if "B15" in Blocks_to_run:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 #### Block 16. Outputs all functional proteins and RNAs from across the genomes, aligns them
 # Requires: genome_list
 # Requires: prot_seq_list, rRNA_gene_list, tRNA_gene_list
@@ -1219,24 +1197,7 @@ if "B16" in Blocks_to_run:
             
     print("######################## Block 16 executed successfully! ########################\n\n")            
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 #### Block 18. Combines "gene_lists", sorts the contents
 # Requires: genome_list
@@ -1304,14 +1265,6 @@ if "B18" in Blocks_to_run:
     
     
     print("######################## Block 18 executed successfully! ########################\n\n")
-
-
-
-
-
-
-
-
 
 
 
@@ -1537,12 +1490,6 @@ if "B19" in Blocks_to_run:
     print("######################## Block 19 executed successfully! ########################\n\n")
 
 
-
-
-
-
-
-
 #### Block 20. Exports annotations as GFF
 # Requires: all_genes_in_the_genome
 # Requires: genome_list
@@ -1701,6 +1648,3 @@ if "B21" in Blocks_to_run:
     
 
     print("\n######################## Block 21 executed successfully! ########################\n\n")
-
-
-
