@@ -16,17 +16,20 @@
     ### mafft
     ### Piotr's script "align_nucl_by_codon2.py"
 
+import datetime
+import time
+
+start_time = time.time()
 
 # ------- Parameters to be specified before each run ------- #
 
   ### Where output folders etc. will be created
-work_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round10"
+work_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/testTETHEX"
 
   ### Folder with genomes to annotate. Any fasta files in that dir will be regarded as genomes for annotation
-genomes_for_annotation_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/genomes/"
+genomes_for_annotation_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/genomes/test/"
 
   ### Folder containing alignments of all protein-coding genes to be annotated. File names: gene_prot.fasta
-#protein_ref_dir = "/Users/Piotr/Documents/01_Cicadas/Annotation/annotation_references/protein_alignments_allcics/"
 protein_ref_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/"
 
 
@@ -49,8 +52,6 @@ Translation_table = 11	### As defined by getorf / NCBI!
 #Blocks_to_run = ["B1", "B2", "B3", "B4", "B5", "B6", "B11", "B15", "B16", "B18", "B19", "B20", "B21"]
 Blocks_to_run = ["B1", "B2", "B3", "B4", "B5", "B6", "B11", "B12","B15", "B16", "B18", "B19", "B20", "B21"]
 #Blocks_to_run = ["B1", "B2", "B3", "B4", "B5", "B6", "B11", "B12","B15","B18", "B19", "B20", "B21"]
-
-
 
 
  # Block 1. List genomes, save genome names to genome_list
@@ -133,17 +134,10 @@ def ImportFasta(fasta_file):
    return(Seq_list)
 
 
-
-
-
 # ------- Specifying variables essential for further steps ------- #
 Prot_seq_list = []
 rRNA_gene_list = []
 tRNA_gene_list = []
-
-
-
-
 
 
 # Block 1. List genomes, save genome names to genome_list
@@ -165,8 +159,6 @@ if "B1" in Blocks_to_run:
     os.chdir(work_dir)
     
     print("######################## Block 1 executed successfully! ############################\n\n")
-
-
 
 
 # Block 2. For each genome in genome_list, do six-frame translation and export all ORFs to work_dir/genomes/GenomeX/GenomeX_orfs.fasta
@@ -228,8 +220,6 @@ if "B2" in Blocks_to_run:
             print("    from genome " + genome + " ORFs had been exported previously")
 
     print("######################## Block 2 executed successfully! ############################\n\n")
-
-
 
 
 # Block 3. Read protein list of Reference1, produce list of lists - Prot_seq_list - crucial for consecutive steps
@@ -755,12 +745,6 @@ if "B8" in Blocks_to_run:
     print("######################## Block 8 executed successfully! ########################\n\n")
 
 
-
-
-
-
-
-
 #### Block 11. Searches genomes for rRNA genes, generates list "rRNA_gene_list"
 # Requires: genome_list
 
@@ -1054,9 +1038,6 @@ if "B15" in Blocks_to_run:
 
 
     print("######################## Block 15 executed successfully! ########################\n\n")
-
-
-
 
 
 #### Block 16. Outputs all functional proteins and RNAs from across the genomes, aligns them
@@ -1594,10 +1575,6 @@ if "B20" in Blocks_to_run:
     print("\n######################## Block 20 executed successfully! ########################\n\n")
 
 
-
-
-
-
 #### Block 21. Checking whether in any of the genomes there are large chunks without annotation. If so, they are listed
 
 
@@ -1647,3 +1624,11 @@ if "B21" in Blocks_to_run:
     
 
     print("\n######################## Block 21 executed successfully! ########################\n\n")
+
+import datetime
+
+current_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+print("\nScript completed on:", current_date)
+end_time = time.time()
+elapsed_time = end_time - start_time
+print(f"The script took {elapsed_time} seconds to run.")
