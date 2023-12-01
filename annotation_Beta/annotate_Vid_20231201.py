@@ -1630,5 +1630,6 @@ import datetime
 current_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 print("\nScript completed on:", current_date)
 end_time = time.time()
+elapsed_time_seconds = end_time - start_time
 elapsed_time_minutes = elapsed_time_seconds / 60
 print(f"The script took {elapsed_time_seconds} seconds ({elapsed_time_minutes} minutes) to run.")
