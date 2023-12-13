@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/infA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMPARSP3/SMPARSP3_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/infA/infA_SMPARSP3.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       infA_prot  [M=71]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    4.9e-12   44.4   4.4    5.4e-06   25.1   0.0    2.8  3  SMPARSP3_3833  [139703 - 139885] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPARSP3_3833  [139703 - 139885] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.2     0.058     5e+02       1       8 [.      10      17 ..      10      21 .. 0.76
+   2 !   25.1   0.0   6.2e-10   5.4e-06       1      25 [.      22      46 ..      22      47 .. 0.97
+   3 !   24.9   2.0   7.2e-10   6.2e-06      54      71 .]      44      61 .]      43      61 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.058
+      infA_prot  1 makekhle 8 
+                   m+kek++ 
+  SMPARSP3_3833 10 MTKEKYMT 17
+                   88999885 PP
+
+  == domain 2  score: 25.1 bits;  conditional E-value: 6.2e-10
+      infA_prot  1 makekhleidGivlkalPnamfkve 25
+                   m+kek ++  Giv +alPna++kv+
+  SMPARSP3_3833 22 MTKEKSMKSKGIVKQALPNATLKVQ 46
+                   9***********************8 PP
+
+  == domain 3  score: 24.9 bits;  conditional E-value: 7.2e-10
+      infA_prot 54 rlqmsyydlskarivyry 71
+                   ++q+syydl+kari+yry
+  SMPARSP3_3833 44 KVQFSYYDLTKARIIYRY 61
+                   789**************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (71 nodes)
+Target sequences:                       8662  (229776 residues searched)
+Passed MSV filter:                       122  (0.0140845); expected 173.2 (0.02)
+Passed bias filter:                       52  (0.00600323); expected 173.2 (0.02)
+Passed Vit filter:                         4  (0.000461787); expected 8.7 (0.001)
+Passed Fwd filter:                         1  (0.000115447); expected 0.1 (1e-05)
+Initial search space (Z):               8662  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5159.95
+//
+[ok]

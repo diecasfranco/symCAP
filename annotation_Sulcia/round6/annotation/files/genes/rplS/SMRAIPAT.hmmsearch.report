@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMRAIPAT/SMRAIPAT_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/rplS/rplS_SMRAIPAT.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplS_prot  [M=116]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.8e-42  141.7  12.9    3.8e-42  141.7  12.9    1.4  2  SMRAIPAT_6973  [32353 - 31934] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMRAIPAT_6973  [32353 - 31934] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.2      0.34   2.6e+03     109     109 ..      18      18 ..       5      30 .. 0.48
+   2 !  141.7  12.9   4.8e-46   3.8e-42       1     110 [.      33     138 ..      33     140 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 0.34
+      rplS_prot 109 i 109
+                     
+  SMRAIPAT_6973  18 T 18 
+                    1 PP
+
+  == domain 2  score: 141.7 bits;  conditional E-value: 4.8e-46
+      rplS_prot   1 mnniknyvdnkynpnkldllklnsGdqitvyyeiieGekkrlqsfkGviikikgnytftvrkisGeiGvekifsinqpsikkidinkkgkvrkski 96 
+                    m+ni++y++ ky+++      + +Gd+++v yei+eG+k+r+qsfkG+iik++gn+tft+rk sG+iGve+if in+p ikki+i+ +gkvr+ski
+  SMRAIPAT_6973  33 MKNINEYLSGKYKTK-AA---FKAGDTVNVDYEIKEGDKNRIQSFKGIIIKKQGNSTFTIRKFSGTIGVERIFPINSPIIKKIKIILSGKVRRSKI 124
+                    99********99764.43...569************************************************************************ PP
+
+      rplS_prot  97 yyfrklkgkkakik 110
+                    yyfr+l+gk+akik
+  SMRAIPAT_6973 125 YYFRNLRGKQAKIK 138
+                    *************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (116 nodes)
+Target sequences:                       7851  (209270 residues searched)
+Passed MSV filter:                       215  (0.027385); expected 157.0 (0.02)
+Passed bias filter:                       64  (0.00815183); expected 157.0 (0.02)
+Passed Vit filter:                         2  (0.000254745); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000127372); expected 0.1 (1e-05)
+Initial search space (Z):               7851  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7552.14
+//
+[ok]

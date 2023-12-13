@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplW_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMTETIMP/SMTETIMP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/rplW/rplW_SMTETIMP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplW_prot  [M=175]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      3e-17   62.2  23.8      3e-17   62.2  23.8    2.0  2  SMTETIMP_3491  [123938 - 124315] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMTETIMP_3491  [123938 - 124315] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   4.2     0.094   7.7e+02      24      48 ..      16      42 ..       1      54 [. 0.49
+   2 !   62.2  23.8   3.6e-21     3e-17       6      80 ..      46     121 ..      41     125 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 0.094
+      rplW_prot 24 lfynkkeikkliykiy.ninf.knikt 48
+                   lf  ++++k l yk y n nf k+ik 
+  SMTETIMP_3491 16 LFSQQRNLKSLFYKEYiNQNFsKKIKP 42
+                   444555555555555433444223443 PP
+
+  == domain 2  score: 62.2 bits;  conditional E-value: 3.6e-21
+      rplW_prot   6 kkkfsnkkldpfltfkvPlfynkkeikkliykiyninfkniktmiyckrtlkkrkkgvlfkkvilklkkdy.klki 80 
+                    +k ++    ++++tf +P+ +nkkei+k+++++y+i +++++t+iy+k++ kkr+ +++f  ++ k+kk++ ++k 
+  SMTETIMP_3491  46 EKAIFTNISNNYYTFIFPIDFNKKEISKYLQRVYRIKITKLHTNIYYKKNSKKRIFKKTFSVKKRKFKKAFfQVKY 121
+                    577888889************************************************************9725565 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (175 nodes)
+Target sequences:                       8212  (214836 residues searched)
+Passed MSV filter:                       675  (0.0821968); expected 164.2 (0.02)
+Passed bias filter:                      105  (0.0127862); expected 164.2 (0.02)
+Passed Vit filter:                         4  (0.000487092); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000121773); expected 0.1 (1e-05)
+Initial search space (Z):               8212  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6685.49
+//
+[ok]

@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMSCOSUL/SMSCOSUL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/xxxT/xxxT_SMSCOSUL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxT_prot  [M=121]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.1e-21   76.1  16.4    3.5e-12   45.3   3.7    2.1  2  SMSCOSUL_6963  [32320 - 32081] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMSCOSUL_6963  [32320 - 32081] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.6   4.5   5.3e-14   4.2e-10       3      28 ..      13      38 ..      12      41 .. 0.91
+   2 !   45.3   3.7   4.5e-16   3.5e-12      61      95 ..      38      71 ..      37      80 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 38.6 bits;  conditional E-value: 5.3e-14
+      xxxT_prot  3 lkitekcincgaceaecpnkaiyegs 28
+                    kit++cincgace ecpn+aiye +
+  SMSCOSUL_6963 13 YKITNECINCGACELECPNNAIYESK 38
+                   59**********************75 PP
+
+  == domain 2  score: 45.3 bits;  conditional E-value: 4.5e-16
+      xxxT_prot 61 kydyyfivpekcteclgffdepqcasvcpvdccil 95
+                   k + yfivpekctec+g  ++pqc +vcpv+c   
+  SMSCOSUL_6963 38 KDNRYFIVPEKCTECIGKSEKPQCVAVCPVNCI-K 71
+                   6788***************************85.3 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (121 nodes)
+Target sequences:                       7859  (208608 residues searched)
+Passed MSV filter:                        96  (0.0122153); expected 157.2 (0.02)
+Passed bias filter:                       62  (0.00788904); expected 157.2 (0.02)
+Passed Vit filter:                         2  (0.000254485); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000127243); expected 0.1 (1e-05)
+Initial search space (Z):               7859  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5564.43
+//
+[ok]

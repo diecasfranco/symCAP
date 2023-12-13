@@ -17,12 +17,15 @@
     ### Piotr's script "align_nucl_by_codon2.py"
 
 
+import datetime
+import time
 
+start_time = time.time()
 
 # ------- Parameters to be specified before each run ------- #
 
   ### Where output folders etc. will be created
-work_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5"
+work_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6"
 
   ### Folder with genomes to annotate. Any fasta files in that dir will be regarded as genomes for annotation
 genomes_for_annotation_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/"
@@ -1228,21 +1231,6 @@ if "B16" in Blocks_to_run:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### Block 18. Combines "gene_lists", sorts the contents
 # Requires: genome_list
 # Requires: Prot_seq_list, rRNA_gene_list, tRNA_gene_list
@@ -1309,13 +1297,6 @@ if "B18" in Blocks_to_run:
     
     
     print("######################## Block 18 executed successfully! ########################\n\n")
-
-
-
-
-
-
-
 
 
 
@@ -1707,5 +1688,12 @@ if "B21" in Blocks_to_run:
 
     print("\n######################## Block 21 executed successfully! ########################\n\n")
 
+import datetime
 
+current_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+print("\nScript completed on:", current_date)
+end_time = time.time()
+elapsed_time_seconds = end_time - start_time
+elapsed_time_minutes = elapsed_time_seconds / 60
+print(f"The script took {elapsed_time_seconds} seconds ({elapsed_time_minutes} minutes) to run.")
 

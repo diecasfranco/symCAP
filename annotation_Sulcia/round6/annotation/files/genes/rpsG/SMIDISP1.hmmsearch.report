@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpsG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMIDISP1/SMIDISP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/rpsG/rpsG_SMIDISP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsG_prot  [M=158]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.5e-69  231.9  25.6    4.5e-46  155.6  12.0    2.0  2  SMIDISP1_3475  [128410 - 128934] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMIDISP1_3475  [128410 - 128934] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.7   8.5   5.9e-27   5.1e-23       1      60 [.       3      62 ..       3      69 .. 0.89
+   2 !  155.6  12.0   5.2e-50   4.5e-46      51     158 .]      68     175 .]      61     175 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 80.7 bits;  conditional E-value: 5.9e-27
+      rpsG_prot  1 mrklkskkkiyqpdpkfketlvtrfvnhlmkngkktlaykifyksideiekkkdkkkksg 60
+                   mrklk+kk iy+pd+kfke+lvt fvnhlmk+gkk+lay+ify++ide+e+  +kkk + 
+  SMIDISP1_3475  3 MRKLKTKKIIYEPDQKFKEPLVTIFVNHLMKHGKKKLAYRIFYNFIDELENIYNKKKNNN 62
+                   9************************************************97766665543 PP
+
+  == domain 2  score: 155.6 bits;  conditional E-value: 5.2e-50
+      rpsG_prot  51 kkkdkkkksgleiwkkalknvmphvevrsrriggsniqiptqikpyvkvtkalkllincarerneksmykklaeeilsaskkegaafkkrenihkl 146
+                    ++++kk+k+g++iwkkal+nv+p+v+++srrigg++i++p+ +++++++tka+klli++++er+ek+m+ kla e+l+a+ keg+a+kk++n+hkl
+  SMIDISP1_3475  68 NNNKKKNKKGITIWKKALENVTPQVDIKSRRIGGTKINVPILLPKHLQLTKAIKLLIKSSKERKEKAMSNKLAVETLAAYYKEGRAIKKKDNMHKL 163
+                    334567789*************************************************************************************** PP
+
+      rpsG_prot 147 aeankafshlkf 158
+                    ae+nkafsh+kf
+  SMIDISP1_3475 164 AESNKAFSHIKF 175
+                    ***********9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (158 nodes)
+Target sequences:                       8590  (231880 residues searched)
+Passed MSV filter:                       145  (0.0168801); expected 171.8 (0.02)
+Passed bias filter:                       37  (0.00430733); expected 171.8 (0.02)
+Passed Vit filter:                         1  (0.000116414); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116414); expected 0.1 (1e-05)
+Initial search space (Z):               8590  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6301.22
+//
+[ok]

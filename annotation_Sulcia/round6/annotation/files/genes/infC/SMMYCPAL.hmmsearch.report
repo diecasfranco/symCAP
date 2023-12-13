@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/infC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMMYCPAL/SMMYCPAL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/infC/infC_SMMYCPAL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       infC_prot  [M=178]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.2e-67  224.4  21.6    3.2e-67  224.4  21.6    1.4  2  SMMYCPAL_6518  [49886 - 49254] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMMYCPAL_6518  [49886 - 49254] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  224.4  21.6   4.1e-71   3.2e-67       2     176 ..      14     188 ..      12     190 .. 0.98
+   2 ?   -5.9   3.5         1   7.9e+03      81      89 ..     198     204 ..     192     210 .. 0.34
+
+  Alignments for each domain:
+  == domain 1  score: 224.4 bits;  conditional E-value: 4.1e-71
+      infC_prot   2 kkknakrkkkkresykinkkikatklrlvGenietgiyslkealkiasnlgldlveinsktdppicrildykkflyeqkkktkkykqekiltkeir 97 
+                    k+++ k++ +k+++y in++i+++ +rlvG+ni+ ++y lk+alkia++l+ldlvein+k +p+ic+ ++++kfly++kk++ k+kq+ iltkeir
+  SMMYCPAL_6518  14 KNQKLKNRINKEIKYPINSEIRSKVVRLVGKNINPKVYPLKQALKIAKDLSLDLVEINTKVTPTICKAMNFRKFLYNLKKRKTKSKQNVILTKEIR 109
+                    677889999*************************************************************************************** PP
+
+      infC_prot  98 ltsqicehdllfkikhaekflkskekvkftiffkGrsiihkekGkilllkcasslekfgkiekipimeGkkmfiilspk 176
+                    ltsq++ hdl+fki++a++ lks +kvkf+iffkGrsi  k+ G+++llkc++ l++ +k+e  p+me kkmfi+l pk
+  SMMYCPAL_6518 110 LTSQTNIHDLSFKIEKAKNILKSNKKVKFSIFFKGRSIFYKDLGEKMLLKCMELLSNITKVEIPPRMEEKKMFIVLIPK 188
+                    ******************************************************************************9 PP
+
+  == domain 2  score: -5.9 bits;  conditional E-value: 1
+      infC_prot  81 kktkkykqe 89 
+                    kk+   k+e
+  SMMYCPAL_6518 198 KKE--IKKE 204
+                    221..1111 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (178 nodes)
+Target sequences:                       7891  (207504 residues searched)
+Passed MSV filter:                       200  (0.0253453); expected 157.8 (0.02)
+Passed bias filter:                       51  (0.00646306); expected 157.8 (0.02)
+Passed Vit filter:                         1  (0.000126727); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126727); expected 0.1 (1e-05)
+Initial search space (Z):               7891  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9482.13
+//
+[ok]

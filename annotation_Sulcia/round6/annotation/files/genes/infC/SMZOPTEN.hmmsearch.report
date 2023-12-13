@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/infC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMZOPTEN/SMZOPTEN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/infC/infC_SMZOPTEN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       infC_prot  [M=178]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    6.1e-66  220.2  20.7    6.1e-66  220.2  20.7    1.5  2  SMZOPTEN_6533  [49501 - 48869] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMZOPTEN_6533  [49501 - 48869] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  220.2  20.7   7.8e-70   6.1e-66       2     176 ..      14     188 ..      11     190 .. 0.98
+   2 ?   -5.9   3.5         1   7.9e+03      81      89 ..     198     204 ..     192     210 .. 0.34
+
+  Alignments for each domain:
+  == domain 1  score: 220.2 bits;  conditional E-value: 7.8e-70
+      infC_prot   2 kkknakrkkkkresykinkkikatklrlvGenietgiyslkealkiasnlgldlveinsktdppicrildykkflyeqkkktkkykqekiltkeir 97 
+                    k+++ k+  +k+++y in++i+++ +rlvG+ni+ ++y lk+alkia++l+ldlvein+k +p+ic+ +++ kfly++kk ++k+kq+ iltkeir
+  SMZOPTEN_6533  14 KNQKLKNIINKEIKYPINSEIRSKVVRLVGKNINPKVYPLKQALKIAKDLSLDLVEINPKVTPTICKAMNFSKFLYNLKKSKNKSKQNVILTKEIR 109
+                    5667788899************************************************************************************** PP
+
+      infC_prot  98 ltsqicehdllfkikhaekflkskekvkftiffkGrsiihkekGkilllkcasslekfgkiekipimeGkkmfiilspk 176
+                    ltsq++ hdl+fki++a++ lks +kvkf iffkGrsi  k+ G+++llkc++ l++ +k+e  p+me kkmfi+l pk
+  SMZOPTEN_6533 110 LTSQTNIHDLSFKIEKAKNILKSNKKVKFYIFFKGRSIFYKDLGEKMLLKCMELLSNITKVEIPPRMEEKKMFIVLIPK 188
+                    ******************************************************************************9 PP
+
+  == domain 2  score: -5.9 bits;  conditional E-value: 1
+      infC_prot  81 kktkkykqe 89 
+                    kk+   k+e
+  SMZOPTEN_6533 198 KKE--IKKE 204
+                    221..1111 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (178 nodes)
+Target sequences:                       7883  (207887 residues searched)
+Passed MSV filter:                       182  (0.0230877); expected 157.7 (0.02)
+Passed bias filter:                       45  (0.00570849); expected 157.7 (0.02)
+Passed Vit filter:                         1  (0.000126855); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126855); expected 0.1 (1e-05)
+Initial search space (Z):               7883  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9691.62
+//
+[ok]

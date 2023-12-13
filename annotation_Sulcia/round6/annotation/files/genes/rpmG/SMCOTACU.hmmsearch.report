@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpmG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMCOTACU/SMCOTACU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/rpmG/rpmG_SMCOTACU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmG_prot  [M=60]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    7.7e-29   98.2   5.2    8.4e-29   98.1   4.3    1.5  2  SMCOTACU_5817  [83518 - 83279] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMCOTACU_5817  [83518 - 83279] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0      0.21   1.7e+03      43      52 ..       4      13 ..       3      18 .. 0.80
+   2 !   98.1   4.3     1e-32   8.4e-29       4      59 ..      25      80 .]      20      80 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 0.21
+      rpmG_prot 43 LkkfnpiLnR 52
+                   L+ f p++n 
+  SMCOTACU_5817  4 LRTFPPMINQ 13
+                   7889999996 PP
+
+  == domain 2  score: 98.1 bits;  conditional E-value: 1e-32
+      rpmG_prot  4 kkiRiqviieCtehknsglyGtsRYittknkknnperLeLkkfnpiLnRktlhkei 59
+                   k+ Riq+i+eC+e+k+ g++G+sRY+ttkn+ n+p++L+L+kfnp+L R+tlhkei
+  SMCOTACU_5817 25 KRNRIQIILECLEQKKIGIHGISRYFTTKNRLNTPRKLNLRKFNPFLKRVTLHKEI 80
+                   456****************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (60 nodes)
+Target sequences:                       8230  (217472 residues searched)
+Passed MSV filter:                       212  (0.0257594); expected 164.6 (0.02)
+Passed bias filter:                       84  (0.0102066); expected 164.6 (0.02)
+Passed Vit filter:                         2  (0.000243013); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000121507); expected 0.1 (1e-05)
+Initial search space (Z):               8230  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 2964.09
+//
+[ok]
