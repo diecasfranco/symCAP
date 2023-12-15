@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/erpA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genomes/VFOLIH/VFOLIH_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genes/erpA/erpA_VFOLIH.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       erpA_prot  [M=107]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.8e-41  138.7  30.4    3.8e-41  138.7  30.4    2.0  2  VFOLIH_6683  [16302 - 15901] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOLIH_6683  [16302 - 15901] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.8   7.5      0.02   1.4e+02      39      69 ..       7      38 ..       1      40 [. 0.71
+   2 !  138.7  30.4   5.4e-45   3.8e-41       1     107 []      35     133 ..      35     133 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 1.8 bits;  conditional E-value: 0.02
+    erpA_prot 39 kylfy.kkkkikpndflilkikksilidilsi 69
+                  ++f  kkk  k n f  +k+kk+i+ ++ +i
+  VFOLIH_6683  7 EFNFRlKKKWKKKNWFCKIKKKKTIFQEMNYI 38
+                 56775155556788999********9987554 PP
+
+  == domain 2  score: 138.7 bits;  conditional E-value: 5.4e-45
+    erpA_prot   1 mfiiiiskeiiknlillkfkkkkkilrlylkneGcknikylfykkkkikpndflilkikksilidilsikylyqiklklkkesfgykleiknliikkk 98 
+                  m++i+isk   knl+ll++++kkkil++y++++Gc++iky+fykkk+i     ++l+i+k+i++dils++y+y++klk+kke+fgyk+eikn+iikkk
+  VFOLIH_6683  35 MNYIYISK---KNLMLLSNLLKKKILFIYVSGQGCMGIKYNFYKKKNI-----IGLRINKNIYTDILSFFYIYNSKLKIKKENFGYKFEIKNNIIKKK 124
+                  99****98...8**********************************98.....99******************************************* PP
+
+    erpA_prot  99 ckcrisfki 107
+                  ckc+isfki
+  VFOLIH_6683 125 CKCGISFKI 133
+                  ********8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (107 nodes)
+Target sequences:                       7125  (211212 residues searched)
+Passed MSV filter:                      1547  (0.217123); expected 142.5 (0.02)
+Passed bias filter:                      134  (0.018807); expected 142.5 (0.02)
+Passed Vit filter:                         8  (0.00112281); expected 7.1 (0.001)
+Passed Fwd filter:                         1  (0.000140351); expected 0.1 (1e-05)
+Initial search space (Z):               7125  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3066.51
+//
+[ok]

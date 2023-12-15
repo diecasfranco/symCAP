@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/gltX_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genomes/VFCALBON1/VFCALBON1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genes/gltX/gltX_VFCALBON1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gltX_prot  [M=403]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    1.9e-11   42.3   5.2    1.9e-11   42.3   5.2    2.9  2  VFCALBON1_4904  [40484 - 39162] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALBON1_4904  [40484 - 39162] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.3   5.2   3.2e-15   1.9e-11       4     100 ..      26     121 ..      23     165 .. 0.72
+   2 ?   -7.5  11.1         1   5.8e+03     238     294 ..     307     362 ..     167     419 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 42.3 bits;  conditional E-value: 3.2e-15
+       gltX_prot   4 iitRFAPsPsGslHiGNlksvliswvfskkkkgkfilRidntnkkkskkkylkkilkllkllkinyneiffQskRkriYikyAll.LilkkkAyf 97 
+                     i tRFAP+PsG lH+G lk   i    s + kg+f +Ridn+n    +  y ++i k ++++    n i++ s  + +Yi + ++  il    y+
+  VFCALBON1_4904  26 IRTRFAPEPSGCLHLGHLKCLYINKYVSDNFKGIFHIRIDNSNPLSYSYGYELSIRKDVSFFF--DNIIYTRSSDYFFYIYFFVKrFILYGLFYI 118
+                     559******************999999******************************999984..356677777777777654431344444444 PP
+
+       gltX_prot  98 kng 100
+                     +++
+  VFCALBON1_4904 119 DSQ 121
+                     444 PP
+
+  == domain 2  score: -7.5 bits;  conditional E-value: 1
+       gltX_prot 238 sikellknfklklikksnskydikkllwyNrkyikiipfkkiknyllkflklkkllk 294
+                     s+ ++l+  +  l   ++  ++++  l y  +yi    ++  + y l  l+ k+l+ 
+  VFCALBON1_4904 307 STGYTLTRCNASLFLLKKIFVRNNT-LLYSFRYIRSPIMRSFYFYDLILLNRKQLSS 362
+                     3333333333332222222222222.2334444444444444444444444444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (403 nodes)
+Target sequences:                       5772  (185449 residues searched)
+Passed MSV filter:                       307  (0.0531878); expected 115.4 (0.02)
+Passed bias filter:                       26  (0.0045045); expected 115.4 (0.02)
+Passed Vit filter:                         3  (0.000519751); expected 5.8 (0.001)
+Passed Fwd filter:                         1  (0.00017325); expected 0.1 (1e-05)
+Initial search space (Z):               5772  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 4440.63
+//
+[ok]

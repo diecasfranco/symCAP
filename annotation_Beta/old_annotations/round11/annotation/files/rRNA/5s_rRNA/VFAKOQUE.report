@@ -1,0 +1,53 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/RNAs/5s_rRNA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/genomes/VFAKOQUE.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round11//annotation/files/rRNA/5s_rRNA/VFAKOQUE.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5s_rRNA  [M=105]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+      9e-17   58.1  12.1  VFAKOQUE 100032  99933 
+
+
+Annotation for each hit  (and alignments):
+>> VFAKOQUE  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   58.1  12.1     9e-17         1       102 [.    100032     99933 ..    100032     99930 ..    117375    0.97
+
+  Alignment:
+  score: 58.1 bits
+   5s_rRNA      1 tgatAattaaAgtttattggaaacAccctttatccattccGAAcAAgataGttAAacagtaatttgccgaagatagtaatatgcaAAggtAgGtt 95    
+                  tgatAa  a+Ag+ tattggaa  Ac cttta  cattccGAA AAg   Gt AAaca ta  ++gccga+gatag ++ a gcaAA gtAgGt 
+  VFAKOQUE 100032 TGATAACAATAGCATATTGGAACTACACTTTA-ACATTCCGAATAAGTATGTAAAACAATATAGCGCCGATGATAG-CTGAAGCAAAAGTAGGTA 99940 
+                  6899999*************************.9******************************************.9***************** PP
+
+   5s_rRNA     96 tttatca 102   
+                   ttatca
+  VFAKOQUE  99939 ATTATCA 99933 
+                  **99987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (105 nodes)
+Target sequences:                          1  (234750 residues searched)
+Residues passing SSV filter:           83858  (0.357); expected (0.02)
+Residues passing bias filter:           4007  (0.0171); expected (0.02)
+Residues passing Vit filter:             613  (0.00261); expected (0.003)
+Residues passing Fwd filter:             277  (0.00118); expected (3e-05)
+Total number of hits:                      1  (0.000426)
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 1932.37
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round11//annotation/files/rRNA/5s_rRNA/VFAKOQUE.sto
+[ok]

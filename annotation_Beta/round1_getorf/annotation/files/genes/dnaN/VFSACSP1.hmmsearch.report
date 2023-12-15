@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaN_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genomes/VFSACSP1/VFSACSP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genes/dnaN/dnaN_VFSACSP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaN_prot  [M=362]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    8.1e-24   81.5  70.3    8.1e-24   81.5  70.3    1.6  2  VFSACSP1_1840  [30178 - 28919] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFSACSP1_1840  [30178 - 28919] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.8     0.087   2.3e+02     242     261 ..       9      28 ..       1      55 [. 0.56
+   2 !   81.5  70.3   3.1e-27   8.1e-24       1     358 [.      61     412 ..      61     415 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 0.087
+      dnaN_prot 242 eiikitkdykkikinnkefl 261
+                    +  k++k   +i+i + +fl
+  VFSACSP1_1840   9 KTDKTNKIIIIIYIVTRNFL 28 
+                    33333333333333333333 PP
+
+  == domain 2  score: 81.5 bits;  conditional E-value: 3.1e-27
+      dnaN_prot   1 MiKikkkeiikflkiinllkkkkkknllikienkkiifif.knenekvilikkkkkikkkisflieyeklkkiiktiknkeyikldlkkkkliikn 95 
+                    M+Ki   + ++++++i++ k    k +++   n+  + i+ kn+ +++  ik+  k   +i f i y+kl++++k+ k+ +yi+++ kk+ + +k 
+  VFSACSP1_1840  61 MKKILILQKNYLISFIEIYKHLDRKVIFFCRGNSVSLCIYtKNHFLELSRIKNHSKQFVNILFAIRYSKLFNLLKNEKDVFYISMYKKKNIICLKT 156
+                    99998888889999999888888888888777776665552666678999************************************999989999* PP
+
+      dnaN_prot  96 knfkfitkikkkknkyikiikkkkklkkkikieskillkilesniillkvfinkeeginivikkkkikifstDgfRmifvkkklkk.knknlkfni 190
+                    kn  ++   +  ++  + +    + l k ++i+s+ ++++l  +  ++k +++   +i ++i+ k+i+i+s D+fR++ ++  ++  k++ +   i
+  VFSACSP1_1840 157 KNICYYLHTISFHKGRLYN---TNILYKHFNIQSSLMINALSISQRIIKLSDI--DYILLIINYKYIEILSSDNFRLARIRCDIETtKITHCRLTI 247
+                    **99998766555544433...34567789***********999999998765..69*********************9999997526788899** PP
+
+      dnaN_prot 191 sknvlkflikvikkskkssfyiefkkkkiiitsknfkiiskilnkkkfnykeiikitkdykkikinnkeflealkrikiisskknskidieikkkk 286
+                    +k  + +l+ + +      + +  + k++ i ++ f +i++ + +k +ny+++i    + ++++++++ ++++lkr  +i++   s  ++++++++
+  VFSACSP1_1840 248 KKSSIDILLYLFSMCGDRLITFSLYGKFLRIVIRGFSVIVNLYREKVINYRKVIS-YRYSNFFRVKTSTLKKSLKRSLLINN--RSITNFSFSHRH 340
+                    ***************************************************9875.5678899*************877765..5667789***** PP
+
+      dnaN_prot 287 iiikfknsekeklkekIkik..k..nnkkkkikLNlkflmdFlkikkskkiilfiknkkskiilksknknlkYliM 358
+                    + +   n+e+ k++e I +   k  ++ k+ + +N k++ + l    +  ++++   k +k++l  k+ n  Y+iM
+  VFSACSP1_1840 341 LRLLSHNFENDKITETIRYIlsKpvKFTKIHVLINPKYILEILDNEMYTDMYFS---KLNKMLLVRKY-NCFYYIM 412
+                    *****************6532232345678889********9987766666654...67888887776.5668899 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (362 nodes)
+Target sequences:                       2589  (85107 residues searched)
+Passed MSV filter:                       338  (0.130552); expected 51.8 (0.02)
+Passed bias filter:                       23  (0.00888374); expected 51.8 (0.02)
+Passed Vit filter:                         1  (0.00038625); expected 2.6 (0.001)
+Passed Fwd filter:                         1  (0.00038625); expected 0.0 (1e-05)
+Initial search space (Z):               2589  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4594.69
+//
+[ok]

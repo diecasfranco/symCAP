@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/clpP_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genomes/VFDESRAP/VFDESRAP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genes/clpP/clpP_VFDESRAP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       clpP_prot  [M=187]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.6e-96  320.0   5.5    1.7e-96  319.9   5.5    1.0  1  VFDESRAP_1500  [58969 - 59538] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFDESRAP_1500  [58969 - 59538] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  319.9   5.5  2.7e-100   1.7e-96       2     186 ..       4     188 ..       3     189 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 319.9 bits;  conditional E-value: 2.7e-100
+      clpP_prot   2 lnynllvfdknilidvfskllkdriiflsgeindnlsnsiiaqllylesinnkdislyinspggeissglaiydtlkfiksdvstlcigmaasmaa 97 
+                    ++ nllvfd+ni++d+fs+llk+riif+sg+ind+ +nsiiaqll+l+s++n dis+yinspgg+issglaiydt+kfiks+vst+c g+aasmaa
+  VFDESRAP_1500   4 ISSNLLVFDRNITCDIFSRLLKERIIFMSGVINDYTANSIIAQLLFLDSESNTDISIYINSPGGSISSGLAIYDTIKFIKSKVSTICFGLAASMAA 99 
+                    6789******************************************************************************************** PP
+
+      clpP_prot  98 vllasgkkgkryslknsrimihqplggykgqasdieihakeilylkkklnkilsketkkkkkkikkdidrdkfmspkkalkygiidrii 186
+                    ++l+sg+kgkr sl+nsrimihqp+ggykgqasd+eih+kei+ylkkkln ++sk+t ++ k+i kd++rdk+msp +al ygiid+i+
+  VFDESRAP_1500 100 FILSSGEKGKRTSLPNSRIMIHQPIGGYKGQASDLEIHTKEIIYLKKKLNTLFSKNTLNSVKQISKDTERDKYMSPSQALSYGIIDKIL 188
+                    ***************************************************************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (187 nodes)
+Target sequences:                       6475  (193678 residues searched)
+Passed MSV filter:                        92  (0.0142085); expected 129.5 (0.02)
+Passed bias filter:                       37  (0.00571429); expected 129.5 (0.02)
+Passed Vit filter:                         1  (0.00015444); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.00015444); expected 0.1 (1e-05)
+Initial search space (Z):               6475  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11447.63
+//
+[ok]

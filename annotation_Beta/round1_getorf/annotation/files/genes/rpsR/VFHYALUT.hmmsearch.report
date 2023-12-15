@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsR_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genomes/VFHYALUT/VFHYALUT_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genes/rpsR/rpsR_VFHYALUT.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsR_prot  [M=146]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.6e-13   48.0  33.9    5.6e-13   48.0  33.9    1.6  2  VFHYALUT_4337  [87436 - 86864] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFHYALUT_4337  [87436 - 86864] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   0.3      0.23   1.5e+03     106     116 ..      10      20 ..       6      28 .. 0.63
+   2 !   48.0  33.9   8.6e-17   5.6e-13       1     144 [.      45     183 ..      45     185 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 0.23
+      rpsR_prot 106 ikylDennkil 116
+                    i+++D+n+  +
+  VFHYALUT_4337  10 ISFIDKNKSFF 20 
+                    56777765544 PP
+
+  == domain 2  score: 48.0 bits;  conditional E-value: 8.6e-17
+      rpsR_prot   1 mkyelllvlkkknfnleisnkik..kkiklvkilkiknlgvkklkkkiknnkfaeylkillrtnkenisnlrnllnknknivRylilskknikkkk 94 
+                    mk + ++++ kk  n+++ +k+   k  k+ k  k+k lg   l +kik  k + + k  l   k  +++l+ ll  +++i+R++il+k n+ k +
+  VFHYALUT_4337  45 MKLYKVIIVTKKINNINVFKKLLtlKLNKISKLSKFKYLGNFSLIRKIKHEKHVLFFKFYLYLVK--VKDLNYLLSNDVDIIRFIILKKSNY-KIN 137
+                    89999999999999******97511455788888999*********************9999876..679999************9977665.555 PP
+
+      rpsR_prot  95 niidylkkkllikylDennkilkrkvtklkkkdqrkisklikisRfLsii 144
+                    +ii   ++k+l  +lD+++ i +r + k + k+qrkisk iki+R+Ls++
+  VFHYALUT_4337 138 DII---NRKFL-LFLDDFGCIKNRDKEKHSLKQQRKISKFIKIARYLSLV 183
+                    554...56666.5**********************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (146 nodes)
+Target sequences:                       6565  (200876 residues searched)
+Passed MSV filter:                       893  (0.136024); expected 131.3 (0.02)
+Passed bias filter:                       77  (0.0117289); expected 131.3 (0.02)
+Passed Vit filter:                         7  (0.00106626); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000152323); expected 0.1 (1e-05)
+Initial search space (Z):               6565  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6610.41
+//
+[ok]

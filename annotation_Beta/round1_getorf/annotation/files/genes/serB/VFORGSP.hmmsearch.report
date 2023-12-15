@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/serB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genomes/VFORGSP/VFORGSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genes/serB/serB_VFORGSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       serB_prot  [M=210]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    3.8e-54  182.1  18.1    3.8e-54  182.1  18.1    1.6  2  VFORGSP_2365  [91925 - 92683] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFORGSP_2365  [91925 - 92683] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.5   0.3     0.011        69      76     106 ..      10      40 ..       3      41 .. 0.80
+   2 !  182.1  18.1   5.9e-58   3.8e-54       2     201 ..      38     232 ..      37     243 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 1.5 bits;  conditional E-value: 0.011
+     serB_prot  76 ffvksiikvinkkllkilkkekkkkkkiiis 106
+                   ++ k+++k++ k+ ++ +k + kk+ k++is
+  VFORGSP_2365  10 IVFKKMKKYFSKERNTFVKGRSKKNVKVMIS 40 
+                   4568999999999999999999999999998 PP
+
+  == domain 2  score: 182.1 bits;  conditional E-value: 5.9e-58
+     serB_prot   2 klaiFDLDkTliniDcEkllikvlykkkiiskkilkkskkfykdykkgklnikkyikyiskvinklkkkkilinffvksiikvinkkllkilkkekk 98 
+                    +++FDLDkT+i++DcE+l++kv+y kkiis ++l+++  f ++yk+gk++  +++++++kvi k k ++    f+  +i+k+++k+l+  +  e  
+  VFORGSP_2365  38 MISVFDLDKTIIKVDCEGLFYKVAYVKKIISSSTLREFFRFQEKYKNGKFEPMEHLEFQNKVIIKYKLRSRK-GFLKYFISKYLRKNLNWTVYNEML 133
+                   599************************************************************987765542.344446899*******9999**** PP
+
+     serB_prot  99 kkkkiiisTSSskllskkikk.llkiknlistklekkkkkytgkvlgviNigkgKvknlkkwikkkkikkkkiiFysDSinDlpLllksdkkyivNp 194
+                   +++ ++isT S+++l++k++k ll  kn+i+t+l + k  y++     iN+g+gK knl +wikk++ k ++++F++DSinDlpLllk++ ++ivNp
+  VFORGSP_2365 134 SREVVLISTASNHFLASKVNKyLLGSKNIICTSLDNPKRGYLP-----INYGIGKCKNLDIWIKKNNYKLCEVEFFTDSINDLPLLLKANRRFIVNP 225
+                   *******************763689***********9998887.....69*********************************************** PP
+
+     serB_prot 195 dkkllkl 201
+                   d kl+k 
+  VFORGSP_2365 226 DVKLIKK 232
+                   ***9874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (210 nodes)
+Target sequences:                       6458  (193282 residues searched)
+Passed MSV filter:                       415  (0.0642614); expected 129.2 (0.02)
+Passed bias filter:                       45  (0.0069681); expected 129.2 (0.02)
+Passed Vit filter:                         4  (0.000619387); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000154847); expected 0.1 (1e-05)
+Initial search space (Z):               6458  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5488.22
+//
+[ok]

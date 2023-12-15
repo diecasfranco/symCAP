@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/lysS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genomes/VFOMMLON/VFOMMLON_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genes/lysS/lysS_VFOMMLON.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lysS_prot  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.2e-97  326.0  54.8    2.3e-58  196.6  47.7    2.0  2  VFOMMLON_5308  [23875 - 22757] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOMMLON_5308  [23875 - 22757] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  196.6  47.7   3.9e-62   2.3e-58       1     262 [.       7     258 ..       7     268 .. 0.87
+   2 !  133.3   9.1   6.4e-43   3.8e-39     276     418 ..     232     372 ..     231     373 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 196.6 bits;  conditional E-value: 3.9e-62
+      lysS_prot   1 mkiigrlltkrdfggiiflklvyklkviqvkvkktdkksfliakkvklGdiikvlnlrkktksaikafrvlklkvlsknlllfPdkyhkiedkevs 96 
+                    m  ++r+ +kr +ggi f+kl  +++++ +k +  ++k     kk+ +G+i k+ ++  k+++++k + v+k+k+lskn+l +Pdky+ki+dk+++
+  VFOMMLON_5308   7 MIFVSRIKEKRVIGGICFFKLKKIKNQFIIKKNIFKEKYKKNLKKIFIGNICKIDGILFKNNKNVKCILVKKIKILSKNILKLPDKYNKIKDKKII 102
+                    56789***************9888777766633333333344599*************************************************** PP
+
+      lysS_prot  97 ykkryivlgtnlkekkelyarfklikfirkylykkkflevetpilskvteaadsepfvtkhkalkkklylrisPelnlkkllvsGfdaifeiGksf 192
+                    y+k+y ++  n+k+ + + +rf +i+firk++ k++f+evetpil+k++ ++d + f  k+k  kkkl+lrisPe+nlkk+l+ Gfd+i+eiGk+f
+  VFOMMLON_5308 103 YNKSYFTMFYNKKKYNIIKKRFLIINFIRKFMNKRNFIEVETPILNKNNCGSDVKEFFVKKK--KKKLFLRISPEINLKKMLICGFDKIYEIGKNF 196
+                    **************9******************************************98766..8******************************* PP
+
+      lysS_prot 193 rneslskihyseftsvefykvdrnylwgikllkkllqklvkklakkalakaininkfdvlslkeaivkyk 262
+                    rne  s++h +eft++efy  ++ny+w + +l++++ +++ kl+kk++        f+ ++ ++ i ky+
+  VFOMMLON_5308 197 RNENNSNKHKDEFTMMEFYINNKNYKWNMLFLREIIINIF-KLFKKKIF-------FKKIKYSDIIKKYN 258
+                    ***********************************99887.46655542.......33333333343443 PP
+
+  == domain 2  score: 133.3 bits;  conditional E-value: 6.4e-43
+      lysS_prot 276 ikellklfnydkfkkvlslkkkqlllayfeefiqrkvvkPtfilefPiedsplake.rdkevaeryelyiaGleianGftelndakeqkkrleeqs 370
+                    i ++ klf+ + f k +++++  ++ +y +  i +k     f+++fPi ++plake ++k+  e +elyi G+eianG+teln++keqkkr+  q+
+  VFOMMLON_5308 232 IINIFKLFKKKIFFKKIKYSD--IIKKYNNIDIIKKKKSTIFVTHFPILETPLAKEsKKKGYTESFELYINGIEIANGYTELNKYKEQKKRFLIQK 325
+                    66899****999988888876..666676666666666788*************963678899********************************* PP
+
+      lysS_prot 371 sdtskklntdfikalkfGlPkatGcGlGidrllmvllskknirdvivf 418
+                    ++++kk++  f++ +kfG+P +tGcG+Gidrl+m +++kk i dvi+f
+  VFOMMLON_5308 326 KNNNKKIDKLFLEYMKFGMPPSTGCGIGIDRLIMSVFDKK-INDVILF 372
+                    *************************************976.******9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (423 nodes)
+Target sequences:                       5927  (180464 residues searched)
+Passed MSV filter:                       378  (0.0637759); expected 118.5 (0.02)
+Passed bias filter:                       29  (0.00489286); expected 118.5 (0.02)
+Passed Vit filter:                         1  (0.000168719); expected 5.9 (0.001)
+Passed Fwd filter:                         1  (0.000168719); expected 0.1 (1e-05)
+Initial search space (Z):               5927  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 5046.79
+//
+[ok]

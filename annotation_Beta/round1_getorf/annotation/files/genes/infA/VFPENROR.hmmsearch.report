@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/infA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genomes/VFPENROR/VFPENROR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf//annotation/files/genes/infA/infA_VFPENROR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       infA_prot  [M=72]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.5e-30  102.8   1.2    3.1e-30  102.5   0.4    1.5  2  VFPENROR_3241  [126445 - 126744] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPENROR_3241  [126445 - 126744] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   0.1     0.027   1.9e+02      12      30 ..      10      28 ..       4      30 .. 0.76
+   2 !  102.5   0.4   4.5e-34   3.1e-30       4      72 .]      27      94 ..      23      94 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 0.027
+      infA_prot 12 vlknLpnstFlVkvkklkk 30
+                   v+  L n  F V ++k +k
+  VFPENROR_3241 10 VVLYLKNYFFYVVMSKGEK 28
+                   6667999999999887665 PP
+
+  == domain 2  score: 102.5 bits;  conditional E-value: 4.5e-34
+      infA_prot  4 kkiileGevlknLpnstFlVkvkklkkkiiCylsGkmrinyirilpGDkvkvefnksnlkkGriiyrlk 72
+                   +ki++eG+++++Lpn++F+Vk++ ++++++Cyl+Gk r+nyi+ilpGD+v+vef+++++++Gri++r+k
+  VFPENROR_3241 27 EKIYEEGIIVESLPNANFKVKTE-NGFIKMCYLAGKARMNYIKILPGDRVRVEFDAYDPRRGRIVFRIK 94
+                   799******************86.69*****************************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (72 nodes)
+Target sequences:                       6914  (203628 residues searched)
+Passed MSV filter:                       198  (0.0286375); expected 138.3 (0.02)
+Passed bias filter:                       62  (0.00896731); expected 138.3 (0.02)
+Passed Vit filter:                         5  (0.00072317); expected 6.9 (0.001)
+Passed Fwd filter:                         1  (0.000144634); expected 0.1 (1e-05)
+Initial search space (Z):               6914  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4430.79
+//
+[ok]
