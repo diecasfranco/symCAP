@@ -45,7 +45,7 @@ Threshold_functional = 0.6
 Threshold_putative = 0.9
 Upper_threshold_functional = 1.5
 Size_reference = "RANSCY"
-Translation_table = 4	### As defined by getorf / NCBI!
+Translation_table = 11	### As defined by getorf / NCBI!
 						### 4: Spiroplasma, Hodgkinia, Nasuia; 11: Sulcia, bacteria; 4: Mitogenome
 
 
