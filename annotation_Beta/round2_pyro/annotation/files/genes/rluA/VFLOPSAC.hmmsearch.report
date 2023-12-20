@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFLOPSAC/VFLOPSAC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/rluA/rluA_VFLOPSAC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluA_prot  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.7e-22   73.5  73.9    1.7e-22   73.5  73.9    2.0  2  VFLOPSAC_36  [34608 - 35357]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLOPSAC_36  [34608 - 35357]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.7  12.3     0.021         3     120     161 ..       2      40 ..       1      41 [. 0.78
+   2 !   73.5  73.9   1.2e-24   1.7e-22       3     234 ..      29     246 ..      27     249 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 0.7 bits;  conditional E-value: 0.021
+    rluA_prot 120 ksitknkikkkkkpiiylkkkkktifsrvtifiiekiklknk 161
+                  ++++++ i kk+k+i ++    k+ +  + +fi++ki +++k
+  VFLOPSAC_36   2 NKYNNFFIFKKIKKIFIK---YKKFYKTIFLFIKKKIVYIKK 40 
+                  7899999*9999998764...345666667899999999988 PP
+
+  == domain 2  score: 73.5 bits;  conditional E-value: 1.2e-24
+    rluA_prot   3 kyinkknifIkknkgliniIfkdeniiilkKkkklslypssiikkkknisilkkiyniineki...krfklinrlDydtsGiilisinkkyykslkkk 97 
+                  ++i+kk+++Ikk+k +in I  ++n +i++Kkk++++y+ ++ k  k  +il+++yn+++eki   +++++++rlD++tsG+i+is n+  y+ +kk 
+  VFLOPSAC_36  29 LFIKKKIVYIKKSKKIINYIIIKKNYLIIDKKKNYLVYNHTL-KNIK--NILSCVYNFLGEKIfdtYKCGIVQRLDFNTSGLIIISRNNISYNLFKKL 123
+                  5899**************9888899999**********8775.3333..579**********977789****************************** PP
+
+    rluA_prot  98 ikeklikkkYiaivkgllkkflksitknkikkkkkpiiylkkkkktifsrvtifiiekiklknknlsllvcktssGktHQirssLkiiginIvgdkky 195
+                  +k+++ikk+Y++i + + k  + si kn+i+kk  ++  +kk++   +s +    + ki +kn   ++++ck+++G+  Qi++++k       ++  y
+  VFLOPSAC_36 124 FKKRKIKKYYFVICNKYSKEKVVSI-KNYIYKK--NVYKKKKNINFKYSSL----KSKIIFKNNFNNIVICKMFTGRKNQIKIQFKN-----FFNLDY 209
+                  **************99999888776.7899975..3433333444344443....456779999999****************9985.....367788 PP
+
+    rluA_prot 196 kksklfswnislvlnkkkvlffvppnknfiklyskinfk 234
+                  kk  l+s++i+  ++k k+  ++ +nk++i+l+++ n k
+  VFLOPSAC_36 210 KKIFLHSYKIK--IKKFKMDCYSLLNKKLINLIKNNNTK 246
+                  89999999887..6899999*************997754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                        142  (38760 residues searched)
+Passed MSV filter:                       132  (0.929577); expected 2.8 (0.02)
+Passed bias filter:                       12  (0.084507); expected 2.8 (0.02)
+Passed Vit filter:                        11  (0.0774648); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00704225); expected 0.0 (1e-05)
+Initial search space (Z):                142  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 699.72
+//
+[ok]
