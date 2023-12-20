@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFISSKAZ/VFISSKAZ_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/dnaB/dnaB_VFISSKAZ.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaB_prot  [M=420]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.8e-99  331.2  65.3    3.1e-99  331.1  65.3    1.0  1  VFISSKAZ_4122  [77023 - 75791] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFISSKAZ_4122  [77023 - 75791] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  331.1  65.3    5e-103   3.1e-99       4     419 ..       3     410 ..       1     411 [] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 331.1 bits;  conditional E-value: 5e-103
+      dnaB_prot   4 dlfsielekvvlacillessvlkkvievlkekdfffkknaiifvaiksLltsaikiDlPivleenisrkkvinysyilslfnlkckesnikyyiai 99 
+                    d f  +le+ +l++ + ++++l++ ++ l +k+f +k n+i+f  ik+L  ++ kiD+  + +  +++k++ n++y+++l+  k +  nik y++i
+  VFISSKAZ_4122   3 DNFLYKLERYILCNFIIYKNNLNY-TKLLSSKNFKYKYNKILFKVIKKLTKKKKKIDIITIYDFILKKKINFNFEYLNKLIEEKTNFINIKKYLKI 97 
+                    668889****************98.579******************************999999999999************************** PP
+
+      dnaB_prot 100 lkrksllrklrllladiksatk.kkneekivnklqkalfllkevaskkpvnlkkkvkeflkkllkkdk.dilfktGfdkLDkiilgikpGeLviva 193
+                    lk+k+l  kl +ll++    +k   n +ki+  ++k l+ l++ ++++   +kk++ ++ k++l+k+  +   ktGf+k+D+ii g  pGeL+++a
+  VFISSKAZ_4122  98 LKKKNLRNKLLKLLKKSSFLVKkNINLNKIIIYIKKNLSKLSNEKKNNYFDIKKDLMNLQKNILNKKIfKNYIKTGFKKIDNIIRGFSPGELIVIA 193
+                    ***************987766515799*****************************999988887764134459********************** PP
+
+      dnaB_prot 194 GrPatGkttfvldilrynslvknltvvilslemsaeqllikLvsaltsltsekilkknldnkkkekvlk.alklllkskiylnDlsqitlediyly 288
+                    GrP+ Gkt+f++++++y++l+k++ ++++slems +q++++L+s++ +++ +k+         k+k+lk ++k++ ks+ +lnD+s   +++ ++ 
+  VFISSKAZ_4122 194 GRPSSGKTAFCINLCEYICLKKKNPIFFFSLEMSKDQVILRLLSSICNINFNKLY------LLKKKILKnSIKKIKKSSFFLNDNSSFNIHEFKIN 283
+                    ************************************************9977654......234567763689*********************** PP
+
+      dnaB_prot 289 lknlkalkeadlvviDyvqLikiaeikenrnsdvseissaLkniakelnlaiiiisqLnrrieqrqdkvPlLsDLresGsleqDaDlvlflsdlds 384
+                    +k++ ++k++ +++iDy+qLi++++ kenrn ++se+s+ +k +ak+ln+ ii+isqLnr+ e r +k+P+LsDL++sGs+eqDaD ++fl++ ++
+  VFISSKAZ_4122 284 IKRICKKKKIRVIIIDYLQLISVEK-KENRNLEISEVSRFFKILAKDLNIVIILISQLNRNLELRNSKIPILSDLKDSGSIEQDADIIIFLYNNFN 378
+                    *********************9865.89***************************************************************98877 PP
+
+      dnaB_prot 385 snvnedvkvvvsknrnGptGvvkLkflkkynifla 419
+                        ++++++++knrnG+tG + L f k++++f++
+  VFISSKAZ_4122 379 E---KKINILIGKNRNGNTGNIVLNFNKNITKFKN 410
+                    5...5799*************************87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (420 nodes)
+Target sequences:                       6243  (178869 residues searched)
+Passed MSV filter:                       383  (0.0613487); expected 124.9 (0.02)
+Passed bias filter:                       47  (0.00752843); expected 124.9 (0.02)
+Passed Vit filter:                         5  (0.000800897); expected 6.2 (0.001)
+Passed Fwd filter:                         1  (0.000160179); expected 0.1 (1e-05)
+Initial search space (Z):               6243  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8726.77
+//
+[ok]

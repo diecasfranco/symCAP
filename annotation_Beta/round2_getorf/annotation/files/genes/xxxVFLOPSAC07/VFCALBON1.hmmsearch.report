@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/xxxVFLOPSAC07_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFCALBON1/VFCALBON1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/xxxVFLOPSAC07/xxxVFLOPSAC07_VFCALBON1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFLOPSAC_xxxVFLOPSAC07  [M=99]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    2.2e-13   48.9   2.3    2.2e-13   48.9   2.3    1.9  2  VFCALBON1_2022  [78176 - 78538] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALBON1_2022  [78176 - 78538] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.1   0.1     0.067   3.9e+02      38      57 ..       4      23 ..       1      29 [. 0.56
+   2 !   48.9   2.3   3.9e-17   2.2e-13      11      84 ..      33     106 ..      23     119 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 0.1 bits;  conditional E-value: 0.067
+  VFLOPSAC_xxxVFLOPSAC07 38 ykkkiiflrvdieknkdliy 57
+                            yk  ++f  + i+ nk li 
+          VFCALBON1_2022  4 YKYIVFFCCIWIKNNKYLIN 23
+                            55555555666666665553 PP
+
+  == domain 2  score: 48.9 bits;  conditional E-value: 3.9e-17
+  VFLOPSAC_xxxVFLOPSAC07  11 ikiihfhtkwslssknl.vnvtkilsifykkkiiflrvdieknkdliykfnikyiptliifkngiekyritkifc 84 
+                               ii f +kws     + + + k++  fy+ +++f   di+ +kd + kfn+k +ptli+fk+ iek+r+     
+          VFCALBON1_2022  33 KSIIGFFSKWSEVCVLMnMQIQKVID-FYRNELLFYDFDIDMDKDALRKFNVKQVPTLILFKDRIEKHRVIGYRN 106
+                             46999*****9765432145677775.9*****************************************976554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (99 nodes)
+Target sequences:                       5772  (185449 residues searched)
+Passed MSV filter:                       280  (0.04851); expected 115.4 (0.02)
+Passed bias filter:                       49  (0.00848926); expected 115.4 (0.02)
+Passed Vit filter:                         4  (0.000693001); expected 5.8 (0.001)
+Passed Fwd filter:                         1  (0.00017325); expected 0.1 (1e-05)
+Initial search space (Z):               5772  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4219.80
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/trpA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFOMMLON/VFOMMLON_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/trpA/trpA_VFOMMLON.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trpA_prot  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    9.9e-36  121.9  71.5      3e-26   90.9  39.1    2.1  2  VFOMMLON_1313  [51457 - 52140] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOMMLON_1313  [51457 - 52140] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   90.9  39.1     5e-30     3e-26       2     119 ..      18     126 ..      18     130 .. 0.87
+   2 !   34.2  31.4   1.1e-12   6.5e-09     139     239 .]     119     215 ..     114     215 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 90.9 bits;  conditional E-value: 5e-30
+      trpA_prot   2 kkiipflIpffpnkkkFlkilkflkkkkiktiEIgipnknsylDGkiIkkaykkilkkfnikkllkkikkflkkkkfkiilvcysntilgkkkflk 97 
+                    +k+ipflIpffpn+ +Fl+il flkk+kik+iEIgipn+n+y DG iIkk+y ki++kfn+ kllk+i+ +  k  fkii+v+y++++++ kk  k
+  VFOMMLON_1313  18 NKMIPFLIPFFPNNLYFLRILFFLKKNKIKNIEIGIPNYNCYKDGIIIKKSYIKIIRKFNFVKLLKIINLI--K-YFKIIFVFYYDSFMQIKK--K 108
+                    699**************************************************************998644..4.49*********9998765..4 PP
+
+      trpA_prot  98 kikkkkvikkiiiiDinlkylk 119
+                    ++kk    +k+i+iD n+ ++k
+  VFOMMLON_1313 109 YLKK----YKYIVIDNNIGNIK 126
+                    4444....45789999998775 PP
+
+  == domain 2  score: 34.2 bits;  conditional E-value: 1.1e-12
+      trpA_prot 139 nlkkkkik.kkikkikkkliYlslsgktGkkkinlkkikkyikkikkknkikiivGFGIkkkknikklkkffk..niViGtklikli...kkkflk 228
+                     +++ +ik kk++k  k+++Y+++s++tGk +i++k++k    +i     ++ i+GFGI++k  +kk++k+ k  ++ViG++l+k +   kkk +k
+  VFOMMLON_1313 119 DNNIGNIKlKKFNKNCKSFCYMMCSNCTGKFNIKIKQTK----NI-----SNAILGFGINYK-IFKKIRKYNKkvKLVIGSYLLKPFlknKKKGFK 204
+                    344555553678888899**************9987643....33.....4579*****975.56666665541157********762324568** PP
+
+      trpA_prot 229 nvKnkikknkk 239
+                     +K++i k+kk
+  VFOMMLON_1313 205 FFKKTILKCKK 215
+                    ********986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                       5927  (180464 residues searched)
+Passed MSV filter:                      1768  (0.298296); expected 118.5 (0.02)
+Passed bias filter:                      152  (0.0256454); expected 118.5 (0.02)
+Passed Vit filter:                        66  (0.0111355); expected 5.9 (0.001)
+Passed Fwd filter:                         1  (0.000168719); expected 0.1 (1e-05)
+Initial search space (Z):               5927  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 2880.20
+//
+[ok]

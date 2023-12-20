@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/groES_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFRANEDI/VFRANEDI_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/groES/groES_VFRANEDI.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       groES_prot  [M=85]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      2e-22   77.8  14.0      2e-22   77.8  14.0    1.4  2  VFRANEDI_2152  [88978 - 89322] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFRANEDI_2152  [88978 - 89322] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.1      0.51   3.3e+03      68      68 ..      14      14 ..       3      26 .. 0.52
+   2 !   77.8  14.0   3.1e-26     2e-22       3      82 ..      31     112 ..      28     114 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 0.51
+     groES_prot 68 k 68
+                   k
+  VFRANEDI_2152 14 K 14
+                   1 PP
+
+  == domain 2  score: 77.8 bits;  conditional E-value: 3.1e-26
+     groES_prot   3 ievlNnYvilkkl.kknkKskiiilskkekntvgkvvfisK.nkkkikKndiviykkyskkkikiknkkYlfiklkkiiaki 82 
+                    ++v+NnYv+lk+l  kn  s iii+++++ + +gkv++++  nk++i K div+y+k+s++ iki++kkY+++k++kii+k+
+  VFRANEDI_2152  31 LTVMNNYVVLKRLlNKNADSGIIITKEDKSKYIGKVKYFQHnNKYGITKGDIVFYDKFSSSSIKIFGKKYSCLKMSKIICKY 112
+                    589*******996267889********************972579***********************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (85 nodes)
+Target sequences:                       6475  (189529 residues searched)
+Passed MSV filter:                       380  (0.0586873); expected 129.5 (0.02)
+Passed bias filter:                       78  (0.0120463); expected 129.5 (0.02)
+Passed Vit filter:                         6  (0.000926641); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.00015444); expected 0.1 (1e-05)
+Initial search space (Z):               6475  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5349.26
+//
+[ok]

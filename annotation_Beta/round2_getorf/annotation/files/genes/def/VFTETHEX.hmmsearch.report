@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/def_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFTETHEX/VFTETHEX_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/def/def_VFTETHEX.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       def_prot  [M=140]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    9.8e-22   75.8   7.1    9.8e-22   75.8   7.1    1.6  2  VFTETHEX_325  [14000 - 14527] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETHEX_325  [14000 - 14527] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   75.8   7.1   1.8e-25   9.8e-22      37     136 ..      40     138 ..       4     141 .. 0.91
+   2 ?   -2.8   0.0      0.34   1.8e+03      86     103 ..     154     171 ..     153     174 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 75.8 bits;  conditional E-value: 1.8e-25
+      def_prot  37 ykgiglsatqiGilkriiilklkkklitiinPkilykskelftsyeGclsiPnfykkikrskyikiegkilkktliklflknlisaclqheidhlnG 133
+                     gi+l+  qiG   +i+il  kk l+ +in ki + s  +f   eGclsi n     +rsky+ i +   ++++ k+f+ n++s+c qhei hl G
+  VFTETHEX_325  40 ECGIALCFNQIGLRNNIFILAYKKDLL-FINSKIFWLSNDIFCLKEGCLSIKNKLFLKLRSKYLVILSSNSNNKTRKIFVFNFLSVCFQHEIFHLLG 135
+                   4589999**************998876.99***********************988889************************************** PP
+
+      def_prot 134 kli 136
+                   +li
+  VFTETHEX_325 136 RLI 138
+                   **9 PP
+
+  == domain 2  score: -2.8 bits;  conditional E-value: 0.34
+      def_prot  86 siPnfykkikrskyikie 103
+                   si +++++i+ + y+ ++
+  VFTETHEX_325 154 SICQWFETILSHIYLYVQ 171
+                   788899999999888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (140 nodes)
+Target sequences:                       5452  (165229 residues searched)
+Passed MSV filter:                       304  (0.0557594); expected 109.0 (0.02)
+Passed bias filter:                       39  (0.00715334); expected 109.0 (0.02)
+Passed Vit filter:                         3  (0.000550257); expected 5.5 (0.001)
+Passed Fwd filter:                         1  (0.000183419); expected 0.1 (1e-05)
+Initial search space (Z):               5452  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7438.85
+//
+[ok]

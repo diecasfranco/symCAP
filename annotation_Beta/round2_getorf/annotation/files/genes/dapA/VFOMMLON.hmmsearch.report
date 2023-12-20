@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dapA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFOMMLON/VFOMMLON_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/dapA/dapA_VFOMMLON.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dapA_prot  [M=298]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    6.8e-78  260.2  46.6    6.8e-78  260.2  46.6    1.5  2  VFOMMLON_5271  [25714 - 24485] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOMMLON_5271  [25714 - 24485] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.0   1.4      0.32   1.9e+03     219     219 ..      70      70 ..      15     104 .. 0.55
+   2 !  260.2  46.6   1.1e-81   6.8e-78       2     284 ..     119     405 ..     118     410 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: -4.0 bits;  conditional E-value: 0.32
+      dapA_prot 219 r 219
+                    +
+  VFOMMLON_5271  70 I 70 
+                    1 PP
+
+  == domain 2  score: 260.2 bits;  conditional E-value: 1.1e-81
+      dapA_prot   2 kiklkgvivsiitPmkknkkidyislkkllkfkllnkvkhilinattgeslslsikekikiirylrrvfkdkiklisGsclistkksikllsklnk 97 
+                    ++k+kg+i+s+itP+kkn +id++++kk+l f+++ ++k++li +ttge  +lsik kikii+y  + +k+k ++i+G+c +s + s+k+++++nk
+  VFOMMLON_5271 119 IMKIKGNITSLITPFKKNGNIDFKKIKKNLIFQIKSGIKNFLILGTTGEPHNLSIKKKIKIIKYCVKIIKKKANIICGNCNNSIERSLKFNKRINK 214
+                    6799******************************************************************************************98 PP
+
+      dapA_prot  98 .ekidaiLqivPYYfissekgilahFkelsllskiPiivYnvpkRtaldissetlkkvlklkniigikdsssnilkllkriklkynknkkflcGDD 192
+                     + i aiLq+vPYY ++++kgi+++Fk++s+lskiP+i+Yn+pkR +++++  t+kk++klk+iigik+s  n    ++  +  + +++k+++GDD
+  VFOMMLON_5271 215 iKGIKAILQVVPYYLLPEQKGIFNYFKKISKLSKIPLIIYNIPKRCSINLKYSTVKKISKLKKIIGIKYSTKNLSDFIEFFNEFNCEEFKVFSGDD 310
+                    357********************************************************************************************* PP
+
+      dapA_prot 193 tqvlkllkleidGivsvlsnvfPkeirkiytelkkkklyii...nkkiknlvkvlakevnPilikyllkkkliknytlRLPLvklnkknkkkill 284
+                    +++ +   ++++G +sv snv Pk++ kiy+ +kkkk+ +     kki+++ k+l++e+nPi+ ky+l k  ++n +l+LPL+k +kknk ki  
+  VFOMMLON_5271 311 INFHIKYIIGSEGNISVASNVIPKKMNKIYNLIKKKKISKSlkeYKKIHSFLKILFIETNPIPLKYILYKLGMSNNILKLPLTKTKKKNKLKIFK 405
+                    ***********************************9997641215789999***************************************99965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (298 nodes)
+Target sequences:                       5927  (180464 residues searched)
+Passed MSV filter:                       475  (0.0801417); expected 118.5 (0.02)
+Passed bias filter:                       47  (0.00792981); expected 118.5 (0.02)
+Passed Vit filter:                         8  (0.00134976); expected 5.9 (0.001)
+Passed Fwd filter:                         1  (0.000168719); expected 0.1 (1e-05)
+Initial search space (Z):               5927  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 7379.95
+//
+[ok]
