@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/grpE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3_getorf/annotation/files/genomes/VFTETIMP/VFTETIMP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3_getorf/annotation/files/genes/grpE/grpE_VFTETIMP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       grpE_prot  [M=136]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.7e-35  120.3  15.6    1.7e-35  120.3  15.6    1.6  2  VFTETIMP_3093  [79922 - 79374] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETIMP_3093  [79922 - 79374] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.2      0.14   7.3e+02       8      14 ..      29      35 ..      16      49 .. 0.46
+   2 !  120.3  15.6   3.3e-39   1.7e-35       5     135 ..      51     181 ..      45     182 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 0.14
+      grpE_prot  8 yirllad 14
+                   y+ ++++
+  VFTETIMP_3093 29 YYVIKKK 35
+                   2222211 PP
+
+  == domain 2  score: 120.3 bits;  conditional E-value: 3.3e-39
+      grpE_prot   5 kekyirlladienikkrflkdienikkiaiekiirkflpivdsieliykntkseklrssiyvtlklikslfknnnisiinpnkfekfnplihqaii 100
+                    ++ky+ ++ + +n+kkr+ kd+e  k   + ++i++ lpi+ds+e  ykn ++ +++  i++tlk+ik+l+  n ++ i+p+k  kfnp++ qai+
+  VFTETIMP_3093  51 RKKYNEIILESQNLKKRLYKDLEKTKIYLNFQLIKNILPIIDSLEISYKNCSDMEVKEGIRITLKMIKNLLLCNKVKTIKPKKNTKFNPKFQQAIL 146
+                    68***********************999999***************************************************************** PP
+
+      grpE_prot 101 sikmpgaknlifkvlkkGylinnkvlrpalvsvtc 135
+                     ik  g+ nlif +l+kGy++ +k+lrpalvsvt 
+  VFTETIMP_3093 147 KIKKHGEPNLIFNILQKGYIMCKKILRPALVSVTS 181
+                    *********************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (136 nodes)
+Target sequences:                       5315  (150197 residues searched)
+Passed MSV filter:                       329  (0.0619003); expected 106.3 (0.02)
+Passed bias filter:                       39  (0.00733772); expected 106.3 (0.02)
+Passed Vit filter:                         2  (0.000376294); expected 5.3 (0.001)
+Passed Fwd filter:                         1  (0.000188147); expected 0.1 (1e-05)
+Initial search space (Z):               5315  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3761.21
+//
+[ok]

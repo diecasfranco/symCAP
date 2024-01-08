@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3_getorf/annotation/files/genomes/VFDICMUL/VFDICMUL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3_getorf/annotation/files/genes/rluA/rluA_VFDICMUL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluA_prot  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.5e-23   82.4  24.4    1.5e-23   82.4  24.4    1.6  2  VFDICMUL_838   [32189 - 32767] 
+    7.9e-14   50.6   4.0    9.5e-14   50.3   4.0    1.1  1  VFDICMUL_1383  [53365 - 53619] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFDICMUL_838  [32189 - 32767] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   1.1     0.074   2.4e+02     117     134 ..      17      34 ..       3      41 .. 0.45
+   2 !   82.4  24.4   4.7e-27   1.5e-23       4     166 ..      36     192 ..      31     193 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.074
+     rluA_prot 117 kflksitknkikkkkkpi 134
+                   +++k++ ++ki+k kk i
+  VFDICMUL_838  17 NNHKHMIQQKIQKAKKYI 34 
+                   234444444444444433 PP
+
+  == domain 2  score: 82.4 bits;  conditional E-value: 4.7e-27
+     rluA_prot   4 yinkknifIkknkgliniIfkdeniiilkKkkklslypssiikkkknisilkk..iyniinekikrfklinrlDydtsGiilisinkkyykslkkki 98 
+                   y +k++ fI  ++g+i+i++ +  +  ++Kkk+ ++y+ + ++++k +  l+k  + n+in+ i+rf+++nrlDy  sGii+++++ ++ ++++k +
+  VFDICMUL_838  36 YNHKQIAFIIPENGKIHILKTTPLLTFIRKKKEELIYKTTRLEQRKSL--LGKliKTNLINKNIYRFGILNRLDYGVSGIIMLAKTTHILHQIIKLH 130
+                   99****************99999999999***********99998855..55411579*************************************** PP
+
+     rluA_prot  99 keklikkkYiaivkgllkkflksitknkikkkkkpiiylkkkkktifsrvtifiiekiklknknlsll 166
+                   k++likk+Y+a+v+g++k    +it  + +++k+p     k ++t    v ++i++++++ + + +l+
+  VFDICMUL_838 131 KQQLIKKIYYAQVQGIIK----HITIHHSYLNKNPTYKTHKYHQT--QAVMLKIKPLVTFTHTHTTLI 192
+                   ***************986....55555556677886444444444..57899**********999998 PP
+
+>> VFDICMUL_1383  [53365 - 53619] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.3   4.0   2.9e-17   9.5e-14     141     208 ..      10      78 ..       2      84 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 50.3 bits;  conditional E-value: 2.9e-17
+      rluA_prot 141 kktifsrvtifiiekiklknknlsllvcktssGktHQirssLkiiginIvgdkkykks.klfswnislv 208
+                    k      v ++i++++++ + + +l++ckt++Gk+HQir++L+++g++Iv ++    +  l +++i+++
+  VFDICMUL_1383  10 KYHQTQAVMLKIKPLVTFTHTHTTLIKCKTHTGKYHQIRKMLHTLGKPIVCNSFSPGKlMLTLYKIKFY 78 
+                    3334456889******************************************98765515778889987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                       6500  (184287 residues searched)
+Passed MSV filter:                       362  (0.0556923); expected 130.0 (0.02)
+Passed bias filter:                       43  (0.00661538); expected 130.0 (0.02)
+Passed Vit filter:                         6  (0.000923077); expected 6.5 (0.001)
+Passed Fwd filter:                         3  (0.000461538); expected 0.1 (1e-05)
+Initial search space (Z):               6500  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6675.50
+//
+[ok]

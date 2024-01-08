@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/groES_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3_getorf/annotation/files/genomes/VFSTEMIN/VFSTEMIN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3_getorf/annotation/files/genes/groES/groES_VFSTEMIN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       groES_prot  [M=85]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.4e-14   50.6   3.2    5.4e-14   50.6   3.2    1.6  2  VFSTEMIN_1807  [67346 - 67687] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFSTEMIN_1807  [67346 - 67687] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.2       0.2   1.1e+03      11      20 ..      15      24 ..       5      33 .. 0.54
+   2 !   50.6   3.2     1e-17   5.4e-14       1      83 [.      38     113 ..      38     114 .] 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 0.2
+     groES_prot 11 ilkklkknkK 20
+                     +k+++ +K
+  VFSTEMIN_1807 15 SYTKYQNIHK 24
+                   3333333333 PP
+
+  == domain 2  score: 50.6 bits;  conditional E-value: 1e-17
+     groES_prot   1 mkievlNnYvilkklkknkKskiiilskkekntvgkvvfisKnkkkikKndiviykkyskkkikiknkkYlfiklkkiiakik 83 
+                    mki++lN++++l+k+   kK+ ++  s+++ n+  +v  ++  k  i   d ++ykk+s++k+   nk Y+fik+k+iia+i 
+  VFSTEMIN_1807  38 MKISPLNDWILLRKIE--KKGILL--SRRKSNQGRVVSVCPNHKLDISQGDRIFYKKFSSQKF---NKGYVFIKYKHIIARIY 113
+                    9***********9985..466444..44434443345556778889***************95...9*************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (85 nodes)
+Target sequences:                       5380  (158524 residues searched)
+Passed MSV filter:                       205  (0.0381041); expected 107.6 (0.02)
+Passed bias filter:                       65  (0.0120818); expected 107.6 (0.02)
+Passed Vit filter:                         2  (0.000371747); expected 5.4 (0.001)
+Passed Fwd filter:                         1  (0.000185874); expected 0.1 (1e-05)
+Initial search space (Z):               5380  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6022.46
+//
+[ok]

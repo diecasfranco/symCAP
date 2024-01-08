@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/glnS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3_getorf/annotation/files/genomes/VFCALBON1/VFCALBON1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3_getorf/annotation/files/genes/glnS/glnS_VFCALBON1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnS_prot  [M=460]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    4.2e-91  304.6  24.4    4.2e-91  304.6  24.4    2.0  2  VFCALBON1_5037  [40484 - 39162] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALBON1_5037  [40484 - 39162] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  304.6  24.4     7e-95   4.2e-91       1     321 [.      11     329 ..      11     340 .. 0.95
+   2 !    3.9   2.1    0.0011       6.6     399     452 ..     367     420 ..     332     431 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 304.6 bits;  conditional E-value: 7e-95
+       glnS_prot   1 iknffikkiienkkskiktRfcPePgGlLhiGhlknfiinYliskiykGkiniRlDDsnPikskkkykkkiyyeilklgfkkkiklsyssnyfkr 95 
+                     +knf++kki    ++ i+tRf+PeP+G Lh+Ghlk+++in  +s   kG + iR+D+snP+     y+  i +++    f   i  + ss+yf  
+  VFCALBON1_5037  11 MKNFILKKI-SRDNIYIRTRFAPEPSGCLHLGHLKCLYINKYVSDNFKGIFHIRIDNSNPLSYSYGYELSIRKDVS-F-FFDNIIYTRSSDYFFY 102
+                     8****9997.5679**********************************************************9986.3.556788999******* PP
+
+       glnS_prot  96 lyliakafikkklaYidsqikkk...vkknyikknkksiykkreikeklylikkmknglfkekefvvraniniktknkslrdpviyRiikkkkkn 187
+                     +y ++k fi   l+Yidsq +        ny + +++s++++r+  e++yl+kkm+ g+f e+e +vr+   +++ n +lrdp++yRi   ++  
+  VFCALBON1_5037 103 IYFFVKRFILYGLFYIDSQCSFYlslNRGNYYRSGIRSCFFTRSCFENIYLFKKMRIGIFLESEHIVRLYSSMLSSNINLRDPIVYRIR--YSFY 195
+                     *******************98651114579**********************************************************5..5556 PP
+
+       glnS_prot 188 ikiYPtYdlcnsisDriekitfsiCtkefennkelYnflikkYnkifkkklipiqiefsklkiegvkLskRkikklikkkiiknwkdprLltlkg 282
+                      +++PtYd+ ns++Drie+i++siCt+ef++  +lY+++i  Yn + k+ + p+qiefskl+i+g  ++kR+i   +kk++i  w+d rL+tl+g
+  VFCALBON1_5037 196 GNLFPTYDIVNSLCDRIERISHSICTNEFIDISALYYYYICLYNILVKRYYYPRQIEFSKLEINGIPIGKRNIYLFMKKHLINSWSDIRLFTLRG 290
+                     689******************************************************************************************** PP
+
+       glnS_prot 283 llnRGisnkvikeialktgytkknciikkkfikkillkk 321
+                     ll RG+  ++++ ++ +tgyt + c+    ++kki +++
+  VFCALBON1_5037 291 LLTRGYDTHTLISFVCSTGYTLTRCNASLFLLKKIFVRN 329
+                     ************************************998 PP
+
+  == domain 2  score: 3.9 bits;  conditional E-value: 0.0011
+       glnS_prot 399 lkenaknallyiylekkikktkiiiknskkieiraklklkklGyfkiykkkkki 452
+                         +k +++yi + +     +++   + ++ i +kl ++ +G+fki+ k+ + 
+  VFCALBON1_5037 367 FFGLVKVRVIYIIIFDFFIDYIFVESSIIRLSIGSKLVIEGIGIFKIFSKDYFL 420
+                     45567888999999999999999999999********************99764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (460 nodes)
+Target sequences:                       5973  (174896 residues searched)
+Passed MSV filter:                       334  (0.0559183); expected 119.5 (0.02)
+Passed bias filter:                       33  (0.00552486); expected 119.5 (0.02)
+Passed Vit filter:                         5  (0.0008371); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.00016742); expected 0.1 (1e-05)
+Initial search space (Z):               5973  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 4369.26
+//
+[ok]
