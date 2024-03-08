@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplM_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4_pyro//annotation/files/genomes/VFLACSP/VFLACSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4_pyro//annotation/files/genes/rplM/rplM_VFLACSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplM_prot  [M=101]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.1e-18   59.1  25.0    5.7e-17   55.4  25.0    2.0  1  VFLACSP_19  [19356 - 19027] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLACSP_19  [19356 - 19027] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.4  25.0   3.8e-19   5.7e-17       4      98 ..       3     108 ..       1     109 [. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 55.4 bits;  conditional E-value: 3.8e-19
+   rplM_prot   4 idlknkslGRiiskisklik...........kklkkiiivnlsnliikkl.eskklyykhtgfpgGlksikikellkknpikiikklikgMlpkkklfk 90 
+                  dl++k lGR++s isk+i+           kk+ +i + n ++ i+ ++ +++k++y+htg+ gGlk+i++++++  n+  iik+++k+Ml k++lf+
+  VFLACSP_19   3 VDLSKKPLGRCLSVISKKISnifflkgikgiKKMRNIYFYNIKKTILTGNkKKNKFFYRHTGYLGGLKKINYYKEFIYNK-EIIKNSLKKMLSKNFLFN 100
+                 4899***********9988533333333232456667778999988876516789********************99986.599*************** PP
+
+   rplM_prot  91 nilskikf 98 
+                 +i++kik+
+  VFLACSP_19 101 KIKKKIKI 108
+                 ******97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (101 nodes)
+Target sequences:                        149  (39581 residues searched)
+Passed MSV filter:                       121  (0.812081); expected 3.0 (0.02)
+Passed bias filter:                        3  (0.0201342); expected 3.0 (0.02)
+Passed Vit filter:                         3  (0.0201342); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00671141); expected 0.0 (1e-05)
+Initial search space (Z):                149  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 754.91
+//
+[ok]

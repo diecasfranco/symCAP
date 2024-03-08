@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplJ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4_pyro//annotation/files/genomes/VFAGAHAV/VFAGAHAV_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4_pyro//annotation/files/genes/rplJ/rplJ_VFAGAHAV.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplJ_prot  [M=150]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-16   53.8  67.3    1.8e-16   53.6  67.3    1.0  1  VFAGAHAV_4  [2233 - 2646]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFAGAHAV_4  [2233 - 2646]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.6  67.3   1.3e-18   1.8e-16       5     150 .]       2     137 ..       1     137 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 53.6 bits;  conditional E-value: 1.3e-18
+   rplJ_prot   5 inklkklikknkyiliiniknikanklsklRknikkkkikikviKkkllnkllkkinifikkglnlifftNnlfkfiklfkklkkkkikiivilykkkk 103
+                 in++ k++  ++y l+ n k +++n ++k+++   +k+++ik++Kkk++ k++k+      k++n++ff Nnl+kf k+ + +k kki ++++++ +kk
+  VFAGAHAV_4   2 INNILKKCLFYNYVLVSNNKFLTNNFINKIKL--LNKDVFIKSYKKKVFSKIFKI------KKGNFFFFINNLEKFLKI-NSNKIKKIPVYYLISFNKK 91 
+                 7888888889********************97..5789***********999874......5689************97.6677789************ PP
+
+   rplJ_prot 104 lnkkkikkLlkfknkneillkiinllkkiikllikllkslkenkkni 150
+                 l+k+ ikk++ +knk++i++kii +++++++++ikl+  ++e+kkni
+  VFAGAHAV_4  92 LKKN-IKKIFYYKNKTHIFIKIIHIFNNFLYNFIKLFYLYYESKKNI 137
+                 *876.899*************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (150 nodes)
+Target sequences:                        140  (37907 residues searched)
+Passed MSV filter:                       139  (0.992857); expected 2.8 (0.02)
+Passed bias filter:                       72  (0.514286); expected 2.8 (0.02)
+Passed Vit filter:                        72  (0.514286); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00714286); expected 0.0 (1e-05)
+Initial search space (Z):                140  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 432.94
+//
+[ok]

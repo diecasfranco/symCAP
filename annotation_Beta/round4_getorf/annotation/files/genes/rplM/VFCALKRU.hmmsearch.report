@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplM_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4_getorf/annotation/files/genomes/VFCALKRU/VFCALKRU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4_getorf/annotation/files/genes/rplM/rplM_VFCALKRU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplM_prot  [M=101]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.5e-36  122.8   0.6    2.9e-36  122.6   0.6    1.0  1  VFCALKRU_6104  [16966 - 16622] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALKRU_6104  [16966 - 16622] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  122.6   0.6   4.4e-40   2.9e-36       2     100 ..      14     111 ..      13     112 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 122.6 bits;  conditional E-value: 4.4e-40
+      rplM_prot   2 iiidlknkslGRiiskisklikkklkkiiivnlsnliikkleskklyykhtgfpgGlksikikellkknpikiikklikgMlpkkklfknilskik 97 
+                     iidlknk+lGR+is+++ +ik+++++++ vn++n++i++l+skk +y+++gfpgG++s+++++l++knpi++++ +ik+Mlp+++l+++i+s+i+
+  VFCALKRU_6104  14 MIIDLKNKVLGRCISSNIIFIKRGMVSSV-VNCANFVISSLDSKKPHYCYSGFPGGFASLAYSFLFRKNPILLVRLCIKRMLPACSLCMRIMSRIR 108
+                    478************************98.6***************************************************************** PP
+
+      rplM_prot  98 fkl 100
+                    f+l
+  VFCALKRU_6104 109 FYL 111
+                    *96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (101 nodes)
+Target sequences:                       6591  (179938 residues searched)
+Passed MSV filter:                       293  (0.0444546); expected 131.8 (0.02)
+Passed bias filter:                       69  (0.0104688); expected 131.8 (0.02)
+Passed Vit filter:                         2  (0.000303444); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000151722); expected 0.1 (1e-05)
+Initial search space (Z):               6591  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 3061.65
+//
+[ok]

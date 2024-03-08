@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplJ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4_pyro//annotation/files/genomes/VFCIXIUS/VFCIXIUS_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4_pyro//annotation/files/genes/rplJ/rplJ_VFCIXIUS.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplJ_prot  [M=150]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.6e-27   88.1  54.8    5.5e-27   87.9  54.8    1.0  1  VFCIXIUS_4  [2292 - 2756]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCIXIUS_4  [2292 - 2756]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   87.9  54.8   3.6e-29   5.5e-27       1     149 [.       1     151 [.       1     152 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 87.9 bits;  conditional E-value: 3.6e-29
+   rplJ_prot   1 Mknkinklkklikknkyiliiniknika.nklsklRknikkkkikikviKkkllnkllkkin....ifikkglnlifftNnlfkfiklfkklkkkkiki 94 
+                 Mk+k  +lk+l+ ++kyi++in+knik+ ++lsk+Rk++ +++i+ik+iKkk++  +lk++     +f+k gl++i+++N lf  + ++kk ++++i++
+  VFCIXIUS_4   1 MKKK--NLKSLFLQYKYISFINFKNIKSsYYLSKIRKDFGENNIFIKIIKKKMFLSFLKNYLklnfKFSKIGLSMIVYSNYLFLGAIYKKK-IEQNINN 96 
+                 7776..799****************985379***********************999998752223578899***********99877666.5789*** PP
+
+   rplJ_prot  95 ivilykkkklnkkkikkLlkfknkneillkiinllkkiikllikllkslkenkkn 149
+                 + ++yk+k l++++ ++L+ +k k +il+kii++l ++i+++++++k++++nk+n
+  VFCIXIUS_4  97 QLVFYKSKILSHICENSLVFYKTKSNILKKIIFILLRNISYFLFVIKQIHKNKNN 151
+                 ****************************************************998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (150 nodes)
+Target sequences:                        151  (42433 residues searched)
+Passed MSV filter:                       143  (0.94702); expected 3.0 (0.02)
+Passed bias filter:                       49  (0.324503); expected 3.0 (0.02)
+Passed Vit filter:                        49  (0.324503); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00662252); expected 0.0 (1e-05)
+Initial search space (Z):                151  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 601.16
+//
+[ok]

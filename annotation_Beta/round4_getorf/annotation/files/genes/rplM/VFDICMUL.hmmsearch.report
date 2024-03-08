@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplM_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4_getorf/annotation/files/genomes/VFDICMUL/VFDICMUL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4_getorf/annotation/files/genes/rplM/rplM_VFDICMUL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplM_prot  [M=101]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    9.4e-35  117.7   2.0      1e-34  117.6   2.0    1.0  1  VFDICMUL_6041  [16909 - 16604] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFDICMUL_6041  [16909 - 16604] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  117.6   2.0   1.6e-38     1e-34       3     100 ..       2      98 ..       1      99 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 117.6 bits;  conditional E-value: 1.6e-38
+      rplM_prot   3 iidlknkslGRiiskisklikkklkkiiivnlsnliikkleskklyykhtgfpgGlksikikellkknpikiikklikgMlpkkklfknilskikf 98 
+                    iidlk+k+lGR+is+++++ik+++++++ vn++n+++++leskk++y+++gfpgG+ s+++k+l+ knpi++++ +ik+Mlp+ +lf++ils+ikf
+  VFDICMUL_6041   2 IIDLKDKVLGRCISANIMFIKRGIVSSV-VNCANFCVSNLESKKSHYFYSGFPGGFVSLTNKFLMLKNPILLVRLCIKRMLPTGRLFAAILSHIKF 96 
+                    68************************98.6****************************************************************** PP
+
+      rplM_prot  99 kl 100
+                    +l
+  VFDICMUL_6041  97 YL 98 
+                    96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (101 nodes)
+Target sequences:                       6500  (184287 residues searched)
+Passed MSV filter:                       285  (0.0438462); expected 130.0 (0.02)
+Passed bias filter:                       67  (0.0103077); expected 130.0 (0.02)
+Passed Vit filter:                         3  (0.000461538); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000153846); expected 0.1 (1e-05)
+Initial search space (Z):               6500  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 3482.39
+//
+[ok]

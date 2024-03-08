@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplM_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4_getorf/annotation/files/genomes/VFAKOQUE/VFAKOQUE_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4_getorf/annotation/files/genes/rplM/rplM_VFAKOQUE.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplM_prot  [M=101]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+      1e-15   56.6  10.7      1e-15   56.6  10.7    1.5  2  VFAKOQUE_346  [16461 - 16856] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFAKOQUE_346  [16461 - 16856] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.6  10.7   1.7e-19     1e-15       3      99 ..      13     114 ..       8     116 .. 0.86
+   2 ?   -2.3   0.0      0.36   2.2e+03      46      60 ..     115     128 ..     114     130 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 56.6 bits;  conditional E-value: 1.7e-19
+     rplM_prot   3 iidlknkslGRiiskisklikkklk...kiiivnlsnlii..kkleskklyykhtgfpgGlksikikellkknpikiikklikgMlpkkklfknils 94 
+                   ii  + ++lGR++s+++++i k+ +   ++ i+n   +ii  ++++ +k+y++h+g+pgG + +k +   kkn  k++  ++kgMlpk++ + ++ls
+  VFAKOQUE_346  13 IISYNCSKLGRFCSNLINFITKNFNfdvNFFIKNYYVIIInlSDIKFNKNYFFHSGYPGGDRIVKGSLVTKKNLSKMFLLTLKGMLPKNNIRYRVLS 109
+                   56677789**************9873335556666666552268899************************************************** PP
+
+     rplM_prot  95 kikfk 99 
+                   ki+++
+  VFAKOQUE_346 110 KIRIQ 114
+                   **986 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.36
+     rplM_prot  46 klyykhtgfpgGlks 60 
+                   ++ +++++f gGl+ 
+  VFAKOQUE_346 115 HSVFNYNKF-GGLAE 128
+                   567899998.88875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (101 nodes)
+Target sequences:                       6257  (161195 residues searched)
+Passed MSV filter:                       405  (0.0647275); expected 125.1 (0.02)
+Passed bias filter:                       60  (0.00958926); expected 125.1 (0.02)
+Passed Vit filter:                         4  (0.000639284); expected 6.3 (0.001)
+Passed Fwd filter:                         1  (0.000159821); expected 0.1 (1e-05)
+Initial search space (Z):               6257  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3696.63
+//
+[ok]
