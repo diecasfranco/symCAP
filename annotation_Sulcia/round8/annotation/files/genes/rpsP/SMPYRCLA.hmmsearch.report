@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpsP_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMPYRCLA/SMPYRCLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rpsP/rpsP_SMPYRCLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsP_prot  [M=113]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    6.7e-50  167.2   2.8    6.7e-50  167.2   2.8    1.4  2  SMPYRCLA_5125  [120536 - 120135] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPYRCLA_5125  [120536 - 120135] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.1      0.43   3.7e+03      48      54 ..      16      22 ..       7      33 .. 0.55
+   2 !  167.2   2.8   7.8e-54   6.7e-50       1      91 [.      43     133 ..      43     134 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.43
+      rpsP_prot 48 kvllnid 54
+                   ++++ni+
+  SMPYRCLA_5125 16 TLNINIK 22
+                   4444442 PP
+
+  == domain 2  score: 167.2 bits;  conditional E-value: 7.8e-54
+      rpsP_prot   1 mslrirlqrkGrkkkafytivvansrssrdGkflekiGfynpntnpykvllnidkainwlqkGakptctvksllllkGvlfkkyllngvkk 91 
+                    mslrirlqrkG+kk++fy+iv+ans+s+rdGkf+ekiG+ynp +npy+v++n+dkai+wl+kGa+pt+tvks+l++kGv++kk++lngvkk
+  SMPYRCLA_5125  43 MSLRIRLQRKGKKKQPFYSIVIANSNSPRDGKFIEKIGIYNPVQNPYIVEVNVDKAIYWLEKGAQPTNTVKSFLYKKGVFYKKHFLNGVKK 133
+                    9*****************************************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (113 nodes)
+Target sequences:                       8592  (228038 residues searched)
+Passed MSV filter:                       224  (0.0260708); expected 171.8 (0.02)
+Passed bias filter:                       77  (0.00896182); expected 171.8 (0.02)
+Passed Vit filter:                         2  (0.000232775); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116387); expected 0.1 (1e-05)
+Initial search space (Z):               8592  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11339.35
+//
+[ok]

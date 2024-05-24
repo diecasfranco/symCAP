@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/grpE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round9//annotation/files/genomes/VFISSCOL1/VFISSCOL1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round9//annotation/files/genes/grpE/grpE_VFISSCOL1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       grpE_prot  [M=136]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    8.9e-39  125.9  14.2    8.9e-39  125.9  14.2    1.6  2  VFISSCOL1_102  [94943 - 94497] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFISSCOL1_102  [94943 - 94497] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.4     0.089        13      27      37 ..       4      14 ..       2      24 .. 0.64
+   2 !  125.9  14.2     6e-41   8.9e-39       7     134 ..      19     147 ..      11     148 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 0.089
+      grpE_prot 27 enikkiaieki 37
+                   e ikki+ e+i
+  VFISSCOL1_102  4 EKIKKIKKENI 14
+                   45666666654 PP
+
+  == domain 2  score: 125.9 bits;  conditional E-value: 6e-41
+      grpE_prot   7 kyirlladienikkrflkdienikkiaiekiirkflpivdsieliykntkseklrssiyvtlklikslfknnnisiinpnkfekfnplihqaiisi 102
+                    + + ++ + e +k+rf  + +nikk ++  ii++f+p++d +e  ykn k++  +  i + lk++k+++ nnn+++i p+kf+ fnp +hqaii +
+  VFISSCOL1_102  19 RCNNIILEFESMKRRFELENDNIKKYSCFLIIKNFIPVLDGLEITYKNCKDKLTKEGINIILKILKTILLNNNVKKISPKKFDPFNPTLHQAIIKV 114
+                    566778899*******9999**************************************************************************** PP
+
+      grpE_prot 103 kmpg.aknlifkvlkkGylinnkvlrpalvsvt 134
+                    k    +knlif +l+kGyli nk+lrpalvsvt
+  VFISSCOL1_102 115 KTSDkKKNLIFNILQKGYLISNKILRPALVSVT 147
+                    987516799***********************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (136 nodes)
+Target sequences:                        147  (39040 residues searched)
+Passed MSV filter:                       102  (0.693878); expected 2.9 (0.02)
+Passed bias filter:                        3  (0.0204082); expected 2.9 (0.02)
+Passed Vit filter:                         1  (0.00680272); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00680272); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 977.31
+//
+[ok]

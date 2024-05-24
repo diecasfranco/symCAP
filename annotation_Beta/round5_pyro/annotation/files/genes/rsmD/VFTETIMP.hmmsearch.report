@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rsmD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFTETIMP/VFTETIMP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/rsmD/rsmD_VFTETIMP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmD_prot  [M=180]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    7.3e-67  217.5  37.8    8.5e-67  217.3  37.8    1.0  1  VFTETIMP_23  [22369 - 21809] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETIMP_23  [22369 - 21809] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  217.3  37.8   6.5e-69   8.5e-67       2     179 ..       6     184 ..       5     185 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 217.3 bits;  conditional E-value: 6.5e-69
+    rsmD_prot   2 kkikilsgkyknkkikfskklkikptksiirkslfsilkkkiknskcLDLFaGsGsLGiealsrgAkkvlfvdikkkiikkikknlkklnikknvkll 99 
+                  +kikil gk k+++i+fs+++k+kptk++i+kslf+il++ i+n kcLDLFaG+GsLGieals+gAkkv+fv++kkki+k+ikkn+k+l+i+k+ k++
+  VFTETIMP_23   6 NKIKILFGKNKKNSINFSSTIKVKPTKCLIKKSLFNILGN-INNLKCLDLFAGTGSLGIEALSKGAKKVYFVETKKKILKSIKKNTKRLKIDKKSKFI 102
+                  89************************************86.9******************************************************** PP
+
+    rsmD_prot 100 nsdalkflkknkkkfdiifiDpPYklfkkikkilkkclkllkknGiiylenskkn..kikikklkiikigkkgkviyyllkk 179
+                  n++++kf+kknk+kfd+ifiDpP+k++k++ ki+kkc+k+l++nGiiy+e+sk+n  +ikik++kiikig+kgkviyyl+kk
+  VFTETIMP_23 103 NKSYKKFIKKNKSKFDLIFIDPPFKFNKSKIKIIKKCKKMLNNNGIIYFEESKNNfkEIKIKNIKIIKIGSKGKVIYYLFKK 184
+                  ***************************************************998644799********************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (180 nodes)
+Target sequences:                        130  (32173 residues searched)
+Passed MSV filter:                       100  (0.769231); expected 2.6 (0.02)
+Passed bias filter:                        5  (0.0384615); expected 2.6 (0.02)
+Passed Vit filter:                         5  (0.0384615); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00769231); expected 0.0 (1e-05)
+Initial search space (Z):                130  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3158.90
+//
+[ok]

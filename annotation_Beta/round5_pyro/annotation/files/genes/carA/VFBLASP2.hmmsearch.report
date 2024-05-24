@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/carA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFBLASP2/VFBLASP2_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/carA/carA_VFBLASP2.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       carA_prot  [M=345]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+   2.4e-108  355.3  34.4   2.6e-108  355.2  34.4    1.0  1  VFBLASP2_59  [54396 - 55229]
+    7.4e-14   44.6  11.0    8.7e-14   44.4  11.0    1.1  1  VFBLASP2_39  [37070 - 36513] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBLASP2_59  [54396 - 55229]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  355.2  34.4  3.6e-110  2.6e-108      66     344 ..       2     275 ..       1     276 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 355.2 bits;  conditional E-value: 3.6e-110
+    carA_prot  66 dlESnriwlsaiivknlskffsnfrskksllkflkknkvivletkdtreiikkikkkknnkalilfkkkkklkkkkvkklkkvstkinyllnekklvl 163
+                  d+ES+riw+s+iivk++s ffs+ +s+ +++++lkkn++++letk+tr+i+k+i+  knnka+++f+kkkk+kk+++ +l+++stkiny+ n+    l
+  VFBLASP2_59   2 DFESHRIWASVIIVKEISLFFSSKNSYDNIINILKKNNTVLLETKETRDITKNIRILKNNKAYVYFNKKKKNKKNNLFYLNNSSTKINYSKNS----L 95 
+                  9****************************************************************************************8664....5 PP
+
+    carA_prot 164 kkkknnifkkkilvidfGlKknilrelskknifliiinykkiikkikkikpdgivlsnGPGnpkiykklikkikkiikkipilgIClGHQiislslgl 261
+                   +++nn+fk+ki+++d+GlK+ il+++s+++if++i+nyk+++k ikki+pdgi+lsnGPGnp+iykklik+ikki  kipilgIC+GHQi+sls+++
+  VFBLASP2_59  96 LERFNNSFKNKIVILDLGLKYGILESISQREIFCLILNYKTNLKIIKKIRPDGIILSNGPGNPCIYKKLIKNIKKI--KIPILGICFGHQILSLSINK 191
+                  6778999********************************************************************8..8******************* PP
+
+    carA_prot 262 kikkmkvGhhgiNhpvkflkkllissQNHnylvkn.knkiyslfDktnQGiikkkiitlQGHPEasPGtkdlkfiFkkfkkllk 344
+                  k+kkmk+Ghh++Nhpvkf kk++i+sQNHny+v+n ++k++s++DktnQGii+kkiit+QGHPE++PGt+d ++iF++f+k+++
+  VFBLASP2_59 192 KVKKMKIGHHSSNHPVKFGKKMFITSQNHNYCVSNgSKKVRSIIDKTNQGIIDKKIITFQGHPEGNPGTRDSNIIFDIFVKCMR 275
+                  *********************************98357899***************************************9875 PP
+
+>> VFBLASP2_39  [37070 - 36513] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.4  11.0   1.2e-15   8.7e-14     182     337 ..      11     178 ..       1     184 [. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 44.4 bits;  conditional E-value: 1.2e-15
+    carA_prot 182 lKknilrelskknifliiinykkiikkikkikpdgivlsnGPGnpkiykklikkikkiikkipilgIClGHQiislslglkikkmkvGhhg..iNhpv 277
+                  + +ni+  l++k +fl   +++ki+  i  +kp  ++ls GP  p+ y + +  +k + k +  +gIClGHQii  +  +ki+k k+  hg  +   +
+  VFBLASP2_39  11 FTYNIVDLLKEKFFFLDYKKVNKIYLFIILLKPYFLLLSAGPYGPSLYLESLILLKFFYKFLRFVGICLGHQIIGYFYIYKIVKSKKICHGklVRIVI 108
+                  45799999999999999999999999999*****************************************************9999888885567889 PP
+
+    carA_prot 278 kflkkllissQNHnylvknknkiyslf....DktnQG.iikkk...iitlQGHPEa..sPGtkdlkfiFk 337
+                  kfl+kll      + +  +knk   l+     +tn   iik+k   ii++Q HPE+  s G+k l  +Fk
+  VFBLASP2_39 109 KFLNKLLNVVRYNSLTLLKKNKSNLLViayeKETNDImIIKHKifdIISFQYHPESilSEGKKILINVFK 178
+                  *****9755554455555555443332223256787624566544479*******844577777777775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (345 nodes)
+Target sequences:                        146  (37385 residues searched)
+Passed MSV filter:                       124  (0.849315); expected 2.9 (0.02)
+Passed bias filter:                       14  (0.0958904); expected 2.9 (0.02)
+Passed Vit filter:                         7  (0.0479452); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.0136986); expected 0.0 (1e-05)
+Initial search space (Z):                146  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2840.98
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/trpA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFOMMLON/VFOMMLON_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/trpA/trpA_VFOMMLON.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trpA_prot  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    6.3e-36  122.6  71.5    3.6e-26   90.7  40.5    2.0  2  VFOMMLON_1316  [51493 - 52107] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOMMLON_1316  [51493 - 52107] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   90.7  40.5   5.9e-30   3.6e-26       2     122 ..       6     116 ..       6     120 .. 0.87
+   2 !   35.3  29.4     5e-13   3.1e-09     142     239 .]     110     203 ..     106     203 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 90.7 bits;  conditional E-value: 5.9e-30
+      trpA_prot   2 kkiipflIpffpnkkkFlkilkflkkkkiktiEIgipnknsylDGkiIkkaykkilkkfnikkllkkikkflkkkkfkiilvcysntilgkkkflk 97 
+                    +k+ipflIpffpn+ +Fl+il flkk+kik+iEIgipn+n+y DG iIkk+y ki++kfn+ kllk+i+ +  k  fkii+v+y++++++ kk  k
+  VFOMMLON_1316   6 NKMIPFLIPFFPNNLYFLRILFFLKKNKIKNIEIGIPNYNCYKDGIIIKKSYIKIIRKFNFVKLLKIINLI--K-YFKIIFVFYYDSFMQIKK--K 96 
+                    699**************************************************************998644..4.49*********9998765..4 PP
+
+      trpA_prot  98 kikkkkvikkiiiiDinlkylkkin 122
+                    ++kk    +k+i+iD n+ ++k  +
+  VFOMMLON_1316  97 YLKK----YKYIVIDNNIGNIKL-K 116
+                    4444....467899999987653.3 PP
+
+  == domain 2  score: 35.3 bits;  conditional E-value: 5e-13
+      trpA_prot 142 kkkik.kkikkikkkliYlslsgktGkkkinlkkikkyikkikkknkikiivGFGIkkkknikklkkffk..niViGtklikli...kkkflknvK 231
+                    + +ik kk++k  k+++Y+++s++tGk +i++k++k    +i     ++ i+GFGI++k  +kk++k+ k  ++ViG++l+k +   kkk +k +K
+  VFOMMLON_1316 110 IGNIKlKKFNKNCKSFCYMMCSNCTGKFNIKIKQTK----NI-----SNAILGFGINYK-IFKKIRKYNKkvKLVIGSYLLKPFlknKKKGFKFFK 195
+                    4455536788888999*************9987643....33.....4579*****975.56666665541157********762324568***** PP
+
+      trpA_prot 232 nkikknkk 239
+                    ++i k+kk
+  VFOMMLON_1316 196 KTILKCKK 203
+                    *****986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                       6132  (170157 residues searched)
+Passed MSV filter:                      1761  (0.287182); expected 122.6 (0.02)
+Passed bias filter:                      145  (0.0236464); expected 122.6 (0.02)
+Passed Vit filter:                        63  (0.010274); expected 6.1 (0.001)
+Passed Fwd filter:                         1  (0.000163079); expected 0.1 (1e-05)
+Initial search space (Z):               6132  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 5163.29
+//
+[ok]

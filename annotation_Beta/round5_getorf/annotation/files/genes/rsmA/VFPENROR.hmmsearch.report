@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rsmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFPENROR/VFPENROR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/rsmA/rsmA_VFPENROR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmA_prot  [M=210]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.2e-28   99.1  36.7    1.7e-28   98.6  36.7    1.3  1  VFPENROR_6563  [16225 - 15767] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPENROR_6563  [16225 - 15767] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   98.6  36.7   2.4e-32   1.7e-28       2     169 ..       2     151 ..       1     153 [] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 98.6 bits;  conditional E-value: 2.4e-32
+      rsmA_prot   2 irkldkvFliskksikkiikki.ikkkkiiiEigsGyGnltkfllkk.krkillieidnkiskfLkkkyknvkiinknilninfkafkkitiigni 95 
+                    +  ++k+Fl +k+++k ++kki i+k+++i+Ei+sGyGnlt++l kk  +ki+ +eidn           nv+ +n+n+ nin++++++i i+gni
+  VFPENROR_6563   2 N-IKGKNFL-NKRACKLLNKKIvINKRNKILEIASGYGNLTNILKKKiVSKIIEFEIDNM----------NVISLNENVVNINYRIYGRILIFGNI 85 
+                    4.4699*96.89999****998367889***************99884489999999995..........56778********************* PP
+
+      rsmA_prot  96 PYkltkkilkklllnkrkIkkqyimlqkeyfekitkkkaiklkvlykikkllslknknFkPkpkvnsvflkmvp 169
+                    PY++t++i+k ++  + +I  +y+mlq+ey++ki    ++++k   ki +++++ +k+F P+pkv+s f+k ++
+  VFPENROR_6563  86 PYNITTEIIKNIK-RFCNIRYVYLMLQNEYLKKI----NFFFK---KIISYKKICKKFFIPSPKVESNFIKVSN 151
+                    *********9986.5789************9987....46666...588899999***************9875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (210 nodes)
+Target sequences:                       7046  (191592 residues searched)
+Passed MSV filter:                      1365  (0.193727); expected 140.9 (0.02)
+Passed bias filter:                       65  (0.00922509); expected 140.9 (0.02)
+Passed Vit filter:                        11  (0.00156117); expected 7.0 (0.001)
+Passed Fwd filter:                         1  (0.000141924); expected 0.1 (1e-05)
+Initial search space (Z):               7046  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11991.77
+//
+[ok]

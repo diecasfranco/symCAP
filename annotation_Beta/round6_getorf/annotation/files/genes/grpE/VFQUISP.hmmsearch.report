@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/grpE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFQUISP/VFQUISP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/grpE/grpE_VFQUISP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       grpE_prot  [M=145]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    3.5e-44  148.7  17.1    3.5e-44  148.7  17.1    2.1  3  VFQUISP_3653  [87588 - 86824] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFQUISP_3653  [87588 - 86824] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.6      0.27   1.7e+03     101     125 ..       4      27 ..       2      37 .. 0.52
+   2 ?    0.5   0.4     0.028   1.7e+02       4      25 ..      96     117 ..      91     120 .. 0.75
+   3 !  148.7  17.1   5.8e-48   3.5e-44       8     144 ..     114     252 ..     110     253 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.27
+     grpE_prot 101 nPkyhqailsikkkkksnlifnvLq 125
+                   n  +h  i+   +kk  n i+n++ 
+  VFQUISP_3653   4 NIPFHPIIVLGFSKKTLN-IINIFN 27 
+                   555565444433333333.455554 PP
+
+  == domain 2  score: 0.5 bits;  conditional E-value: 0.028
+     grpE_prot   4 kklkkenkklkkkyleliaeie 25 
+                    klkk+  ++k+ y+++++ i+
+  VFQUISP_3653  96 LKLKKKFLFYKNFYFKIFKYIS 117
+                   4678899999999999988776 PP
+
+  == domain 3  score: 148.7 bits;  conditional E-value: 5.8e-48
+     grpE_prot   8 kenkklkkkyleliaeienikkrllkelkkikkkskekiiknilpiiDsleislk..nskekklkegikitlkllknilkknnvkkIkpkkfekfnP 102
+                   k  ++lk+kyl+l+ +++++k    k++  +k+ +  ++++nil iiDsleisl+  n++ kk+kegi +tlkll++il+knnvkkI pkkf++fnP
+  VFQUISP_3653 114 KYISVLKNKYLKLYVNNYRFKFDSFKKFIFLKDDIFGNLLNNILIIIDSLEISLNlwNNDIKKIKEGIILTLKLLESILEKNNVKKIVPKKFDDFNP 210
+                   56789******************999**************************98733566799********************************** PP
+
+     grpE_prot 103 kyhqailsikkkkksnlifnvLqkGYiiknkvlRPaLVsvts 144
+                    +hqai++++k++ksnlifn+LqkGYi++nkv+RPaLVsvt+
+  VFQUISP_3653 211 CFHQAIINVNKPYKSNLIFNLLQKGYILNNKVFRPALVSVTN 252
+                   ****************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (145 nodes)
+Target sequences:                       6059  (161927 residues searched)
+Passed MSV filter:                       476  (0.0785608); expected 121.2 (0.02)
+Passed bias filter:                       60  (0.00990262); expected 121.2 (0.02)
+Passed Vit filter:                        10  (0.00165044); expected 6.1 (0.001)
+Passed Fwd filter:                         1  (0.000165044); expected 0.1 (1e-05)
+Initial search space (Z):               6059  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6529.25
+//
+[ok]

@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rsmH2_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMCATAR1/SMCATAR1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rsmH2/rsmH2_SMCATAR1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmH2_prot  [M=89]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    8.9e-22   76.3  10.4    1.2e-15   56.7   0.3    3.2  3  SMCATAR1_8942  [12528 - 11572] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMCATAR1_8942  [12528 - 11572] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.7   0.3   1.3e-19   1.2e-15       1      85 [.      19      98 ..      19     102 .. 0.89
+   2 ?   -0.8   0.2      0.11     1e+03      47      69 ..     125     147 ..     108     171 .. 0.69
+   3 !   24.9   0.7   1.1e-09     1e-05      36      74 ..     274     311 ..     251     317 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 56.7 bits;  conditional E-value: 1.3e-19
+     rsmH2_prot  1 mkyiyqivllsivivyli....yiyldsifgvyiyarsilkkidkkGknlspfliafdkdifsiiknkiyenkrakrivlfnanfrkik 85
+                   mk ++ +vll +v++ +i    +iy+d +fg+++++  ilkki+++Gk     l afd+d f+iik +i +    kri++fn nf +i+
+  SMCATAR1_8942 19 MKDFHRPVLLTEVLENIIndihGIYIDTTFGSGGHSFGILKKISNQGK-----LFAFDQDPFAIIKTNISD----KRILVFNDNFINIQ 98
+                   899********9998775444489***********************9.....679**********99964....89********9987 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.11
+     rsmH2_prot  47 spfliafdkdifsiiknkiyenk 69 
+                    s + i   ++ fsi  n+i + +
+  SMCATAR1_8942 125 SSYQIDTPERGFSIRFNQILDMR 147
+                    56667777777888888877643 PP
+
+  == domain 3  score: 24.9 bits;  conditional E-value: 1.1e-09
+     rsmH2_prot  36 lkkidkkGknlspfliafdkdifsiiknkiyenkrakri 74 
+                    l + dkkGknlspf   + k+if  +k +i  n+ra++ 
+  SMCATAR1_8942 274 LLRYDKKGKNLSPFNKKYTKRIFP-TKKEISKNNRARSA 311
+                    5689*******************7.799********985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (89 nodes)
+Target sequences:                       9312  (235910 residues searched)
+Passed MSV filter:                       557  (0.0598153); expected 186.2 (0.02)
+Passed bias filter:                      148  (0.0158935); expected 186.2 (0.02)
+Passed Vit filter:                         5  (0.000536942); expected 9.3 (0.001)
+Passed Fwd filter:                         1  (0.000107388); expected 0.1 (1e-05)
+Initial search space (Z):               9312  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6630.61
+//
+[ok]

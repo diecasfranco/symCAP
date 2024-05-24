@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/hisA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFPARPLA/VFPARPLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/hisA/hisA_VFPARPLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       hisA_prot  [M=233]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    8.8e-67  218.2  13.4      1e-66  217.9  13.4    1.0  1  VFPARPLA_69  [68959 - 69657]
+    7.8e-19   61.2   5.8    7.8e-19   61.2   5.8    1.7  2  VFPARPLA_70  [69647 - 70390]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPARPLA_69  [68959 - 69657]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  217.9  13.4   1.4e-68     1e-66       3     229 ..       6     231 ..       4     232 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 217.9 bits;  conditional E-value: 1.4e-68
+    hisA_prot   3 iipaiDiykkkivRLkkGkfkkkkifsknpkklikfilknkikrihliDLegakkkklkNkklikkiikilkkkkikiqiGGGiRkikkikfylkkgv 100
+                  +ipaiDi+++ +vRLk+G+++++++fsk+  +li++il+ +   +h++DL+ga++++++N  li+++++++++++i++qiGGGiR+i++i +y+  g 
+  VFPARPLA_69   6 LIPAIDICNGAFVRLKRGNYSNITTFSKS--RLISNILDINPYLVHIVDLDGARYGSPINSVLIQSLVRMFTFLGIRTQIGGGIRDISSIIKYVLLG- 100
+                  8*************************985..79*************************************************************998. PP
+
+    hisA_prot 101 dkvilgtlilkkklfl.kilkkykkkiiisiDikknkilikgWkkkeiklkkfikkikklkkkkiiiTdIerDGtlkGinikfikkilkilkkkkkii 197
+                  +++ilgt+++++++++ ++++   k+ iisiD+k+++i+++gW +k  ++k++i +i+++  +k+i+TdI++DGtl+G+++++i++i++ l+++k ++
+  VFPARPLA_69 101 SSIILGTSVISSNFIFpSYFSLLCKYTIISIDFKDDFIYYNGWLSKGPSIKNAIYNINNTILNKLIFTDISKDGTLTGVSFNSINYISSLLCSRKLFL 198
+                  57********9998662678899*************************************************************************** PP
+
+    hisA_prot 198 fsGGlkkkk.dikklkkkkkiygiivGkyiykk 229
+                  f+GG+++ + +  ++ +++++ g+i+Gk+iy+ 
+  VFPARPLA_69 199 FAGGVNSLSiTSLQYISFSNFLGFISGKFIYYG 231
+                  ******9872345677899************75 PP
+
+>> VFPARPLA_70  [69647 - 70390]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0     0.077       5.5     166     186 ..       8      28 ..       1      41 [. 0.67
+   2 !   61.2   5.8   1.1e-20   7.8e-19      60     231 ..      50     230 ..      39     232 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.077
+    hisA_prot 166 iTdIerDGtlkGinikfikki 186
+                  + d+  D   kG+n+k+i+ +
+  VFPARPLA_70   8 CLDVIGDFVFKGVNFKNIQPV 28 
+                  457777778888888888765 PP
+
+  == domain 2  score: 61.2 bits;  conditional E-value: 1.1e-20
+    hisA_prot  60 lkNkklikkiikilkkkk....ikiqiGGGiRkikkikfylkkgvdkvil.gtlilkkklflkilkkykkk.iiisiDikkn....kilikgWkkk.e 146
+                  ++Nk+ i++ i il+k++    i i +GG iR+ ++++ +l++gvd+v l +tl ++++++ ++ k y ++ ii siD+ +     +++i+g  k+ +
+  VFPARPLA_70  50 NINKSSISSYIDILRKLSsnifIPITFGGNIRTSNDVDLLLNNGVDRVCLnSTLYYNSNILPYLSKRYGSQcIIGSIDVSNIsgmwYVYIDGGTKRtN 147
+                  467788888888777654111155789**********************94556666666667777776652677****985333379**98766516 PP
+
+    hisA_prot 147 iklkkfikkikklkkkkiiiTdIerDGtlkGinikfikkilkilkkkkkiifsGGlkkkkdikklkkkkkiygiivGkyiykkie 231
+                  i lk+ i+  ++    +i++T I+rDGt  G +i+ i++ +ki   +  +i sGG+   +di++l + ++++   + +y+ ++++
+  VFPARPLA_70 148 ILLKDWIEFNESNGIGEILLTSIDRDGTGIGYDIDLINYASKIS--NIPLIASGGVGCFNDIESLFSLTDVNSALIASYLHSNTN 230
+                  778999998889999***********************998874..6789*******************9999999999887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (233 nodes)
+Target sequences:                        143  (38207 residues searched)
+Passed MSV filter:                        55  (0.384615); expected 2.9 (0.02)
+Passed bias filter:                        2  (0.013986); expected 2.9 (0.02)
+Passed Vit filter:                         2  (0.013986); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.013986); expected 0.0 (1e-05)
+Initial search space (Z):                143  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2049.18
+//
+[ok]

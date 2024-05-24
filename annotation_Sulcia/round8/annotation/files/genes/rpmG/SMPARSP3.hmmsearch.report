@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpmG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMPARSP3/SMPARSP3_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rpmG/rpmG_SMPARSP3.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmG_prot  [M=60]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    8.9e-23   78.9  11.9    2.2e-19   68.0   2.6    2.2  2  SMPARSP3_6100  [92504 - 92235] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPARSP3_6100  [92504 - 92235] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.6   1.7   2.9e-07    0.0025       2      20 ..      21      39 ..      20      43 .. 0.86
+   2 !   68.0   2.6   2.6e-23   2.2e-19      14      59 ..      45      90 .]      42      90 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 2.9e-07
+      rpmG_prot  2 skkkiRiqviieCtehkns 20
+                   ++++ Riq+i+eC+e+k+ 
+  SMPARSP3_6100 21 NRNRNRIQIILECLEQKEQ 39
+                   56788***********985 PP
+
+  == domain 2  score: 68.0 bits;  conditional E-value: 2.6e-23
+      rpmG_prot 14 CtehknsglyGtsRYittknkknnperLeLkkfnpiLnRktlhkei 59
+                     e+k+  + G+sRY+ttkn++n+p++ +L+kfnp+L R+tlhkei
+  SMPARSP3_6100 45 QKEQKKIVINGISRYFTTKNRINTPRKFHLRKFNPFLKRVTLHKEI 90
+                   5799*****************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (60 nodes)
+Target sequences:                       8662  (229776 residues searched)
+Passed MSV filter:                       240  (0.0277072); expected 173.2 (0.02)
+Passed bias filter:                       89  (0.0102748); expected 173.2 (0.02)
+Passed Vit filter:                         3  (0.00034634); expected 8.7 (0.001)
+Passed Fwd filter:                         1  (0.000115447); expected 0.1 (1e-05)
+Initial search space (Z):               8662  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6190.21
+//
+[ok]

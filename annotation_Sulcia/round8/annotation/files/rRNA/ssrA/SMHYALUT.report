@@ -1,0 +1,66 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMHYALUT.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMHYALUT.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    5.2e-17   58.2  20.1  SMHYALUT  31206  31039 
+    5.3e-12   41.8   8.1  SMHYALUT  31004  30927 
+
+
+Annotation for each hit  (and alignments):
+>> SMHYALUT  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   58.2  20.1   5.2e-17         1       163 [.     31206     31039 ..     31206     31019 ..    159741    0.80
+
+  Alignment:
+  score: 58.2 bits
+      ssrA     1 ggggctggattggaattgacaacaagattaatatataagtaagcatatcgtgaaaagtaatgtaatcacgtaaata.tcattacaaatg.ataaccg 95   
+                 ggggctg  ttgg  ttgaca caag   a    ataag aagcatatcgtgaaa gtaatgtaatcacgtaaa a tcattacaaat  ataa  g
+  SMHYALUT 31206 GGGGCTGATTTGGTTTTGACATCAAGGAAATATAATAAGAAAGCATATCGTGAAATGTAATGTAATCACGTAAAAAtTCATTACAAATAaATAATAG 31110
+                 799**********************976544444799**********************************98876369*****9887523555555 PP
+
+      ssrA    96 gc...aaaaaaaattatgctcttgcggcttgatcaataactttgaattcgaatgcaagatttttttattaa 163  
+                 gc   a aaa aatta+ ctcttgc gctt a c a  ac  t aat  g a g  ag t tt tt tta 
+  SMHYALUT 31109 GCgaaACAAAGAATTACTCTCTTGCAGCTTAAGCGAAGACAGTAAATAAGTAAGTGAGGTGTTGTTTTTAT 31039
+                 5511155667789***********************99999999999999999999988877666555543 PP
+
+>> SMHYALUT  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   41.8   8.1   5.3e-12       263       342 ..     31004     30927 ..     31024     30926 ..    159741    0.82
+
+  Alignment:
+  score: 41.8 bits
+      ssrA   263 tttgctctttgataagataaatatgtagaaaacttataatattacttgtttggacacgggttcgaatcccgtcagctcca 342  
+                 tt   tct t ataag taaatatgta a   cttat atattacttgt tggacacgggttcgaatcccgtcag tcca
+  SMHYALUT 31004 TTATATCT-TTATAAGCTAAATATGTAAAGGTCTTATTATATTACTTGT-TGGACACGGGTTCGAATCCCGTCAGTTCCA 30927
+                 33334454.4599**********************************97.699***********************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (319482 residues searched)
+Residues passing SSV filter:          298439  (0.934); expected (0.02)
+Residues passing bias filter:         209726  (0.656); expected (0.02)
+Residues passing Vit filter:            3489  (0.0109); expected (0.003)
+Residues passing Fwd filter:            1110  (0.00347); expected (3e-05)
+Total number of hits:                      2  (0.00077)
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 1710.89
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMHYALUT.sto
+[ok]

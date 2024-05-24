@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplX2_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genomes/SMAKOQUE/SMAKOQUE_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genes/rplX2/rplX2_SMAKOQUE.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplX2_prot  [M=110]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    8.2e-33  111.9  25.1    9.4e-23   79.5  13.4    2.9  2  SMAKOQUE_6584  [127066 - 126635] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMAKOQUE_6584  [127066 - 126635] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.3   5.4   5.2e-13   5.3e-09       1      30 [.       7      36 ..       7      42 .. 0.91
+   2 !   79.5  13.4   9.2e-27   9.4e-23      12     102 ..      42     143 ..      33     144 .] 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 35.3 bits;  conditional E-value: 5.2e-13
+     rplX2_prot  1 mkiktkdtilinsgnskgkkgkvikiikkk 30
+                   mkiktkd+ilinsgn+kg kgkviki + k
+  SMAKOQUE_6584  7 MKIKTKDNILINSGNYKGNKGKVIKIRNTK 36
+                   9************************98766 PP
+
+  == domain 2  score: 79.5 bits;  conditional E-value: 9.2e-27
+     rplX2_prot  12 nsgnskgkkgkvikiikkkkralvkllnk..........qlieidlsnilliyrpsln..yksfdkvkkllikvrkinkklnslfsieelknllki 95 
+                    + g +kg kg        k ralv++ln+          +li idlsn+lliyrp +n  +k f +v+kll+k+rkin +ln lfsieel nll i
+  SMAKOQUE_6584  42 KVGGTKGSKGF-QDYQDYKSRALVEILNQkkkkkssegkKLISIDLSNLLLIYRPYYNegKKIFYQVQKLLMKMRKINNQLNDLFSIEELNNLLTI 136
+                    66777777774.3556677788888887533333332326*****************955689********************************* PP
+
+     rplX2_prot  96 rdlenik 102
+                    rdlen+k
+  SMAKOQUE_6584 137 RDLENLK 143
+                    *****99 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (110 nodes)
+Target sequences:                      10271  (263434 residues searched)
+Passed MSV filter:                       426  (0.041476); expected 205.4 (0.02)
+Passed bias filter:                       96  (0.0093467); expected 205.4 (0.02)
+Passed Vit filter:                         3  (0.000292085); expected 10.3 (0.001)
+Passed Fwd filter:                         1  (9.73615e-05); expected 0.1 (1e-05)
+Initial search space (Z):              10271  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 4893.80
+//
+[ok]

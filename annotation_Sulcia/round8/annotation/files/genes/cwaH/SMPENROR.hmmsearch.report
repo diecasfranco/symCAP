@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/cwaH_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMPENROR/SMPENROR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/cwaH/cwaH_SMPENROR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cwaH_prot  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.1e-56  189.9   0.5    1.2e-56  189.8   0.5    1.0  1  SMPENROR_6628  [78971 - 78684] (REVERSE SENSE) 
+    1.1e-34  118.5   3.8    1.2e-34  118.4   3.8    1.0  1  SMPENROR_6632  [78680 - 78504] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPENROR_6628  [78971 - 78684] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  189.8   0.5   2.8e-60   1.2e-56       1      92 [.       5      96 .]       5      96 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 189.8 bits;  conditional E-value: 2.8e-60
+      cwaH_prot  1 mlsvlilnelsysalhlaiqliyhrfvqlgplvleldpfklltlaidrdrtvsrrsepssratllgeqpnpwdllqpqdvtsrhrgaepsrr 92
+                   mlsvlil+elsysalhlaiqliyhrfvqlgplvleldpfklltl+idrdrtv rrsepssratl geqpnpwdllqpqdvtsrhrgaep rr
+  SMPENROR_6628  5 MLSVLILSELSYSALHLAIQLIYHRFVQLGPLVLELDPFKLLTLTIDRDRTVLRRSEPSSRATLTGEQPNPWDLLQPQDVTSRHRGAEPLRR 96
+                   9****************************************************************************************998 PP
+
+>> SMPENROR_6632  [78680 - 78504] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  118.4   3.8   2.8e-38   1.2e-34      94     152 .]       1      59 []       1      59 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 118.4 bits;  conditional E-value: 2.8e-38
+      cwaH_prot  94 ellgetsllsleyllsferwpfhteppdhyallsylidlsvsqsstlmplhsthdyqtc 152
+                    +llg tsllsleyllsferwpfht+ppdhyallsyl+dlsvsqsstlmplhs+hdyqtc
+  SMPENROR_6632   1 DLLGATSLLSLEYLLSFERWPFHTVPPDHYALLSYLLDLSVSQSSTLMPLHSKHDYQTC 59 
+                    69********************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       8749  (235816 residues searched)
+Passed MSV filter:                        69  (0.00788662); expected 175.0 (0.02)
+Passed bias filter:                       49  (0.00560064); expected 175.0 (0.02)
+Passed Vit filter:                         3  (0.000342896); expected 8.7 (0.001)
+Passed Fwd filter:                         2  (0.000228598); expected 0.1 (1e-05)
+Initial search space (Z):               8749  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 20766.95
+//
+[ok]

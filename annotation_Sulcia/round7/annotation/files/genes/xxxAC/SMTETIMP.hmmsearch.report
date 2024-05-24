@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxAC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMTETIMP/SMTETIMP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/xxxAC/xxxAC_SMTETIMP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxAC_prot  [M=535]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    9.4e-11   39.7   9.6    1.3e-06   26.1   4.1    2.1  2  SMTETIMP_3066  [107942 - 108706] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMTETIMP_3066  [107942 - 108706] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.1   4.1   1.6e-10   1.3e-06       1      73 [.       8      81 ..       8     144 .. 0.71
+   2 !   15.6   2.2   2.4e-07    0.0019     441     519 ..     153     234 ..     103     247 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 26.1 bits;  conditional E-value: 1.6e-10
+     xxxAC_prot  1 mltvqnlyfqfgkrllfnnvsikftkgncygiigangsgkstflkiisgeqk..ptkgkilvesekrisflkqdh 73
+                   ml +++l   + +++++nn+ +k+   +++ ++g ngsgkst+  ii+g++     kgkil e+ k i++l  + 
+  SMTETIMP_3066  8 MLQIRDLSAAINNKIILNNINLKINYNEVHVLMGPNGSGKSTLSSIIAGKKEfsIIKGKILFEN-KNITYLSPEE 81
+                   788999999999*************************************8762267*****995.7898887554 PP
+
+  == domain 2  score: 15.6 bits;  conditional E-value: 2.4e-07
+     xxxAC_prot 441 lsggekmrc.lfamlmllkgnvlildeptnhldleaitslnka...lkefkgniiitsrdqkllqtvcnnfieitdsgtiiny 519
+                    +sggek rc +f m m +  ++ ilde    ldl+a+  + +    lk+ k  ++i ++ +++l+ +  + i i   g +i+ 
+  SMTETIMP_3066 153 FSGGEKKRCeIFQMGM-IEPKLAILDEIDSGLDLDALKIIANGilrLKKKKSSLLIITHYNRMLKFIQPDKIHILYKGQLIKS 234
+                    69*******5566655.68999**************98876542227889999999999999****99999999999999864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (535 nodes)
+Target sequences:                       8212  (214836 residues searched)
+Passed MSV filter:                       135  (0.0164394); expected 164.2 (0.02)
+Passed bias filter:                       39  (0.00474915); expected 164.2 (0.02)
+Passed Vit filter:                         2  (0.000243546); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000121773); expected 0.1 (1e-05)
+Initial search space (Z):               8212  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 10166.73
+//
+[ok]

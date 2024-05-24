@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_pyro//annotation/files/genomes/VFRANSCY/VFRANSCY_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_pyro//annotation/files/genes/rluD/rluD_VFRANSCY.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluD_prot  [M=222]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.4e-21   70.3   6.9    3.8e-20   65.7   6.8    2.1  1  VFRANSCY_55  [55620 - 56171]
+    1.4e-21   70.3  34.9    1.9e-21   69.9  34.9    1.1  1  VFRANSCY_34  [32521 - 33222]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFRANSCY_55  [55620 - 56171]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   65.7   6.8   5.3e-22   3.8e-20      47     179 ..      15     132 ..       5     156 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 65.7 bits;  conditional E-value: 5.3e-22
+    rluD_prot  47 lgkkiflnkkrlgilnRlDkdtsGiii.isknrktysiikklfkkrkikkyylvlekislkikknkFyiknflvkfklngkfsvtyikkilsy.kkvf 142
+                     +i + +++ ++ nRlD+d+sG+++ +sk+  +++ ++kl+  ++ +                 F+ + f+++   n k+s++ i  + +  +  +
+  VFRANSCY_55  15 NSDSIASLYPNYYLFNRLDYDVSGLLLyVSKHVLNIFCFRKLYYAVIYG-----------------FFYNCFSIHSICNYKYSLSRIYLVSYLhNLNI 95 
+                  56789999****************9873688888989898887554433.................33333445555566666666655554313357 PP
+
+    rluD_prot 143 siliikiltGrkhQIrkqlsiiGyPivgdklygkkik 179
+                  si++i+i+tGrk+QIrkqls++GyPiv d  +g  + 
+  VFRANSCY_55  96 SIVKIEIITGRKNQIRKQLSLLGYPIVLDSRFGNRLL 132
+                  9****************************99998764 PP
+
+>> VFRANSCY_34  [32521 - 33222]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.9  34.9   2.6e-23   1.9e-21       2     216 ..       8     228 ..       7     233 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 69.9 bits;  conditional E-value: 2.6e-23
+    rluD_prot   2 kkevflkkkkkkikiiyenkyfiivkkkkkilvydtknv..kknilslg....kkiflnkkrlgilnRlDkdtsGiiiisknrktysiikklfkkrki 93 
+                  k+++f+   +  ++ i+++++ i ++kkk +l+y++  +  +k+++sl+    k i+ + +r+g++nRlD+ + Gi+i++ n   y+ ++ ++k++ i
+  VFRANSCY_34   8 KRIFFILSSNGLFDTIFKDSNIICFYKKKYYLTYPISSMykRKDFISLIttkcKYINHKLPRFGLINRLDYLSIGILIFCINPCYYNSLIYYYKNKLI 105
+                  578999****************************98763224677776522226799999************************************** PP
+
+    rluD_prot  94 kkyylvlekislkikknkFyiknflvkfk..l.ngkfsvtyikkilsy...kkvfsiliikiltGrkhQIrkqlsiiGyPivgdklygkkikaknivL 185
+                  kkyy+++ +  ++   n +  ++f +  k  l +g   +t++ +  ++   ++  sil++ ++tG  hQ+r ql+i Gy i++d    k+ k+k ++L
+  VFRANSCY_34 106 KKYYITIVNGLFPQFLNSY--CGFHISKKkvLrKGNSILTNFTRFSYFksgNRYYSILVCITSTGKYHQLRDQLRIEGYNIISDS---KNCKKKYFFL 198
+                  ******9988776444443..34433222112133344455555444411156789****************************5...8999****** PP
+
+    rluD_prot 186 fswklsfalkkekikfyslirkkilkkliks 216
+                  +++ +++++   k+   +l+ k i + l+++
+  VFRANSCY_34 199 QFFMVNINNVLIKVPLDFLFLKLISR-LSFN 228
+                  *******9998888888888776654.3333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (222 nodes)
+Target sequences:                        143  (38337 residues searched)
+Passed MSV filter:                        94  (0.657343); expected 2.9 (0.02)
+Passed bias filter:                        3  (0.020979); expected 2.9 (0.02)
+Passed Vit filter:                         2  (0.013986); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.013986); expected 0.0 (1e-05)
+Initial search space (Z):                143  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2184.07
+//
+[ok]

@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/korB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMTETSUL/SMTETSUL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/korB/korB_SMTETSUL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       korB_prot  [M=282]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    9.5e-12   43.8   0.7      1e-11   43.6   0.7    1.0  1  SMTETSUL_5762  [89426 - 89310] (REVERSE SENSE) 
+    2.9e-11   42.2   0.3      3e-11   42.1   0.3    1.0  1  SMTETSUL_5778  [88929 - 88834] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMTETSUL_5762  [89426 - 89310] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.6   0.7   2.5e-15     1e-11       2      30 ..      11      39 .]      10      39 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 43.6 bits;  conditional E-value: 2.5e-15
+      korB_prot  2 kkikwcpgcgnfsilkqissilpllgisk 30
+                   kk+kwcpgcgn+silkqi silpllgi k
+  SMTETSUL_5762 11 KKMKWCPGCGNLSILKQIYSILPLLGIPK 39
+                   8*************************976 PP
+
+>> SMTETSUL_5778  [88929 - 88834] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.1   0.3   7.4e-15     3e-11     157     187 ..       2      32 .]       1      32 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 42.1 bits;  conditional E-value: 7.4e-15
+      korB_prot 157 hlkkmllkcqehigtsfleiyqnciifnnkf 187
+                    hlkkmllkc e+igtsfl iy+n iif+nkf
+  SMTETSUL_5778   2 HLKKMLLKCPEQIGTSFLSIYKNGIIFHNKF 32 
+                    9*****************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (282 nodes)
+Target sequences:                       8259  (215781 residues searched)
+Passed MSV filter:                       159  (0.0192517); expected 165.2 (0.02)
+Passed bias filter:                       67  (0.00811236); expected 165.2 (0.02)
+Passed Vit filter:                        11  (0.00133188); expected 8.3 (0.001)
+Passed Fwd filter:                         9  (0.00108972); expected 0.1 (1e-05)
+Initial search space (Z):               8259  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 14546.80
+//
+[ok]

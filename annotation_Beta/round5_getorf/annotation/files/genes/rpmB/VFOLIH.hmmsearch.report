@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFOLIH/VFOLIH_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/rpmB/rpmB_VFOLIH.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmB_prot  [M=64]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    4.2e-14   51.6  26.9    4.2e-14   51.6  26.9    1.6  2  VFOLIH_6368  [35425 - 35195] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOLIH_6368  [35425 - 35195] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.1       0.2   1.4e+03      45      55 ..       3      13 ..       1      17 [. 0.51
+   2 !   51.6  26.9   5.8e-18   4.2e-14       6      63 ..      24      77 .]      22      77 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.2
+    rpmB_prot 45 ikiklstkaik 55
+                 +kik  t+  k
+  VFOLIH_6368  3 LKIKYRTRNTK 13
+                 44444444444 PP
+
+  == domain 2  score: 51.6 bits;  conditional E-value: 5.8e-18
+    rpmB_prot  6 lltkKktlfGNkvSkSkkktkRkFkvNikkkkifiknknikiklstkaikilkklkkk 63
+                 +++ Kkt+fGNk+SkS+kk kR+FkvN++++k+++k    ++k+s+k+ik+lkk++kk
+  VFOLIH_6368 24 FFMIKKTMFGNKKSKSNKKVKRVFKVNKQIYKYNNK----RKKISVKYIKFLKKNEKK 77
+                 5789***************************99766....5689***********997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (64 nodes)
+Target sequences:                       7295  (199358 residues searched)
+Passed MSV filter:                      1544  (0.211652); expected 145.9 (0.02)
+Passed bias filter:                      240  (0.0328992); expected 145.9 (0.02)
+Passed Vit filter:                        42  (0.00575737); expected 7.3 (0.001)
+Passed Fwd filter:                         1  (0.00013708); expected 0.1 (1e-05)
+Initial search space (Z):               7295  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4668.19
+//
+[ok]

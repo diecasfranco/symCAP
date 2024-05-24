@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/mnmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round10/annotation/files/genomes/VFPARIOC/VFPARIOC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round10/annotation/files/genes/mnmA/mnmA_VFPARIOC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       mnmA_prot  [M=337]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    7.8e-42  137.1  46.3    8.6e-42  136.9  46.3    1.0  1  VFPARIOC_103  [99165 - 98410] (REVERSE SENSE)
+    8.3e-14   44.9   9.4    8.5e-14   44.9   9.4    1.0  1  VFPARIOC_102  [98378 - 98148] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPARIOC_103  [99165 - 98410] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  136.9  46.3   1.2e-43   8.6e-42       4     245 ..       4     250 ..       1     251 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 136.9 bits;  conditional E-value: 1.2e-43
+     mnmA_prot   4 evviLysGGldstfvifllkklnvkfyCvyikvClykkkesi...seikkckklkkllnskllfvdlskeykkkvfkkfikeykaGltpnpdvfCne 97 
+                   +++i  sGG+ds f++f lkk+ ++ +C y+   + +++++    ++i  c k+  +l +kl +++ ++ ++kk+f k+ k+yk+Gl+ npd++Cn 
+  VFPARIOC_103   4 KIMISLSGGIDSSFCAFFLKKIKYHTICYYLENNIKNENKFCgseEDIIYCYKICRILKIKLKIINSNSFFYKKIFLKLLKKYKKGLSYNPDIYCNF 100
+                   79999**************************987766555433326899************************************************ PP
+
+     mnmA_prot  98 klkfkcvvkyllkklkvilklftGhyvrkkenklliskdlkkdqtyflcavfn...lknlifllGeflkkevvflikflillikvnatsrGiCflei 191
+                    +kf+ ++k  +kk k+    f Ghy+  + ++l++s d  kdqtyfl+++     + + +f+lG++ kk   ++++fl +     ++s+GiCf++ 
+  VFPARIOC_103 101 LIKFNFLIKK-IKKKKFFRFAF-GHYAISNGKNLMCSLDKNKDQTYFLYKIIInkyFSKFFFPLGMWKKKLTKHIVNFLNFPNYKRKSSKGICFINN 195
+                   *****99985.67777766555.**************************98632338899*********************9999***********9 PP
+
+     mnmA_prot 192 skfasfialyvkkknilentigkilGkaraslyltvGqrvs.ylklknqyvvkkq 245
+                    +f  fi++y+k k  ++     +  k +  +y+ + qr+   + +k +y++kk 
+  VFPARIOC_103 196 INFGKFIKKYIKSKGKIYINETLYYKKYINMYYMSLNQRIReNIINKRHYIYKKK 250
+                   9*************9999766666667778899*******62688999*****96 PP
+
+>> VFPARIOC_102  [98378 - 98148] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.9   9.4   1.2e-15   8.5e-14     278     336 ..      17      74 ..       1      75 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 44.9 bits;  conditional E-value: 1.2e-15
+     mnmA_prot 278 vikkvlyvkvnscskfekcfvfllkkkyfvkfvypvrklskGqflvvydanllvaglei 336
+                   ++kk +++k+ns s    cf++++k ++++ ++yp++ +skGq +v y++n++v+g+ei
+  VFPARIOC_102  17 NYKK-VFCKINSRSDKIICFIIRYKINFKIILIYPLKIISKGQHIVFYKKNICVGGGEI 74 
+                   4455.59*************************************************998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (337 nodes)
+Target sequences:                        141  (38834 residues searched)
+Passed MSV filter:                       107  (0.758865); expected 2.8 (0.02)
+Passed bias filter:                        3  (0.0212766); expected 2.8 (0.02)
+Passed Vit filter:                         2  (0.0141844); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.0141844); expected 0.0 (1e-05)
+Initial search space (Z):                141  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2199.60
+//
+[ok]

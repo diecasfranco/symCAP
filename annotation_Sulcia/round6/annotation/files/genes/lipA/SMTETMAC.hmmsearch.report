@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/lipA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMTETMAC/SMTETMAC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/lipA/lipA_SMTETMAC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lipA_prot  [M=286]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    6.5e-15   54.0   0.9    1.2e-08   33.4   0.2    2.0  2  SMTETMAC_756  [27527 - 27712] 
+    9.3e-12   43.6   0.3    9.5e-12   43.6   0.3    1.0  1  SMTETMAC_761  [27730 - 27849] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMTETMAC_756  [27527 - 27712] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.4   0.2   2.9e-12   1.2e-08      57      88 ..       5      36 ..       2      39 .. 0.90
+   2 !   20.7   0.0   2.2e-08   9.1e-05     134     159 ..      37      62 .]      34      62 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 33.4 bits;  conditional E-value: 2.9e-12
+     lipA_prot 57 atflilgnlctrsckfcgiktgkpkkidfeep 88
+                  +++++l nlctrsckf +ikt kpkki++ e 
+  SMTETMAC_756  5 LSLILLVNLCTRSCKFGAIKTVKPKKINVLES 36
+                  68899***********************9886 PP
+
+  == domain 2  score: 20.7 bits;  conditional E-value: 2.2e-08
+     lipA_prot 134 kltletlipdfkgrkdlinliinekp 159
+                     t+e+lipdf+g+++ i+lii+e+p
+  SMTETMAC_756  37 TSTIEALIPDFQGHQKQIALIIKEHP 62 
+                   569*********************98 PP
+
+>> SMTETMAC_761  [27730 - 27849] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.6   0.3   2.3e-15   9.5e-12     168     207 ..       1      37 [.       1      40 [] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 43.6 bits;  conditional E-value: 2.3e-15
+     lipA_prot 168 tvrrltkkvrvqakydrsinvlkyiklksnirtktgimlg 207
+                   tv+rltkkvr qaky+rs+++lk   +ks+ rt+tgimlg
+  SMTETMAC_761   1 TVPRLTKKVRLQAKYERSLSLLK---TKSDRRTQTGIMLG 37 
+                   89*****************9985...89***********9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (286 nodes)
+Target sequences:                       8187  (215009 residues searched)
+Passed MSV filter:                        96  (0.0117259); expected 163.7 (0.02)
+Passed bias filter:                       36  (0.00439722); expected 163.7 (0.02)
+Passed Vit filter:                         5  (0.000610724); expected 8.2 (0.001)
+Passed Fwd filter:                         4  (0.000488579); expected 0.1 (1e-05)
+Initial search space (Z):               8187  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12698.73
+//
+[ok]

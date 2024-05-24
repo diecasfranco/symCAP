@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/grpE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMRANSCY/SMRANSCY_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/grpE/grpE_SMRANSCY.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       grpE_prot  [M=192]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+      3e-49  166.1  40.7      3e-49  166.1  40.7    2.1  2  SM_RANSCY_1447  [50053 - 50826] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SM_RANSCY_1447  [50053 - 50826] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?  -17.7  40.2         1   8.2e+03      16      79 ..      27      91 ..      13      93 .. 0.63
+   2 !  166.1  40.7   3.7e-53     3e-49       2     191 ..      77     257 ..      75     258 .] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: -17.7 bits;  conditional E-value: 1
+       grpE_prot 16 ikniyldlik.fyetknkkvkkkiiklfiqfesqkerklnvlnrkylkilaeienykkrkkkekk 79
+                     k  y    k  y+++nk+ k++++   ++++++++++ n  ++k +++  +++n k ++kk++k
+  SM_RANSCY_1447 27 YKSKYKYKYKsKYNKNNKNNKNNKNNKNNNNNKNNNNNKNKKKKKQMQMQMQMNNKKNKIKKNNK 91
+                    33333333330355555655555555556666666677788899999999*****9999999876 PP
+
+  == domain 2  score: 166.1 bits;  conditional E-value: 3.7e-53
+       grpE_prot   2 mkketiktilkq.tkikniyldlikfyetknkkvkkkiiklfiqfesqkerklnvlnrkylkilaeienykkrkkkekkdviekanetllldlls 95 
+                     m+ +  k+++k+ +k+k + l li++ e +n k k++iikl+ +f+++k++k+n    k + i+ae+enykkr++k++   ie+an++l+l+lls
+  SM_RANSCY_1447  77 MQMNNKKNKIKKnNKKKYLLLKLIRYIEHRNIKNKEQIIKLMLNFKKYKKNKIN----KLIGIIAEFENYKKRIEKNQNIRIENANKKLFLELLS 167
+                     566666777765167888999*******************************98....6799********************************* PP
+
+       grpE_prot  96 vledfyrslkeikkknnvpliqGiklikekfykllkkkGlkkiktkkGdkfntdlheaisivkskdkklkGkvldviedGyklknkilkyskvlv 190
+                     + edf+r +   k k      +Gik+i  k+++llkk+G+kki++kkGd+fnt++hea+si+  k  +lkGk+l++ie+Gy +knki+ky+kv+v
+  SM_RANSCY_1447 168 LAEDFKRCFNSKKDK------EGIKIINRKLWNLLKKEGIKKINSKKGDVFNTEIHEAVSIQTIKKPELKGKILHIIESGYSFKNKIIKYTKVIV 256
+                     *********986665......6************************************************************************* PP
+
+       grpE_prot 191 G 191
+                     G
+  SM_RANSCY_1447 257 G 257
+                     9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (192 nodes)
+Target sequences:                       8162  (218902 residues searched)
+Passed MSV filter:                       249  (0.0305072); expected 163.2 (0.02)
+Passed bias filter:                       59  (0.00722862); expected 163.2 (0.02)
+Passed Vit filter:                         3  (0.000367557); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000122519); expected 0.1 (1e-05)
+Initial search space (Z):               8162  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8643.99
+//
+[ok]

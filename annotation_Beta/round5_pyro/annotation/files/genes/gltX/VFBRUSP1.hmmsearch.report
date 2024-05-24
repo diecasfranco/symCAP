@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/gltX_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFBRUSP1/VFBRUSP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/gltX/gltX_VFBRUSP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gltX_prot  [M=395]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.6e-20   66.9   7.1    1.6e-20   66.9   7.1    2.6  3  VFBRUSP1_40  [39731 - 38403] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBRUSP1_40  [39731 - 38403] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.9   7.1   1.1e-22   1.6e-20       2     129 ..      27     151 ..      26     163 .. 0.78
+   2 ?   -1.7   0.1     0.078        11     328     328 ..     242     242 ..     173     322 .. 0.58
+   3 ?   -7.0  14.8         1   1.4e+02     209     344 ..     291     420 ..     282     436 .. 0.39
+
+  Alignments for each domain:
+  == domain 1  score: 66.9 bits;  conditional E-value: 1.1e-22
+    gltX_prot   2 iitRFAPspsGelHiGNlrsaliswifskkkkgkfilRiDntdkkrskkkylkniikilklfkikynkiifQskRkriYikyallLikkkkayfkng. 98 
+                  i+tRFAP+psG+lH+G l+ ++i   +s+  +g+f++RiDnt+   ++ ky k+iik++++f  ++ + +  s  +++ +++++ L++ + +y+  + 
+  VFBRUSP1_40  27 IKTRFAPEPSGYLHLGHLKCIVINSYISNLFNGLFFIRIDNTNPCICSFKYEKSIIKDISTFISNIPY-TRSSDYFHLIYSFIKKLFRYSLIYIDSQd 123
+                  78*********************9999***********************************655554.455677788889************97641 PP
+
+    gltX_prot  99 aiffkvkkkkvikfldnlrkkikinkkeikd 129
+                  ++ + +++    +++ +  + + ++++++++
+  VFBRUSP1_40 124 TLALSLSRG---NYFTIGYRSLFFSRHSFES 151
+                  555554443...3444445555555555555 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 0.078
+    gltX_prot 328 i 328
+                  i
+  VFBRUSP1_40 242 I 242
+                  2 PP
+
+  == domain 3  score: -7.0 bits;  conditional E-value: 1
+    gltX_prot 209 kllkkgilrksivnYilnlgiknkk.kkllslkkliknf.klknikksplkfnikkLl...wyNkkyikkikkkkiykklkkklnkkilklfkkrikl 301
+                   ll++g+  +s++ +++++g++ ++ ++++sl +  k f k +++  s + ++   +    +y  ++i + + + + ++l+        +++ +++ +
+  VFBRUSP1_40 291 GLLNRGYDISSLIEFVISTGYSRSRcQSNISLLR--KIFvKNNSLLCSFIFLSCPIVFsyyYYDMYLIHTKSLSCMVRYLS--------NIIRAKVIF 378
+                  5666666666666666666665443122222222..112022223333332232222200012222222222222222222........333333333 PP
+
+    gltX_prot 302 lkdikklykyllkkikikkkiklkkkilfklllklklnkkikl 344
+                    +ik ++ky+  +  +  k++++++ +++ +  +k+ +k ++
+  VFBRUSP1_40 379 TYNIKVFFKYIY-LSDNIYKVNINSRLIIYGIGIFKMVSKDFF 420
+                  344443333332.223333444444444444444444444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (395 nodes)
+Target sequences:                        140  (35908 residues searched)
+Passed MSV filter:                       120  (0.857143); expected 2.8 (0.02)
+Passed bias filter:                       19  (0.135714); expected 2.8 (0.02)
+Passed Vit filter:                        18  (0.128571); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00714286); expected 0.0 (1e-05)
+Initial search space (Z):                140  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 1236.78
+//
+[ok]

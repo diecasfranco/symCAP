@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/tsf_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMCOTACU/SMCOTACU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/tsf/tsf_SMCOTACU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tsf_prot  [M=268]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.9e-49  166.1  17.9    5.3e-49  165.7  17.9    1.1  1  SMCOTACU_1622  [55937 - 56611] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMCOTACU_1622  [55937 - 56611] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  165.7  17.9   6.4e-53   5.3e-49       8     187 ..      24     201 ..      19     224 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 165.7 bits;  conditional E-value: 6.4e-53
+       tsf_prot   8 eitklrkstnsgikdckkaliesngnlekaidwlrkkgvadatsfkktnegfvickinkkktigvllkiscetdfvtknstflklakiiannaifc 103
+                    +i+klr  t + i  c++a+i+s+g l+ ai++l ++  + +++ +  ne f+ic+ nkkk  +v ++i++etdfvtkn+ f kla+ii+++a+f 
+  SMCOTACU_1622  24 KIKKLRALTRASIMACQNAIIKSKGRLNLAINFLINN--SKNIKKNSFNESFLICRRNKKKNKAVAIRIATETDFVTKNERFKKLANIILEVALFG 117
+                    699*******************************875..677888889************************************************ PP
+
+       tsf_prot 104 kskdelllfkikknlsvkelinhhinniikeqiklisferiksefvgyyvhhsnkigsivGfykkikgieaiskeiamqivatn 187
+                    k+k+++l+++i++ l +++++n+++n i +e i+l+ +++i++ f+++y+hhs +++++vGf++ i+++e+isk++a+q+v + 
+  SMCOTACU_1622 118 KNKKDILKYQIRNKLPLFQIVNYFSNHIFNESIELKQMVLIEAPFINFYIHHSWNKAALVGFSNSIPNLEQISKNLAIQLVCNT 201
+                    ********************************************************************************9865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (268 nodes)
+Target sequences:                       8230  (217472 residues searched)
+Passed MSV filter:                       196  (0.0238153); expected 164.6 (0.02)
+Passed bias filter:                       53  (0.00643985); expected 164.6 (0.02)
+Passed Vit filter:                         2  (0.000243013); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000121507); expected 0.1 (1e-05)
+Initial search space (Z):               8230  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 19598.86
+//
+[ok]

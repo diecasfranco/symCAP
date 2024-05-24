@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/xxxVFLOPSAC07_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFAKOQUE/VFAKOQUE_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/xxxVFLOPSAC07/xxxVFLOPSAC07_VFAKOQUE.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFLOPSAC_xxxVFLOPSAC07  [M=99]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.4e-11   36.7   0.7    3.4e-11   36.7   0.7    1.4  2  VFAKOQUE_79  [76293 - 76652]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFAKOQUE_79  [76293 - 76652]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.1   0.1      0.69        93      59      63 ..       9      13 ..       2      22 .. 0.47
+   2 !   36.7   0.7   2.5e-13   3.4e-11      13      83 ..      34     104 ..      29     119 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -3.1 bits;  conditional E-value: 0.69
+  VFLOPSAC_xxxVFLOPSAC07 59 fniky 63
+                            fnik 
+             VFAKOQUE_79  9 FNIKN 13
+                            33332 PP
+
+  == domain 2  score: 36.7 bits;  conditional E-value: 2.5e-13
+  VFLOPSAC_xxxVFLOPSAC07  13 iihfhtkwslssknlvnvtkilsifykkkiiflrvdieknkdliykfnikyiptliifkngiekyritkif 83 
+                             +++f   ws s   +  v   +   y k i f r++++ ++  ++ fnik +p+li+fk gie  ri  + 
+             VFAKOQUE_79  34 LVEFWADWSPSCVYMNKVIGTIYNKYNKIIDFYRLNVDLDRKAVHDFNIKKVPSLILFKEGIEINRIEGVR 104
+                             6788888887765555555555555667788********************************99998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (99 nodes)
+Target sequences:                        134  (36326 residues searched)
+Passed MSV filter:                        60  (0.447761); expected 2.7 (0.02)
+Passed bias filter:                        3  (0.0223881); expected 2.7 (0.02)
+Passed Vit filter:                         3  (0.0223881); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00746269); expected 0.0 (1e-05)
+Initial search space (Z):                134  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2790.11
+//
+[ok]

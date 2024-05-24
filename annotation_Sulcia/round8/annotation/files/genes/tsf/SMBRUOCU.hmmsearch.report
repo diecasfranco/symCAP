@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/tsf_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMBRUOCU/SMBRUOCU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/tsf/tsf_SMBRUOCU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tsf_prot  [M=268]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.8e-47  160.0  18.4    3.6e-47  159.6  18.4    1.1  1  SMBRUOCU_1650  [57896 - 58567] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMBRUOCU_1650  [57896 - 58567] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  159.6  18.4   4.5e-51   3.6e-47       8     187 ..      25     202 ..      19     218 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 159.6 bits;  conditional E-value: 4.5e-51
+       tsf_prot   8 eitklrkstnsgikdckkaliesngnlekaidwlrkkgvadatsfkktnegfvickinkkktigvllkiscetdfvtknstflklakiiannaifc 103
+                    +i+klr +t + i  c+ka+i+s+g l+ ai++l ++  +++ + +  +e f+ic+ nk+k  +v + i++etdfvtkn++f kla+ii+++a+f 
+  SMBRUOCU_1650  25 KIKKLRSITRASIMACQKAIIKSKGRLNLAINFLINN--SNNRKTNSLKESFIICRRNKNKNQAVAILIATETDFVTKNDMFKKLANIILEVALFG 118
+                    699*******************************986..55666677789********************************************** PP
+
+       tsf_prot 104 kskdelllfkikknlsvkelinhhinniikeqiklisferiksefvgyyvhhsnkigsivGfykkikgieaiskeiamqivatn 187
+                    k+k+++l++ki + + +++++n+++n i +e i+l+ +++i++ f+++y+hhs+k++++vGf++ i+++e isk++a q+v + 
+  SMBRUOCU_1650 119 KKKKDILKYKIMNKFPLFKIVNYFSNHIFNESIELKQMVFIEAPFINFYIHHSYKKATLVGFSNSIPNLEPISKNLARQLVCNT 202
+                    ********************************************************************************9875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (268 nodes)
+Target sequences:                       7998  (211710 residues searched)
+Passed MSV filter:                       228  (0.0285071); expected 160.0 (0.02)
+Passed bias filter:                       56  (0.00700175); expected 160.0 (0.02)
+Passed Vit filter:                         1  (0.000125031); expected 8.0 (0.001)
+Passed Fwd filter:                         1  (0.000125031); expected 0.1 (1e-05)
+Initial search space (Z):               7998  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 19370.65
+//
+[ok]

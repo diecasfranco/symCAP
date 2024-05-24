@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMOECSP1/SMOECSP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/xxxT/xxxT_SMOECSP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxT_prot  [M=121]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.5e-20   72.5  13.6    8.6e-11   40.9   2.8    2.0  2  SMOECSP1_7259  [35017 - 34823] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMOECSP1_7259  [35017 - 34823] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.9   2.8     1e-14   8.6e-11       1      29 [.       2      30 ..       2      32 .. 0.92
+   2 !   38.8   3.3   4.7e-14   3.9e-10      64      95 ..      31      61 ..      28      65 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 40.9 bits;  conditional E-value: 1e-14
+      xxxT_prot  1 mslkitekcincgaceaecpnkaiyegsk 29
+                   m lkit++ci+cgace ecpn+aiye   
+  SMOECSP1_7259  2 MVLKITNECIKCGACELECPNQAIYEDES 30
+                   88************************865 PP
+
+  == domain 2  score: 38.8 bits;  conditional E-value: 4.7e-14
+      xxxT_prot 64 yyfivpekcteclgffdepqcasvcpvdccil 95
+                    y+iv+ekctec+g +d+ qc  vcp++c   
+  SMOECSP1_7259 31 RYLIVSEKCTECIGKYDKHQCVVVCPIHCI-N 61
+                   69*************************984.3 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (121 nodes)
+Target sequences:                       8265  (217937 residues searched)
+Passed MSV filter:                        81  (0.00980036); expected 165.3 (0.02)
+Passed bias filter:                       45  (0.00544465); expected 165.3 (0.02)
+Passed Vit filter:                         1  (0.000120992); expected 8.3 (0.001)
+Passed Fwd filter:                         1  (0.000120992); expected 0.1 (1e-05)
+Initial search space (Z):               8265  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8675.58
+//
+[ok]

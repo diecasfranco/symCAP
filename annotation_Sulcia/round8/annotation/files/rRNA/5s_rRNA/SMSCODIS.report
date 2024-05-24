@@ -1,0 +1,53 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/5s_rRNA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMSCODIS.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/5s_rRNA/SMSCODIS.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5s_rRNA2  [M=110]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    3.5e-29   97.8   0.9  SMSCODIS  60007  59903 
+
+
+Annotation for each hit  (and alignments):
+>> SMSCODIS  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   97.8   0.9   3.5e-29         2       106 ..     60007     59903 ..     60008     59900 ..    140757    0.98
+
+  Alignment:
+  score: 97.8 bits
+  5s_rRNA2     2 ggtgattctagcaacaaggatccacctctttccattccgaacagagaagttaaacttgttagcgccgatggtactagtaattctggaagagtaggtc 98   
+                 gg gatt tagcaa aagg tccacctctt ccattccgaacagagaagttaaactt ttagcgccgatggtactagt  ttctgg agagtaggtc
+  SMSCODIS 60007 GGCGATTATAGCAATAAGGTTCCACCTCTTACCATTCCGAACAGAGAAGTTAAACTTATTAGCGCCGATGGTACTAGTTTTTCTGGGAGAGTAGGTC 59911
+                 6889********************************************************************************************* PP
+
+  5s_rRNA2    99 atcgccta 106  
+                 atcgcc a
+  SMSCODIS 59910 ATCGCCCA 59903
+                 ****9965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (110 nodes)
+Target sequences:                          1  (281514 residues searched)
+Residues passing SSV filter:           12345  (0.0439); expected (0.02)
+Residues passing bias filter:          10032  (0.0356); expected (0.02)
+Residues passing Vit filter:            1351  (0.0048); expected (0.003)
+Residues passing Fwd filter:             163  (0.000579); expected (3e-05)
+Total number of hits:                      1  (0.000373)
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8088.29
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/5s_rRNA/SMSCODIS.sto
+[ok]

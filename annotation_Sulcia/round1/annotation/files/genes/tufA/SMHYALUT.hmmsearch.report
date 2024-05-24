@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/tufA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMHYALUT/SMHYALUT_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/tufA/tufA_SMHYALUT.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tufA_prot  [M=395]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      2e-15   55.1   0.0    4.4e-15   54.0   0.0    1.5  1  SMHYALUT_2936  [106861 - 108948] 
+    2.2e-14   51.7   1.0    4.7e-14   50.6   1.0    1.6  1  SMHYALUT_6810  [21828 - 20011] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMHYALUT_2936  [106861 - 108948] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.0   0.0   1.2e-18   4.4e-15      10     141 ..       8     144 ..       3     161 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 54.0 bits;  conditional E-value: 1.2e-18
+      tufA_prot  10 kphlnigtighvdhgkttltasi..ttvlakkglaiakdfssidnapeekergitint..shveyqtesrhya..hvdcpghadyvknmvtgaaqm 99 
+                    k   nig   h+d gktt t  i   t + +k   +    +++d   +e+ergiti +  +  e+qt+ + y    +d pgh d+  ++      +
+  SMHYALUT_2936   8 KYTRNIGFAAHIDAGKTTTTERIlfYTGINHKLGEVHEGTATMDWMEQEQERGITITSaaTRCEWQTNDKIYKinILDTPGHVDFTVEVERSLRIL 103
+                    55679***************99833355667766899999****************7622578*****999952268***********99999*** PP
+
+      tufA_prot 100 dgailvvaatdgpmpqtrehillarqvgvpnlvvflnkvdqv 141
+                    dg +++ +a dg  pq+ +  l a +  vp +  f+nk+d+ 
+  SMHYALUT_2936 104 DGLVILFSAVDGVEPQSENIWLQADKYKVPRI-CFINKMDRQ 144
+                    *****************999999*******96.7*****974 PP
+
+>> SMHYALUT_6810  [21828 - 20011] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.6   1.0   1.3e-17   4.7e-14      12     141 ..      12     145 ..       3     300 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 50.6 bits;  conditional E-value: 1.3e-17
+      tufA_prot  12 hlnigtighvdhgkttltasi...ttvlakkglaiakdfssidnapeekergitints..hveyqtesrhya..hvdcpghadyvknmvtgaaqmd 100
+                      n   i h+dhgk+tl+  +   t+ +++k   i k+   +dn   e++rgiti++   ++ey  e+++y    +d pgh d+  ++    +  +
+  SMHYALUT_6810  12 IRNFCIIAHIDHGKSTLADRLleyTNTISRKK--IIKKNQYLDNLEIERKRGITIKSHpiQMEYSIENKKYIlnLIDTPGHVDFSYEVERSLSACE 105
+                    568899***********986533377788875..6677789**************87522589*******963369******************** PP
+
+      tufA_prot 101 gailvvaatdgpmpqtrehillarqvgvpnlvvflnkvdqv 141
+                    g +l+v at g   qt  +i la +     ++ ++nk+d  
+  SMHYALUT_6810 106 GVLLLVDATKGIQSQTISKISLAVKTK-KRIIPIINKIDLP 145
+                    ***********************8865.6788899999853 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (395 nodes)
+Target sequences:                       7385  (196153 residues searched)
+Passed MSV filter:                        31  (0.0041977); expected 147.7 (0.02)
+Passed bias filter:                       20  (0.00270819); expected 147.7 (0.02)
+Passed Vit filter:                         4  (0.000541638); expected 7.4 (0.001)
+Passed Fwd filter:                         3  (0.000406229); expected 0.1 (1e-05)
+Initial search space (Z):               7385  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 7572.22
+//
+[ok]

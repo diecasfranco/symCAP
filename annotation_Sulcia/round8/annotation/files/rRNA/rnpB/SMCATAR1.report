@@ -1,0 +1,66 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/rnpB.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMCATAR1.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/rnpB/SMCATAR1.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rnpB  [M=310]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    2.7e-34  115.1   8.0  SMCATAR1  11226  11063 
+    1.1e-15   54.2   5.6  SMCATAR1  10949  10860 
+
+
+Annotation for each hit  (and alignments):
+>> SMCATAR1  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  115.1   8.0   2.7e-34        35       192 ..     11226     11063 ..     11247     11043 ..    161808    0.90
+
+  Alignment:
+  score: 115.1 bits
+      rnpB    35 aatgaggaaagtccggacacattaagg.taacacatcgggtaatacccgtccatcgtgagatgaggaatagtgcaacagaaaaaaagtacagtaagg 130  
+                 aatgag aaagtccggacacatta gg taacaca cgggtaat cccgtccatcgtgagatgagga tagtgcaacagaaa  a gtacagt   g
+  SMCATAR1 11226 AATGAGTAAAGTCCGGACACATTAGGGaTAACACAACGGGTAATCCCCGTCCATCGTGAGATGAGGACTAGTGCAACAGAAAGTATGTACAGTTGAG 11130
+                 7899********************987689******************************************************************* PP
+
+      rnpB   131 ctgtagtgaaattgt.....gtaaactctgtgttgtgaaatgccatgtataccggatactttaaaaa 192  
+                 ctgtagtgaaat  t     gtaaactctgtgttgtgaaatgcca  tatacc gata tt  a +a
+  SMCATAR1 11129 CTGTAGTGAAATCATgtaatGTAAACTCTGTGTTGTGAAATGCCAAATATACCAGATAGTTGGATCA 11063
+                 ***********9876111115678*********************************9988665544 PP
+
+>> SMCATAR1  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   54.2   5.6   1.1e-15       212       298 ..     10949     10860 ..     10970     10849 ..    161808    0.86
+
+  Alignment:
+  score: 54.2 bits
+      rnpB   212 ctatttattcggggggtaggcagatagagataaaaggtaacttttatcccagataaatgataaaaa...aaacagaatccggcttattaa 298  
+                 ct t tat  ggggggtaggcagat gagataaa ggtaacttttatcc agataaatgataaa     a ac gaatccggcttat aa
+  SMCATAR1 10949 CTTTCTATCTGGGGGGTAGGCAGATCGAGATAAAGGGTAACTTTTATCCTAGATAAATGATAAATTattATACTGAATCCGGCTTATAAA 10860
+                 4556788999***************************************************99764122679*************98665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (310 nodes)
+Target sequences:                          1  (323616 residues searched)
+Residues passing SSV filter:           82672  (0.255); expected (0.02)
+Residues passing bias filter:          12222  (0.0378); expected (0.02)
+Residues passing Vit filter:             609  (0.00188); expected (0.003)
+Residues passing Fwd filter:             609  (0.00188); expected (3e-05)
+Total number of hits:                      2  (0.000785)
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 5997.38
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/rnpB/SMCATAR1.sto
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/groEL_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFOMOUHL/VFOMOUHL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/groEL/groEL_VFOMOUHL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       groEL_prot  [M=530]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.5e-80  268.0   0.0    4.7e-43  144.9   0.0    2.1  2  VFOMOUHL_1026  [37695 - 39089] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOMOUHL_1026  [37695 - 39089] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  144.9   0.0   1.4e-46   4.7e-43       4     275 ..       8     264 ..       5     305 .. 0.88
+   2 !  121.0   0.1   2.4e-39   8.1e-36     377     528 ..     308     457 ..     302     459 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 144.9 bits;  conditional E-value: 1.4e-46
+     groEL_prot   4 kkilfkkklrkkllkgikklakavkitlGPkgknviiekkfgkpiitkDGvtvakeielknklenlgaqllkevalktnddaGDGTTtatvlaqsl 99 
+                    +++l++++lr+kl++++ ++a a++ ++GP++ nv+i++ f+++++++DG++v++ i+  n+++ + ++ +++++l++n+d+GDGTT+++++ ++l
+  VFOMOUHL_1026   8 QQLLSCNALRSKLIAILGCVAIAMRPLIGPSAGNVLISDGFSRAWFVRDGLRVINGIRPINNVYGVLWNSIRSTVLSINRDVGDGTTSGYLVLYRL 103
+                    7899******************************************************************************************** PP
+
+     groEL_prot 100 ikegikyislginpikikkeikkllkivikklnkiskkikkkkeikqvatissnndkkigkiIskaikkvgkdgvitieegksskdeleivkGlq. 194
+                    + e+++         + +++  +++++v+++l+ + + ++ +k++k +++++++++ +++++I++ai++++  ++i+i+++++s     i+kG+q 
+  VFOMOUHL_1026 104 LVEATR---------ERHCYALQTMRAVVHMLAGEGRVVRFVKHVKGIVLNAIGFRGYVPNAIVSAIACMHGPATISIKRRHRS-----ISKGYQr 185
+                    **9976.........67889999********************************************************99986.....6777764 PP
+
+     groEL_prot 195 ....fdkGylskyflndn.....ekqkiilenpyiliyekkiknikeilkiLekiskknkplliitediese.vlatlilnnirgiikvvv 275
+                        +  G+++++++++n     e+ ++ ++++++++++++++           ++++n+++++++++ + + +++tl +++i+g++++v 
+  VFOMOUHL_1026 186 ciirL-DGVMHTRNIRSNaprtsERPRNEMASACLVTMDHRVA-----------YNRDNAMVFVLNNGSALQwIKSTLAIECIDGSCAIVY 264
+                    43214.5********8753333368899************985...........7899*********999775899***********9984 PP
+
+  == domain 2  score: 121.0 bits;  conditional E-value: 2.4e-39
+     groEL_prot 377 iikvGgsteievkekkyrieDaLNatkaAieeGivpGgGiallriseklkkkikkkkkniglkillkslkkPfkqilknagiepkiilskiknk.. 470
+                    ii +G++t++++++ +++++DaLNa+++A+++G+++G+Gi++++i+ +++++     +++++k +lk++++Pfk +++n+gi++++++++++++  
+  VFOMOUHL_1026 308 IIGIGATTAFARNSIIDKVHDALNAIRSAMRYGYIMGCGITMAKIAIRVYER-----NSAVFKPMLKAMAYPFKVLCTNRGINAMQLITTMQQCyk 398
+                    89********************************************999864.....6789******************************98632 PP
+
+     groEL_prot 471 .kinfgydlkkkkycnlikkgiiDpvkvvklalknavsiaklilttecaivnkkkkkkk 528
+                     + +f  dl++ +++  ++++i+D++++  la+++++++++++l++++a+v++k+ +++
+  VFOMOUHL_1026 399 rNGCFLPDLRSLQMHGSHSYAIVDCMMSAILAVRYGFCLCRYLLDVRYALVDHKALAIR 457
+                    2678999*********************************************9987765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (530 nodes)
+Target sequences:                       3371  (108170 residues searched)
+Passed MSV filter:                        12  (0.00355977); expected 67.4 (0.02)
+Passed bias filter:                        6  (0.00177989); expected 67.4 (0.02)
+Passed Vit filter:                         1  (0.000296648); expected 3.4 (0.001)
+Passed Fwd filter:                         1  (0.000296648); expected 0.0 (1e-05)
+Initial search space (Z):               3371  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6515.32
+//
+[ok]

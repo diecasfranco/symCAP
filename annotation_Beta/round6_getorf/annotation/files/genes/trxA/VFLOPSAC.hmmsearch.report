@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/trxA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFLOPSAC/VFLOPSAC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/trxA/trxA_VFLOPSAC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trxA_prot  [M=98]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.1e-39  133.0  14.3    1.1e-39  133.0  14.3    1.4  2  VFLOPSAC_2080  [83652 - 84032] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLOPSAC_2080  [83652 - 84032] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.1   0.1      0.45   2.9e+03      31      36 ..      14      19 ..       6      27 .. 0.45
+   2 !  133.0  14.3   1.6e-43   1.1e-39       1      98 []      29     126 ..      29     126 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: -3.1 bits;  conditional E-value: 0.45
+      trxA_prot 31 ikeiyr 36
+                   i +i +
+  VFLOPSAC_2080 14 ISIIFK 19
+                   222333 PP
+
+  == domain 2  score: 133.0 bits;  conditional E-value: 1.6e-43
+      trxA_prot   1 mnkekeylsekiliefwakWsksskallevikeiyrkynkkiviyrldidknkdaiykfniksvPsLilfknGiekeRiekifnekelvkvleril 96 
+                    m++++eyl+++++i+f++kWs ssk+l++v+k+++++y+kki+++r+di+knkd+iykfnik++P+Li+fknGiek+Ri+kif+ k+++k++++i+
+  VFLOPSAC_2080  29 MKNSLEYLDKIKIIHFHTKWSLSSKNLVNVTKILSIFYKKKIIFLRVDIEKNKDLIYKFNIKYIPTLIIFKNGIEKYRITKIFCLKMIYKKINEII 124
+                    9**********************************************************************************************9 PP
+
+      trxA_prot  97 sk 98 
+                    +k
+  VFLOPSAC_2080 125 FK 126
+                    87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (98 nodes)
+Target sequences:                       6621  (175585 residues searched)
+Passed MSV filter:                       282  (0.0425918); expected 132.4 (0.02)
+Passed bias filter:                       58  (0.00876001); expected 132.4 (0.02)
+Passed Vit filter:                         3  (0.000453104); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000151035); expected 0.1 (1e-05)
+Initial search space (Z):               6621  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11491.96
+//
+[ok]

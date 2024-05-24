@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFRANEDI/VFRANEDI_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/dnaB/dnaB_VFRANEDI.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaB_prot  [M=421]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   3.8e-142  472.9  55.2   3.8e-142  472.9  55.2    1.3  2  VFRANEDI_4161  [83918 - 82557] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFRANEDI_4161  [83918 - 82557] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -5.4   2.2      0.89   5.8e+03     262     278 ..       8      24 ..       2      31 .. 0.38
+   2 !  472.9  55.2  5.8e-146  3.8e-142       1     420 [.      32     453 ..      32     454 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: -5.4 bits;  conditional E-value: 0.89
+      dnaB_prot 262 kalkkikkskiyindss 278
+                    ++ k+ k+ski+i ++ 
+  VFRANEDI_4161   8 TNSKTYKNSKILIANTI 24 
+                    33333344444443332 PP
+
+  == domain 2  score: 472.9 bits;  conditional E-value: 5.8e-146
+      dnaB_prot   1 Mnkllskkiekillallllnkkllkkikkklkekdfklkknkiifkiikkllkkkkkidlilllnkik.kkkkkiklkyinsliklkikklnikky 95 
+                    M+kl+s ++ek++l+++++n+k++k ++++++ekdfk+kkn ++f ++k+l+++ +kid++++l+++  +k+ k+++kyi+++++++++ +n+ +y
+  VFRANEDI_4161  32 MEKLFSIESEKAVLCCIIKNSKYTKLAINTIEEKDFKCKKNLVVFLTLKQLIIRGRKIDIPVILEELAnSKDIKVDVKYITNIYNYNCSISNFLDY 127
+                    999**********************************************************9999876156789********************** PP
+
+      dnaB_prot  96 ikilkkksilrkllkilkkilkkikkkklkikkiikkikkkikklkkkk.kkklsikkelkkilkkilkkkkkkyiktgfkklDkiilgfkpGdli 190
+                    ik++kk+s lr ++++l++i+++i+ ++++ ++i++k++k+i+ lkk +   ++ i+k++k+i+k i++k+k +++ktgf klDki+ g+ pG+l+
+  VFRANEDI_4161 128 IKVIKKYSFLRMISENLREINNNINIGEVNREQIYSKLTKCISYLKKPSgVISTGIRKQVKNIYKYITSKNKPTVYKTGFYKLDKILAGILPGELV 223
+                    ********************************************99876246788***************************************** PP
+
+      dnaB_prot 191 iiAGRPstGKTsfclnicenisikkkkkvlffSLEMskeqilirllssiskieskkilkkklnkkelkkikkalkkikkskiyindssnltleklk 286
+                    i+AGRP+tGKTsfc+ni++++si kk++v+ffSLEMs++q+li+l+ +is+i++k i++kkln+ke+ ki+k l++i+ks+iyi+d+ ++++ +++
+  VFRANEDI_4161 224 IVAGRPATGKTSFCINILNYNSIVKKNTVFFFSLEMSATQLLIKLVGLISTIDTKLINNKKLNRKEIYKIIKVLDIIRKSDIYISDCIFTSTIDIY 319
+                    ************************************************************************************************ PP
+
+      dnaB_prot 287 kkikkilkkkkiklviiDYlQLikikkkkenrnneiseiSrsLKkiakelkipiiviSQLNRnieqRidkkPilSDLrdSGslEQDADlilflske 382
+                    +++ + +   k +++iiDY+QLiki++   nrn+eiseiS++LK+i+kel+ pii+iSQLNR++eqRi+k+PilSDLr+SGslEQDAD ++fls++
+  VFRANEDI_4161 320 NYVISRKVPIKKNIIIIDYIQLIKITSIGGNRNIEISEISSYLKNISKELDTPIILISQLNRQVEQRINKTPILSDLRESGSLEQDADKVIFLSRD 415
+                    ************************************************************************************************ PP
+
+      dnaB_prot 383 esyekkkekielivaKnRnGptgsikLkflkkytkFke 420
+                     ++++k+e+i++iv+KnRnGptgs++Lkf+kky++F++
+  VFRANEDI_4161 416 YFSNNKSENIKVIVGKNRNGPTGSVELKFIKKYNTFVD 453
+                    ************************************86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (421 nodes)
+Target sequences:                       6526  (179288 residues searched)
+Passed MSV filter:                       233  (0.0357033); expected 130.5 (0.02)
+Passed bias filter:                       27  (0.0041373); expected 130.5 (0.02)
+Passed Vit filter:                         5  (0.000766166); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000153233); expected 0.1 (1e-05)
+Initial search space (Z):               6526  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12850.57
+//
+[ok]

@@ -1,0 +1,71 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMVIZSP.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMVIZSP.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    2.5e-15   52.7   8.2  SMVIZSP   86580  86672 
+    2.6e-13   46.1  13.7  SMVIZSP   86414  86550 
+
+
+Annotation for each hit  (and alignments):
+>> SMVIZSP  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   52.7   8.2   2.5e-15       241       342 ..     86580     86672 ..     86567     86673 ..    158390    0.86
+
+  Alignment:
+  score: 52.7 bits
+     ssrA   241 ttatcactaatcttatgtgaaatttgctctttgataagataaatatgtagaaaacttataatattacttgtttggacacgggttcgaatcccgtcagc 338  
+                ttat actaa  ttat tg         ct t ataag taaatatgtaga   cttat atattacttgtttggacacgggttcgaatcccgtcagc
+  SMVIZSP 86580 TTATAACTAAAATTATATG---------CTATTATAAGCTAAATATGTAGATGTCTTATTATATTACTTGTTTGGACACGGGTTCGAATCCCGTCAGC 86668
+                5556666666555555444.........4556699*************************************************************** PP
+
+     ssrA   339 tcca 342  
+                tcca
+  SMVIZSP 86669 TCCA 86672
+                **96 PP
+
+>> SMVIZSP  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   46.1  13.7   2.6e-13         1       124 [.     86414     86550 ..     86414     86570 ..    158390    0.80
+
+  Alignment:
+  score: 46.1 bits
+     ssrA     1 ggggctggattggaattgacaacaagattaatat.ataagtaagcatatcgtgaaaagtaatgtaatcacgtaaata.tcattacaaa.tgataaccg 95   
+                ggggctg  ttgg  ttgaca caag  taatat ataag aagcatatcgtgaaa gta tg aatcacgtaaa a tcattacaaa   ataa  g
+  SMVIZSP 86414 GGGGCTGCTTTGGTTTTGACATCAAG--TAATATaATAAGAAAGCATATCGTGAAAGGTAGTGAAATCACGTAAAAAtTCATTACAAAaAAATAAGAG 86509
+                79**********************98..6777763699**********************************98876369*****8751457888899 PP
+
+     ssrA    96 gcaaaaaaaa...t.........tatgctcttgcggcttga 124  
+                gc aaaaaaa   t         ta  ctcttgc gctt a
+  SMVIZSP 86510 GCGAAAAAAAgaaTttttctttaTACTCTCTTGCCGCTTAA 86550
+                9988887776223222222222235568899*****98754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (316780 residues searched)
+Residues passing SSV filter:          287931  (0.909); expected (0.02)
+Residues passing bias filter:         164693  (0.52); expected (0.02)
+Residues passing Vit filter:            1924  (0.00607); expected (0.003)
+Residues passing Fwd filter:            1131  (0.00357); expected (3e-05)
+Total number of hits:                      2  (0.000726)
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 1820.98
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMVIZSP.sto
+[ok]

@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/xxxVFCOTACU04_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFRANEDI/VFRANEDI_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/xxxVFCOTACU04/xxxVFCOTACU04_VFRANEDI.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFCOTACU_xxxVFCOTACU_04  [M=148]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    5.4e-37  119.9   7.4    1.2e-34  112.3   2.4    2.1  2  VFRANEDI_71  [70389 - 71132]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFRANEDI_71  [70389 - 71132]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  112.3   2.4   8.5e-37   1.2e-34       4     130 ..       3     129 ..       1     139 [. 0.97
+   2 !   10.5   0.2   2.3e-05    0.0032      39     120 ..     157     241 ..     139     246 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 112.3 bits;  conditional E-value: 8.5e-37
+  VFCOTACU_xxxVFCOTACU_04   4 kriipcldvyknkvvkgkkfkeikiiedplrlskiyskkgadeiiflnikkekinsickyikkisksinipitvggniknikdvdm 89 
+                               rii cldv  + v kg  f  +k i d  +++  y     dei++lni k  i s+   ++k+s++i ipit ggnik   dv++
+              VFRANEDI_71   3 NRIIACLDVLGSSVYKGINFSNMKPIGDIYNIAYRYYLDYVDEIVILNIGKSDITSFLGILRKLSRNIYIPITFGGNIKTPSDVEL 88 
+                              79************************************************************************************ PP
+
+  VFCOTACU_xxxVFCOTACU_04  90 lfksgtdrislnstliynnsivnkikkkygsqcivasidvk 130
+                              l+ +g dri lnstl ynn i+  + k+ygsqci+ sidv 
+              VFRANEDI_71  89 LLNNGVDRICLNSTLYYNNEILPYLSKRYGSQCIIGSIDVS 129
+                              ***************************************97 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 2.3e-05
+  VFCOTACU_xxxVFCOTACU_04  39 yskkgadeiiflnikkekinsicky.ikkisksi.nipitvggniknikdvdmlfksgtdrislnstliynn.sivnkikkkygs 120
+                                 kg  ei++ +i k+   s     +   +  i n+pi  +g +  + d+++lf+    + +l ++ +++    +  ik++ +s
+              VFRANEDI_71 157 IESKGIGEILLTSIDKDGTGSGYDIdLMNYALGIsNVPIIASGGVGCFNDIELLFRLTNVKSALIASYLHSGlDSIYNIKRRLSS 241
+                              457899999999999999887543213333333339********************98888888887777642334456766655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (148 nodes)
+Target sequences:                        144  (38234 residues searched)
+Passed MSV filter:                        44  (0.305556); expected 2.9 (0.02)
+Passed bias filter:                        5  (0.0347222); expected 2.9 (0.02)
+Passed Vit filter:                         2  (0.0138889); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00694444); expected 0.0 (1e-05)
+Initial search space (Z):                144  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1488.32
+//
+[ok]

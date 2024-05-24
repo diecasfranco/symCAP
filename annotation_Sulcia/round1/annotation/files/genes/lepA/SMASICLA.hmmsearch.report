@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/lepA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMASICLA/SMASICLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/lepA/lepA_SMASICLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lepA_prot  [M=601]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    4.8e-20   70.3   1.6    7.3e-20   69.7   1.6    1.2  1  SMASICLA_233   [7363 - 8553] 
+    1.8e-12   45.3   0.3    1.9e-12   45.3   0.3    1.0  1  SMASICLA_1557  [61576 - 61752] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMASICLA_233  [7363 - 8553] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.7   1.6   1.6e-23   7.3e-20       6     263 ..      16     287 ..      13     313 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 69.7 bits;  conditional E-value: 1.6e-23
+     lepA_prot   6 nfciiahidhgkstladrlleft.ktisikekknqlldsleierergitikshpiqleykykkkkyllnlidtpghvdftyevsrsisacegallii 101
+                   n+  i h+dhgk+tl+  + +   k      k    +d+   e+ergiti++    +ey+  +++y    +d pgh d+  ++    +  +ga+l+i
+  SMASICLA_233  16 NIGTIGHVDHGKTTLTAAITNVLaKKGLALAKEFSAIDNAPEEKERGITINTS--HVEYETLERHYA--HVDCPGHADYIKNMVTGAAQMDGAILVI 108
+                   66789**********9988775413333346777899*************875..479999999995..79************************** PP
+
+     lepA_prot 102 datksiqsqtisnlelalasnl.tiipiinkidlpy..snielvkleiiellnckknd.....ilcts...akkgig.....iksiidsiikkipsp 182
+                    at +   qt  ++ la +  + +i+  +nki++      ielv lei +ll+  + d     i+  s   a +gi      i ++++++ k+i  p
+  SMASICLA_233 109 SATDGPMPQTREHILLARQVGVpNIVVFLNKIEMVDdkELIELVELEIRDLLSKYEYDgnnipIIHGSalgALNGISkweskIGELMKAVDKHIKIP 205
+                   *****************988763788999****97511569**********976543333333565552224577754333377889999999**** PP
+
+     lepA_prot 183 kgdiklplqaiifdsiynpfrgvqtyfrikngmlktgqkikfl..stnivynveeigifklknlkkkilhagnvgyliagikn 263
+                   k +++ ++   i d    + rg     ri  g++ktg+ i +l  s n++ n    g+   +++  k     nvg l+  i +
+  SMASICLA_233 206 KRQKENNFLMPIEDVFTITGRGTVATGRIESGIIKTGDSIEILglSENKM-NSIVTGVEMFRKILDKGEAGDNVGLLLRSIEK 287
+                   *****99999999999999********************99872255554.44445665555666666667799999999864 PP
+
+>> SMASICLA_1557  [61576 - 61752] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.3   0.3   4.1e-16   1.9e-12      98     140 ..       2      46 ..       1      55 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 45.3 bits;  conditional E-value: 4.1e-16
+      lepA_prot  98 lliidatks..iqsqtisnlelalasnltiipiinkidlpysnie 140
+                    ll++datk+  iq+qtis+l+lal++++ i p inkidlp+ n+e
+  SMASICLA_1557   2 LLLVDATKGigIQAQTISKLYLALKTKKIIRPRINKIDLPSLNLE 46 
+                    89******7337*******************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (601 nodes)
+Target sequences:                       9002  (239757 residues searched)
+Passed MSV filter:                       141  (0.0156632); expected 180.0 (0.02)
+Passed bias filter:                       39  (0.00433237); expected 180.0 (0.02)
+Passed Vit filter:                        12  (0.00133304); expected 9.0 (0.001)
+Passed Fwd filter:                        10  (0.00111086); expected 0.1 (1e-05)
+Initial search space (Z):               9002  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 9757.90
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxAL_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMIDISP1/SMIDISP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/xxxAL/xxxAL_SMIDISP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxAL_prot  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.3e-98  328.8  72.4    1.3e-98  328.8  72.4    2.0  2  SMIDISP1_7694  [32038 - 30917] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMIDISP1_7694  [32038 - 30917] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   7.5      0.27   2.4e+03      23      76 ..      62     113 ..      48     116 .. 0.80
+   2 !  328.8  72.4  1.5e-102   1.3e-98       4     252 ..     116     364 ..     113     365 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 0.27
+     xxxAL_prot  23 rlkylnylinrfkkfiirfllflkkkkrylifllkklknkkkllrsnsklkiyk 76 
+                     l+yl+ + n+  + i  +l fl k    l f++k++   k+ l  ++k k yk
+  SMIDISP1_7694  62 SLEYLSPILNLTFNHIGLLLQFLLK--LLLKFITKNMLTTKNMLTTKKKNKNYK 113
+                    5789999999988888888888875..467788999999999999999988887 PP
+
+  == domain 2  score: 328.8 bits;  conditional E-value: 1.5e-102
+     xxxAL_prot   4 nssiesqlkylyrlqlidlrlkylnylinrfkkfiirfllflkkkkrylifllkklknkkkllrsnsklkiykkkiikllkllskkkeklkklemd 99 
+                    +s +esql+y+yrlqli lr+ky++ linrf++fii+f+lflk+k +yli+l+k++k k+k l +++ +k +kk+++kll+l+s+kke++++l+m+
+  SMIDISP1_7694 116 KSGMESQLRYIYRLQLIYLRYKYFKVLINRFHNFIIKFNLFLKNKTKYLIKLIKNIKRKQKYLIKYKNFKKQKKNLLKLLTLESIKKENPNHLFMS 211
+                    588********************************************************************************************* PP
+
+     xxxAL_prot 100 ieyytidfilkkrkflkkkknlilksrkikqikkyikikelkfklkiinyklkkekinkkiiflkeiekkikkklnkkllkrykiiisisglavvp 195
+                    ieyyt+d+i+kkrkfl kkk ++l ++kik+i+k+ik++++kfklkiiny++++++i++k ++l++i+k+ik+k+n++l+kryk+i+  ++lavvp
+  SMIDISP1_7694 212 IEYYTMDLIIKKRKFLTKKKIILLIKNKIKNIIKFIKQQKIKFKLKIINYNTRYTNIKNKQNELRSIYKQIKNKINNVLYKRYKRILLNNSLAVVP 307
+                    ************************************************************************************************ PP
+
+     xxxAL_prot 196 vykkipvGtyilitkqkyyellerkkliieeisGrilidfylankenkkmkkilfnf 252
+                    vy kipvG+yili+k+ky++llerk+lii+e sG+ilid++la+ en+kmk ilfn 
+  SMIDISP1_7694 308 VYNKIPVGSYILISKIKYSNLLERKHLIIDETSGKILIDYDLAYNENHKMKNILFNN 364
+                    *******************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (253 nodes)
+Target sequences:                       8590  (231880 residues searched)
+Passed MSV filter:                       801  (0.093248); expected 171.8 (0.02)
+Passed bias filter:                      128  (0.014901); expected 171.8 (0.02)
+Passed Vit filter:                        11  (0.00128056); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116414); expected 0.1 (1e-05)
+Initial search space (Z):               8590  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 4863.69
+//
+[ok]

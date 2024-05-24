@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/cwaH_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMIDISP1/SMIDISP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/cwaH/cwaH_SMIDISP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cwaH_prot  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.7e-61  204.9   0.3      3e-61  204.7   0.3    1.0  1  SMIDISP1_6621  [74817 - 74521] (REVERSE SENSE) 
+    2.2e-35  120.7   2.8    2.4e-35  120.6   2.8    1.0  1  SMIDISP1_6625  [74517 - 74350] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMIDISP1_6621  [74817 - 74521] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  204.7   0.3     7e-65     3e-61       1      95 [.       5      99 .]       5      99 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 204.7 bits;  conditional E-value: 7e-65
+      cwaH_prot  1 mlsvlilnelsysalhlaiqliyhrfvqlgplvleldpfklltlaidrdrtvsrrsepssratllgeqpnpwdllqpqdvtsrhrgaepsrryel 95
+                   mlsvlil+elsysalhlaiqliyhrfvqlgplvleldpfklltlaidrdrtvsrrsepssratl+geqpnpwdllqpqdvtsrhrgaepsrr+el
+  SMIDISP1_6621  5 MLSVLILYELSYSALHLAIQLIYHRFVQLGPLVLELDPFKLLTLAIDRDRTVSRRSEPSSRATLMGEQPNPWDLLQPQDVTSRHRGAEPSRRCEL 99
+                   9********************************************************************************************97 PP
+
+>> SMIDISP1_6625  [74517 - 74350] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  120.6   2.8   5.6e-39   2.4e-35      97     152 .]       1      56 []       1      56 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 120.6 bits;  conditional E-value: 5.6e-39
+      cwaH_prot  97 getsllsleyllsferwpfhteppdhyallsylidlsvsqsstlmplhsthdyqtc 152
+                    g+tslls+eyllsferwpfhteppdhyallsylidlsvsqsstlmplhsthdyqtc
+  SMIDISP1_6625   1 GKTSLLSPEYLLSFERWPFHTEPPDHYALLSYLIDLSVSQSSTLMPLHSTHDYQTC 56 
+                    79*****************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       8590  (231880 residues searched)
+Passed MSV filter:                        77  (0.00896391); expected 171.8 (0.02)
+Passed bias filter:                       44  (0.00512224); expected 171.8 (0.02)
+Passed Vit filter:                         5  (0.000582072); expected 8.6 (0.001)
+Passed Fwd filter:                         2  (0.000232829); expected 0.1 (1e-05)
+Initial search space (Z):               8590  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 13624.71
+//
+[ok]

@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplN_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFPROSP/VFPROSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rplN/rplN_VFPROSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplN_prot  [M=123]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    2.2e-14   51.2  26.8    2.4e-14   51.1  26.8    1.0  1  VFPROSP_3090  [18067 - 17705] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPROSP_3090  [18067 - 17705] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.1  26.8   6.7e-18   2.4e-14       3     117 ..       1     118 [.       1     121 [] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 51.1 bits;  conditional E-value: 6.7e-18
+     rplN_prot   3 milqGselkvidntGakkaecikvlGnskkvariGdiikvsikkskkkkkikpGsiykalivktkyslkrkdgtsisflensaillddklellgtri 99 
+                   mi + + +k+idn+ +kk++ i ++ ++    +iG ii  sikk+k +k  k+ ++ kali++ k + +rk+g++i+f +   i++d+k ++l+ +i
+  VFPROSP_3090   1 MINKETIIKIIDNSNIKKIKLINIVNKKTNKLKIGTIIIGSIKKCKPNKLFKKNQLVKALIIQLKKNFNRKNGINIKFNNTIGIIIDNKKNILSNKI 97 
+                   89999********************9999999***********************************************999*************** PP
+
+     rplN_prot 100 krvlskelk...fknikkivs 117
+                   k +  ke+k   f ni+ki+ 
+  VFPROSP_3090  98 KIISIKEIKnlyFDNINKIIK 118
+                   987667766222677777764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (123 nodes)
+Target sequences:                       3568  (92545 residues searched)
+Passed MSV filter:                        97  (0.0271861); expected 71.4 (0.02)
+Passed bias filter:                       15  (0.00420404); expected 71.4 (0.02)
+Passed Vit filter:                         2  (0.000560538); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000280269); expected 0.0 (1e-05)
+Initial search space (Z):               3568  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10278.52
+//
+[ok]

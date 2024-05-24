@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/erpA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFHYALUT/VFHYALUT_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/erpA/erpA_VFHYALUT.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       erpA_prot  [M=99]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    7.2e-39  131.0  16.2    7.8e-39  130.9  16.2    1.0  1  VFHYALUT_6316  [15927 - 15634] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFHYALUT_6316  [15927 - 15634] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  130.9  16.2   1.2e-42   7.8e-39       4      99 .]       2      98 .]       1      98 [] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 130.9 bits;  conditional E-value: 1.2e-42
+      erpA_prot  4 iyvskknllllkkllkkkilfiyvsgqgckgikynflkkkkiiglrlnkn...iytdilsffyiknsklkikkenlsykleiknniikkkckcgisfk 98
+                   ++v+++++++lkk++kk+ lfi+vsg+gckg+kynf++k+k+++l  nkn   i+tdi+s+fy+k+s+l+i+++nl++k++ikn++i++kc cg+sfk
+  VFHYALUT_6316  2 MKVKTCDITILKKMVKKN-LFIFVSGGGCKGLKYNFMEKNKGLTLL-NKNnlkIKTDIFSYFYLKESELYINVVNLCNKIVIKNSTIRDKCLCGMSFK 97
+                   579************998.8************************95.55446689******************************************9 PP
+
+      erpA_prot 99 i 99
+                   +
+  VFHYALUT_6316 98 L 98
+                   7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (99 nodes)
+Target sequences:                       6758  (187501 residues searched)
+Passed MSV filter:                       718  (0.106244); expected 135.2 (0.02)
+Passed bias filter:                      113  (0.0167209); expected 135.2 (0.02)
+Passed Vit filter:                         9  (0.00133175); expected 6.8 (0.001)
+Passed Fwd filter:                         1  (0.000147973); expected 0.1 (1e-05)
+Initial search space (Z):               6758  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8809.91
+//
+[ok]

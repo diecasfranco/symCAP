@@ -1,0 +1,92 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/infB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFBEB/VFBEB_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/infB/infB_VFBEB.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       infB_prot  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    5.7e-13   41.3  19.7    4.4e-11   35.1   0.2    3.7  3  VFBEB_10  [11368 - 13452]
+    4.1e-11   35.2   0.2    1.2e-09   30.4   0.0    2.4  2  VFBEB_1   [1 - 1188]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBEB_10  [11368 - 13452]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.4   0.1     0.003      0.18       9      27 ..      10      28 ..       1      48 [. 0.82
+   2 !   35.1   0.2   7.1e-13   4.4e-11      48     127 ..      78     159 ..      60     202 .. 0.77
+   3 !    6.8  10.7   0.00027     0.017     100     243 ..     241     389 ..     218     436 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 3.4 bits;  conditional E-value: 0.003
+  infB_prot  9 isiiGeVdnGKTtlikklt 27
+               i+i  + d+GKTt +++++
+   VFBEB_10 10 IGICAHIDAGKTTVTERIL 28
+               89999**********9885 PP
+
+  == domain 2  score: 35.1 bits;  conditional E-value: 7.1e-13
+  infB_prot  48 kkkfiiIDtPGHelFnkikkkiikiSDiiilvlsktekinkntikilkyilkkkkkvifviNKiDli..knkkekikikkkl 127
+                k k++iIDtPGH +F+   ++++k+ D i +vl +   i+ +t +i ++  k   + i  +NK+D+   ++++ + ++ kk+
+   VFBEB_10  78 KSKITIIDTPGHVDFSVEVERSMKVLDGICIVLCSVAGIQSQTVSIWNQADKHLLPRICFVNKMDRQgsNYNSVFNQLVKKF 159
+                5799**********************************************9999999999*****86113333333443333 PP
+
+  == domain 3  score: 6.8 bits;  conditional E-value: 0.00027
+  infB_prot 100 kkkkvifviNKiDliknkkekikikkklkklnigekk..ifk.iSakkkigikkllknikniksinktkekkkkygyvinsifskkmkfktkiilkngki 196
+                kk+ ++++ +K+  +  k   +   + +k+ +i++ +  +++   + ++  + k+++  + +  ++++ +  +  + ++++i++++ ++ + + + +g++
+   VFBEB_10 241 KKEIYFLLRTKV--CSLKVFPVICGSAFKNKGIQNLLdaVVNlLPSPFDQKLYKVFDVKNSCFVFKNFLKISDFSALIFKTIIDQYSGHLSFVRIYSGFL 338
+                333333344454..444445555566677777765431122212334556677787655556667777777777889**************9999***** PP
+
+  infB_prot 197 klgdyiy.dkknligkikkIk....kknkkvkeikkvsivkilGikkklkiG 243
+                k gd +y +k+n+ ++i+k++    +k+++v+++++ +i  i+G+k  l+ G
+   VFBEB_10 339 KPGDLVYsFKNNKEYRINKLFhvfaNKKNEVSRMNSGDIGLISGVKDPLT-G 389
+                ******94599*******9863333466789999999********99874.4 PP
+
+>> VFBEB_1  [1 - 1188]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.4   0.0   1.9e-11   1.2e-09       9     144 ..      14     176 ..       6     199 .. 0.65
+   2 ?   -2.8   0.0      0.23        14     370     435 ..     216     281 ..     206     291 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 30.4 bits;  conditional E-value: 1.9e-11
+  infB_prot   9 isiiGeVdnGKTtlikkltn...kki..........k....e.kknITqkirlyklk..kkkfiiIDtPGHelFnki.kkkiikiSDiiilvlsktekin 87 
+                ++ iG+Vd+GKTtl++ +t    +k+               e + +IT ++  ++++    ++  +D PGH+++ k+ +    ++ D  ilv s+ +   
+    VFBEB_1  14 VGTIGHVDHGKTTLTSAITHvlsQKFgcffknysdiDsspeEkERGITINTTHVEYEtsSRHYAHVDCPGHSDYVKNmITGAAQM-DGAILVCSAVDGPM 112
+                899***********998864322332222211111123332213579999988666511678999*******9854303334444.899******99977 PP
+
+  infB_prot  88 kntikil.kyilkkkkkvifviNKiDliknkkek....ikikkklkklnigekk..ifkiSakk 144
+                 +t + +    +    ++i+ +NK+Dl+++ + +    ++i+  l+k+n++  k  i+  Sak 
+    VFBEB_1 113 PQTREHIlLSRQVGVPRIIVYLNKCDLVDDREFIelveMEIRDLLNKYNFDGSKtpIIRGSAKY 176
+                7766544033344456789999******998754222268899999999975551255556664 PP
+
+  == domain 2  score: -2.8 bits;  conditional E-value: 0.23
+  infB_prot 370 ilkiFkikkk.kilGckllkGklkindkvilyrkkkiikkikIksikikkkkvkkvkkneefGillk 435
+                i+ +F+i    +++  k+  Gk+  +d + ++  +k  k++ +  i + +k+ ++ +++ + Gill 
+    VFBEB_1 216 IEDVFSISGRgTVVTGKIERGKVFVGDDLDVLGLNKNTKTVCV-GIEMFNKTLDYGQSGDNVGILLR 281
+                5666666543245556888888888888888777777666654.57778888888888888888775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                        123  (30827 residues searched)
+Passed MSV filter:                        82  (0.666667); expected 2.5 (0.02)
+Passed bias filter:                        5  (0.0406504); expected 2.5 (0.02)
+Passed Vit filter:                         5  (0.0406504); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.0162602); expected 0.0 (1e-05)
+Initial search space (Z):                123  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 1228.09
+//
+[ok]

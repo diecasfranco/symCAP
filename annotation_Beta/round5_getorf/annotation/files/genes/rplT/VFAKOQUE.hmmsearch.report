@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFAKOQUE/VFAKOQUE_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/rplT/rplT_VFAKOQUE.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplT_prot  [M=118]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.7e-26   90.4  24.3    3.2e-26   90.2  24.3    1.0  1  VFAKOQUE_4212  [66208 - 65846] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFAKOQUE_4212  [66208 - 65846] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   90.2  24.3   5.2e-30   3.2e-26       1     108 [.       7     113 ..       7     120 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 90.2 bits;  conditional E-value: 5.2e-30
+      rplT_prot   1 MsRvkssvvskkkrkkllkktkgFigRRknvyriakqAyiksllysyrDrrkkkrilrrkwikkinfflkefnikYskfikllkkknillnrkily 96 
+                    M+Rvkss+v++ k+k+l+kktkgF +RRkn ++ akqAy++sl+  ++  + kkr  r+ wi++in+f + f+++Ysk i ++kk n++ n+kil 
+  VFAKOQUE_4212   7 MARVKSSSVNRYKHKNLIKKTKGFKNRRKNTFKAAKQAYLRSLQHRFKSNKIKKRLKRKIWIENINKFSRYFKLNYSKSIPKIKK-NLTSNKKILN 101
+                    9*******************************************************************************99975.6889****** PP
+
+      rplT_prot  97 elvkekkleiln 108
+                    +l+k+k+++ l 
+  VFAKOQUE_4212 102 DLIKTKIKSELI 113
+                    ****99876553 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (118 nodes)
+Target sequences:                       6257  (161195 residues searched)
+Passed MSV filter:                       363  (0.058015); expected 125.1 (0.02)
+Passed bias filter:                       71  (0.0113473); expected 125.1 (0.02)
+Passed Vit filter:                         6  (0.000958926); expected 6.3 (0.001)
+Passed Fwd filter:                         2  (0.000319642); expected 0.1 (1e-05)
+Initial search space (Z):               6257  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 13142.71
+//
+[ok]

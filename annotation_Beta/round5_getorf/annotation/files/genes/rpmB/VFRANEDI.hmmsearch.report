@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFRANEDI/VFRANEDI_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/rpmB/rpmB_VFRANEDI.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmB_prot  [M=64]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    6.3e-11   41.2  19.4    6.3e-11   41.2  19.4    2.1  2  VFRANEDI_5690  [30330 - 30025] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFRANEDI_5690  [30330 - 30025] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.7   0.9     0.044   2.8e+02      33      54 ..      20      41 ..       8      47 .. 0.67
+   2 !   41.2  19.4   9.7e-15   6.3e-11       2      43 ..      52      94 ..      51     101 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 0.7 bits;  conditional E-value: 0.044
+      rpmB_prot 33 ikkkkifiknknikiklstkai 54
+                   i ++ if++  n k+kl++ a+
+  VFRANEDI_5690 20 ISSISIFYITFNSKFKLPILAY 41
+                   3455666666666777766555 PP
+
+  == domain 2  score: 41.2 bits;  conditional E-value: 9.7e-15
+      rpmB_prot  2 srkclltkKktlfGNkvSkSkkktkRkFkvNikkkkifik.nk 43
+                   +++++l+kK+t++GN++SkS++ktkRkFkvN kk+k +++ nk
+  VFRANEDI_5690 52 HKNKTLSKKRTIKGNNKSKSGRKTKRKFKVNSKKIKRRNMvNK 94
+                   799*****************************99998765144 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (64 nodes)
+Target sequences:                       6526  (179288 residues searched)
+Passed MSV filter:                       512  (0.0784554); expected 130.5 (0.02)
+Passed bias filter:                       98  (0.0150169); expected 130.5 (0.02)
+Passed Vit filter:                         9  (0.0013791); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000153233); expected 0.1 (1e-05)
+Initial search space (Z):               6526  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6214.92
+//
+[ok]

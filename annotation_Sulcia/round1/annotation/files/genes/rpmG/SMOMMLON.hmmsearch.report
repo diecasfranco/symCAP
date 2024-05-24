@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpmG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMOMMLON/SMOMMLON_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/rpmG/rpmG_SMOMMLON.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmG_prot  [M=60]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+    1.9e-26   90.5   6.2    2.3e-26   90.2   6.2    1.1  1  OMMLON_000000308722_5550  [84639 - 84430] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> OMMLON_000000308722_5550  [84639 - 84430] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   90.2   6.2     3e-30   2.3e-26       4      59 ..      15      70 .]      11      70 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 90.2 bits;  conditional E-value: 3e-30
+                 rpmG_prot  4 kkiRiqviieCtehknsglyGtsRYittknkknnperLeLkkfnpiLnRktlhkei 59
+                              k+ Ri++i+eC+e+k+ g+ G+sRY+ttkn++n+p++ +L+kfnp+L R+tlhkei
+  OMMLON_000000308722_5550 15 KRNRIKIILECLEQKKIGINGISRYFTTKNRINTPRKFHLRKFNPFLKRVTLHKEI 70
+                              566****************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (60 nodes)
+Target sequences:                       7913  (209987 residues searched)
+Passed MSV filter:                       213  (0.0269177); expected 158.3 (0.02)
+Passed bias filter:                       66  (0.00834071); expected 158.3 (0.02)
+Passed Vit filter:                         3  (0.000379123); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126374); expected 0.1 (1e-05)
+Initial search space (Z):               7913  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 3054.82
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rsmH_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round11//annotation/files/genomes/VFMYCCUN/VFMYCCUN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round11//annotation/files/genes/rsmH/rsmH_VFMYCCUN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmH_prot  [M=242]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    3.1e-27   88.9  83.4    3.8e-18   59.1  33.6    2.0  2  VFMYCCUN_108  [99306 - 98509] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMYCCUN_108  [99306 - 98509] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.1  33.6   2.7e-20   3.8e-18       1     136 [.      11     136 ..      11     146 .. 0.86
+   2 !   34.1  44.8   1.2e-12   1.6e-10     114     242 .]     144     265 ..     132     265 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 59.1 bits;  conditional E-value: 2.7e-20
+     rsmH_prot   1 mifkkqrtlfkkeikkilkkikkkegiviDftyGlGkiskiikkkisknnilisyeknkllkknkkkknfffynkcfssfkklklkkkislsliDlG 97 
+                   mifkk++  fkke++ +     +  gi++DftyG G +ski  k+  k+n lisye++k  k+  +k  +f+ nkc+++f klk  kki+l+++D+G
+  VFMYCCUN_108  11 MIFKKEKINFKKELIFY----SNFSGIFVDFTYGNGYHSKIFLKN--KKNTLISYEIDKKIKNKYSK--IFYNNKCYTNFLKLKT-KKIQLAILDFG 98 
+                   9************9877....4779****************9875..899********998887665..8999**********95.78********* PP
+
+     rsmH_prot  98 lsdnelinnyfdgksinelinftsikkiekkLslikeff 136
+                   +  n+ i+nyf+ k++  + nf++ k+i  ++++ ++ +
+  VFMYCCUN_108  99 YNLNQ-IKNYFSYKNLLSIENFSKEKNIINFFNFEEKDK 136
+                   ****9.568******************999999976433 PP
+
+  == domain 2  score: 34.1 bits;  conditional E-value: 1.2e-12
+     rsmH_prot 114 nelinftsikkiekkLslikefflrvikkvrykrkkfllknfnrdKkkiikyfrnfly...sfkrkikelLkyllkvlkkksliilicFnsyEskiv 207
+                    e +nf++i   + +L++ k++ ++  k+++++  k+l k  n++Kk+i   f n +    s k+ki++lL y  +++k+++++i+i++ns+Es+i 
+  VFMYCCUN_108 144 FENLNFSKII-TKNILEYRKKIIIKNTKQFKNIIYKIL-K--NKKKKNIFSKFFNSIKnfdSKKKKINKLLDYTSETIKQNGYLIIITYNSFESNIF 236
+                   4778888874.5779*****************998876.4..577777777666666511166899******************************* PP
+
+     rsmH_prot 208 kkFykknlikllykktikkriikktiavlrilkkk 242
+                   k+Fykkn +k+ yk        kk+  ++r+lkkk
+  VFMYCCUN_108 237 KNFYKKNYKKYEYKI------FKKKNFIMRVLKKK 265
+                   *******99988753......44445578888886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (242 nodes)
+Target sequences:                        138  (36983 residues searched)
+Passed MSV filter:                       120  (0.869565); expected 2.8 (0.02)
+Passed bias filter:                        6  (0.0434783); expected 2.8 (0.02)
+Passed Vit filter:                         6  (0.0434783); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00724638); expected 0.0 (1e-05)
+Initial search space (Z):                138  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 827.74
+//
+[ok]

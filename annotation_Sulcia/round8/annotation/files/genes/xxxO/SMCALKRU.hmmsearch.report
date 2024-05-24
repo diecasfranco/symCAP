@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxO_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMCALKRU/SMCALKRU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/xxxO/xxxO_SMCALKRU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxO_prot  [M=328]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      4e-79  265.0  44.4      1e-67  227.5  25.5    2.0  2  SMCALKRU_6622  [45670 - 44837] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMCALKRU_6622  [45670 - 44837] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  227.5  25.5   1.3e-71     1e-67       1     223 [.       2     212 ..       2     214 .. 0.94
+   2 !   43.8  11.7   1.1e-15   8.6e-12     244     316 ..     213     278 .]     211     278 .] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 227.5 bits;  conditional E-value: 1.3e-71
+      xxxO_prot   1 mykitkksEyllykyLnassleeevslqkifinyieqysdsieidnygtvigiinkknklkivieahveerqwyikYisddGiiyvakvkkkn.ry 95 
+                    myk+t++sEy+++k+L+     ++++l++if +yi+q sd+++i+ +g+++g++ k   l+++++++++ ++w+ikYis++G+i+++k+ + n +y
+  SMCALKRU_6622   2 MYKFTTNSEYFFFKILT-----YDSFLNNIFRDYIKQASDYFSIKPNGNILGKNLK---LTPIYITYIRTNYWNIKYISNSGFIFLNKGLDINrKY 89 
+                    9**************95.....789***************************9985...89*************************998776527* PP
+
+      xxxO_prot  96 alskrvniytkngiidgvllikikekltkkklliDiGasdlkEvenLginvgckvtlqddffilnnkYlvgsaltnkiggFiiaEvlrlikkknvi 191
+                    + +k+++iy+k+g++++++li++++    ++l+iDiG++ lkEv++Lgin+g kv+lq++f+i+nnkYl+++++tnkig Fi++E+l+l   k+++
+  SMCALKRU_6622  90 LFYKKIFIYNKKGNLIPGVLIPTQN----NQLKIDIGTKALKEVYSLGINLGDKVVLQEEFSIFNNKYLLSNEITNKIGFFILWELLNL-SLKQKL 180
+                    **********************987....6899******************************************************85.455789 PP
+
+      xxxO_prot 192 lpyglyvintvrkkekikanivilidvckeis 223
+                    ++++++ + t+ +++++ +n+++li+++ +i+
+  SMCALKRU_6622 181 NFILIKAKPTKLYFMNYLVNLSVLINNKLKII 212
+                    ***************************99985 PP
+
+  == domain 2  score: 43.8 bits;  conditional E-value: 1.1e-15
+      xxxO_prot 244 slsinknlrekiiflakknnlsfqrlvsnikalknskviyalisipirYlkttvEmalkkdiEkiinllieil 316
+                    +l+++k+l+ ++i ++k+n+++       ik+ +n k+iy  i+i i+Y kt++Em+lk++iEkiinl+i ++
+  SMCALKRU_6622 213 DLFLKKPLGSELISFCKTNHIK-------IKIFQNRKKIYINIKIKIKYFKTPIEMILKSEIEKIINLIIRLI 278
+                    689*****************97.......66788999********************************9875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (328 nodes)
+Target sequences:                       7815  (208730 residues searched)
+Passed MSV filter:                       224  (0.0286628); expected 156.3 (0.02)
+Passed bias filter:                       46  (0.00588612); expected 156.3 (0.02)
+Passed Vit filter:                         4  (0.000511836); expected 7.8 (0.001)
+Passed Fwd filter:                         1  (0.000127959); expected 0.1 (1e-05)
+Initial search space (Z):               7815  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9811.42
+//
+[ok]

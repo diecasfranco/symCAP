@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxAC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMPITSP/SMPITSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/xxxAC/xxxAC_SMPITSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxAC_prot  [M=535]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.6e-11   40.8   9.3    1.7e-06   25.7   3.2    2.1  2  SMPITSP_3073  [109083 - 109832] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPITSP_3073  [109083 - 109832] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.7   3.2     2e-10   1.7e-06       1      71 [.       3      74 ..       3     125 .. 0.79
+   2 !   18.2   1.4   3.9e-08   0.00033     441     518 ..     148     228 ..      98     238 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 25.7 bits;  conditional E-value: 2e-10
+    xxxAC_prot  1 mltvqnlyfqfgkrllfnnvsikftkgncygiigangsgkstflkiisgeqk..ptkgkilvesekrisflkq 71
+                  ml + +l   + +++++nn+ +k+   +++ ++g ngsgkst+  ii+g++     kgkil e+ k i++l  
+  SMPITSP_3073  3 MLKIIDLSASINNKIILNNINLKINSNEVHVLMGPNGSGKSTLSSIIAGKKEfsIIKGKILFEK-KNITYLSP 74
+                  67777888889999***********************************8762267*****995.77888764 PP
+
+  == domain 2  score: 18.2 bits;  conditional E-value: 3.9e-08
+    xxxAC_prot 441 lsggekmrc.lfamlmllkgnvlildeptnhldleaitslnka...lkefkgniiitsrdqkllqtvcnnfieitdsgtiin 518
+                   +sggek rc +f m m +  +  ilde    ldl+a+  + +    lk+ k  i+i ++ +++l+ +  + i i   g ii+
+  SMPITSP_3073 148 FSGGEKKRCeIFQMGM-IEPKFAILDEIDSGLDLDALKIIANGilrLKKKKASILIITHYNRMLKFIKPDKIHILYKGQIIK 228
+                   69*******5566655.688999*************9887653223799999***9999***************99999996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (535 nodes)
+Target sequences:                       8258  (216648 residues searched)
+Passed MSV filter:                       141  (0.0170744); expected 165.2 (0.02)
+Passed bias filter:                       39  (0.00472269); expected 165.2 (0.02)
+Passed Vit filter:                         2  (0.000242189); expected 8.3 (0.001)
+Passed Fwd filter:                         1  (0.000121095); expected 0.1 (1e-05)
+Initial search space (Z):               8258  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 7030.97
+//
+[ok]

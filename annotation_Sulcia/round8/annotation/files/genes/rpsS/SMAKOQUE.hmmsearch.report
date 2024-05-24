@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpsS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMAKOQUE/SMAKOQUE_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rpsS/rpsS_SMAKOQUE.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsS_prot  [M=94]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    6.2e-48  160.2   3.6    7.8e-48  159.9   3.6    1.2  1  SMAKOQUE_6500  [130527 - 130195] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMAKOQUE_6500  [130527 - 130195] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  159.9   3.6   7.6e-52   7.8e-48       1      91 [.       5      94 ..       5     100 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 159.9 bits;  conditional E-value: 7.6e-52
+      rpsS_prot  1 mprslkkgpyvnlklkkkillnnlnlnkkkviktwsrsstiipefigntilvyngkifipvyisenmvghklgefsptrifrghsgskkki 91
+                   mprslkkgp++n+kl+kki++nn +l+++k+iktwsr+sti+pefign+i+v+ngk f+ +yisenmvghklgef+ptr fr+hsg+k + 
+  SMAKOQUE_6500  5 MPRSLKKGPFINYKLIKKIVINN-RLKTNKIIKTWSRASTITPEFIGNSIAVHNGKKFLKIYISENMVGHKLGEFAPTRNFRSHSGAKYRA 94
+                   9********************99.79*************************************************************9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (94 nodes)
+Target sequences:                      10271  (263434 residues searched)
+Passed MSV filter:                       294  (0.0286243); expected 205.4 (0.02)
+Passed bias filter:                      111  (0.0108071); expected 205.4 (0.02)
+Passed Vit filter:                         3  (0.000292085); expected 10.3 (0.001)
+Passed Fwd filter:                         1  (9.73615e-05); expected 0.1 (1e-05)
+Initial search space (Z):              10271  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12063.48
+//
+[ok]

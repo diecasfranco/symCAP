@@ -1,0 +1,63 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMPENROR.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMPENROR.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+      7e-27   90.6  28.0  SMPENROR  29219  28929 
+
+
+Annotation for each hit  (and alignments):
+>> SMPENROR  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   90.6  28.0     7e-27         1       342 [.     29219     28929 ..     29219     28928 ..    158378    0.72
+
+  Alignment:
+  score: 90.6 bits
+      ssrA     1 ggggctggattggaattgacaacaagattaatat.ataagtaagcatatcgtgaaaagtaatgtaatcacgtaa..atatcattacaaatg.ataac 93   
+                 ggggctg  ttgg  ttgaca caag   aatat ataag aagcatatcgtgaaa gtaatgta tcacgtaa  a  tcattacaaa   ataa 
+  SMPENROR 29219 GGGGCTGCTTTGGTTTTGACATCAAGT-AAATATaATAAGAAAGCATATCGTGAAATGTAATGTACTCACGTAAtaAATTCATTACAAAGAaATAAG 29124
+                 79**********************995.5566652699*********************************986224559******98754246666 PP
+
+      ssrA    94 cggcaaa...aaaaattatgctcttgcggcttgatcaataactttgaattcgaatgcaagatttttttattaaaaataaatttaatttgaaagattg 187  
+                  ggc aa   aa aatta  ctct gc gctt a c a  ac  t aat      g aag t t                        g        
+  SMPENROR 29123 AGGCGAAaacAAGAATTACTCTCTGGCTGCTTAAGCTAAGACAGTTAATA----AGTAAGTTCT------------------------GC------- 29062
+                 6666655111567889***************9887665554443333332....2222222111........................11....... PP
+
+      ssrA   188 aggttctaaatctttctttaattgtttagaact.ttcttataagaaagagtttcttatcactaatcttatgtgaaatttgctctttgataagataaa 283  
+                        aa t ttt ttt  tt  tta  a t t ctt ta         t cttat actaa  tta      att    cttt ataag taaa
+  SMPENROR 29061 -------AATTATTTGTTTCGTT--TTATTATTcTACTTTTA--------GTGCTTATAACTAAAATTA-----GATTATAACTTTTATAAGCTAAA 28987
+                 .......1111111111111111..11111111022222222........2468888989998877765.....5666677899999********** PP
+
+      ssrA   284 tatgtagaaaacttataatattacttgtttggacacgggttcgaatcccgtcagctcca 342  
+                 tatgtaga   cttat atattacttgt tggacacgggttcgaatcccgtcag tcca
+  SMPENROR 28986 TATGTAGACGTCTTATTATATTACTTGT-TGGACACGGGTTCGAATCCCGTCAGTTCCA 28929
+                 **************************97.699***********************9996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (316756 residues searched)
+Residues passing SSV filter:          296747  (0.937); expected (0.02)
+Residues passing bias filter:         162126  (0.512); expected (0.02)
+Residues passing Vit filter:            3898  (0.0123); expected (0.003)
+Residues passing Fwd filter:            1092  (0.00345); expected (3e-05)
+Total number of hits:                      1  (0.000919)
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 1857.15
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMPENROR.sto
+[ok]

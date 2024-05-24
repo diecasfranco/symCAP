@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/aroE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFBRI/VFBRI_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/aroE/aroE_VFBRI.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aroE_prot  [M=245]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.4e-69  230.8  49.5    5.4e-69  230.8  49.5    1.4  2  VFBRI_3752  [98451 - 97555] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBRI_3752  [98451 - 97555] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.5   1.0      0.61     4e+03     174     184 ..      11      21 ..       2      37 .. 0.45
+   2 !  230.8  49.5   8.3e-73   5.4e-69       2     243 ..      50     285 ..      48     288 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -4.5 bits;  conditional E-value: 0.61
+   aroE_prot 174 liIntipsvlf 184
+                 ++In  +++  
+  VFBRI_3752  11 FLINILSIKSR 21 
+                 33333333333 PP
+
+  == domain 2  score: 230.8 bits;  conditional E-value: 8.3e-73
+   aroE_prot   2 killiGnnikkSlSpkiykfifkkskkkiiYkkisikkkklykkiielilkkfkliNiTiPyKekiiklcNflskkskkiksiNliiikknsiigynTD 100
+                 +++liGn+ik+S+Sp+i+kfif+++k+k +Y+k++++k++l+kki+e++++kfk iNiT+P+Ke++ik+cNf++k+     siN++++++ +i+gynTD
+  VFBRI_3752  50 FFCLIGNPIKHSKSPQIHKFIFSNFKYKDKYLKFKVNKEELIKKIVEIFINKFKGINITLPFKEISIKVCNFIEKS----YSINTLFFSNFKIFGYNTD 144
+                 479**********************************************************************975....69***************** PP
+
+   aroE_prot 101 gigflkslkkisikkkkkiliiGlGGaaksIinvikkkikkiyiynRtkkklkkikkikkikiikfkklkkkkliIntipsvlfkkilkkfkilkkksf 199
+                  igf k+++ki+  k kkil+iGlGGa+k++i++++kk+kki+i+nRtkkk+k++kk+ +ik+   kk+kk++l+I+t++s l kki++kfk++ ++++
+  VFBRI_3752 145 SIGFEKDISKIKE-KFKKILVIGLGGAFKGLIKNLIKKTKKITIFNRTKKKYKILKKM-NIKF--EKKNKKFNLVIDTTSSLLKKKIPCKFKMT-EERI 238
+                 **********985.6789*********************************9987665.4544..5677899*******************976.6789 PP
+
+   aroE_prot 200 iydinYknknklklf...kkyisGlkMLykQAienfkifkkekkklk 243
+                 +y++nYkn+n++k +   kk++sG++ML++QA+ +f i+kk+k+k++
+  VFBRI_3752 239 LYSLNYKNINEYKRIktkKKILSGIGMLFEQAFFSFLIWKKKKEKKR 285
+                 *********9997642226899******************9998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (245 nodes)
+Target sequences:                       6467  (175227 residues searched)
+Passed MSV filter:                       766  (0.118448); expected 129.3 (0.02)
+Passed bias filter:                       52  (0.00804082); expected 129.3 (0.02)
+Passed Vit filter:                         6  (0.000927787); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000154631); expected 0.1 (1e-05)
+Initial search space (Z):               6467  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 14019.55
+//
+[ok]

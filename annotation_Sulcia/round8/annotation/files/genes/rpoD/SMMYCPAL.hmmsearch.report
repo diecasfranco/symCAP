@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpoD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMMYCPAL/SMMYCPAL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rpoD/rpoD_SMMYCPAL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpoD_prot  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   3.7e-136  452.1  14.0   4.5e-136  451.8  14.0    1.0  1  SMMYCPAL_4822  [109691 - 108768] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMMYCPAL_4822  [109691 - 108768] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  451.8  14.0  5.7e-140  4.5e-136       9     299 ..      13     308 .]       5     308 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 451.8 bits;  conditional E-value: 5.7e-140
+      rpoD_prot   9 nlkkqiieiseseslekyleeigkipllsqeeelelaklarkelkekkl....kklstaleqlikanlrfvvsvakqyqnqGlslsdlineGnlGl 100
+                    n ++++ ++ + e++ekyleeig+i+lls +ee++la+++r+ ++ek      k ++++++ lik+nlrfvvs+ak+yqnqGls+sdlineGn+Gl
+  SMMYCPAL_4822  13 NTNNKLSKNLDEETIEKYLEEIGQIKLLSYKEEIILARKIRRGYNEKATqyekKIAKKCMDLLIKSNLRFVVSIAKKYQNQGLSFSDLINEGNMGL 108
+                    556677888899******************************998886511213467899************************************ PP
+
+      rpoD_prot 101 ikGisrfderkGfkcisycvwwirqailqaiadkarcircptnklafynkvvktyskleqklkmqptvkdiseylnssekeveealknsikktsld 196
+                    ikGi+rfderkG+kcisycvwwirq+ilqai++++r ircptnk+afynkv+k + k+e k++++pt k+is++l+++ekev+eal ns+k +sld
+  SMMYCPAL_4822 109 IKGICRFDERKGYKCISYCVWWIRQSILQAISEQSRGIRCPTNKIAFYNKVNKFILKFEPKFQRKPTRKEISDTLKCTEKEVDEALLNSYKLPSLD 204
+                    ************************************************************************************************ PP
+
+      rpoD_prot 197 aplleGed.tnlydvlkseespeadfklekeslkkdikrlletlsekesqvislhyGlgckpmtlekvalllkltrercrqieihgikrlrkssrk 291
+                    apl eGe+  nly++lk+e++++a+++le++slk++i+++l+tl+e+e+++i+lh+Glgc+p++le++a++lkltrercrqieih++krlr++s+ 
+  SMMYCPAL_4822 205 APLNEGEEpVNLYEILKNENCENAEENLEFDSLKEEIQSVLKTLPEREAKIIKLHFGLGCYPHSLEEIAKILKLTRERCRQIEIHTLKRLRHTSKM 300
+                    ******9857************************************************************************************** PP
+
+      rpoD_prot 292 kllrsylc 299
+                    ++l+syl+
+  SMMYCPAL_4822 301 RQLISYLY 308
+                    ******96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (300 nodes)
+Target sequences:                       7891  (207504 residues searched)
+Passed MSV filter:                        67  (0.00849069); expected 157.8 (0.02)
+Passed bias filter:                       31  (0.00392853); expected 157.8 (0.02)
+Passed Vit filter:                         3  (0.00038018); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126727); expected 0.1 (1e-05)
+Initial search space (Z):               7891  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 16755.70
+//
+[ok]

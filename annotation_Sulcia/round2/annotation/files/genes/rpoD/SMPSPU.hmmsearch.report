@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpoD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMPSPU/SMPSPU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/rpoD/rpoD_SMPSPU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpoD_prot  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+   5.5e-154  511.6  15.8     6e-154  511.5  15.8    1.0  1  SMPSPU_8800  [242541 - 241669] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPSPU_8800  [242541 - 241669] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  511.5  15.8  3.9e-158    6e-154       9     300 .]       8     291 .]       1     291 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 511.5 bits;  conditional E-value: 3.9e-158
+    rpoD_prot   9 nlkkqiieiseseslekyleeigkipllsqeeelelaklarkelkekklkklstaleqlikanlrfvvsvakqyqnqGlslsdlineGnlGlikGisr 106
+                  ++ kq+++  eseslekyl+eigkipll++eee+++a++ark++k k       a++ likanlrfvvsvakqyqnqGl+lsdlineGnlGlikGi+r
+  SMPSPU_8800   8 KITKQVTN-CESESLEKYLYEIGKIPLLNNEEEIKFAQFARKTYKIK-------AINFLIKANLRFVVSVAKQYQNQGLNLSDLINEGNLGLIKGIFR 97 
+                  34567665.69*******************************99875.......899***************************************** PP
+
+    rpoD_prot 107 fderkGfkcisycvwwirqailqaiadkarcircptnklafynkvvktyskleqklkmqptvkdiseylnssekeveealknsikktsldaplleGed 204
+                  fderkGfkcisy+vwwirq+ilqaiadk+rc+rcptnklafynkv+k+ys+leq ++++p++k+i eylns+eke+eealkns+k+tsldap++eGe+
+  SMPSPU_8800  98 FDERKGFKCISYSVWWIRQSILQAIADKSRCVRCPTNKLAFYNKVNKKYSELEQIYQIPPSIKHIGEYLNSNEKEIEEALKNSVKHTSLDAPIIEGEN 195
+                  ************************************************************************************************** PP
+
+    rpoD_prot 205 tnlydvlkseespeadfklekeslkkdikrlletlsekesqvislhyGlgckpmtlekvalllkltrercrqieihgikrlrkssrkkllrsylck 300
+                  +nlyd++k++e++++d +lekeslkkdikrll+tlseke+q+i+lhyGl++++++le++++ll+ltrercrqiei+g++rl+kssrk++lr+ylc+
+  SMPSPU_8800 196 SNLYDIIKYDEYTHTDLDLEKESLKKDIKRLLDTLSEKEAQIITLHYGLESSTINLEEISFLLNLTRERCRQIEIYGLRRLKKSSRKNILRFYLCT 291
+                  ***********************************************************************************************5 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (300 nodes)
+Target sequences:                      15564  (407989 residues searched)
+Passed MSV filter:                       149  (0.00957337); expected 311.3 (0.02)
+Passed bias filter:                       49  (0.00314829); expected 311.3 (0.02)
+Passed Vit filter:                         4  (0.000257003); expected 15.6 (0.001)
+Passed Fwd filter:                         1  (6.42508e-05); expected 0.2 (1e-05)
+Initial search space (Z):              15564  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 15903.41
+//
+[ok]

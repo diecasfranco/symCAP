@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/groS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMPYRCLA/SMPYRCLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/groS/groS_SMPYRCLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       groS_prot  [M=93]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    6.7e-39  130.5   4.3      8e-39  130.3   4.3    1.0  1  SMPYRCLA_5394  [111728 - 111450] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPYRCLA_5394  [111728 - 111450] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  130.3   4.3   9.3e-43     8e-39       5      92 ..       6      92 ..       3      93 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 130.3 bits;  conditional E-value: 9.3e-43
+      groS_prot  5 kikplsdrvliepspaekktssgiiipdtakekpqegivvavgvgkknepltvkkgnkvlygkysgtelrlngkdylilresdilaii 92
+                   +i+p+s+r+li+p++ae+kt+sgiiip++ake pqegi++avg   k +pl  k+g+kvl++kysgt++++++k+ylil+++dilaii
+  SMPYRCLA_5394  6 NIIPISERILIKPLKAENKTKSGIIIPENAKENPQEGIILAVGNEVK-NPLLKKVGEKVLFKKYSGTKINYKQKKYLILHQTDILAII 92
+                   79*****************************************8766.59999**********************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (93 nodes)
+Target sequences:                       8592  (228038 residues searched)
+Passed MSV filter:                        51  (0.00593575); expected 171.8 (0.02)
+Passed bias filter:                       30  (0.00349162); expected 171.8 (0.02)
+Passed Vit filter:                         4  (0.000465549); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116387); expected 0.1 (1e-05)
+Initial search space (Z):               8592  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10185.05
+//
+[ok]

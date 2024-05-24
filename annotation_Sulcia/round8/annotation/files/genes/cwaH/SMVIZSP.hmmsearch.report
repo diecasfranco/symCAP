@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/cwaH_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMVIZSP/SMVIZSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/cwaH/cwaH_SMVIZSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cwaH_prot  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    9.1e-60  200.0   0.5      1e-59  199.8   0.5    1.0  1  SMVIZSP_995  [34970 - 35266] 
+    6.7e-33  112.7   3.5    7.2e-33  112.6   3.5    1.0  1  SMVIZSP_999  [35270 - 35437] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMVIZSP_995  [34970 - 35266] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  199.8   0.5   2.3e-63     1e-59       1      95 [.       5      99 .]       5      99 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 199.8 bits;  conditional E-value: 2.3e-63
+    cwaH_prot  1 mlsvlilnelsysalhlaiqliyhrfvqlgplvleldpfklltlaidrdrtvsrrsepssratllgeqpnpwdllqpqdvtsrhrgaepsrryel 95
+                 mlsvlil+elsysalhlaiqliyhrfvqlgplvleldpfklltlaidrdrtvs+rsepssratl++eq+npwdllqpqdvtsrhrgaepsrr+el
+  SMVIZSP_995  5 MLSVLILYELSYSALHLAIQLIYHRFVQLGPLVLELDPFKLLTLAIDRDRTVSQRSEPSSRATLMDEQSNPWDLLQPQDVTSRHRGAEPSRRCEL 99
+                 9********************************************************************************************97 PP
+
+>> SMVIZSP_999  [35270 - 35437] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  112.6   3.5   1.6e-36   7.2e-33      98     152 .]       2      56 .]       1      56 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 112.6 bits;  conditional E-value: 1.6e-36
+    cwaH_prot  98 etsllsleyllsferwpfhteppdhyallsylidlsvsqsstlmplhsthdyqtc 152
+                  +tsllsleyllsferwpfh eppdhyallsylidlsvsq stlmplhsthdyqtc
+  SMVIZSP_999   2 KTSLLSLEYLLSFERWPFHPEPPDHYALLSYLIDLSVSQLSTLMPLHSTHDYQTC 56 
+                  8*****************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       8900  (233751 residues searched)
+Passed MSV filter:                        70  (0.00786517); expected 178.0 (0.02)
+Passed bias filter:                       39  (0.00438202); expected 178.0 (0.02)
+Passed Vit filter:                         2  (0.000224719); expected 8.9 (0.001)
+Passed Fwd filter:                         2  (0.000224719); expected 0.1 (1e-05)
+Initial search space (Z):               8900  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 19087.11
+//
+[ok]

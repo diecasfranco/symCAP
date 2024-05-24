@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dapB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFPYRCLA/VFPYRCLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/dapB/dapB_VFPYRCLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dapB_prot  [M=210]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      5e-63  210.9  35.0      5e-63  210.9  35.0    1.4  2  VFPYRCLA_3942  [103386 - 102685] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPYRCLA_3942  [103386 - 102685] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.3   1.1      0.53   3.6e+03      24      29 ..      10      15 ..       3      26 .. 0.35
+   2 !  210.9  35.0   7.4e-67     5e-63       1     207 [.      30     232 ..      30     234 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: -4.3 bits;  conditional E-value: 0.53
+      dapB_prot 24 kikikl 29
+                   k+++k 
+  VFPYRCLA_3942 10 KYSYKN 15
+                   222111 PP
+
+  == domain 2  score: 210.9 bits;  conditional E-value: 7.4e-67
+      dapB_prot   1 MkilisgykGkigkkiikflkkkkikiklnkkkkkkkkikksdiiidFsnkknllkllklclkkkkkiiiGTTgfnkkeiklikklskkipifiss 96 
+                    Mki+i+g kGk+gk  ++f+k+ k k+++ k   kk++ikk++++id sn+k+++ +lk+c+kkk k+iiGTTgfnk++ik+ik +skkipifi+ 
+  VFPYRCLA_3942  30 MKIFIIG-KGKAGKSAFSFFKEIKKKVHFFK---KKSRIKKKCFLIDLSNRKKIKFILKKCYKKKIKVIIGTTGFNKNDIKKIKLFSKKIPIFICC 121
+                    ******9.7************9999887654...567899999***************************************************** PP
+
+      dapB_prot  97 NfNleflkflkilkkskkllkkmkvkiieiHnkkKkdsPSGssilikkilkkkkissiRigniiGkHkiifsnknnkisikHkilnrksflkglik 192
+                    NfN+ f+kfl+i+k +kkll+++k+ i+e+H+ kKkd+PSGss+++ ki+k ++i+s R++n++G+H+++f++++n++si+Hk++++  ++++l+k
+  VFPYRCLA_3942 122 NFNFFFWKFLEIVKEAKKLLHNKKTAILEKHSLKKKDCPSGSSLVLGKIIKPTSINSFRYSNTLGTHRVYFFDRRNEVSIEHKCKKKIGMFNTLPK 217
+                    ************************************************************************************************ PP
+
+      dapB_prot 193 iikfikkkkkGlysi 207
+                    +++f+kkk+kGl+ +
+  VFPYRCLA_3942 218 FLFFLKKKRKGLFVY 232
+                    ************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (210 nodes)
+Target sequences:                       6762  (191975 residues searched)
+Passed MSV filter:                       655  (0.0968648); expected 135.2 (0.02)
+Passed bias filter:                       75  (0.0110914); expected 135.2 (0.02)
+Passed Vit filter:                         5  (0.000739426); expected 6.8 (0.001)
+Passed Fwd filter:                         1  (0.000147885); expected 0.1 (1e-05)
+Initial search space (Z):               6762  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12842.95
+//
+[ok]

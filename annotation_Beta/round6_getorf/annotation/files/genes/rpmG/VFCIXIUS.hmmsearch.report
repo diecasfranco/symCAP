@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFCIXIUS/VFCIXIUS_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rpmG/rpmG_VFCIXIUS.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmG_prot  [M=52]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    7.6e-19   66.2  20.7    7.6e-19   66.2  20.7    1.9  2  VFCIXIUS_6417  [34775 - 34548] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCIXIUS_6417  [34775 - 34548] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.0   1.1     0.023   1.7e+02       9      31 ..       2      23 ..       1      25 [. 0.51
+   2 !   66.2  20.7     1e-22   7.6e-19       1      52 []      23      76 .]      21      76 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 1.0 bits;  conditional E-value: 0.023
+      rpmG_prot  9 kflkfvSsSgSghfYfikkkkkk 31
+                    f+kf    +S  + f+kk+ k 
+  VFCIXIUS_6417  2 TFIKFLTK-NSTTRNFYKKNMKM 23
+                   56666643.44445555776654 PP
+
+  == domain 2  score: 66.2 bits;  conditional E-value: 1e-22
+      rpmG_prot  1 Mkkkk.kkkkflkfvSsSgSghfYfikkkkk.kinklkKyDPifrkhfvylkkk 52
+                   Mkkkk kkk+flk++S+SgS+h+Y++ kkk+ ki++l+K+DPif+khf+yl+kk
+  VFCIXIUS_6417 23 MKKKKnKKKSFLKIISTSGSKHYYIFLKKKTpKIFSLRKFDPIFKKHFLYLEKK 76
+                   7776516778**************9877665389******************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (52 nodes)
+Target sequences:                       7389  (199988 residues searched)
+Passed MSV filter:                      1414  (0.191366); expected 147.8 (0.02)
+Passed bias filter:                      185  (0.0250372); expected 147.8 (0.02)
+Passed Vit filter:                        12  (0.00162404); expected 7.4 (0.001)
+Passed Fwd filter:                         1  (0.000135336); expected 0.1 (1e-05)
+Initial search space (Z):               7389  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3763.04
+//
+[ok]

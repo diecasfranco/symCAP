@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/lepB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMPSPU/SMPSPU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/lepB/lepB_SMPSPU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lepB_prot  [M=406]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+   5.6e-183  608.4 100.8    4.6e-73  246.4  39.5    3.0  3  SMPSPU_5450  [205263 - 206624] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPSPU_5450  [205263 - 206624] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  246.4  39.5     3e-77   4.6e-73       1     174 [.       7     177 ..       7     188 .. 0.95
+   2 !  137.0  14.5   4.9e-44   7.6e-40     173     260 ..     195     282 ..     184     297 .. 0.90
+   3 !  235.0  34.1     9e-74   1.4e-69     256     406 .]     295     454 .]     282     454 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 246.4 bits;  conditional E-value: 3e-77
+    lepB_prot   1 lliynillliiilkviyflgtyklylkngrnliialiplyniiilmkilkrpilwsillyipiiyfflyillcldiislfvkrnkkdilillitlgay 98 
+                  +li++illliii+k+iyfl+ty++y+k++r+l++a+ip+yn+iilm+ilkrpi+wsilly+pii+f++y+llcldii+l+++r++k+i  l++t+gay
+  SMPSPU_5450   7 FLIFKILLLIIIIKIIYFLATYNIYIKYKRKLFEAIIPIYNVIILMSILKRPIWWSILLYFPIIFFLIYPLLCLDIINLYKERHNKKI--LFLTMGAY 102
+                  69*********************************************************************************99985..688***** PP
+
+    lepB_prot  99 liflnlnkknikkkkenspelrslifsiilsliiklyiiqiffipsssmedsllvgdflfvsklhygiripitqll 174
+                  li+ln+++k++ ++ +n+ + +sl+ ++i+s++ik+yiiq+ffip++sm+dsllvgdflfvsk+hygiripitq++
+  SMPSPU_5450 103 LIYLNIKNKVLLNNINNK-KKTSLFSYFIFSSFIKIYIIQFFFIPTPSMQDSLLVGDFLFVSKFHYGIRIPITQIF 177
+                  *******99998877766.5689***************************************************97 PP
+
+  == domain 2  score: 137.0 bits;  conditional E-value: 4.9e-44
+    lepB_prot 173 lliklpylrlpsfkkinhndiivfnfpndlkkksidkkkyyikrciglpgdnliikngllyingllkkektnsllfkvqkklksfnik 260
+                   +iklpy+rlp+fk+i++ndi+vfnfpndlk+++id++kyyikrciglpgdnl+ikng++ying+lk++++n++++k+qk+++sfni 
+  SMPSPU_5450 195 NYIKLPYIRLPKFKTIKYNDILVFNFPNDLKEIPIDRTKYYIKRCIGLPGDNLKIKNGFIYINGILKSNDKNVFFYKIQKIFNSFNIL 282
+                  489***********************************************************************************85 PP
+
+  == domain 3  score: 235.0 bits;  conditional E-value: 9e-74
+    lepB_prot 256 sfnikleead....kinflslkkeilpkylketnifpedklwnrdnygpiyipkkgdllelnkknislykdlitkyennslklkknkilinnkktsky 349
+                   +nik+++++    k+n+l++kk+i+pkylke+nifpedk+wnrdnygpiyipk+gd++++nkkni+lykd+i+kye+nslklk+ +i+innkkts+y
+  SMPSPU_5450 295 IYNIKINDYKinffKKNILYIKKNIMPKYLKEYNIFPEDKFWNRDNYGPIYIPKIGDNISINKKNINLYKDIIVKYEKNSLKLKDGNIFINNKKTSNY 392
+                  466666665433337899******************************************************************************** PP
+
+    lepB_prot 350 lvkknyyfllgdnrensldsrywgllpydhivgkpllil....fskne.fkirwnrlfslik 406
+                  ++kknyyfllgdnr+nsldsrywg+lpyd+ivgkpl+i+    f+k++ fk+rwnr+f+++k
+  SMPSPU_5450 393 KIKKNYYFLLGDNRNNSLDSRYWGFLPYDYIVGKPLFIIlnliFNKKKiFKLRWNRIFTILK 454
+                  ************************************98533336665559*********986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (406 nodes)
+Target sequences:                      15564  (407989 residues searched)
+Passed MSV filter:                      1599  (0.102737); expected 311.3 (0.02)
+Passed bias filter:                      137  (0.00880236); expected 311.3 (0.02)
+Passed Vit filter:                         5  (0.000321254); expected 15.6 (0.001)
+Passed Fwd filter:                         1  (6.42508e-05); expected 0.2 (1e-05)
+Initial search space (Z):              15564  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 8373.26
+//
+[ok]

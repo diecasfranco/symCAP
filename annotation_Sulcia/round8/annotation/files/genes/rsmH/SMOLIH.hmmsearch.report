@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rsmH_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMOLIH/SMOLIH_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rsmH/rsmH_SMOLIH.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmH_prot  [M=299]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+      9e-63  211.3   7.8    9.9e-63  211.2   7.8    1.0  1  SMOLIH_3826  [142332 - 142691] 
+    3.9e-35  120.6   0.5    4.2e-35  120.5   0.5    1.0  1  SMOLIH_3813  [141904 - 142149] 
+    5.8e-26   90.5   0.7    6.5e-26   90.3   0.7    1.0  1  SMOLIH_3818  [142153 - 142314] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMOLIH_3826  [142332 - 142691] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  211.2   7.8   3.5e-66   9.9e-63     177     297 ..       1     119 [.       1     120 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 211.2 bits;  conditional E-value: 3.5e-66
+    rsmH_prot 177 tldlvklfkrnnnrkflsrlfqalrievndeinalkkllkqsinilkpGGklaiisyhsledrlvknffksGniqGiirydkkGknlspfnkkytkri 274
+                  t++lvklf  n+n kflsrlfqalrievndeinalkk+lkq+inilk+GG+laiisyhsledrlvknffk+Gn++Gi+rydkkG+nlspf+k+ytkri
+  SMOLIH_3826   1 TVNLVKLF--NKNIKFLSRLFQALRIEVNDEINALKKFLKQAINILKKGGRLAIISYHSLEDRLVKNFFKTGNLHGILRYDKKGNNLSPFHKRYTKRI 96 
+                  67899999..6789************************************************************************************ PP
+
+    rsmH_prot 275 fptkeeisknnrarsailritqk 297
+                  f+tk+ei++nnra+sailritqk
+  SMOLIH_3826  97 FHTKQEIYTNNRAKSAILRITQK 119
+                  **********************9 PP
+
+>> SMOLIH_3813  [141904 - 142149] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  120.5   0.5   1.5e-38   4.2e-35       1      81 [.       3      79 ..       3      82 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 120.5 bits;  conditional E-value: 1.5e-38
+    rsmH_prot  1 mkefhipvlltevlenlindinGiyidttfGsGGhslgilkkisnqGkllafdqdqfaiiknkildkrirllndnfrnikk 81
+                 mk+fh+pvll+ev+e+li++    y+d+tfGsGGh+ +ilkkisn+Gkl+afdqdqf+iiknki++kri+l+n+nfr+ikk
+  SMOLIH_3813  3 MKYFHQPVLLSEVIEHLIYE----YVDSTFGSGGHARSILKKISNKGKLIAFDQDQFSIIKNKICEKRIILFNANFRKIKK 79
+                 9*****************98....9******************************************************98 PP
+
+>> SMOLIH_3818  [142153 - 142314] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   90.3   0.7   2.3e-29   6.5e-26     103     149 ..       6      52 ..       3      54 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 90.3 bits;  conditional E-value: 2.3e-29
+    rsmH_prot 103 vssyqidtpkrGfsirfnkildmrmdlskkksalniiknysfeklnk 149
+                  vssyqidtp+rGfsirfn+ildmrmdlsk+ksalni+k+ysfe+ln+
+  SMOLIH_3818   6 VSSYQIDTPQRGFSIRFNNILDMRMDLSKTKSALNILKTYSFEELNN 52 
+                  9********************************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (299 nodes)
+Target sequences:                       8558  (231117 residues searched)
+Passed MSV filter:                       177  (0.0206824); expected 171.2 (0.02)
+Passed bias filter:                       45  (0.00525824); expected 171.2 (0.02)
+Passed Vit filter:                         5  (0.000584249); expected 8.6 (0.001)
+Passed Fwd filter:                         3  (0.000350549); expected 0.1 (1e-05)
+Initial search space (Z):               8558  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 20348.21
+//
+[ok]

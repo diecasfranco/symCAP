@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dapD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_pyro//annotation/files/genomes/VFPARIOC/VFPARIOC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_pyro//annotation/files/genes/dapD/dapD_VFPARIOC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dapD_prot  [M=260]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+   1.5e-110  362.0  31.5   1.5e-110  362.0  31.5    3.9  4  VFPARIOC_81  [77646 - 79304]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPARIOC_81  [77646 - 79304]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   6.7     0.052       7.4      10      88 ..       2      79 ..       1      83 [. 0.71
+   2 ?   -0.7   4.4      0.05         7       6      94 ..      69     157 ..      65     182 .. 0.67
+   3 ?   -4.7  13.2      0.83   1.2e+02      23     106 ..     204     286 ..     177     292 .. 0.46
+   4 !  362.0  31.5  1.1e-112  1.5e-110       3     259 ..     295     550 ..     293     551 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.052
+    dapD_prot 10 fkkkklkkkelklikkvikkldkgkikvvekkkkkwklnkwvkkaillyikikkkkliknkllvsydkfknklkkkllk 88
+                 ++k++ +kk lk+ik++ikk+  ++i++ + +++    ++ + +  l+  k+ k + ik+  + +y  ++n ++kk++ 
+  VFPARIOC_81  2 YNKEESSKKLLKVIKNYIKKIFFANINLKNITTTM-GNRNAIYNFFLILKKKDKLIAIKKPRYPYYTYISNFFRKKIFY 79
+                 78888888889999999999988888876655544.4445566666666666777778888888888888888888765 PP
+
+  == domain 2  score: -0.7 bits;  conditional E-value: 0.05
+    dapD_prot   6 iekifkkkklkkkelklikkvikkldkgkikvvekkkkk.wklnkwvkkaillyikikkkkliknkllvsydkfknklkkkllk.kknirl 94 
+                  i++ f+kk +  k++  + k ik++    i +++ ++ +  ++nk + k++ l+ k++kk+li + + ++y k    +++ ++k +kni +
+  VFPARIOC_81  69 ISNFFRKKIFYFKSYDELFKEIKNIS--VIIICNPENPTgKTYNKSILKLLKLCKKHNKKILIDECYSSIYIKKPFSFSNLFNKfEKNITI 157
+                  67778888777777777666666654..566777666441567999999999999999999998877776655444444433221445544 PP
+
+  == domain 3  score: -4.7 bits;  conditional E-value: 0.83
+    dapD_prot  23 ikkvikkldkgkikvvekkkkkwkl.nkwvkkaillyikikkkkliknkllvsydkfknklkkkllkkknirltklsvvreGsyi 106
+                   kk+  k +k  + + +  kkk+k+  k +kk  + yi+ k  ++i  ++   + k ++++ k+l kk +i+++ +s+  +  yi
+  VFPARIOC_81 204 SKKIW-KDKKHAFLINKDYKKKMKTcLKILKKKKIKYIEPKGAFYIFINISK-TKKSSTNFCKRLYKKYKIKTVPGSIFSKEKYI 286
+                  22222.2233333344333333333134445555566655555555444333.33444455555555566666666655555555 PP
+
+  == domain 4  score: 362.0 bits;  conditional E-value: 1.1e-112
+    dapD_prot   3 kkkiekifkkkklkkkelklikkvikkldkgkikvvekkkkkwklnkwvkkaillyikikkkkliknkllvsydkfknkl..kkkllkkknirltkls 98 
+                  kk i+++ k  kl k+ +k ik  i+k+ kgk+ +++kk+ kwk+nk  kk+i+ yik++kkk++++k+++ yd+f n++  kkk+lkkk+ir+t ls
+  VFPARIOC_81 295 KKCIKSLIKICKLIKN-KKNIK--INKISKGKLTICYKKNGKWKVNKKNKKIIIDYIKKTKKKISNKKNTINYDIFFNNFlnKKKILKKKKIRITYLS 389
+                  6777777777666554.44454..899************************************************98887224567899********* PP
+
+    dapD_prot  99 vvreGsyisknvilmPsfinvGayigkntlidtWatiGscakigknvhisGGvGiGGvlePiqnkPviiednCfiGarseiveGviikknsvismGvf 196
+                  +vr+G+yi+ +vi+mP+f+nvGay+++++l+d+W+tiGsca+ig++vhisGGvGiGGvlePi++kPviied+ fiGarseiveGviikk+svismGvf
+  VFPARIOC_81 390 YVRNGAYIGYKVIMMPCFVNVGAYVDDESLLDSWSTIGSCARIGRKVHISGGVGIGGVLEPINEKPVIIEDEVFIGARSEIVEGVIIKKKSVISMGVF 487
+                  ************************************************************************************************** PP
+
+    dapD_prot 197 igkstkiydrtkkkfyksiiPknsvvvpGsinygkyslyaaiivkkrdkktkkkiklnkklrk 259
+                  igkstkiy r+kkkfy+s+iP++svvvpG+inyg yslyaaiivk +dkktk+ki++nkklr 
+  VFPARIOC_81 488 IGKSTKIYHRKKKKFYNSYIPEKSVVVPGCINYGFYSLYAAIIVKSKDKKTKNKININKKLRI 550
+                  *************************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (260 nodes)
+Target sequences:                        141  (38834 residues searched)
+Passed MSV filter:                       115  (0.815603); expected 2.8 (0.02)
+Passed bias filter:                        5  (0.035461); expected 2.8 (0.02)
+Passed Vit filter:                         1  (0.0070922); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.0070922); expected 0.0 (1e-05)
+Initial search space (Z):                141  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1508.33
+//
+[ok]

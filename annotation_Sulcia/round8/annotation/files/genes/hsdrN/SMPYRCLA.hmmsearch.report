@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/hsdrN_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMPYRCLA/SMPYRCLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/hsdrN/hsdrN_SMPYRCLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       hsdrN_prot  [M=139]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.3e-60  200.4  22.3    5.3e-60  200.4  22.3    1.8  2  SMPYRCLA_4336  [148498 - 147914] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPYRCLA_4336  [148498 - 147914] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.3   3.7      0.46   3.9e+03     101     117 ..      25      41 ..       2      55 .. 0.42
+   2 !  200.4  22.3   6.1e-64   5.3e-60       4     139 .]      53     187 ..      49     187 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: -3.3 bits;  conditional E-value: 0.46
+     hsdrN_prot 101 nlyikskyllitnwinn 117
+                    n++      +  n+i++
+  SMPYRCLA_4336  25 NFFNFKICKINPNHIKK 41 
+                    22111112222333333 PP
+
+  == domain 2  score: 200.4 bits;  conditional E-value: 6.1e-64
+     hsdrN_prot   4 kfeikyynnntyiyclirkkyylltkeeyvrqkllyylilnkgydvssifvekiylfnnlkkridilvykkkkpfilieckssei.fskkvfdqil 98 
+                    k +ik +n+++y++clirkkyylltkee+vrqk++yyli+n+gy+v++i+ve++++f+n+k+ridilv+kkk+pfi++ecks+e+ +s+k+fdqi+
+  SMPYRCLA_4336  53 KNKIKTFNGKMYVFCLIRKKYYLLTKEELVRQKIIYYLIKNRGYNVQEIYVEFHSTFYNIKNRIDILVLKKKRPFIMVECKSPEVkISSKSFDQIM 148
+                    66899******************************************************************************9979********* PP
+
+     hsdrN_prot  99 kynlyikskyllitnwinniifkidlknniilflneipksk 139
+                    ky+l++ks+yl++tn+i+niif++  knn i+fl++ipk+k
+  SMPYRCLA_4336 149 KYYLRFKSQYLVLTNGIKNIIFEF--KNNGIEFLKKIPKNK 187
+                    *********************986..89**********986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (139 nodes)
+Target sequences:                       8592  (228038 residues searched)
+Passed MSV filter:                       706  (0.0821695); expected 171.8 (0.02)
+Passed bias filter:                      103  (0.0119879); expected 171.8 (0.02)
+Passed Vit filter:                         7  (0.000814711); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116387); expected 0.1 (1e-05)
+Initial search space (Z):               8592  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7738.38
+//
+[ok]

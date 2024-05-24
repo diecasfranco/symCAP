@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/xxxVFCALBON01_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFMYCCUN/VFMYCCUN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/xxxVFCALBON01/xxxVFCALBON01_VFMYCCUN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFCALBON_xxxVFCALBON_01  [M=65]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    6.4e-14   49.8   1.6    6.4e-14   49.8   1.6    2.1  2  VFMYCCUN_4443  [67571 - 67107] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMYCCUN_4443  [67571 - 67107] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.8   1.6   9.8e-18   6.4e-14       1      60 [.       5      64 ..       5      72 .. 0.94
+   2 ?   -0.5   0.5       0.1   6.7e+02      38      57 ..     122     142 ..      86     150 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 49.8 bits;  conditional E-value: 9.8e-18
+  VFCALBON_xxxVFCALBON_01  1 mqvrlidsngkylglfslqqaiieakkrdldlikinskvnpqvfrlgdyhkyiynrnkts 60
+                             m ++lid ng ++gl+ + +ai  akk++ldlik+ns  n ++++lg+y k i+++ k +
+            VFMYCCUN_4443  5 MLIKLIDYNGIFIGLMKINEAIKIAKKKNLDLIKMNSNSNTKIYKLGNYKKIIFDKKKNT 64
+                             5689***************************************************99864 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 0.1
+  VFCALBON_xxxVFCALBON_01  38 kvnpqvfrlgdyhk.yiynrn 57 
+                              k+n  + +   y k  i+n+n
+            VFMYCCUN_4443 122 KINNDISKKFIYIKnIIFNKN 142
+                              334444433334331355655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (65 nodes)
+Target sequences:                       6484  (171150 residues searched)
+Passed MSV filter:                        94  (0.0144972); expected 129.7 (0.02)
+Passed bias filter:                       51  (0.00786552); expected 129.7 (0.02)
+Passed Vit filter:                         5  (0.000771129); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000154226); expected 0.1 (1e-05)
+Initial search space (Z):               6484  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6196.53
+//
+[ok]

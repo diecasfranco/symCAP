@@ -1,0 +1,63 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMPITSP.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMPITSP.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    1.4e-26   89.5  25.1  SMPITSP   22014  21719 
+
+
+Annotation for each hit  (and alignments):
+>> SMPITSP  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   89.5  25.1   1.4e-26         1       342 [.     22014     21719 ..     22014     21718 ..    148137    0.72
+
+  Alignment:
+  score: 89.5 bits
+     ssrA     1 ggggctggattggaattgacaacaagattaatat.ataagtaagcatatcgtgaaaagtaatgtaatcacgtaaata..tcattacaaatga.taacc 94   
+                ggggctg  ttgg  ttgaca caag   aatat ataag  agcatatcgtgaaa gtaatgtaatcacgtaaa a  tcattacaaa  a taa  
+  SMPITSP 22014 GGGGCTGATTTGGTTTTGACATCAAGT-AAATATaATAAGATAGCATATCGTGAAATGTAATGTAATCACGTAAAAAatTCATTACAAAAAAcTAAAT 21918
+                79**********************995.56666526899*********************************98654449******987654278889 PP
+
+     ssrA    95 ggcaaaaaaaattatgctcttgcggcttga....tcaataactttgaattcgaatgcaagatttttttattaaaaataaatttaatttgaaagattga 188  
+                ggcaaa   aatta  ctcttgc gctt a    tcaa  a    g          caag  t     at aa  at+aa t  a     aa   t a
+  SMPITSP 21917 GGCAAA---AATTACTCTCTTGCAGCTTAAaacaTCAAGCATCAAGC-------ATCAAGCATCAAGCATCAAGCATCAACTATA---ACAACTATCA 21833
+                999865...6799999***********97611112222222111111.......1233443333344444444444444333211...1233334567 PP
+
+     ssrA   189 ggttctaaatctttctttaattgtttagaactttcttataagaaagagtttcttatcactaatcttatgtgaaatttgctctttgataagataaatat 286  
+                ggttctaa        tt a  g t                            tat actaa     t  gaa t    tctt  ataag taaatat
+  SMPITSP 21832 GGTTCTAAT-------TTGAGGGCT----------------------------TATAACTAAA----TTAGAACTACTATCTT-TATAAGCTAAATAT 21775
+                888887763.......333444444............................4444555442....2234444444455554.589*********** PP
+
+     ssrA   287 gtagaaaacttataatattacttgtttggacacgggttcgaatcccgtcagctcca 342  
+                gt  aa  cttat atatt cttgtttggacacgggttcga tcccgtcagctcca
+  SMPITSP 21774 GTTAAACTCTTATTATATTGCTTGTTTGGACACGGGTTCGATTCCCGTCAGCTCCA 21719
+                *****************************************************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (296274 residues searched)
+Residues passing SSV filter:          270019  (0.911); expected (0.02)
+Residues passing bias filter:          96687  (0.326); expected (0.02)
+Residues passing Vit filter:            1879  (0.00634); expected (0.003)
+Residues passing Fwd filter:            1086  (0.00367); expected (3e-05)
+Total number of hits:                      1  (0.000999)
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 2264.09
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMPITSP.sto
+[ok]

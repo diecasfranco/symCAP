@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/trpF_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFBLASP2/VFBLASP2_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/trpF/trpF_VFBLASP2.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trpF_prot  [M=208]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    9.5e-50  167.9  55.0    9.5e-50  167.9  55.0    2.0  2  VFBLASP2_1289  [49936 - 50694] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBLASP2_1289  [49936 - 50694] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.5   8.2      0.22   1.4e+03      82     127 ..      11      56 ..       1      60 [. 0.59
+   2 !  167.9  55.0   1.5e-53   9.5e-50       3     205 ..      59     247 ..      57     250 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -2.5 bits;  conditional E-value: 0.22
+      trpF_prot  82 Qlhgnenkkfikkikkkkkikiikvfkikknnnkkiikkinkskkk 127
+                     l+ +e+ ++++k kk++k ki+ +++ ++ n  +   +i++ k++
+  VFBLASP2_1289  11 KLCFREKHNICRKNKKNIKKKIFFIYHWRSVNLGSFRAIIKNDKNN 56 
+                    3567777788888888777777777777665555555555554444 PP
+
+  == domain 2  score: 167.9 bits;  conditional E-value: 1.5e-53
+      trpF_prot   3 tkiKfCGikkkkelkkciklnidniGfvfykkSkryinikkakkiiknikkkikkvgVfvnpninlikkiikkinidliQlhgnenkkfikkikkk 98 
+                     +iK+CGi++++++k c+kl++ niG+v+y+kS r+ini+k+kki      ki+ +gV+vnpninli k+i++ ni+++Ql+gne+++fik +k++
+  VFBLASP2_1289  59 MHIKYCGIRRRIDIKRCVKLKVFNIGIVIYEKSIRNININKIKKIN-----KINLFGVYVNPNINLIIKTIRNKNIKFLQLNGNESNNFIKILKRI 149
+                    68****************************************9984.....6899***********************************988777 PP
+
+      trpF_prot  99 kkikiikvfkikknnnkkiikkinkskkkyllldklnkkkgGsgkkinlkllkkikkkiiiSGginiknikklikkykpyciDiSsgiEkkkkKsf 194
+                    ++ ++ kvf++++ ++k ++++ +k+k+ky+++d+++kk+gG+gkki++++  + kkkii+SGg+n+kni+k     k+yciDiSsgiEkkk+K+f
+  VFBLASP2_1289 150 IN-NVKKVFFYTE-FKKLNLEIEKKIKEKYIFFDYYSKKYGGKGKKIKIDI--NSKKKIIFSGGLNYKNITK-----KYYCIDISSGIEKKKSKNF 236
+                    65.7889988876.566777778999**********************998..5689************986.....68***************** PP
+
+      trpF_prot 195 klikkikkkvn 205
+                    +++k++k++++
+  VFBLASP2_1289 237 QKMKELKENHE 247
+                    *******9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (208 nodes)
+Target sequences:                       6217  (171373 residues searched)
+Passed MSV filter:                       580  (0.0932926); expected 124.3 (0.02)
+Passed bias filter:                       56  (0.00900756); expected 124.3 (0.02)
+Passed Vit filter:                        19  (0.00305614); expected 6.2 (0.001)
+Passed Fwd filter:                         1  (0.000160849); expected 0.1 (1e-05)
+Initial search space (Z):               6217  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7020.08
+//
+[ok]

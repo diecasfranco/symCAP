@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rps2_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFPARIOC/VFPARIOC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/rps2/rps2_VFPARIOC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rps2_prot  [M=294]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.1e-48  159.0 107.7    1.1e-48  159.0 107.7    2.0  2  VFPARIOC_80  [77503 - 76487] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPARIOC_80  [77503 - 76487] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -6.8  12.8         1   1.4e+02     134     175 ..       6      40 ..       1      51 [. 0.49
+   2 !  159.0 107.7   8.1e-51   1.1e-48      11     293 ..      48     338 ..      35     338 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -6.8 bits;  conditional E-value: 1
+    rps2_prot 134 niylllkkieikkyykknkkyyffktknllkiiklkinedlf 175
+                  ni+l +kk++i ++ k++k++ + k+ ++      ki++ ++
+  VFPARIOC_80   6 NILLKKKKVNIGHNIKEKKRF-YNKNFEY------KIDKTFY 40 
+                  677777777777776654432.2233222......1222222 PP
+
+  == domain 2  score: 159.0 bits;  conditional E-value: 8.1e-51
+    rps2_prot  11 lkikkslkflkkflkkkkislfidtkkqhkkiikkfskkinfffvnkWksGtitnl..keisnikkv...Pdiifivdpkknisivresikkkiiiii 103
+                  +  kk ++flkkf+kkkk +l +dt+k+h+ i +  skk   ++  kWk G itn+  + i + kk    Pdi+fi+d  kn+  ++e ikkkii + 
+  VFPARIOC_80  48 VYFKKLFFFLKKFFKKKKKILIVDTNKNHEYIYNSLSKKLDIYYTTKWKPGYITNFikNTIGKKKKLfsyPDIVFIIDTNKNKVALKECIKKKIINVS 145
+                  34589999***********************************************864458787774455**************************** PP
+
+    rps2_prot 104 lsdshekyknydffiplnddsekslkfvlkniylllkkieikkyykknkkyyffktkn.llkiiklkinedlfikkkYfkYkikkiikkikykkikii 200
+                  ++ds+++ k+ d+f+p+nddse s+ f++k++  +l ki++++  kk+k y f+k+ n +++++k+k +++l+++kkYf+Y i+kii ++  kk k+i
+  VFPARIOC_80 146 ITDSNYI-KETDYFLPMNDDSETSIGFFIKQLIYFLNKIDLHNRLKKKKYYIFHKKYNkYIYVVKIKKESELYLDKKYFNYCINKIIFYFIKKKKKNI 242
+                  ***9975.899********************99999********99999888888876479*****************************99****** PP
+
+    rps2_prot 201 kkkikkisnlYnekikikklkkikknkkfylysnkkllCliksntk.neilaehiianiksivnkkfskklikyn.kklkdyikk.kikikkifli 293
+                  +kk+kk+sn Ynekiki+ +kki+ ++     +n+k++  ik  +k  +   +hi+ n  +++ +kf  + i+y+ ++ ++yikk kik kki+l+
+  VFPARIOC_80 243 LKKLKKVSNYYNEKIKIIGFKKIRNKNLQSYNHNNKFIIFIKNFNKpSKTFLYHIVFNLINLFTNKFFYNSINYKySNIISYIKKkKIKFKKIYLL 338
+                  ***********************75555444455667777776554267788999999888776666666666653778999975279******96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (294 nodes)
+Target sequences:                        141  (38834 residues searched)
+Passed MSV filter:                       133  (0.943262); expected 2.8 (0.02)
+Passed bias filter:                       30  (0.212766); expected 2.8 (0.02)
+Passed Vit filter:                        30  (0.212766); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.0070922); expected 0.0 (1e-05)
+Initial search space (Z):                141  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 987.25
+//
+[ok]

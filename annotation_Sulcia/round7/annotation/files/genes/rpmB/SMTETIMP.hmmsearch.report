@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpmB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMTETIMP/SMTETIMP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rpmB/rpmB_SMTETIMP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmB_prot  [M=79]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.6e-27   94.5  10.0    1.9e-27   94.3  10.0    1.1  1  SMTETIMP_5805  [86418 - 86158] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMTETIMP_5805  [86418 - 86158] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   94.3  10.0   2.3e-31   1.9e-27       1      78 [.      10      85 ..      10      86 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 94.3 bits;  conditional E-value: 2.3e-31
+      rpmB_prot  1 mskyCeitgkkpimGnkishannkikrkfklnlskkrffltkknkWitlkvssaGikiinkiGiekilflcqkkklky 78
+                   msk+C++t kk i+G++ish+n+k++r+fk nl +kr+fl +knkWitl++s++G+k++nk+ ++  l l  k+++ y
+  SMTETIMP_5805 10 MSKLCQVTRKKTIFGKQISHSNKKSRRIFKANLFRKRLFLLNKNKWITLFISNKGLKTLNKNSLS--LNLFYKNISSY 85
+                   9*************************************************************998..55556666666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (79 nodes)
+Target sequences:                       8212  (214836 residues searched)
+Passed MSV filter:                       395  (0.0481003); expected 164.2 (0.02)
+Passed bias filter:                      117  (0.0142474); expected 164.2 (0.02)
+Passed Vit filter:                        10  (0.00121773); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000121773); expected 0.1 (1e-05)
+Initial search space (Z):               8212  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12035.15
+//
+[ok]

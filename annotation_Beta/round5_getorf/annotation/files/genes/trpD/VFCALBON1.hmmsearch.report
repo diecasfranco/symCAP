@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/trpD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFCALBON1/VFCALBON1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/trpD/trpD_VFCALBON1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trpD_prot  [M=336]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+      1e-17   63.0  18.1      1e-17   63.0  18.1    2.5  2  VFCALBON1_5117  [35928 - 34906] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALBON1_5117  [35928 - 34906] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9  11.4      0.19   1.1e+03     134     192 ..      16      75 ..       2      80 .. 0.67
+   2 !   63.0  18.1   1.7e-21     1e-17      73     248 ..      83     249 ..      72     318 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 0.19
+       trpD_prot 134 sflllllrrkllLysfkfin.irrllgknfyklRkkigkktifnyafatynvfkskyfil 192
+                     +fl ++l   ll+ s  ++    +ll kn   l k   k ti ny ++ y +f+  y ++
+  VFCALBON1_5117  16 KFLIIFLNMSLLIQSRIKVSrFMSLLFKNSMLLNKISSKITITNYYLSCYFAFSLFYLFV 75 
+                     4677777777777765444313345556655565555799*************9888765 PP
+
+  == domain 2  score: 63.0 bits;  conditional E-value: 1.7e-21
+       trpD_prot  73 lsiaGtGGDgkntfnlttvvtiilkllkinviknnaksyltnkGsieflarlvknnkeveLsflllllrrkllLysfkfinirrllgknfyklRk 167
+                       i GtGGD  +tfn+ ++ +i+l ll+ + +k+++ sy++  Gsi+f++ +      +e s l ll  +  + + +++ +i + l   ++ lRk
+  VFCALBON1_5117  83 FEICGTGGDLSKTFNISSCYFILLCLLGLSCVKKGSISYTSYTGSIDFFNGI-----GFERSLLPLLRSKSYINFFYANELISCPL--YLSYLRK 170
+                     5799********************************************9864.....46667777776777778888998888865..4778*** PP
+
+       trpD_prot 168 kigkktifnyafatynvfkskyfilgvnsvkevptlvkvlkys...kksitlivssfadiDeptldskiklvrvfkkklisfvl 248
+                     +i k+tifny+f+ +  f  ky ++g    +      k+++++     +i+l+  s++++De  +    +l+  +   l  +v+
+  VFCALBON1_5117 171 RIFKPTIFNYLFSFLHCFIVKYRFFGLSLGSF----FKLILSQwllLNNIALV-FSYDGLDELSIFHFSRLILHMDSYLSLLVI 249
+                     ************************99865443....33333331112356665.57******9999988888766555544554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (336 nodes)
+Target sequences:                       5973  (174896 residues searched)
+Passed MSV filter:                       501  (0.0838774); expected 119.5 (0.02)
+Passed bias filter:                       51  (0.00853842); expected 119.5 (0.02)
+Passed Vit filter:                         3  (0.00050226); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.00016742); expected 0.1 (1e-05)
+Initial search space (Z):               5973  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9566.81
+//
+[ok]

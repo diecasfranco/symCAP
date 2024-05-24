@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/aroQ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFLYNSP/VFLYNSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/aroQ/aroQ_VFLYNSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aroQ_prot  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    9.5e-60  199.0  17.4    9.5e-60  199.0  17.4    1.3  2  VFLYNSP_2713  [107012 - 107527] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLYNSP_2713  [107012 - 107527] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.5   0.0      0.38   2.6e+03     125     137 ..       8      20 ..       3      28 .. 0.55
+   2 !  199.0  17.4   1.4e-63   9.5e-60       3     142 ..      34     170 ..      31     171 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: -3.5 bits;  conditional E-value: 0.38
+     aroQ_prot 125 lglygYilaieyi 137
+                   l++++Y+l ++ +
+  VFLYNSP_2713   8 LNIKSYTLGVKEL 20 
+                   4556666655533 PP
+
+  == domain 2  score: 199.0 bits;  conditional E-value: 1.4e-63
+     aroQ_prot   3 ikiinGpninllgiRekkiYGkkslkkikklikkkfkkklkilffqsnsEskiikkiqkskkkidyiiinlagfsYssisilDallaikikfiEvHi 99 
+                   i+iinGpn+nllg+RekkiYGkks+k++kk+ikkkfk+  ki+++qsnsEskii+ iqk  kk++y+iin+agfsY++i+ilD++l+ +i++iEvH+
+  VFLYNSP_2713  34 IRIINGPNMNLLGEREKKIYGKKSIKYLKKKIKKKFKN-EKIHMYQSNSESKIIEYIQK--KKCNYFIINMAGFSYNNIAILDSILSRNIPYIEVHV 127
+                   89**********************************86.68****************97..789********************************* PP
+
+     aroQ_prot 100 snifkreklrkksifskksigvisGlglygYilaieyilklkk 142
+                   snifkre++r+ksifs++s+g+isG+g++gY+lai+yilkl+k
+  VFLYNSP_2713 128 SNIFKREEFRTKSIFSRNSSGFISGMGYMGYVLAIKYILKLFK 170
+                   **************************************99865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (143 nodes)
+Target sequences:                       6789  (184226 residues searched)
+Passed MSV filter:                       264  (0.0388864); expected 135.8 (0.02)
+Passed bias filter:                       39  (0.00574459); expected 135.8 (0.02)
+Passed Vit filter:                         4  (0.000589188); expected 6.8 (0.001)
+Passed Fwd filter:                         1  (0.000147297); expected 0.1 (1e-05)
+Initial search space (Z):               6789  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 15114.32
+//
+[ok]

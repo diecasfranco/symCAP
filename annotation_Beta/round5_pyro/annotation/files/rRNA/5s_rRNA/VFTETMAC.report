@@ -1,0 +1,53 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/RNAs/5s_rRNA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/genomes/VFTETMAC.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/rRNA/5s_rRNA/VFTETMAC.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5s_rRNA  [M=105]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    3.8e-16   55.9   7.6  VFTETMAC  86141  86044 
+
+
+Annotation for each hit  (and alignments):
+>> VFTETMAC  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   55.9   7.6   3.8e-16         8       102 ..     86141     86044 ..     86148     86041 ..    102821    0.92
+
+  Alignment:
+  score: 55.9 bits
+   5s_rRNA     8 taaAgtttattggaaacAccctttatccattccGAAcAAgataGttAAacagtaat.ttgccgaagatag...taatatgcaAAggtAgGtttttat 100  
+                 ta+Ag+ +attggaaa Ac ctt a ccattccGAAcAAga aGt AAaca t+ t   gccga+gatag   +aa a+gcaAA gtAgGt  tt+t
+  VFTETMAC 86141 TATAGCACATTGGAAATACACTTAA-CCATTCCGAACAAGAAAGTAAAACAATGCTtGCGCCGATGATAGtttGAAAAAGCAAAAGTAGGTCGTTGT 86046
+                 67899******************99.*************************998651689**********88888899*************999999 PP
+
+   5s_rRNA   101 ca 102  
+                 ca
+  VFTETMAC 86045 CA 86044
+                 87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (105 nodes)
+Target sequences:                          1  (205642 residues searched)
+Residues passing SSV filter:          100838  (0.49); expected (0.02)
+Residues passing bias filter:           2920  (0.0142); expected (0.02)
+Residues passing Vit filter:             249  (0.00121); expected (0.003)
+Residues passing Fwd filter:             249  (0.00121); expected (3e-05)
+Total number of hits:                      1  (0.000477)
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3149.32
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/rRNA/5s_rRNA/VFTETMAC.sto
+[ok]

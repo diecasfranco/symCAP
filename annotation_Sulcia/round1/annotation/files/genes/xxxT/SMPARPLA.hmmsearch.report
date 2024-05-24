@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMPARPLA/SMPARPLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/xxxT/xxxT_SMPARPLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxT_prot  [M=121]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+    2.6e-20   71.6  17.5    1.4e-12   46.6   5.3    2.2  2  PARPLA_000000134089_7180  [34706 - 34467] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> PARPLA_000000134089_7180  [34706 - 34467] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.0   4.3   2.9e-12   2.4e-08       3      28 ..      13      38 ..      11      41 .. 0.89
+   2 !   46.6   5.3   1.8e-16   1.4e-12      60      94 ..      37      71 ..      35      80 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 33.0 bits;  conditional E-value: 2.9e-12
+                 xxxT_prot  3 lkitekcincgaceaecpnkaiyegs 28
+                               +it++cincgace ecpn+ai e +
+  PARPLA_000000134089_7180 13 YQITNECINCGACELECPNNAISESK 38
+                              589*******************9965 PP
+
+  == domain 2  score: 46.6 bits;  conditional E-value: 1.8e-16
+                 xxxT_prot 60 kkydyyfivpekcteclgffdepqcasvcpvdcci 94
+                               k + yfivpekctec+g +++pqc +vcpv c  
+  PARPLA_000000134089_7180 37 SKENRYFIVPEKCTECIGKYENPQCVAVCPVTCIK 71
+                              57889**************************9864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (121 nodes)
+Target sequences:                       8166  (219177 residues searched)
+Passed MSV filter:                        95  (0.0116336); expected 163.3 (0.02)
+Passed bias filter:                       61  (0.00747); expected 163.3 (0.02)
+Passed Vit filter:                         3  (0.000367377); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000122459); expected 0.1 (1e-05)
+Initial search space (Z):               8166  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6445.72
+//
+[ok]

@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genomes/SMUGYOPS/SMUGYOPS_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genes/xxxT/xxxT_SMUGYOPS.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxT_prot  [M=121]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      4e-21   74.2  16.8    4.4e-12   45.0   4.6    2.2  2  SMUGYOPS_7003  [33900 - 33661] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMUGYOPS_7003  [33900 - 33661] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.0   4.6   1.7e-13   1.3e-09       4      28 ..      14      38 ..      11      41 .. 0.90
+   2 !   45.0   4.6   5.6e-16   4.4e-12      61      94 ..      38      71 ..      36      80 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 37.0 bits;  conditional E-value: 1.7e-13
+      xxxT_prot  4 kitekcincgaceaecpnkaiyegs 28
+                   +it++cincgace ecpn+aiye +
+  SMUGYOPS_7003 14 QITNECINCGACELECPNNAIYESK 38
+                   79*********************75 PP
+
+  == domain 2  score: 45.0 bits;  conditional E-value: 5.6e-16
+      xxxT_prot 61 kydyyfivpekcteclgffdepqcasvcpvdcci 94
+                   k + yfivpekctec+g  ++pqc +vcpv+c  
+  SMUGYOPS_7003 38 KENRYFIVPEKCTECIGKSEKPQCVAVCPVNCIK 71
+                   7889***************************964 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (121 nodes)
+Target sequences:                       7918  (211661 residues searched)
+Passed MSV filter:                       106  (0.0133872); expected 158.4 (0.02)
+Passed bias filter:                       60  (0.00757767); expected 158.4 (0.02)
+Passed Vit filter:                         2  (0.000252589); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126295); expected 0.1 (1e-05)
+Initial search space (Z):               7918  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6138.41
+//
+[ok]

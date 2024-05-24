@@ -1,0 +1,63 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMSYM.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMSYM.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    1.5e-26   89.4  25.7  SMSYMSP   21661  21381 
+
+
+Annotation for each hit  (and alignments):
+>> SMSYMSP  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   89.4  25.7   1.5e-26         1       342 [.     21661     21381 ..     21661     21380 ..    144736    0.77
+
+  Alignment:
+  score: 89.4 bits
+     ssrA     1 ggggctggattggaattgacaacaagattaatat.ataagtaagcatatcgtgaaaagtaatgtaatcacgtaaata..tcatt.acaaatgataacc 94   
+                ggggctg  ttgg  ttgaca caag   aatat ataag  agcatatcgtgaaa gtaatgtaatcacgtaaa a  tcatt acaaa   taa  
+  SMSYMSP 21661 GGGGCTGATTTGGTTTTGACATCAAGT-AAATATaATAAGATAGCATATCGTGAAATGTAATGTAATCACGTAAAAAatTCATTaACAAAAACTAAAT 21565
+                79**********************995.55666526899*********************************9865433677763688888999999* PP
+
+     ssrA    95 ggcaaaaaaaattatgctcttgcggcttgatcaataactttgaattcgaatgcaagatttttttattaaaaataaatttaatttgaaagattgaggtt 192  
+                ggcaaa   aatta  ctcttgc gctt a   a aa tt g       a gcaag                 aa t t att      att aggtt
+  SMSYMSP 21564 GGCAAA---AATTACTCTCTTGCAGCTTAAAACAGAAATTGGTTAGGACAAGCAAGC----------------AACTATCATT-----TATTAAGGTT 21491
+                **9865...6799999***********987554444444333222222233333332................1222222222.....3577788888 PP
+
+     ssrA   193 ctaaatctttctttaattgtttagaactttcttataagaaagagtttcttatcactaatcttatgtgaaatttgctctttgataagataaatatgtag 290  
+                ctaa t       + a                               cttat actaa       t  aa tt ct  tt ata g taaatatgta 
+  SMSYMSP 21490 CTAATT-------GGAGG----------------------------GCTTATAACTAAAT-----TAGAACTTACTACTTTATAGGCTAAATATGTAT 21433
+                877632.......22222............................25566666666533.....3346677788888899***************** PP
+
+     ssrA   291 aaaacttataatattacttgtttggacacgggttcgaatcccgtcagctcca 342  
+                aaa cttat atatt cttgtttggacacgggttcga  cccgtcagctcca
+  SMSYMSP 21432 AAATCTTATTATATTGCTTGTTTGGACACGGGTTCGATACCCGTCAGCTCCA 21381
+                **************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (289472 residues searched)
+Residues passing SSV filter:          274048  (0.947); expected (0.02)
+Residues passing bias filter:         152641  (0.527); expected (0.02)
+Residues passing Vit filter:            4199  (0.0145); expected (0.003)
+Residues passing Fwd filter:            1032  (0.00357); expected (3e-05)
+Total number of hits:                      1  (0.000971)
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 1958.60
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMSYM.sto
+[ok]

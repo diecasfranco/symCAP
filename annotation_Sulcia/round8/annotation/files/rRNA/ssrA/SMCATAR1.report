@@ -1,0 +1,63 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMCATAR1.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMCATAR1.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    2.2e-26   89.0  29.7  SMCATAR1 137165 137442 
+
+
+Annotation for each hit  (and alignments):
+>> SMCATAR1  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   89.0  29.7   2.2e-26         1       342 [.    137165    137442 ..    137165    137443 ..    161808    0.77
+
+  Alignment:
+  score: 89.0 bits
+      ssrA      1 ggggctggattggaattgacaacaagattaatat.ataagtaagcatatcgtgaaaagtaatgtaatcacgtaaata...tcattacaaatga.t 90    
+                  ggggctg  ttgg  ttgaca caag   aatat ataag  agcatatcgtgaaa gtaatgtaatcacgt aa a   tcattacaaa  a t
+  SMCATAR1 137165 GGGGCTGATTTGGTTTTGACATCAAGT-AAATATaATAAGATAGCATATCGTGAAAGGTAATGTAATCACGTTAAAAaatTCATTACAAAAAAcT 137258
+                  79**********************995.55666526899********************************9554432339******98765427 PP
+
+      ssrA     91 aaccggcaaaaaaaattatgctcttgcggcttgatcaataactttgaattcgaatgcaagatttttttattaaaaataaatttaatttgaaagat 185   
+                  aa  ggcaaa   aatta  ctcttgc gctt                          agatttt tt t               tttgaa g  
+  SMCATAR1 137259 AAATGGCAAA---AATTACTCTCTTGCAGCTTA-------------------------AGATTTTGTTTT---------------TTTGAA-G-C 137308
+                  8889999865...6799999**********984.........................566666544332...............233332.2.3 PP
+
+      ssrA    186 tgaggttctaaatctttctttaattgtttagaactttcttataagaaagagtttcttatcactaatcttatgtgaaatttgctctttgataagat 280   
+                  t a gttcta atcttt t taa      a aa tt     t     ag g ttc   t actaa  tta   gaa  tt ct  t  a aag t
+  SMCATAR1 137309 TAATGTTCTA-ATCTTTATCTAAAG----ATAATTT-----T-----AGGGCTTC---TAACTAAAATTA---GAA-CTTACTACT-TAGAAGCT 137380
+                  4566888886.57777777666532....2223222.....2.....34555555...556777766665...444.444554433.36689*** PP
+
+      ssrA    281 aaatatgtagaaaacttataatattacttgtttggacacgggttcgaatcccgtcagctcca 342   
+                  aaatatgta aaa cttat atatt cttgtttggacacgggttcga tcccgtcagctcca
+  SMCATAR1 137381 AAATATGTATAAATCTTATTATATTGCTTGTTTGGACACGGGTTCGATTCCCGTCAGCTCCA 137442
+                  ************************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (323616 residues searched)
+Residues passing SSV filter:          296654  (0.917); expected (0.02)
+Residues passing bias filter:         186789  (0.577); expected (0.02)
+Residues passing Vit filter:            2689  (0.00831); expected (0.003)
+Residues passing Fwd filter:            1103  (0.00341); expected (3e-05)
+Total number of hits:                      1  (0.000859)
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 1895.40
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMCATAR1.sto
+[ok]

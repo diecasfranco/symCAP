@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/holA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMDESRAP/SMDESRAP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/holA/holA_SMDESRAP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       holA_prot  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.9e-16   59.3  32.4    1.3e-09   36.8   8.9    2.0  2  SMDESRAP_3853  [141285 - 141725] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMDESRAP_3853  [141285 - 141725] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.7  19.3   4.9e-11     4e-07     165     260 ..       1     101 [.       1     102 [. 0.76
+   2 !   36.8   8.9   1.6e-13   1.3e-09     275     319 .]      96     139 ..      92     139 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 28.7 bits;  conditional E-value: 4.9e-11
+      holA_prot 165 naikllikflgenlysinneikkllilleknk...iidekiikkyvlkttfk..vesyiiekeflkalkaiknvpisliLkkiyklflkiikfhll 255
+                    +++k + +++  nl++++ ++kkl+   +k k   +  ek+  ky  k++ k   + +  +ke++ +l+++++ p++liLkkiykl+l+++  +++
+  SMDESRAP_3853   1 ITVKTMRQSVVCNLFMLEKDLKKLIFTQNKYKykyKEKEKYKSKYKEKEKEKekEKEKDHQKEWKIILNMLEVQPLTLILKKIYKLYLEKFLNYNN 96 
+                    589*********************99888865211334556666665554431033445667777788999999*****************99999 PP
+
+      holA_prot 256 ilenv 260
+                    ++e++
+  SMDESRAP_3853  97 KEEKF 101
+                    98865 PP
+
+  == domain 2  score: 36.8 bits;  conditional E-value: 1.6e-13
+      holA_prot 275 lkkyplnkianiislireadikikninslkkeeileeLlykifyn 319
+                     k  ++ kian+++l++ea++k+k  ++lkkeei++eL+yki+++
+  SMDESRAP_3853  96 NKEEKFKKIANLVFLLKEAEKKNKR-YFLKKEEIMKELIYKICQI 139
+                    47789******************97.8****************85 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       8122  (218470 residues searched)
+Passed MSV filter:                       569  (0.0700566); expected 162.4 (0.02)
+Passed bias filter:                       58  (0.0071411); expected 162.4 (0.02)
+Passed Vit filter:                         4  (0.00049249); expected 8.1 (0.001)
+Passed Fwd filter:                         2  (0.000246245); expected 0.1 (1e-05)
+Initial search space (Z):               8122  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 17608.17
+//
+[ok]

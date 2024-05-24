@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFPITSP/VFPITSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/rluD/rluD_VFPITSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluD_prot  [M=222]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.2e-31  101.5  73.9    4.2e-31  101.5  73.9    2.3  2  VFPITSP_35  [35963 - 36733]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPITSP_35  [35963 - 36733]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -8.0  13.2         1   1.4e+02     176     206 ..       8      38 ..       1      42 [. 0.37
+   2 !  101.5  73.9     3e-33   4.2e-31       4     221 ..      42     255 ..      38     256 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -8.0 bits;  conditional E-value: 1
+   rluD_prot 176 kkikaknivLfswklsfalkkekikfyslir 206
+                 kk +++ ++L ++ +++ + k+  kf ++++
+  VFPITSP_35   8 KKYYNNFFYLKYKIIKILNYKFYFKFIYFFK 38 
+                 2223333333333333333333333333333 PP
+
+  == domain 2  score: 101.5 bits;  conditional E-value: 3e-33
+   rluD_prot   4 evflkkkkkkikiiyenkyfiivkkkkkilvydt.knvkknilsl.....gkkiflnkkrlgilnRlDkdtsGiiiisknrktysiikklfkkrkikky 96 
+                  +f+kkkk+ +kii   k+f+i++k+++ l+y++ k +kk+ils      gkkif n +++gi++RlD+ t+G+iii++n+k+y ++kk+fkkr+ikky
+  VFPITSP_35  42 YFFIKKKKNLLKIIKIFKNFLIIDKSNNFLTYNNfKSKKKDILSSlyniyGKKIF-NVNKCGIVHRLDYRTTGLIIIARNNKSYYYFKKIFKKRMIKKY 139
+                 467777777666666689**************754999****9862233366776.679**************************************** PP
+
+   rluD_prot  97 ylvlekislkikknkFyiknflvkfkl.....ng..kfsvtyikkilsykkvfsiliikiltGrkhQIrkqlsiiGyPivgdklygkkikaknivLfsw 188
+                 yl  +k+s    kn+ yikn+++k+k+     n+  k+svt+  ki+s k +  i ++kiltGrk+Q++++          + l+g  ik kni+L+s+
+  VFPITSP_35 140 YLLSFKSSN--NKNNIYIKNYIYKRKIfkykiNKyyKYSVTKAYKIYSNKYI-CIYLCKILTGRKNQLKIHF---------NSLFG--IKYKNIILHSY 224
+                 **9877665..35666667766654321111144338888888888776555.5889************997.........56787..7889******* PP
+
+   rluD_prot 189 klsfalkkekikfyslirkkilkkliksnkkvl 221
+                 k+++++   + +fys+++k+ ++++ k+nkk++
+  VFPITSP_35 225 KIKIKN--INFIFYSVLSKNFINIFRKINKKII 255
+                 *99866..5679*****************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (222 nodes)
+Target sequences:                        142  (38567 residues searched)
+Passed MSV filter:                       131  (0.922535); expected 2.8 (0.02)
+Passed bias filter:                       13  (0.0915493); expected 2.8 (0.02)
+Passed Vit filter:                        13  (0.0915493); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00704225); expected 0.0 (1e-05)
+Initial search space (Z):                142  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1271.57
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/trpC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFMEEALB/VFMEEALB_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/trpC/trpC_VFMEEALB.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trpC_prot  [M=245]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.6e-22   77.0  39.6    5.6e-22   77.0  39.6    2.0  2  VFMEEALB_4919  [23168 - 22401] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMEEALB_4919  [23168 - 22401] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5  11.3     0.048   2.7e+02     131     182 ..       2      59 ..       1      59 [. 0.72
+   2 !   77.0  39.6     1e-25   5.6e-22      48     238 ..      56     253 ..      50     256 .] 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 0.048
+      trpC_prot 131 dilLvvvslyskkliknivkya..kffnlileisskdikeilvikk....kirnliiG 182
+                    di L+   l  +k++  i+k++   + n +l++s  +ikeilvi+k    ki+n iiG
+  VFMEEALB_4919   2 DIFLIKKLLIFIKMLLKILKFKiaELKNNLLKLSLNRIKEILVIQKykkfKIKNGIIG 59 
+                    66677666777788888887753367899***************87333345666665 PP
+
+  == domain 2  score: 77.0 bits;  conditional E-value: 1e-25
+      trpC_prot  48 siiierkihsPleGkkek.rsidkfvkykkleidalsiLidkkhfsgs..yfeilkskklkkllkiLkkdfvidklqlyelyilGadilLvvvsly 140
+                     ii+e+k++sPl+ ++   +  +k++   k + +++siL d+ +f+g   y+ +++      +  iL+kdf+ + +q+ye+  +  +++L++v+l+
+  VFMEEALB_4919  56 GIIGEIKLFSPLNKQIVSiKRFNKLIFLYKKKFNCVSILSDRMFFGGNknYLTVIR---TLNNFYILRKDFIFSYYQIYETKLYNCNLVLLIVKLL 148
+                    499*********9887542778999999999**************99721344444...3456789****************************** PP
+
+      trpC_prot 141 skkliknivkyakffnlileisskdikeilvik.kkirnliiGvnsrnLknfkikkekvlefl.......knksiiyesGilklnelikvrnlgfk 228
+                    s  li+n++++   +++ + ++ +d k+ l++k  k +n +iG+n rnL nfkikk+ + ++        ++  i+ es i  +  + +  ++g +
+  VFMEEALB_4919 149 SLNLIVNLINLSIKLDIYVLVELHDKKDLLILKyIKTKNILIGFNNRNLVNFKIKKKYIFNLIikninflEKFIIVIESNISPV-FINRYLKIGIN 243
+                    ***********9999999999999988777664157899*****************9987765100000044455555555433.2334568999* PP
+
+      trpC_prot 229 vvLiGegfak 238
+                      LiGe ++k
+  VFMEEALB_4919 244 YFLIGEKLIK 253
+                    ******9996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (245 nodes)
+Target sequences:                       5556  (145861 residues searched)
+Passed MSV filter:                       589  (0.106012); expected 111.1 (0.02)
+Passed bias filter:                       40  (0.00719942); expected 111.1 (0.02)
+Passed Vit filter:                         3  (0.000539957); expected 5.6 (0.001)
+Passed Fwd filter:                         1  (0.000179986); expected 0.1 (1e-05)
+Initial search space (Z):               5556  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7255.59
+//
+[ok]

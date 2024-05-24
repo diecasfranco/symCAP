@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/clpP_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFPITSP/VFPITSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/clpP/clpP_VFPITSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       clpP_prot  [M=187]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-92  300.7  12.5    3.1e-92  300.5  12.5    1.0  1  VFPITSP_61  [63042 - 63605]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPITSP_61  [63042 - 63605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  300.5  12.5   2.2e-94   3.1e-92       1     187 []       1     187 [.       1     187 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 300.5 bits;  conditional E-value: 2.2e-94
+   clpP_prot   1 mlknllllvleknksldilskllkeriiflsgeindelansiisqllylesinkkdisiyinspGGsissGlaiydvikfikskvstlciGlaasmaaf 99 
+                 m+kn+l++v+ k  ++di+++llkeriif++gei+d+lansi+sq+++l +++kk+i iyinspGGsi+sG+aiydv+k  ++k+ t+c+Glaasmaaf
+  VFPITSP_61   1 MIKNTLPYVSYKGGFTDIYTRLLKERIIFMTGEIDDYLANSIVSQIIFLSQESKKEIYIYINSPGGSIYSGFAIYDVMKNSRCKIYTICYGLAASMAAF 99 
+                 899************************************************************************************************ PP
+
+   clpP_prot 100 llssGkkgkryslknsrimihqPlggfkGqasdikiqtkeilylkkkinkilskntkkkikkikkdterdkfmsskealkygiidkii 187
+                 +lssG+kg+r+++knsrimihqP+gg+kGqa+diki++kei+ylkkkinkils nt++kikki+kd+erdkfms+k+++ ygiidkii
+  VFPITSP_61 100 ILSSGNKGNRFCTKNSRIMIHQPIGGVKGQATDIKIHYKEIYYLKKKINKILSINTGNKIKKINKDVERDKFMSAKKSKDYGIIDKII 187
+                 ***************************************************************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (187 nodes)
+Target sequences:                        142  (38567 residues searched)
+Passed MSV filter:                        58  (0.408451); expected 2.8 (0.02)
+Passed bias filter:                        3  (0.0211268); expected 2.8 (0.02)
+Passed Vit filter:                         1  (0.00704225); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00704225); expected 0.0 (1e-05)
+Initial search space (Z):                142  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3592.22
+//
+[ok]

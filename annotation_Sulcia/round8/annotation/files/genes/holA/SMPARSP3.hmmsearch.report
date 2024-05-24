@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/holA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMPARSP3/SMPARSP3_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/holA/holA_SMPARSP3.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       holA_prot  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    7.9e-16   57.3  16.2    9.6e-10   37.3   6.5    2.0  2  SMPARSP3_4150  [151258 - 151575] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPARSP3_4150  [151258 - 151575] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.4   2.8   2.3e-10     2e-06     221     257 ..      29      65 ..       5      68 .. 0.81
+   2 !   37.3   6.5   1.1e-13   9.6e-10     279     319 .]      66     105 ..      63     105 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 26.4 bits;  conditional E-value: 2.3e-10
+      holA_prot 221 keflkalkaiknvpisliLkkiyklflkiikfhllil 257
+                    +e++  lk++++ p++liL+kiykl+l+++ ++++++
+  SMPARSP3_4150  29 DELKMLLKMLEVQPLTLILNKIYKLYLDKFLTYNNEE 65 
+                    6788899*************************99865 PP
+
+  == domain 2  score: 37.3 bits;  conditional E-value: 1.1e-13
+      holA_prot 279 plnkianiislireadikikninslkkeeileeLlykifyn 319
+                    ++ kian+++l++ea++k+k+ ++l+keei++eL+yki+ n
+  SMPARSP3_4150  66 KFKKIANLVFLLKEAEKKNKS-YFLNKEEIMKELIYKIYAN 105
+                    799*****************8.89**************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       8662  (229776 residues searched)
+Passed MSV filter:                       556  (0.0641884); expected 173.2 (0.02)
+Passed bias filter:                       65  (0.00750404); expected 173.2 (0.02)
+Passed Vit filter:                         2  (0.000230894); expected 8.7 (0.001)
+Passed Fwd filter:                         1  (0.000115447); expected 0.1 (1e-05)
+Initial search space (Z):               8662  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 19477.33
+//
+[ok]

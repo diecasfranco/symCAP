@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/holB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMMYCPAL/SMMYCPAL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/holB/holB_SMMYCPAL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       holB_prot  [M=356]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    9.8e-13   47.0  13.7    9.8e-13   47.0  13.7    2.9  3  SMMYCPAL_6277  [60024 - 58969] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMMYCPAL_6277  [60024 - 58969] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.2   0.1      0.01        79       9      40 ..      42      72 ..      32      84 .. 0.76
+   2 !   47.0  13.7   1.2e-16   9.8e-13     110     307 ..      92     296 ..      82     303 .. 0.76
+   3 ?   -4.4  10.2      0.54   4.2e+03     234     300 ..     273     346 ..     221     349 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 1.2 bits;  conditional E-value: 0.01
+      holB_prot  9 lkinkiphailflgpegcgnlitainfskkil 40
+                   +k+n + +++lf gp+g+g+   a  +++k+ 
+  SMMYCPAL_6277 42 IKKN-LAKSFLFCGPKGVGKTTCARILARKLA 72
+                   3444.67899*********9998887887765 PP
+
+  == domain 2  score: 47.0 bits;  conditional E-value: 1.2e-16
+      holB_prot 110 eqienllkkityksyesdykiiilwmpekltlyssnkllkileftpkktifllvgenennilptilsriflirfnkfsfkeikkflekklkidtiq 205
+                    ++i+++l++++y     +yki i+     l+  + n +lk+le +p + if+l   ++n+ilpt+lsr  +  f+  s+k++ k+l k   +++++
+  SMMYCPAL_6277  92 DDIKDILNQLNYLPIGGKYKIYIIDEVHMLSHSAFNAFLKVLEEPPTHVIFILATTKKNKILPTVLSRCQIYEFKPISIKNLIKYLRKICMLENVE 187
+                    6799********************99999999999****************************************************998888764 PP
+
+      holB_prot 206 ..sk...qialkaegnlnkalklvnnlq...enyleinfiswirnl....flikknplllekiilfskkinlwkketqikfllylieifrkaflqk 289
+                      s     ia +aeg l  al   + l+   +n l  ++++    +    + +k   l+l++ i   k + ++ k  q  +    +++f + + ++
+  SMMYCPAL_6277 188 yeSDallLIAENAEGSLRDALSAFDRLKlysNNKLLRKMVAKQLGIldiqYCLKFTDLILDQNI--FKTLLYFDKLIQTGI---HLNLFLNNLAYH 278
+                    11543335899**********9998875222344444444432222000133333444444433..234444555444433...357899999999 PP
+
+      holB_prot 290 ynnllikeipltynkfnw 307
+                    + nlli + p t   fn 
+  SMMYCPAL_6277 279 FRNLLITKSPDTITLFNN 296
+                    ******999999998884 PP
+
+  == domain 3  score: -4.4 bits;  conditional E-value: 0.54
+      holB_prot 234 infiswirnlflikkn.pl.llekiilfskkinlw..kketqikfllylieifrka..fl.qkynnllikeipl 300
+                     n+    rnl++ k   ++ l+++      ki+l+  +++ + kfl+  i+i  k+  fl + ynn l  ei l
+  SMMYCPAL_6277 273 NNLAYHFRNLLITKSPdTItLFNNNYSDNFKIKLLaqSQKVKNKFLIKAIKICDKTerFLpKSYNNRLTLEITL 346
+                    23444578887777531231334433333355555114556678999999999885557735699999999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (356 nodes)
+Target sequences:                       7891  (207504 residues searched)
+Passed MSV filter:                       276  (0.0349766); expected 157.8 (0.02)
+Passed bias filter:                       55  (0.00696997); expected 157.8 (0.02)
+Passed Vit filter:                         3  (0.00038018); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126727); expected 0.1 (1e-05)
+Initial search space (Z):               7891  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 4289.53
+//
+[ok]

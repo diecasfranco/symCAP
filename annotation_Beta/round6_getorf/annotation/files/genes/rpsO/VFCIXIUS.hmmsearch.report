@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsO_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFCIXIUS/VFCIXIUS_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rpsO/rpsO_VFCIXIUS.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsO_prot  [M=58]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    7.3e-11   40.6  16.4    7.3e-11   40.6  16.4    1.9  2  VFCIXIUS_1420  [54298 - 54462] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCIXIUS_1420  [54298 - 54462] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.2   1.1     0.021   1.5e+02      44      54 ..       1      11 [.       1      15 [. 0.77
+   2 !   40.6  16.4   9.9e-15   7.3e-11       5      47 ..      13      55 .]      10      55 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 1.2 bits;  conditional E-value: 0.021
+      rpsO_prot 44 KKiikylkkkk 54
+                   KK+ k+lkk+k
+  VFCIXIUS_1420  1 KKMEKFLKKSK 11
+                   78999998765 PP
+
+  == domain 2  score: 40.6 bits;  conditional E-value: 9.9e-15
+      rpsO_prot  5 fkfqikilkkkIkklkkHlkkhkKDlhskrgllklinkkKKii 47
+                   +++++++l  kIkklk+Hl k+kKD+hs++gl+k++n +KK++
+  VFCIXIUS_1420 13 LEKNFSNLVIKIKKLKDHLYKNKKDKHSRLGLVKMLNLLKKYK 55
+                   5788999**********************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (58 nodes)
+Target sequences:                       7389  (199988 residues searched)
+Passed MSV filter:                      1092  (0.147787); expected 147.8 (0.02)
+Passed bias filter:                      165  (0.0223305); expected 147.8 (0.02)
+Passed Vit filter:                        11  (0.0014887); expected 7.4 (0.001)
+Passed Fwd filter:                         1  (0.000135336); expected 0.1 (1e-05)
+Initial search space (Z):               7389  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4350.60
+//
+[ok]

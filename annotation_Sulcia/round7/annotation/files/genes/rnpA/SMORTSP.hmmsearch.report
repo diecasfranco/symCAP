@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rnpA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMORTSP/SMORTSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rnpA/rnpA_SMORTSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SMOLIH_rnpA  [M=127]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.8e-28   98.0  24.6      1e-27   95.5  24.6    1.9  1  SMORTSP_5333  [95750 - 95313] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMORTSP_5333  [95750 - 95313] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   95.5  24.6   1.3e-31     1e-27       9     125 ..      17     144 ..       9     146 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 95.5 bits;  conditional E-value: 1.3e-31
+   SMOLIH_rnpA   9 ikkklifslmnnlyqifrkvkqiennllnvayiek.eyne......kyrk....kvkvalfvskkqiiksfkrnrikrlmrmsyqlnkkiitlkkqk 94 
+                   +kkk ++     + +ifr  k+iennll vay+e   yn        y      +vk+a+fvsk  i ks++rnrikrlmr syqlnkkii +k++k
+  SMORTSP_5333  17 LKKKELIKKKTIVNKIFRNGKKIENNLLKVAYLETaTYNStslsnsNYTAnnyfQVKIAFFVSKNTIRKSYQRNRIKRLMRRSYQLNKKIIPFKRKK 113
+                   688888888888999******************96346542111114543233379***************************************** PP
+
+   SMOLIH_rnpA  95 ryyllfryikkkitnsyeitkcfehviikif 125
+                    yy++f y+kkk+ n ye+ kcfeh+i kif
+  SMORTSP_5333 114 IYYIIFMYFKKKLHNFYELKKCFEHIIQKIF 144
+                   ******************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (127 nodes)
+Target sequences:                       7915  (212047 residues searched)
+Passed MSV filter:                       455  (0.0574858); expected 158.3 (0.02)
+Passed bias filter:                       90  (0.0113708); expected 158.3 (0.02)
+Passed Vit filter:                         4  (0.00050537); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126342); expected 0.1 (1e-05)
+Initial search space (Z):               7915  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8430.99
+//
+[ok]

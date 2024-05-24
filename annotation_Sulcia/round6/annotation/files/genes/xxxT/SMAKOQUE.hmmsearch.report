@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMAKOQUE/SMAKOQUE_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/xxxT/xxxT_SMAKOQUE.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxT_prot  [M=121]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    7.2e-20   70.5  15.5    1.6e-10   40.4   4.4    2.0  2  SMAKOQUE_6130  [144686 - 144486] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMAKOQUE_6130  [144686 - 144486] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.4   3.1   1.3e-13   1.4e-09       1      27 [.       2      28 ..       2      32 .. 0.92
+   2 !   40.4   4.4   1.6e-14   1.6e-10      63      93 ..      31      63 ..      27      67 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 37.4 bits;  conditional E-value: 1.3e-13
+      xxxT_prot  1 mslkitekcincgaceaecpnkaiyeg 27
+                   m +kit++cincgace ecpn+ai e 
+  SMAKOQUE_6130  2 MVFKITNECINCGACELECPNNAISED 28
+                   789*********************986 PP
+
+  == domain 2  score: 40.4 bits;  conditional E-value: 1.6e-14
+      xxxT_prot 63 dyyfivpekcteclgffdepq..casvcpvdcc 93
+                   + yfivpekctec+g +++p+  c svcpv+c 
+  SMAKOQUE_6130 31 NRYFIVPEKCTECIGKYENPNppCVSVCPVNCI 63
+                   579**************986444********95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (121 nodes)
+Target sequences:                      10271  (263434 residues searched)
+Passed MSV filter:                       116  (0.0112939); expected 205.4 (0.02)
+Passed bias filter:                       66  (0.00642586); expected 205.4 (0.02)
+Passed Vit filter:                         5  (0.000486808); expected 10.3 (0.001)
+Passed Fwd filter:                         1  (9.73615e-05); expected 0.1 (1e-05)
+Initial search space (Z):              10271  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7421.66
+//
+[ok]

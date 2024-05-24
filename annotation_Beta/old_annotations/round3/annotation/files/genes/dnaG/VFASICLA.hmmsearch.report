@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3//annotation/files/genomes/VFASICLA/VFASICLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3//annotation/files/genes/dnaG/dnaG_VFASICLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaG_prot  [M=551]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.4e-38  124.9 114.6    1.6e-29   96.3  99.9    2.8  2  VFASICLA_42  [40748 - 41869]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFASICLA_42  [40748 - 41869]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.9  15.3   1.2e-10   1.7e-08      29      97 ..       2      69 ..       1      71 [. 0.69
+   2 !   96.3  99.9   1.1e-31   1.6e-29     122     449 ..      55     351 ..      44     372 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 26.9 bits;  conditional E-value: 1.2e-10
+    dnaG_prot 29 kklilcPfhkekkesfllnvdknfyycfGckksGklsldknkfnknnkyfinnsisdkisilylkninf 97
+                 kkli+c +hk+kkes+l+n +  f+ycfGckk G + l kn+ n     + +n   +  + l  ++inf
+  VFASICLA_42  2 KKLIICKYHKDKKESLLIN-ENGFFYCFGCKKKGFINLRKNRNNFFLYELYKNINLECFNYLINRKINF 69
+                 89****************9.6789****************97553322222222223333333344443 PP
+
+  == domain 2  score: 96.3 bits;  conditional E-value: 1.1e-31
+    dnaG_prot 122 kkssfds.kdrkkkkkiinkfelgysgyntleykikfvkkkldiytfikkislkkklyfllknkiifPvknknGkvlsviirsisnekfskyifsyin 218
+                   +  f++ ++rk+   i+ kf++gy+  + l+ ki+f+ k +++ + i ++      y +++n+i fP+ n  G++ s+i rsi+n + +ky+f  i 
+  VFASICLA_42  55 NLECFNYlINRKINFFILRKFNIGYCNNKILK-KINFLDKEYLLEKKIIRNN-----YIIINNRITFPIFNSYGILSSIISRSIFNIR-NKYLFCKIT 145
+                  455554326788888899*******9877775.9999999988887766553.....89**************************987.7******99 PP
+
+    dnaG_prot 219 kfvkkkkilyGlyetkfeilkknyvilveGyidlislyskniknvlsllGsslevyqlkklikltkniiifydndkaGkialkksiiyyknktiiekk 316
+                  k  kk ++lyG+ye++ +i k   v++veG+ dl+s+   ni nv+s+lG++l+ +qlk+ i ++k iii++dnd aGk+a+ k    +k ++ii+k 
+  VFASICLA_42 146 KE-KKNELLYGFYENRKYIKKEKEVFIVEGCFDLLSMCCNNINNVVSTLGTNLSKKQLKI-INFCKRIIILFDNDDAGKKAILK---IFKMNYIINK- 237
+                  86.8999***************************************************85.689*****************987...4799999965. PP
+
+    dnaG_prot 317 vkyvlltkkkdPdeyikkfdkkkfkkkiensiyiydliyliykknllkikeflsidkefkynk....kslyilekilkly..kkktefklyfykikkd 408
+                    yvl+ k+kd +e+++k +  +f kk +n   i   iy+  +kn++ ++ +++ +  +ky      ++   ++k +k y  kkk++ +l f   kk 
+  VFASICLA_42 238 -IYVLFLKEKDMNEFFLKKNYYNFLKKKKNIQKIN--IYV--VKNFF-LDSYITKLILNKYLFykkyINNIFIKKKYKEYisKKKNKIDLLFIN-KKR 328
+                  .8**********************99988754432..333..35544.4455543333333220001222234555555522334444444322.233 PP
+
+    dnaG_prot 409 iisllkkisksniklikdykiiekkviiilifpqiiyffnk 449
+                  i++l+ k    n                   +  i+ +f +
+  VFASICLA_42 329 IFFLKEKYLFINK------------------IKSILNYFSN 351
+                  3333222111111..................1111111111 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (551 nodes)
+Target sequences:                        143  (37142 residues searched)
+Passed MSV filter:                       133  (0.93007); expected 2.9 (0.02)
+Passed bias filter:                        7  (0.048951); expected 2.9 (0.02)
+Passed Vit filter:                         7  (0.048951); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00699301); expected 0.0 (1e-05)
+Initial search space (Z):                143  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 760.41
+//
+[ok]

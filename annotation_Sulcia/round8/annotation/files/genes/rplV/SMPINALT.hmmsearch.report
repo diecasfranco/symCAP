@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplV_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMPINALT/SMPINALT_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rplV/rplV_SMPINALT.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplV_prot  [M=127]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    6.4e-29   99.4  13.8    8.1e-29   99.1  13.8    1.0  1  SMPINALT_3248  [115766 - 116128] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPINALT_3248  [115766 - 116128] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   99.1  13.8     1e-32   8.1e-29      18     124 ..      12     115 ..       3     117 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 99.1 bits;  conditional E-value: 1e-32
+      rplV_prot  18 dvkniscsprklrlvadlirtkkveysllklnnikkkGsilikkillsalanwknknyekeinnynlyiekilvnqgtqlkkirPapkGrgnkirk 113
+                    + kni++sp kl +++ ++++k v y++++l+++k+kG+i +k+++l+a   + ++   +e +++n+y+ +i++n+++++kkirPap+Gr  ki k
+  SMPINALT_3248  12 KSKNINYSPLKLIKLIKILKHKPVAYIIHVLGKMKNKGAICLKHLILNA---YHQNGSPIEDHKQNVYLTNIIINKSIRFKKIRPAPQGRVKKINK 104
+                    569*******************************************997...7788999999********************************** PP
+
+      rplV_prot 114 rysnlkiiiis 124
+                    ++ n+++i+ +
+  SMPINALT_3248 105 QFVNIILILKK 115
+                    *****999865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (127 nodes)
+Target sequences:                       7875  (207928 residues searched)
+Passed MSV filter:                       159  (0.0201905); expected 157.5 (0.02)
+Passed bias filter:                       45  (0.00571429); expected 157.5 (0.02)
+Passed Vit filter:                         3  (0.000380952); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126984); expected 0.1 (1e-05)
+Initial search space (Z):               7875  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 13795.03
+//
+[ok]

@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFIDISP1/VFIDISP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/dnaG/dnaG_VFIDISP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaG_prot  [M=399]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.1e-97  326.5 110.0    1.1e-97  326.5 110.0    1.5  2  VFIDISP1_1067  [39466 - 40776] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFIDISP1_1067  [39466 - 40776] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -8.6   6.7         1   6.4e+03     351     364 ..      13      26 ..       1      59 [. 0.36
+   2 !  326.5 110.0  1.7e-101   1.1e-97       3     393 ..      65     435 ..      64     437 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -8.6 bits;  conditional E-value: 1
+      dnaG_prot 351 lnkkkklkinilkk 364
+                    +n++  l  + +kk
+  VFIDISP1_1067  13 VNTYLFLISSSIKK 26 
+                    22222222222222 PP
+
+  == domain 2  score: 326.5 bits;  conditional E-value: 1.7e-101
+      dnaG_prot   3 rklilCpfhkekkeSlLlnkknyfYCFGCkksgklkklkkkkkniinkllkkifkknilsnkklikylkkrkiknlkiikkfkigylnnlifkklk 98 
+                    +kli+C+fhk+++eSlL+n++ +fYCFGCkk g l           n+++++if kni  n+++++yl +rki+n++ii++f igy+n+ ++kk++
+  VFIDISP1_1067  65 KKLIICKFHKDNNESLLINDNGFFYCFGCKKRGYLIS---------NNKIMYIFYKNI--NFESFNYLLSRKINNFFIIREFGIGYCNEELSKKIS 149
+                    5789*****************************8754.........334556777887..8999******************************** PP
+
+      dnaG_prot  99 kkeikfllkkkilfkkkkyfllknkiiiPiknikGklisfiirnikn.kknKYiFskkkkkfkKkniLYGlyenkkyikkkkeifiVEGffDLlrL 193
+                    + e++f+lkkk++++  + f+++++i++Pi+++kG ++s+i+rni+  +knKYiF+k +k++ K+n+LYG+yen+k+ik+kke+fiVEG++DL+++
+  VFIDISP1_1067 150 FLEKNFFLKKKLIRE--DRFIINKRITFPIRDEKGIITSIISRNIRYcTKNKYIFCK-IKNICKSNLLYGFYENYKFIKRKKEVFIVEGCMDLISM 242
+                    ***********9875..56899***********************983589****97.589*********************************** PP
+
+      dnaG_prot 194 nsigikNvvslLGcniskkqikfllklkkkiiflfDnDkagkksylkiikknykliikkkkifflfikkkDpdefFinknkkkflkvlkknkisie 289
+                     ++gi+Nvvs+LG+n+sk+qi++ l+++++ii++fDnD ag++++l+++kkny+++   +ki++lf+k kD+++fFi+knk +f++ lk n+ +i+
+  VFIDISP1_1067 243 LCNGIRNVVSTLGNNLSKYQINM-LNFCNRIIIMFDNDIAGRRAVLDLFKKNYYFN---NKIYVLFTKFKDMNDFFIKKNKIDFINELK-NIEKIN 333
+                    *********************96.69***************************874...68*************************986.688999 PP
+
+      dnaG_prot 290 efiiknklfknkkikkyflknfkkikkkiknkkliikkkffliknkklkkkikkfikkkkllnkkkklk.inilkkklnfisknkifikkykkkyk 384
+                     f+  +++f++++++k +l+nf+++k+k++ k+l+  kk+ +++nkk kk  +++ikkk++ln++kk+k i++lkk+l f+sk+ki   +y+k+++
+  VFIDISP1_1067 334 IFVA-KNFFEDNFVLKKILNNFEYYKIKANLKFLL--KKYKIFVNKKRKKIKFSIIKKKMFLNSYKKYKlIKFLKKILLFLSKYKINNLEYIKYLN 426
+                    9987.57*******************999999766..55666677887777778999**********995699*********************** PP
+
+      dnaG_prot 385 killlkkki 393
+                    ++ll+++++
+  VFIDISP1_1067 427 LFLLINDRK 435
+                    ***999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (399 nodes)
+Target sequences:                       6438  (171017 residues searched)
+Passed MSV filter:                      1482  (0.230196); expected 128.8 (0.02)
+Passed bias filter:                      140  (0.0217459); expected 128.8 (0.02)
+Passed Vit filter:                        64  (0.00994098); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.000155328); expected 0.1 (1e-05)
+Initial search space (Z):               6438  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 6233.83
+//
+[ok]

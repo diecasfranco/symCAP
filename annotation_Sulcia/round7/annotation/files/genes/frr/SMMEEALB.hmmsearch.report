@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/frr_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMMEEALB/SMMEEALB_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/frr/frr_SMMEEALB.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       frr_prot  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    7.3e-55  184.4  31.3    8.1e-55  184.3  31.3    1.0  1  SMMEEALB_7459  [28082 - 27531] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMMEEALB_7459  [28082 - 27531] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  184.3  31.3   9.8e-59   8.1e-55       4     183 ..       5     183 ..       2     184 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 184.3 bits;  conditional E-value: 9.8e-59
+       frr_prot   4 llilikklkseikkkilklkkklfkirigkinesilddvtidlygkkvqiktisnisildartllikPWeeknlniiykallknsilyvpiktGkv 99 
+                    + +++k++ +++ k+++++kkk+ k+rigk+n+++ldd+t+++y +kv+++++s+i +++++t+likPWe+knl +i+k+++k++i+++pi++G+ 
+  SMMEEALB_7459   5 MTKILKEMNEKMTKILDYFKKKMAKLRIGKANTDMLDDITVEYYKNKVPLYHLSSIEVINSKTILIKPWENKNLSLIEKSIMKSNIGIIPINNGRF 100
+                    55789******************************************************************************************* PP
+
+       frr_prot 100 lklkiaklteetrkelikkinfilekfkinlrklrkktikklkklnslekdclkkkkkeiqniindcinsikiifkrkkkeilt 183
+                    +kl+i+ ltee+rke+ik +  +le++ki+lr++r+ +  k++k  s ekd+++k+k+++++ ++++i +i++if++kk+eil+
+  SMMEEALB_7459 101 IKLVIPSLTEERRKEIIKSNTRKLEQAKIRLRNIRRYYKYKIIKYVS-EKDFIEKYKNDVHEATKEYIYKIEKIFENKKQEILK 183
+                    ********************************************976.9*********************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (184 nodes)
+Target sequences:                       8252  (216229 residues searched)
+Passed MSV filter:                       274  (0.0332041); expected 165.0 (0.02)
+Passed bias filter:                       38  (0.00460494); expected 165.0 (0.02)
+Passed Vit filter:                         1  (0.000121183); expected 8.3 (0.001)
+Passed Fwd filter:                         1  (0.000121183); expected 0.1 (1e-05)
+Initial search space (Z):               8252  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 17907.95
+//
+[ok]

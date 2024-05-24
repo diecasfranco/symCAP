@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplW_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMLIBAN/SMLIBAN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/rplW/rplW_SMLIBAN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplW_prot  [M=175]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+      3e-15   55.6  16.2      3e-15   55.6  16.2    1.7  2  SMLIBAN_3329  [119132 - 119440] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMLIBAN_3329  [119132 - 119440] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.4     0.066   5.2e+02      96     105 ..      19      28 ..       4      37 .. 0.42
+   2 !   55.6  16.2   3.8e-19     3e-15       6      69 ..      38     101 ..      33     103 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 0.066
+     rplW_prot  96 lnklklnsnl 105
+                   + k  +n nl
+  SMLIBAN_3329  19 FYKEYINKNL 28 
+                   2222222222 PP
+
+  == domain 2  score: 55.6 bits;  conditional E-value: 3.8e-19
+     rplW_prot   6 kkkfsnkkldpfltfkvPlfynkkeikkliykiyninfkniktmiyckrtlkkrkkgvlfkkvi 69 
+                   +k ++    ++++tf +P+++nk ei+ +++++y+i +++++t+iy k++ kkr+ ++ f +v+
+  SMLIBAN_3329  38 EKAIFTNISNNYYTFIFPIYFNKHEISNYLQRVYRIKITKLHTNIYSKKKSKKRIFKKAFFQVK 101
+                   678888889**********************************************999997765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (175 nodes)
+Target sequences:                       7924  (207479 residues searched)
+Passed MSV filter:                       546  (0.0689046); expected 158.5 (0.02)
+Passed bias filter:                       98  (0.0123675); expected 158.5 (0.02)
+Passed Vit filter:                         5  (0.000630994); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126199); expected 0.1 (1e-05)
+Initial search space (Z):               7924  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 7178.91
+//
+[ok]

@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpsN_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMPYRCLA/SMPYRCLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/rpsN/rpsN_SMPYRCLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsN_prot  [M=89]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------           -----------
+    1.2e-49  165.4   3.6    1.2e-49  165.4   3.6    1.3  2  PYRCLA_Sulcia_3529  [135400 - 135738] 
+
+
+Domain annotation for each sequence (and alignments):
+>> PYRCLA_Sulcia_3529  [135400 - 135738] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.6   0.1      0.77   6.6e+03      25      35 ..       5      15 ..       3      22 .. 0.52
+   2 !  165.4   3.6   1.4e-53   1.2e-49       1      89 []      25     113 .]      25     113 .] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: -3.6 bits;  conditional E-value: 0.77
+           rpsN_prot 25 kllklnrdyeg 35
+                        k+ kln  y+ 
+  PYRCLA_Sulcia_3529  5 KIKKLNIYYIY 15
+                        44455555544 PP
+
+  == domain 2  score: 165.4 bits;  conditional E-value: 1.4e-53
+           rpsN_prot   1 makeslkarqkkrkllvlkyakkrkllklnrdyeglqklprnaspvrlhnlcsltgrskgylrkfgisriefrrlasqglipgivkasw 89 
+                         m+kes+karqkkr++lv+kyakkr+++k + d ++lqklp+naspvrlhn+c ltgr+kgy+rkfg+sr+efrrlasqglipg++kasw
+  PYRCLA_Sulcia_3529  25 MSKESIKARQKKRRILVEKYAKKRAYYKKIGDNINLQKLPKNASPVRLHNICKLTGRTKGYIRKFGVSRLEFRRLASQGLIPGVRKASW 113
+                         9**************************************************************************************** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (89 nodes)
+Target sequences:                       8592  (228038 residues searched)
+Passed MSV filter:                       127  (0.0147812); expected 171.8 (0.02)
+Passed bias filter:                       49  (0.00570298); expected 171.8 (0.02)
+Passed Vit filter:                         2  (0.000232775); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116387); expected 0.1 (1e-05)
+Initial search space (Z):               8592  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6741.84
+//
+[ok]

@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rsmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFOMMLON/VFOMMLON_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/rsmA/rsmA_VFOMMLON.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmA_prot  [M=210]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.5e-27   95.2  65.4    1.5e-27   95.2  65.4    1.4  1  VFOMMLON_5678  [15311 - 14637] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOMMLON_5678  [15311 - 14637] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   95.2  65.4   2.5e-31   1.5e-27       3     206 ..       4     199 ..       1     203 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 95.2 bits;  conditional E-value: 2.5e-31
+      rsmA_prot   3 rkldkvFliskksikkiikkiikkkkiiiEigsGyGnltkfllkkkrkillieidnkiskfLkkkyknvkiinknilninfkafkkitiigniPYk 98 
+                    rk+++vFli k++i ki +++  +k++ iE+ sG+ n+ ++   + +ki+lie+d+ki++fLk+kyk+ k+i kn   i++k+ k + ii niPY+
+  VFOMMLON_5678   4 RKYSQVFLIDKNIILKILNNLKLSKFN-IEMCSGFDNILHYSF-NRKKIILIEKDKKIFNFLKNKYKKTKVIVKNTDAIKYKINKASSIICNIPYN 97 
+                    689*****************9999988.6*********99754.67899*********************************************** PP
+
+      rsmA_prot  99 ltkkilkklllnkrkIkkqyimlqkeyfekitkkkaiklkvlykikkllslknknFkPkpkvnsvflkmvpikisenfiiinylvlikslflkkek 194
+                     +k+ +++ l+n+rkI  ++i + ++y +ki  ++++ + ++yki k ++lk+++F+Pkpk++s+fl + ++  ++++ i+++ + +k++f kk  
+  VFOMMLON_5678  98 NLKNFINYFLNNNRKIIFLNISIPYNYNKKI--INNFYFIYYYKILKKIFLKKDFFFPKPKIDSLFLIFKKK--KNKYKIVKSKKFFKNFFKKKS- 188
+                    *********************9999998887..6889999**************************977544..456667788889999996654. PP
+
+      rsmA_prot 195 kkkleeliilll 206
+                       ++e++++++
+  VFOMMLON_5678 189 -LNFKEIYYFII 199
+                    .55678888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (210 nodes)
+Target sequences:                       6132  (170157 residues searched)
+Passed MSV filter:                      1409  (0.229778); expected 122.6 (0.02)
+Passed bias filter:                       76  (0.012394); expected 122.6 (0.02)
+Passed Vit filter:                        18  (0.00293542); expected 6.1 (0.001)
+Passed Fwd filter:                         1  (0.000163079); expected 0.1 (1e-05)
+Initial search space (Z):               6132  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6555.41
+//
+[ok]

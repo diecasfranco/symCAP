@@ -1,0 +1,53 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/5s_rRNA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMQUISP.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/5s_rRNA/SMQUISP.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5s_rRNA2  [M=110]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    5.8e-28   94.0   0.8  SMQUISP   41681  41784 
+
+
+Annotation for each hit  (and alignments):
+>> SMQUISP  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   94.0   0.8   5.8e-28         1       104 [.     41681     41784 ..     41681     41790 ..    149421    0.98
+
+  Alignment:
+  score: 94.0 bits
+  5s_rRNA2     1 tggtgattctagcaacaaggatccacctctttccattccgaacagagaagttaaacttgttagcgccgatggtactagtaattctggaagagtaggt 97   
+                 tgg gatt tagcaa aagg tccacctctt ccat  cgaacagagaagttaaactt ttagcgccgatggtactagt  ttctgg agagtaggt
+   SMQUISP 41681 TGGCGATTATAGCAATAAGGTTCCACCTCTTACCATCTCGAACAGAGAAGTTAAACTTATTAGCGCCGATGGTACTAGTTGTTCTGGGAGAGTAGGT 41777
+                 5899********************************************************************************************* PP
+
+  5s_rRNA2    98 catcgcc 104  
+                 catcgcc
+   SMQUISP 41778 CATCGCC 41784
+                 *****98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (110 nodes)
+Target sequences:                          1  (298842 residues searched)
+Residues passing SSV filter:           10265  (0.0343); expected (0.02)
+Residues passing bias filter:           7647  (0.0256); expected (0.02)
+Residues passing Vit filter:             883  (0.00295); expected (0.003)
+Residues passing Fwd filter:             164  (0.000549); expected (3e-05)
+Total number of hits:                      1  (0.000348)
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7870.40
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/5s_rRNA/SMQUISP.sto
+[ok]

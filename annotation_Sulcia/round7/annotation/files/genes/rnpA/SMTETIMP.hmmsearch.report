@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rnpA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMTETIMP/SMTETIMP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rnpA/rnpA_SMTETIMP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SMOLIH_rnpA  [M=127]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      3e-29  100.5  20.1    3.6e-29  100.2  20.1    1.1  1  SMTETIMP_5520  [97793 - 97401] (REVERSE SENSE) 
+    7.1e-13   47.8   7.4    8.6e-13   47.5   7.4    1.3  1  SMTETIMP_5528  [97397 - 97146] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMTETIMP_5520  [97793 - 97401] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.2  20.1   8.8e-33   3.6e-29      17     125 ..      22     130 ..       9     131 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 100.2 bits;  conditional E-value: 8.8e-33
+    SMOLIH_rnpA  17 lmnnlyqifrkvkqiennllnvayiekeynekyrkkvkvalfvskkqiiksfkrnrikrlmrmsyqlnkkiitlkkqkryyllfryikkkitnsye 112
+                        + +ifr  k++ennll vay+e     k   +vk+a+fvsk +iiks krnrikrlmrmsyqlnkkii +k +k yy++f y+k ki n  e
+  SMTETIMP_5520  22 KNKIVKKIFRNGKKLENNLLKVAYLETTSFNKSLFQVKIAFFVSKTKIIKSSKRNRIKRLMRMSYQLNKKIIPFKLKKIYYIIFMYLKNKIHNFSE 117
+                    4445678*******************9888888999************************************************************ PP
+
+    SMOLIH_rnpA 113 itkcfehviikif 125
+                    + kcfe +i ++f
+  SMTETIMP_5520 118 LKKCFEKIIKQMF 130
+                    *******998776 PP
+
+>> SMTETIMP_5528  [97397 - 97146] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.5   7.4   2.1e-16   8.6e-13      75     125 ..      33      83 ..       9      84 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 47.5 bits;  conditional E-value: 2.1e-16
+    SMOLIH_rnpA  75 rlmrmsyqlnkkiitlkkqkryyllfryikkkitnsyeitkcfehviikif 125
+                     lmrmsyqlnkkii +k +k yy++f y+k ki n  e+ kcfe +i ++f
+  SMTETIMP_5528  33 LLMRMSYQLNKKIIPFKLKKIYYIIFMYLKNKIHNFSELKKCFEKIIKQMF 83 
+                    48*******************************************998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (127 nodes)
+Target sequences:                       8212  (214836 residues searched)
+Passed MSV filter:                       400  (0.0487092); expected 164.2 (0.02)
+Passed bias filter:                       89  (0.0108378); expected 164.2 (0.02)
+Passed Vit filter:                         5  (0.000608865); expected 8.2 (0.001)
+Passed Fwd filter:                         2  (0.000243546); expected 0.1 (1e-05)
+Initial search space (Z):               8212  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6899.35
+//
+[ok]

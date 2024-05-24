@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFTETHEX/VFTETHEX_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/rluA/rluA_VFTETHEX.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluA_prot  [M=243]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.3e-15   50.8  47.9    1.3e-15   50.8  47.9    2.8  2  VFTETHEX_33  [31636 - 32379]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETHEX_33  [31636 - 32379]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.2   2.8     0.029       3.8      20      41 ..      14      35 ..       2      36 .. 0.70
+   2 !   50.8  47.9   9.9e-18   1.3e-15       3     236 ..      33     241 ..      31     246 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 0.2 bits;  conditional E-value: 0.029
+    rluA_prot 20 ykdenfivlkKkkklslypikk 41
+                 y++ ++iv+kK+ ++++++ kk
+  VFTETHEX_33 14 YRKIFVIVFKKFVNFLFFVKKK 35
+                 5666788999999998888776 PP
+
+  == domain 2  score: 50.8 bits;  conditional E-value: 9.9e-18
+    rluA_prot   3 kkknifikkskviikiIykdenfivlkKkkklslypikkkneisilgkiykiigekif..kklklisrlDfetlGiilislnkkfykklkkkiknkli 98 
+                  kkk +++  +k ++ +Iy+ +  ++++Kkk   +y +k   + + l++iy+ +g+ if  k++++++rlDf+t+G++++s  + f + +k+  k++++
+  VFTETHEX_33  33 KKKEVYLVPKKDNFYVIYACKYYFIFYKKKSGFIYSNKYTYKNNFLSNIYNSLGNSIFlvKRFGIVHRLDFDTTGLLIFSRLNIFTHYIKNLFKKRKV 130
+                  799*****************************************************98778************************************* PP
+
+    rluA_prot  99 kkeYilivkgllkikkklvssagylkkkknkiltnkkkikssvfsktkikiieliklkkknyslllckissGktHQirshlkkigikIlgdkkygkkn 196
+                   k+Yi+i k+  kik++  s  +y       +  n k + s  f +  ++  ++i+     +  ++ ki +G+  Qi+ +++         kk g++n
+  VFTETHEX_33 131 TKYYIIILKSSYKIKNNFFS-IKY-------FNLNGKYCCS-YFRR--LFYYSYIN---SIFFCFISKILTGRKNQIKNSIN---------KKFGISN 205
+                  ************99864433.222.......2345565554.4544..55666664...345556679**********8875.........6788877 PP
+
+    rluA_prot 197 KkfkknnLhlwklkfvlkkkknkffslPnknlikyyrkig 236
+                      +  Lh+wklkf+    +n+f+s+  k+++ y+++++
+  VFTETHEX_33 206 T---NIVLHSWKLKFFFFGFQNIFYSIFSKEIL-YFFMLN 241
+                  4...578********************998876.554444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (243 nodes)
+Target sequences:                        131  (32993 residues searched)
+Passed MSV filter:                       112  (0.854962); expected 2.6 (0.02)
+Passed bias filter:                        8  (0.0610687); expected 2.6 (0.02)
+Passed Vit filter:                         7  (0.0534351); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00763359); expected 0.0 (1e-05)
+Initial search space (Z):                131  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1454.01
+//
+[ok]

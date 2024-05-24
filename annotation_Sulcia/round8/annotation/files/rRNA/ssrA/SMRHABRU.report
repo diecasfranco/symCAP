@@ -1,0 +1,66 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMRHABRU.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMRHABRU.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    1.6e-14   49.9  20.2  SMRHABRU  21276  21146 
+    4.5e-12   41.9   5.2  SMRHABRU  21103  21039 
+
+
+Annotation for each hit  (and alignments):
+>> SMRHABRU  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   49.9  20.2   1.6e-14         1       131 [.     21276     21146 ..     21276     21112 ..    142272    0.80
+
+  Alignment:
+  score: 49.9 bits
+      ssrA     1 ggggctggattggaattgacaacaagattaatat.ataagtaagcatatcgtgaaaagtaatgtaatcacgtaaata..tcattacaaatga.taac 93   
+                 ggggctg  ttgg  ttgaca caag   aatat ataag  agcatatcgtgaaa gtaatgtaatcacgtaaa a  tcattacaaa  a taa 
+  SMRHABRU 21276 GGGGCTGATTTGGTTTTGACATCAAGT-AAATATaATAAGATAGCATATCGTGAAACGTAATGTAATCACGTAAAAAatTCATTACAAAAAAcTAAA 21181
+                 79**********************995.55666526899*********************************97654449******98755427888 PP
+
+      ssrA    94 cggcaaaaaaaattatgctcttgcggcttgatcaataa 131  
+                  ggcaaa   aatta  ctcttgc gctt a c a aa
+  SMRHABRU 21180 TGGCAAA---AATTACTCTCTTGCAGCTTAAGCTAAAA 21146
+                 9999865...6799999***********9888765554 PP
+
+>> SMRHABRU  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   41.9   5.2   4.5e-12       278       342 ..     21103     21039 ..     21116     21038 ..    142272    0.93
+
+  Alignment:
+  score: 41.9 bits
+      ssrA   278 gataaatatgtagaaaacttataatattacttgtttggacacgggttcgaatcccgtcagctcca 342  
+                   taaatatgta aaa cttat atatt cttgtttggacacgggttcga tcccgtcagctcca
+  SMRHABRU 21103 ATTAAATATGTATAAATCTTATTATATTGCTTGTTTGGACACGGGTTCGATTCCCGTCAGCTCCA 21039
+                 45799*********************************************************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (284544 residues searched)
+Residues passing SSV filter:          267376  (0.94); expected (0.02)
+Residues passing bias filter:         125486  (0.441); expected (0.02)
+Residues passing Vit filter:            1942  (0.00682); expected (0.003)
+Residues passing Fwd filter:            1149  (0.00404); expected (3e-05)
+Total number of hits:                      2  (0.000689)
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 1962.58
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMRHABRU.sto
+[ok]

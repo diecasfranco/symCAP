@@ -1,0 +1,53 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/RNAs/5s_rRNA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/genomes/VFOMMLON.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3//annotation/files/rRNA/5s_rRNA/VFOMMLON.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5s_rRNA  [M=105]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    9.2e-16   54.8   5.9  VFOMMLON  99175  99075 
+
+
+Annotation for each hit  (and alignments):
+>> VFOMMLON  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   54.8   5.9   9.2e-16         1       102 [.     99175     99075 ..     99175     99072 ..    115190    0.97
+
+  Alignment:
+  score: 54.8 bits
+   5s_rRNA     1 tgatAattaaAgtttattggaaacAccctttatccattccGAAcAAgataGttAAacagtaatttgccgaagatagtaatatgcaAAggtAgGtttt 97   
+                 tgatAa t++Ag+ t t  gaaacAcccttta  cattccGAA AAga aGt AAac   a    gccga++atagt + a+gc+AAggtAgGt  t
+  VFOMMLON 99175 TGATAACTTTAGCGTGTATGAAACACCCTTTA-ACATTCCGAATAAGAAAGTGAAACTACACAGCGCCGATAATAGTTTAAAGCGAAGGTAGGTCGT 99080
+                 6899****************************.9************************************************************999 PP
+
+   5s_rRNA    98 tatca 102  
+                 tatca
+  VFOMMLON 99079 TATCA 99075
+                 99987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (105 nodes)
+Target sequences:                          1  (230380 residues searched)
+Residues passing SSV filter:          119857  (0.52); expected (0.02)
+Residues passing bias filter:           1670  (0.00725); expected (0.02)
+Residues passing Vit filter:             263  (0.00114); expected (0.003)
+Residues passing Fwd filter:             263  (0.00114); expected (3e-05)
+Total number of hits:                      1  (0.000438)
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 1610.58
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3//annotation/files/rRNA/5s_rRNA/VFOMMLON.sto
+[ok]

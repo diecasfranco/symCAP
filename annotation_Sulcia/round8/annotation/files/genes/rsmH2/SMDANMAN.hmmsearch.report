@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rsmH2_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMDANMAN/SMDANMAN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rsmH2/rsmH2_SMDANMAN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmH2_prot  [M=89]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.5e-28   97.1  18.1    7.4e-22   76.3   2.3    3.5  4  SMDANMAN_3516  [129019 - 129912] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMDANMAN_3516  [129019 - 129912] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   76.3   2.3   9.4e-26   7.4e-22       1      86 [.       1      81 [.       1      84 [. 0.92
+   2 ?    0.6   0.4     0.039   3.1e+02      46      69 ..     103     126 ..      82     150 .. 0.69
+   3 ?   -1.8   0.5      0.23   1.8e+03      68      68 ..     146     146 ..     117     177 .. 0.57
+   4 !   29.7   1.4   3.3e-11   2.6e-07      26      76 ..     245     292 ..     228     297 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 76.3 bits;  conditional E-value: 9.4e-26
+     rsmH2_prot  1 mkyiyqivllsivivyli....yiyldsifgvyiyarsilkkidkkGknlspfliafdkdifsiiknkiyenkrakrivlfnanfrkikk 86
+                   mky++ +vll +v++ +i    +iy+d +fg+++++  ilkki+++Gk     l afd+d+f+iiknki++    kri++fn nfr+i+k
+  SMDANMAN_3516  1 MKYFHIPVLLAEVLENIIndinGIYIDTTFGSGGHSFGILKKISNQGK-----LFAFDQDQFAIIKNKICD----KRIIFFNDNFRNIQK 81
+                   9***********999877444489***********************9.....679**************7....89***********98 PP
+
+  == domain 2  score: 0.6 bits;  conditional E-value: 0.039
+     rsmH2_prot  46 lspfliafdkdifsiiknkiyenk 69 
+                    +s + i   ++ fsi  nki + +
+  SMDANMAN_3516 103 VSSYQIDTPHRGFSIRFNKILDMR 126
+                    577888888899999999997654 PP
+
+  == domain 3  score: -1.8 bits;  conditional E-value: 0.23
+     rsmH2_prot  68 n 68 
+                    +
+  SMDANMAN_3516 146 K 146
+                    1 PP
+
+  == domain 4  score: 29.7 bits;  conditional E-value: 3.3e-11
+     rsmH2_prot  26 fgvyiyarsilkkidkkGknlspfliafdkdifsiiknkiyenkrakrivl 76 
+                    f ++   +  +++ dkkGknlspf   + k+if  +k +i  n+ra++ +l
+  SMDANMAN_3516 245 FKSGN-IQ-GIIRYDKKGKNLSPFNKKYTKRIFP-TKEEISKNNRARSAIL 292
+                    44443.33.36789*******************7.8************998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (89 nodes)
+Target sequences:                       7833  (207886 residues searched)
+Passed MSV filter:                       530  (0.0676625); expected 156.7 (0.02)
+Passed bias filter:                      135  (0.0172348); expected 156.7 (0.02)
+Passed Vit filter:                         7  (0.000893655); expected 7.8 (0.001)
+Passed Fwd filter:                         1  (0.000127665); expected 0.1 (1e-05)
+Initial search space (Z):               7833  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4833.34
+//
+[ok]

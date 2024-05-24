@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplN_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMCENSP/SMCENSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rplN/rplN_SMCENSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplN_prot  [M=123]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    7.7e-67  221.8   3.3    8.5e-67  221.7   3.3    1.0  1  SMCENSP_3421  [123812 - 124180] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMCENSP_3421  [123812 - 124180] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  221.7   3.3   1.1e-70   8.5e-67       1     122 [.       2     123 .]       2     123 .] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 221.7 bits;  conditional E-value: 1.1e-70
+     rplN_prot   1 mlqqesiirvadnsgakkvllirvlggtkkkyayigdtiivsikeaiagssvkkgqvykavvvrtkkkikrkdgsyikfddnacvlltntgelkgtr 97 
+                   mlqqes ++vadnsgakkvllirvlggtkkkya++gdti+v++k+++agss+kkgqv+kavvvrtk+k+krkdgsyi+fddnacvll++t e++gtr
+  SMCENSP_3421   2 MLQQESFLNVADNSGAKKVLLIRVLGGTKKKYASLGDTIVVTVKNSMAGSSLKKGQVTKAVVVRTKYKVKRKDGSYISFDDNACVLLSKTLEMRGTR 98 
+                   9************************************************************************************************ PP
+
+     rplN_prot  98 ilgpvsrelkekeykkiislatevl 122
+                   i+gpv+rel+ekey+kiisla+evl
+  SMCENSP_3421  99 IFGPVARELREKEYMKIISLAVEVL 123
+                   ***********************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (123 nodes)
+Target sequences:                       7920  (212105 residues searched)
+Passed MSV filter:                        58  (0.00732323); expected 158.4 (0.02)
+Passed bias filter:                       27  (0.00340909); expected 158.4 (0.02)
+Passed Vit filter:                         1  (0.000126263); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126263); expected 0.1 (1e-05)
+Initial search space (Z):               7920  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 18041.42
+//
+[ok]

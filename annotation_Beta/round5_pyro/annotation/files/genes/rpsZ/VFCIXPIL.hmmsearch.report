@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsZ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFCIXPIL/VFCIXPIL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/rpsZ/rpsZ_VFCIXPIL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsZ_prot  [M=82]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.2e-14   47.2   8.4    6.6e-14   44.8   1.7    2.1  2  VFCIXPIL_104  [128237 - 128542]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCIXPIL_104  [128237 - 128542]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.9   2.6   0.00035     0.042       1      48 [.       1      47 [.       1      50 [. 0.68
+   2 !   44.8   1.7   5.6e-16   6.6e-14      13      82 .]      33     101 ..      27     101 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.00035
+     rpsZ_prot  1 makrsviernrkrnkisieksikkdavigkwsvlkyflvrrrrrcsls 48
+                  mak+s+i+r+ k+  +  +k+ik+ +   k        + +rr  +ls
+  VFCIXPIL_104  1 MAKKSIIQREFKKINL-KNKYIKRRNFYKKIFSSNNISIEKRRFAELS 47
+                  9*******98654333.3678888777777665666666666666555 PP
+
+  == domain 2  score: 44.8 bits;  conditional E-value: 5.6e-16
+     rpsZ_prot  13 rnkisieksikkdavigkwsvlkyflvrrrrrcslsGrsrGvfrmfGicrqvvreyfracelpyfskasw 82 
+                    n isiek    +  + k  +     +r r+rc+++Gr rG fr fG+cr  +re f    +p ++k sw
+  VFCIXPIL_104  33 SNNISIEKRRFAELSMQKLPLN-SSPIRIRNRCAITGRPRGFFRYFGLCRIKIRELFMDGGIPGWTKSSW 101
+                   5788999999998888888765.557899***************************************** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (82 nodes)
+Target sequences:                        119  (28917 residues searched)
+Passed MSV filter:                        16  (0.134454); expected 2.4 (0.02)
+Passed bias filter:                        5  (0.0420168); expected 2.4 (0.02)
+Passed Vit filter:                         2  (0.0168067); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00840336); expected 0.0 (1e-05)
+Initial search space (Z):                119  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1371.46
+//
+[ok]

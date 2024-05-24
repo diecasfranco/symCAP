@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/era_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFPYRVIR/VFPYRVIR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/era/era_VFPYRVIR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       era_prot  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      9e-80  267.0  68.8      1e-79  266.8  68.8    1.0  1  VFPYRVIR_1658  [65040 - 65705] 
+    8.2e-44  148.7  47.3    9.7e-44  148.4  47.3    1.0  1  VFPYRVIR_1646  [64651 - 65076] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPYRVIR_1658  [65040 - 65705] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  266.8  68.8     3e-83     1e-79     134     355 .]       1     221 [.       1     221 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 266.8 bits;  conditional E-value: 3e-83
+       era_prot 134 kkkkkkkiyipilGkkNvGKstliNslikkkilivSKkpgnTKkistlikkkkknvlkflDfPGfkKkikikKlkilknfikkikillFlvslkin 229
+                    kkkkkkk+yip+lG+kNvGK+tliNs+++k+i+i+SKkpgnTK+ist++k+  +++++++DfPGfkKkik +Klki+knf+kkiki+lFlvslk++
+  VFPYRVIR_1658   1 KKKKKKKKYIPVLGLKNVGKTTLINSICNKEIFIASKKPGNTKRISTFYKRIGEKIIFLFDFPGFKKKIKTYKLKIIKNFYKKIKIVLFLVSLKPS 96 
+                    67888999**************************************************************************************** PP
+
+       era_prot 230 KkekriieklkKkyiviiCvNKiDkkkkineeklkkrflkfeiSakkkigikkllnlikktinfkkkkfslkkeikkksikikknrfekikivlke 325
+                    Kkekriie+l+Kk+ viiC+NKiD+kkki+e++++krflk++iSakkki+i++l+nli+kt+nf+ ++f +kk +++++iki k+++eki + ++ 
+  VFPYRVIR_1658  97 KKEKRIIERLGKKFVVIICINKIDTKKKIFEDRIYKRFLKCRISAKKKINIDRLINLINKTVNFVDSSFCKKKRKNRRIIKICKKKNEKILVKVS- 191
+                    ****************************************************************************************9987665. PP
+
+       era_prot 326 kkriKkkifkklkiKenlfliklkredsnr 355
+                    kk+ Kk+i+k+l+iKenlf+i+++r+++++
+  VFPYRVIR_1658 192 KKNDKKEISKFLNIKENLFNIIRDRTRTGK 221
+                    566799*******************99875 PP
+
+>> VFPYRVIR_1646  [64651 - 65076] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  148.4  47.3   2.9e-47   9.7e-44       1     138 [.       1     138 [.       1     141 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 148.4 bits;  conditional E-value: 2.9e-47
+       era_prot   1 mlnllligkkkkclffikkilkirnvsfyefdlrvfffvkkeilvrillinLnkikkkvvekkkdvlkidyilyisdnfvdlekkkksffiknkkk 96 
+                    mln+lligkk++c+ff+kkilkirn+sfy+fdlrvfff+kk+++++i++inL+ki+k+++e+k ++lki+ +lyis+ ++dl++k+++ffiknk+k
+  VFPYRVIR_1646   1 MLNILLIGKKNECIFFVKKILKIRNISFYDFDLRVFFFQKKGKSAKIFFINLDKIDKDFLEEKINILKIKCVLYISKYNTDLKRKYHFFFIKNKIK 96 
+                    99********************************************************************************************** PP
+
+       era_prot  97 fflikkkfknflsknffiikykklgFlFlikklkkskkkkkk 138
+                    +f++k+ fknf+sknff+iky+++gFlFl+k++kk+kkkkk+
+  VFPYRVIR_1646  97 IFFVKEYFKNFRSKNFFFIKYNVSGFLFLLKEFKKKKKKKKN 138
+                    *********************************998888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       6706  (191271 residues searched)
+Passed MSV filter:                      1168  (0.174172); expected 134.1 (0.02)
+Passed bias filter:                      100  (0.014912); expected 134.1 (0.02)
+Passed Vit filter:                        17  (0.00253504); expected 6.7 (0.001)
+Passed Fwd filter:                         3  (0.000447361); expected 0.1 (1e-05)
+Initial search space (Z):               6706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 7916.36
+//
+[ok]

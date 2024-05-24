@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFAGAHAV/VFAGAHAV_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rluD/rluD_VFAGAHAV.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluD_prot  [M=222]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    3.4e-49  166.1  68.9    3.4e-49  166.1  68.9    1.8  2  VFAGAHAV_877  [33516 - 34265] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFAGAHAV_877  [33516 - 34265] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.7     0.084   5.5e+02      93     113 ..      12      25 ..       2      32 .. 0.33
+   2 !  166.1  68.9   5.1e-53   3.4e-49       2     221 ..      32     249 ..      31     250 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.084
+     rluD_prot  93 ikkyylvlekislkikknkFy 113
+                   ++ +yl       k+kk ++ 
+  VFAGAHAV_877  12 LQFIYL-------KLKKVFYH 25 
+                   222222.......22222222 PP
+
+  == domain 2  score: 166.1 bits;  conditional E-value: 5.1e-53
+     rluD_prot   2 kkevflkkkkkk.ikiiyenkyfiivkkkkkilvydtk.nvkknils.....lgkkiflnkkrlgilnRlDkdtsGiiiisknrktysiikklfkkr 91 
+                   kke+f+kk+kkk +++iy++k++ i++k+k++++++++ n+++++ls     +gkkif+nk r+gi++R+D++t+Gi+++s+n+++ys++ klfk+r
+  VFAGAHAV_877  32 KKEFFIKKNKKKtCYLIYNCKFYKIFYKYKNVNLFNFRcNKNQDLLSyyfwlAGKKIFFNK-RCGIIHRIDYKTCGIVLLSHNYFFYSFFLKLFKQR 127
+                   8*******976549**********************99567778774334448******95.9********************************** PP
+
+     rluD_prot  92 kikkyylvlekislkikknkFyiknf.....lvkfklng.kfsvtyikkilsykkvfsiliikiltGrkhQIrkqlsiiGyPivgdklygkkikakn 182
+                   kikkyy+v++k+s++ikkn+F+ik++     ++k+kln+ kfs+t++kkilsy k+++++i+k++tGrkhQI++++   G      +l+  k+++k+
+  VFAGAHAV_877 128 KIKKYYFVIFKKSSYIKKNNFLIKGYtknkkFYKTKLNKsKFSYTILKKILSY-KTSNLFICKLITGRKHQIKIHC---G------FLF--KVSFKK 212
+                   ************************985555568999997589**********9.5899*****************8...4......356..58999* PP
+
+     rluD_prot 183 ivLfswklsfalkkekikfyslirkkilkkliksnkkvl 221
+                   i+L++wk+sf+++k ki++ysli+kkil+ l+k++kk+l
+  VFAGAHAV_877 213 IFLQFWKISFFINK-KITHYSLISKKILN-LFKKTKKKL 249
+                   ***********998.699********997.556666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (222 nodes)
+Target sequences:                       6567  (174681 residues searched)
+Passed MSV filter:                      1286  (0.195828); expected 131.3 (0.02)
+Passed bias filter:                      145  (0.0220801); expected 131.3 (0.02)
+Passed Vit filter:                        19  (0.00289325); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000152277); expected 0.1 (1e-05)
+Initial search space (Z):               6567  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7552.07
+//
+[ok]

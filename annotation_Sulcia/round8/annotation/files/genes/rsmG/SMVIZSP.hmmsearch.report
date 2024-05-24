@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rsmG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMVIZSP/SMVIZSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rsmG/rsmG_SMVIZSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmG_prot  [M=214]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+      8e-68  227.3  28.2      8e-68  227.3  28.2    1.7  2  SMVIZSP_5293  [124045 - 123317] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMVIZSP_5293  [124045 - 123317] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.0   0.3     0.033   2.9e+02      11      38 ..      12      38 ..       6      42 .. 0.67
+   2 !  227.3  28.2   8.9e-72     8e-68       6     211 ..      38     242 ..      33     243 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -0.0 bits;  conditional E-value: 0.033
+     rsmG_prot 11 kkyfpeidklkiekllklykiykfykkk 38
+                  kk f++i  l + k+  +yk+ kf k +
+  SMVIZSP_5293 12 KKEFINIV-LIVSKYASIYKMEKFIKPQ 38
+                  45566653.5678888888888887655 PP
+
+  == domain 2  score: 227.3 bits;  conditional E-value: 8.9e-72
+     rsmG_prot   6 kiklikkyfpeidklkiekllklykiykfykkkiniiskkslngffekhllhslsiskivkflkksivldvGtggGfPGiPlailfnetkfilidsi 102
+                   ++ +++ ++ +i+++ki+kl++l +iyk++kkkiniiskks+n+ff++hll+s+s++kivkf kk+++ld+GtggG+PGiPlailf++++f+lids+
+  SMVIZSP_5293  38 QVSKLQVSKLKIKQNKIYKLRELINIYKYWKKKINIISKKSINDFFINHLLSSISLAKIVKFRKKTLILDAGTGGGLPGIPLAILFDHCQFTLIDSV 134
+                   5677888999*************************************************************************************** PP
+
+     rsmG_prot 103 kkkikiikiiidelhlknveikctrienfekkcnfilgravtklsnfiklvkknilfnkknkikngilylkgkkfkkek...kkqylyieyniynfl 196
+                    kkikiik+++++l+l+nve+kct+++++++k+n+i++r+v + +++ +l+  n++++ +   kngi++l+gkk+++ k    ++ l+ ey++++f+
+  SMVIZSP_5293 135 YKKIKIIKDFLKYLELTNVEVKCTNVKKIKQKFNVIVTRGVDQ-KLVKYLIPTNLILSAN---KNGIFCLTGKKLQTPKlqtPRNELFREYKLSKFF 227
+                   *****************************************88.7999********9987...49*********987662225789*********** PP
+
+     rsmG_prot 197 kkklffnkkivyipi 211
+                   k+++f ++ki y  i
+  SMVIZSP_5293 228 KDRFFLKQKIFYYKI 242
+                   **********99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (214 nodes)
+Target sequences:                       8900  (233751 residues searched)
+Passed MSV filter:                       635  (0.0713483); expected 178.0 (0.02)
+Passed bias filter:                      109  (0.0122472); expected 178.0 (0.02)
+Passed Vit filter:                         9  (0.00101124); expected 8.9 (0.001)
+Passed Fwd filter:                         1  (0.00011236); expected 0.1 (1e-05)
+Initial search space (Z):               8900  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10981.67
+//
+[ok]

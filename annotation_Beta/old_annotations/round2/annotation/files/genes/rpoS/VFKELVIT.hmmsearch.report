@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpoS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2//annotation/files/genomes/VFKELVIT/VFKELVIT_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2//annotation/files/genes/rpoS/rpoS_VFKELVIT.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFMALBOS_rpoS  [M=302]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.8e-11   37.0  18.3    7.2e-08   25.2   2.7    2.6  2  VFKELVIT_36  [34482 - 35645]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFKELVIT_36  [34482 - 35645]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.2   2.7   5.5e-10   7.2e-08      76     168 ..     142     234 ..     109     270 .. 0.83
+   2 !   20.1   4.4   1.9e-08   2.5e-06     205     287 ..     292     372 ..     282     381 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 25.2 bits;  conditional E-value: 5.5e-10
+  VFMALBOS_rpoS  76 nrdrkgyrrnkeeikeikglylrylerkdrmikeseyiifwvikmfrirreeikeliqegvlgiyrafyrfnneigcrfttycsywvkqymll 168
+                     r r+ y +      e     ++y   k +mi+ +  +++ + k +  +   + +l qeg +g+ ra  +f+   g +f+ty+++wvkq +  
+    VFKELVIT_36 142 KRSRRVYAKINHIYTESYKNKINYSIYKKKMIEANTRLVISLSKKYINKGLHFFDLNQEGTIGLMRAVNKFDFRRGFKFSTYATWWVKQAITR 234
+                    46666666655555555555688888999*****************99999**************************************8765 PP
+
+  == domain 2  score: 20.1 bits;  conditional E-value: 1.9e-08
+  VFMALBOS_rpoS 205 ndkkgmmevigdkik.iekvickerklrkirriikwikeldrrerlilierlkirknkkltlfelgrmlglskervrqienkgi 287
+                    +dk  + ++i dk + ++k +    +l  i ++ k +  l  rer i+  r+ i   k ltl ++g+++g+++er+rqie  ++
+    VFKELVIT_36 292 DDKTTLNDIIEDKEQsLDKDML---QLDLITKVNKILSTLSYRERKIIKLRFGIGLRKGLTLEKVGKIFGVTRERIRQIEFTAL 372
+                    5777788889888532455444...4566667777778999**************************************97665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (302 nodes)
+Target sequences:                        131  (29458 residues searched)
+Passed MSV filter:                        15  (0.114504); expected 2.6 (0.02)
+Passed bias filter:                        1  (0.00763359); expected 2.6 (0.02)
+Passed Vit filter:                         1  (0.00763359); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00763359); expected 0.0 (1e-05)
+Initial search space (Z):                131  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 695.10
+//
+[ok]

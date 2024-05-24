@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/infB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round11//annotation/files/genomes/VFOMOUHL/VFOMOUHL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round11//annotation/files/genes/infB/infB_VFOMOUHL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       infB_prot  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence               Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------               -----------
+    2.4e-12   38.8   1.0    7.1e-08   24.1   0.0    2.1  2  OHOUHL_000000285354_1   [1 - 1188]
+    3.8e-12   38.2   0.1    2.3e-09   29.0   0.0    3.0  3  OHOUHL_000000285354_10  [9968 - 11992]
+
+
+Domain annotation for each sequence (and alignments):
+>> OHOUHL_000000285354_1  [1 - 1188]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.4   2.6e-06   0.00012       9      27 ..      14      32 ..       6      37 .. 0.88
+   2 !   24.1   0.0   1.5e-09   7.1e-08      34     136 ..      57     166 ..      47     273 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 2.6e-06
+              infB_prot  9 isiiGeVdnGKTtlikklt 27
+                           i+ iG+Vd+GKTtl+  +t
+  OHOUHL_000000285354_1 14 IGTIGHVDHGKTTLTAAIT 32
+                           899***********99987 PP
+
+  == domain 2  score: 24.1 bits;  conditional E-value: 1.5e-09
+              infB_prot  34 kknITqkirlyklk..kkkfiiIDtPGHelFnk.ikkkiikiSDiiilvlsktekinkntikilkyilkkkkkvifv.iNKiDliknk 117
+                            + +IT + + ++++  k ++  ID PGH ++ k ++  + ++ D  ilv+s+ e    +t + l   ++   ++i+v +NK+D ++++
+  OHOUHL_000000285354_1  57 QRGITINASHIEYEttKRHYAHIDCPGHADYIKnMITGTAQM-DAAILVVSAVEGPMPQTREHLLLAKQIGVPSIVVfLNKCDVVTDQ 143
+                            4689999988776521667999******98743034444444.99**********999999999888888777776548*****9998 PP
+
+              infB_prot 118 ke....kikikkklkklnigekk 136
+                            +      i+i+  l k++++++k
+  OHOUHL_000000285354_1 144 EFlelvEIEIRDMLTKYGYSKDK 166
+                            74222258899999999998876 PP
+
+>> OHOUHL_000000285354_10  [9968 - 11992]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.0   0.0   0.00096     0.045       9      27 ..       9      27 ..       1      30 [. 0.82
+   2 !   29.0   0.0     5e-11   2.3e-09      45     117 ..      74     146 ..      68     166 .. 0.87
+   3 ?   -0.5   0.0     0.043         2     168     237 ..     303     377 ..     293     389 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 5.0 bits;  conditional E-value: 0.00096
+               infB_prot  9 isiiGeVdnGKTtlikklt 27
+                            i+i  + d+GKTt++++++
+  OHOUHL_000000285354_10  9 IGICAHIDAGKTTITERIL 27
+                            89999**********9985 PP
+
+  == domain 2  score: 29.0 bits;  conditional E-value: 5e-11
+               infB_prot  45 klkkkkfiiIDtPGHelFnkikkkiikiSDiiilvlsktekinkntikilkyilkkkkkvifviNKiDliknk 117
+                             + +  k+ iIDtPGH +Fn   ++ +k+ D + lv+ +   ++ +t  i k++     + i  iNKiD++  +
+  OHOUHL_000000285354_10  74 NGNAYKINIIDTPGHIDFNIEVERALKVLDGVCLVICAVGGVQPQTEGIWKQLNAHAIPRIGFINKIDRVGCN 146
+                             56778999************************************************************98543 PP
+
+  == domain 3  score: -0.5 bits;  conditional E-value: 0.043
+               infB_prot 168 kkkygyvinsifskkmkfktkiilkngkiklgdyiydkknl.igkikkIkkknk....kvkeikkvsivkilGik 237
+                             +   g+ ++++ +  m+  + i l ng i++g+ +++ + +   +i++I +++     ++k ++  +i+ i+G+ 
+  OHOUHL_000000285354_10 303 DRLIGFTFKTMADSFMGNVSFIRLFNGSIRIGQLVFNARSMdELRINRILEYDAcdaiDIKDATLGDIIAIPGLR 377
+                             5556788888888889999999999***********988763689999988764221134444445666666664 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                         94  (19204 residues searched)
+Passed MSV filter:                         9  (0.0957447); expected 1.9 (0.02)
+Passed bias filter:                        7  (0.0744681); expected 1.9 (0.02)
+Passed Vit filter:                         2  (0.0212766); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.0212766); expected 0.0 (1e-05)
+Initial search space (Z):                 94  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 1041.37
+//
+[ok]

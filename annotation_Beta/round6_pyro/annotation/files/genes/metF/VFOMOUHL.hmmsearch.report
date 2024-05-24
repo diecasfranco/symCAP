@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/metF_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_pyro//annotation/files/genomes/VFOMOUHL/VFOMOUHL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_pyro//annotation/files/genes/metF/metF_VFOMOUHL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       metF_prot  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.5e-22   72.7   2.1    1.9e-22   72.4   2.1    1.0  1  VFOMOUHL_32  [26907 - 27512]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOMOUHL_32  [26907 - 27512]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.4   2.1     2e-24   1.9e-22      76     243 ..       7     177 ..       2     187 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 72.4 bits;  conditional E-value: 2e-24
+    metF_prot  76 ivkllknNkinkilllkGdkkkiskkslkkikflkkkfnlkiyssgYpeyysktieyekeikrlkkkfsvgakklitQltldilslinflkifkikkk 173
+                  i++++  N+i ++lllkGd +++  +++        +++++i ++ Ype++++ti++ k+i + + ++ +g++ l+ Q+ +d  +l+ f  ++   + 
+  VFOMOUHL_32   7 ITRIFIRNNIRELLLLKGDGNHMGCYEIGIAPCT--MMQFNIAVACYPEWHRNTIDVDKDIAYTQARIAMGTNALLCQMCFDNRALRCFHGLMALRSM 102
+                  789********************99999766544..56788999*********************************************999888775 PP
+
+    metF_prot 174 .niiiGilifkkikelfrlvkicgvklpfflkkyilkkkkdFfik.lvlskflkllk...kigikrlhlYtlnki 243
+                   +++ G+li+k+i+ l +++++  v + ++l ++++  ++   i  +++   l  l+   +   k +h+Y l ++
+  VFOMOUHL_32 103 vQMVYGLLIIKSIRTLRYIINNTLVTIANWLHRILVDVNCHETICcIINALQLDALQlhlINRHKIIHMYMLSHV 177
+                  25566***************************9887655544443033433344333110334455788877765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (253 nodes)
+Target sequences:                         94  (19204 residues searched)
+Passed MSV filter:                         2  (0.0212766); expected 1.9 (0.02)
+Passed bias filter:                        1  (0.0106383); expected 1.9 (0.02)
+Passed Vit filter:                         1  (0.0106383); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.0106383); expected 0.0 (1e-05)
+Initial search space (Z):                 94  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3346.62
+//
+[ok]

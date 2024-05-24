@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/holB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMLIBAN/SMLIBAN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/holB/holB_SMLIBAN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       holB_prot  [M=356]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    2.9e-12   45.5  14.3    2.9e-12   45.5  14.3    3.0  3  SMLIBAN_6277  [61253 - 60210] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMLIBAN_6277  [61253 - 60210] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.1   0.1     0.011        90       9      39 ..      40      69 ..      30      81 .. 0.76
+   2 !   45.5  14.3   3.6e-16   2.9e-12     110     306 ..      88     291 ..      80     295 .. 0.75
+   3 ?   -0.5  13.2     0.033   2.6e+02     160     300 ..     189     342 ..     185     345 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 1.1 bits;  conditional E-value: 0.011
+     holB_prot  9 lkinkiphailflgpegcgnlitainfskki 39
+                  +k+n + +++lf gp+g+g+   a  +++k+
+  SMLIBAN_6277 40 IKKN-LAKSFLFCGPKGVGKTTCARILARKL 69
+                  3444.67899*********998887777776 PP
+
+  == domain 2  score: 45.5 bits;  conditional E-value: 3.6e-16
+     holB_prot 110 eqienllkkityksyesdykiiilwmpekltlyssnkllkileftpkktifllvgenennilptilsriflirfnkfsfkeikkflekklkidtiqs 206
+                   ++i+++l++++y     +yki i+     l+  + n llk+le +p + if+l   ++n++lpt+lsr  +  f+  s+k++ k+l k   +++++ 
+  SMLIBAN_6277  88 DDIKDILNQLNYLPIGGKYKIYIIDEVHMLSHSAFNALLKVLEEPPTHVIFILATTKKNKLLPTVLSRCQIYEFKPISIKNLIKYLSKICMLENVEY 184
+                   5799********************99999999999****************************************************9988888765 PP
+
+     holB_prot 207 kq.....ialkaegnlnkalklvnnlqenyleinfiswi..rnlflikkn.plllekiilfskkinlwkk.etqikfllylieifrkaflqkynnll 294
+                    +     ia +aeg l  al   + l+  y + +++  i  ++l ++  +  l + ++il  +  + +   ++ ik     i++f + + +++ nll
+  SMLIBAN_6277 185 ERdalllIAENAEGSLRDALSAFDRLK-LYSNNKLLRKIvaKQLGILDIQyCLKFTDLILDQNLFKTLLYfDQVIKK-GININLFLNNLAYHFRNLL 279
+                   4322333999**********9999886.3444444433311333333322022233344333333322220223333.3468899999999999999 PP
+
+     holB_prot 295 ikeipltynkfn 306
+                   i + p t   fn
+  SMLIBAN_6277 280 ITKSPDTITLFN 291
+                   999999998888 PP
+
+  == domain 3  score: -0.5 bits;  conditional E-value: 0.033
+     holB_prot 160 fllvgenennilptilsriflirfnkfsfke.ikkflekklkidtiqs..kqialkaegnlnkalklvnnlqenylein.fis....wirnlflikk 248
+                   +ll+ en +  l   ls     r++ +s ++ ++k + k+l i  iq   k   l  + nl k+l   +++ ++ ++in f++      rnl++ k 
+  SMLIBAN_6277 189 LLLIAENAEGSLRDALSAFD--RLKLYSNNKlLRKIVAKQLGILDIQYclKFTDLILDQNLFKTLLYFDQVIKKGININlFLNnlayHFRNLLITKS 283
+                   68888888888888888654..77778875526899999999988885347888999************9999999998333222225788877775 PP
+
+     holB_prot 249 np.l.llekiilfsk..kinlw..kketqikfllylieifrka..flqk.ynnllikeipl 300
+                      + l+++  ++s+  k++l+  +++ + kfl+  i+i  k+  fl k ynn l  ei l
+  SMLIBAN_6277 284 PDtItLFNN--NYSDnlKLKLLaqSQKVKNKFLIKAIKICEKTerFLTKsYNNRLTLEITL 342
+                   431312333..44441144554114556779********99865577654****9999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (356 nodes)
+Target sequences:                       7924  (207479 residues searched)
+Passed MSV filter:                       309  (0.0389955); expected 158.5 (0.02)
+Passed bias filter:                       54  (0.00681474); expected 158.5 (0.02)
+Passed Vit filter:                         3  (0.000378597); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126199); expected 0.1 (1e-05)
+Initial search space (Z):               7924  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 5132.44
+//
+[ok]

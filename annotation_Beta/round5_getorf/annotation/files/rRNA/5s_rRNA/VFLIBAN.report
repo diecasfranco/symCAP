@@ -1,0 +1,53 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/RNAs/5s_rRNA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/genomes/VFLIBAN.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/rRNA/5s_rRNA/VFLIBAN.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5s_rRNA  [M=105]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    5.2e-12   42.8   6.5  VFLIBAN  103773 103658 
+
+
+Annotation for each hit  (and alignments):
+>> VFLIBAN  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   42.8   6.5   5.2e-12         2       102 ..    103773    103658 ..    103774    103655 ..    120299    0.83
+
+  Alignment:
+  score: 42.8 bits
+  5s_rRNA      2 gatAattaaAgtttattggaaacAccctt.tatccattccGAAcAAga..taGttAAacagtaatttgccgaagatag............taatat 82    
+                 ga Aa  a+Ag+ + ttggaaa Ac ctt ta+ cattccGAAcAAg   t Gt AAac   + t++gccgaa+atag             aa a+
+  VFLIBAN 103773 GACAAAGATAGCGCGTTGGAAATACTCTTtTAAACATTCCGAACAAGGttTTGTAAAACTTCGCTGCGCCGAAAATAGtttttttttaaaAAAAAA 103678
+                 677888899****************997526789*************72257**************************765554433333344578 PP
+
+  5s_rRNA     83 gcaAAggtAgGtttttatca 102   
+                 gcaAA+ tAgGt  tt+tca
+  VFLIBAN 103677 GCAAAAATAGGTCATTGTCA 103658
+                 9999********99999887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (105 nodes)
+Target sequences:                          1  (240598 residues searched)
+Residues passing SSV filter:          111097  (0.462); expected (0.02)
+Residues passing bias filter:           3801  (0.0158); expected (0.02)
+Residues passing Vit filter:             275  (0.00114); expected (0.003)
+Residues passing Fwd filter:             275  (0.00114); expected (3e-05)
+Total number of hits:                      1  (0.000482)
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3271.64
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/rRNA/5s_rRNA/VFLIBAN.sto
+[ok]

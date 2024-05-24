@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMBRUSP1/SMBRUSP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rplS/rplS_SMBRUSP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplS_prot  [M=116]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.3e-41  138.7  13.4    3.6e-41  138.6  13.4    1.0  1  SMBRUSP1_7013  [34536 - 34198] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMBRUSP1_7013  [34536 - 34198] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  138.6  13.4   4.5e-45   3.6e-41       6     110 ..       8     111 ..       3     113 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 138.6 bits;  conditional E-value: 4.5e-45
+      rplS_prot   6 nyvdnkynpnkldllklnsGdqitvyyeiieGekkrlqsfkGviikikgnytftvrkisGeiGvekifsinqpsikkidinkkgkvrkskiyyfrk 101
+                    + ++n + + ++++  l +Gd+++v yei+eG+kkr+qsfkG+iik++gn+tft+rk sG+iGve+if in+p ik+i+i+ +gkvr+skiyyfr+
+  SMBRUSP1_7013   8 KIMKNISGKYQTKY-ALKAGDTVNVDYEIKEGDKKRIQSFKGIIIKKQGNSTFTIRKFSGTIGVERIFPINSPIIKNIKIIMSGKVRRSKIYYFRN 102
+                    55566666666665.589****************************************************************************** PP
+
+      rplS_prot 102 lkgkkakik 110
+                    l+gk+akik
+  SMBRUSP1_7013 103 LRGKQAKIK 111
+                    ********8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (116 nodes)
+Target sequences:                       8013  (211827 residues searched)
+Passed MSV filter:                       204  (0.0254586); expected 160.3 (0.02)
+Passed bias filter:                       58  (0.00723824); expected 160.3 (0.02)
+Passed Vit filter:                         3  (0.000374392); expected 8.0 (0.001)
+Passed Fwd filter:                         1  (0.000124797); expected 0.1 (1e-05)
+Initial search space (Z):               8013  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11345.39
+//
+[ok]

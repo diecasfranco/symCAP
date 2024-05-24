@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/holB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMMYCCUN/SMMYCCUN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/holB/holB_SMMYCCUN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       holB_prot  [M=356]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.4e-12   44.5  15.4    5.4e-12   44.5  15.4    3.0  3  SMMYCCUN_6272  [60097 - 59039] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMMYCCUN_6272  [60097 - 59039] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    1.4   0.1    0.0093        73       9      40 ..      43      73 ..      33      90 .. 0.77
+   2 !   44.5  15.4   6.8e-16   5.4e-12     110     307 ..      93     297 ..      85     304 .. 0.75
+   3 ?   -1.3  14.0     0.058   4.5e+02     159     300 ..     193     347 ..     188     350 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 1.4 bits;  conditional E-value: 0.0093
+      holB_prot  9 lkinkiphailflgpegcgnlitainfskkil 40
+                   +k+n + +++lf gp+g+g+   a  +++k+ 
+  SMMYCCUN_6272 43 IKKN-LAKSFLFCGPKGVGKTTCARILARKLA 73
+                   3444.67899*********9998888887765 PP
+
+  == domain 2  score: 44.5 bits;  conditional E-value: 6.8e-16
+      holB_prot 110 eqienllkkityksyesdykiiilwmpekltlyssnkllkileftpkktifllvgenennilptilsriflirfnkfsfkeikkflekklkidtiq 205
+                    ++i+++l++++y     +yki i+     l+  + n +lk+le +p + if+l   ++n+ilpt+lsr  +  f+  s+k++ k+l k   +++++
+  SMMYCCUN_6272  93 DDIKDILNQLNYLPIGGKYKIYIIDEVHMLSHSAFNAFLKVLEEPPTHVIFILATTKKNKILPTVLSRCQIYEFKPISIKNLIKYLRKICMLENVE 188
+                    5799********************99999999999****************************************************998888876 PP
+
+      holB_prot 206 skq.....ialkaegnlnkalklvnnlq...enyleinfiswirnl....flikknplllekiilfskkinlwkketqikfllylieifrkaflqk 289
+                      +     ia +aeg l  al   + l+   +n l  ++++    +    + +k   l+l++ i f k + ++ k   ik  +  +++f + + ++
+  SMMYCCUN_6272 189 YERdalllIAENAEGSLRDALSAFDRLKlysNNKLLRKMVAKQLGIldiqYCLKFTDLILDQNI-F-KTLLYFDK--LIKKGI-NLNLFLNNLAYH 279
+                    54322333999**********9998875222344444444432222000133333334444333.2.33333433..333333.457899999999 PP
+
+      holB_prot 290 ynnllikeipltynkfnw 307
+                    + nlli + p t   fn 
+  SMMYCCUN_6272 280 FRNLLITKSPDTITLFNN 297
+                    99***9999999988884 PP
+
+  == domain 3  score: -1.3 bits;  conditional E-value: 0.058
+      holB_prot 159 ifllvgenennilptilsriflirfnkfsfke.ikkflekklkidtiqs..kqialkaegnlnkalklvnnlqenylein.f...i.swirnlfli 246
+                     +ll+ en +  l   ls     r++ +s ++ ++k++ k+l i  iq   k   l  + n+ k+l   ++l ++ +++n f   +    rnl++ 
+  SMMYCCUN_6272 193 ALLLIAENAEGSLRDALSAFD--RLKLYSNNKlLRKMVAKQLGILDIQYclKFTDLILDQNIFKTLLYFDKLIKKGINLNlFlnnLaYHFRNLLIT 286
+                    578888898888888888654..7777886552689999999998888534788899999*****9999998888777662211121457888877 PP
+
+      holB_prot 247 kkn.pl.llekiilfskkinlw..kketqikfllylieifrka..flqk.ynnllikeipl 300
+                    k   ++ l+++      ki+l+  +++ + kfl+  i+i  k+  fl k ynn l  ei l
+  SMMYCCUN_6272 287 KSPdTItLFNNNYSDNFKIKLLaqSQKVKNKFLIKAIKICEKTerFLTKsYNNRLTLEITL 347
+                    7531331334443333456665114556779********99865577654****9999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (356 nodes)
+Target sequences:                       7883  (207357 residues searched)
+Passed MSV filter:                       284  (0.0360269); expected 157.7 (0.02)
+Passed bias filter:                       55  (0.00697704); expected 157.7 (0.02)
+Passed Vit filter:                         4  (0.000507421); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126855); expected 0.1 (1e-05)
+Initial search space (Z):               7883  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 7830.39
+//
+[ok]

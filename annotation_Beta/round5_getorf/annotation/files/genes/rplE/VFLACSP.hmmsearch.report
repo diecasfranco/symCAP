@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFLACSP/VFLACSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/rplE/rplE_VFLACSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplE_prot  [M=177]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.3e-40  137.5  11.6    1.3e-40  137.5  11.6    1.3  1  VFLACSP_3043  [116835 - 117347] 
+    6.8e-23   79.9   7.6    7.4e-23   79.7   7.6    1.0  1  VFLACSP_3060  [117577 - 117837] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLACSP_3043  [116835 - 117347] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  137.5  11.6   3.9e-44   1.3e-40       8     139 ..      40     169 ..      33     171 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 137.5 bits;  conditional E-value: 3.9e-44
+     rplE_prot   8 kkeflfnkkkkklknimkhprilkiiinvslGnksnnsnylkqllkelteitlqkPllikskksisnfnirkntinslkvtlrnklllnflnkfini 104
+                    k   +     k  nim++pri ki++n+slG k+ n +yl++ ++el+ei+ qkPl++k+kksis+f i+kn ++slkvtlrnk ++ fln +++ 
+  VFLACSP_3043  40 IKVCNYFLLF-KKYNIMEIPRINKIVLNMSLGYKALNKKYLNSCYEELKEISKQKPLILKAKKSISEFGIKKNFPISLKVTLRNKRIYCFLNDLLD- 134
+                   4444333333.3459*******************************************************************************98. PP
+
+     rplE_prot 105 avPrikdfrGfkttsideagnfnfGlkdssifPei 139
+                   ++  ikdf+Gf  +s+d+ gn+nfG+kd++ifP  
+  VFLACSP_3043 135 SLSNIKDFEGFCISSFDYFGNYNFGIKDHTIFPIF 169
+                   899******************************55 PP
+
+>> VFLACSP_3060  [117577 - 117837] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   79.7   7.6   2.1e-26   7.4e-23      90     176 ..       1      86 [.       1      87 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 79.7 bits;  conditional E-value: 2.1e-26
+     rplE_prot  90 rnklllnflnkfiniavPrikdfrGfkttsideagnfnfGlkdssifPeiflkekkktltGlniniviktieridslkllkqlgfPf 176
+                   rnk ++ fln +++ ++  ikdf+Gf  +s+d+ gn+nfG+kd++ifP  f k+k+  ++G+ni+ivik++++ ds+ llk++ fPf
+  VFLACSP_3060   1 RNKRIYCFLNDLLD-SLSNIKDFEGFCISSFDYFGNYNFGIKDHTIFPIFFSKKKFIEPKGMNITIVIKSKSIDDSYFLLKKFKFPF 86 
+                   89999******998.899********************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (177 nodes)
+Target sequences:                       6882  (182044 residues searched)
+Passed MSV filter:                       338  (0.0491136); expected 137.6 (0.02)
+Passed bias filter:                       36  (0.00523104); expected 137.6 (0.02)
+Passed Vit filter:                         7  (0.00101715); expected 6.9 (0.001)
+Passed Fwd filter:                         5  (0.000726533); expected 0.1 (1e-05)
+Initial search space (Z):               6882  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11198.19
+//
+[ok]

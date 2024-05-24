@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplW_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMASICLA/SMASICLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/rplW/rplW_SMASICLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplW_prot  [M=175]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      1e-21   76.8  23.2      1e-21   76.8  23.2    2.0  2  SMASICLA_6121  [105725 - 105366] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMASICLA_6121  [105725 - 105366] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   5.7     0.028   2.5e+02      81     111 ..       2      30 ..       1      36 [. 0.76
+   2 !   76.8  23.2   1.1e-25     1e-21       7      81 ..      41     116 ..      33     119 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 0.028
+      rplW_prot  81 lnklkikanleklkilnklklnsnleklkil 111
+                     nk k+  nl+kl  l k  +n nl kl  l
+  SMASICLA_6121   2 RNKNKLSENLKKL--LYKEYINKNLSKLSKL 30 
+                    5888888888865..7788899999998655 PP
+
+  == domain 2  score: 76.8 bits;  conditional E-value: 1.1e-25
+      rplW_prot   7 kkfsnkkldpfltfkvPlfynkkeikkliykiyninfkniktmiyckrtlkkrkkgvlfkkvilklkkdy.klkil 81 
+                    k ++    ++++tf +P+++nkk+i+k+++++y+i +++++t+iy+k++++kr+++++f+++++k+kk++ k+k +
+  SMASICLA_6121  41 KALYSNLSNNYYTFIFPIYFNKKDISKYLHRVYRIKITKLHTNIYYKKKINKRILKKTFAGKQQKFKKAFfKVKYF 116
+                    4444555689**********************************************************96378876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (175 nodes)
+Target sequences:                       9002  (239757 residues searched)
+Passed MSV filter:                       869  (0.0965341); expected 180.0 (0.02)
+Passed bias filter:                      113  (0.0125528); expected 180.0 (0.02)
+Passed Vit filter:                         4  (0.000444346); expected 9.0 (0.001)
+Passed Fwd filter:                         1  (0.000111086); expected 0.1 (1e-05)
+Initial search space (Z):               9002  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 7704.35
+//
+[ok]

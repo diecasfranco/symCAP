@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsZ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFCOTACU/VFCOTACU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/rpsZ/rpsZ_VFCOTACU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsZ_prot  [M=82]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    5.8e-11   35.6  13.6    4.3e-09   29.6   9.0    2.0  2  VFCOTACU_130  [116622 - 116924]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCOTACU_130  [116622 - 116924]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.0   1.6   4.1e-05    0.0059       1      44 [.       1      44 [.       1      52 [. 0.70
+   2 !   29.6   9.0   2.9e-11   4.3e-09      22      82 .]      40     100 ..      21     100 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 4.1e-05
+     rpsZ_prot  1 makrsviernrkrnkisieksikkdavigk.wsvlkyflvrrrrr 44
+                  m+k+s+ier++kr    ++k+  k +++ k     k ++  r+ r
+  VFCOTACU_130  1 MSKKSIIEREKKRLL-LYNKNLIKRSYLNKsLNSAKDYMEYRKIR 44
+                  89*********9865.56777777777776234556666555555 PP
+
+  == domain 2  score: 29.6 bits;  conditional E-value: 2.9e-11
+     rpsZ_prot  22 ikkdavigkwsvlkyflvrrrrrcslsGrsrGvfrmfGicrqvvreyfracelpyfskasw 82 
+                   ++k +++ +   +    +r+r+rc ++GrsrG  r fG++r  +re+  +  l  f k sw
+  VFCOTACU_130  40 YRKIRYMIQLLPRNSNITRKRNRCFITGRSRGYIRCFGLSRIKIREFICSGFLFGFVKSSW 100
+                   345566666666777889*****************************9999999999*999 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (82 nodes)
+Target sequences:                        145  (38788 residues searched)
+Passed MSV filter:                        27  (0.186207); expected 2.9 (0.02)
+Passed bias filter:                        8  (0.0551724); expected 2.9 (0.02)
+Passed Vit filter:                         2  (0.0137931); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00689655); expected 0.0 (1e-05)
+Initial search space (Z):                145  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1775.42
+//
+[ok]

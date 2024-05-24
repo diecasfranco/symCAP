@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFPINALT/VFPINALT_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rplT/rplT_VFPINALT.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplT_prot  [M=118]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    4.9e-34  115.4  21.4    5.4e-34  115.2  21.4    1.0  1  VFPINALT_4220  [64085 - 63738] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPINALT_4220  [64085 - 63738] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  115.2  21.4   8.8e-38   5.4e-34       1     115 [.       1     113 [.       1     116 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 115.2 bits;  conditional E-value: 8.8e-38
+      rplT_prot   1 MsRvkssvvskkkrkkllkktkgFigRRknvyriakqAyiksllysyrDrrkkkrilrrkwikkinfflkefnikYskfikllkkknillnrkily 96 
+                    M+Rvk++v+sk ++kk+lk+tkg++gRRkn  +iakq++iksl+ +yrD+++kk ++++ wik in+ +    ++Yskf++ lk+knil+nrk l+
+  VFPINALT_4220   1 MTRVKRGVLSKYRHKKILKQTKGYRGRRKNTIKIAKQSLIKSLQHHYRDTKRKKTDFKKLWIKVINYKITF--LSYSKFMNFLKNKNILINRKNLF 94 
+                    9*****************************************************************98876..58********************* PP
+
+      rplT_prot  97 elvkekkleilnlllekll 115
+                     + ++ + +++   l++++
+  VFPINALT_4220  95 LIFNSVISKLFVKKLKNIY 113
+                    *******999998888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (118 nodes)
+Target sequences:                       6078  (160809 residues searched)
+Passed MSV filter:                       506  (0.0832511); expected 121.6 (0.02)
+Passed bias filter:                       78  (0.0128332); expected 121.6 (0.02)
+Passed Vit filter:                         2  (0.000329056); expected 6.1 (0.001)
+Passed Fwd filter:                         1  (0.000164528); expected 0.1 (1e-05)
+Initial search space (Z):               6078  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10416.66
+//
+[ok]

@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplQ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round10/annotation/files/genomes/VFRANEDI/VFRANEDI_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round10/annotation/files/genes/rplQ/rplQ_VFRANEDI.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplQ_prot  [M=83]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    6.6e-15   49.1   8.1    4.4e-09   30.5   5.1    2.1  2  VFRANEDI_140  [122673 - 123023]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFRANEDI_140  [122673 - 123023]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.5   5.1   3.1e-11   4.4e-09       1      51 [.       1      51 [.       1      59 [. 0.87
+   2 !   20.3   0.2   4.7e-08   6.7e-06      36      82 ..      57     103 ..      49     104 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 30.5 bits;  conditional E-value: 3.1e-11
+     rplQ_prot  1 MRHkKkKKysiklkqlrnifievlkelilrkkiivkkklflkffsilvkki 51
+                  MRH+  KKy ++ ++lr+i  + l ++i+ +kiiv kk +l   s++ k+i
+  VFRANEDI_140  1 MRHRNLKKYILRPSHLRSIASNSLFNIISFGKIIVRKKISLYLRSFFNKEI 51
+                  ***********************************9988765566666655 PP
+
+  == domain 2  score: 20.3 bits;  conditional E-value: 4.7e-08
+     rplQ_prot  36 kkklflkffsilvkkikrkktiikkkitvlkigtRkgDkselillkl 82 
+                   +++ +++f + l k   +  +   + i++l++gtR +D+s+++ll++
+  VFRANEDI_140  57 TQRSSFLFLNSLTKTQISRLSNSTNCIQSLNLGTRLRDCSSITLLVF 103
+                   45667789999988877778888999******************987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (83 nodes)
+Target sequences:                        144  (38234 residues searched)
+Passed MSV filter:                        75  (0.520833); expected 2.9 (0.02)
+Passed bias filter:                        5  (0.0347222); expected 2.9 (0.02)
+Passed Vit filter:                         2  (0.0138889); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.0138889); expected 0.0 (1e-05)
+Initial search space (Z):                144  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 243.09
+//
+[ok]

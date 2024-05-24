@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpoA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFPROSP/VFPROSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/rpoA/rpoA_VFPROSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpoA_prot  [M=282]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.4e-23   79.6  52.6    4.5e-23   79.6  48.4    2.0  2  VFPROSP_1644  [70040 - 70954] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPROSP_1644  [70040 - 70954] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   79.6  48.4   1.3e-26   4.5e-23       8     209 ..      15     224 ..       9     292 .. 0.78
+   2 ?   -4.7   8.4      0.61   2.2e+03     193     238 ..     250     295 ..     245     305 .] 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 79.6 bits;  conditional E-value: 1.3e-26
+     rpoA_prot   8 ikklnkekikiklrylkkklieeilnilrriifstskkkliekininnkkeEFsyidgieeDileiilnikkirLklkkckkiklkiskkgrkflka 104
+                    kk n  + ++k+  +kk++   +  +lr++++s +  +++  i i n+ +E+sy + i eDil+i+ln  +i L l +c+++ +k+  +++k l+ 
+  VFPROSP_1644  15 YKKKNSGYFILKFISFKKEFSLILSTLLRKVLLSLIPGYSVSLISISNILHEYSYNKNIYEDILDIVLNFSNINLFLVNCRSLVIKFVINNIKCLYL 111
+                   466677788999*9********99************************************************************************* PP
+
+     rpoA_prot 105 kdlqirkfckilNkkkiiakikkkkklnitlkIgkkikkkein......lnkkneikiksttnpikkiafkikkkks..nlylkintnktispiklf 193
+                   +dl i+++c i N++k++ +++++    itl I+k ++ +++       ++++n++ ++s  +pikk++fk+++ ++   +y+ i+tnk is   l+
+  VFPROSP_1644 112 RDLFINGLCIINNPNKKLITFNNNCRFIITLLISKGFGFNKLSiynidwYIFINRMVVNSIFSPIKKVSFKVYNYSYydKIYFLIKTNKLISLNRLL 208
+                   ***********************************998887642223345789********************9987447**********9865555 PP
+
+     rpoA_prot 194 kksikkllkninftti 209
+                       k + k++ + ++
+  VFPROSP_1644 209 LYIYKFFNKDLVLRSF 224
+                   5555555555555544 PP
+
+  == domain 2  score: -4.7 bits;  conditional E-value: 0.61
+     rpoA_prot 193 fkksikkllkninfttikklklikkkkellknitnik.lklklkkil 238
+                   f   + ++l +++f+++  +   +k+k l+ ni   k l l lk il
+  VFPROSP_1644 250 FPNNLLEFLFHLKFLNLGSILY-IKNKILYINILLSKsLYLYLKYIL 295
+                   5555556666666666666643.578888888865432555666654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (282 nodes)
+Target sequences:                       3568  (92545 residues searched)
+Passed MSV filter:                       668  (0.18722); expected 71.4 (0.02)
+Passed bias filter:                       40  (0.0112108); expected 71.4 (0.02)
+Passed Vit filter:                        13  (0.0036435); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000280269); expected 0.0 (1e-05)
+Initial search space (Z):               3568  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4782.22
+//
+[ok]

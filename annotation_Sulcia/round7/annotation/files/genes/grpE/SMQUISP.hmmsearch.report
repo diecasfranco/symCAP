@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/grpE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMQUISP/SMQUISP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/grpE/grpE_SMQUISP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       grpE_prot  [M=192]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.2e-47  161.0  26.1    1.3e-47  160.9  26.1    1.0  1  SMQUISP_6762  [58015 - 57476] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMQUISP_6762  [58015 - 57476] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  160.9  26.1   1.5e-51   1.3e-47      13     191 ..       5     179 ..       1     180 [] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 160.9 bits;  conditional E-value: 1.5e-51
+     grpE_prot  13 qtkikniyldlikfyetknkkvkkkiiklfiqfesqkerklnvlnrkylkilaeienykkrkkkekkdviekanetllldllsvledfyrslkeikk 109
+                   +t ++   l l+k+ e + kk k+ki  l+  f+++k+ k n    k + i+ae+eny +r + ++k+++e++n+ l+ldl+s+ edf+r + e ++
+  SMQUISP_6762   5 KTIKQSSRLKLLKYIEHNYKKNKEKITNLMLIFNKYKRIKRN----KLIGIIAEFENYNRRLESNNKLLLENSNKPLFLDLISLAEDFNRCFSEKQN 97 
+                   455677889*****************************9987....6799********************************************999 PP
+
+     grpE_prot 110 knnvpliqGiklikekfykllkkkGlkkiktkkGdkfntdlheaisivkskdkklkGkvldviedGyklknkilkyskvlvG 191
+                   k    l +G++li  k+++++kk+G+ kiktk Gd+fntd+heaisi+  kd k+kGk+l++ie Gyklk+ki+ky+kv+vG
+  SMQUISP_6762  98 KYTKILSEGLHLINRKLWNIIKKEGIVKIKTKIGDVFNTDIHEAISIQVVKDPKMKGKILHIIEYGYKLKQKIIKYTKVIVG 179
+                   99999****************************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (192 nodes)
+Target sequences:                       8376  (219211 residues searched)
+Passed MSV filter:                       230  (0.0274594); expected 167.5 (0.02)
+Passed bias filter:                       48  (0.00573066); expected 167.5 (0.02)
+Passed Vit filter:                         4  (0.000477555); expected 8.4 (0.001)
+Passed Fwd filter:                         1  (0.000119389); expected 0.1 (1e-05)
+Initial search space (Z):               8376  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 21304.68
+//
+[ok]

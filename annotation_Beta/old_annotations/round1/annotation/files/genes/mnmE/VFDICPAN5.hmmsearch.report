@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/mnmE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1//annotation/files/genomes/VFDICPAN5/VFDICPAN5_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1//annotation/files/genes/mnmE/mnmE_VFDICPAN5.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       mnmE_prot  [M=439]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+   3.2e-105  345.4  32.9   3.6e-105  345.2  32.9    1.0  1  VFDICPAN5_93  [82970 - 83680]
+    1.5e-32  105.9  14.4    1.7e-32  105.7  14.4    1.0  1  VFDICPAN5_94  [83988 - 84278]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFDICPAN5_93  [82970 - 83680]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  345.2  32.9  4.9e-107  3.6e-105       6     242 ..       1     235 [.       1     236 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 345.2 bits;  conditional E-value: 4.9e-107
+     mnmE_prot   6 mktidpiisettlkknstGiaGikislgkynllikkilklltkkkyifPrlatyskiylkkkviddGiiiffpkensytGedileifvhgnkiivss 102
+                   mk  +piisett++k+ tGiaGikis+gk+nl+ikki+k+ltkk ++fPrlatyskiy+k++viddGi iff+kensytGed+leif+hgnk+iv++
+  VFDICPAN5_93   1 MKNLHPIISETTNTKTITGIAGIKISAGKHNLIIKKIFKTLTKKLHLFPRLATYSKIYVKNQVIDDGITIFFNKENSYTGEDTLEIFTHGNKQIVTN 97 
+                   8999********************************************************************************************* PP
+
+     mnmE_prot 103 ilkiiikkfkkkklrlakkGefieraylnkkidvlevkrleeilvknkdkdksdlvlkinellrkkikkilkkifniilyienyinfkhdndknykq 199
+                   i++++i+k+k+ +l++a++Gefierayln+kid+levkrle+il+knk+++    +lk++++lr+ i +ilk+ifni+l+ienyinfk+++d++ykq
+  VFDICPAN5_93  98 IIEFCINKYKRFGLKRARRGEFIERAYLNNKIDILEVKRLENILIKNKNPIH---SLKLSNTLRQNITTILKNIFNIRLCIENYINFKTTQDNQYKQ 191
+                   ************************************************9975...69**************************************** PP
+
+     mnmE_prot 200 li.lnlkllLkkikklkikkivifkkklkvaivGhenvGkstlf 242
+                   li  +lk +L+ki++l+ kki+if++k+++ai+GhenvGkstlf
+  VFDICPAN5_93 192 LIkTQLKNWLTKIQQLRYKKINIFRRKIQIAIIGHENVGKSTLF 235
+                   *9568**************************************9 PP
+
+>> VFDICPAN5_94  [83988 - 84278]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  105.7  14.4   2.3e-34   1.7e-32     345     439 .]       1      96 [.       1      96 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 105.7 bits;  conditional E-value: 2.3e-34
+     mnmE_prot 345 vllsckssgeynelykkllkkiyklsstkyliakkkqrkllllyikkilkelkkkselikin.nldlilsllknifnksndkkilkelfrkfCiGk 439
+                   +llsc ssg++n+lykkll+ki+kl+ tkylia+ k+r ll+ yik++l +l+++ +li+i  nl +i++l++nifn++n+kki+ke+frkfC+Gk
+  VFDICPAN5_94   1 MLLSCTSSGCFNYLYKKLLNKIHKLVRTKYLIAHYKHRMLLKHYIKNTLTQLNNNDDLINITpNLTIITKLITNIFNINNNKKINKEFFRKFCVGK 96 
+                   589**********************************************************669*******************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (439 nodes)
+Target sequences:                        146  (37615 residues searched)
+Passed MSV filter:                        73  (0.5); expected 2.9 (0.02)
+Passed bias filter:                        3  (0.0205479); expected 2.9 (0.02)
+Passed Vit filter:                         3  (0.0205479); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.0136986); expected 0.0 (1e-05)
+Initial search space (Z):                146  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 2894.27
+//
+[ok]

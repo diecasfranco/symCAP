@@ -1,0 +1,66 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMPHYLLO.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMPHYLLO.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    4.4e-14   48.5  15.0  SMPHYLLO  27373  27248 
+    3.9e-13   45.4   3.4  SMPHYLLO  27179  27117 
+
+
+Annotation for each hit  (and alignments):
+>> SMPHYLLO  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   48.5  15.0   4.4e-14         1       126 [.     27373     27248 ..     27373     27228 ..    148475    0.86
+
+  Alignment:
+  score: 48.5 bits
+      ssrA     1 ggggctggattggaattgacaacaagattaatat.ataagtaagcatatcgtgaaaagtaatgtaatcacgtaaata..tcattacaaatga.taac 93   
+                 ggggctg  ttgg  ttgaca caag   aatat ataag  agcatatcgtgaaa gtaatgtaatcacgtaaa a  tcattacaaa  a taa 
+  SMPHYLLO 27373 GGGGCTGATTTGGTTTTGACATCAAGT-AAATATaATAAGATAGCATATCGTGAAAGGTAATGTAATCACGTAAAAAatTCATTACAAAAAAcTAAA 27278
+                 79**********************995.55666526899*********************************97654449******98755427788 PP
+
+      ssrA    94 cggcaaaaaaaattatgctcttgcggcttgatc 126  
+                  ggcaaa   aatta  ctcttgc gctt a c
+  SMPHYLLO 27277 TGGCAAA---AATTACTCTCTTGCAGCTTAAGC 27248
+                 9999865...6799999**********987655 PP
+
+>> SMPHYLLO  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   45.4   3.4   3.9e-13       280       342 ..     27179     27117 ..     27200     27116 ..    148475    0.91
+
+  Alignment:
+  score: 45.4 bits
+      ssrA   280 taaatatgtagaaaacttataatattacttgtttggacacgggttcgaatcccgtcagctcca 342  
+                 taaatatgtagaaa cttat atatt cttgtttggacacgggttcga tcccgtcagctcca
+  SMPHYLLO 27179 TAAATATGTAGAAATCTTATTATATTGCTTGTTTGGACACGGGTTCGATTCCCGTCAGCTCCA 27117
+                 799*********************************************************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (296950 residues searched)
+Residues passing SSV filter:          271847  (0.915); expected (0.02)
+Residues passing bias filter:         138896  (0.468); expected (0.02)
+Residues passing Vit filter:            2847  (0.00959); expected (0.003)
+Residues passing Fwd filter:            1124  (0.00379); expected (3e-05)
+Total number of hits:                      2  (0.000636)
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 1811.89
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMPHYLLO.sto
+[ok]

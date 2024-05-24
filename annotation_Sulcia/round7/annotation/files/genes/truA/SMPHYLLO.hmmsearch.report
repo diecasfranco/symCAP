@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/truA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMPHYLLO/SMPHYLLO_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/truA/truA_SMPHYLLO.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       truA_prot  [M=254]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    4.4e-37  126.9   0.8    4.7e-37  126.8   0.8    1.0  1  SMPHYLLO_5793  [87413 - 87099] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPHYLLO_5793  [87413 - 87099] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  126.8   0.8   5.7e-41   4.7e-37       5     107 ..       4     104 ..       1     105 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 126.8 bits;  conditional E-value: 5.7e-41
+      truA_prot   5 leisykGssffGwqiqkknlsiqetiekclsfllkkkikiiGagrtdtGvhaiqmfahfdltknkillnkkfksklnsflplnikiinifsvkkni 100
+                     ei ++ ++f+Gwqiq  ++siqetiekc+s++l k i i+Ga+rtd+Gv+a+qmfahfd+ +  +l+++ f++ +n ++p +i i+ni+svk ++
+  SMPHYLLO_5793   4 YEIVFNVKYFSGWQIQPPQISIQETIEKCFSLILIKTIPIVGASRTDSGVNALQMFAHFDYFR--VLKQNTFLKPINFIFPSYILIKNIISVKPKA 97 
+                    699*********************************************************985..899**************************** PP
+
+      truA_prot 101 harfnai 107
+                    +arf++i
+  SMPHYLLO_5793  98 NARFDVI 104
+                    *****98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (254 nodes)
+Target sequences:                       8199  (217242 residues searched)
+Passed MSV filter:                       223  (0.0271984); expected 164.0 (0.02)
+Passed bias filter:                       61  (0.00743993); expected 164.0 (0.02)
+Passed Vit filter:                         6  (0.000731797); expected 8.2 (0.001)
+Passed Fwd filter:                         4  (0.000487864); expected 0.1 (1e-05)
+Initial search space (Z):               8199  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 13190.91
+//
+[ok]

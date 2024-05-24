@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2//annotation/files/genomes/VFTETMAC/VFTETMAC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2//annotation/files/genes/rpsA/rpsA_VFTETMAC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsA_prot  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    2.9e-19   62.2  78.2    7.6e-13   41.1  21.4    2.5  2  VFTETMAC_81  [73442 - 74632]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETMAC_81  [73442 - 74632]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.1  21.4     6e-15   7.6e-13       4     115 ..       6     118 ..       2     134 .. 0.80
+   2 !   26.7  48.8   1.4e-10   1.8e-08     121     364 .]     142     396 ..     136     396 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 41.1 bits;  conditional E-value: 6e-15
+    rpsA_prot   4 tikikiknynnkkvllkcksekiaiiklseikkfkikikigkkinvsiiknnlknecvl.slkkyknkvvyeklvkkfknkekikgkikkkvKgGYkv 100
+                   i++ i+++ +++v++     k+++i+++e+kk k ki  +k i+++   n   n  ++ sl k+ ++  +  l k + ++ ++kg+i+k+vKgGY+v
+  VFTETMAC_81   6 FINGRIIKKVGNRVKIGFGFCKFFYINIKEFKKCKKKIGRNKVIKFFYFSNFSSNFFNNfSLVKNVEEIDFLFLKKSYFKNFSVKGRIIKRVKGGYEV 103
+                  68899*************************************99988776655544333133444444444445566667889*************** PP
+
+    rpsA_prot 101 klknifcFlPnSlls 115
+                   +k i cFlPnS + 
+  VFTETMAC_81 104 IVKRIRCFLPNSHFR 118
+                  ************986 PP
+
+  == domain 2  score: 26.7 bits;  conditional E-value: 1.4e-10
+    rpsA_prot 121 lgkykkfkiikidkkngsiiLSrkkylkkkkslllekilknkkki...irvkIknitkygiFvtyknidglikikkfllkklkiriGksvkaklvkwn 215
+                   ++ ++f+iikid + ++++LSr+kyl+k ++l + +   n+k+i   i +  k++t y+iFv + + +    ik+  ++  k    +s++   +k  
+  VFTETMAC_81 142 FNSVYRFNIIKIDFNTKNVVLSRNKYLDKLNRLKMVDFFLNNKRIdekIFCTLKSLTNYKIFVSFCDFNF--SIKHNFRQLSKFYNNNSLLCLYIKDI 237
+                  58899************************999988776666666655588***************87765..55666666677777888887666654 PP
+
+    rpsA_prot 216 nennrivyskydsknelkklkeklklksvfli.fkkrkqilskiklkkkiaiikkkklNwlvrkvn.kavkvknlkv......ipke...yshtilir 302
+                  ++ n+iv s+ ++ n++      +  k ++ i      ++l    ++   +ii +++  wl  + +   ++  ++k       i ++   +   i+i+
+  VFTETMAC_81 238 SKRNNIV-SFSFVSNTFVYDSFYI-GKTINFIiNCFGINCLIFFGYNGFNFIINNNNYSWLRYYFYfSSILGYKIKAfiykldIRNKvffLDFKIFIF 333
+                  5555554.4555668885432222.34444331333344555567777788888888888877653133333333320001112222111234689** PP
+
+    rpsA_prot 303 npwfefkvvykkkkkikciaykkygk.inifklpfnifgffKkkkyklkIkrlklkkkiilln 364
+                  npw  f  +yk ++ i + ++  + + i ++k+ f  f  +K+k + lk+  +++kkk+i l+
+  VFTETMAC_81 334 NPWLLFLLNYKVGDYINSKFICSFSNgIFVYKISFFLFAYSKRKGSFLKVCFIDIKKKVIFLC 396
+                  ******************9999987758899*****************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (364 nodes)
+Target sequences:                        127  (32034 residues searched)
+Passed MSV filter:                       110  (0.866142); expected 2.5 (0.02)
+Passed bias filter:                       11  (0.0866142); expected 2.5 (0.02)
+Passed Vit filter:                        11  (0.0866142); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00787402); expected 0.0 (1e-05)
+Initial search space (Z):                127  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 861.37
+//
+[ok]

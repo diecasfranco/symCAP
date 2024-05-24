@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFPINALT/VFPINALT_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rpmG/rpmG_VFPINALT.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmG_prot  [M=52]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    4.2e-14   50.7  19.0    4.2e-14   50.7  19.0    2.0  2  VFPINALT_5346  [26230 - 26006] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPINALT_5346  [26230 - 26006] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   3.5     0.049     3e+02      21      36 ..      14      30 ..       2      31 .. 0.57
+   2 !   50.7  19.0   6.9e-18   4.2e-14       6      49 ..      30      73 ..      23      75 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.049
+      rpmG_prot 21 hfY.fikkkkkkinklk 36
+                   +fY f+k  ++k++ +k
+  VFPINALT_5346 14 CFYhFFKLLSNKKFLMK 30
+                   56734555555555555 PP
+
+  == domain 2  score: 50.7 bits;  conditional E-value: 6.9e-18
+      rpmG_prot  6 kkkkflkfvSsSgSghfYfikkkkkkinklkKyDPifrkhfvyl 49
+                   kkkk++kf+S SgSgh+Y++  kk+ +  +kK+DPi+rk+f+y 
+  VFPINALT_5346 30 KKKKYSKFFSKSGSGHYYSFLIKKSPKLVIKKFDPIYRKRFLYF 73
+                   8999**************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (52 nodes)
+Target sequences:                       6078  (160809 residues searched)
+Passed MSV filter:                      1071  (0.176209); expected 121.6 (0.02)
+Passed bias filter:                      152  (0.0250082); expected 121.6 (0.02)
+Passed Vit filter:                         9  (0.00148075); expected 6.1 (0.001)
+Passed Fwd filter:                         1  (0.000164528); expected 0.1 (1e-05)
+Initial search space (Z):               6078  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3101.77
+//
+[ok]

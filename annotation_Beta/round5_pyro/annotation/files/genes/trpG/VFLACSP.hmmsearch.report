@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/trpG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFLACSP/VFLACSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/trpG/trpG_VFLACSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trpG_prot  [M=186]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.1e-47  154.2  22.8    3.5e-47  154.1  22.8    1.0  1  VFLACSP_41  [40719 - 40153] (REVERSE SENSE)
+    3.1e-12   40.1   9.5    3.1e-12   40.1   9.5    2.3  2  VFLACSP_61  [58259 - 59155]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLACSP_41  [40719 - 40153] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  154.1  22.8   4.7e-49   3.5e-47       1     181 [.       1     187 [.       1     188 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 154.1 bits;  conditional E-value: 4.7e-49
+   trpG_prot   1 millldnydsftynvyelliilkfkvkvlkkik..ki..fklsdfkliciGPGtgsPenykvllfklskvylfiPiiGiclGhqilGklfklkikkakk 95 
+                 mi+++d  dsftynv el+   +  +++++  +   i  f +    +ic+GPG g P++yk  +  ls  y  i  +GiclGhqi+G +f++kik +  
+  VFLACSP_41   1 MIIIIDHNDSFTYNVCELFLNNNSIINIINYNNlnIIylFVILFKPIICLGPGPGDPREYKNSIKVLSFFYNNISFVGICLGHQIIGIFFGMKIKISSV 99 
+                 9******************99999999997543103311344444689*************************************************** PP
+
+   trpG_prot  96 ivhGllekivvkndvlsigiPieievvrynslvvkadsraliki..ssvkfkevmilkhkvlPiiGiqfhPdsflcfyGkkiiknfll 181
+                 i hGl+  + +kn +  i iP +i+vvrynsl+v  d+ ++ k      + ke+mi+kh+ + i+  q+hPdsf+++y kki+k fl+
+  VFLACSP_41 100 IAHGLIVELIIKNFYKKIKIPKKIKVVRYNSLTVFSDKIVNLKTeaYELNTKEIMIMKHNNFNIVSFQYHPDSFMSQYSKKILKFFLK 187
+                 **********************************99987765541144678********************************98875 PP
+
+>> VFLACSP_61  [58259 - 59155]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   1.5      0.14        11     148     149 ..      94      95 ..      45     140 .. 0.54
+   2 !   40.1   9.5   4.1e-14   3.1e-12      11     130 ..     136     257 ..     128     281 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.14
+   trpG_prot 148 mi 149
+                  +
+  VFLACSP_61  94 NV 95 
+                 22 PP
+
+  == domain 2  score: 40.1 bits;  conditional E-value: 4.1e-14
+   trpG_prot  11 ftynvyelliilkfkvkvlkkikkifklsdfkl..iciGPGtgsPenykvllfklskv.ylfiPiiGiclGhqilGklfklkikkakkivhGllekivv 106
+                 +  n+  l++ +k   +v+ +  +i+k+++++   + i  G g P+ yk +l +++ +  + iPi+GiclGhqi+   ++ +i   kk  hG    i  
+  VFLACSP_61 136 LKTNILRLISKIKLFPLVISNKTSIKKMKKLNAdgVIITNGPGDPRSYKKVLKNVKYIiKKNIPIMGICLGHQIISLAMNKEIILDKKGQHGANYSIIF 234
+                 4568999999888888888888888888887543388999999*****99999888761578************************************* PP
+
+   trpG_prot 107 kndvlsigiPieievvrynslvvk 130
+                 kn+ +      +++ v  ns v++
+  VFLACSP_61 235 KNKSIITTQNHNYYAVN-NSKVIN 257
+                 *9998887777777664.676665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (186 nodes)
+Target sequences:                        149  (39581 residues searched)
+Passed MSV filter:                        69  (0.463087); expected 3.0 (0.02)
+Passed bias filter:                        5  (0.033557); expected 3.0 (0.02)
+Passed Vit filter:                         3  (0.0201342); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.0134228); expected 0.0 (1e-05)
+Initial search space (Z):                149  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1857.78
+//
+[ok]

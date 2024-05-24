@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/clpX_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMCNI6/SMCNI6_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/clpX/clpX_SMCNI6.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       clpX_prot  [M=343]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+     1e-153  510.2  24.4     1e-153  510.2  24.4    1.4  2  SMCNI6_6290  [60564 - 59350] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMCNI6_6290  [60564 - 59350] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0      0.13   9.8e+02     252     288 ..      21      57 ..      17      62 .. 0.76
+   2 !  510.2  24.4  1.3e-157    1e-153       8     342 ..      68     404 ..      60     405 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.13
+    clpX_prot 252 kslekeslkrillepknaiikqykklflldkinleft 288
+                  +s++++ +k +  + ++  i    k+f++ ki ++f 
+  SMCNI6_6290  21 QSYKNKRIKILQADRDYVCINCLIKIFFIYKIYFNFN 57 
+                  5666677776667888888999999999999988875 PP
+
+  == domain 2  score: 510.2 bits;  conditional E-value: 1.3e-157
+    clpX_prot   8 ktktpreiknfldkyviGqedakkiisvavynhykrii..eakveieksnvlligdtgtgktllakslskflnvpfaivdatslteagyvgedvesil 103
+                     +p++ik++ldky++Gqe+akkii v++ynhykr+i  e+k+ei+ksn+l+ig+tgtgktl+aksls+fln+p+aivdatslteagyvg+dvesil
+  SMCNI6_6290  68 LCFQPNNIKYYLDKYIVGQEAAKKIIAVSIYNHYKRLIlhENKIEINKSNILIIGNTGTGKTLFAKSLSRFLNLPLAIVDATSLTEAGYVGDDVESIL 165
+                  4568********************************97446799****************************************************** PP
+
+    clpX_prot 104 tkllqsanynislaekgivfideidkiskkn.dntsltrdvsgegvqqallkilegsivnvppfvgrkhpeqklikintknilfiagGafdGlkniis 200
+                    llq+any+++laekgi+f+deidkiskkn +n+s+trdvsgegvqqallkilegs vn+++++grkhpe+++++intknilfi+gG+f+Gl++ii+
+  SMCNI6_6290 166 AILLQKANYDLNLAEKGIIFLDEIDKISKKNlNNPSITRDVSGEGVQQALLKILEGSHVNISTQIGRKHPEKQIVSINTKNILFISGGTFAGLEQIIY 263
+                  ******************************96789*************************************************************** PP
+
+    clpX_prot 201 nrlnlstiGfkknlskkinekdllkfvesedlkkfglipeliGrlpiisnlkslekeslkrillepknaiikqykklflldkinleftdsaidlivek 298
+                  nrln+s+iGfk++  ++ + +d+++ ++sedl++fg+ipeliGr+pii++l++++k ++k+il++pkn+i+kqyk++f++dk+++ ft++ai+ i++k
+  SMCNI6_6290 264 NRLNFSQIGFKNK--RQTKTQDIFNNLKSEDLINFGFIPELIGRFPIICHLHNFTKTEYKQILFSPKNSILKQYKNMFKFDKLDFIFTKNAINSIIKK 359
+                  **********997..5566789**************************************************************************** PP
+
+    clpX_prot 299 aiklslGarGlkticekilkdylfnidkikesli.idkfdikkki 342
+                  aikl+lGarGl +iceki+++y+f ++ +k+++i i+k+ i+k+i
+  SMCNI6_6290 360 AIKLNLGARGLYYICEKIFNKYTFYLEGLKHKQIkITKKVINKII 404
+                  ******************************999867888887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                       7851  (209270 residues searched)
+Passed MSV filter:                       114  (0.0145204); expected 157.0 (0.02)
+Passed bias filter:                       22  (0.00280219); expected 157.0 (0.02)
+Passed Vit filter:                         2  (0.000254745); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000127372); expected 0.1 (1e-05)
+Initial search space (Z):               7851  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 4844.67
+//
+[ok]

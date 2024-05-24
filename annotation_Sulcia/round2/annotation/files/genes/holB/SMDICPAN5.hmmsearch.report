@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/holB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMDICPAN5/SMDICPAN5_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/holB/holB_SMDICPAN5.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       holB_prot  [M=356]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    1.4e-60  204.4  38.6    1.7e-60  204.1  38.6    1.0  1  SMDICPAN5_7483  [13757 - 12921] (REVERSE SENSE) 
+    4.9e-11   41.4   2.4      6e-11   41.1   2.4    1.2  1  SMDICPAN5_7465  [14002 - 13730] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMDICPAN5_7483  [13757 - 12921] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  204.1  38.6   4.2e-64   1.7e-60      76     354 ..       3     276 ..       1     278 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 204.1 bits;  conditional E-value: 4.2e-64
+       holB_prot  76 lnkwsiflkkqpygclsdwikliksndkqcfiykeqienllkkityksyesdykiiilwmpekltlyssnkllkileftpkktifllvgenenni 170
+                     l kw+ fl +qpyg+l dw k i+s++k+c i  eq+e  lk i+ ksye  +k++i+wm e+lt+ + nkll++l+ +pk+  fl++genen i
+  SMDICPAN5_7483   3 LYKWHNFLVNQPYGSLLDWKKKIHSENKDCKISLEQVEAALKMINLKSYELSHKVVIFWMLEHLTIQAGNKLLNVLDSPPKRVFFLFIGENENLI 97 
+                     78********************************************************************************************* PP
+
+       holB_prot 171 lptilsriflirfnkfsfkeikkflekklkidtiqskqialkaegnlnkalklvnnlqenyleinfiswirnlflikknplllekiilfskkinl 265
+                     lpt++sr+ +i+++    k i k+l +k+++ + q++ i   + gnln  +k+++n ++n l++nfi w+r lf +k++   ++  + +  +in 
+  SMDICPAN5_7483  98 LPTLKSRLLIIKLKLIYNKIIEKYLIRKFHLYKNQAQTIVAISAGNLNTIFKILKN-KNNNLNLNFIFWMRMLFNLKHK---IDACLRWGSQINS 188
+                     *************9999999***********************************9.56779**************987...68999******** PP
+
+       holB_prot 266 wkketqikfllylieifrkaflqkynnllikeipltynkfnwtnfclfihkknieqinieinkaiyeieknavveivfldlslkinell 354
+                     w++++++ fll+ +eifr a  +ky++  i+   + y++fnw++fc +i++k++  in  i   i  i++  +    fldls++++++l
+  SMDICPAN5_7483 189 WNRDKKKSFLLFSLEIFRIAHRYKYDKNYINPF-FYYKNFNWKQFCRYINTKKVRIINHLISDVIKGIDRYYLFLFNFLDLSFNMKKIL 276
+                     *************************99999754.67999********************************************998875 PP
+
+>> SMDICPAN5_7465  [14002 - 13730] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.1   2.4   1.5e-14     6e-11       2      76 ..      19      84 ..      18      91 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 41.1 bits;  conditional E-value: 1.5e-14
+       holB_prot  2 kseiihllkinkiphailflgpegcgnlitainfskkilckeddhscllkfknfkhpdlhfifplpkkkknk.nll 76
+                    k+e+ ++ k n++p  il+lgpegcg++   i+f kk          llk+  + hpd++f+fplp+  k+k n++
+  SMDICPAN5_7465 19 KAELYNFCKFNRLPTGILLLGPEGCGKFKLGIKFIKK----------LLKIDMLAHPDIQFLFPLPNLPKQKsNYF 84
+                    88999*****************************998..........5789999***********98644431554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (356 nodes)
+Target sequences:                       7868  (209652 residues searched)
+Passed MSV filter:                       347  (0.0441027); expected 157.4 (0.02)
+Passed bias filter:                       66  (0.00838841); expected 157.4 (0.02)
+Passed Vit filter:                         5  (0.000635486); expected 7.9 (0.001)
+Passed Fwd filter:                         3  (0.000381291); expected 0.1 (1e-05)
+Initial search space (Z):               7868  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6130.17
+//
+[ok]

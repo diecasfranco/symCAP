@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsQ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFPENVAR/VFPENVAR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/rpsQ/rpsQ_VFPENVAR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsQ_prot  [M=77]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    4.2e-17   60.8  21.1    4.2e-17   60.8  21.1    2.0  2  VFPENVAR_3207  [122831 - 123139] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPENVAR_3207  [122831 - 123139] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.2   0.8     0.012        83      12      34 ..       5      25 ..       2      27 .. 0.59
+   2 !   60.8  21.1     6e-21   4.2e-17       1      76 [.      28     103 .]      28     103 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 0.012
+      rpsQ_prot 12 sskktisvkfnklkinnk.ykkky 34
+                    s   i+  fn+  ++nk +kkky
+  VFPENVAR_3207  5 ES---IKTLFNETSCKNKnFKKKY 25
+                   44...4445777776555377777 PP
+
+  == domain 2  score: 60.8 bits;  conditional E-value: 6e-21
+      rpsQ_prot   1 MkkkiakvkkisskktisvkfnklkinnkykkkyikkkkllVhyestllkkGdkvlikkikkkSKkKsfkvlkiik 76 
+                    Mk + + +k+i   +t+s  ++ +k+n+k kkk++kkk +lV++ s++ k+G+k++i++ikk S kKs+ v+kiik
+  VFPENVAR_3207  28 MKFIECYIKNIGCLNTLSAYYYYYKYNTKIKKKFKKKKSILVNFTSSFYKIGMKIIIRPIKKISSKKSWEVVKIIK 103
+                    999************************************************************************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (77 nodes)
+Target sequences:                       7102  (196234 residues searched)
+Passed MSV filter:                       687  (0.0967333); expected 142.0 (0.02)
+Passed bias filter:                      106  (0.0149254); expected 142.0 (0.02)
+Passed Vit filter:                         4  (0.000563222); expected 7.1 (0.001)
+Passed Fwd filter:                         1  (0.000140805); expected 0.1 (1e-05)
+Initial search space (Z):               7102  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8580.25
+//
+[ok]

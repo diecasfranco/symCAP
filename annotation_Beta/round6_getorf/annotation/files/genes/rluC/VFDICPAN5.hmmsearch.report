@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFDICPAN5/VFDICPAN5_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rluC/rluC_VFDICPAN5.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluC_prot  [M=164]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+      1e-20   72.9  25.3    1.4e-20   72.5  18.9    3.4  2  VFDICPAN5_858   [32133 - 32804] 
+    1.6e-20   72.3  15.5    3.5e-19   67.9  15.5    2.2  1  VFDICPAN5_1417  [53111 - 53512] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFDICPAN5_858  [32133 - 32804] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.4     0.088   2.9e+02      75      94 ..      14      33 ..       2      59 .. 0.55
+   2 !   72.5  18.9   4.1e-24   1.4e-20      18     142 ..      75     220 ..      63     224 .] 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.088
+      rluC_prot 75 kkvsiskikkliflkslnis 94
+                   +k+ i k k++ f++ +n +
+  VFDICPAN5_858 14 QKYNIYKQKQIAFIDIENGT 33
+                   34445555555555555544 PP
+
+  == domain 2  score: 72.5 bits;  conditional E-value: 4.1e-24
+      rluC_prot  18 sieikkkkykllgrldyevsGillftkk..........kkifvfkklYyalvfGyfykakkvisvcnkkvsis............kikkliflksl 91 
+                     i+ k  ++ +l+r+d++vsGi++ +k           +k++ +kk+Yya v G++  ++++++++ k++s++            kik+l+ l++l
+  VFDICPAN5_858  75 LINKKLYRFGILNRIDFQVSGIIILAKTlitlhqiitlHKQQAIKKIYYAYVSGHIAYKQVLYQQLSKYHSKNpkqypntqkvflKIKPLLILHHL 170
+                    44555566789**********998766433343444459*******************************9854444444444557999******* PP
+
+      rluC_prot  92 nisllkikiitGrknqiRkqLkllGfPivldkrfgdkllnnflkkkkiflv 142
+                    +++l+k+k++tG+++q+Rk+L  +G+Pi ++k+ ++kll  ++k  ki+  
+  VFDICPAN5_858 171 QLTLIKCKTYTGKYHQVRKMLYAIGKPIAYNKLNPHKLLLTLYKI-KIYTY 220
+                    ***************************************987765.57765 PP
+
+>> VFDICPAN5_1417  [53111 - 53512] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   67.9  15.5   1.1e-22   3.5e-19      44     142 ..      21     130 ..       9     134 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 67.9 bits;  conditional E-value: 1.1e-22
+       rluC_prot  44 kkkkifvfkklYyalvfGyfykakkvisvcnkkvsis............kikkliflkslnisllkikiitGrknqiRkqLkllGfPivldkrfg 126
+                       +k++ +kk+Yya v G++  ++++++++ k++s++            kik+l+ l++l+++l+k+k++tG+++q+Rk+L  +G+Pi ++k+ +
+  VFDICPAN5_1417  21 TLHKQQAIKKIYYAYVSGHIAYKQVLYQQLSKYHSKNpkqypntqkvflKIKPLLILHHLQLTLIKCKTYTGKYHQVRKMLYAIGKPIAYNKLNP 115
+                     5699******************************9854444444444557999****************************************** PP
+
+       rluC_prot 127 dkllnnflkkkkiflv 142
+                     +kll  ++k  ki+  
+  VFDICPAN5_1417 116 HKLLLTLYKI-KIYTY 130
+                     ****987765.57765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (164 nodes)
+Target sequences:                       6628  (181854 residues searched)
+Passed MSV filter:                       267  (0.0402836); expected 132.6 (0.02)
+Passed bias filter:                       63  (0.00950513); expected 132.6 (0.02)
+Passed Vit filter:                         5  (0.000754375); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.00030175); expected 0.1 (1e-05)
+Initial search space (Z):               6628  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7641.98
+//
+[ok]

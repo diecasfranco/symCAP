@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFISSKAZ/VFISSKAZ_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rpmA/rpmA_VFISSKAZ.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmA_prot  [M=80]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.6e-37  126.0  10.5    1.8e-37  125.9  10.5    1.0  1  VFISSKAZ_3565  [98518 - 98270] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFISSKAZ_3565  [98518 - 98270] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  125.9  10.5   2.8e-41   1.8e-37       1      80 []       4      83 .]       4      83 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 125.9 bits;  conditional E-value: 2.8e-41
+      rpmA_prot  1 mAkKKaagslknGRdskskrLGiKkfsgelvkkGniiirqrGtkfksglntkigkdytiyslkkGkvlfkkkkkkivnvl 80
+                   mAkKKa+gslknGRds+skrLG+Kk+sg++vk Gnii+rq+G k+k+g+n+kig+dytiys+k+G++ fkk kk+ivnvl
+  VFISSKAZ_3565  4 MAKKKAVGSLKNGRDSISKRLGLKKNSGSKVKIGNIILRQKGLKYKPGKNVKIGNDYTIYSIKNGYLNFKKGKKTIVNVL 83
+                   9*****************************************************************************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (80 nodes)
+Target sequences:                       6350  (168079 residues searched)
+Passed MSV filter:                        80  (0.0125984); expected 127.0 (0.02)
+Passed bias filter:                       26  (0.00409449); expected 127.0 (0.02)
+Passed Vit filter:                         1  (0.00015748); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.00015748); expected 0.1 (1e-05)
+Initial search space (Z):               6350  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11147.20
+//
+[ok]

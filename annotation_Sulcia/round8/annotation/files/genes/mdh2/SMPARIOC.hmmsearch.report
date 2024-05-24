@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/mdh2_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMPARIOC/SMPARIOC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/mdh2/mdh2_SMPARIOC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       mdh2_prot  [M=417]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.7e-78  261.7   5.6    5.1e-78  261.5   5.6    1.0  1  SMPARIOC_833  [31561 - 31941] 
+    5.8e-47  159.3   6.2    1.2e-46  158.2   6.2    1.4  1  SMPARIOC_823  [31264 - 31557] 
+    4.6e-11   41.0   0.0    4.9e-11   40.9   0.0    1.0  1  SMPARIOC_820  [31214 - 31375] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPARIOC_833  [31561 - 31941] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  261.5   5.6   1.9e-81   5.1e-78     284     410 ..       1     127 []       1     127 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 261.5 bits;  conditional E-value: 1.9e-81
+     mdh2_prot 284 ikyhkalktrsdiiiatgrsdypnqvnnalcfpyifrgaldvkatsineemklaalysiakiakepvpkkvsllyneknikfgknyiipkpfdprlm 380
+                   ikyhkal+trsd+i+atgrsdypnqvnnalcf yifrgaldvkat+ineemklaaly+iakiakepvpkk+sllyneknikfgknyiipkpfd rlm
+  SMPARIOC_833   1 IKYHKALNTRSDLILATGRSDYPNQVNNALCFTYIFRGALDVKATTINEEMKLAALYAIAKIAKEPVPKKISLLYNEKNIKFGKNYIIPKPFDSRLM 97 
+                   8************************************************************************************************ PP
+
+     mdh2_prot 381 invsiavakaaiksgvakkkinnwkkylae 410
+                   invsiavakaaiksgva+kkinnw++ylae
+  SMPARIOC_833  98 INVSIAVAKAAIKSGVARKKINNWNQYLAE 127
+                   ****************************98 PP
+
+>> SMPARIOC_823  [31264 - 31557] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  158.2   6.2   4.5e-50   1.2e-46     181     282 ..       9      98 .]       4      98 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 158.2 bits;  conditional E-value: 4.5e-50
+     mdh2_prot 181 enikmvingagaaaiscgriykklgvkhifmcdshgvlnnsrkkltkeklefcvktsstkleeiiinsdvfiglsvgniltkkmlmsmsrnpiifal 277
+                   +nikmvingagaaaiscgriykklgvkhi+mcdshgvlnnsrk+lt+    f        l +iiinsdvfiglsvgniltkkmlmsmsrnpiifal
+  SMPARIOC_823   9 KNIKMVINGAGAAAISCGRIYKKLGVKHILMCDSHGVLNNSRKHLTN----F--------LYQIIINSDVFIGLSVGNILTKKMLMSMSRNPIIFAL 93 
+                   69*******************************************95....3........678********************************** PP
+
+     mdh2_prot 278 anpnp 282
+                   anpnp
+  SMPARIOC_823  94 ANPNP 98 
+                   ****9 PP
+
+>> SMPARIOC_820  [31214 - 31375] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.9   0.0   1.8e-14   4.9e-11     119     149 ..       1      31 [.       1      40 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 40.9 bits;  conditional E-value: 1.8e-14
+     mdh2_prot 119 vksisptfgginledikspeafkiekelkki 149
+                   +ksisptfgg nledikspeaf+iek lk +
+  SMPARIOC_820   1 IKSISPTFGGRNLEDIKSPEAFQIEKILKWL 31 
+                   69*************************9965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (417 nodes)
+Target sequences:                       8077  (212203 residues searched)
+Passed MSV filter:                        71  (0.00879039); expected 161.5 (0.02)
+Passed bias filter:                       25  (0.00309521); expected 161.5 (0.02)
+Passed Vit filter:                         4  (0.000495233); expected 8.1 (0.001)
+Passed Fwd filter:                         4  (0.000495233); expected 0.1 (1e-05)
+Initial search space (Z):               8077  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 20889.86
+//
+[ok]

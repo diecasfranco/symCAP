@@ -1,0 +1,53 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/5s_rRNA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMCATAR1.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/5s_rRNA/SMCATAR1.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5s_rRNA2  [M=110]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    7.9e-30  100.1   1.0  SMCATAR1  86658  86762 
+
+
+Annotation for each hit  (and alignments):
+>> SMCATAR1  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  100.1   1.0   7.9e-30         2       106 ..     86658     86762 ..     86657     86765 ..    161808    0.98
+
+  Alignment:
+  score: 100.1 bits
+  5s_rRNA2     2 ggtgattctagcaacaaggatccacctctttccattccgaacagagaagttaaacttgttagcgccgatggtactagtaattctggaagagtaggtc 98   
+                 gg gatt tagcaa aagg tccacctctt ccattccgaacagagaagttaaactt ttagcgccgatggtactagt  ttctggaagagtaggtc
+  SMCATAR1 86658 GGCGATTATAGCAATAAGGTTCCACCTCTTACCATTCCGAACAGAGAAGTTAAACTTATTAGCGCCGATGGTACTAGTTTTTCTGGAAGAGTAGGTC 86754
+                 6889********************************************************************************************* PP
+
+  5s_rRNA2    99 atcgccta 106  
+                 atcgcc a
+  SMCATAR1 86755 ATCGCCCA 86762
+                 ****9965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (110 nodes)
+Target sequences:                          1  (323616 residues searched)
+Residues passing SSV filter:           11558  (0.0357); expected (0.02)
+Residues passing bias filter:           9183  (0.0284); expected (0.02)
+Residues passing Vit filter:            1289  (0.00398); expected (0.003)
+Residues passing Fwd filter:             163  (0.000504); expected (3e-05)
+Total number of hits:                      1  (0.000324)
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8416.21
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/5s_rRNA/SMCATAR1.sto
+[ok]

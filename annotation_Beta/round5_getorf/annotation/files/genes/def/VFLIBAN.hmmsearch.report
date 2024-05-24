@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/def_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFLIBAN/VFLIBAN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/def/def_VFLIBAN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       def_prot  [M=140]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    2.1e-36  123.4  18.1    2.5e-36  123.1  18.1    1.0  1  VFLIBAN_312  [13778 - 14206] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLIBAN_312  [13778 - 14206] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  123.1  18.1   3.7e-40   2.5e-36       3     131 ..      20     141 ..      17     143 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 123.1 bits;  conditional E-value: 3.7e-40
+     def_prot   3 llypnkiLkkkskkikkkknilklikklkkillnkkgiaiaaiQigirkrifilklkkkillfinpkilwkSkekiiskEgCLSiknfyikikRskyi 100
+                  +l++n++Lkkk ++i+      +++k +k++ ++++g+aia+ Qigirk++f+l++k ++++f+n++++wkS+ekii+kEgCLS++++  +++Rskyi
+  VFLIBAN_312  20 NLTCNNLLKKKDYIIFC-----NFYKIIKNTSFYTDGYAIASKQIGIRKNLFSLYYK-SFFFFKNCFYIWKSNEKIIYKEGCLSFNDIK-TKIRSKYI 110
+                  46789999999999874.....34566788999*********************885.799************************9875.678***** PP
+
+     def_prot 101 iikvenlnkkkkkiflknflsiciQHEidHl 131
+                   + +en+  +++k+f+knf+sic+QHE+dHl
+  VFLIBAN_312 111 AVFCENKYLNRSKVFVKNFTSICLQHETDHL 141
+                  ******************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (140 nodes)
+Target sequences:                       6700  (175872 residues searched)
+Passed MSV filter:                       811  (0.121045); expected 134.0 (0.02)
+Passed bias filter:                      105  (0.0156716); expected 134.0 (0.02)
+Passed Vit filter:                         8  (0.00119403); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000149254); expected 0.1 (1e-05)
+Initial search space (Z):               6700  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12860.46
+//
+[ok]

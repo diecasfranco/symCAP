@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplO_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4//annotation/files/genomes/VFMEEALB/VFMEEALB_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round4//annotation/files/genes/rplO/rplO_VFMEEALB.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplO_prot  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.6e-16   53.6  27.5    1.6e-13   43.9  10.6    2.1  2  VFMEEALB_115  [98630 - 98905]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMEEALB_115  [98630 - 98905]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.9  10.6   1.3e-15   1.6e-13       7      38 ..       2      33 ..       1      36 [. 0.91
+   2 !   16.3   8.8   4.6e-07   5.8e-05      63     111 ..      38      84 ..      33      85 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 43.9 bits;  conditional E-value: 1.3e-15
+     rplO_prot  7 riGrGnsskkGntaGrGnkGqksrsGyskkkl 38
+                  riGrGnss++Gn++GrGnkGqksrsGy   +l
+  VFMEEALB_115  2 RIGRGNSSGRGNSSGRGNKGQKSRSGYKTLFL 33
+                  9**************************87665 PP
+
+  == domain 2  score: 16.3 bits;  conditional E-value: 4.6e-07
+     rplO_prot  63 yardlkfrkkikvkikyllslfikkllifnakltkskklkieliggnvl 111
+                   +++++ f+ + k   kyl ++f+kk++++++k+ k++k+ ie +ggn++
+  VFMEEALB_115  38 KQKKILFKNNKK--NKYLKTFFKKKMFLHKKKINKKNKKYIEKMGGNIY 84 
+                   567888877654..58*******************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (112 nodes)
+Target sequences:                        125  (32561 residues searched)
+Passed MSV filter:                        84  (0.672); expected 2.5 (0.02)
+Passed bias filter:                        9  (0.072); expected 2.5 (0.02)
+Passed Vit filter:                         1  (0.008); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.008); expected 0.0 (1e-05)
+Initial search space (Z):                125  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1074.97
+//
+[ok]

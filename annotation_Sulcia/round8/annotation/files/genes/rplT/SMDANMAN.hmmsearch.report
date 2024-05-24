@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMDANMAN/SMDANMAN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rplT/rplT_SMDANMAN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplT_prot  [M=114]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.6e-53  176.7  15.8    6.1e-53  176.6  15.8    1.0  1  SMDANMAN_6425  [51781 - 51440] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMDANMAN_6425  [51781 - 51440] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  176.6  15.8   7.8e-57   6.1e-53       1     111 [.       2     112 ..       2     114 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 176.6 bits;  conditional E-value: 7.8e-57
+      rplT_prot   1 mprsvnavaskkkkkkilnyakgfygarsklytvaknaveksfkysylgrkkkkrnfrklwikrinaaarkngisysnlifllkkkniklnrkcla 96 
+                    mprsvn+va+kkk+kkil  akgfygarsklytvaknaveks+ ysy+grk+kkrnfrklwi rinaa+rk+g++ysn+i  lk++n+klnrk+++
+  SMDANMAN_6425   2 MPRSVNSVAAKKKRKKILKLAKGFYGARSKLYTVAKNAVEKSMCYSYIGRKQKKRNFRKLWIIRINAAVRKFGLNYSNFIKKLKNNNLKLNRKTIS 97 
+                    9*********************************************************************************************** PP
+
+      rplT_prot  97 dlamnnfnsfkkvnd 111
+                    +l++n++n+++ +n+
+  SMDANMAN_6425  98 NLLINEYNEYNILNN 112
+                    ********9988776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (114 nodes)
+Target sequences:                       7833  (207886 residues searched)
+Passed MSV filter:                       253  (0.0322992); expected 156.7 (0.02)
+Passed bias filter:                       92  (0.0117452); expected 156.7 (0.02)
+Passed Vit filter:                         2  (0.00025533); expected 7.8 (0.001)
+Passed Fwd filter:                         1  (0.000127665); expected 0.1 (1e-05)
+Initial search space (Z):               7833  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11189.61
+//
+[ok]

@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplO_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFMEETHA/VFMEETHA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/rplO/rplO_VFMEETHA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplO_prot  [M=114]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    3.8e-16   52.6  26.1    1.3e-13   44.5  12.8    2.1  2  VFMEETHA_114  [92515 - 92793]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMEETHA_114  [92515 - 92793]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.5  12.8   1.1e-15   1.3e-13       7      35 ..       3      31 ..       1      36 [. 0.89
+   2 !   15.9   4.4   7.9e-07   9.7e-05      67     110 ..      37      78 ..      30      83 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 44.5 bits;  conditional E-value: 1.1e-15
+     rplO_prot  7 lGRGnsskkGNtcgrGnKGqkSRSGyskk 35
+                   GRGnssk+GNtcg+GnKGqk RSGy++ 
+  VFMEETHA_114  3 KGRGNSSKRGNTCGKGNKGQKTRSGYKTL 31
+                  6*************************865 PP
+
+  == domain 2  score: 15.9 bits;  conditional E-value: 7.9e-07
+     rplO_prot  67 kfkkillkkkkkkllkklllkkklfllnlklskkakkkieflgg 110
+                    +kk+l+kk kkk ++ l+l++k+f+++ ++s  +kkkieflgg
+  VFMEETHA_114  37 FKKKKLFKK-KKKNIY-LKLNNKIFIFRNNISLIIKKKIEFLGG 78 
+                   333444444.444443.45789********************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (114 nodes)
+Target sequences:                        123  (30800 residues searched)
+Passed MSV filter:                       107  (0.869919); expected 2.5 (0.02)
+Passed bias filter:                       42  (0.341463); expected 2.5 (0.02)
+Passed Vit filter:                         9  (0.0731707); expected 0.1 (0.001)
+Passed Fwd filter:                         4  (0.0325203); expected 0.0 (1e-05)
+Initial search space (Z):                123  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 335.46
+//
+[ok]

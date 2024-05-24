@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFDICEUR/VFDICEUR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/rpmA/rpmA_VFDICEUR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmA_prot  [M=80]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    9.8e-36  115.1   0.8    1.1e-35  114.9   0.8    1.0  1  VFDICEUR_115  [102738 - 102499] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFDICEUR_115  [102738 - 102499] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  114.9   0.8   7.7e-38   1.1e-35       1      72 [.       1      72 [.       1      78 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 114.9 bits;  conditional E-value: 7.7e-38
+     rpmA_prot  1 mAkKKaagslknGRdskskrLGiKkfsgelvkkGniiirqrGtkfksglntkigkdytiyslkkGkvlfkkk 72
+                  mAkKKaags+knGRds+++rLGiK  +g++v++G ii+rqrG+kf++++nt++g+dy+iysl+ G+v+f+++
+  VFDICEUR_115  1 MAKKKAAGSVKNGRDSIGRRLGIKFGHGAYVRAGYIILRQRGAKFLTCMNTALGSDYSIYSLVAGRVYFSNH 72
+                  9********************************************************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (80 nodes)
+Target sequences:                        147  (37615 residues searched)
+Passed MSV filter:                        14  (0.0952381); expected 2.9 (0.02)
+Passed bias filter:                        6  (0.0408163); expected 2.9 (0.02)
+Passed Vit filter:                         1  (0.00680272); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00680272); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4393.11
+//
+[ok]

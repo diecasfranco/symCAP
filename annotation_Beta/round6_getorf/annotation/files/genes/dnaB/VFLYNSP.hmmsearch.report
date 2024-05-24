@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFLYNSP/VFLYNSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/dnaB/dnaB_VFLYNSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaB_prot  [M=421]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+   8.1e-141  468.6  70.7   9.1e-141  468.4  70.7    1.0  1  VFLYNSP_4419  [85384 - 84101] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLYNSP_4419  [85384 - 84101] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  468.4  70.7  1.3e-144  9.1e-141       1     420 [.       2     427 ..       2     428 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 468.4 bits;  conditional E-value: 1.3e-144
+     dnaB_prot   1 Mnkllskkiekillallllnkkllkkikkklkekdfklkknkiifkiikkllkkkkkidlilllnkikkkk..kkiklkyinsliklkikklnikky 95 
+                   Mn+l+s ++ek++l+++l+++kllk+ +++l e+ f+  knk+if iik+++ k+k+idl +l+n+i+k++  + i+ ky+++l+++++  +n+kky
+  VFLYNSP_4419   2 MNNLYSIEAEKSVLCCILKENKLLKENINVLLEDLFFDIKNKFIFGIIKDVICKHKRIDLAILVNEISKNDiyNLINSKYVTDLLDYNFIVQNFKKY 98 
+                   9******************************************************************998733579********************* PP
+
+     dnaB_prot  96 ikilkkksilrkllkilkkilkkikkk.klkikkiikkikkkikklkkk..kkkklsikkelkkilkkilkkkkkkyiktgfkklDkiilgfkpGdl 189
+                   +kil +++i+r+l+ +l+k+++k+++k k +i++ii+k++++ik++k+k  k+k+++i ke++kilk+il++kk+  +ktgfk+lD+ii+gf+pG++
+  VFLYNSP_4419  99 LKILCEYKIYRDLSDFLIKYTEKVNSKkKPSINEIIYKLENSIKNIKSKilKEKENNIDKETEKILKDILSNKKEVLFKTGFKSLDEIITGFRPGEI 195
+                   ***********************98651679***************9986678899***************************************** PP
+
+     dnaB_prot 190 iiiAGRPstGKTsfclnicenisikkkkkvlffSLEMskeqilirllssiskieskkilkkklnkkelkkikkalkkikkskiyindssnltleklk 286
+                   iiiAGRPs GKTsfc +i+e++s+kkk++++ffSLEMs++q++irl+ss++ i+sk+i++ +l+++e++kikk +k+ik++ki ind+sn+++++++
+  VFLYNSP_4419 196 IIIAGRPSAGKTSFCTSILEYNSFKKKNRSIFFSLEMSTRQLIIRLISSLTLINSKDIINRNLQDTEINKIKKFCKNIKNIKININDKSNINIYDIE 292
+                   ************************************************************************************************* PP
+
+     dnaB_prot 287 kkikkilkkkkiklviiDYlQLikikkkkenrnneiseiSrsLKkiakelkipiiviSQLNRnieqRidkkPilSDLrdSGslEQDADlilflskee 383
+                    +ik+i++k++  +v+iDY+QL+++ kk++nrn+++seiS++LK i+kel++pii+iSQ+NR+ie+R+dk+Pi+SDLr+SGslEQDAD+i+fl+ ++
+  VFLYNSP_4419 293 VYIKNIMNKNENCIVFIDYIQLVNSIKKRDNRNIDVSEISNYLKLISKELNVPIILISQMNRQIELRSDKNPIMSDLRESGSLEQDADMIIFLNFDR 389
+                   *********************************************************************************************9765 PP
+
+     dnaB_prot 384 s.yekkkekielivaKnRnGptgsikLkflkkytkFke 420
+                   +    +k++i+++vaKnRnGp+g++kL f+k ytkF++
+  VFLYNSP_4419 390 EeIGLNKSSINIFVAKNRNGPIGKTKLVFNKIYTKFTN 427
+                   51568999****************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (421 nodes)
+Target sequences:                       6789  (184226 residues searched)
+Passed MSV filter:                       414  (0.060981); expected 135.8 (0.02)
+Passed bias filter:                       49  (0.00721756); expected 135.8 (0.02)
+Passed Vit filter:                        17  (0.00250405); expected 6.8 (0.001)
+Passed Fwd filter:                         1  (0.000147297); expected 0.1 (1e-05)
+Initial search space (Z):               6789  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9147.19
+//
+[ok]

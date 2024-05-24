@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/tsf_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMMYCPAL/SMMYCPAL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/tsf/tsf_SMMYCPAL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tsf_prot  [M=268]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.6e-46  157.5  16.1      2e-46  157.2  16.1    1.1  1  SMMYCPAL_1572  [53395 - 54066] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMMYCPAL_1572  [53395 - 54066] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  157.2  16.1   2.6e-50     2e-46       8     187 ..      23     201 ..      18     217 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 157.2 bits;  conditional E-value: 2.6e-50
+       tsf_prot   8 eitklrkstnsgikdckkaliesngnlekaidwlrkkgvadatsfkktnegfvickinkkktigvllkiscetdfvtknstflklakiiannaifc 103
+                    +i+klr +t + i  c+ka+i+s+g l+ ai++l ++    +t++   +e f+ic+ nkkk  +v + i++etdfvtk + f kla+ii+++a+f 
+  SMMYCPAL_1572  23 KIKKLRSITRASIMACQKAIIKSKGRLNLAINFLINNSKPKSTKIS-LKESFIICRRNKKKNQAVAILIATETDFVTKTDSFKKLANIILEVALFG 117
+                    699*******************************998877777664.5799********************************************* PP
+
+       tsf_prot 104 kskdelllfkikknlsvkelinhhinniikeqiklisferiksefvgyyvhhsnkigsivGfykkikgieaiskeiamqivatn 187
+                    k+k+++l++ki + + +++++n+++++i ke i+l+  +++++ f+++ +hhs k++++vGf+++i+++e+isk++a+q+v + 
+  SMMYCPAL_1572 118 KNKKDILKYKISNKFPLFQIVNYFSHQIFKEYIELKQIVFLEAPFINFSIHHSCKKAALVGFSNYIPNLEQISKNLAIQLVCNT 201
+                    ********************************************************************************9875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (268 nodes)
+Target sequences:                       7891  (207504 residues searched)
+Passed MSV filter:                       190  (0.0240781); expected 157.8 (0.02)
+Passed bias filter:                       55  (0.00696997); expected 157.8 (0.02)
+Passed Vit filter:                         1  (0.000126727); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126727); expected 0.1 (1e-05)
+Initial search space (Z):               7891  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 23304.09
+//
+[ok]

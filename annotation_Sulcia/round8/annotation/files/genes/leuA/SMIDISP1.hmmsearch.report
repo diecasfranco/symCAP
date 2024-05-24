@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/leuA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMIDISP1/SMIDISP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/leuA/leuA_SMIDISP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       leuA_prot  [M=385]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   2.2e-218  723.6  18.9   2.8e-191  634.4   8.9    2.0  2  SMIDISP1_2690  [97898 - 99112] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMIDISP1_2690  [97898 - 99112] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  634.4   8.9  3.2e-195  2.8e-191       1     324 [.       7     330 ..       7     333 .. 0.99
+   2 !   95.1   2.3   2.1e-31   1.8e-27     321     381 ..     344     404 ..     336     405 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 634.4 bits;  conditional E-value: 3.2e-195
+      leuA_prot   1 mkkkrikifdttlrdgeqvpgcklntsekikiarqlellgvdiieagfpisspgdfksveeicksisepiicslsravkkdievaasalkyakkpr 96 
+                    m+ k+i ifdttlrdgeqvpgckln++eki+ia++lellgvd+ieagfpisspgdf+sv+ei+k+is++iic+l+ra+kkdie+aa+alkyak+pr
+  SMIDISP1_2690   7 MQPKKILIFDTTLRDGEQVPGCKLNEKEKIIIAKNLELLGVDVIEAGFPISSPGDFQSVKEISKNISNTIICCLTRAKKKDIEIAAQALKYAKRPR 102
+                    789********************************************************************************************* PP
+
+      leuA_prot  97 ihtgigtsqyhikykfnstkkkiidlakeavkyakkfvedvefyaedagrteniflaqiceavikagatvinipdttgyclpeeyaekikflkenv 192
+                    ihtgigts++hik+kf+st++ki+++a+e+v+yak+fved+efyaedagrten+fla++ce+vi+agatvin+pdttgyclpeey++kikfl env
+  SMIDISP1_2690 103 IHTGIGTSESHIKNKFKSTEEKILNIAYESVRYAKQFVEDIEFYAEDAGRTENLFLAKVCEKVIQAGATVINLPDTTGYCLPEEYGKKIKFLIENV 198
+                    ************************************************************************************************ PP
+
+      leuA_prot 193 nsidkvtisthchddlglstansiagiingakqiectingigeragntsleevvmilkqkkelnfytkintkllyktsklvsectgmlvqsnkaiv 288
+                     +idkvt+sthchdd+gl+tansi+gi++ga+q+ectingigeragnt+lee+vmilkqkkeln++t+intk+ly +s+lvs++tgm+v +nkai+
+  SMIDISP1_2690 199 PNIDKVTLSTHCHDDFGLATANSIEGIKKGARQVECTINGIGERAGNTPLEEIVMILKQKKELNCFTNINTKMLYPISQLVSQYTGMVVPQNKAII 294
+                    ************************************************************************************************ PP
+
+      leuA_prot 289 ganafshssgihqdglikkretyevinpkdvgvkks 324
+                    g+nafshssgihqdg+ik++etye+inp++vg+k+s
+  SMIDISP1_2690 295 GTNAFSHSSGIHQDGMIKNSETYEIINPNEVGYKNS 330
+                    **********************************98 PP
+
+  == domain 2  score: 95.1 bits;  conditional E-value: 2.1e-31
+      leuA_prot 321 vkkssiiltarsgrsalayrykklgysfkkskldliynlflkyadkkkeiydedlkkilkk 381
+                     ++ssi+ltarsgrsal yryk+lgy+fkk+kld+iy +flkyadkkkei+dedlk+i+++
+  SMIDISP1_2690 344 DNNSSIVLTARSGRSALRYRYKQLGYAFKKNKLDTIYPIFLKYADKKKEISDEDLKEIINS 404
+                    589*******************************************************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (385 nodes)
+Target sequences:                       8590  (231880 residues searched)
+Passed MSV filter:                        85  (0.00989523); expected 171.8 (0.02)
+Passed bias filter:                       31  (0.00360885); expected 171.8 (0.02)
+Passed Vit filter:                         3  (0.000349243); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116414); expected 0.1 (1e-05)
+Initial search space (Z):               8590  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 20625.15
+//
+[ok]

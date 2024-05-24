@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxAA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMPSPU/SMPSPU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/xxxAA/xxxAA_SMPSPU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxAA_prot  [M=301]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+      1e-19   70.8  12.0    1.1e-19   70.7  12.0    1.0  1  SMPSPU_9916  [201469 - 201134] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPSPU_9916  [201469 - 201134] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.7  12.0   7.3e-24   1.1e-19       5     112 ..       7     111 ..       3     112 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 70.7 bits;  conditional E-value: 7.3e-24
+   xxxAA_prot   5 eyknckdstktvdyksfdktGnnvyslisllskrsetifcyiksklkkkiklcppepkhleevvlyeakikiskifekiskptslairefldkklyyi 102
+                  +ykn   st ++d k+ ++tGnn+y l+ +l+kr+  i  ++k  l  ki +   e+ ++e+++l + +ikisk++e ++kpts++i efld  l   
+  SMPSPU_9916   7 KYKNSDLSTYSIDLKKIENTGNNIYDLVQILAKRAYQINYFMKESLYSKIGIFGQEKDKFEKIILNDLRIKISKKYEIMTKPTSISIIEFLDYLLS-- 102
+                  5*******************************************************************************************7664.. PP
+
+   xxxAA_prot 103 fkkqlkktik 112
+                  fkk +kk +k
+  SMPSPU_9916 103 FKK-IKKKLK 111
+                  444.455444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (301 nodes)
+Target sequences:                      15564  (407989 residues searched)
+Passed MSV filter:                       682  (0.0438191); expected 311.3 (0.02)
+Passed bias filter:                      160  (0.0102801); expected 311.3 (0.02)
+Passed Vit filter:                        10  (0.000642508); expected 15.6 (0.001)
+Passed Fwd filter:                         1  (6.42508e-05); expected 0.2 (1e-05)
+Initial search space (Z):              15564  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 23122.96
+//
+[ok]

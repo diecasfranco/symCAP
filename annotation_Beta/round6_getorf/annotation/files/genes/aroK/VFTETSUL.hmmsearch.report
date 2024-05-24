@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/aroK_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFTETSUL/VFTETSUL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/aroK/aroK_VFTETSUL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aroK_prot  [M=138]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    7.5e-31  105.9  29.0    7.5e-31  105.9  29.0    1.8  2  VFTETSUL_2380  [101056 - 101622] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETSUL_2380  [101056 - 101622] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   1.9      0.31   1.7e+03      90      90 ..      25      25 ..       1      51 [. 0.44
+   2 !  105.9  29.0   1.4e-34   7.5e-31       2     136 ..      51     188 ..      50     189 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 0.31
+      aroK_prot 90 k 90
+                   +
+  VFTETSUL_2380 25 N 25
+                   1 PP
+
+  == domain 2  score: 105.9 bits;  conditional E-value: 1.4e-34
+      aroK_prot   2 kliGlpgsGKttigniiskflkkkfiDsDlliekiynikiekl.lkkkneilFRkiEkniinlllkkkkiislGGGfilnklnllriikkk.sili 95 
+                    +l+G+p sGKtt++n+ ++++ +kfiD+D++++ki++i+i+k+ l+kknei+FR iEkn ++++++ + ++s+GGG+++n++++ +i+ ++ si+i
+  VFTETSUL_2380  51 NLLGFPFSGKTTFCNFTKFIVINKFIDTDKYLQKIFLININKYiLYKKNEIFFRLIEKNSVFFNFYCYLFFSYGGGSFINFICFENILIYFvSIFI 146
+                    699*************************************9973589***************************************988873799* PP
+
+      aroK_prot  96 krnlli.klkkrpiikikslkkiineRkkiykflsllkikne 136
+                    k+n+l+  +++r i+ ++sl++i+ eR++ ++fl ++++ n+
+  VFTETSUL_2380 147 KKNILVdIFSNRVILVNNSLTNIFIERNFRISFLFSYYFLNY 188
+                    *998762689*****************************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (138 nodes)
+Target sequences:                       5341  (149480 residues searched)
+Passed MSV filter:                       703  (0.131623); expected 106.8 (0.02)
+Passed bias filter:                       64  (0.0119828); expected 106.8 (0.02)
+Passed Vit filter:                        13  (0.002434); expected 5.3 (0.001)
+Passed Fwd filter:                         1  (0.000187231); expected 0.1 (1e-05)
+Initial search space (Z):               5341  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6132.48
+//
+[ok]

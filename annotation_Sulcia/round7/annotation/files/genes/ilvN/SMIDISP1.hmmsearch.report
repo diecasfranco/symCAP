@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/ilvN_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMIDISP1/SMIDISP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/ilvN/ilvN_SMIDISP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ilvN_prot  [M=85]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    4.7e-12   45.1  14.6    4.7e-12   45.1  14.6    1.8  2  SMIDISP1_4332  [155796 - 155512] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMIDISP1_4332  [155796 - 155512] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.5   1.3     0.023     2e+02      30      46 ..       1      17 [.       1      21 [. 0.73
+   2 !   45.1  14.6   5.5e-16   4.7e-12       1      80 [.      13      92 ..      13      95 .] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 1.5 bits;  conditional E-value: 0.023
+      ilvN_prot 30 lkiknfsllekklytny 46
+                   + ikn++l+++k+  + 
+  SMIDISP1_4332  1 ISIKNLFLKKNKMKRKI 17
+                   67999999999987764 PP
+
+  == domain 2  score: 45.1 bits;  conditional E-value: 5.5e-16
+      ilvN_prot  1 mkkklhiiiisDn.....iivlliriilifnrrnlk.iknfsllekklytnylyiikieiklfkvlkiekiikqikkiiGinklfl 80
+                   mk+k++++i+s+n     + ++++ri+++fn+ nl+ iknf ++ +   +++l+i++ie +   v+k+ k+i++++k+iGi  ++ 
+  SMIDISP1_4332 13 MKRKIILYIVSENscnknNKTFNQRILNMFNTINLEiIKNFCFKTD---QKALCILEIEWV---VNKLLKLIVRLFKTIGIYAIYY 92
+                   9**********8633332689**************9459****776...689*****9965...6788899**********99874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (85 nodes)
+Target sequences:                       8590  (231880 residues searched)
+Passed MSV filter:                       783  (0.0911525); expected 171.8 (0.02)
+Passed bias filter:                       93  (0.0108265); expected 171.8 (0.02)
+Passed Vit filter:                         1  (0.000116414); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116414); expected 0.1 (1e-05)
+Initial search space (Z):               8590  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7104.68
+//
+[ok]

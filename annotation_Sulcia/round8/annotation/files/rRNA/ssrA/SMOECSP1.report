@@ -1,0 +1,63 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMOECSP1.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMOECSP1.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+      4e-30  101.1  35.2  SMOECSP1  21740  21433 
+
+
+Annotation for each hit  (and alignments):
+>> SMOECSP1  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  101.1  35.2     4e-30         1       342 [.     21740     21433 ..     21740     21432 ..    146587    0.73
+
+  Alignment:
+  score: 101.1 bits
+      ssrA     1 ggggctggattggaattgacaacaagattaatat.ataagtaagcatatcgtgaaaagtaatgtaatcacgtaaata.tcattacaaatgataaccg 95   
+                 ggggctg  ttgg  ttgaca caag   aatat ataag  agcatatcgtgaaa gtaatgtaatcacgtaaa a tcattacaaa  ataa  g
+  SMOECSP1 21740 GGGGCTGATTTGGTTTTGACATCAAGT-AAATATaATAAGATAGCATATCGTGAAATGTAATGTAATCACGTAAAAAgTCATTACAAAATATAAATG 21645
+                 79**********************995.55666526899*********************************9765439****************** PP
+
+      ssrA    96 gcaaaaaaaattatgctcttgcggcttgatcaataactttgaattcgaatgcaag.....atttttttattaaaaataaatttaatttgaaagattg 187  
+                 gcaaa   a tta  ctcttgc gctt a      a ttt  a  c aat ca       attt ttta taa   ta a t aat           
+  SMOECSP1 21644 GCAAA---ACTTACTCTCTTGCAGCTTAAG-----ATTTT--AAGCTAATCCACTaatctATTTATTTACTAACCTTACAGTAAAT----------- 21569
+                 **875...6799999**********98662.....22222..22334455544331111145555555666655555555444333........... PP
+
+      ssrA   188 aggttctaaatctt.tctttaattgtttagaactttcttataagaaagagtttcttatcactaatcttatgtgaaatttgctctttgataagataaa 283  
+                        aaat  t t  t aa tgt  ag  c ttct at     ag     cttat actaa  tta   g aa tt c   tt ataag taaa
+  SMOECSP1 21568 -------AAATAGTaTAATAAAATGT-AAGGTCCTTCTAATTTT--AGG---GCTTATAACTAAAATTA---G-AACTTAC---TTTATAAGCTAAA 21492
+                 .......2222111022233334443.33333444443322221..222...37889999999877765...3.4455544...45699******** PP
+
+      ssrA   284 tatgtagaaaacttataatattacttgtttggacacgggttcgaatcccgtcagctcca 342  
+                 tatgtagaaa cttat atatt cttgtttggacacgggttcga tcccgtcagctcca
+  SMOECSP1 21491 TATGTAGAAATCTTATTATATTGCTTGTTTGGACACGGGTTCGATTCCCGTCAGCTCCA 21433
+                 *********************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (293174 residues searched)
+Residues passing SSV filter:          233112  (0.795); expected (0.02)
+Residues passing bias filter:          46707  (0.159); expected (0.02)
+Residues passing Vit filter:            1884  (0.00643); expected (0.003)
+Residues passing Fwd filter:            1092  (0.00372); expected (3e-05)
+Total number of hits:                      1  (0.00105)
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 2962.53
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMOECSP1.sto
+[ok]

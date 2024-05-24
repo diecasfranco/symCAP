@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmI_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_pyro//annotation/files/genomes/VFMYCCUN/VFMYCCUN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_pyro//annotation/files/genes/rpmI/rpmI_VFMYCCUN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmI_prot  [M=55]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.9e-21   69.2  30.7      2e-21   69.1  30.7    1.0  1  VFMYCCUN_71  [67120 - 66956] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMYCCUN_71  [67120 - 66956] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.1  30.7   1.4e-23     2e-21       3      54 ..       2      53 ..       1      54 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 69.1 bits;  conditional E-value: 1.4e-23
+    rpmI_prot  3 klKtnKSfkKRiiktKnfiKlkhnyknHlLtkKskkrKRrlkkyiyvkskkl 54
+                  lK+nKSf+KR+ ktKnf+Kl++n+knH+LtkK+kkrKR+lkk+iyvksk+ 
+  VFMYCCUN_71  2 SLKNNKSFYKRTKKTKNFLKLCRNFKNHILTKKNKKRKRKLKKKIYVKSKNK 53
+                 68***********************************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (55 nodes)
+Target sequences:                        138  (36983 residues searched)
+Passed MSV filter:                       109  (0.789855); expected 2.8 (0.02)
+Passed bias filter:                        3  (0.0217391); expected 2.8 (0.02)
+Passed Vit filter:                         2  (0.0144928); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00724638); expected 0.0 (1e-05)
+Initial search space (Z):                138  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1713.13
+//
+[ok]

@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/infB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round11//annotation/files/genomes/VFMALBOS/VFMALBOS_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round11//annotation/files/genes/infB/infB_VFMALBOS.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       infB_prot  [M=450]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.7e-14   44.4  12.1      1e-12   39.6   2.5    3.2  2  VFMALBOS_1  [1 - 1182]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMALBOS_1  [1 - 1182]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.6   2.5   1.5e-14     1e-12       9     146 ..      14     178 ..       1     200 [. 0.66
+   2 !    6.7   0.6   0.00014    0.0096     364     436 ..     210     282 ..     180     298 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 39.6 bits;  conditional E-value: 1.5e-14
+   infB_prot   9 isiiGeVdnGKTtlikklt....nk.k........i.....kekknITqkirl..yklkkkkfiiIDtPGHelFnki.kkkiikiSDiiilvlskteki 86 
+                 ++ iG+Vd+GKTtl++ +t    ++ k        i     +++ +IT ++    y+ k+ ++  ID PGH+++ k+ +    ++ D  ilv s+ + +
+  VFMALBOS_1  14 VGTIGHVDHGKTTLTSAIThilsKQsKctlmnyedIdflpeEKERGITINTTHveYETKNRHYAHIDCPGHSDYVKNmITGAAQM-DGAILVCSAIDGV 111
+                 899***********98776222221212222222232233112357***9987234556778999*******9854303334444.899*********9 PP
+
+   infB_prot  87 nkntikilkyilkk.kkkvifviNKiDliknkkek....ikikkklkklnig..ekkifkiSakkki 146
+                   +t++ +    +    k+i+ iNK+Dl+++ + +    +++++ l+k++++  ++ i+k Sak  i
+  VFMALBOS_1 112 MPQTQEHILLARQVgVPKIIVFINKCDLVDDEELIelveLEVRELLEKYDFNgnDTPIIKGSAKLAI 178
+                 9998887766555414578899*******99886433236788999999996224557888887665 PP
+
+  == domain 2  score: 6.7 bits;  conditional E-value: 0.00014
+   infB_prot 364 ikskikilkiFkikkk.kilGckllkGklkindkvilyrkkkiikkikIksikikkkkvkkvkkneefGillkn 436
+                 + + + i+ +F+i    +++  k+ kG +ki+++++++   k +k++ I  + + +k+ ++ +++ + Gill  
+  VFMALBOS_1 210 KPFLMPIEDVFSISGRgTVVTGKVEKGIIKIGEELEIIGFGKRMKTVCI-GLEMFNKELDFAQSGDNVGILLRG 282
+                 4444568999998754267777***********************9998.59999***************9963 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (450 nodes)
+Target sequences:                         69  (15200 residues searched)
+Passed MSV filter:                        39  (0.565217); expected 1.4 (0.02)
+Passed bias filter:                        3  (0.0434783); expected 1.4 (0.02)
+Passed Vit filter:                         2  (0.0289855); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.0144928); expected 0.0 (1e-05)
+Initial search space (Z):                 69  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 466.67
+//
+[ok]

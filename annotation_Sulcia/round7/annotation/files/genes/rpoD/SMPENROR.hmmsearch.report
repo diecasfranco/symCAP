@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpoD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMPENROR/SMPENROR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rpoD/rpoD_SMPENROR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpoD_prot  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   3.8e-140  465.4  17.7   4.6e-140  465.1  17.7    1.0  1  SMPENROR_5264  [125036 - 124095] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPENROR_5264  [125036 - 124095] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  465.1  17.7  5.3e-144  4.6e-140       8     299 ..      14     310 ..       7     311 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 465.1 bits;  conditional E-value: 5.3e-144
+      rpoD_prot   8 knlkkqiieiseseslekyleeigkipllsqeeelelaklarkelkekkl....kklstaleqlikanlrfvvsvakqyqnqGlslsdlineGnlG 99 
+                    k  +k++ ++ + e+lekyl eig+i+lls++ee++la+++r+ ++ek      k ++++++ lik+nlrfvvs+ak yqnqGls+sdlineGnlG
+  SMPENROR_5264  14 KIQNKKLYQNLDEETLEKYLDEIGTIQLLSNKEEIILARKIRRGYHEKATpyekKIAKKCIDLLIKSNLRFVVSIAKTYQNQGLSFSDLINEGNLG 109
+                    3345778889999******************************99888542222557899************************************ PP
+
+      rpoD_prot 100 likGisrfderkGfkcisycvwwirqailqaiadkarcircptnklafynkvvktyskleqklkmqptvkdiseylnssekeveealknsikktsl 195
+                    likGi+rfderkG+kcisycvwwirq+ilqai++++r+ircptnk+afynkv+k + kleqklk++pt+k+ise+l+++ekev+ea+ ns+k++sl
+  SMPENROR_5264 110 LIKGICRFDERKGYKCISYCVWWIRQSILQAISEQSRVIRCPTNKIAFYNKVKKLILKLEQKLKRKPTIKEISETLKCTEKEVDEAILNSYKIPSL 205
+                    ************************************************************************************************ PP
+
+      rpoD_prot 196 daplleGedt.nlydvlkseespeadfklekeslkkdikrlletlsekesqvislhyGlgckpmtlekvalllkltrercrqieihgikrlrkssr 290
+                    dapl+eGe+t nly+vlk+e++++a+++le+ slk++i+++l+tl+++e q+i+lh+G+gc+p++le++a++lkltrercrqieih++krlr++s+
+  SMPENROR_5264 206 DAPLSEGEETvNLYEVLKNENCENAEENLEFSSLKEEIQSVLKTLPDREYQIIKLHFGIGCYPHSLEEIAKILKLTRERCRQIEIHTLKRLRHTSK 301
+                    *******9987************************************************************************************* PP
+
+      rpoD_prot 291 kkllrsylc 299
+                    +++l+++l+
+  SMPENROR_5264 302 IRKLIYFLY 310
+                    *******98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (300 nodes)
+Target sequences:                       8749  (235816 residues searched)
+Passed MSV filter:                        78  (0.0089153); expected 175.0 (0.02)
+Passed bias filter:                       31  (0.00354326); expected 175.0 (0.02)
+Passed Vit filter:                         2  (0.000228598); expected 8.7 (0.001)
+Passed Fwd filter:                         1  (0.000114299); expected 0.1 (1e-05)
+Initial search space (Z):               8749  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 26048.31
+//
+[ok]

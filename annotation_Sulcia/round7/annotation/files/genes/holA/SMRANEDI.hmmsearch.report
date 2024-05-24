@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/holA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMRANEDI/SMRANEDI_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/holA/holA_SMRANEDI.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       holA_prot  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.1e-14   53.5  30.0    1.9e-11   42.8   9.8    2.3  2  SMRANEDI_3847  [141168 - 141575] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMRANEDI_3847  [141168 - 141575] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.6  16.1   2.2e-07    0.0018     170     258 ..       9      88 ..       1      90 [. 0.69
+   2 !   42.8   9.8   2.4e-15   1.9e-11     269     319 .]      80     128 ..      79     128 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 2.2e-07
+      holA_prot 170 likflgenlysinneikkllilleknkiidekiikkyvlkttfkvesyiiekeflkalkaiknvpisliLkkiyklflkiikfhllile 258
+                    +ik   +n+   nn+ +k   + +     ++k+  ky  k+++k + +  +ke + +l+++++ p++liLkkiykl+l+++  + +++e
+  SMRANEDI_3847   9 IIKTHTQNY---NNNKNKTKEKYKS----QDKYKEKY--KSKYKEKDKYPHKECKIILNMLEVQPLTLILKKIYKLYLEKFLNYKNKEE 88 
+                    555555553...5555554433333....33444444..5556666677899****************************999988876 PP
+
+  == domain 2  score: 42.8 bits;  conditional E-value: 2.4e-15
+      holA_prot 269 ilnfttlkkyplnkianiislireadikikninslkkeeileeLlykifyn 319
+                     ln++  k  ++nkian+++ ++ead+k+k+ ++lkkeei++eL+yki+++
+  SMRANEDI_3847  80 FLNYKN-KEEKFNKIANLVFILKEADKKNKS-YFLKKEEIMKELIYKICQI 128
+                    567764.7889*******************8.89***************85 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       8037  (216525 residues searched)
+Passed MSV filter:                       546  (0.0679358); expected 160.7 (0.02)
+Passed bias filter:                       68  (0.00846087); expected 160.7 (0.02)
+Passed Vit filter:                         8  (0.000995396); expected 8.0 (0.001)
+Passed Fwd filter:                         2  (0.000248849); expected 0.1 (1e-05)
+Initial search space (Z):               8037  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 15162.69
+//
+[ok]

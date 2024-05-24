@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMSYM/SMSYM_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rplT/rplT_SMSYM.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplT_prot  [M=114]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.8e-52  173.7  15.5    5.3e-52  173.6  15.5    1.0  1  SMSYMSP_6481  [53866 - 53510] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMSYMSP_6481  [53866 - 53510] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  173.6  15.5   6.7e-56   5.3e-52       1     111 [.       8     118 ..       8     119 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 173.6 bits;  conditional E-value: 6.7e-56
+     rplT_prot   1 mprsvnavaskkkkkkilnyakgfygarsklytvaknaveksfkysylgrkkkkrnfrklwikrinaaarkngisysnlifllkkkniklnrkclad 97 
+                   mprsvn+va+kkk+kkil  akgfygarsklytvaknaveks+ ysy+grk+kkrnfrklwi rin+a+rk+g++ysn+i  lk++n+klnrk++++
+  SMSYMSP_6481   8 MPRSVNSVAAKKKRKKILKLAKGFYGARSKLYTVAKNAVEKSMCYSYIGRKQKKRNFRKLWIIRINTAVRKFGLNYSNFIKKLKNNNLKLNRKTISN 104
+                   9************************************************************************************************ PP
+
+     rplT_prot  98 lamnnfnsfkkvnd 111
+                   l++n++n ++k++d
+  SMSYMSP_6481 105 LIINEYNILNKLKD 118
+                   ******99888765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (114 nodes)
+Target sequences:                       7937  (210533 residues searched)
+Passed MSV filter:                       255  (0.032128); expected 158.7 (0.02)
+Passed bias filter:                       78  (0.00982739); expected 158.7 (0.02)
+Passed Vit filter:                         3  (0.000377977); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000125992); expected 0.1 (1e-05)
+Initial search space (Z):               7937  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 5825.26
+//
+[ok]

@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpoA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMIDISP1/SMIDISP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/rpoA/rpoA_SMIDISP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SMOLIH_rpoA  [M=370]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+     1e-180  599.3  39.5   1.6e-119  398.2  13.0    2.9  3  SMIDISP1_3808  [141806 - 143053] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMIDISP1_3808  [141806 - 143053] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  398.2  13.0  1.8e-123  1.6e-119       2     248 ..      11     258 ..      10     267 .. 0.93
+   2 !  207.6  16.0   1.6e-65   1.4e-61     233     366 ..     267     400 ..     262     404 .. 0.97
+   3 !    9.5   0.7   2.9e-05      0.25     346     370 .]     392     416 .]     392     416 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 398.2 bits;  conditional E-value: 1.8e-123
+    SMOLIH_rpoA   2 iispaqikvlknsnnigkflikplspgfgitignalrrvlisylegyaiyyimingikhefsyvdgvieniteiilnlkkirfklkskrvgsnnip 97 
+                    +ispa ik+l +s   gkflikpls gfgit+gn+lrrvlis legyaiyyimi+g+ he+sy+dgvieniteiilnlk+irfklksk    n ip
+  SMIDISP1_3808  11 MISPANIKILNHSKKRGKFLIKPLSHGFGITLGNSLRRVLISSLEGYAIYYIMIHGVTHELSYIDGVIENITEIILNLKQIRFKLKSKI--YNQIP 104
+                    79*************************************************************************************97..599** PP
+
+    SMOLIH_rpoA  98 khytiflktkkeqitagdlcgsltyfevlnpkllilkkeldtnlnitigikkgvgyvpve......knkyfqkkrgkipidtifspiinvrfkvet 187
+                    khytiflk k eqitagdlcgs+tyfevlnp llil keldtnlnitigikkgvgyvpve       nk f+ krgkipidtifspiinvrfkvet
+  SMIDISP1_3808 105 KHYTIFLKQKTEQITAGDLCGSITYFEVLNPNLLILNKELDTNLNITIGIKKGVGYVPVEteieteTNKSFKNKRGKIPIDTIFSPIINVRFKVET 200
+                    **********************************************************9633333369**************************** PP
+
+    SMOLIH_rpoA 188 cevhnsyeydslileiltdgsitpqnafkkassiliqhftlffngknngktketnsldske 248
+                    cevhnsy ydsli+ei tdgsitp+na+kkassiliqh+tlffngk   k +      +ke
+  SMIDISP1_3808 201 CEVHNSYSYDSLIIEISTDGSITPKNALKKASSILIQHLTLFFNGKKKEKEQNI---KNKE 258
+                    *********************************************985544332...2222 PP
+
+  == domain 2  score: 207.6 bits;  conditional E-value: 1.6e-65
+    SMOLIH_rpoA 233 knngktketnsldskeriqvlymqkvlnsklsenvndlsvrtlnclkfakirtwadlvkfktsdllkvrnfgmksfdelnkkmkklglsygmdlsk 328
+                    kn+ + k+t+sld keri+vlymqk+lnsklse+  dlsvrtlnclkfaki+twadlvkf  sdllkv nfgmksfdelnkk+kklgl ygmdlsk
+  SMIDISP1_3808 267 KNSFQKKDTDSLDYKERIKVLYMQKLLNSKLSEHGTDLSVRTLNCLKFAKIKTWADLVKFNKSDLLKVINFGMKSFDELNKKIKKLGLYYGMDLSK 362
+                    888999****************************************************************************************** PP
+
+    SMOLIH_rpoA 329 ykikiynkkqriinfrekmrqivklrnilklrkmmkkn 366
+                    ykikiynkk+riinfre+mrqivklrnilklr +mk  
+  SMIDISP1_3808 363 YKIKIYNKKKRIINFREQMRQIVKLRNILKLRNIMKLR 400
+                    ***********************************965 PP
+
+  == domain 3  score: 9.5 bits;  conditional E-value: 2.9e-05
+    SMOLIH_rpoA 346 kmrqivklrnilklrkmmkkndtqk 370
+                    k+r i+klrn++k rkm  +n+tqk
+  SMIDISP1_3808 392 KLRNIMKLRNFIKRRKMTHQNETQK 416
+                    79*********************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (370 nodes)
+Target sequences:                       8590  (231880 residues searched)
+Passed MSV filter:                       124  (0.0144354); expected 171.8 (0.02)
+Passed bias filter:                       32  (0.00372526); expected 171.8 (0.02)
+Passed Vit filter:                         3  (0.000349243); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116414); expected 0.1 (1e-05)
+Initial search space (Z):               8590  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6043.66
+//
+[ok]

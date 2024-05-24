@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpoS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFBEB/VFBEB_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/rpoS/rpoS_VFBEB.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFMALBOS_rpoS  [M=302]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    8.7e-13   46.7   7.3    1.4e-07   29.6   0.5    2.4  2  VFBEB_801  [29262 - 30623] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBEB_801  [29262 - 30623] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.6   0.5   2.5e-11   1.4e-07     103     167 ..     219     283 ..     199     318 .. 0.81
+   2 !   20.0   1.3   2.2e-08   0.00012     238     292 ..     385     439 ..     361     447 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 29.6 bits;  conditional E-value: 2.5e-11
+  VFMALBOS_rpoS 103 kdrmikeseyiifwvikmfrirreeikeliqegvlgiyrafyrfnneigcrfttycsywvkqyml 167
+                    k  ++  +  ++  + k + +r  ++ +liqeg  g+ +++y+f+ + g +f+ty+++w+kq + 
+      VFBEB_801 219 KKTILNSNLRLVSSLSKRYPFRDLQLSDLIQEGCNGLVKSIYKFDYKKGYKFSTYATWWIKQSVT 283
+                    555566666677788899999****************************************9764 PP
+
+  == domain 2  score: 20.0 bits;  conditional E-value: 2.2e-08
+  VFMALBOS_rpoS 238 kwikeldrrerlilierlkirknkkltlfelgrmlglskervrqienkgimiisn 292
+                    k  k ld +e+ il  r+ ++  kk tl  +g +++l++er+rq+e+k +  i n
+      VFBEB_801 385 KVSKSLDSKEKAILEYRFGLNGRKKQTLETIGAFFNLTRERIRQLESKILNRIKN 439
+                    66799*******************************************8876666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (302 nodes)
+Target sequences:                       5537  (153442 residues searched)
+Passed MSV filter:                       108  (0.0195051); expected 110.7 (0.02)
+Passed bias filter:                       36  (0.00650172); expected 110.7 (0.02)
+Passed Vit filter:                         1  (0.000180603); expected 5.5 (0.001)
+Passed Fwd filter:                         1  (0.000180603); expected 0.1 (1e-05)
+Initial search space (Z):               5537  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 20838.65
+//
+[ok]

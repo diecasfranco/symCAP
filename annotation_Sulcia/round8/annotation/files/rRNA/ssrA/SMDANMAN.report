@@ -1,0 +1,66 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMDANMAN.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMDANMAN.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    3.5e-14   48.8   3.4  SMDANMAN  20293  20225 
+    1.7e-13   46.6  16.3  SMDANMAN  20498  20375 
+
+
+Annotation for each hit  (and alignments):
+>> SMDANMAN  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   48.8   3.4   3.5e-14       274       342 ..     20293     20225 ..     20311     20224 ..    142465    0.91
+
+  Alignment:
+  score: 48.8 bits
+      ssrA   274 ataagataaatatgtagaaaacttataatattacttgtttggacacgggttcgaatcccgtcagctcca 342  
+                   aag taaatatgtagaaa cttat atatt cttgtttggacacgggttcga tcccgtcagctcca
+  SMDANMAN 20293 TGAAGCTAAATATGTAGAAATCTTATTATATTGCTTGTTTGGACACGGGTTCGATTCCCGTCAGCTCCA 20225
+                 458999*************************************************************97 PP
+
+>> SMDANMAN  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   46.6  16.3   1.7e-13         1       123 [.     20498     20375 ..     20498     20354 ..    142465    0.85
+
+  Alignment:
+  score: 46.6 bits
+      ssrA     1 ggggctggattggaattgacaacaagattaatat.ataagtaagcatatcgtgaaaagtaatgtaatcacgtaaata...tcattacaaatga.taa 92   
+                 ggggctg  ttgg  ttgaca caag   aatat ataag  agcatatcgtgaaa gtaatgtaatcacgtaaa a   tcattacaaa  a taa
+  SMDANMAN 20498 GGGGCTGATTTGGTTTTGACATCAAGT-AAATATaATAAGATAGCATATCGTGAAATGTAATGTAATCACGTAAAAAaatTCATTACAAAAAAcTAA 20403
+                 79**********************994.55666526899*********************************976543449******9875442778 PP
+
+      ssrA    93 ccggcaaaaaaaattatgctcttgcggcttg 123  
+                   ggcaaa   aatta  ctcttgc gctt 
+  SMDANMAN 20402 ATGGCAAA---AATTACTCTCTTGCAGCTTA 20375
+                 89999865...6799999**********974 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (284930 residues searched)
+Residues passing SSV filter:          264132  (0.927); expected (0.02)
+Residues passing bias filter:         150277  (0.527); expected (0.02)
+Residues passing Vit filter:            4930  (0.0173); expected (0.003)
+Residues passing Fwd filter:            1106  (0.00388); expected (3e-05)
+Total number of hits:                      2  (0.000677)
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 1918.57
+//
+# Alignment of 2 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMDANMAN.sto
+[ok]

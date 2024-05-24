@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMZOPTEN/SMZOPTEN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/xxxT/xxxT_SMZOPTEN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxT_prot  [M=121]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      1e-19   69.7  16.0    1.4e-11   43.4   3.5    2.0  2  SMZOPTEN_7044  [28947 - 28738] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMZOPTEN_7044  [28947 - 28738] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.4   3.5   1.7e-15   1.4e-11       1      29 [.       2      31 ..       2      33 .. 0.90
+   2 !   34.7   5.0   8.8e-13   6.9e-09      58      93 ..      28      60 ..      27      70 .] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 43.4 bits;  conditional E-value: 1.7e-15
+      xxxT_prot  1 mslkitekcincgaceaecpnkaiye.gsk 29
+                   m++kit++cincgace ecpn+aiye gsk
+  SMZOPTEN_7044  2 MAFKITNECINCGACELECPNNAIYEdGSK 31
+                   899**********************94555 PP
+
+  == domain 2  score: 34.7 bits;  conditional E-value: 8.8e-13
+      xxxT_prot 58 epkkydyyfivpekcteclgffdepqcasvcpvdcc 93
+                   +  k + yf+vpekctec    ++pqc +vcpv+c 
+  SMZOPTEN_7044 28 DGSKENRYFLVPEKCTECS---KNPQCVAVCPVNCI 60
+                   5679999***********6...79**********95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (121 nodes)
+Target sequences:                       7883  (207887 residues searched)
+Passed MSV filter:                        82  (0.0104021); expected 157.7 (0.02)
+Passed bias filter:                       57  (0.00723075); expected 157.7 (0.02)
+Passed Vit filter:                         5  (0.000634276); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126855); expected 0.1 (1e-05)
+Initial search space (Z):               7883  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8064.17
+//
+[ok]

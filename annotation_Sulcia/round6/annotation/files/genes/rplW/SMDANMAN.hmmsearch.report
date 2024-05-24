@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplW_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMDANMAN/SMDANMAN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/rplW/rplW_SMDANMAN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplW_prot  [M=175]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.1e-18   66.8  22.8    1.1e-18   66.8  22.8    2.0  2  SMDANMAN_3260  [118802 - 119149] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMDANMAN_3260  [118802 - 119149] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.6   4.7     0.014   1.1e+02      39      68 ..       9      38 ..       1      41 [. 0.78
+   2 !   66.8  22.8   1.4e-22   1.1e-18       6      80 ..      36     111 ..      32     115 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 1.6 bits;  conditional E-value: 0.014
+      rplW_prot 39 yninfkniktmiyckrtlkkrkkgvlfkkv 68
+                    +in+k +  + y+k++l k++k ++ +k 
+  SMDANMAN_3260  9 EKINLKSLFYKEYIKKNLSKKIKPIITEKA 38
+                   379999999999******999998877766 PP
+
+  == domain 2  score: 66.8 bits;  conditional E-value: 1.4e-22
+      rplW_prot   6 kkkfsnkkldpfltfkvPlfynkkeikkliykiyninfkniktmiyckrtlkkrkkgvlfkkvilklkkdy.klki 80 
+                    +k ++    ++++tf +P+ +nkkei k+++++y+i +++++t+iy+k++ +kr+++++f +++ k+kk++ k+k 
+  SMDANMAN_3260  36 EKAIFTNISNNYYTFIFPISFNKKEIYKYLQRVYRIKITKLHTNIYYKKKSNKRILKKTFSGKKIKFKKAFfKVKD 111
+                    577888889************************************************************9636665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (175 nodes)
+Target sequences:                       7833  (207886 residues searched)
+Passed MSV filter:                       707  (0.0902592); expected 156.7 (0.02)
+Passed bias filter:                       89  (0.0113622); expected 156.7 (0.02)
+Passed Vit filter:                         5  (0.000638325); expected 7.8 (0.001)
+Passed Fwd filter:                         1  (0.000127665); expected 0.1 (1e-05)
+Initial search space (Z):               7833  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6522.31
+//
+[ok]

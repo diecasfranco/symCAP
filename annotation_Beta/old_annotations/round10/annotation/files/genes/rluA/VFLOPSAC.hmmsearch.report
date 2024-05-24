@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round10/annotation/files/genomes/VFLOPSAC/VFLOPSAC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round10/annotation/files/genes/rluA/rluA_VFLOPSAC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluA_prot  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.1e-15   50.8  72.8    1.1e-15   50.8  72.8    2.0  2  VFLOPSAC_36  [34608 - 35357]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLOPSAC_36  [34608 - 35357]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.5   5.5       0.3        42      25      42 ..       3      21 ..       1      29 [. 0.44
+   2 !   50.8  72.8   7.5e-18   1.1e-15       5     222 ..      30     246 ..      25     249 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -3.5 bits;  conditional E-value: 0.3
+    rluA_prot 25 kenniillrKkkaell.yk 42
+                 k nn+ +++K+k+  + yk
+  VFLOPSAC_36  3 KYNNFFIFKKIKKIFIkYK 21
+                 4455555555443222132 PP
+
+  == domain 2  score: 50.8 bits;  conditional E-value: 7.5e-18
+    rluA_prot   5 YirkkiffinkeagllkiIkkenniillrKkkaellykisykekkkdflslitktnlinkki...krfgilnrlDyetlGiiiiaitayyykslikky 99 
+                  +i+kki++i+k+ ++++ I  ++n+ +++Kkk +l+y+ + k+  k+ ls  + +n++++ki   +++gi+ rlD++t+G+iii+ ++  y+  +k++
+  VFLOPSAC_36  30 FIKKKIVYIKKSKKIINYIIIKKNYLIIDKKKNYLVYNHTLKNI-KNILS--CVYNFLGEKIfdtYKCGIVQRLDFNTSGLIIISRNNISYNLFKKLF 124
+                  79***************88888888999**********998865.57777..679******87778******************************** PP
+
+    rluA_prot 100 klkkiKkkYiaivkcylksn.....gllkkklNkYhtkhskkksivtlfikfiikekkrsisllvCkiskgktHqirvslkiksiiilgdkkygllkk 192
+                  k++kiKk+Y+ i   y k++     ++++k +N Y  k+    + + l+ k+i+k  +   ++++Ck+ +g+  qi++++k  +++ l d k+ +l+ 
+  VFLOPSAC_36 125 KKRKIKKYYFVICNKYSKEKvvsikNYIYK-KNVYKKKKNINFKYSSLKSKIIFK--NNFNNIVICKMFTGRKNQIKIQFK--NFFNL-DYKKIFLHS 216
+                  **********99999999762222255554.477777766666677778888875..6678999*************9985..67767.556678888 PP
+
+    rluA_prot 193 ktvnsklhlwnlsfilvnknnvfislpnkk 222
+                  ++ + k+ ++     l++k +++i+++n k
+  VFLOPSAC_36 217 YKIKIKKFKMDCYSLLNKKLINLIKNNNTK 246
+                  887777777776667889999999998865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                        142  (38760 residues searched)
+Passed MSV filter:                       135  (0.950704); expected 2.8 (0.02)
+Passed bias filter:                        5  (0.0352113); expected 2.8 (0.02)
+Passed Vit filter:                         5  (0.0352113); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00704225); expected 0.0 (1e-05)
+Initial search space (Z):                142  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 914.38
+//
+[ok]

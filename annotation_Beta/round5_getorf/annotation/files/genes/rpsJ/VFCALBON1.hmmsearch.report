@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsJ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFCALBON1/VFCALBON1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/rpsJ/rpsJ_VFCALBON1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsJ_prot  [M=101]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.2e-16   59.4  10.7    1.2e-16   59.4  10.7    1.7  2  VFCALBON1_273  [13209 - 13568] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALBON1_273  [13209 - 13568] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.3   0.3     0.025   1.5e+02      74      89 ..       8      23 ..       1      29 [. 0.69
+   2 !   59.4  10.7     2e-20   1.2e-16       4      98 ..      20     114 ..      17     117 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 1.3 bits;  conditional E-value: 0.025
+      rpsJ_prot 74 kkinKiklkkllklni 89
+                   ++  K+  k ++k+ni
+  VFCALBON1_273  8 YQRTKQIYKAMIKINI 23
+                   4556777778888888 PP
+
+  == domain 2  score: 59.4 bits;  conditional E-value: 2e-20
+      rpsJ_prot   4 klilksfssyhinklstkikellkkkkikfkgpiflpkkkillnlLksPHidKDsRDqigyeiykilllikkinKiklkkllklninsivkvllk 98 
+                    k+ +   +   ink  ++i+  lk+k+i f+gpi++p+kk  + +++sPHidKDsR+q+ ++i k+++++   ++  +k l+k+n +s + + +k
+  VFCALBON1_273  20 KINILCLDKTIINKYCERIRRYLKEKTILFRGPIHIPNKKKKFCVIRSPHIDKDSREQYCIDICKKTFYLDIYDQKIIKGLMKINKPSAIYINIK 114
+                    66666777889**********************************************************98878888889********9988765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (101 nodes)
+Target sequences:                       5973  (174896 residues searched)
+Passed MSV filter:                       285  (0.0477147); expected 119.5 (0.02)
+Passed bias filter:                       46  (0.00770132); expected 119.5 (0.02)
+Passed Vit filter:                         2  (0.00033484); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.00016742); expected 0.1 (1e-05)
+Initial search space (Z):               5973  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8463.30
+//
+[ok]

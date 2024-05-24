@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/korB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMTETIMP/SMTETIMP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/korB/korB_SMTETIMP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       korB_prot  [M=282]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      3e-27   94.7   4.3    3.3e-27   94.5   4.3    1.0  1  SMTETIMP_5763  [88187 - 87987] (REVERSE SENSE) 
+    6.9e-12   44.2   0.0    7.8e-12   44.1   0.0    1.1  1  SMTETIMP_5754  [88475 - 88335] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMTETIMP_5763  [88187 - 87987] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   94.5   4.3   8.1e-31   3.3e-27     157     218 ..       2      63 ..       1      66 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 94.5 bits;  conditional E-value: 8.1e-31
+      korB_prot 157 hlkkmllkcqehigtsfleiyqnciifnnkfyknfnilylhnkkplffgnqriqyitdnifn 218
+                    hlk +llkc ehigtsfl i +n iifnnkfyknfn lyl+n kplf gn+r qyitdnif 
+  SMTETIMP_5763   2 HLKNILLKCPEHIGTSFLSISKNGIIFNNKFYKNFNSLYLQNNKPLFVGNKRSQYITDNIFK 63 
+                    9************************************************************7 PP
+
+>> SMTETIMP_5754  [88475 - 88335] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.1   0.0   1.9e-15   7.8e-12      51      77 ..       1      27 [.       1      32 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 44.1 bits;  conditional E-value: 1.9e-15
+      korB_prot 51 tfglhgihgrapaiatgiklanpdlsv 77
+                   tfglhgihgrapaiatgiklanpdls 
+  SMTETIMP_5754  1 TFGLHGIHGRAPAIATGIKLANPDLSK 27
+                   8************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (282 nodes)
+Target sequences:                       8212  (214836 residues searched)
+Passed MSV filter:                       171  (0.0208232); expected 164.2 (0.02)
+Passed bias filter:                       75  (0.00913298); expected 164.2 (0.02)
+Passed Vit filter:                         9  (0.00109596); expected 8.2 (0.001)
+Passed Fwd filter:                         6  (0.000730638); expected 0.1 (1e-05)
+Initial search space (Z):               8212  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 14137.91
+//
+[ok]

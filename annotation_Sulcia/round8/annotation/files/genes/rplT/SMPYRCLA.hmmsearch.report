@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMPYRCLA/SMPYRCLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rplT/rplT_SMPYRCLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplT_prot  [M=114]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.9e-52  173.6  16.0    6.5e-52  173.4  16.0    1.0  1  SMPYRCLA_6863  [59140 - 58799] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPYRCLA_6863  [59140 - 58799] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  173.4  16.0   7.5e-56   6.5e-52       1     112 [.       2     113 ..       2     114 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 173.4 bits;  conditional E-value: 7.5e-56
+      rplT_prot   1 mprsvnavaskkkkkkilnyakgfygarsklytvaknaveksfkysylgrkkkkrnfrklwikrinaaarkngisysnlifllkkkniklnrkcla 96 
+                    mprsvn+va+kkk+kkil  akgfygarsklytvaknaveks+ ysy+grk+kkrnfrklwi  in+a+rk+g++ysn+i  lk++n+klnrk+++
+  SMPYRCLA_6863   2 MPRSVNSVAAKKKRKKILKLAKGFYGARSKLYTVAKNAVEKSMCYSYIGRKQKKRNFRKLWIIIINTAVRKFGLNYSNFIKKLKNNNLKLNRKTIS 97 
+                    9*********************************************************************************************** PP
+
+      rplT_prot  97 dlamnnfnsfkkvndk 112
+                    +l++n++n f+k++++
+  SMPYRCLA_6863  98 NLIINEYNIFNKIIKE 113
+                    ************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (114 nodes)
+Target sequences:                       8592  (228038 residues searched)
+Passed MSV filter:                       296  (0.0344507); expected 171.8 (0.02)
+Passed bias filter:                       96  (0.0111732); expected 171.8 (0.02)
+Passed Vit filter:                         4  (0.000465549); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116387); expected 0.1 (1e-05)
+Initial search space (Z):               8592  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12960.20
+//
+[ok]

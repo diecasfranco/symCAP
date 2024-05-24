@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFUGYLON/VFUGYLON_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/dnaB/dnaB_VFUGYLON.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaB_prot  [M=421]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   1.5e-114  381.7  52.0   1.7e-114  381.5  52.0    1.0  1  VFUGYLON_3544  [60086 - 58896] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFUGYLON_3544  [60086 - 58896] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  381.5  52.0  3.2e-118  1.7e-114       2     420 ..       5     397 .]       4     397 .] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 381.5 bits;  conditional E-value: 3.2e-118
+      dnaB_prot   2 nkllskkiekillallllnkkllkkikkklkekdfklkknkiifkiikkllkkkkkidlilllnkikkkkkkiklkyinsliklkikklnikkyik 97 
+                    n+++s+kie+++la++l++kk++ ki++kl+++df+ +knkiifki k+l+ k+ +++l++++n +++k  +ik++ +n++i+  +k +nik++i+
+  VFUGYLON_3544   5 NNFYSYKIEEYILAIILIKKKFYIKIFEKLDCRDFS-EKNKIIFKIAKRLYFKN-ELNLCNIINILEQK--NIKISRVNDIITSLPKGINIKSCIN 96 
+                    799*******************************96.789*********99875.79*******99865..68889******************** PP
+
+      dnaB_prot  98 ilkkksilrkllkilkkilkkikkkklkikkiikkikkkikklkkkkkkklsikkelkkilkkilkkkkkkyiktgfkklDkiilgfkpGdliiiA 193
+                    +l++k+++r++++ +k  ++++k++  ++kki+++++++ ++++    k ls+++ ++ +    +kk++k ++ktg+k+lD+i  ++k Gd+iiiA
+  VFUGYLON_3544  97 VLTRKTKFRSIFNKVKWASENLKEG--NFKKILTNLQTISSNFNG--GKFLSLSSGVDLLR---IKKSNKCFFKTGYKNLDRI--NLKRGDVIIIA 183
+                    ********************99876..6899******99888865..56788999998764...5678899***********9..79********* PP
+
+      dnaB_prot 194 GRPstGKTsfclnicenisikkkkkvlffSLEMskeqilirllssiskieskkilkkklnkkelkkikkalkkikkskiyindssnltleklkkki 289
+                    GRPs+GKT+++lnic+n+s  k++ vlf+S+EMs eq++irll+s+++ +s++il++  nk        +l+++kk+ki+in++s+lt+ +lk+ i
+  VFUGYLON_3544 184 GRPSSGKTAMVLNICKNLS--KENFVLFVSMEMSVEQLTIRLLCSHYRTRSENILNYIKNK--------KLSSFKKFKIFINETSSLTPFNLKCVI 269
+                    *****************98..5678*****************************9886543........35678999******************* PP
+
+      dnaB_prot 290 kkil.kkkkiklviiDYlQLikikkkkenrnneiseiSrsLKkiakelkipiiviSQLNRnieqRidkkPilSDLrdSGslEQDADlilflskees 384
+                    k+++ k+k+++ +++DY+QL+k++kk+e+r+ne+seiSrsLK++ak++ki ii+iSQLNRn+eqRi+++P+lSDL++SG+lEQDAD++ +++++++
+  VFUGYLON_3544 270 KNFIyKYKNLDYLAVDYVQLMKSDKKRESRANEVSEISRSLKILAKRYKIGIILISQLNRNLEQRINRTPLLSDLKESGALEQDADVVTLIDNNNF 365
+                    *976266889*********************************************************************************99987 PP
+
+      dnaB_prot 385 yekkkekielivaKnRnGptgsikLkflkkytkFke 420
+                    +    +k+++ivaKnRnG+t++++L+f+kky kF++
+  VFUGYLON_3544 366 S----NKVNIIVAKNRNGETFNFNLNFVKKYIKFEQ 397
+                    5....579**************************85 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (421 nodes)
+Target sequences:                       5249  (143985 residues searched)
+Passed MSV filter:                       298  (0.0567727); expected 105.0 (0.02)
+Passed bias filter:                       37  (0.00704896); expected 105.0 (0.02)
+Passed Vit filter:                         6  (0.00114307); expected 5.2 (0.001)
+Passed Fwd filter:                         1  (0.000190512); expected 0.1 (1e-05)
+Initial search space (Z):               5249  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 12367.55
+//
+[ok]

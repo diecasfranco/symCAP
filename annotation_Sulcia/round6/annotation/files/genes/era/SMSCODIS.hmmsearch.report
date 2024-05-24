@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/era_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMSCODIS/SMSCODIS_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/era/era_SMSCODIS.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SM_CARI_era  [M=270]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.6e-11   41.4  35.0    1.3e-07   30.1   6.6    3.4  3  SMSCODIS_689  [24472 - 25782] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMSCODIS_689  [24472 - 25782] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.6   8.3   1.6e-09   1.3e-05       7     157 ..       6     164 ..       3     169 .. 0.78
+   2 !   30.1   6.6   1.7e-11   1.3e-07       8     122 ..     180     307 ..     174     322 .. 0.76
+   3 ?   -1.6   5.4      0.08   6.3e+02      77     151 ..     320     396 ..     307     426 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 23.6 bits;  conditional E-value: 1.6e-09
+   SM_CARI_era   7 fvkiigypnvgkstlinaiigknisivtykanttrnniigilnlynsqiifydtpgiiinnnyik.....ky...iteadiviyiteigkn.nelff 94 
+                   ++ i+g+ nvgkstl+n + g   +i    +  tr+ i        +++ + d+ g +i n  ++     ++   i e+  vi++ +i      + +
+  SMSCODIS_689   6 IISIVGHTNVGKSTLFNYLAGYRKAITHSSSGVTRDRIYCDCKWKGNKFTLIDSGGYVIGNKDLQikiceQFlfaIEESTDVIFVIDILSGiLPIDY 102
+                   689********************999999999***************************99866511222222224566667777777554145666 PP
+
+   SM_CARI_era  95 kkini..nkfkftiillnkidkyqnyilkn.eifnlksnypdfyileisallkfninkliniiinn 157
+                      ni     k  +i +nkidk + y+ +  +i+nl   + d+++  is+     in+l+n i++n
+  SMSCODIS_689 103 NISNIlqRSNKKVFIAINKIDKSKYYLYETqDILNL--GFKDYFF--ISSYTGQGINELLNYIFSN 164
+                   6556522456788999*******9999886257776..7899987..6888999*******99988 PP
+
+  == domain 2  score: 30.1 bits;  conditional E-value: 1.7e-11
+   SM_CARI_era   8 vkiigypnvgkstlinaiigknisivtykanttrnniigilnlynsqiifydtpgiiinnn....y...ik..kyiteadiviyite..ig.knnel 92 
+                   + ++g  nvgks+lin +++kn siv     ttr+ i  i n +n + i+ dt gi         y   ++  + i+ +d+ + i +  ig k  ++
+  SMSCODIS_689 180 ITLVGRKNVGKSSLINTLLNKNQSIVCDLPGTTRDCIEVIYNKFNFKCILIDTAGIRKKKKedleYfsfLRttQAISNSDLCFLIIDvkIGfKKQDI 276
+                   5789****************************************************87654111231112222457778987666541166577888 PP
+
+   SM_CARI_era  93 ffkkininkfkftiillnkidkyqn.yilkn 122
+                    + ki    fk  iil+nk d  +   il+n
+  SMSCODIS_689 277 KILKIIKKNFKGIIILINKCDVIKKkRILQN 307
+                   8889988999*9*******997653134444 PP
+
+  == domain 3  score: -1.6 bits;  conditional E-value: 0.08
+   SM_CARI_era  77 adiviyite.igknnel..ffkkininkfkftiillnkidkyqnyilkneifnlksnypdfyileisallkfninkli 151
+                    di iy+t  +++ n +  f + i+i k +   i  + ++k    ilk + +nl sn  ++ i     +lk  in++i
+  SMSCODIS_689 320 TDIPIYFTSnFSQQNIIkaFKQAISIIKKQKQKITTSYFNKIMLPILKKQPINL-SNGRNISIKYCVPILKQGINQFI 396
+                   466666654133334222133446665555555555666666667777777776.45556666666667777777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (270 nodes)
+Target sequences:                       7806  (206019 residues searched)
+Passed MSV filter:                       177  (0.0226749); expected 156.1 (0.02)
+Passed bias filter:                       39  (0.00499616); expected 156.1 (0.02)
+Passed Vit filter:                         5  (0.000640533); expected 7.8 (0.001)
+Passed Fwd filter:                         1  (0.000128107); expected 0.1 (1e-05)
+Initial search space (Z):               7806  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6092.58
+//
+[ok]

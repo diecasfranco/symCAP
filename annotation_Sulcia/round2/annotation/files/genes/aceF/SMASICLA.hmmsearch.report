@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/aceF_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMASICLA/SMASICLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/aceF/aceF_SMASICLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aceF_prot  [M=371]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   1.6e-172  572.6  51.0   1.1e-111  372.4  24.6    3.0  3  SMASICLA_6585  [88310 - 87063] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMASICLA_6585  [88310 - 87063] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  162.4   2.9   8.3e-52   7.5e-48       1     100 [.       4     103 ..       4     108 .. 0.97
+   2 !   49.6  10.0   1.6e-17   1.4e-13      86     144 ..     109     170 ..     102     177 .. 0.79
+   3 !  372.4  24.6  1.3e-115  1.1e-111     132     371 .]     174     416 .]     171     416 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 162.4 bits;  conditional E-value: 8.3e-52
+      aceF_prot   1 maeviflprlsdtmeegtvvkwhkkigdkilegdilaeietdkaiqefeaeynstllyigikegetapvnsllailgsenedissllkenktlikk 96 
+                    mae+i++prlsdtm+egt+vkw+k++g+k+l+g+ilaeietdkaiqefe+e+n+tlly+g++ege+a++n+ll+ilg++ne+i++l+ ++ +l+kk
+  SMASICLA_6585   4 MAEIIYMPRLSDTMKEGTIVKWYKQVGEKVLSGEILAEIETDKAIQEFESEFNATLLYVGVNEGEKAKINDLLCILGNKNENIDYLITNKSHLNKK 99 
+                    9*****************************************************************************************999999 PP
+
+      aceF_prot  97 knkk 100
+                    + k 
+  SMASICLA_6585 100 NLKD 103
+                    8775 PP
+
+  == domain 2  score: 49.6 bits;  conditional E-value: 1.6e-17
+      aceF_prot  86 llkenktlikk...knkkilisplakkiafekgislenikgsgnngriikkdiekylkkksd 144
+                     +ken++ ik+   k+ k++isplakkia+e++i+l++ikgsg+++ri+kkdi k+lkkk  
+  SMASICLA_6585 109 DIKENQEDIKEkdiKENKLFISPLAKKIALEESIKLKDIKGSGPQNRIVKKDILKILKKKDL 170
+                    467777666541226789*************************************9988754 PP
+
+  == domain 3  score: 372.4 bits;  conditional E-value: 1.3e-115
+      aceF_prot 132 kkdiekylkkksdkkikkvdhsnirkiiskrlinskiesphyslfleikmdnliklreslnekkylkkisfndlivkasalaikenpkinsswtek 227
+                    kkd++k     ++k+ k++++snirkii++rl +sk +sphy+lf+e+++dnlik+++s+n+  y++kisfndlivka+al++k+n++inss+++k
+  SMASICLA_6585 174 KKDLKKKDLLLKKKENKIKKISNIRKIIIDRLSKSKNISPHYYLFIEVTADNLIKFKKSINK-IYNSKISFNDLIVKATALSLKKNQEINSSLNHK 268
+                    89998888888888888999****************************************97.69***************************8754 PP
+
+      aceF_prot 228 ..silyhkninigiavaled..glivpvinnvdekslrkisleikekvikakekklqsnelegstftvsnlgmfgidsftsiinqpnscilsvgsi 319
+                      +i+yhk+inig+av+l++  glivpvin+vd+ksl+kis+eikekv+k+++kk++ +el gstft+snlgmfgid+ftsiinqpns+ilsvgsi
+  SMASICLA_6585 269 qeRIIYHKDINIGLAVSLPEgeGLIVPVINSVDQKSLIKISQEIKEKVEKSRNKKNSPKELVGSTFTISNLGMFGIDCFTSIINQPNSSILSVGSI 364
+                    228***************86337************************************************************************* PP
+
+      aceF_prot 320 kkkpiinndkivignttkftltcdhriidgavgsdylkslkellqeplkill 371
+                    ++kpii+n+ki+ignt+kftl+cdhriidg+vgs++l +lke+l+ep+kil+
+  SMASICLA_6585 365 QRKPIIDNNKIKIGNTIKFTLACDHRIIDGSVGSAFLLTLKEYLLEPIKILC 416
+                    **************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (371 nodes)
+Target sequences:                       9002  (239757 residues searched)
+Passed MSV filter:                       162  (0.017996); expected 180.0 (0.02)
+Passed bias filter:                       51  (0.00566541); expected 180.0 (0.02)
+Passed Vit filter:                         3  (0.000333259); expected 9.0 (0.001)
+Passed Fwd filter:                         1  (0.000111086); expected 0.1 (1e-05)
+Initial search space (Z):               9002  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6215.80
+//
+[ok]

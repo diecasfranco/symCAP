@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/serB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFDESRAP/VFDESRAP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/serB/serB_VFDESRAP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       serB_prot  [M=210]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.4e-54  182.3  18.1    3.4e-54  182.3  18.1    1.6  2  VFDESRAP_2331  [91671 - 92405] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFDESRAP_2331  [91671 - 92405] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.6   0.3      0.01        67      76     106 ..      10      40 ..       3      41 .. 0.80
+   2 !  182.3  18.1   5.2e-58   3.4e-54       2     201 ..      38     232 ..      37     243 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 1.6 bits;  conditional E-value: 0.01
+      serB_prot  76 ffvksiikvinkkllkilkkekkkkkkiiis 106
+                    ++ k+++k++ k+ ++ +k + kk+ k++is
+  VFDESRAP_2331  10 IVFKKMKKYFSKERNTFVKGRSKKNVKVMIS 40 
+                    4568999999999999999999999999998 PP
+
+  == domain 2  score: 182.3 bits;  conditional E-value: 5.2e-58
+      serB_prot   2 klaiFDLDkTliniDcEkllikvlykkkiiskkilkkskkfykdykkgklnikkyikyiskvinklkkkkilinffvksiikvinkkllkilkkek 97 
+                     +++FDLDkT+i++DcE+l++kv+y kkiis ++l+++  f ++yk+gk++  +++++++kvi k k ++    f+  +i+k+++k+l+  +  e 
+  VFDESRAP_2331  38 MISVFDLDKTIIKVDCEGLFYKVAYVKKIISSSTLREFFRFQEKYKNGKFEPMEHLEFQNKVIIKYKLRSRK-GFLKYFISKYLRKNLNWTVYNEM 132
+                    599************************************************************987765542.344446899*******9999*** PP
+
+      serB_prot  98 kkkkkiiisTSSskllskkikk.llkiknlistklekkkkkytgkvlgviNigkgKvknlkkwikkkkikkkkiiFysDSinDlpLllksdkkyiv 192
+                     +++ ++isT S+++l++k++k ll  kn+i+t+l + k  y++     iN+g+gK knl +wikk++ k ++++F++DSinDlpLllk++ ++iv
+  VFDESRAP_2331 133 LSREVVLISTASNHFLASKVNKyLLGSKNIICTSLDNPKRGYLP-----INYGIGKCKNLDIWIKKNNYKLCEVEFFTDSINDLPLLLKANRRFIV 223
+                    ********************763689***********9998887.....69********************************************* PP
+
+      serB_prot 193 Npdkkllkl 201
+                    Npd kl+k 
+  VFDESRAP_2331 224 NPDVKLIKK 232
+                    *****9874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (210 nodes)
+Target sequences:                       6589  (179196 residues searched)
+Passed MSV filter:                       394  (0.0597966); expected 131.8 (0.02)
+Passed bias filter:                       48  (0.00728487); expected 131.8 (0.02)
+Passed Vit filter:                         3  (0.000455304); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000151768); expected 0.1 (1e-05)
+Initial search space (Z):               6589  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9878.05
+//
+[ok]

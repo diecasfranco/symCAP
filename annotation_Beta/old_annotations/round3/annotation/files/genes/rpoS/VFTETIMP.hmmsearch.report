@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpoS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3//annotation/files/genomes/VFTETIMP/VFTETIMP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round3//annotation/files/genes/rpoS/rpoS_VFTETIMP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFMALBOS_rpoS  [M=302]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+      7e-14   44.9  24.2    1.2e-09   31.0   1.4    2.8  3  VFTETIMP_41  [38846 - 40270]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETIMP_41  [38846 - 40270]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.3   1.4      0.27        35     139     158 ..      43      64 ..       5     128 .. 0.57
+   2 !   31.0   1.4   9.4e-12   1.2e-09     103     220 ..     239     352 ..     228     366 .. 0.79
+   3 !   27.1   6.3   1.5e-10   1.9e-08     196     293 ..     369     461 ..     354     466 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -3.3 bits;  conditional E-value: 0.27
+  VFMALBOS_rpoS 139 iyrafyr.fnneigc.rfttyc 158
+                    i++ f r +nn i   +f  y 
+    VFTETIMP_41  43 IFKIFVRtYNNSIKYeKFVNYI 64 
+                    4444443334444331233333 PP
+
+  == domain 2  score: 31.0 bits;  conditional E-value: 9.4e-12
+  VFMALBOS_rpoS 103 kdrmikeseyiifwvikmfrirreeikeliqegvlgiyrafyrfnneigcrfttycsywvkqymllakkrkryfivfsgevnefikegllridsle 198
+                    k  mi+ +  +++ + k +  r   + +l+qeg++g+ +a+ +f+   g +f+ty ++w+kq +  +   +  +i +   +n    e+l +i ++ 
+    VFTETIMP_41 239 KKIMIESNLRLVISIAKNYLNRGLSLSDLVQEGIMGLIKAIEKFDYRKGFKFSTYSTWWIKQAISRSIADQSRLIRIPVHMN----ENLNKIKNFT 330
+                    5668888888999999****9*****************************************98766555555555444444....5666777777 PP
+
+  VFMALBOS_rpoS 199 skdiglndkkgmmevigdkiki 220
+                    +k  +l  kk   ++i  k+ i
+    VFTETIMP_41 331 NKYKSLFGKKPSNKIICKKVNI 352
+                    7777777777777777777665 PP
+
+  == domain 3  score: 27.1 bits;  conditional E-value: 1.5e-10
+  VFMALBOS_rpoS 196 sleskdiglndkkgmmevigdkikiekvickerklrkirriikwikeldrrerlilierlkirknkkltlfelgrmlglskervrqienkgimiis 291
+                    s++skd+  nd  ++ e+i +   i+k i k  +++ki  i k +k + ++e  il  r+ i    ++tl ++g+++g+++er+rqie+k+i  ++
+    VFTETIMP_41 369 SFDSKDLE-ND-CSLEEIIPNNKDIDKNISKI-EIKKI--IKKMLKNIPKKESKILKMRFGIGNYNQMTLEDIGKLFGVTRERIRQIESKAIKRLN 459
+                    56788864.44.57899999999999999874.34444..3468999*********************************************9988 PP
+
+  VFMALBOS_rpoS 292 nk 293
+                    n 
+    VFTETIMP_41 460 NS 461
+                    85 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (302 nodes)
+Target sequences:                        130  (32173 residues searched)
+Passed MSV filter:                        45  (0.346154); expected 2.6 (0.02)
+Passed bias filter:                        2  (0.0153846); expected 2.6 (0.02)
+Passed Vit filter:                         1  (0.00769231); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00769231); expected 0.0 (1e-05)
+Initial search space (Z):                130  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 757.04
+//
+[ok]

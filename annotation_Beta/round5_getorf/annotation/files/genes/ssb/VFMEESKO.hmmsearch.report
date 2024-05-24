@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/ssb_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFMEESKO/VFMEESKO_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/ssb/ssb_VFMEESKO.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssb_prot  [M=109]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    8.6e-49  162.4  22.7    9.6e-49  162.2  22.7    1.0  1  VFMEESKO_4049  [17449 - 17102] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMEESKO_4049  [17449 - 17102] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  162.2  22.7   2.1e-52   9.6e-49       1     109 []       7     116 .]       7     116 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 162.2 bits;  conditional E-value: 2.1e-52
+       ssb_prot   1 mkflnkilliGylgnkpiikkikknyilkfslstiekkktiwhkivffnknkkivkilkkGvlifieGkikyvkwknkkgnkinkteiicnnlkil 96 
+                    mk+lnk++liGylgn+p+i+kikk+yilkfslsti++kkt+wh+i+ffnkn++++ki+kkG+li+ieGki+yvkwkn+kg++++k+eiicn+lk+l
+  VFMEESKO_4049   7 MKCLNKVILIGYLGNNPLIRKIKKSYILKFSLSTIDNKKTTWHNIIFFNKNNNLNKIIKKGMLICIEGKINYVKWKNDKGIFSYKYEIICNILKLL 102
+                    9*********************************************************************************************** PP
+
+       ssb_prot  97 nfkkkk.ikkkipf 109
+                    nf+kkk i k++pf
+  VFMEESKO_4049 103 NFNKKKnILKNVPF 116
+                    **887637899998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (109 nodes)
+Target sequences:                       4555  (118029 residues searched)
+Passed MSV filter:                       424  (0.0930845); expected 91.1 (0.02)
+Passed bias filter:                       47  (0.0103183); expected 91.1 (0.02)
+Passed Vit filter:                         6  (0.00131723); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.000219539); expected 0.0 (1e-05)
+Initial search space (Z):               4555  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6445.23
+//
+[ok]

@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsF_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFLIBAN/VFLIBAN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rpsF/rpsF_VFLIBAN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsF_prot  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    3.2e-28   96.5  27.2    3.7e-28   96.3  27.2    1.0  1  VFLIBAN_4338  [80988 - 80659] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLIBAN_4338  [80988 - 80659] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   96.3  27.2   5.5e-32   3.7e-28       2     100 .]      13     110 .]      11     110 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 96.3 bits;  conditional E-value: 5.5e-32
+     rpsF_prot   2 iYeiviilkkklineslqiikkivkkikkkkilkiknlgkrkLsYkIkkqkkalYfliffkknkkileiikkkikykkeilRylilkikkkeilkki 98 
+                   +Ye+v+i++k++++++++ii+ki+kk+kk ki+ki+ lg rkL++kI++q++a+Y+lif+++nkki+e+i kk+kyk +ilR+l+lki+k+++l+ki
+  VFLIBAN_4338  13 MYEVVFICNKSFVTDFFSIINKIKKKFKK-KIIKIIDLGIRKLCHKINNQTRANYYLIFSERNKKIIEYIIKKVKYKIFILRTLVLKINKHNFLEKI 108
+                   7**************************76.689***************************************************************9 PP
+
+     rpsF_prot  99 ie 100
+                   ie
+  VFLIBAN_4338 109 IE 110
+                   86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (100 nodes)
+Target sequences:                       6700  (175872 residues searched)
+Passed MSV filter:                       916  (0.136716); expected 134.0 (0.02)
+Passed bias filter:                      108  (0.0161194); expected 134.0 (0.02)
+Passed Vit filter:                        13  (0.0019403); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.000298507); expected 0.1 (1e-05)
+Initial search space (Z):               6700  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3849.75
+//
+[ok]

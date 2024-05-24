@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/cwaH_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMPARPLA/SMPARPLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/cwaH/cwaH_SMPARPLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cwaH_prot  [M=152]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.8e-57  192.4   0.2      2e-57  192.2   0.2    1.0  1  VFPARPLA_1918  [66324 - 66587] 
+      2e-35  120.8   2.9    2.2e-35  120.7   2.9    1.0  1  VFPARPLA_1921  [66591 - 66758] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPARPLA_1918  [66324 - 66587] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  192.2   0.2   4.9e-61     2e-57       8      95 ..       1      88 []       1      88 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 192.2 bits;  conditional E-value: 4.9e-61
+      cwaH_prot  8 nelsysalhlaiqliyhrfvqlgplvleldpfklltlaidrdrtvsrrsepssratllgeqpnpwdllqpqdvtsrhrgaepsrryel 95
+                   nelsysalhlaiqliyhrfvqlgplvleldpfklltlaidrdrtvsrrsepssratl+geqpnpwdllqpqdvtsrhrgaep+rr+el
+  VFPARPLA_1918  1 NELSYSALHLAIQLIYHRFVQLGPLVLELDPFKLLTLAIDRDRTVSRRSEPSSRATLMGEQPNPWDLLQPQDVTSRHRGAEPPRRCEL 88
+                   79************************************************************************************97 PP
+
+>> VFPARPLA_1921  [66591 - 66758] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  120.7   2.9   5.3e-39   2.2e-35      97     152 .]       1      56 []       1      56 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 120.7 bits;  conditional E-value: 5.3e-39
+      cwaH_prot  97 getsllsleyllsferwpfhteppdhyallsylidlsvsqsstlmplhsthdyqtc 152
+                    getslls+eyllsferwpfhteppdhyallsylidlsvsqsstlmplhsthdyqtc
+  VFPARPLA_1921   1 GETSLLSPEYLLSFERWPFHTEPPDHYALLSYLIDLSVSQSSTLMPLHSTHDYQTC 56 
+                    79*****************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (152 nodes)
+Target sequences:                       8166  (219177 residues searched)
+Passed MSV filter:                        71  (0.00869459); expected 163.3 (0.02)
+Passed bias filter:                       52  (0.00636787); expected 163.3 (0.02)
+Passed Vit filter:                         2  (0.000244918); expected 8.2 (0.001)
+Passed Fwd filter:                         2  (0.000244918); expected 0.1 (1e-05)
+Initial search space (Z):               8166  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 15868.21
+//
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaN_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFPENVAR/VFPENVAR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/dnaN/dnaN_VFPENVAR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaN_prot  [M=362]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.3e-66  222.9 114.5    2.3e-66  222.9 114.5    1.6  2  VFPENVAR_4328  [100650 - 99448] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPENVAR_4328  [100650 - 99448] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.6     0.052   3.7e+02     213     230 ..      21      38 ..      10      44 .. 0.76
+   2 !  222.9 114.5   3.2e-70   2.3e-66       3     361 ..      44     401 .]      42     401 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 0.052
+      dnaN_prot 213 efkkkkiiitsknfkiis 230
+                     f+kk++ +++++fk+++
+  VFPENVAR_4328  21 SFSKKRMTFFFNYFKFFF 38 
+                    577888888888888765 PP
+
+  == domain 2  score: 222.9 bits;  conditional E-value: 3.2e-70
+      dnaN_prot   3 Kikkkeiikflkiinllkkkkkknllikienkkiififknenekvilikkkkkikkkisflieyeklkkiiktiknkeyikldlkkkkliiknknf 98 
+                     i+k ++++f++ii++lk+k +k++liki+n++i+f++ ++ e+v+  k+k++++++isf++ey ++++i+k+  +++ ik+d++kk+++ik k f
+  VFPENVAR_4328  44 SINKVYFEEFINIISFLKNKDEKTILIKIKNNNIKFFYFGDLEIVY--KNKINYTENISFSVEYLYIENIVKKYRKNFDIKIDIEKKNVFIKRKDF 137
+                    68999***********************************999876..78999******************************************* PP
+
+      dnaN_prot  99 kfitkikkkknkyikiikkkkklkkkikieskillkilesniillkvfinkeeginivikkkkikifstDgfRmifvkkklkkknknlkfnisknv 194
+                    kf++  ++k++k+  i+kkk+++k++iki+s i+ ++l  +++++k+  +k++g +++ +++ i++fstDgfR++f+++k ++ nk++k+ i+k++
+  VFPENVAR_4328 138 KFNSSCIVKNKKK--IFKKKNDVKNFIKINSLIFSECLRHSFFIEKTVFVKKQGYIFLTDSNDIECFSTDGFRASFYSNKKNFLNKKKKICIEKEL 231
+                    ***9999988886..5899***************************************************************************** PP
+
+      dnaN_prot 195 lkflikvikkskkssfyiefkkkkiiitsknfkiiskilnkkkfnykeiikitkdykkikinnkeflealkrikiisskknskidieikkkkiiik 290
+                    + f++k+ikk    +f  + kkk+++++  n+ki+s++  k +f++k+i+ i+k+y  ik++ +++l++l +i+i++ kkns i+++ik+++ii+ 
+  VFPENVAR_4328 232 AIFINKIIKKFGFPFFLYKKKKKNVLVKLGNIKIYSTKFIKLDFEFKSIVEINKNYTRIKLDSNKMLKSLRKIDICNLKKNSLIKLKIKNNNIIV- 326
+                    ********99877766667788899*******************************************************************987. PP
+
+      dnaN_prot 291 fknsekeklkekIkikknnkkkk....ikLNlkflmdFlkikkskkiilfiknkkskiilksk.nknlkYliMPil 361
+                    f+++++++l++kI i  + k ++    +k N+++l+dF+ i ++ +i l++ ++ks+i+lk k nkn+ Y++MPi+
+  VFPENVAR_4328 327 FYKENNISLEDKIPILDYSKSISgldvLKVNFDYLKDFF-IISYGIIHLYYLDEKSMIYLKFKeNKNFLYCFMPIN 401
+                    666899*********99999886666689*********8.6789****************976379*********6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (362 nodes)
+Target sequences:                       7102  (196234 residues searched)
+Passed MSV filter:                      1631  (0.229654); expected 142.0 (0.02)
+Passed bias filter:                      115  (0.0161926); expected 142.0 (0.02)
+Passed Vit filter:                        36  (0.00506899); expected 7.1 (0.001)
+Passed Fwd filter:                         1  (0.000140805); expected 0.1 (1e-05)
+Initial search space (Z):               7102  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 6535.69
+//
+[ok]

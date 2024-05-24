@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsL_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFAKOQUE/VFAKOQUE_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rpsL/rpsL_VFAKOQUE.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsL_prot  [M=128]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+      5e-58  192.8   4.8    5.4e-58  192.7   4.8    1.0  1  VFAKOQUE_221  [10910 - 11305] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFAKOQUE_221  [10910 - 11305] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  192.7   4.8   8.6e-62   5.4e-58       1     122 [.       2     124 ..       2     132 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 192.7 bits;  conditional E-value: 8.6e-62
+     rpsL_prot   1 mktinqlikklkkkkk.kkknsllkknpfkkgictkvytttpkkpnsalrkvakvklsekkevicyipgeghnlqehsvvlirggrvkdlpgvkyhl 96 
+                   m tinqli+  + kkk + k ++lkk+pf kg+c+kvytttpkkpnsalrkvakvk+ +++ vi yipgeghnlqehs+vl+rggrvkdlpgvkyh+
+  VFAKOQUE_221   2 MPTINQLIRFGRFKKKnRIKCPILKKSPFIKGVCVKVYTTTPKKPNSALRKVAKVKVRSGHVVISYIPGEGHNLQEHSIVLLRGGRVKDLPGVKYHI 98 
+                   779******887555416699**************************************************************************** PP
+
+     rpsL_prot  97 vrgvydlegvkkrkssrskygtkknv 122
+                   vrgvyd  gv +r ssrskygtk + 
+  VFAKOQUE_221  99 VRGVYDAVGVVDRFSSRSKYGTKFDP 124
+                   **********************9654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (128 nodes)
+Target sequences:                       6257  (161195 residues searched)
+Passed MSV filter:                        74  (0.0118268); expected 125.1 (0.02)
+Passed bias filter:                       25  (0.00399553); expected 125.1 (0.02)
+Passed Vit filter:                         1  (0.000159821); expected 6.3 (0.001)
+Passed Fwd filter:                         1  (0.000159821); expected 0.1 (1e-05)
+Initial search space (Z):               6257  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 16162.71
+//
+[ok]

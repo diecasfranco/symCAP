@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/ftsH_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMVIZSP/SMVIZSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/ftsH/ftsH_SMVIZSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SMHYALUT_ftsH  [M=576]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    5.8e-11   40.7   0.3    5.8e-11   40.7   0.3    1.7  2  SMVIZSP_8008  [32448 - 31267] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMVIZSP_8008  [32448 - 31267] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.7   0.3   6.5e-15   5.8e-11     168     284 ..     106     226 ..      19     237 .. 0.78
+   2 ?   -2.3   0.1      0.07   6.2e+02     445     464 ..     344     363 ..     305     379 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 40.7 bits;  conditional E-value: 6.5e-15
+  SMHYALUT_ftsH 168 kgilligptgtgktllakavageakvpffslsgsdfvem.fvgigasrv.rdlfkqa....klkkkaiifideidsigrsrvtnnlivtnderent 257
+                     +illig tgtgktl+ak++a    +p+  + ++ + e  +vg     +   l++qa    kl +k iif+deid i++  + n  i  +   e  
+   SMVIZSP_8008 106 ANILLIGKTGTGKTLFAKSIARFLNLPLAIVDSTSLTEAgYVGDDVESIlTKLLQQAnfdlKLAEKGIIFLDEIDKISKKSIHNPSITRDVSGEGV 201
+                    479**************************999999998658998875541678888755557899**************99988777666667777 PP
+
+  SMHYALUT_ftsH 258 lnqllyemdgfqsnlnlivlaatnrpd 284
+                       ll  ++g  sn+n+     + +pd
+   SMVIZSP_8008 202 QQALLKILEG--SNVNISTQFGSKHPD 226
+                    7778888888..677776666666666 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.07
+  SMHYALUT_ftsH 445 ekhmkdeicvnlggraaeyl 464
+                    e  +k  i +nlg+r   y+
+   SMVIZSP_8008 344 ELIIKKAIKLNLGARGLHYI 363
+                    23334444555555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (576 nodes)
+Target sequences:                       8900  (233751 residues searched)
+Passed MSV filter:                       341  (0.0383146); expected 178.0 (0.02)
+Passed bias filter:                      143  (0.0160674); expected 178.0 (0.02)
+Passed Vit filter:                        15  (0.00168539); expected 8.9 (0.001)
+Passed Fwd filter:                         1  (0.00011236); expected 0.1 (1e-05)
+Initial search space (Z):               8900  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 12804.47
+//
+[ok]

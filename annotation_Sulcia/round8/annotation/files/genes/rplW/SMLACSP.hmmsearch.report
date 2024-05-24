@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplW_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMLACSP/SMLACSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rplW/rplW_SMLACSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplW_prot  [M=175]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    3.5e-15   55.4  24.1    3.5e-15   55.4  24.1    1.9  2  SMLACSP_3434  [122737 - 123063] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMLACSP_3434  [122737 - 123063] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   4.3      0.09   7.4e+02       6      37 ..       4      34 ..       1      46 [. 0.54
+   2 !   55.4  24.1   4.2e-19   3.5e-15       6      73 ..      38     103 ..      33     107 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.09
+     rplW_prot  6 kkkfsnkkldpfltfkvPlfynkkeikkliyk 37
+                  kkk+s+k+  +  ++ +  + nk +++k i+ 
+  SMLACSP_3434  4 KKKVSEKRKRNLKSLFFKEYINK-NLSKKIQP 34
+                  56666666666655555555554.34444444 PP
+
+  == domain 2  score: 55.4 bits;  conditional E-value: 4.2e-19
+     rplW_prot   6 kkkfsnkkldpfltfkvPlfynkkeikkliykiyninfkniktmiyckrtlkkrkkgvlfkkvilklk 73 
+                   +k ++    ++++tf +P+++nkkei k+++++y+i +++++t+iy+k++ kk+k  + fkk   k+k
+  SMLACSP_3434  38 EKAIFTNISNNYYTFIFPIYFNKKEIYKYLQRVYRIKITKLHTNIYYKKKSKKKK--RKFKKAFFKVK 103
+                   678888889****************************************877654..56999999887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (175 nodes)
+Target sequences:                       8186  (215213 residues searched)
+Passed MSV filter:                       674  (0.0823357); expected 163.7 (0.02)
+Passed bias filter:                      124  (0.0151478); expected 163.7 (0.02)
+Passed Vit filter:                         5  (0.000610799); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.00012216); expected 0.1 (1e-05)
+Initial search space (Z):               8186  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9651.50
+//
+[ok]

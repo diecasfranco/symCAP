@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rsmH2_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMDICPAN5/SMDICPAN5_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rsmH2/rsmH2_SMDICPAN5.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmH2_prot  [M=89]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    5.7e-20   70.3   1.0    5.7e-20   70.3   1.0    2.6  2  SMDICPAN5_3561  [128687 - 129322] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMDICPAN5_3561  [128687 - 129322] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.3   1.0   7.3e-24   5.7e-20       1      87 [.      19     100 ..      19     102 .. 0.91
+   2 ?    1.5   0.4     0.022   1.7e+02      46      69 ..     121     144 ..     100     170 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 70.3 bits;  conditional E-value: 7.3e-24
+      rsmH2_prot   1 mkyiyqivllsivivyli....yiyldsifgvyiyarsilkkidkkGknlspfliafdkdifsiiknkiyenkrakrivlfnanfrkikkp 87 
+                     mky++ +v+l +v++ li    +iyld +fg+++++  ilk+i+++Gk     l afd+d+f+iiknki++    kri +fn nfr+i+k 
+  SMDICPAN5_3561  19 MKYFHIPVFLTEVLENLIndinGIYLDTTFGSGGHSVGILKQISNQGK-----LFAFDQDQFAIIKNKICD----KRIRFFNDNFRNIQKI 100
+                     9**********9998876444489***********************9.....679**************7....67889********985 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.022
+      rsmH2_prot  46 lspfliafdkdifsiiknkiyenk 69 
+                     +s + i   ++ fsi  n+i + +
+  SMDICPAN5_3561 121 VSSYQIDNPQRGFSIRFNQILDMR 144
+                     577888889999999999998754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (89 nodes)
+Target sequences:                       7868  (209652 residues searched)
+Passed MSV filter:                       434  (0.0551601); expected 157.4 (0.02)
+Passed bias filter:                      105  (0.0133452); expected 157.4 (0.02)
+Passed Vit filter:                         8  (0.00101678); expected 7.9 (0.001)
+Passed Fwd filter:                         2  (0.000254194); expected 0.1 (1e-05)
+Initial search space (Z):               7868  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5607.62
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/trpA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFBRUOCU/VFBRUOCU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/trpA/trpA_VFBRUOCU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trpA_prot  [M=239]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.3e-32  111.7  62.6    3.3e-25   87.5  31.8    2.0  2  VFBRUOCU_1262  [49414 - 50013] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBRUOCU_1262  [49414 - 50013] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   87.5  31.8   5.7e-29   3.3e-25       4     127 ..       1     115 [.       1     119 [. 0.91
+   2 !   31.3  27.2   8.3e-12   4.8e-08     143     239 .]     107     200 .]     104     200 .] 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 87.5 bits;  conditional E-value: 5.7e-29
+      trpA_prot   4 iipflIpffpnkkkFlkilkflkkkkiktiEIgipnknsylDGkiIkkaykkilkkfnikkllkkikkflkkkkfkiilvcysntilgkkkflkki 99 
+                    +ipf+I+ffpn+k+F+k+l+++  +k+++iEIgipnk+ +++GkiIk++y++ +++ ni++l k+i+k +k+  +++i+vc++nti ++k+flk++
+  VFBRUOCU_1262   1 VIPFIIAFFPNYKIFIKTLEYFN-SKVNIIEIGIPNKS-NIEGKIIKNIYRRNIRN-NIYELSKIINKRFKE--LRVIIVCNYNTISTNKEFLKIF 91 
+                    59*******************95.78*********985.68**********99876.8*********99975..799******************9 PP
+
+      trpA_prot 100 kkkkvikkiiiiDinlkylkkinkllkk 127
+                    +k+    ki+i+D ++k+ +ki ++  k
+  VFBRUOCU_1262  92 SKQ----KILIVDKEIKQSIKIRNIRNK 115
+                    985....69************9997655 PP
+
+  == domain 2  score: 31.3 bits;  conditional E-value: 8.3e-12
+      trpA_prot 143 kkikkkikkikkkliYlslsgktGkkkinlkkikkyikkikkknkikiivGFGIk..kkknikklkkffkniViGtkliklik...kkflknvKnk 233
+                     ki+++ +k + +++Y+++ +ktG+k        k++k i+kk ++k+++GFGI+  k+k+i+k++++  niViG++l+k++    +k ++ +K++
+  VFBRUOCU_1262 107 IKIRNIRNKDNLYKAYICCARKTGNKP-------KITKTIIKKANKKTLIGFGINinKYKQIRKINNK-INIVIGSYLLKKFLiniRKGIMLLKKT 194
+                    47888889999999**********985.......45566778888999*****862256677777655.589********8762235689999*99 PP
+
+      trpA_prot 234 ikknkk 239
+                    i+ +kk
+  VFBRUOCU_1262 195 IYICKK 200
+                    998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (239 nodes)
+Target sequences:                       5829  (167681 residues searched)
+Passed MSV filter:                       721  (0.123692); expected 116.6 (0.02)
+Passed bias filter:                       55  (0.00943558); expected 116.6 (0.02)
+Passed Vit filter:                        15  (0.00257334); expected 5.8 (0.001)
+Passed Fwd filter:                         1  (0.000171556); expected 0.1 (1e-05)
+Initial search space (Z):               5829  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8407.77
+//
+[ok]

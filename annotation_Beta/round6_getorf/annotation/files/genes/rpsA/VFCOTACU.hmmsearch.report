@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFCOTACU/VFCOTACU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rpsA/rpsA_VFCOTACU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsA_prot  [M=363]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      8e-24   83.0  81.1    2.4e-12   45.3  58.9    2.1  2  VFCOTACU_2253  [91082 - 91795] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCOTACU_2253  [91082 - 91795] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.3  58.9   3.6e-16   2.4e-12       1     165 [.       3     169 ..       3     172 .. 0.83
+   2 !   39.8  26.2   1.6e-14   1.1e-10     255     346 ..     147     235 ..     145     238 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 45.3 bits;  conditional E-value: 3.6e-16
+      rpsA_prot   1 MslkikivilnynnkkvllkcksekiafiklsefkkfkikIkigkkinvsiiknklkkekvlnlkyyinkkvyeklvkkfkkkekikgkvkkkvKg 96 
+                    M+ ++k +i++++ kkv++  +  +  f+++++fkk kikIk +k i +s+  ++ k   + +l + +  k y+++ kk  kk+ i+ kv++kvKg
+  VFCOTACU_2253   3 MKDIVKCKIIKKIGKKVKIDVNEREYLFLNVNKFKKNKIKIKRNKLILLSKEIKNEK--IKFSLREAEIFKTYKEINKKNIKKKYIFCKVNRKVKG 96 
+                    9999******************************************99886544444..4567777766778****999999************** PP
+
+      rpsA_prot  97 GYkVklknikcFlPnSlskktr....nilgkrkkfkiikidkkkgniIlSrkkflkkkkskllekilknkkdi 165
+                    GY++ +kni+c +    ++k++    + l+k+kkf+iik+d+kk+ i l  kk   kk++ ++e+  k +k+i
+  VFCOTACU_2253  97 GYEIIYKNIRCLVSDIVLEKKKieldKYLNKKKKFNIIKVDYKKKIILLEFKKKTLKKNNIIIERKNKINKKI 169
+                    *************998888876222256899*************98888766666666667776655555555 PP
+
+  == domain 2  score: 39.8 bits;  conditional E-value: 1.6e-14
+      rpsA_prot 255 lskiklkkklaiikkknNwlvrkvnkaikvknlklipkeysktnlirnpwfefkvvykkkkkikciaykkykkiylfklpfiifGfskkkky 346
+                    ++k  lkk  +ii + +N + +k++   +++  k i k+  k   i++pw+efk +y++++k+  ++ykk+k++y++k+pf+if fskkkk 
+  VFCOTACU_2253 147 FKKKTLKKNNIIIER-KNKINKKIFPIDYFRIFKIIVKK--KLRSIFDPWNEFKKNYSIGDKLNLRYYKKKKRYYIYKIPFFIFAFSKKKKK 235
+                    566667777677765.689************99999886..677899*****************************************9985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (363 nodes)
+Target sequences:                       6691  (179478 residues searched)
+Passed MSV filter:                       981  (0.146615); expected 133.8 (0.02)
+Passed bias filter:                       61  (0.00911672); expected 133.8 (0.02)
+Passed Vit filter:                        16  (0.00239127); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000149454); expected 0.1 (1e-05)
+Initial search space (Z):               6691  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 10053.91
+//
+[ok]

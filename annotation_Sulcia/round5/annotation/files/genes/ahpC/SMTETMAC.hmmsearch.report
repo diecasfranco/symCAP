@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/ahpC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMTETMAC/SMTETMAC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/ahpC/ahpC_SMTETMAC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ahpC_prot  [M=210]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.7e-27   95.1   1.2    1.8e-27   95.0   1.2    1.0  1  SMTETMAC_7438  [26185 - 26006] (REVERSE SENSE) 
+      4e-27   93.9   1.8    4.3e-27   93.8   1.8    1.0  1  SMTETMAC_7432  [26368 - 26189] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMTETMAC_7438  [26185 - 26006] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   95.0   1.2   4.4e-31   1.8e-27      60     118 ..       1      59 [.       1      60 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 95.0 bits;  conditional E-value: 4.4e-31
+      ahpC_prot  60 kkdifcrknvkliavsidseythlawlqiskkkggikgvnfpivsdinktisysygvls 118
+                    k+dif rknv+liavsidse thlaw+qi kkkg ikgvnf+ivsdin+tisysygvls
+  SMTETMAC_7438   1 KNDIFGRKNVNLIAVSIDSESTHLAWFQIYKKKGVIKGVNFTIVSDINQTISYSYGVLS 59 
+                    789*******************************************************8 PP
+
+>> SMTETMAC_7432  [26368 - 26189] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   93.8   1.8   1.1e-30   4.3e-27       1      58 [.       3      60 .]       3      60 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 93.8 bits;  conditional E-value: 1.1e-30
+      ahpC_prot  1 mntligkkapnfkatavlngnsivnnftlenfigkyvvlffypkdftfvcptelysfq 58
+                   m+tli kka n+katavln nsivnnf l + +gkyvvlffypkdftfvcpte++sfq
+  SMTETMAC_7432  3 MKTLIVKKAQNLKATAVLNLNSIVNNFPLSKVLGKYVVLFFYPKDFTFVCPTEFHSFQ 60
+                   89*******************************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (210 nodes)
+Target sequences:                       8187  (215009 residues searched)
+Passed MSV filter:                        86  (0.0105045); expected 163.7 (0.02)
+Passed bias filter:                       40  (0.00488579); expected 163.7 (0.02)
+Passed Vit filter:                         5  (0.000610724); expected 8.2 (0.001)
+Passed Fwd filter:                         4  (0.000488579); expected 0.1 (1e-05)
+Initial search space (Z):               8187  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9152.98
+//
+[ok]

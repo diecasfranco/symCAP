@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dapE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFPITSP/VFPITSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/dapE/dapE_VFPITSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dapE_prot  [M=361]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.2e-85  286.3  36.1    1.4e-85  286.1  36.1    1.0  1  VFPITSP_1984  [80122 - 80871] 
+    9.6e-44  148.5  17.6    1.1e-43  148.3  17.6    1.0  1  VFPITSP_1969  [79769 - 80152] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPITSP_1984  [80122 - 80871] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  286.1  36.1   4.1e-89   1.4e-85     114     360 ..       2     249 ..       1     250 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 286.1 bits;  conditional E-value: 4.1e-89
+     dapE_prot 114 llkkkkkniaiilsgDEEgkakygskiivkilkkkkikikncliGEPtSekkildtikngRRGSlnlkikikgkqgHsAYsknklnplkilskiikk 210
+                   + kkkkkni+ii ++DEEgk+ yg+kii ki+kkk i+++++l+GEPtSekki+dtik+gRRGS+nlki++ gkqgHsAY+++++np++++ k++ +
+  VFPITSP_1984   2 VFKKKKKNIMIIATSDEEGKSLYGTKIINKIIKKKLIFVRKILVGEPTSEKKIGDTIKIGRRGSINLKINVIGKQGHSAYPNKAINPIHCILKTFYQ 98 
+                   5799********************************************************************************************* PP
+
+     dapE_prot 211 ikkiknkknkiqvtniktknktlNiipkkikiyiNiRYkkkkelnkllkkiikllkkkkiklkikiisnskpfkkkskkllkkilkilk..kikski 305
+                   ++k   kkn+iq+t+ik++n+t+Niipk +++++NiRY++k  +n l+ ++  +++k+k+k+ki+ ++ns pf  k+++l  +i+ki+k  kik k+
+  VFPITSP_1984  99 LQKNIIKKNDIQITSIKSNNTTTNIIPKASHLSVNIRYTSKFIINLLFLNLLFFIRKDKCKFKIELLNNSIPFSFKKNNL-YWIYKIFKclKIKFKF 194
+                   *************************************************************************9987765.5677775422788999 PP
+
+     dapE_prot 306 ennkGGtSDGRflkkisknivEiGlknkyaHkinEnvkikdiykliliYykilik 360
+                   +n kGGtSD+Rfl++ +kn++EiGlknkyaHk+nE++kikd+ykl +iYy il++
+  VFPITSP_1984 195 SNSKGGTSDARFLQNSCKNCIEIGLKNKYAHKYNEKSKIKDMYKLCNIYYFILNN 249
+                   9**************************************************9987 PP
+
+>> VFPITSP_1969  [79769 - 80152] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  148.3  17.6   3.2e-47   1.1e-43       1     120 [.       7     126 ..       7     128 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 148.3 bits;  conditional E-value: 3.2e-47
+     dapE_prot   1 MiklLkkiikiksitpkdskcqkiiskilkkigfevfifkkkkvknslfinkkkrkkkikllFlgHtDvVsenkikkWkvnpfklkikkkkifsrGi 97 
+                   Mik+Lkkii+ ksitp d +cqkii+ +lkkigfe+f+ k+kkv+ns+f++++++kkki++++++HtDvVse+k k Wk+np++l++ k+++++rGi
+  VFPITSP_1969   7 MIKILKKIINRKSITPYDMGCQKIIKIYLKKIGFETFTKKYKKVTNSIFFYRYNNKKKIDIMYSCHTDVVSEKKKKYWKTNPYNLTFLKGELIARGI 103
+                   9************************************************************************************************ PP
+
+     dapE_prot  98 cDMKgsivaflkslklllkkkkk 120
+                   cDMKgsi++flk++k++lkkkkk
+  VFPITSP_1969 104 CDMKGSISCFLKTVKWFLKKKKK 126
+                   *******************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (361 nodes)
+Target sequences:                       6695  (175187 residues searched)
+Passed MSV filter:                       519  (0.0775205); expected 133.9 (0.02)
+Passed bias filter:                       34  (0.00507842); expected 133.9 (0.02)
+Passed Vit filter:                         6  (0.000896191); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.00029873); expected 0.1 (1e-05)
+Initial search space (Z):               6695  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 16632.90
+//
+[ok]

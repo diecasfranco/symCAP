@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxF_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genomes/SMRANSCY/SMRANSCY_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round5/annotation/files/genes/xxxF/xxxF_SMRANSCY.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxF_prot  [M=322]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    5.5e-17   60.6   0.3    8.5e-17   60.0   0.3    1.5  1  SM_RANSCY_5022  [114795 - 113770] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SM_RANSCY_5022  [114795 - 113770] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   60.0   0.3     1e-20   8.5e-17     171     315 ..     197     340 ..      53     342 .] 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 60.0 bits;  conditional E-value: 1e-20
+       xxxF_prot 171 pavpnftsekklfkigkaiilnrgedvtivstghlvwesleaakflkkegiscevinihtikpldeesilksvkktkciitaeehnywgglgesv 265
+                       +pn+   +  + +gk++i ++g d+t+vs g+++  +++a k l+ke i  e+i+++ti+pld ++ilksvkkt+ +i  ee   +  +   +
+  SM_RANSCY_5022 197 MKIPNL---EYYLPLGKSLIKKQGADLTLVSFGKILKLAFKARKELEKENIDIEIIDLQTIRPLDYKTILKSVKKTNRLIILEEAWPFCSISSEI 288
+                     445555...345789*********************************************************************99999999999 PP
+
+       xxxF_prot 266 arllslnypcsqeivavndtfgesgkpf..elmkkysldketiikkvkkvlk 315
+                     + l+        +      t+ ++  p+  +l+k ++  ke ii   k++l 
+  SM_RANSCY_5022 289 TYLVQKYAFDYLDAPIKRITLEDTPAPYakNLIKLWYPSKEEIITAAKNLLY 340
+                     8887543222223323333444444454336899999999999998888775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (322 nodes)
+Target sequences:                       8162  (218902 residues searched)
+Passed MSV filter:                        78  (0.00955648); expected 163.2 (0.02)
+Passed bias filter:                       42  (0.0051458); expected 163.2 (0.02)
+Passed Vit filter:                         1  (0.000122519); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000122519); expected 0.1 (1e-05)
+Initial search space (Z):               8162  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 5663.32
+//
+[ok]

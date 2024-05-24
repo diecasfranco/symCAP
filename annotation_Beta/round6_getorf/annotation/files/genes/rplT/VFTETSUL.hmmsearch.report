@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFTETSUL/VFTETSUL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rplT/rplT_VFTETSUL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplT_prot  [M=118]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.1e-39  132.5  29.1    2.5e-39  132.3  29.1    1.0  1  VFTETSUL_3647  [58097 - 57744] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETSUL_3647  [58097 - 57744] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  132.3  29.1   4.7e-43   2.5e-39       1     111 [.       2     112 ..       2     117 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 132.3 bits;  conditional E-value: 4.7e-43
+      rplT_prot   1 MsRvkssvvskkkrkkllkktkgFigRRknvyriakqAyiksllysyrDrrkkkrilrrkwikkinfflkefnikYskfikllkkknillnrkily 96 
+                    MsRvk+ +   kk+kk++k+tkgFigRRkn yri+kqAyiksl+ysyrDr+k+k+++r+kwi+ in+++++f ikY+kfik+++++ni++nrki+y
+  VFTETSUL_3647   2 MSRVKNNTR-NKKHKKIIKLTKGFIGRRKNNYRISKQAYIKSLIYSYRDRKKNKSNFRKKWISIINIYIEKFGIKYNKFIKKINQNNIKINRKIIY 96 
+                    9****9865.5689********************************************************************************** PP
+
+      rplT_prot  97 elvkekkle.ilnlll 111
+                     l+k+k+++ ++n+l+
+  VFTETSUL_3647  97 LLIKNKNYNkYINFLC 112
+                    *999887651455444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (118 nodes)
+Target sequences:                       5341  (149480 residues searched)
+Passed MSV filter:                       545  (0.102041); expected 106.8 (0.02)
+Passed bias filter:                       56  (0.0104849); expected 106.8 (0.02)
+Passed Vit filter:                         4  (0.000748923); expected 5.3 (0.001)
+Passed Fwd filter:                         1  (0.000187231); expected 0.1 (1e-05)
+Initial search space (Z):               5341  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9983.81
+//
+[ok]

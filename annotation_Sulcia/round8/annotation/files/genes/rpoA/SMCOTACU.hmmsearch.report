@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rpoA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMCOTACU/SMCOTACU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rpoA/rpoA_SMCOTACU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SMOLIH_rpoA  [M=370]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   2.6e-132  440.1  25.3   5.6e-124  412.7  10.6    2.5  2  SMCOTACU_3618  [130286 - 131248] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMCOTACU_3618  [130286 - 131248] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  412.7  10.6  6.7e-128  5.6e-124       2     235 ..       7     238 ..       6     249 .. 0.98
+   2 !   32.9   6.9   2.3e-12   1.9e-08     266     363 ..     246     320 ..     240     321 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 412.7 bits;  conditional E-value: 6.7e-128
+    SMOLIH_rpoA   2 iispaqikvlknsnnigkflikplspgfgitignalrrvlisylegyaiyyimingikhefsyvdgvieniteiilnlkkirfklkskrvgsnnip 97 
+                    +ispaqik+lk+sn  gkflikpls gfgit+gn+lrrvlisylegyaiyyiming+khefsy+dgvien+teiilnlk+irfklkskr    nip
+  SMCOTACU_3618   7 MISPAQIKILKHSNKRGKFLIKPLSTGFGITLGNSLRRVLISYLEGYAIYYIMINGVKHEFSYIDGVIENLTEIILNLKQIRFKLKSKRY--KNIP 100
+                    79***************************************************************************************7..79** PP
+
+    SMOLIH_rpoA  98 khytiflktkkeqitagdlcgsltyfevlnpkllilkkeldtnlnitigikkgvgyvpveknkyfqkkrgkipidtifspiinvrfkvetcevhns 193
+                    +h+tifl  kk  itagd+cgs+t +evlnpkllil keldtnl it+gikkgvgyvp eknky++kk gkipidtifspiinvrfkvetcev+ns
+  SMCOTACU_3618 101 EHFTIFLNKKKANITAGDICGSITCLEVLNPKLLILNKELDTNLKITLGIKKGVGYVPGEKNKYLKKKIGKIPIDTIFSPIINVRFKVETCEVNNS 196
+                    ************************************************************************************************ PP
+
+    SMOLIH_rpoA 194 yeydslileiltdgsitpqnafkkassiliqhftlffngknn 235
+                    y+ydslil+i tdgsitp+na+kkassiliqhftlff+gkn 
+  SMCOTACU_3618 197 YDYDSLILDIRTDGSITPKNALKKASSILIQHFTLFFHGKNT 238
+                    ****************************************97 PP
+
+  == domain 2  score: 32.9 bits;  conditional E-value: 2.3e-12
+    SMOLIH_rpoA 266 nvndlsvrtlnclkfakirtwadlvkfktsdllkvrnfgmksfdelnkkmkklglsygmdlskykikiynkkqriinfrekmrqivklrnilklrk 361
+                    + +d   + ln + fa+i twadlv        kv+nfg++     nk +  lgl           k y kk+ri nfr+kmrqi+klrn++k rk
+  SMCOTACU_3618 246 STDDYMQKLLNGFNFAQIPTWADLV--------KVNNFGIR-----NKTIPTLGLD----------KSYKKKKRIKNFRDKMRQIIKLRNVIKRRK 318
+                    567888899*************987........689***97.....7899988864..........5689************************99 PP
+
+    SMOLIH_rpoA 362 mm 363
+                      
+  SMCOTACU_3618 319 RT 320
+                    76 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (370 nodes)
+Target sequences:                       8230  (217472 residues searched)
+Passed MSV filter:                        85  (0.0103281); expected 164.6 (0.02)
+Passed bias filter:                       26  (0.00315917); expected 164.6 (0.02)
+Passed Vit filter:                         2  (0.000243013); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000121507); expected 0.1 (1e-05)
+Initial search space (Z):               8230  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 13395.98
+//
+[ok]

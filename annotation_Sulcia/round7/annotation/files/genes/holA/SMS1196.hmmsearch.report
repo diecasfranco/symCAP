@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/holA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMS1196/SMS1196_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/holA/holA_SMS1196.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       holA_prot  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+      7e-72  241.4  68.2    9.2e-61  204.8  55.8    3.0  2  SMS1196_3796  [137737 - 138615] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMS1196_3796  [137737 - 138615] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  204.8  55.8   1.2e-64   9.2e-61       5     260 ..       6     245 ..       2     246 .. 0.91
+   2 !   38.9   5.3   3.8e-14     3e-10     279     319 .]     244     283 ..     241     283 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 204.8 bits;  conditional E-value: 1.2e-64
+     holA_prot   5 lkkkiitdinnkkfkniylflGeerflienltksielflkkkekikkkilygydldlkklffvtkqitinlsneynLiivkeaqfLsekienlekli 101
+                   +  ++it+i++k++k iy+f+Gee++li++++++ie +lk+++k+++k ++++++  +++++++++ t++l +eynLii+k++++L+++++nlekl+
+  SMS1196_3796   6 FYMIMITNIKIKEIKPIYIFIGEEEYLIKEYIEEIEKLLKNRRKKYSKSIIEVKERYRITNLLENFYTLTLIKEYNLIIIKNSEYLNLSLDNLEKLL 102
+                   66789*****************************************************************************************987 PP
+
+     holA_prot 102 lknnykktiliiCynnkvldkrkklykyikk....ngiifncvkLktneilylvkneieekGyiitenaikllikflgenlysinneikkllillek 194
+                   ++   k++i+i+C+n+++ ++++++y+ +k+    n +i+n++kL+++eilylvk++i+++G++i+e+++k+li++++ nl++++ne++k++i+++ 
+  SMS1196_3796 103 KQ-TSKRNIFIFCINFVIPSRNLEVYNCLKQktnnNIEIINNKKLTFGEILYLVKRKIKQIGLKINEITVKKLIQSVDCNLFMLENELNKFQIRFNT 198
+                   65.569*********************99962222457*********************************************************97 PP
+
+     holA_prot 195 nkiidekiikkyvlkttfkvesyiiekeflkalkaiknvpisliLkkiyklflkiikfhllilenv 260
+                       +    kk   kt    e  +       +lk ++  p++liL+kiykl+l+ ++ +++++e++
+  SMS1196_3796 199 ATA-N----KK---KT----EWNL-------ILKLLEIQPLTLILNKIYKLYLDQFMNYNNNEEKF 245
+                   653.2....22...23....3333.......46788999********************9998865 PP
+
+  == domain 2  score: 38.9 bits;  conditional E-value: 3.8e-14
+     holA_prot 279 plnkianiislireadikikninslkkeeileeLlykifyn 319
+                   ++ kian+++l++ead+k+k+ ++lkkeei++eL+yki+++
+  SMS1196_3796 244 KFKKIANLVFLLKEADKKNKS-YFLKKEEIMKELIYKICQI 283
+                   789*****************8.89***************85 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                       7918  (211661 residues searched)
+Passed MSV filter:                       550  (0.069462); expected 158.4 (0.02)
+Passed bias filter:                       66  (0.00833544); expected 158.4 (0.02)
+Passed Vit filter:                         2  (0.000252589); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126295); expected 0.1 (1e-05)
+Initial search space (Z):               7918  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 10183.06
+//
+[ok]

@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rsmH2_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMASICLA/SMASICLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/rsmH2/rsmH2_SMASICLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmH2_prot  [M=89]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.2e-36  122.6  21.0    5.4e-36  121.8  14.1    1.8  2  SMASICLA_4076  [150773 - 151009] 
+    6.5e-17   60.7  50.5    1.3e-08   34.1  15.4    2.2  3  SMASICLA_4074  [150732 - 150929] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMASICLA_4076  [150773 - 151009] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.6   0.6   6.2e-05      0.28      21      32 ..       1      12 [.       1      12 [. 0.82
+   2 !  121.8  14.1   1.2e-39   5.4e-36       1      77 [.       7      79 .]       7      79 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 6.2e-05
+     rsmH2_prot 21 yldsifgvyiya 32
+                   yl++if+vyiy+
+  SMASICLA_4076  1 YLWYIFMVYIYG 12
+                   888888888886 PP
+
+  == domain 2  score: 121.8 bits;  conditional E-value: 1.2e-39
+     rsmH2_prot  1 mkyiyqivllsivivyliyiyldsifgvyiyarsilkkidkkGknlspfliafdkdifsiiknkiyenkrakrivlf 77
+                   m+yiy+i+l++i++vy+++iyl++if+vyiy+   ++k+dkkGknlspf+i+f+k+if+ +kn+iyenkrak++vlf
+  SMASICLA_4076  7 MVYIYGIYLWYIFMVYIYGIYLWYIFMVYIYG---IIKSDKKGKNLSPFMINFSKRIFT-TKNEIYENKRAKSEVLF 79
+                   9******************************9...89*********************9.8***************9 PP
+
+>> SMASICLA_4074  [150732 - 150929] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   4.3   1.3e-06    0.0057      17      32 ..      15      30 ..       5      30 .. 0.82
+   2 !   33.1  14.9   5.9e-12   2.7e-08       4      32 ..      15      43 ..      12      43 .. 0.96
+   3 !   34.1  15.4   2.9e-12   1.3e-08       1      29 [.      25      53 ..      25      63 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 1.3e-06
+     rsmH2_prot 17 liyiyldsifgvyiya 32
+                   +++iyl++if+vyiy+
+  SMASICLA_4074 15 IYGIYLWYIFMVYIYG 30
+                   7888999999999886 PP
+
+  == domain 2  score: 33.1 bits;  conditional E-value: 5.9e-12
+     rsmH2_prot  4 iyqivllsivivyliyiyldsifgvyiya 32
+                   iy+i+l++i++vy+++iyl++if+vyiy+
+  SMASICLA_4074 15 IYGIYLWYIFMVYIYGIYLWYIFMVYIYG 43
+                   8***************************7 PP
+
+  == domain 3  score: 34.1 bits;  conditional E-value: 2.9e-12
+     rsmH2_prot  1 mkyiyqivllsivivyliyiyldsifgvy 29
+                   m+yiy+i+l++i++vy+++iyl++if+v 
+  SMASICLA_4074 25 MVYIYGIYLWYIFMVYIYGIYLWYIFMVL 53
+                   9**************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (89 nodes)
+Target sequences:                       8999  (239747 residues searched)
+Passed MSV filter:                       618  (0.0686743); expected 180.0 (0.02)
+Passed bias filter:                      158  (0.0175575); expected 180.0 (0.02)
+Passed Vit filter:                        13  (0.0014446); expected 9.0 (0.001)
+Passed Fwd filter:                         3  (0.00033337); expected 0.1 (1e-05)
+Initial search space (Z):               8999  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 3621.64
+//
+[ok]

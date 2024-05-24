@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFPENVAR/VFPENVAR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/rplC/rplC_VFPENVAR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplC_prot  [M=138]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.2e-54  177.1  18.0    1.2e-54  177.1  18.0    1.9  2  VFPENVAR_124  [119211 - 119750]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPENVAR_124  [119211 - 119750]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   1.5     0.042       6.3      11      32 ..      19      37 ..      10      46 .. 0.43
+   2 !  177.1  18.0   7.8e-57   1.2e-54       4     137 ..      44     176 ..      41     177 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.042
+     rplC_prot 11 sniflkGkliqvtelliketkk 32
+                  ++i+      +vt+++ik+tk 
+  VFPENVAR_124 19 KKIYTI---NNVTIIIIKNTKV 37
+                  333332...2344444443332 PP
+
+  == domain 2  score: 177.1 bits;  conditional E-value: 7.8e-57
+     rplC_prot   4 iakkkkssniflkGkliqvtelliketkklklkigkklsiisiskGkGfsGvikrykfssnrkshGnskahrkpGsiGmCqdPGrvfkGkkmpGrkg 100
+                   + kkk+++ni+++G++  vtel++ke+ k+k+++gk+++ i++skGkGf+G+ikr++fs ++k+hGnskahrkpGsiGmCqdPGrvfkGkkm+G+ g
+  VFPENVAR_124  44 KLKKKRTTNIYISGEHKIVTELNSKEEIKMKINVGKTITTITKSKGKGFAGTIKRHGFSGGNKTHGNSKAHRKPGSIGMCQDPGRVFKGKKMSGHLG 140
+                   67899******************************************************************************************** PP
+
+     rplC_prot 101 qkkislknirvlklekkkiiikGnvpGskkskikike 137
+                   +kk+++kn+ +++++kkkii+ Gn+pGs++ ++ ik+
+  VFPENVAR_124 141 RKKNTKKNL-LIYISKKKIIFLGNLPGSNNENVEIKN 176
+                   ********9.568999******************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (138 nodes)
+Target sequences:                        151  (39684 residues searched)
+Passed MSV filter:                        71  (0.470199); expected 3.0 (0.02)
+Passed bias filter:                        3  (0.0198675); expected 3.0 (0.02)
+Passed Vit filter:                         1  (0.00662252); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00662252); expected 0.0 (1e-05)
+Initial search space (Z):                151  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1681.00
+//
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/dnaN_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMIDISP1/SMIDISP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/dnaN/dnaN_SMIDISP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaN_prot  [M=372]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+     1e-138  461.3  66.0   6.1e-135  448.8  58.8    2.0  2  SMIDISP1_100  [3572 - 4744] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMIDISP1_100  [3572 - 4744] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   3.4   1.5e-07    0.0013       1      32 [.       5      36 ..       5      41 .. 0.92
+   2 !  448.8  58.8  7.1e-139  6.1e-135      13     370 ..      33     391 .]      31     391 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 1.5e-07
+     dnaN_prot  1 mkfisssnellrslkdilsvinitnklpilen 32
+                  mkf+++s++++++lk+i+svi++ n+++ ++n
+  SMIDISP1_100  5 MKFVIDSKSFFKNLKSIYSVISKRNNMNNMNN 36
+                  9*************************998776 PP
+
+  == domain 2  score: 448.8 bits;  conditional E-value: 7.1e-139
+     dnaN_prot  13 slkdilsvinitnklpilenfllkikeknvlkitvsdleitltislkinsinfGsavipakilleilkkipeqpltfikekenklkilsqnGeydls 109
+                   ++ ++ ++ n++n  ++l++f+lkik +++lki++sdl+++++i+lk++s+ +G+a++pak+l+eilk++peqp+t++k+++n+++i   +G+yd++
+  SMIDISP1_100  33 NMNNLNNLNNMNNMNNLLTCFILKIK-NGLLKIKASDLDLCIKITLKVVSKSHGKAAVPAKLLIEILKQLPEQPITIKKINSNQIRIYFFKGNYDIC 128
+                   6677788889999999*********7.69******************************************************************** PP
+
+     dnaN_prot 110 ifsseeypkysllrnnnsllisekkllniinntlfavGndeirpvlnGvlfdieknisnfvstnsnllvkysikdlsskkkirliipkkplnilknn 206
+                   +++++ +pk+++++n+++++++++++lnii ntlfavGn+e+rpv+nGv+f+i+k+ ++fv+tn+++l+ky+i+++++++k+++i+pkk+l ilk+n
+  SMIDISP1_100 129 VLDHKLFPKHKKIKNPKYCILKKETILNIIKNTLFAVGNEELRPVMNGVCFNINKKQGSFVATNAKILAKYFINNIKNQDKMKFILPKKTLIILKQN 225
+                   ***********************************************************************************************99 PP
+
+     dnaN_prot 207 .lnd.tnknvyisynklntsflfkkkkiicslinGnypnyksll.kkkynkiliinknyflnaikrvtlfsnrltyqiilnfskkrskissfdinln 300
+                    ln+ +nk+++i+ynk+nt f+f++k+ii+sli+G++pny+s++ k k+n++liin++ +l++ikr+ lfsn ++++i ++fs k+++i++++++l+
+  SMIDISP1_100 226 fLNNiKNKYIQIQYNKYNTLFKFSNKVIISSLIKGEIPNYDSIIpKYKINNKLIINVQDLLKSIKRINLFSNPKSNRINFSFSLKQNIIFAENNELT 322
+                   44544799***********************************95669************************************************* PP
+
+     dnaN_prot 301 nkafeylfceydGepleivfnskylieilsnincediklelldnksscritpllknskkeeilililpls 370
+                   nk++e+l+ ey+Ge+lei+fn k+lie+lsn++c+di++++ d++++++i+p+++ +kke+il+li+pl+
+  SMIDISP1_100 323 NKGLEELIGEYSGENLEISFNYKDLIEVLSNLTCNDIEIKFKDKYTPAIIKPIFS-LKKEKILRLIIPLT 391
+                   *****************************************************97.689*********95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (372 nodes)
+Target sequences:                       8590  (231880 residues searched)
+Passed MSV filter:                       330  (0.0384168); expected 171.8 (0.02)
+Passed bias filter:                       49  (0.00570431); expected 171.8 (0.02)
+Passed Vit filter:                         5  (0.000582072); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116414); expected 0.1 (1e-05)
+Initial search space (Z):               8590  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12876.92
+//
+[ok]

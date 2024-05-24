@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/clpP_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFAGAHAV/VFAGAHAV_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/clpP/clpP_VFAGAHAV.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       clpP_prot  [M=187]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    8.6e-97  320.8  15.2    8.6e-97  320.8  15.2    1.4  2  VFAGAHAV_1522  [58968 - 59645] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFAGAHAV_1522  [58968 - 59645] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.4   0.9      0.37   2.4e+03     143     164 ..       4      25 ..       1      32 [. 0.59
+   2 !  320.8  15.2  1.3e-100   8.6e-97       2     187 .]      41     226 .]      39     226 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: -3.4 bits;  conditional E-value: 0.37
+      clpP_prot 143 lkkkinkilskntkkkikkikk 164
+                    +kk    il + ++k++k +kk
+  VFAGAHAV_1522   4 VKKLFFLILKQSIEKNLKVLKK 25 
+                    5555556666666666665554 PP
+
+  == domain 2  score: 320.8 bits;  conditional E-value: 1.3e-100
+      clpP_prot   2 lknllllvleknksldilskllkeriiflsgeindelansiisqllylesinkkdisiyinspGGsissGlaiydvikfikskvstlciGlaasma 97 
+                    +kn+++lvle+n+++di+skllkeriif++geind++ans+i+q+++le++n+kdisiyinspGGsi+sGlaiyd+++++k+++st+c+G+aasma
+  VFAGAHAV_1522  41 FKNYIPLVLENNSTYDIYSKLLKERIIFINGEINDYIANSVICQMIHLENENNKDISIYINSPGGSIYSGLAIYDIMNYVKCNISTVCYGIAASMA 136
+                    5899******************************************************************************************** PP
+
+      clpP_prot  98 afllssGkkgkryslknsrimihqPlggfkGqasdikiqtkeilylkkkinkilskntkkkikkikkdterdkfmsskealkygiidkii 187
+                    afllssGkk+kry++knsrimihqPlg+fkGqasdikiq+keilylkkkinkilskntkk+ik+i kdt+rdkfmssk+++kygiidkii
+  VFAGAHAV_1522 137 AFLLSSGKKKKRYATKNSRIMIHQPLGAFKGQASDIKIQAKEILYLKKKINKILSKNTKKSIKTILKDTDRDKFMSSKQSKKYGIIDKII 226
+                    *****************************************************************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (187 nodes)
+Target sequences:                       6567  (174681 residues searched)
+Passed MSV filter:                       161  (0.0245165); expected 131.3 (0.02)
+Passed bias filter:                       35  (0.00532968); expected 131.3 (0.02)
+Passed Vit filter:                         2  (0.000304553); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000152277); expected 0.1 (1e-05)
+Initial search space (Z):               6567  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 14063.09
+//
+[ok]

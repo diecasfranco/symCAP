@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/glnS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFBRUSP1/VFBRUSP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/glnS/glnS_VFBRUSP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnS_prot  [M=443]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   1.1e-136  455.0  45.3   1.6e-136  454.4  45.3    1.2  1  VFBRUSP1_4852  [39749 - 38406] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBRUSP1_4852  [39749 - 38406] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  454.4  45.3  2.8e-140  1.6e-136       2     442 ..      19     442 ..      18     443 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 454.4 bits;  conditional E-value: 2.8e-140
+      glnS_prot   2 knfilkkikkdnkkiktRFaPEPsgyLHiGHlKciyiNykiskkfkgkfilRiDDtNPekskkkyvkkIikdikklglkkkikitfsSdyfkklyk 97 
+                    knfi+kk+ +dn+ iktRFaPEPsgyLH+GHlKci+iN +is++f+g f++RiD+tNP+ ++ ky+k+Iikdi+++   ++i +t+sSdyf+ +y 
+  VFBRUSP1_4852  19 KNFIFKKVISDNIFIKTRFAPEPSGYLHLGHLKCIVINSYISNLFNGLFFIRIDNTNPCICSFKYEKSIIKDISTFI--SNIPYTRSSDYFHLIYS 112
+                    8************************************************************************9876..6799************* PP
+
+      glnS_prot  98 iakklikkklayidsqkkkkfklnkgnykkkgkksiflkrkikenlyllkkmknglfkekefvvrlkinmkskninlrdpiiyRikkkkhfikkkv 193
+                    ++kkl++++l+yidsq++  ++l++gny+++g++s+f++r+ +e+lyllk+m+ g++  +e++vr+ +nm+s n+nlrdp+iyR++ +     +++
+  VFBRUSP1_4852 113 FIKKLFRYSLIYIDSQDTLALSLSRGNYFTIGYRSLFFSRHSFESLYLLKRMRLGYYLPGEHIVRIITNMYSYNLNLRDPVIYRLRYS-----SSI 203
+                    *************************************************************************************865.....568 PP
+
+      glnS_prot 194 kiyPtYDfsnsicDriekishSiCtkEFennkilYnyyiklYnkiykkkklpkQiEfskLeiknvklsKRkikklikkkkikkwndkrlltlkgli 289
+                    +iyP YD++ns+cDri++ishSiCt+EF n+ ++Y+yyi+lYnki+ ++++p+Q+EfskLe++++ ++KR+i +l+++++i++w+d+rl+tl+gl+
+  VFBRUSP1_4852 204 TIYPVYDIVNSLCDRIDRISHSICTMEFVNSAYMYYYYICLYNKIVGRYFFPRQLEFSKLELQGLVMGKRNIFSLMSRYSISSWSDIRLYTLRGLL 299
+                    9*********************************************************************************************** PP
+
+      glnS_prot 290 nrgisikslikfvkktgytkknslikisllkkiiiknlkkkvlkkikiilkpikiiikkkkeifiekkkkikslfflkkkkkiisnllyikkiiki 385
+                    nrg++i+sli+fv +tgy++++++ +isll+ki++kn+  + l++++++ +pi++ ++ +++++i++k             ++++++ y+++ii++
+  VFBRUSP1_4852 300 NRGYDISSLIEFVISTGYSRSRCQSNISLLRKIFVKNN--SLLCSFIFLSCPIVFSYYYYDMYLIHTK-------------SLSCMVRYLSNIIRA 380
+                    ***********************************986..68999**********9999999888754.............4667889999***** PP
+
+      glnS_prot 386 kliiiknnkikkkkvyl..eikklkinekiiikkigiFklkkkk...kkiilkeiilFknas 442
+                    k+i+++n k++ k++yl  +i k++in+++ii  igiFk+++k+   ++++l +i+ Fk ++
+  VFBRUSP1_4852 381 KVIFTYNIKVFFKYIYLsdNIYKVNINSRLIIYGIGIFKMVSKDfflRRVVLLSIEEFKGVK 442
+                    ***********999999334568899**************9986333677888888888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (443 nodes)
+Target sequences:                       5848  (167478 residues searched)
+Passed MSV filter:                       509  (0.0870383); expected 117.0 (0.02)
+Passed bias filter:                       41  (0.00701094); expected 117.0 (0.02)
+Passed Vit filter:                        16  (0.00273598); expected 5.8 (0.001)
+Passed Fwd filter:                         1  (0.000170999); expected 0.1 (1e-05)
+Initial search space (Z):               5848  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 7705.54
+//
+[ok]

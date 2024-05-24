@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/asnS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMDICTMADA/SMDICTMADA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/asnS/asnS_SMDICTMADA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       asnS_prot  [M=466]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+   1.9e-199  662.2  34.3   9.6e-199  659.9  34.3    1.8  1  SMDICTMADA_7273  [23548 - 22235] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMDICTMADA_7273  [23548 - 22235] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  659.9  34.3  1.2e-202  9.6e-199       6     465 ..       2     437 ..       1     438 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 659.9 bits;  conditional E-value: 1.2e-202
+        asnS_prot   6 fnsikelilnyklflskkikikgwvkhfrsn...cfiiindgstiknlqifidkkfssllkkinigvslevigvlvlskgkkqnieiyankiki 96 
+                      +++i+ ++++++ ++++ki ++gwvkh+rsn    f+iindgsti nlq+++++++    +k+n g  l+v+g +vlskg+kq+ie++a++i i
+  SMDICTMADA_7273   2 CHTIRSILKQNTNLINQKIVVNGWVKHIRSNklkKFVIINDGSTIINLQLIVKNET----RKLNRGTFLKVKGKIVLSKGNKQIIELLAKNIII 91 
+                      789***************************944459****************8875....789******************************* PP
+
+        asnS_prot  97 lgkfsseelqktilqpkkhsfkklreqaylrfrtsifssilrirhnisfsihkffykknfiyintpiittydsegagelfrvtnfdlkkiplne 190
+                      +g f+++++qktilqpkkhsf+klr+qa lrfrt++fssi+r+rhn+s+ ihk+f k+ f+ i+tpiit+ydseg ++lf+vt+          
+  SMDICTMADA_7273  92 YGLFKEKDFQKTILQPKKHSFNKLRQQASLRFRTNLFSSIMRVRHNVSYLIHKYFNKRGFYNIQTPIITNYDSEGYSKLFKVTT---------- 175
+                      **********************************************************************************96.......... PP
+
+        asnS_prot 191 kgelnnnldffgestyltvsgqlqgeaaasglgkiytfgptfraeksntfrhlsefwmiepelsfyklvnnmslaekllkyvikfviknsyedl 284
+                            + dffge+++ltvsgql+ge+aa glgkiytfgptfrae snt rhl+efwm+epe++f++l+nnm lae+++ky++k +ik sy+dl
+  SMDICTMADA_7273 176 ------KSDFFGENAFLTVSGQLHGESAALGLGKIYTFGPTFRAENSNTPRHLAEFWMVEPEVAFFNLKNNMYLAEHFIKYIMKKIIKLSYDDL 263
+                      ......249************************************************************************************* PP
+
+        asnS_prot 285 fflekknkrkilkrlnsvlessferisytnaikilksskkvkflysvkwgedlksehekflaenyfnnpiiiynyplkikpfymrlnndnktva 378
+                      ffl+k+n  +i++++n +l+++f+ri+y++a+kil +     + y+++wg+dlksehekfl+enyfn piii++yp+++kpfymr+n+d+ktv+
+  SMDICTMADA_7273 264 FFLDKNN--QIFNNINLILNKDFKRITYSKALKILSQ-----NGYQITWGKDLKSEHEKFLVENYFNSPIIIFDYPIDLKPFYMRINKDKKTVS 350
+                      ****987..69***********************964.....5799************************************************ PP
+
+        asnS_prot 379 amdiifpyigeiiggsqreerynvllkrilelnlnikslwwylnirrfgsvphsgfglgferliqfitnidnikdvipfpryqnkay 465
+                      amdiifpy+geiiggsqreery++ll++i++++l+ k l+wy+n+r+fg+vphsgfglgf+rliqfitn++ni++vipfpr+++k+y
+  SMDICTMADA_7273 351 AMDIIFPYVGEIIGGSQREERYKILLSQIKYFKLKPKDLEWYINTRKFGTVPHSGFGLGFDRLIQFITNMKNIREVIPFPRSPKKIY 437
+                      ************************************************************************************998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (466 nodes)
+Target sequences:                       7898  (209512 residues searched)
+Passed MSV filter:                       204  (0.0258293); expected 158.0 (0.02)
+Passed bias filter:                       41  (0.00519119); expected 158.0 (0.02)
+Passed Vit filter:                         3  (0.000379843); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126614); expected 0.1 (1e-05)
+Initial search space (Z):               7898  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7480.14
+//
+[ok]

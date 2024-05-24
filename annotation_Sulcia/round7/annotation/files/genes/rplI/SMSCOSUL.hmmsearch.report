@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplI_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMSCOSUL/SMSCOSUL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rplI/rplI_SMSCOSUL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplI_prot  [M=151]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.4e-35  120.6  15.4      3e-35  120.4  15.4    1.0  1  SMSCOSUL_7280  [21028 - 20741] (REVERSE SENSE) 
+      5e-29  100.2  17.8    5.3e-29  100.1  17.8    1.0  1  SMSCOSUL_7284  [20805 - 20527] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMSCOSUL_7280  [21028 - 20741] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  120.4  15.4   7.6e-39     3e-35       1      73 [.      20      92 ..      20      95 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 120.4 bits;  conditional E-value: 7.6e-39
+      rplI_prot  1 mkillikevkelGikydivdvkPGyaknllfPkklailftdslkkkkfeilnknikkekkllnkfnkeiikik 73
+                   mkillikevkelGikydiv+vk Gyakn+lfPkklailftdslkkk+f+ilnkni++ekkllnkf+kei+kik
+  SMSCOSUL_7280 20 MKILLIKEVKELGIKYDIVEVKQGYAKNFLFPKKLAILFTDSLKKKYFNILNKNINNEKKLLNKFKKEILKIK 92
+                   9***********************************************************************8 PP
+
+>> SMSCOSUL_7284  [20805 - 20527] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.1  17.8   1.4e-32   5.3e-29      65     150 ..      10      92 ..       1      93 [] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 100.1 bits;  conditional E-value: 1.4e-32
+      rplI_prot  65 fnkeiikikklnwvfykkasksgvllktlskkdifnillekkieieidqifikkktinklGkfkfevkfskkifknfkiiiikkik 150
+                    + k   k  klnwvfyk+asksgvl+ktlsk+difn++le ki+i+idqi+++++ ink+ ++k+evkf  kifk+++iiii+k+k
+  SMSCOSUL_7284  10 LRK---KFLKLNWVFYKTASKSGVLDKTLSKTDIFNMFLEHKININIDQIHVNTTRINKIVQYKLEVKFRNKIFKQINIIIITKPK 92 
+                    444...5668**************************************************************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (151 nodes)
+Target sequences:                       7859  (208608 residues searched)
+Passed MSV filter:                       369  (0.0469525); expected 157.2 (0.02)
+Passed bias filter:                       54  (0.0068711); expected 157.2 (0.02)
+Passed Vit filter:                         2  (0.000254485); expected 7.9 (0.001)
+Passed Fwd filter:                         2  (0.000254485); expected 0.1 (1e-05)
+Initial search space (Z):               7859  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 17703.42
+//
+[ok]

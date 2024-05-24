@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/groES_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFSTELAU/VFSTELAU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/groES/groES_VFSTELAU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       groES_prot  [M=85]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.5e-20   70.6  10.0    2.5e-20   70.6  10.0    1.9  2  VFSTELAU_1545  [57238 - 57543] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFSTELAU_1545  [57238 - 57543] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.9   0.4     0.029   1.4e+02      70      83 ..      11      24 ..       4      26 .. 0.82
+   2 !   70.6  10.0   5.3e-24   2.5e-20       1      83 [.      27     101 ..      27     102 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 0.9 bits;  conditional E-value: 0.029
+     groES_prot 70 kYifikykniiakl 83
+                    Y++i +k+ii ++
+  VFSTELAU_1545 11 IYVIIYLKEIINII 24
+                   59999999999887 PP
+
+  == domain 2  score: 70.6 bits;  conditional E-value: 5.3e-24
+     groES_prot   1 MkikplnnyiilkkikkkkkskilikkkkkkkniGkVvfikknkkkkikkgdiviykkyssnkikiknkkYifikykniiakl 83 
+                    Mki p+n++i+++ki+   k+ il+++kk  +n G V++i++n   +ik+gd ++ykk+ss+++   nk+Y+fikyk+iia++
+  VFSTELAU_1545  27 MKIFPINDWILIRKIE---KKGILLSRKK--SNQGCVISICDNRTINIKQGDRIFYKKFSSQRF---NKQYVFIKYKHIIARI 101
+                    *************996...5689998765..678***************************996...7*************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (85 nodes)
+Target sequences:                       4826  (141655 residues searched)
+Passed MSV filter:                       218  (0.045172); expected 96.5 (0.02)
+Passed bias filter:                       71  (0.014712); expected 96.5 (0.02)
+Passed Vit filter:                         2  (0.000414422); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000207211); expected 0.0 (1e-05)
+Initial search space (Z):               4826  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11595.99
+//
+[ok]

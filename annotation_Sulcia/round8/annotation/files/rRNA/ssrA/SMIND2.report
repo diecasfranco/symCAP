@@ -1,0 +1,63 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/RNAs/ssrA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/genomes/SMIND2.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMIND2.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ssrA  [M=343]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    8.6e-28   93.3  30.3  SMIND2    20630  20323 
+
+
+Annotation for each hit  (and alignments):
+>> SMIND2  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   93.3  30.3   8.6e-28         1       342 [.     20630     20323 ..     20630     20322 ..    137729    0.68
+
+  Alignment:
+  score: 93.3 bits
+    ssrA     1 ggggctggattggaattgacaacaagattaatat.ataagtaagcatatcgtgaaaagtaatgtaatcacgtaaata..tcattacaaatga.taaccg 95   
+               ggggctg  ttgg  ttgaca caag   aatat ataag  agcatatcgtgaaa gtaatgt atcacgtaaa a  tcattacaaa  a taa  g
+  SMIND2 20630 GGGGCTGATTTGGTTTTGACATCAAGT-AAATATaATAAGATAGCATATCGTGAAATGTAATGTTATCACGTAAAAAatTCATTACAAAAAAcTAAATG 20533
+               79**********************995.55666526899*********************************98765448******9876542788899 PP
+
+    ssrA    96 gcaaaaaaaattatgctcttgcggcttgatcaataactttgaattcgaatgcaagatttttttattaaaaataaatttaatttgaaagattgaggttct 194  
+               gcaaa   aatta  ctcttgc gctt a   at   tt         a gc a a   +tt a  aa      a  taattt     att aggt   
+  SMIND2 20532 GCAAA---AATTACTCTCTTGCAGCTTAAG--ATTTTTT-------TTAAGCTAAAACAGTTAAGCAAT----CAACTAATTT-----ATTAAGGTCAA 20455
+               99865...6799999**********98652..1111111.......11222322222222322222222....2222333333.....45555555444 PP
+
+    ssrA   195 aaatctttctttaattgtttagaactttcttataag.aaagagtttcttatcactaatcttatgtgaaatttgctctttga...taagataaatatgta 289  
+                aatc    t               ttt tt+taa    ag g ttct    act a  tt      aa tt ct  ttga    aag  aaatatgta
+  SMIND2 20454 TAATCGACAT-A------------TTTTGTTCTAATtTTAGGGCTTCTA---ACTCAAATT----AGAACTTACTACTTGAagtGAAGCCAAATATGTA 20376
+               4444322111.1............1112222222210124455555543...233332222....335556666666666523268999********** PP
+
+    ssrA   290 gaaaacttataatattacttgtttggacacgggttcgaatcccgtcagctcca 342  
+               gaaa cttat atatt cttgtttggacacgggttcga tcccgtcagctcca
+  SMIND2 20375 GAAATCTTATTATATTGCTTGTTTGGACACGGGTTCGATTCCCGTCAGCTCCA 20323
+               ***************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (343 nodes)
+Target sequences:                          1  (275458 residues searched)
+Residues passing SSV filter:          256496  (0.931); expected (0.02)
+Residues passing bias filter:         146701  (0.533); expected (0.02)
+Residues passing Vit filter:            1872  (0.0068); expected (0.003)
+Residues passing Fwd filter:            1079  (0.00392); expected (3e-05)
+Total number of hits:                      1  (0.00112)
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 1936.40
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/rRNA/ssrA/SMIND2.sto
+[ok]

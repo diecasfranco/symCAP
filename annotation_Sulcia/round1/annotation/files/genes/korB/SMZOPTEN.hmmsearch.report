@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/korB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMZOPTEN/SMZOPTEN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/korB/korB_SMZOPTEN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       korB_prot  [M=282]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.8e-12   46.1   2.2    2.2e-10   39.2   0.7    2.0  2  SMZOPTEN_5549  [81898 - 81761] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMZOPTEN_5549  [81898 - 81761] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.2   0.7   2.8e-14   2.2e-10     207     235 ..       2      30 ..       1      31 [. 0.95
+   2 !    9.9   0.1   2.5e-05       0.2     253     270 ..      29      46 .]      29      46 .] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 39.2 bits;  conditional E-value: 2.8e-14
+      korB_prot 207 qriqyitdnifnpkikpfrdnaknfwihd 235
+                    +ri+yitd ifnpk+k f dna nfwih+
+  SMZOPTEN_5549   2 KRIKYITDKIFNPKMKTFSDNANNFWIHE 30 
+                    79**************************7 PP
+
+  == domain 2  score: 9.9 bits;  conditional E-value: 2.5e-05
+      korB_prot 253 yenlplsfgilykntrtt 270
+                    +enlpl fgil kn r t
+  SMZOPTEN_5549  29 HENLPLIFGILSKNNRPT 46 
+                    69************9976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (282 nodes)
+Target sequences:                       7883  (207887 residues searched)
+Passed MSV filter:                       135  (0.0171255); expected 157.7 (0.02)
+Passed bias filter:                       64  (0.00811874); expected 157.7 (0.02)
+Passed Vit filter:                         6  (0.000761132); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126855); expected 0.1 (1e-05)
+Initial search space (Z):               7883  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 13119.45
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_pyro//annotation/files/genomes/VFPARIOC/VFPARIOC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_pyro//annotation/files/genes/rluD/rluD_VFPARIOC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluD_prot  [M=222]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    2.2e-26   86.0  72.4    2.2e-26   86.0  72.4    2.3  2  VFPARIOC_35  [35861 - 36622]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPARIOC_35  [35861 - 36622]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.2  10.0      0.63        88       3      28 ..      10      37 ..       6      40 .. 0.60
+   2 !   86.0  72.4   1.6e-28   2.2e-26       2     221 ..      37     251 ..      36     252 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -4.2 bits;  conditional E-value: 0.63
+    rluD_prot  3 kevflkkkkkki...kiiyenkyfiivkk 28
+                 k +++k+ +kk+   k++y+n y+i  kk
+  VFPARIOC_35 10 KFFYIKESNKKFailKLFYNNIYYIK-KK 37
+                 67888888887622245677777653.22 PP
+
+  == domain 2  score: 86.0 bits;  conditional E-value: 1.6e-28
+    rluD_prot   2 kkevflkkkkkkikiiyenkyfiivkkkkkilvydtkn.vkknilsl.....gkkiflnkkrlgilnRlDkdtsGiiiisknrktysiikklfkkrki 93 
+                  kk +++ k kkki+ i e+k  ++++kkk++lvy+t+  + +nils      g+kif + +++gi++R+D++tsGiii++kn+k ++i+  lfkkrki
+  VFPARIOC_35  37 KKYIYVNKIKKKINFIREEKKIFLIDKKKNYLVYNTRLlYINNILSCiynfyGEKIF-KIHKCGIVHRIDYKTSGIIILAKNNKYHKILNILFKKRKI 133
+                  799*********************************9637899*9862222267787.5789************************************ PP
+
+    rluD_prot  94 kkyylvlekislkikknkFyiknflvk....fklngkfsvtyikk.ilsykkvfsiliikiltGrkhQIrkqlsiiGyPivgdklygkkikaknivLf 186
+                  kkyylv  k+ +  kk++   kn+++k     k ++k+ ++ +k  ++++++ +s++++k++tGrk+QI++q +          l   ++k kni+L+
+  VFPARIOC_35 134 KKYYLVFCKSFT--KKKFLNFKNYIYKkrvfYKKKKKYKYSHLKSfVIYKNNKISFFLCKLFTGRKNQIKVQFNK---------LL--NFKYKNIILQ 218
+                  ******988654..566556788888833323678899999999745677778899**************99753.........33..356689**** PP
+
+    rluD_prot 187 swklsfalkkekikfyslirkkilkkliksnkkvl 221
+                  s++l+  ++k+  + ysl++k+ +  + k+nkk++
+  VFPARIOC_35 219 SYNLK--IPKFYLNNYSLLNKEFIFLFKKINKKII 251
+                  **876..6899***********9999999999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (222 nodes)
+Target sequences:                        141  (38834 residues searched)
+Passed MSV filter:                       130  (0.921986); expected 2.8 (0.02)
+Passed bias filter:                       11  (0.0780142); expected 2.8 (0.02)
+Passed Vit filter:                        11  (0.0780142); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.0070922); expected 0.0 (1e-05)
+Initial search space (Z):                141  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1277.85
+//
+[ok]

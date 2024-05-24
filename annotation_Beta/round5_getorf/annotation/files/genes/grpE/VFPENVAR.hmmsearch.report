@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/grpE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFPENVAR/VFPENVAR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/grpE/grpE_VFPENVAR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       grpE_prot  [M=145]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.4e-50  167.7  18.5    6.4e-50  167.5  18.5    1.0  1  VFPENVAR_4239  [104574 - 104110] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPENVAR_4239  [104574 - 104110] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  167.5  18.5   9.1e-54   6.4e-50       5     143 ..      17     155 .]      14     155 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 167.5 bits;  conditional E-value: 9.1e-54
+      grpE_prot   5 klkkenkklkkkyleliaeienikkrllkelkkikkkskekiiknilpiiDsleislknskekklkegikitlkllknilkknnvkkIkpkkfekf 100
+                    ++k +++k+k+kyl lia+i+nikkr+lk+++k+kk+++e+i+k+ilp++Dsl+i  k++++ + k++++ +++l+++++k nn+k+I+pkkf+kf
+  VFPENVAR_4239  17 NKKISEEKYKNKYLMLIADIDNIKKRCLKDIEKNKKFLSEDIFKKILPVLDSLNILKKSFTDLNSKNSVRSIIRLFNSLFKINNIKEINPKKFSKF 112
+                    56778899**************************************************************************************** PP
+
+      grpE_prot 101 nPkyhqailsikkkkksnlifnvLqkGYiiknkvlRPaLVsvt 143
+                    +Pk+hqai ++++ kk+nlifnv+q+GY+i+nkvlRPaLV++t
+  VFPENVAR_4239 113 DPKFHQAITRVNSFKKHNLIFNVFQRGYLIFNKVLRPALVCIT 155
+                    ******************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (145 nodes)
+Target sequences:                       7102  (196234 residues searched)
+Passed MSV filter:                       408  (0.0574486); expected 142.0 (0.02)
+Passed bias filter:                       50  (0.00704027); expected 142.0 (0.02)
+Passed Vit filter:                         5  (0.000704027); expected 7.1 (0.001)
+Passed Fwd filter:                         1  (0.000140805); expected 0.1 (1e-05)
+Initial search space (Z):               7102  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 13332.64
+//
+[ok]

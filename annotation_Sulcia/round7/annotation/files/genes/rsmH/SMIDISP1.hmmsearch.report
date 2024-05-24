@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rsmH_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMIDISP1/SMIDISP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rsmH/rsmH_SMIDISP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmH_prot  [M=299]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   6.5e-165  546.7  26.5   7.3e-165  546.6  26.5    1.0  1  SMIDISP1_3832  [143528 - 144451] 
+    1.3e-34  118.9   0.7    1.4e-34  118.8   0.7    1.0  1  SMIDISP1_3853  [144910 - 145095] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMIDISP1_3832  [143528 - 144451] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  546.6  26.5  1.7e-168  7.3e-165       2     297 ..      14     307 ..       9     308 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 546.6 bits;  conditional E-value: 1.7e-168
+      rsmH_prot   2 kefhipvlltevlenlindinGiyidttfGsGGhslgilkkisnqGkllafdqdqfaiiknkildkrirllndnfrnikkilkaykknilknvsGi 97 
+                    k +h+pvll+evlen+i+d+nGiyid tfGsGGhslgil+kisn+Gkl+afdqdqfaiiknki dkri+++n+nfrni+kilk+y+k+++knvsGi
+  SMIDISP1_3832  14 KPYHKPVLLAEVLENIISDMNGIYIDPTFGSGGHSLGILNKISNKGKLIAFDQDQFAIIKNKINDKRIIFFNANFRNITKILKDYNKKVIKNVSGI 109
+                    55899******************************************************************************************* PP
+
+      rsmH_prot  98 iadlGvssyqidtpkrGfsirfnkildmrmdlskkksalniiknysfeklnkifykyGefknpqrisrkivlnskfinttldlvklfkrnnnrkfl 193
+                    iadlGvssyqidtp+rGfs rfn++ldmrmdlsk+ksalniiknysfe+ln+ifykyGefkn q isrki+ln+kfintt+dlvklf  n+n kfl
+  SMIDISP1_3832 110 IADLGVSSYQIDTPHRGFSRRFNNMLDMRMDLSKTKSALNIIKNYSFENLNHIFYKYGEFKNYQSISRKILLNRKFINTTFDLVKLF--NHNIKFL 203
+                    **************************************************************************************9..5789*** PP
+
+      rsmH_prot 194 srlfqalrievndeinalkkllkqsinilkpGGklaiisyhsledrlvknffksGniqGiirydkkGknlspfnkkytkrifptkeeisknnrars 289
+                    srlfqalrievndein+lk+ll+qs+nilk+GG laiisyhsled+lvknffksGn++Giiry+kkGknlspf++k+tkrifp+k+ei++nnra+s
+  SMIDISP1_3832 204 SRLFQALRIEVNDEINSLKQLLQQSVNILKQGGVLAIISYHSLEDKLVKNFFKSGNMNGIIRYNKKGKNLSPFRNKFTKRIFPKKDEIYQNNRAKS 299
+                    ************************************************************************************************ PP
+
+      rsmH_prot 290 ailritqk 297
+                    ailrit+k
+  SMIDISP1_3832 300 AILRITRK 307
+                    ******98 PP
+
+>> SMIDISP1_3853  [144910 - 145095] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  118.8   0.7   3.3e-38   1.4e-34      90     149 ..       2      61 ..       1      62 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 118.8 bits;  conditional E-value: 3.3e-38
+      rsmH_prot  90 ilknvsGiiadlGvssyqidtpkrGfsirfnkildmrmdlskkksalniiknysfeklnk 149
+                    ++knvsGiiadlGvssyqidtp+rGfs rfn++ldmrmdlsk+ksalniiknysfe+ln+
+  SMIDISP1_3853   2 MIKNVSGIIADLGVSSYQIDTPHRGFSRRFNNMLDMRMDLSKTKSALNIIKNYSFENLNH 61 
+                    89********************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (299 nodes)
+Target sequences:                       8590  (231880 residues searched)
+Passed MSV filter:                       153  (0.0178114); expected 171.8 (0.02)
+Passed bias filter:                       34  (0.00395809); expected 171.8 (0.02)
+Passed Vit filter:                         2  (0.000232829); expected 8.6 (0.001)
+Passed Fwd filter:                         2  (0.000232829); expected 0.1 (1e-05)
+Initial search space (Z):               8590  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 13147.25
+//
+[ok]

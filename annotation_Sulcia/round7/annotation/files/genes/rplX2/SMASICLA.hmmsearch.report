@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplX2_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMASICLA/SMASICLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rplX2/rplX2_SMASICLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplX2_prot  [M=110]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.2e-32  111.2  26.6    1.8e-19   68.8  13.5    2.2  2  SMASICLA_3863  [141727 - 142167] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMASICLA_3863  [141727 - 142167] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.6   7.4   1.5e-16   1.4e-12       1      40 [.      12      53 ..      12      75 .. 0.86
+   2 !   68.8  13.5     2e-23   1.8e-19      40     104 ..      75     145 ..      54     147 .] 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 46.6 bits;  conditional E-value: 1.5e-16
+     rplX2_prot  1 mkiktkdtilinsgnskgkkgkvikiik..kkkralvkllnk 40
+                   m+ik+kd+ili+sgn+kgkkg+vikii   ++kralv++ln 
+  SMASICLA_3863 12 MTIKKKDNILIKSGNYKGKKGQVIKIITnqNRKRALVEILNF 53
+                   99*************************6225799****9974 PP
+
+  == domain 2  score: 68.8 bits;  conditional E-value: 2e-23
+     rplX2_prot  40 kqlieidlsnilliyrpslnyksfdkvkkll......ikvrkinkklnslfsieelknllkirdleniklr 104
+                    +++ieidlsn+lliyrp+  +  f++++k++      i +rk+nkkln+lfsieel n+lkir+len+ + 
+  SMASICLA_3863  75 NRFIEIDLSNLLLIYRPIQINAHFLNANKFKrlktifINMRKMNKKLNYLFSIEELNNFLKIRSLENLENI 145
+                    468**************9755555555554332333399****************************9875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (110 nodes)
+Target sequences:                       8999  (239747 residues searched)
+Passed MSV filter:                       397  (0.044116); expected 180.0 (0.02)
+Passed bias filter:                       89  (0.00988999); expected 180.0 (0.02)
+Passed Vit filter:                         4  (0.000444494); expected 9.0 (0.001)
+Passed Fwd filter:                         1  (0.000111123); expected 0.1 (1e-05)
+Initial search space (Z):               8999  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8637.03
+//
+[ok]

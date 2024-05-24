@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/leuD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMMISASP/SMMISASP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/leuD/leuD_SMMISASP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       leuD_prot  [M=191]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.7e-91  302.5  17.5    5.5e-91  302.3  17.5    1.0  1  SMMIASP_2627  [93346 - 93951] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMMIASP_2627  [93346 - 93951] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  302.3  17.5   6.9e-95   5.5e-91       2     190 ..      14     201 ..      13     202 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 302.3 bits;  conditional E-value: 6.9e-95
+     leuD_prot   2 tlisravplylenidtdqiiparflkltkkidlgknlfkdwrydqkgklkknfilnkekysgeilitgknfgcgssrehaawairdyglkvvisnyf 98 
+                   t+is+++pl+++nidtdqiiparflk++++++l knlf+dwry ++gk  k+filn+ ky+geilitgknfgcgssreha+wai+dyg+k +isnyf
+  SMMIASP_2627  14 TIISQCLPLDIDNIDTDQIIPARFLKISSRLNLCKNLFRDWRYSKNGKT-KKFILNNPKYTGEILITGKNFGCGSSREHAVWAIMDYGIKAIISNYF 109
+                   89*********************************************96.67********************************************* PP
+
+     leuD_prot  99 adifkqnalnnglliielkktflklilkkillnpnllleinleeqyvkiekkkeffkiddfkkkcfingydeieyllnlkkkikkfekkily 190
+                   adifkqnalnngll++el++++++ +l++i++ pn  l++nl+++y+++++kk +fki+ +kkkcfi+gyd+i++llnlk+ki kfek+i+y
+  SMMIASP_2627 110 ADIFKQNALNNGLLVLELQQDIVNSLLNHIFKFPNSKLKLNLKKEYIEFKRKKLKFKINSYKKKCFIKGYDDIDFLLNLKNKIIKFEKQIFY 201
+                   *******************************************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (191 nodes)
+Target sequences:                       8017  (215103 residues searched)
+Passed MSV filter:                       250  (0.0311837); expected 160.3 (0.02)
+Passed bias filter:                       37  (0.00461519); expected 160.3 (0.02)
+Passed Vit filter:                         4  (0.00049894); expected 8.0 (0.001)
+Passed Fwd filter:                         1  (0.000124735); expected 0.1 (1e-05)
+Initial search space (Z):               8017  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 7762.23
+//
+[ok]

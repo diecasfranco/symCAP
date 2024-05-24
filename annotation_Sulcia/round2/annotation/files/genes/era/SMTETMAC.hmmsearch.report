@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/era_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMTETMAC/SMTETMAC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/era/era_SMTETMAC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SM_CARI_era  [M=270]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    8.1e-13   47.3  38.5      2e-08   32.8   7.7    4.6  4  SMTETMAC_806  [28032 - 29597] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMTETMAC_806  [28032 - 29597] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   0.1     5e-08   0.00041       7      76 ..       6      75 ..       3      92 .. 0.89
+   2 !   13.2   1.5   2.4e-06     0.019     102     157 ..     197     249 ..     114     253 .. 0.78
+   3 !   32.8   7.7   2.5e-12     2e-08       8     116 ..     265     387 ..     260     405 .. 0.70
+   4 ?   -6.9  12.5         1   8.2e+03      70     165 ..     400     496 ..     394     511 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 5e-08
+   SM_CARI_era  7 fvkiigypnvgkstlinaiigknisivtykanttrnniigilnlynsqiifydtpgiiinnnyikkyite 76
+                  ++ i+g+ nvgkstl+n + g   +i  y +  tr+ i        +++ + d+ g +i    ++  i e
+  SMTETMAC_806  6 IISIVGHTNVGKSTLFNYLAGYRKAITHYLSGVTRDRIYCDCKWKGNKFTLIDSGGYVIGKKDLQLKICE 75
+                  689************************************9999999999999999999998877766655 PP
+
+  == domain 2  score: 13.2 bits;  conditional E-value: 2.4e-06
+   SM_CARI_era 102 fkftiillnkidkyqnyilk.neifnlksnypdfyileisallkfninkliniiinn 157
+                    k  ++ +nkidky++y+ +  eif l     d+++  is+     in l+n i++n
+  SMTETMAC_806 197 KKKVFLAINKIDKYKSYLYEtQEIFQLGF--NDYFF--ISSYTGQGINDLLNSIFSN 249
+                   34556789**********97358999965..57776..57888999*****999887 PP
+
+  == domain 3  score: 32.8 bits;  conditional E-value: 2.5e-12
+   SM_CARI_era   8 vkiigypnvgkstlinaiigknisivtykanttrnniigilnlynsqiifydtpgiiinnn......y...ik..kyiteadiviyitei..g.knn 90 
+                   + ++g  nvgks+lin +++kn siv     ttr+ i  i n +n + i+ dt gii n        y   ++  + i+ +d+ + i +i  g k  
+  SMTETMAC_806 265 ITLVGRTNVGKSSLINTLLNKNQSIVCDLPGTTRDCIEVIYNKFNFKCILIDTAGIIKNKRkkedleYfsfLRttQAISNSDLCFLIIDIqiGfKKQ 361
+                   5689****************************************************98864222222211121113455667665554431144455 PP
+
+   SM_CARI_era  91 elffkkininkfkftiillnkidkyq 116
+                   ++ + k+  nk+k  iil+nk d  +
+  SMTETMAC_806 362 DIKIFKLIKNKLKCIIILINKCDLIK 387
+                   55555555677777777777777544 PP
+
+  == domain 4  score: -6.9 bits;  conditional E-value: 1
+   SM_CARI_era  70 ikkyiteadiviyite.igknn..elffkkininkfkftiillnkidkyqnyilkneifnlksnypdfyileisallkfninkliniiinnipyhpp 163
+                   +kk     di iy+t  + k n  + f + i+i k +   i  + ++k    ilk   +nl sn  ++ i     +lk  ink+i  + nn    p 
+  SMTETMAC_806 400 MKKIYPLTDIPIYFTSnFYKKNiiKAFKQAISIIKKQTKKINTSYFNKIMLPILKKNKINL-SNGRNISIKYCVPILKKGINKFIF-FSNNPKLIPM 494
+                   5666677888888875234444122344456776666666666777777777888777887.566778888888889999999874.3455444444 PP
+
+   SM_CARI_era 164 yy 165
+                    y
+  SMTETMAC_806 495 SY 496
+                   44 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (270 nodes)
+Target sequences:                       8187  (215009 residues searched)
+Passed MSV filter:                       232  (0.0283376); expected 163.7 (0.02)
+Passed bias filter:                       45  (0.00549652); expected 163.7 (0.02)
+Passed Vit filter:                         5  (0.000610724); expected 8.2 (0.001)
+Passed Fwd filter:                         2  (0.00024429); expected 0.1 (1e-05)
+Initial search space (Z):               8187  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.00
+# Mc/sec: 7543.18
+//
+[ok]

@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/trpG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFCOTACU/VFCOTACU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/trpG/trpG_VFCOTACU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trpG_prot  [M=186]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.1e-50  170.0  23.1    2.3e-50  169.8  23.1    1.0  1  VFCOTACU_5553  [39735 - 39142] (REVERSE SENSE) 
+    2.7e-11   42.4  10.3    2.7e-11   42.4  10.3    2.6  3  VFCOTACU_1460  [57171 - 58247] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCOTACU_5553  [39735 - 39142] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  169.8  23.1   6.9e-54   2.3e-50       1     181 [.       9     196 ..       9     198 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 169.8 bits;  conditional E-value: 6.9e-54
+      trpG_prot   1 millldnydsftynvyelliilkfkvkvlk..kikkifk...lsdfkliciGPGtgsPenykvllfklskvylfiPiiGiclGhqilGklfklkik 91 
+                    mi+l+d ydsftyn+ e+++ lk +++vlk  +i++i++     + ++ic+GPG g+Pe+yk     ++  ++  P iGiclGhqi+ ++f++k  
+  VFCOTACU_5553   9 MIILIDHYDSFTYNIVEMFNCLKLNILVLKynHINEILIsciYFKNNIICLGPGGGKPEEYKNTYNIVKMFFKISPFIGICLGHQIISNYFGFKTS 104
+                    9***************************96326887754111345689**************9999999999999********************* PP
+
+      trpG_prot  92 kakkivhGllekivvkndvlsigiPieievvrynslvvka.dsralikiss.vkfkevmilkhkvlPiiGiqfhPdsflcfyGkkiiknfll 181
+                     + +i hG + ki++ ++ + +++P  iev rynsl v + + + l+ is+ +k ke+mil  k + ii  qfhP+s+ ++yGkkiiknfl+
+  VFCOTACU_5553 105 VSSNIKHGSISKIKLFKNQIFYNVPKYIEVTRYNSLKVTKnNLNILKVISIeNKSKEIMILYNKEYKIITFQFHPESICSKYGKKIIKNFLK 196
+                    ************************************9966156889999863689***********************************85 PP
+
+>> VFCOTACU_1460  [57171 - 58247] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.3      0.71   2.4e+03     131     144 ..      14      27 ..       3      48 .. 0.50
+   2 ?   -1.5   1.7      0.25   8.3e+02     101     146 ..     110     151 ..      87     187 .. 0.67
+   3 !   42.4  10.3   8.2e-15   2.7e-11      12     134 ..     192     321 ..     183     357 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 0.71
+      trpG_prot 131 adsralikissvkf 144
+                    +++++ iki    f
+  VFCOTACU_1460  14 IHQKCFIKINNKLF 27 
+                    33344444443333 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.25
+      trpG_prot 101 lekivvkndvlsigiPieievvrynslvvkadsralikissvkfke 146
+                    ++ki  kn+v++++   + e+++     +k + +   +i + k k+
+  VFCOTACU_1460 110 VKKIFKKNKVFLFETKNTREIIK----EIKNSDNNKFRIYYKKKKN 151
+                    45677777777777777666666....3555555555555555444 PP
+
+  == domain 3  score: 42.4 bits;  conditional E-value: 8.2e-15
+      trpG_prot  12 tynvyelliilkfkvkvlkkikkifklsdfk..liciGPGtgsPenykvllfklsk.vylfiPiiGiclGhqilGklfklkikkakkivhGlleki 104
+                       +   li ++  + vl++ ++i ++  +k   + i  G g+P+ yk l+ +++k +y+ +P++Gic+Ghqi+    k+k+ k k   hG+ + +
+  VFCOTACU_1460 192 KLSILRCLIKYNCYLTVLNFSERIENILSYKpdAVIITNGPGNPLLYKKLIKNVKKiIYKKLPLMGICFGHQIISIAKKMKVFKMKVGHHGINHPV 287
+                    5567778888999999**********998854489999999*******9999999846************************************** PP
+
+      trpG_prot 105 vvkndvlsigiPieievv....rynslvvkadsr 134
+                    +++n+ ++i    + + v    +y sl+ k++++
+  VFCOTACU_1460 288 KINNKEFLITSQNHDYCVkeksKYKSLFDKTNQG 321
+                    ***9988887665555552222677777776654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (186 nodes)
+Target sequences:                       6691  (179478 residues searched)
+Passed MSV filter:                       322  (0.0481243); expected 133.8 (0.02)
+Passed bias filter:                       49  (0.00732327); expected 133.8 (0.02)
+Passed Vit filter:                         2  (0.000298909); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.000298909); expected 0.1 (1e-05)
+Initial search space (Z):               6691  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 5305.19
+//
+[ok]

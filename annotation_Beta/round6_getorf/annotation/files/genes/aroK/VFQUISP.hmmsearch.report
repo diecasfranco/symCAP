@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/aroK_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFQUISP/VFQUISP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/aroK/aroK_VFQUISP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aroK_prot  [M=138]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.2e-12   47.1  11.0    1.2e-12   47.1  11.0    2.8  3  VFQUISP_2817  [113071 - 113631] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFQUISP_2817  [113071 - 113631] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.8   4.2         1   6.1e+03      86      96 ..      20      30 ..       2      39 .. 0.39
+   2 !   47.1  11.0   2.1e-16   1.2e-12       1     106 [.      41     140 ..      41     146 .. 0.76
+   3 !    4.2  10.1    0.0034        21      14      55 ..     142     183 ..     139     185 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -4.8 bits;  conditional E-value: 1
+     aroK_prot 86 riikkksilik 96
+                   + k   ++i 
+  VFQUISP_2817 20 LYKKIGFLYIF 30
+                  11111122222 PP
+
+  == domain 2  score: 47.1 bits;  conditional E-value: 2.1e-16
+     aroK_prot   1 MkliGlpgsGKttigniiskflkkkfiDsDlliekiynikiekllkkkneilFRkiEkniinlllkkkkiislGGGfilnklnllriikkksilikr 97 
+                   M l G+p+sGKt +  ++  +l+  f+D Dl+++ki n + + ll+   e+ FRk+E  + n+++   ++is+GGGf+ n + l  +++ +  ++  
+  VFQUISP_2817  41 MILSGFPSSGKTIFVFFL-RYLNFFFLDKDLFFYKILN-NLNILLNCFYERRFRKLELLLSNFIF---YLISFGGGFLQNRKVLS-YNYFFRPYFFF 131
+                   99**********997666.57899************87.66778888899*************98...589******99876543.33333333333 PP
+
+     aroK_prot  98 nlliklkkr 106
+                   ++++++ kr
+  VFQUISP_2817 132 SFYSFFLKR 140
+                   444444454 PP
+
+  == domain 3  score: 4.2 bits;  conditional E-value: 0.0034
+     aroK_prot  14 igniiskflkkkfiDsDlliekiynikiekllkkkneilFRk 55 
+                   + + + ++ +k f+Ds ++++k y+++ +++++  n+++FR 
+  VFQUISP_2817 142 FFSRFFFYCNKSFLDSFFYFYKRYLFNLSSKKNIFNFNFFRT 183
+                   444556788999*****************************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (138 nodes)
+Target sequences:                       6059  (161927 residues searched)
+Passed MSV filter:                       941  (0.155306); expected 121.2 (0.02)
+Passed bias filter:                       81  (0.0133685); expected 121.2 (0.02)
+Passed Vit filter:                        15  (0.00247566); expected 6.1 (0.001)
+Passed Fwd filter:                         1  (0.000165044); expected 0.1 (1e-05)
+Initial search space (Z):               6059  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6693.64
+//
+[ok]

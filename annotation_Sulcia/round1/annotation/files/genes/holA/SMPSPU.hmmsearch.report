@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/holA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMPSPU/SMPSPU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/holA/holA_SMPSPU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       holA_prot  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+   1.3e-101  340.0  92.8   1.4e-101  339.9  92.8    1.0  1  SMPSPU_7309  [275810 - 276667] 
+    6.6e-15   55.1   4.0    9.9e-15   54.6   4.0    1.3  1  SMPSPU_7297  [275650 - 275841] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPSPU_7309  [275810 - 276667] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  339.9  92.8  1.8e-105  1.4e-101      38     319 .]       5     286 .]       1     286 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 339.9 bits;  conditional E-value: 1.8e-105
+    holA_prot  38 sielflkkkekikkkilygydldlkklffvtkqitinlsneynLiivkeaqfLsekienleklilknnykktiliiCynnkvldkrkklykyikkngi 135
+                   + +f++kk+ ++kki+ygyd+dlk+l+fv+kqi+i+++n ynLiivkeaq+L+++ienl+kli+++n   tiliiCyn+k+ldk++kly++ik++g+
+  SMPSPU_7309   5 IQLNFFFKKKIFNKKIIYGYDIDLKNLIFVVKQIPIHIENLYNLIIVKEAQYLAYNIENLYKLIINSN---TILIICYNDKILDKNTKLYNKIKNIGT 99 
+                  5678999**********************************************************986...9************************** PP
+
+    holA_prot 136 ifncvkLktneilylvkneieekGyiitenaikllikflgenlysinneikkllilleknkiidekiikkyvlkttfkv...esyiiekeflkalkai 230
+                  i+n+vkLk++ei+y++++eie++G+iit+nai+l+ik++g+nly+inneikk+lill+++k+id+k+ikk++lk+++k+   e+yi++k+++k++k+i
+  SMPSPU_7309 100 IYNSVKLKKIEIFYFIQYEIEKIGFIITNNAINLIIKYIGKNLYKINNEIKKILILLNDKKKIDKKFIKKNLLKDNNKYsklELYIVKKDLFKSYKTI 197
+                  **************************************************************************9986433399************97 PP
+
+    holA_prot 231 ...knvpisliLkkiyklflkiikfhllilenvkfknfenkilnfttlkkyplnkianiislireadikikninslkkeeileeLlykifyn 319
+                     knv+is++L++iy++f+kiikf+ll+l+n  f+++++k+++f+++k+yplnki+niis+ire+d+kikn +slk+e++++eLl+kif+n
+  SMPSPU_7309 198 fnlKNVTISIVLNRIYIFFIKIIKFNLLKLNN--FNFIKKKNIYFKAIKIYPLNKIKNIISYIRESDTKIKN-SSLKNEYLIKELLSKIFNN 286
+                  444789************************98..6779*********************************9.79***************97 PP
+
+>> SMPSPU_7297  [275650 - 275841] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.6   4.0   1.3e-18   9.9e-15       1      43 [.      22      64 .]      22      64 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 54.6 bits;  conditional E-value: 1.3e-18
+    holA_prot  1 mfltlkkkiitdinnkkfkniylflGeerflienltksielfl 43
+                 mflt+kkki+ d++nkk+k iy+f+Geer+lienl +sie+f+
+  SMPSPU_7297 22 MFLTYKKKILQDLKNKKIKPIYFFMGEERYLIENLSNSIEFFF 64
+                 9***************************************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (319 nodes)
+Target sequences:                      15564  (407989 residues searched)
+Passed MSV filter:                      1810  (0.116294); expected 311.3 (0.02)
+Passed bias filter:                      144  (0.00925212); expected 311.3 (0.02)
+Passed Vit filter:                         9  (0.000578258); expected 15.6 (0.001)
+Passed Fwd filter:                         2  (0.000128502); expected 0.2 (1e-05)
+Initial search space (Z):              15564  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 15772.45
+//
+[ok]

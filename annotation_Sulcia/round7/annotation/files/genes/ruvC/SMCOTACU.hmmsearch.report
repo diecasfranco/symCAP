@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/ruvC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMCOTACU/SMCOTACU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/ruvC/ruvC_SMCOTACU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ruvC_prot  [M=149]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    6.1e-77  255.6   3.9    6.9e-77  255.4   3.9    1.0  1  SMCOTACU_5062  [111171 - 110692] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMCOTACU_5062  [111171 - 110692] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  255.4   3.9   8.4e-81   6.9e-77       1     146 [.      18     160 .]      18     160 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 255.4 bits;  conditional E-value: 8.4e-81
+      ruvC_prot   1 mgyclikevknkislliveelvlknlkntwlkykeifsktlflidkyqpkelaiespvlgkksllqvvraqnialsaglyrnisiteyhpkkikli 96 
+                    m+ycl kevk kislliveelvlk+l+ntw+k+k++fsktlflidkyqpkelaiesp++++ks lqvvraqn+a sagly +isiteyhpk+ikli
+  SMCOTACU_5062  18 MVYCLRKEVKPKISLLIVEELVLKTLANTWFKSKDLFSKTLFLIDKYQPKELAIESPIMVRKSRLQVVRAQNLARSAGLYLKISITEYHPKTIKLI 113
+                    89********************************************************************************************** PP
+
+      ruvC_prot  97 iakngnatkkeiakkiaslftktkkkekeih..rydctdaiavalchlilfn 146
+                    ia+ngnatkkeiakkias+f      +kei+  rydctdaiavalch+ilfn
+  SMCOTACU_5062 114 IANNGNATKKEIAKKIASCFK-----DKEIPryRYDCTDAIAVALCHFILFN 160
+                    ********************5.....445541179**************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (149 nodes)
+Target sequences:                       8230  (217472 residues searched)
+Passed MSV filter:                        97  (0.0117861); expected 164.6 (0.02)
+Passed bias filter:                       45  (0.0054678); expected 164.6 (0.02)
+Passed Vit filter:                         3  (0.00036452); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000121507); expected 0.1 (1e-05)
+Initial search space (Z):               8230  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 18259.84
+//
+[ok]

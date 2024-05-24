@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/lpdA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMPARIOC/SMPARIOC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/lpdA/lpdA_SMPARIOC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lpdA_prot  [M=466]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   6.8e-229  759.2  23.2     1e-165  551.0  15.0    2.0  2  SMPARIOC_5261  [99970 - 98489] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPARIOC_5261  [99970 - 98489] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  213.5   1.1   2.7e-67   2.2e-63       1     126 [.       3     128 ..       3     131 .. 0.99
+   2 !  551.0  15.0  1.2e-169    1e-165     127     466 .]     157     494 .]     153     494 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 213.5 bits;  conditional E-value: 2.7e-67
+      lpdA_prot   1 myfdliiiGsGPgGyvaairaaqlGlktaivekeelGGvclnwGciPtksllksaeifnklkkaskyGiivenlkldlkkilsrsrkiveklnkGv 96 
+                    m+fdli+iGsGPgGyvaairaaqlGlktaivek+elGGvclnwGciPtksll sa +f+ l+k++++Gi+v++++l+l+kil+rsr+ive+l+kGv
+  SMPARIOC_5261   3 MHFDLIVIGSGPGGYVAAIRAAQLGLKTAIVEKKELGGVCLNWGCIPTKSLLTSAYLFQLLQKSNQFGINVQKVELKLEKILDRSRQIVEELQKGV 98 
+                    9*********************************************************************************************** PP
+
+      lpdA_prot  97 kfllkknnikilyGkakllkknivlvkdke 126
+                    + l+kkn+ik++yG+ak++k+n+++v +k+
+  SMPARIOC_5261  99 ECLIKKNDIKLIYGTAKICKENTITVNNKD 128
+                    **************************9985 PP
+
+  == domain 2  score: 551.0 bits;  conditional E-value: 1.2e-169
+      lpdA_prot 127 snkkkynalniiiatGskskelnikkkklkklissrealllkeiPkkiliiGsGaiGlelaylynklGskviiiekesnilpksdldisielkkll 222
+                    + + +y+++n+iiatG+k+++l++   k+ +l+++++a++++eiPk+iliiGsGaiGlelay+yn++Gs+vii+ek+s++lp++d +is+e++k++
+  SMPARIOC_5261 157 QYQYQYQFSNLIIATGAKPNQLDF--PKIPNLVNYKGAMSIREIPKNILIIGSGAIGLELAYFYNVIGSNVIIVEKHSHLLPNADKEISLEISKTF 250
+                    56679***************9987..5799****************************************************************** PP
+
+      lpdA_prot 223 kkkgiklltssiikeieylnekkntkviikkkknekeilivdviisaiGiiPntenlgleniGikknnkkhilvdkyystnvknyyaiGdvipsis 318
+                    kkkgikllt+s+ike++yl++k+++++i++ +++++++++vd++isaiG++P+t+nlglen+Gik++ ++hi+v++yy+tn knyyaiGdvip++s
+  SMPARIOC_5261 251 KKKGIKLLTNSRIKEMKYLKSKQTKIEIEDLQTKSTIKIKVDYLISAIGVTPYTKNLGLENVGIKLTPNGHIKVNEYYETNRKNYYAIGDVIPGFS 346
+                    ************************************************************************************************ PP
+
+      lpdA_prot 319 lahvaskegilvvekitGlnpkklnynnvPmviytnPeiayvGysekealekgfklkiGkfPfkalGkakvndetdGfikvifdekygellGihmi 414
+                    lahvas+e++l+vek++Glnp+klnynn+Pm+iytnPeia+vGysekealekgf++k+GkfPf+alG+ak+n+et+Gfikvifd+kyge+lG+hmi
+  SMPARIOC_5261 347 LAHVASQEAKLCVEKMMGLNPNKLNYNNIPMCIYTNPEIAFVGYSEKEALEKGFEIKVGKFPFSALGRAKINGETEGFIKVIFDKKYGEWLGCHMI 442
+                    ************************************************************************************************ PP
+
+      lpdA_prot 415 GsgvteliseivvarelettsfdllkiihphPtisesiveaienaknksihi 466
+                    G+gvteli+e+++ar+lett +d+l+++hphP+i+esiveaie+a++ksihi
+  SMPARIOC_5261 443 GKGVTELITEVIIARNLETTPTDILQSTHPHPSINESIVEAIEKAYGKSIHI 494
+                    ***************************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (466 nodes)
+Target sequences:                       8077  (212203 residues searched)
+Passed MSV filter:                       101  (0.0125046); expected 161.5 (0.02)
+Passed bias filter:                       24  (0.0029714); expected 161.5 (0.02)
+Passed Vit filter:                         2  (0.000247617); expected 8.1 (0.001)
+Passed Fwd filter:                         1  (0.000123808); expected 0.1 (1e-05)
+Initial search space (Z):               8077  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 9959.28
+//
+[ok]

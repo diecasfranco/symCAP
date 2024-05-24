@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/xxxVFCALBON01_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFASICLA/VFASICLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/xxxVFCALBON01/xxxVFCALBON01_VFASICLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFCALBON_xxxVFCALBON_01  [M=65]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    5.4e-17   54.3   0.7    5.4e-17   54.3   0.7    2.5  3  VFASICLA_78  [70386 - 69931] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFASICLA_78  [70386 - 69931] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.3   0.7   3.8e-19   5.4e-17       2      59 ..       5      62 ..       4      66 .. 0.95
+   2 ?   -1.2   0.1      0.17        24      34      57 ..      76      99 ..      63     108 .. 0.63
+   3 ?    1.5   0.7     0.024       3.4      14      39 ..     114     139 ..     101     148 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 54.3 bits;  conditional E-value: 3.8e-19
+  VFCALBON_xxxVFCALBON_01  2 qvrlidsngkylglfslqqaiieakkrdldlikinskvnpqvfrlgdyhkyiynrnkt 59
+                             ++++ids gkylg++++++a   a k++ldli+insk+ p+++++g+y k+++n++k 
+              VFASICLA_78  5 KIKIIDSKGKYLGIMNIKEAKEIAAKENLDLIEINSKLVPKIYKIGNYKKFVFNKSKK 62
+                             689******************9999*****************************9985 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 0.17
+  VFCALBON_xxxVFCALBON_01 34 kinskvnpqvfrlgdyhkyiynrn 57
+                               n   n  + +l +  k++  +n
+              VFASICLA_78 76 SANIHNNDYLNKLKNIKKFLRKKN 99
+                             445555566666666666666555 PP
+
+  == domain 3  score: 1.5 bits;  conditional E-value: 0.024
+  VFCALBON_xxxVFCALBON_01  14 glfslqqaiieakkrdldlikinskv 39 
+                              +  s+++ ++e  k dl++  i sk 
+              VFASICLA_78 114 NKESIEKKLLEKIKIDLNIKDIKSKF 139
+                              55688899999999999998888884 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (65 nodes)
+Target sequences:                        143  (37142 residues searched)
+Passed MSV filter:                        20  (0.13986); expected 2.9 (0.02)
+Passed bias filter:                        8  (0.0559441); expected 2.9 (0.02)
+Passed Vit filter:                         3  (0.020979); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.013986); expected 0.0 (1e-05)
+Initial search space (Z):                143  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 953.92
+//
+[ok]

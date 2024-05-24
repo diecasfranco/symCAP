@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxMUDKUR01_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMPSPU/SMPSPU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/xxxMUDKUR01/xxxMUDKUR01_SMPSPU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SM_MUDKUR_xxxMUDKUR01  [M=66]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    5.4e-15   55.0   0.8    5.4e-15   55.0   0.8    4.3  4  SMPSPU_10634  [174219 - 173533] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPSPU_10634  [174219 - 173533] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.0   0.8   3.5e-19   5.4e-15       1      49 [.       4      48 ..       4      55 .. 0.83
+   2 ?   -3.5   8.4         1   1.6e+04       7      20 ..      59      72 ..      54     122 .. 0.83
+   3 ?   -2.3   0.1       0.6   9.3e+03      13      21 ..     123     131 ..     117     142 .. 0.58
+   4 ?   -1.6   0.0      0.35   5.4e+03      11      42 ..     197     228 ..     187     229 .] 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 55.0 bits;  conditional E-value: 3.5e-19
+  SM_MUDKUR_xxxMUDKUR01  1 meklncsyisigfllgiisslhcfsmcgpitffflkkkekknqnqikik 49
+                           mekln  yi+igf+lg+iss+hcfsmcgpitfff  ++e k +  + ik
+           SMPSPU_10634  4 MEKLN--YITIGFILGLISSIHCFSMCGPITFFFSLERENKIK--MLIK 48
+                           67876..9**************************887776544..4444 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 1
+  SM_MUDKUR_xxxMUDKUR01  7 syisigfllgiiss 20
+                           syi +gf++gii  
+           SMPSPU_10634 59 SYILLGFIFGIIGY 72
+                           89999999999963 PP
+
+  == domain 3  score: -2.3 bits;  conditional E-value: 0.6
+  SM_MUDKUR_xxxMUDKUR01  13 fllgiissl 21 
+                            f++gi++ l
+           SMPSPU_10634 123 FIIGILNGL 131
+                            444554443 PP
+
+  == domain 4  score: -1.6 bits;  conditional E-value: 0.35
+  SM_MUDKUR_xxxMUDKUR01  11 igfllgiisslhcfsmcgpitffflkkkekkn 42 
+                            ig+ll i      +   +pi + +l k+  kn
+           SMPSPU_10634 197 IGILLLIRGLGLGLPYVSPIEYSLLTKQIIKN 228
+                            55555433333335566788888887776666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (66 nodes)
+Target sequences:                      15564  (407989 residues searched)
+Passed MSV filter:                      1055  (0.0677846); expected 311.3 (0.02)
+Passed bias filter:                      520  (0.0334104); expected 311.3 (0.02)
+Passed Vit filter:                        40  (0.00257003); expected 15.6 (0.001)
+Passed Fwd filter:                         1  (6.42508e-05); expected 0.2 (1e-05)
+Initial search space (Z):              15564  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 4595.13
+//
+[ok]

@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFBLASP1/VFBLASP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/rpmA/rpmA_VFBLASP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmA_prot  [M=80]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      3e-38  128.3   8.7    3.5e-38  128.1   8.7    1.1  1  VFBLASP1_3579  [100096 - 99827] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBLASP1_3579  [100096 - 99827] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  128.1   8.7   5.7e-42   3.5e-38       1      76 [.       2      77 ..       2      83 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 128.1 bits;  conditional E-value: 5.7e-42
+      rpmA_prot  1 mAkKKaagslknGRdskskrLGiKkfsgelvkkGniiirqrGtkfksglntkigkdytiyslkkGkvlfkkkkkki 76
+                   mAkKKa+gsl+nGRdskskrLG+K+f+g++vkkG+ii+rqrGtkf++g+nt ig+d+tiys k+G+++f kkkkki
+  VFBLASP1_3579  2 MAKKKAVGSLRNGRDSKSKRLGLKRFGGNFVKKGQIILRQRGTKFYPGKNTGIGRDFTIYSNKNGYIYFLKKKKKI 77
+                   9********************************************************************9999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (80 nodes)
+Target sequences:                       6265  (171395 residues searched)
+Passed MSV filter:                        70  (0.0111732); expected 125.3 (0.02)
+Passed bias filter:                       22  (0.00351157); expected 125.3 (0.02)
+Passed Vit filter:                         2  (0.000319234); expected 6.3 (0.001)
+Passed Fwd filter:                         1  (0.000159617); expected 0.1 (1e-05)
+Initial search space (Z):               6265  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10801.72
+//
+[ok]

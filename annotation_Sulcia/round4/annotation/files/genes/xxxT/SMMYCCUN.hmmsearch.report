@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genomes/SMMYCCUN/SMMYCCUN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round4/annotation/files/genes/xxxT/xxxT_SMMYCCUN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxT_prot  [M=121]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    7.9e-21   73.2  17.8    9.9e-12   43.9   3.2    2.3  2  SMMYCCUN_7028  [29320 - 29105] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMMYCCUN_7028  [29320 - 29105] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.9   3.2   1.3e-15   9.9e-12       1      29 [.       2      31 ..       2      34 .. 0.90
+   2 !   37.8   6.8   9.9e-14   7.8e-10      58      97 ..      28      69 ..      27      72 .] 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 43.9 bits;  conditional E-value: 1.3e-15
+      xxxT_prot  1 mslkitekcincgaceaecpnkaiye.gsk 29
+                   m++kit++cincgace ecpn+aiye gsk
+  SMMYCCUN_7028  2 MAFKITNECINCGACELECPNNAIYEdGSK 31
+                   899**********************94566 PP
+
+  == domain 2  score: 37.8 bits;  conditional E-value: 9.9e-14
+      xxxT_prot 58 epkkydyyfivpekct...eclgffdepqcasvcpvdccilde 97
+                   +  k + yf+vpekct   ec+g +++p c +vcpv+c    e
+  SMMYCCUN_7028 28 DGSKENRYFLVPEKCTectECIGKYENPHCVAVCPVNCI-KKE 69
+                   5679999*******86222679***************85.444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (121 nodes)
+Target sequences:                       7883  (207357 residues searched)
+Passed MSV filter:                        85  (0.0107827); expected 157.7 (0.02)
+Passed bias filter:                       55  (0.00697704); expected 157.7 (0.02)
+Passed Vit filter:                         4  (0.000507421); expected 7.9 (0.001)
+Passed Fwd filter:                         1  (0.000126855); expected 0.1 (1e-05)
+Initial search space (Z):               7883  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5464.70
+//
+[ok]

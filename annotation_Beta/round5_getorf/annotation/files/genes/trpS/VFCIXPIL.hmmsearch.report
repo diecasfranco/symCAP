@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/trpS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFCIXPIL/VFCIXPIL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/trpS/trpS_VFCIXPIL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trpS_prot  [M=326]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.2e-11   41.5  27.0    5.2e-11   41.5  27.0    2.6  2  VFCIXPIL_7539  [17272 - 16028] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCIXPIL_7539  [17272 - 16028] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.5  27.0   6.4e-15   5.2e-11       4     220 ..      47     260 ..      44     295 .. 0.72
+   2 ?   -8.6  14.0         1   8.1e+03     203     315 ..     271     382 ..     262     410 .. 0.44
+
+  Alignments for each domain:
+  == domain 1  score: 41.5 bits;  conditional E-value: 6.4e-15
+      trpS_prot   4 kiiltGdrPtgk.LhiGhyf.....GsikkRiklqkknkqfiiiaDnqvllne.......kkkikkniikilidYlslGidakktniflqskipel 86 
+                    +ii  G  Pt++ LhiGh++     G +k++i   kk +  +ii ++ +++ +       + ++ k+iik    ++   i++  +   +  + + l
+  VFCIXPIL_7539  47 RIIKFGIDPTNEgLHIGHLYilkilGKLKDKI---KKLRVIVIIGNYTASIGDpsgnlgsRAELTKKIIKFNTFHIKKQIKKIDNRFEIRCNANWL 139
+                    5666788899855*****86433335555555...4667778888888776541111111556666666666656666666656665677776666 PP
+
+      trpS_prot  87 sel..avfllnfvdlnklkrnPtikkeikkkknkslgeltyPisqsaDillfkadyvivGkDqkplieltnkivkkvnkffkkk.ifkkCkiilgk 179
+                    ++l  ++f+ +  ++n+l +   ik+ +kkk++  + e++yP  q+ D +  k dy i G+Dq+            +n  f +k +  kC  il  
+  VFCIXPIL_7539 140 KNLslNIFFKK--NINTLLKRKNIKNRLKKKNEVRVYEVIYPALQTFDNFIIKPDYEIGGEDQV------------INFSFSEKiLHYKCVYILV- 220
+                    65511455554..78999999*****************************************95............3444444404569998875. PP
+
+      trpS_prot 180 kkkiiGiyGknkmskslknsidlnlkekelkkivkkiktDe 220
+                       ++Gi+G  kmskslkn i+++ k+ ++ +++ kik D 
+  VFCIXPIL_7539 221 -GLLKGIDGSFKMSKSLKNNINIKDKKIRIYEKIIKIKDDV 260
+                    .4689********************************9884 PP
+
+  == domain 2  score: -8.6 bits;  conditional E-value: 1
+      trpS_prot 203 nlkekelkkivkkiktDenrikskspGnyknsvvfkYLkLfskkkelkklkkkYkkGeisDiktkkiLe...ekll.eflklikkkrkllkknkda 294
+                     + ++++++  +ki   +n+ + ++  n k+  +f   k+f        + + Y   +i+++++ k L    +k   e  k+++ + ++l+k+  a
+  VFCIXPIL_7539 271 FFPKESITNEFNKIVNKKNKQTLTKFVNDKDVHIFMLYKMFFFMF---LIGQIYG-TRITNSFISKKLSnlsNKYKgELNKTLTIRETELTKKLMA 362
+                    556677777777777777777777777777766665555554322...2222222.2232222222221000111102222222333333333333 PP
+
+      trpS_prot 295 ilkvlkkgskkarkiviknlk 315
+                    + kv  k ++  r i +knl 
+  VFCIXPIL_7539 363 LYKVTSK-KELKRLIEQKNLV 382
+                    3333222.1222333333332 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (326 nodes)
+Target sequences:                       8061  (201530 residues searched)
+Passed MSV filter:                       250  (0.0310135); expected 161.2 (0.02)
+Passed bias filter:                       44  (0.00545838); expected 161.2 (0.02)
+Passed Vit filter:                         3  (0.000372162); expected 8.1 (0.001)
+Passed Fwd filter:                         1  (0.000124054); expected 0.1 (1e-05)
+Initial search space (Z):               8061  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8231.42
+//
+[ok]

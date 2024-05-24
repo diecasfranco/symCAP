@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rplW_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMPYRCLA/SMPYRCLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rplW/rplW_SMPYRCLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplW_prot  [M=175]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.4e-19   68.6  23.7    3.4e-19   68.6  23.7    1.8  2  SMPYRCLA_3429  [131076 - 131417] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPYRCLA_3429  [131076 - 131417] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.0   1.2     0.044   3.8e+02      47      61 ..      14      28 ..       2      38 .. 0.42
+   2 !   68.6  23.7   3.9e-23   3.4e-19       6      81 ..      33     109 ..      28     113 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 0.0 bits;  conditional E-value: 0.044
+      rplW_prot 47 ktmiyckrtlkkrkk 61
+                     + y+ +tl k++k
+  SMPYRCLA_3429 14 FYKEYINKTLSKKIK 28
+                   222233344444443 PP
+
+  == domain 2  score: 68.6 bits;  conditional E-value: 3.9e-23
+      rplW_prot   6 kkkfsnkkldpfltfkvPlfynkkeikkliykiyninfkniktmiyckrtlkkrkkgvlfkkvilklkkdy.klkil 81 
+                    +k ++    ++++tf +P+++nk ei+k+++++y+i +++++t+iy+k++ +kr+++++f ++  k+kk++ k+k +
+  SMPYRCLA_3429  33 EKAIFTNISNNYYTFIFPIYFNKNEISKYLQRVYRIKITKLHTNIYYKKKSNKRILKKTFSGKNIKFKKAFfKVKDF 109
+                    677888889************************************************************96366644 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (175 nodes)
+Target sequences:                       8592  (228038 residues searched)
+Passed MSV filter:                       811  (0.0943901); expected 171.8 (0.02)
+Passed bias filter:                      107  (0.0124534); expected 171.8 (0.02)
+Passed Vit filter:                         5  (0.000581937); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116387); expected 0.1 (1e-05)
+Initial search space (Z):               8592  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 5618.06
+//
+[ok]

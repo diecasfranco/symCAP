@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFTETHEX/VFTETHEX_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/rluA/rluA_VFTETHEX.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluA_prot  [M=243]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    5.6e-14   50.8  47.9    5.6e-14   50.8  47.9    2.8  2  VFTETHEX_736  [31633 - 32376] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETHEX_736  [31633 - 32376] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.2   2.8     0.029   1.6e+02      20      41 ..      15      36 ..       3      37 .. 0.70
+   2 !   50.8  47.9   9.9e-18   5.6e-14       3     236 ..      34     242 ..      32     247 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 0.2 bits;  conditional E-value: 0.029
+     rluA_prot 20 ykdenfivlkKkkklslypikk 41
+                  y++ ++iv+kK+ ++++++ kk
+  VFTETHEX_736 15 YRKIFVIVFKKFVNFLFFVKKK 36
+                  5666788999999998888776 PP
+
+  == domain 2  score: 50.8 bits;  conditional E-value: 9.9e-18
+     rluA_prot   3 kkknifikkskviikiIykdenfivlkKkkklslypikkkneisilgkiykiigekif..kklklisrlDfetlGiilislnkkfykklkkkiknkl 97 
+                   kkk +++  +k ++ +Iy+ +  ++++Kkk   +y +k   + + l++iy+ +g+ if  k++++++rlDf+t+G++++s  + f + +k+  k+++
+  VFTETHEX_736  34 KKKEVYLVPKKDNFYVIYACKYYFIFYKKKSGFIYSNKYTYKNNFLSNIYNSLGNSIFlvKRFGIVHRLDFDTTGLLIFSRLNIFTHYIKNLFKKRK 130
+                   799*****************************************************98778************************************ PP
+
+     rluA_prot  98 ikkeYilivkgllkikkklvssagylkkkknkiltnkkkikssvfsktkikiieliklkkknyslllckissGktHQirshlkkigikIlgdkkygk 194
+                   + k+Yi+i k+  kik++  s  +y       +  n k + s  f +  ++  ++i+     +  ++ ki +G+  Qi+ +++         kk g+
+  VFTETHEX_736 131 VTKYYIIILKSSYKIKNNFFS-IKY-------FNLNGKYCCS-YFRR--LFYYSYIN---SIFFCFISKILTGRKNQIKNSIN---------KKFGI 204
+                   *************99864433.222.......2345565554.4544..55666664...345556679**********8875.........67888 PP
+
+     rluA_prot 195 knKkfkknnLhlwklkfvlkkkknkffslPnknlikyyrkig 236
+                   +n    +  Lh+wklkf+    +n+f+s+  k+++ y+++++
+  VFTETHEX_736 205 SNT---NIVLHSWKLKFFFFGFQNIFYSIFSKEIL-YFFMLN 242
+                   774...578********************998876.554444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (243 nodes)
+Target sequences:                       5597  (156392 residues searched)
+Passed MSV filter:                       816  (0.145792); expected 111.9 (0.02)
+Passed bias filter:                       64  (0.0114347); expected 111.9 (0.02)
+Passed Vit filter:                        10  (0.00178667); expected 5.6 (0.001)
+Passed Fwd filter:                         1  (0.000178667); expected 0.1 (1e-05)
+Initial search space (Z):               5597  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8500.62
+//
+[ok]

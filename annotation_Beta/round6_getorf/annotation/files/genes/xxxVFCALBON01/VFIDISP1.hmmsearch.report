@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/xxxVFCALBON01_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genomes/VFIDISP1/VFIDISP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf/annotation/files/genes/xxxVFCALBON01/xxxVFCALBON01_VFIDISP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFCALBON_xxxVFCALBON_01  [M=65]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    9.5e-16   55.5   1.5    9.5e-16   55.5   1.5    1.9  2  VFIDISP1_4462  [69387 - 68920] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFIDISP1_4462  [69387 - 68920] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.5   1.5   1.5e-19   9.5e-16       2      59 ..       5      62 ..       4      67 .. 0.95
+   2 ?   -1.5   0.1      0.21   1.4e+03      35      53 ..     121     139 ..     106     151 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 55.5 bits;  conditional E-value: 1.5e-19
+  VFCALBON_xxxVFCALBON_01  2 qvrlidsngkylglfslqqaiieakkrdldlikinskvnpqvfrlgdyhkyiynrnkt 59
+                              ++lid  gkylg++++ +a   akk+ ldli+in  + p+++++gdy ky++++nk 
+            VFIDISP1_4462  5 NIKLIDEKGKYLGIYTIIEAKEIAKKKKLDLIEINKNIYPKIYKIGDYKKYLFDKNKK 62
+                             589*****************************************************96 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.21
+  VFCALBON_xxxVFCALBON_01  35 inskvnpqvfrlgdyhkyi 53 
+                              i  kvn  +    + +k+i
+            VFIDISP1_4462 121 IFDKVNKDLGVSINKNKFI 139
+                              4444444433333333443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (65 nodes)
+Target sequences:                       6438  (171017 residues searched)
+Passed MSV filter:                       108  (0.0167754); expected 128.8 (0.02)
+Passed bias filter:                       60  (0.00931966); expected 128.8 (0.02)
+Passed Vit filter:                         3  (0.000465983); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.000155328); expected 0.1 (1e-05)
+Initial search space (Z):               6438  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9219.77
+//
+[ok]

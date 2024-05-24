@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/tyrS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genomes/SMDICEUR/SMDICEUR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round1/annotation/files/genes/tyrS/tyrS_SMDICEUR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       tyrS_prot  [M=428]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
+   1.2e-184  613.2  41.9   1.3e-184  613.1  41.9    1.0  1  DICEUR_000000020996_5915  [88631 - 87369] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> DICEUR_000000020996_5915  [88631 - 87369] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  613.1  41.9  1.6e-188  1.3e-184       2     422 ..       3     419 ..       2     421 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 613.1 bits;  conditional E-value: 1.6e-188
+                 tyrS_prot   2 lklnliqellwrglihnttys.kkiknekitlytgfdptskslhignlvaiillihfkksgnkiisvigggtgligdpsgknser 85 
+                               l+l++iqe+ wrgli n t + ++i+++k+ ly+gfdpts+slhignl++iil+ihfk+sg+++++++g++t+ligdpsgk++er
+  DICEUR_000000020996_5915   3 LMLKFIQEIGWRGLISNKTKGtSEIFKRKVNLYSGFDPTSSSLHIGNLISIILSIHFKNSGHNVLFLLGTSTSLIGDPSGKKGER 87 
+                               6789*************9985279************************************************************* PP
+
+                 tyrS_prot  86 ilikkeslqknikklkkqlslfldfnkneilnnyewlkkklfidfakdigkyftinyllskdsikkriskknsisfteftyqllq 170
+                               +lik+e+   +++k++kql++f+++++ +i+nn +w+kk  fi+f++digkyf+iny+l+kds+kkr+   +s+sfteftyqllq
+  DICEUR_000000020996_5915  88 SLIKREENSLYSRKIRKQLFKFSKQFQIPIINN-NWNKKLNFIEFSRDIGKYFSINYMLNKDSVKKRL---RSLSFTEFTYQLLQ 168
+                               *******************************99.8********************************8...69************ PP
+
+                 tyrS_prot 171 aydflylykkkncslqiggsdqwgnitsgielirkklgvkvngltfplitkldgskfgktekgeniwidpnltspyefyqfwini 255
+                               aydf+ylykkknc+lqiggsdqwgnit+gi+li+kk++++v+glt+pl+tk+dg+kfgktekgeniw+dp+ltspy+fyqfwin+
+  DICEUR_000000020996_5915 169 AYDFYYLYKKKNCVLQIGGSDQWGNITCGIDLIKKKQKTQVHGLTHPLLTKSDGTKFGKTEKGENIWLDPKLTSPYNFYQFWINL 253
+                               ************************************************************************************* PP
+
+                 tyrS_prot 256 sddqakkyikiytflkkeeikeiiffheknpklkliqkkiaseitifvhgkkifekikfisnilfkk..ekiltnlskndikliy 338
+                               sd qakk+iki++f +k +i +ii++h+++p+l+++qkkia+ +ti+vh+kk+f++i++i++ilf+   +++lt ls+++++li+
+  DICEUR_000000020996_5915 254 SDVQAKKLIKIFSFSNKISISKIITLHDRAPFLRILQKKIAKITTILVHSKKTFTDIYNINQILFNPnlNNMLTFLSQKKLLLIK 338
+                               *****************************************************************8622567889********** PP
+
+                 tyrS_prot 339 kniphkklfidknfkipildllvnkskfikskkeairklklnsilinkkiikekfllkkkdlisesyvllqkgkknfflikfkf 422
+                               k+ip+kk++++ + k++ildll+ +++++ksk+ea+rk  +ns l+n+k + ++++++kkd+++++++l++kgkknf+l++fk+
+  DICEUR_000000020996_5915 339 KYIPCKKIILN-DTKFKILDLLIIDNFICKSKTEALRK--INSFLLNMKPFFSDYVITKKDFLHKHFLLIKKGKKNFYLLYFKY 419
+                               *******9875.6799*********************5..79***************************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (428 nodes)
+Target sequences:                       8304  (223026 residues searched)
+Passed MSV filter:                       283  (0.03408); expected 166.1 (0.02)
+Passed bias filter:                       50  (0.00602119); expected 166.1 (0.02)
+Passed Vit filter:                         1  (0.000120424); expected 8.3 (0.001)
+Passed Fwd filter:                         1  (0.000120424); expected 0.1 (1e-05)
+Initial search space (Z):               8304  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 13549.94
+//
+[ok]

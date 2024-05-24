@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dapB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFSTEMIN/VFSTEMIN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/dapB/dapB_VFSTEMIN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dapB_prot  [M=210]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.2e-40  137.4   5.8    1.6e-40  137.1   5.8    1.2  1  VFSTEMIN_3213  [77353 - 76724] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFSTEMIN_3213  [77353 - 76724] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  137.1   5.8   2.9e-44   1.6e-40      33     210 .]      35     207 ..       5     207 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 137.1 bits;  conditional E-value: 2.9e-44
+      dapB_prot  33 kkkkkkikksdiiidFsnkknllkllklclkkkkkiiiGTTgfnkkeiklikklskkipifissNfNleflkflkilkkskkllkkmkvkiieiHn 128
+                      ++  +++ +++++Fs+  +l+k+l ++++ ++++i+GTT ++ + i+l+++  k  +i++ +NfNl++l+  +i+++ +++l  +++++i+iH 
+  VFSTEMIN_3213  35 FFETFCYNQPNMVVIFSSLLSLKKYLIHSQS-TRSVIVGTTALDCEAIDLVENRGKASCILLAHNFNLSLLSLARIIYIRYSYL--FTSRLIDIHG 127
+                    44555678899***************88765.6789******************************************999987..6789****** PP
+
+      dapB_prot 129 kkKkdsPSGssilikkilkkkkissiRigniiGkHkiifsnknnkisikHkilnrksflkglikiikfikkkkkGlysikdi 210
+                    ++K+dsPSG++++i+++ ++++i+siRig++ G+H   + +++n+i ikH++++  +fl gl+ +++++ + ++G+y+++di
+  VFSTEMIN_3213 128 IHKTDSPSGTALFIRMFSSISHIDSIRIGYQAGTHI--LADTKNMILIKHQSVSLLDFLPGLMISLRMLDRASYGIYQLSDI 207
+                    ***********************************5..68**************************************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (210 nodes)
+Target sequences:                       5380  (158524 residues searched)
+Passed MSV filter:                       193  (0.0358736); expected 107.6 (0.02)
+Passed bias filter:                       34  (0.0063197); expected 107.6 (0.02)
+Passed Vit filter:                         1  (0.000185874); expected 5.4 (0.001)
+Passed Fwd filter:                         1  (0.000185874); expected 0.1 (1e-05)
+Initial search space (Z):               5380  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 16125.11
+//
+[ok]

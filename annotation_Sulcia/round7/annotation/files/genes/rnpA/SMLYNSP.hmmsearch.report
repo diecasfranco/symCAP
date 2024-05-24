@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/rnpA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMLYNSP/SMLYNSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/rnpA/rnpA_SMLYNSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SMOLIH_rnpA  [M=127]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    9.5e-32  108.6  24.7    1.1e-31  108.4  24.7    1.0  1  SMLYNSP_5568  [101608 - 101234] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMLYNSP_5568  [101608 - 101234] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  108.4  24.7   1.3e-35   1.1e-31       8     125 ..       9     123 ..       4     125 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 108.4 bits;  conditional E-value: 1.3e-35
+   SMOLIH_rnpA   8 nikkklifslmnnlyqifrkvkqiennllnvayiekeynekyrkkvkvalfvskkqiiksfkrnrikrlmrmsyqlnkkiitlkkqkryyllfryik 104
+                    +kkk i+     + +ifr  k+iennll vay+e   +     kvk+a+fvskk+i ks++rnrikrlmrmsyqlnkkii +k++kryy++f y++
+  SMLYNSP_5568   9 KLKKKEIIKKKKIVNKIFRNGKKIENNLLKVAYLETSTS---SFKVKIAFFVSKKKIRKSYQRNRIKRLMRMSYQLNKKIIPFKRKKRYYIIFMYFQ 102
+                   478999999999999*******************98765...458**************************************************** PP
+
+   SMOLIH_rnpA 105 kkitnsyeitkcfehviikif 125
+                   kk+ n ye+ kcfe++i k+f
+  SMLYNSP_5568 103 KKLHNFYELKKCFENIIQKMF 123
+                   *****************9998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (127 nodes)
+Target sequences:                       8299  (223563 residues searched)
+Passed MSV filter:                       519  (0.0625377); expected 166.0 (0.02)
+Passed bias filter:                      101  (0.0121701); expected 166.0 (0.02)
+Passed Vit filter:                         2  (0.000240993); expected 8.3 (0.001)
+Passed Fwd filter:                         1  (0.000120496); expected 0.1 (1e-05)
+Initial search space (Z):               8299  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 16305.24
+//
+[ok]

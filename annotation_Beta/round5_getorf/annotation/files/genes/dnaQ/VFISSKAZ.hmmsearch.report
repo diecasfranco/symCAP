@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaQ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFISSKAZ/VFISSKAZ_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/dnaQ/dnaQ_VFISSKAZ.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaQ_prot  [M=175]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.6e-68  228.5  28.2    2.5e-68  227.8  28.2    1.2  1  VFISSKAZ_4884  [51332 - 50652] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFISSKAZ_4884  [51332 - 50652] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  227.8  28.2     4e-72   2.5e-68       3     173 ..      51     221 ..      50     223 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 227.8 bits;  conditional E-value: 4e-72
+      dnaQ_prot   3 rllvlDtettGlnlkkgDRiiEialveiikkkitkkvfhsylktkkkiskeaykiHkikkkfLkkkkkFkeiskklkkfiknsllvaHNakFDikf 98 
+                    ++++lDtettGln+kkgDRiiE+a++++ ++ki++ +fhsy+k++kkisk++ kiH+i++k Lk+kk+Fk +++k+++fikn++lv+HN+kFD+kf
+  VFISSKAZ_4884  51 HYIILDTETTGLNPKKGDRIIELAMIKVSNNKIKD-IFHSYFKVDKKISKKSKKIHGIDEKKLKNKKSFKYKINKINNFIKNNILVSHNSKFDLKF 145
+                    699*****************************975.8*********************************************************** PP
+
+      dnaQ_prot  99 lkkEyklikkkikfkaiDtlkiarkifpgkkNslkslckrlkik.kkkiHsAleDakilakvfiklkkkqkkikak 173
+                    lk+Ey+li++k+kf+ iDtlki+rki+pgkkN+l ++c+rlkik +kk+HsA++Dakil+k+f++lk+ qkkik k
+  VFISSKAZ_4884 146 LKNEYELIGIKRKFISIDTLKIFRKIYPGKKNTLIKICERLKIKiYKKMHSAINDAKILTKIFFFLKNPQKKIKRK 221
+                    *******************************************95689************************9977 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (175 nodes)
+Target sequences:                       6350  (168079 residues searched)
+Passed MSV filter:                       336  (0.0529134); expected 127.0 (0.02)
+Passed bias filter:                       43  (0.00677165); expected 127.0 (0.02)
+Passed Vit filter:                         3  (0.000472441); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.00015748); expected 0.1 (1e-05)
+Initial search space (Z):               6350  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 14645.42
+//
+[ok]

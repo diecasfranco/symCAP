@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genomes/VFBRI/VFBRI_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_getorf/annotation/files/genes/rplC/rplC_VFBRI.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplC_prot  [M=138]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.9e-43  145.5  23.9    2.1e-42  142.8  17.7    2.0  2  VFBRI_2808  [106547 - 107083] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBRI_2808  [106547 - 107083] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.6   1.3   0.00036       2.3       3      45 ..       7      49 ..       5      64 .. 0.80
+   2 !  142.8  17.7   3.2e-46   2.1e-42      20     137 ..      61     177 ..      48     178 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 6.6 bits;  conditional E-value: 0.00036
+   rplC_prot  3 iiakkkkssnif.lkGkliqvtelliketkklklkigkklsiis 45
+                +i+kk  +++ f  +G++++vt+++i e+k  k+ i+k+l+i+ 
+  VFBRI_2808  7 FIGKKLSMESFFdTNGDFVPVTKVKILENKIYKI-IKKELNIQI 49
+                578999999999668***********99988887.567777754 PP
+
+  == domain 2  score: 142.8 bits;  conditional E-value: 3.2e-46
+   rplC_prot  20 iqvtelliketkklklkigkklsiisiskGkGfsGvikrykfssnrkshGnskahrkpGsiGmCqdPGrvfkGkkmpGrkgqkkislknirvlklekkk 118
+                  ++t+ + k+ + ++++ ++ + i+s+skGkGf+Gvikr++f+snrk+hGnskah+kpGsiGmCqdPG+vfkGkkm+Gr+g+kk+++   ++ k++k+ 
+  VFBRI_2808  61 NKLTISKYKTGELMNINKKNFFIITSFSKGKGFTGVIKRHGFKSNRKTHGNSKAHNKPGSIGMCQDPGKVFKGKKMSGRMGFKKNTVVS-EIKKINKEI 158
+                 45566667777888999999999************************************************************999875.7899***** PP
+
+   rplC_prot 119 iiikGnvpGskkskikike 137
+                 i++ G++pG++++ +ki++
+  VFBRI_2808 159 IYFSGSIPGKRNTILKIRN 177
+                 **************99987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (138 nodes)
+Target sequences:                       6467  (175227 residues searched)
+Passed MSV filter:                       129  (0.0199474); expected 129.3 (0.02)
+Passed bias filter:                       32  (0.0049482); expected 129.3 (0.02)
+Passed Vit filter:                         2  (0.000309262); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000154631); expected 0.1 (1e-05)
+Initial search space (Z):               6467  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8442.71
+//
+[ok]

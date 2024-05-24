@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/frr_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMPHYLLO/SMPHYLLO_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/frr/frr_SMPHYLLO.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       frr_prot  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.6e-54  181.5  30.5    6.8e-54  181.2  30.5    1.2  1  SMPHYLLO_7381  [30000 - 29395] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPHYLLO_7381  [30000 - 29395] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  181.2  30.5   8.3e-58   6.8e-54       9     184 .]      28     202 .]      10     202 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 181.2 bits;  conditional E-value: 8.3e-58
+       frr_prot   9 kklkseikkkilklkkklfkirigkinesilddvtidlygkkvqiktisnisildartllikPWeeknlniiykallknsilyvpiktGkvlklki 104
+                    k++k+++++++ ++k+kl+kirig++  ++ldd+t+++y++kv+++++s++ +++++t+likPWe+k+l +i+k+++k++++++pi++Gk +kl+i
+  SMPHYLLO_7381  28 KEIKEKMNQILYYYKNKLSKIRIGQATPDMLDDITVEYYNNKVPLYHLSSLEVINSKTILIKPWENKTLSLIEKSIMKSNLGIIPINKGKFIKLVI 123
+                    7789999999999*********************************************************************************** PP
+
+       frr_prot 105 aklteetrkelikkinfilekfkinlrklrkktikklkklnslekdclkkkkkeiqniindcinsikiifkrkkkeilti 184
+                    + ltee+rke+ik ++++le +ki lr++rk+++kk++k    e d+++k+k+++++ ++++i++i+++f++k+keil+i
+  SMPHYLLO_7381 124 PSLTEERRKEIIKSNKLKLETAKISLRNIRKDYNKKIIKE-FSETDLIEKYKNDVHEATKEYISKIEKLFENKNKEILKI 202
+                    *************************************996.559**********************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (184 nodes)
+Target sequences:                       8199  (217242 residues searched)
+Passed MSV filter:                       204  (0.0248811); expected 164.0 (0.02)
+Passed bias filter:                       30  (0.00365898); expected 164.0 (0.02)
+Passed Vit filter:                         1  (0.000121966); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000121966); expected 0.1 (1e-05)
+Initial search space (Z):               8199  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 15108.68
+//
+[ok]

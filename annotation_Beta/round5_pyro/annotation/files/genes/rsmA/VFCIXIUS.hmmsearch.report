@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rsmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genomes/VFCIXIUS/VFCIXIUS_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round5_pyro//annotation/files/genes/rsmA/rsmA_VFCIXIUS.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmA_prot  [M=210]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.2e-45  149.2  35.7    1.3e-45  149.1  35.7    1.0  1  VFCIXIUS_17  [17937 - 17446] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCIXIUS_17  [17937 - 17446] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  149.1  35.7   8.4e-48   1.3e-45       5     171 ..       2     162 ..       1     163 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 149.1 bits;  conditional E-value: 8.4e-48
+    rsmA_prot   5 ldkvFl..iskksikkiikkiikkkkiiiEigsGyGnltkfllkkkrkillieidnkiskfLkkkyk.nvkiinknilninfkafkkitiigniPYkl 99 
+                  l+kvFl  ++ ks+k+++k++   +++iiE++sGyG+ltk+l+kkk ki++++idnkiskfL+ k+k ++++in+nilnin+++f++i++ign PY++
+  VFCIXIUS_17   2 LGKVFLreVKLKSFKDVFKDFN--SFKIIELASGYGSLTKVLYKKKIKIICVDIDNKISKFLNFKFKkKIFLINENILNINYCYFGRIKMIGNLPYYI 97 
+                  5899986567889999999984..678***************************************7369**************************** PP
+
+    rsmA_prot 100 tkkilkklllnkrkIkkqyimlqkeyfekitkkkaiklkvlykikkllslknknFkPkpkvnsvflkmvpik 171
+                  ++ki++++++ + +I+++++m+qk++ e itk+       l++++k+l+l+nknF+P +k+ns+flk+vp++
+  VFCIXIUS_17  98 SSKITFYIYR-FLNIECYFFMFQKSFEEIITKT------GLFYTFKVLNLNNKNFYPFKKINSIFLKIVPMR 162
+                  *****99886.689***********99988876......4788999************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (210 nodes)
+Target sequences:                        151  (42433 residues searched)
+Passed MSV filter:                       134  (0.887417); expected 3.0 (0.02)
+Passed bias filter:                       10  (0.0662252); expected 3.0 (0.02)
+Passed Vit filter:                        10  (0.0662252); expected 0.2 (0.001)
+Passed Fwd filter:                         2  (0.013245); expected 0.0 (1e-05)
+Initial search space (Z):                151  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1358.70
+//
+[ok]

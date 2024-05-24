@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxZ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genomes/SMPSPU/SMPSPU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round2/annotation/files/genes/xxxZ/xxxZ_SMPSPU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxZ_prot  [M=198]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    2.9e-61  206.5  56.3    2.9e-61  206.5  56.3    3.4  3  SMPSPU_10367  [185418 - 184642] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPSPU_10367  [185418 - 184642] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.7   2.3    0.0003       4.7       7      25 ..      13      31 ..       7      33 .. 0.89
+   2 !  206.5  56.3   1.8e-65   2.9e-61      15     192 ..      33     223 ..      31     230 .. 0.86
+   3 ?   -2.6   0.3      0.22   3.4e+03      65      81 ..     235     251 ..     231     255 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.0003
+     xxxZ_prot  7 iylyyenislilkkilfki 25
+                  ++ y+++i++ilk+i+fki
+  SMPSPU_10367 13 KFSYKYSIEIILKFIIFKI 31
+                  57899*************9 PP
+
+  == domain 2  score: 206.5 bits;  conditional E-value: 1.8e-65
+     xxxZ_prot  15 slilkkilfkigiskeilfytfyalpyllillnkkkik...kei....kkkk.....fsiflilvillnitifvlknf..nknylkekdyllikiyk 97 
+                    lilk  +++++i+k++lfyt+y++py+li++++k++k   k i    k+kk     f+if+i++il+n     l++f  +k++lk++++l ik+yk
+  SMPSPU_10367  33 TLILKNYFYILNINKYTLFYTLYIFPYILIYIYIKNNKnnkKIIflkkKNKKinyyfFFIFIIFIILFNNYFCGLNKFfvSKQSLKDIKNLDIKTYK 129
+                   79****************************9987765511143344324554344445788888888885544466553469*************** PP
+
+     xxxZ_prot  98 ypntfipiitllapfceeilfrkiilnellinkvepikaillssflfGfihnnplqfinGviiGiiiGvsyvitfsikkciiihsfnnviaiifs 192
+                   yp++fip+itllapf+eeilfr+iiln+l++n+ +pikail+ss+lfGfih+n+lqfi+G++iG+iiGvsyv+tfsi++ci+ih++nn+iaii+s
+  SMPSPU_10367 130 YPYIFIPTITLLAPFFEEILFRGIILNILYNNE-DPIKAILFSSLLFGFIHMNILQFISGFFIGNIIGVSYVTTFSINICILIHIYNNMIAIISS 223
+                   *****************************9886.8**********************************************************98 PP
+
+  == domain 3  score: -2.6 bits;  conditional E-value: 0.22
+     xxxZ_prot  65 ilvillnitifvlknfn 81 
+                   il+++l iti++ k++n
+  SMPSPU_10367 235 ILILILSITIVIDKKLN 251
+                   45555666666655555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (198 nodes)
+Target sequences:                      15564  (407989 residues searched)
+Passed MSV filter:                      2941  (0.188962); expected 311.3 (0.02)
+Passed bias filter:                      245  (0.0157415); expected 311.3 (0.02)
+Passed Vit filter:                        13  (0.000835261); expected 15.6 (0.001)
+Passed Fwd filter:                         1  (6.42508e-05); expected 0.2 (1e-05)
+Initial search space (Z):              15564  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.00
+# Mc/sec: 9370.67
+//
+[ok]

@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/xxxT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMCALKRU/SMCALKRU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/xxxT/xxxT_SMCALKRU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxT_prot  [M=121]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.6e-20   72.3  16.4    2.4e-12   45.9   4.1    2.2  2  SMCALKRU_6932  [31991 - 31752] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMCALKRU_6932  [31991 - 31752] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.3   4.6   1.2e-12   9.1e-09       3      28 ..      13      38 ..      11      41 .. 0.90
+   2 !   45.9   4.1     3e-16   2.4e-12      60      95 ..      37      71 ..      35      80 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 34.3 bits;  conditional E-value: 1.2e-12
+      xxxT_prot  3 lkitekcincgaceaecpnkaiyegs 28
+                    kit++cincgace ecpn+ai e +
+  SMCALKRU_6932 13 YKITNECINCGACELECPNNAISESK 38
+                   59********************9965 PP
+
+  == domain 2  score: 45.9 bits;  conditional E-value: 3e-16
+      xxxT_prot 60 kkydyyfivpekcteclgffdepqcasvcpvdccil 95
+                    k + yfivpekctec+g  ++pqc +vcpv+c   
+  SMCALKRU_6932 37 SKENRYFIVPEKCTECIGKSEKPQCVAVCPVNCI-K 71
+                   57889***************************85.3 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (121 nodes)
+Target sequences:                       7815  (208730 residues searched)
+Passed MSV filter:                        90  (0.0115163); expected 156.3 (0.02)
+Passed bias filter:                       55  (0.00703775); expected 156.3 (0.02)
+Passed Vit filter:                         4  (0.000511836); expected 7.8 (0.001)
+Passed Fwd filter:                         1  (0.000127959); expected 0.1 (1e-05)
+Initial search space (Z):               7815  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8662.48
+//
+[ok]

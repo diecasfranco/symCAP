@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/queA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMPYRVIR/SMPYRVIR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/queA/queA_SMPYRVIR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SMOLIH_queA  [M=410]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   7.3e-185  613.5  32.8   7.3e-185  613.5  32.8    1.6  2  SMPYRVIR_2002  [74915 - 76516] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMPYRVIR_2002  [74915 - 76516] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.2   1.8      0.18   1.5e+03      73      75 ..      48      50 ..       6     112 .. 0.52
+   2 !  613.5  32.8  8.5e-189  7.3e-185       3     410 .]     133     534 .]     131     534 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: -3.2 bits;  conditional E-value: 0.18
+    SMOLIH_queA 73 prl 75
+                    +l
+  SMPYRVIR_2002 48 KKL 50
+                   221 PP
+
+  == domain 2  score: 613.5 bits;  conditional E-value: 8.5e-189
+    SMOLIH_queA   3 krichkrknlfgrkgkgnqvnqnkinkinkinkkafkkkkdsyniskyilinfknsdfnfkvpkklipnkprlsknrtrlmvlnrmnmtiqhkymn 98 
+                     +  +k k+  ++k+k+   n++k    nk   k   +kkdsynisk+ilinfk sdfnf vpkklipnkpr+   + rlmvlnr nm+i h+y+ 
+  SMPYRVIR_2002 133 SKSSNKSKSKSSNKSKSKSSNKSKSKSSNKSKSKK-SRKKDSYNISKHILINFKTSDFNFTVPKKLIPNKPRIDNEKVRLMVLNRDNMSIDHQYIY 227
+                    566789999999************99999976665.5789******************************************************** PP
+
+    SMOLIH_queA  99 dfnsyfitgdtlvlnntkmykyilygkkekngsdlqvyllreinpnekswevlvqparkirignrlffldennekliavvhdntiskgriikftcd 194
+                    +fn+yf+ gdtlv+nntkmyk ilygkkek g ++qvyllre+n  ekswevlvqparkirignrlffldennek++avvhdntiskgri+kf  d
+  SMPYRVIR_2002 228 NFNNYFFNGDTLVFNNTKMYKSILYGKKEKTGDNIQVYLLREVNKKEKSWEVLVQPARKIRIGNRLFFLDENNEKMLAVVHDNTISKGRILKFNSD 323
+                    ************************************************************************************************ PP
+
+    SMOLIH_queA 195 lpnqifknkiknlgkiqsglikyglytsfkkpfidfsnlqtiyakkegstsphfpglhiskyilkklefyginisyvtlhlghdtydkiivediqk 290
+                    lpn+ fk ki +lgkiqs      +yt fk  f+d+s +qtiyakk gstsphfpglh+sk +lkkle+ g+n+sy+tlhlg +ty+ki+ved+qk
+  SMPYRVIR_2002 324 LPNKEFKRKINHLGKIQSD-----IYTDFKNSFLDLSKMQTIYAKKAGSTSPHFPGLHFSKLLLKKLELQGVNFSYITLHLGTNTYEKILVEDLQK 414
+                    *****************96.....6*********************************************************************** PP
+
+    SMOLIH_queA 291 hkmkeeyfkithkacnfinysinsqqkvcaigtstlralessvspsntlipnkkwtnkfiypyykfhianslltnfhqpkstvmpllaafvgydfl 386
+                    h+mkeeyf i  kac +in s+ sq+kvca+gtstlralessvs  ntl pnkkwtnkfiypyykf+i ns+ltnfh pkst++pll+af gy+fl
+  SMPYRVIR_2002 415 HRMKEEYFNIPIKACKLINSSLKSQKKVCAVGTSTLRALESSVSTYNTLNPNKKWTNKFIYPYYKFNIVNSILTNFHPPKSTLIPLLSAFTGYEFL 510
+                    ************************************************************************************************ PP
+
+    SMOLIH_queA 387 kyaydlaikkkyqfynfgdamlil 410
+                      ayd+aik+ky+fynfgdamlil
+  SMPYRVIR_2002 511 MKAYDIAIKEKYKFYNFGDAMLIL 534
+                    **********************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (410 nodes)
+Target sequences:                       8559  (227337 residues searched)
+Passed MSV filter:                       164  (0.0191611); expected 171.2 (0.02)
+Passed bias filter:                       44  (0.00514079); expected 171.2 (0.02)
+Passed Vit filter:                         3  (0.000350508); expected 8.6 (0.001)
+Passed Fwd filter:                         1  (0.000116836); expected 0.1 (1e-05)
+Initial search space (Z):               8559  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 16062.54
+//
+[ok]

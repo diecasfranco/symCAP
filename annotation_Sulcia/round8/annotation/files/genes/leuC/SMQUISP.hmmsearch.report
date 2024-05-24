@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/leuC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMQUISP/SMQUISP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/leuC/leuC_SMQUISP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       leuC_prot  [M=469]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+   1.3e-257  853.5   9.8   1.5e-257  853.4   9.8    1.0  1  SMQUISP_7979  [15064 - 13646] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMQUISP_7979  [15064 - 13646] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  853.4   9.8  1.7e-261  1.5e-257       1     465 [.       3     469 ..       3     473 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 853.4 bits;  conditional E-value: 1.7e-261
+     leuC_prot   1 mnktlfekiweshvvfslnkkidvlyidrhyihevtspqafeelkkrkisilkpnkiiattdhnvptkaknlpikdvlskfqieklkkncnkngilf 97 
+                   m+ tlf+kiw+shv++++nk+id+ly+d+++ihevtspqafe+l+kr+i i++p+kiiat+dhnvptk+++lpik++ls++qi+ lkknc kngi++
+  SMQUISP_7979   3 MALTLFDKIWNSHVIDTINKNIDILYLDKQFIHEVTSPQAFETLEKRNIPIFRPEKIIATADHNVPTKNQHLPIKNALSRVQINLLKKNCIKNGIKL 99 
+                   789********************************************************************************************** PP
+
+     leuC_prot  98 fglkhdfqgivhvigpelgitlpgmtivcgdshtsthgafgciafgigtsqvamvmatqcllqskpkqmrlklegkln..lgvtakdiilyiisklg 192
+                   f l h++qgivhvigpelg+tlpgmt+vcgdshtsthga+gc+afgigtsqvamvma+qcll +kpk mr+ ++g+l+  +gvt+kdiilyiisklg
+  SMQUISP_7979 100 FWLGHKYQGIVHVIGPELGMTLPGMTLVCGDSHTSTHGALGCLAFGIGTSQVAMVMASQCLLLKKPKTMRIIIKGNLQfqIGVTPKDIILYIISKLG 196
+                   ****************************************************************************96338**************** PP
+
+     leuC_prot 193 pdggtgyfieysgsvfkkmnmeermtvcnmsiemgarggliepdtttlkylkekifspkkkelkslkkkcknlktdkkasfekeykfnssniypmit 289
+                   p+g+tgyf+eysg+++++m+m+ rmt+cnmsiemgargg+i+pd+tt++ylk++ f+pkk +l ++k ++k+lktdk+a+f+key+f++s+i+pmit
+  SMQUISP_7979 197 PGGTTGYFVEYSGTIIDEMKMDGRMTICNMSIEMGARGGIIAPDKTTYNYLKDRAFTPKKANLLAAKLFWKTLKTDKNAHFDKEYEFDVSKIEPMIT 293
+                   ************************************************************************************************* PP
+
+     leuC_prot 290 ygtnpsmgikisdsipkenifekrkikikslkymglkegeyllglkinyvfigsctnsriedikliskiiknkkkaenvsvlvvpgskqvykqilkk 386
+                   ygt+p+m+iki+d+ipk+  ++ ++   kslkymg++ geyl+g++inyvfigsctnsr++d++l+ski+k+k++a+nv++l+vpgs+qv+kq++k+
+  SMQUISP_7979 294 YGTSPNMSIKIDDCIPKNIPTNYENYFYKSLKYMGFHPGEYLIGKTINYVFIGSCTNSRMDDLRLVSKIVKGKQVAKNVQALIVPGSTQVFKQLIKE 390
+                   ************************************************************************************************* PP
+
+     leuC_prot 387 kidlillnagfelrkpgcsaclgmnedkipsgeyclstsnrnfegrqgkgartllasplvaaitalegkivniseylkk 465
+                   kidlil+++gf++r+pgcsaclgmnedkipsgeyc+stsnrnfegrqg+g+rtll+splvaai al+gkiv+i++y+kk
+  SMQUISP_7979 391 KIDLILKESGFDFRQPGCSACLGMNEDKIPSGEYCVSTSNRNFEGRQGNGSRTLLTSPLVAAIIALKGKIVSIKKYIKK 469
+                   *****************************************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (469 nodes)
+Target sequences:                       8376  (219211 residues searched)
+Passed MSV filter:                        67  (0.00799904); expected 167.5 (0.02)
+Passed bias filter:                       26  (0.00310411); expected 167.5 (0.02)
+Passed Vit filter:                         1  (0.000119389); expected 8.4 (0.001)
+Passed Fwd filter:                         1  (0.000119389); expected 0.1 (1e-05)
+Initial search space (Z):               8376  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 15646.55
+//
+[ok]

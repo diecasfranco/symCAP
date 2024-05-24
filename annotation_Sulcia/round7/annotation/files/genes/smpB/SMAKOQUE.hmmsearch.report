@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/smpB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genomes/SMAKOQUE/SMAKOQUE_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round7/annotation/files/genes/smpB/smpB_SMAKOQUE.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       smpB_prot  [M=149]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.7e-41  141.0  39.3    3.7e-40  136.7  36.0    2.4  2  SMAKOQUE_5015  [173519 - 174058] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMAKOQUE_5015  [173519 - 174058] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.1      0.16   1.6e+03      97     113 ..       4      19 ..       1      20 [. 0.59
+   2 !  136.7  36.0   3.6e-44   3.7e-40       3     142 ..      20     172 ..      17     179 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 0.16
+      smpB_prot  97 elklniiPteivlnnrn 113
+                    + k+n++ ++i+ln+rn
+  SMAKOQUE_5015   4 KHKINLM-NKIILNRRN 19 
+                    4455654.567777776 PP
+
+  == domain 2  score: 136.7 bits;  conditional E-value: 3.6e-44
+      smpB_prot   3 kklkinnkkaffdyellkkekfiaGiellGsevksikkkkvslknsycklinnniyvfdlyis.......sni....lntkfspk....rrkklll 83 
+                     +++i+nkka +++ +++  k+iaG++llG+evksik++k++l+ns+ck+++++i+++++yi+       + +    ++t++s++    r++ lll
+  SMAKOQUE_5015  20 LNINIRNKKALYNFVFIE--KYIAGLKLLGHEVKSIKNNKANLNNSFCKVLKKEIFILNFYIKplsnsnsNFHikknYQTNNSTNrtneRKILLLL 113
+                    57899*********9996..69***************************************96433222111111112233344311115667899 PP
+
+      smpB_prot  84 kkkeinkikkkikelklniiPteivlnnrnfiklkfflakskkkyekrnlikikeleka 142
+                    kkkei +i++++k+++lniiP++i++n+++ ikl+  laksk+ky+kr+lik+ke+e  
+  SMAKOQUE_5015 114 KKKEIINISEAVKKFSLNIIPENIFINKKGLIKLVIHLAKSKNKYDKRELIKKKEVEIF 172
+                    *******************************************************9865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (149 nodes)
+Target sequences:                      10271  (263434 residues searched)
+Passed MSV filter:                       489  (0.0476098); expected 205.4 (0.02)
+Passed bias filter:                       86  (0.00837309); expected 205.4 (0.02)
+Passed Vit filter:                         3  (0.000292085); expected 10.3 (0.001)
+Passed Fwd filter:                         1  (9.73615e-05); expected 0.1 (1e-05)
+Initial search space (Z):              10271  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12387.35
+//
+[ok]

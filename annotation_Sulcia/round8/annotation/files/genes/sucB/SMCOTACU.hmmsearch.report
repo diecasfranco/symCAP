@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/sucB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genomes/SMCOTACU/SMCOTACU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round8/annotation/files/genes/sucB/sucB_SMCOTACU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       sucB_prot  [M=379]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.7e-42  144.0  11.8      1e-37  129.0   4.5    2.0  2  SMCOTACU_3890  [139239 - 140507] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMCOTACU_3890  [139239 - 140507] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.9   0.7   1.7e-08   0.00014       5      82 ..       8      86 ..       4     141 .. 0.74
+   2 !  129.0   4.5   1.3e-41     1e-37     141     367 ..     203     423 .]     184     423 .] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 19.9 bits;  conditional E-value: 1.7e-08
+      sucB_prot  5 ikvpspgesiteveissllvkngdfvkknqviaeidsdkatleicaeasg.rliikakkgdilkvgellclidtsflkk 82
+                   i +p   +++ e  i  +  + g+ v   +++aei++dka  e  +e     l+i  k g+  kv ++l ++     k 
+  SMCOTACU_3890  8 IYMPRLSDTMKEGTIVKWYKQVGEQVLTGDLLAEIETDKAIQEFESEYNAtLLYIGVKEGEKAKVNDILAIMGDRKEKI 86
+                   56788888999999********************************97651667899*************987654443 PP
+
+  == domain 2  score: 129.0 bits;  conditional E-value: 1.3e-41
+      sucB_prot 141 kkltklrrklseklvevknktamlttfnevdmrnilylkkkykfvfkekhgvklgfmaffvksciralkeypdinsmidekgknkinfkyydisia 236
+                    + ++  r++lse+l++ k+ +     f ev   +++ +k k    +++k+  ++ f  ++vk+   +l+  p ins    k+++ i  +y +i ia
+  SMCOTACU_3890 203 HSISPSRKRLSERLLKSKKISPHYYLFLEVPADKLITFK-K---YINKKYTSQISFNDLIVKATALSLQTNPTINSS--WKKERIIYHQYINIGIA 292
+                    5577789************************99988654.4...4678999*************************6..4778889999******* PP
+
+      sucB_prot 237 vagpkgllvpvirnadtlsfreiektiknlslkiknstisideliggtftitnggifgsmlstpiinppqsailgmhsiverpivklgkikvipim 332
+                    v+ p gl+vpvi n d  s+ ++ k ik+   + ++  +s ++l g tfti+n g+fg    t iin p+s+il + si  +pi+   ki+    +
+  SMCOTACU_3890 293 VSLPEGLIVPVINNVDKKSLLQLSKEIKEKIERSRKKQLSTNDLEGSTFTISNLGMFGIDCFTSIINQPNSSILSVGSIQRKPIIDKNKIQRGNTI 388
+                    ********************************************************************************************999* PP
+
+      sucB_prot 333 ylalsydhriidgkeavgflfsikesienpikfli 367
+                     ++l+ dhriidg     fl+++ke + +pi +li
+  SMCOTACU_3890 389 KFTLACDHRIIDGAVGSTFLLTLKEYLLEPITMLI 423
+                    *************99999*************9997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (379 nodes)
+Target sequences:                       8230  (217472 residues searched)
+Passed MSV filter:                       117  (0.0142163); expected 164.6 (0.02)
+Passed bias filter:                       37  (0.00449575); expected 164.6 (0.02)
+Passed Vit filter:                         2  (0.000243013); expected 8.2 (0.001)
+Passed Fwd filter:                         1  (0.000121507); expected 0.1 (1e-05)
+Initial search space (Z):               8230  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 19818.50
+//
+[ok]

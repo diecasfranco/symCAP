@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/proteins/asnS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genomes/SMCATAR1/SMCATAR1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Sulcia/round6/annotation/files/genes/asnS/asnS_SMCATAR1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       asnS_prot  [M=466]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.8e-16   59.2   2.1    1.9e-16   59.1   2.1    1.0  1  SMCATAR1_3939  [135901 - 136029] 
+      3e-11   42.0   1.8      3e-11   42.0   1.8    1.1  1  SMCATAR1_3936  [135742 - 135897] 
+
+
+Domain annotation for each sequence (and alignments):
+>> SMCATAR1_3939  [135901 - 136029] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.1   2.1   4.1e-20   1.9e-16     127     168 ..       1      42 [.       1      43 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 59.1 bits;  conditional E-value: 4.1e-20
+      asnS_prot 127 rfrtsifssilrirhnisfsihkffykknfiyintpiittyd 168
+                    rf t++fssi+r+rhn+s+ ihk f k+ f+ i+tpiit+yd
+  SMCATAR1_3939   1 RFSTNLFSSIMRVRHNVSYLIHKSFKKRGFYNIQTPIITNYD 42 
+                    8****************************************9 PP
+
+>> SMCATAR1_3936  [135742 - 135897] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.0   1.8   6.4e-15     3e-11      86     124 ..      13      51 ..       1      52 [] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 42.0 bits;  conditional E-value: 6.4e-15
+      asnS_prot  86 nieiyankikilgkfsseelqktilqpkkhsfkklreqa 124
+                     ie++a+ki i+g f+ + ++ktilqpkkhsf+klr+qa
+  SMCATAR1_3936  13 LIELLAKKIIIYGLFKDKYFKKTILQPKKHSFNKLRQQA 51 
+                    47899********************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (466 nodes)
+Target sequences:                       9312  (235910 residues searched)
+Passed MSV filter:                       248  (0.0266323); expected 186.2 (0.02)
+Passed bias filter:                       60  (0.0064433); expected 186.2 (0.02)
+Passed Vit filter:                         7  (0.000751718); expected 9.3 (0.001)
+Passed Fwd filter:                         5  (0.000536942); expected 0.1 (1e-05)
+Initial search space (Z):               9312  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 14789.79
+//
+[ok]
