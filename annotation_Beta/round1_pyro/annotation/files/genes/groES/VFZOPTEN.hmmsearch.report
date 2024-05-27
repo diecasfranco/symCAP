@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/groES_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFZOPTEN/VFZOPTEN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/groES/groES_VFZOPTEN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       groES_prot  [M=85]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    4.2e-19   61.8  24.7    4.5e-19   61.7  24.7    1.0  1  VFZOPTEN_93  [81810 - 82058]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFZOPTEN_93  [81810 - 82058]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.7  24.7   3.1e-21   4.5e-19       2      84 ..       4      82 ..       1      82 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 61.7 bits;  conditional E-value: 3.1e-21
+   groES_prot  2 kikplnnyiilkkikkkkkskilikkkkkkkniGkVvfikknkkkkikkgdiviykkyssnkikiknkkYifikykniiaklk 84
+                 ki+++nn++i+k +k  +k+ki+++k+ +++n+G++++++k k  k+ kg+i+i++k++ +++++++kkY+++kyk+ii+ +k
+  VFZOPTEN_93  4 KIIVINNFVIIKLFK--EKKKIILSKNLSHSNMGQIISCPKGK--KVRKGNIIIFDKKDVKELNFFKKKYMYLKYKKIICLIK 82
+                 799*********986..5678*******************987..589********************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (85 nodes)
+Target sequences:                        143  (37262 residues searched)
+Passed MSV filter:                       133  (0.93007); expected 2.9 (0.02)
+Passed bias filter:                       11  (0.0769231); expected 2.9 (0.02)
+Passed Vit filter:                        10  (0.0699301); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00699301); expected 0.0 (1e-05)
+Initial search space (Z):                143  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2046.87
+//
+[ok]

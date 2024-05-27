@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFBEB/VFBEB_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rpmA/rpmA_VFBEB.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmA_prot  [M=80]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-32  110.1  12.2    1.6e-32  109.8  12.2    1.1  1  VFBEB_3220  [80254 - 79982] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBEB_3220  [80254 - 79982] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  109.8  12.2   2.8e-36   1.6e-32       1      77 [.       3      78 ..       3      81 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 109.8 bits;  conditional E-value: 2.8e-36
+   rpmA_prot  1 mAkKKaagslknGRdskskrLGiKkfsgelvkkGniiirqrGtkfksglntkigkdytiyslkkGkvlfkkkkkkiv 77
+                mAkKKa+g lknGRdsksk+LGiKk+++e+vk+Gni++rq+G+ fk g+n+k+gkd+ti+++k+G+v+fk+kk   v
+  VFBEB_3220  3 MAKKKATGVLKNGRDSKSKNLGIKKYGNEKVKNGNILVRQKGAIFKIGKNVKMGKDFTIFATKNGRVYFKNKK-ISV 78
+                9********************************************************************8765.444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (80 nodes)
+Target sequences:                       5537  (153442 residues searched)
+Passed MSV filter:                        53  (0.00957197); expected 110.7 (0.02)
+Passed bias filter:                       25  (0.00451508); expected 110.7 (0.02)
+Passed Vit filter:                         4  (0.000722413); expected 5.5 (0.001)
+Passed Fwd filter:                         1  (0.000180603); expected 0.1 (1e-05)
+Initial search space (Z):               5537  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11156.36
+//
+[ok]

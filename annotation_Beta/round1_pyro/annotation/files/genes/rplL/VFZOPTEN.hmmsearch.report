@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplL_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFZOPTEN/VFZOPTEN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/rplL/rplL_VFZOPTEN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplL_prot  [M=115]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.6e-36  116.1  20.1    8.5e-36  115.9  20.1    1.0  1  VFZOPTEN_5  [2625 - 2957]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFZOPTEN_5  [2625 - 2957]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  115.9  20.1     6e-38   8.5e-36       1     115 []       1     110 [.       1     110 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 115.9 bits;  conditional E-value: 6e-38
+   rplL_prot   1 MkvkkifkeickLnlleileLikklekkFnikklekekkkkkkkekkkfkiklkeigenkisvIklikeitnldLlesKkivdklpklikkniekkeak 99 
+                 M+vkkif++ickLnllei++L++kl++kFn+++l++     kk e++ f+++++++g++ki++Ikl+ke+ ++dL++sKk++dklp++  k+++k+ea 
+  VFZOPTEN_5   1 MNVKKIFNDICKLNLLEIFDLLTKLKNKFNFNNLSN-----KKAEQNLFSVVINSLGPSKIMAIKLVKEVIETDLINSKKLIDKLPCIFDKKFKKSEAI 94 
+                 9*****************************998754.....5667899*************************************************** PP
+
+   rplL_prot 100 eikkkfeklgakveik 115
+                 eik++f+k+g++veik
+  VFZOPTEN_5  95 EIKERFKKIGCEVEIK 110
+                 *************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (115 nodes)
+Target sequences:                        143  (37262 residues searched)
+Passed MSV filter:                       106  (0.741259); expected 2.9 (0.02)
+Passed bias filter:                        2  (0.013986); expected 2.9 (0.02)
+Passed Vit filter:                         1  (0.00699301); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00699301); expected 0.0 (1e-05)
+Initial search space (Z):                143  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2968.96
+//
+[ok]

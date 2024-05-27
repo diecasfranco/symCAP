@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/grpE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFOLIH/VFOLIH_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/grpE/grpE_VFOLIH.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       grpE_prot  [M=145]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.5e-31  100.0  27.6    2.9e-30   98.4  27.6    1.6  1  VFOLIH_116  [107819 - 107427] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOLIH_116  [107819 - 107427] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   98.4  27.6   1.8e-32   2.9e-30       3     142 ..       8     130 ..       5     130 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 98.4 bits;  conditional E-value: 1.8e-32
+   grpE_prot   3 kkklkkenkklkkkyleliaeienikkrllkelkkikkkskekiiknilpiiDsleislknskekklkegikitlkllknilkknnvkkIkpkkfekfn 101
+                  ++lkkenkk+kk+++++++ i+ +kk+    +   kk++ +kii +++p++D+++  ++            ++l++lk+++kkn +k I+pkk+++fn
+  VFOLIH_116   8 YNCLKKENKKIKKNFFKILKFIRFFKKK----KIFRKKIKIRKIIMKFIPFLDNINNNYN-----------LYILNFLKYMVKKNCIKIIEPKKHDDFN 91 
+                 5789***************999888765....34557778899**********9976553...........4789************************ PP
+
+   grpE_prot 102 PkyhqailsikkkkksnlifnvLqkGYiiknkvlRPaLVsv 142
+                 P++hqai++ik +kk  +i++vL+kGYi++n vlRPaLV++
+  VFOLIH_116  92 PYIHQAIITIKGSKK--KIIKVLKKGYIFNNLVLRPALVCI 130
+                 **********98876..6**********************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (145 nodes)
+Target sequences:                        161  (42883 residues searched)
+Passed MSV filter:                       141  (0.875776); expected 3.2 (0.02)
+Passed bias filter:                       11  (0.068323); expected 3.2 (0.02)
+Passed Vit filter:                         8  (0.0496894); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00621118); expected 0.0 (1e-05)
+Initial search space (Z):                161  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1838.74
+//
+[ok]

@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFSCODIS/VFSCODIS_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rpmG/rpmG_VFSCODIS.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmG_prot  [M=52]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.8e-14   51.4  13.9    2.8e-14   51.4  13.9    2.5  2  VFSCODIS_5647  [30492 - 30145] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFSCODIS_5647  [30492 - 30145] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.5   2.6     0.033   2.2e+02      22      33 ..      36      47 ..      26      66 .. 0.74
+   2 !   51.4  13.9   4.3e-18   2.8e-14       3      51 ..      70     116 .]      68     116 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 0.5 bits;  conditional E-value: 0.033
+      rpmG_prot 22 fYfikkkkkkin 33
+                   +Yf kk++++ +
+  VFSCODIS_5647 36 MYFSKKNFNSLF 47
+                   788888877654 PP
+
+  == domain 2  score: 51.4 bits;  conditional E-value: 4.3e-18
+      rpmG_prot   3 kkkkkkkflkfvSsSgSghfYfikkkkkkinklkKyDPifrkhfvylkk 51 
+                    k +kkkk++++ S+SgSgh+Y+++ kk   nkl+K+DPi+rk f+y+kk
+  VFSCODIS_5647  70 KMSKKKKIIILKSTSGSGHIYSFNNKK--LNKLIKFDPIYRKKFLYIKK 116
+                    6788999****************8766..689**************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (52 nodes)
+Target sequences:                       6512  (170280 residues searched)
+Passed MSV filter:                      1241  (0.190571); expected 130.2 (0.02)
+Passed bias filter:                      179  (0.0274877); expected 130.2 (0.02)
+Passed Vit filter:                         8  (0.0012285); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000153563); expected 0.1 (1e-05)
+Initial search space (Z):               6512  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3872.66
+//
+[ok]

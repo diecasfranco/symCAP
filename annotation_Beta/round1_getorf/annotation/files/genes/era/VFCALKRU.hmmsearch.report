@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/era_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFCALKRU/VFCALKRU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/era/era_VFCALKRU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       era_prot  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.7e-11   42.4  49.8    1.7e-11   42.4  49.8    2.7  2  VFCALKRU_2161  [83147 - 84457] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALKRU_2161  [83147 - 84457] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?  -13.7  21.2         1   6.6e+03     282     345 ..      95     172 ..      37     178 .. 0.51
+   2 !   42.4  49.8   2.5e-15   1.7e-11      90     350 ..     166     423 ..     153     428 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -13.7 bits;  conditional E-value: 1
+       era_prot 282 kllnlikktinfkkkkfslkk..........eikkksikikknrfekikivlke.kkriKkkifkklkiK...enlfl 345
+                     ++n+i ++  +k kk++l+k           ++kk+ +i  +r e i i +k  +k +K       kiK   +n+f+
+  VFCALKRU_2161  95 HIVNSILRYCIKKYKKYNLRKaqkgefieraYLNKKIDVIELKRLESILIKTKDaTKSLKISNTLRHKIKtilKNIFN 172
+                    444444444434444444433000000000034444444544444444443332133344333333344422234444 PP
+
+  == domain 2  score: 42.4 bits;  conditional E-value: 2.5e-15
+       era_prot  90 fiknkkkfflikkkfknflsknffiikykklgFlFl.ikklkkskkkkk...kkkiyipilGkkNvGKstliNslikkkilivSKkpgnTKkistl 181
+                     +kn  ++ l  +++ nf+  n    k+ + +++ l +kk+++++ kk    k +i++ ++G +NvGKstl+N li k++++    +g+TK+i+t 
+  VFCALKRU_2161 166 ILKNIFNIRLCIENYINFKHSNDNNYKQLIVNYIRLwLKKIQQLRCKKItifKTNIKVALVGHTNVGKSTLFNKLITKNKSLCEDYNGTTKNIITQ 261
+                    5788778888889999**98888777777777775536788877644321224567899************************************9 PP
+
+       era_prot 182 ikkkkknv.lkflDfPGfkKkikikKlkilknfikkikil.lFlvslkinKkekriieklkKkyiviiCvNKiDkkkkineeklkkrflkfeiSak 275
+                    +++  k++  k++D+PG+ K  + +  ki kn  k i+   + l    ++ k k+       + +vi  +NKiD ++k+  +  k   l ++ S  
+  VFCALKRU_2161 262 VIRIGKKIqCKIIDTPGYPKSSSNTHTKIKKNINKVIQTAdIILNIHSPCEKPKQ------HNKKVINIINKIDMVNKKLTNTNKTVLLSCKNSGC 351
+                    99988876479*********99888888777776666654233334568888775......334466668*****998877777888899999999 PP
+
+       era_prot 276 kkigikkllnlikktinfkkkkfslkkeikkksikikknrfekikivlkekkriKkkifkklkiKenlfliklkr 350
+                     +  +++ll  i+k +  k  + + k     ks  i++    k    ++e  +i +++  ++k+  n+f+i  ++
+  VFCALKRU_2161 352 YNYLYHRLLRKIYKLVTTKYLIARAKARATLKS-YIRNTL--KQTTSTSELTTITNNLGMITKLLTNIFNIGNTK 423
+                    999999999999987766555544444333332.344433..334456778889999999999999999986554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                       6591  (179938 residues searched)
+Passed MSV filter:                       332  (0.0503717); expected 131.8 (0.02)
+Passed bias filter:                       41  (0.0062206); expected 131.8 (0.02)
+Passed Vit filter:                         1  (0.000151722); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000151722); expected 0.1 (1e-05)
+Initial search space (Z):               6591  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8501.65
+//
+[ok]

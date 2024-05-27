@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplR_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFDICEUR/VFDICEUR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rplR/rplR_VFDICEUR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplR_prot  [M=111]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.9e-31  107.3  30.3    2.1e-31  107.2  30.3    1.0  1  VFDICEUR_3138  [115666 - 115995] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFDICEUR_3138  [115666 - 115995] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  107.2  30.3   3.2e-35   2.1e-31       1     110 [.       4     108 ..       4     110 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 107.2 bits;  conditional E-value: 3.2e-35
+      rplR_prot   1 mkkkklkkelknkyillvkKtNkhiyiqvfiyiknkiitscStneKliknilkkkkkkknsffkikilskilikkliarnikklkfnksnykfkgk 96 
+                    m ++ +kke kn+y l++kK+Nkh+y  v+iy   kiit+cStn+K+ikni   k+++knsf+kik+l++ili+ l+arni ++kf k+ y+fk+k
+  VFDICEUR_3138   4 MNTQFKKKEQKNNYNLTIKKSNKHVY--VYIYNTSKIITICSTNTKTIKNI---KEPQKNSFYKIKKLITILITTLKARNISQVKFIKNTYPFKCK 94 
+                    888999*******************9..589999***************97...7899************************************** PP
+
+      rplR_prot  97 vkliynslkkkflk 110
+                    +kliynslk ++l+
+  VFDICEUR_3138  95 LKLIYNSLKANNLI 108
+                    *********99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (111 nodes)
+Target sequences:                       6719  (181892 residues searched)
+Passed MSV filter:                       513  (0.0763506); expected 134.4 (0.02)
+Passed bias filter:                       88  (0.0130972); expected 134.4 (0.02)
+Passed Vit filter:                         8  (0.00119065); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000148832); expected 0.1 (1e-05)
+Initial search space (Z):               6719  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10536.81
+//
+[ok]

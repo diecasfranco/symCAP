@@ -1,0 +1,53 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/RNAs/5s_rRNA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/genomes/VFPENVAR.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/rRNA/5s_rRNA/VFPENVAR.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5s_rRNA  [M=105]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    2.3e-17   60.2  19.1  VFPENVAR 114788 114684 
+
+
+Annotation for each hit  (and alignments):
+>> VFPENVAR  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   60.2  19.1   2.3e-17         1       103 [.    114788    114684 ..    114788    114682 ..    131963    0.93
+
+  Alignment:
+  score: 60.2 bits
+   5s_rRNA      1 tgatAattaaAgtttattggaaacAccctttatccattccGAAcAAgataGttAAacagtaatttgccgaagatag...taatatgcaAAggtAg 92    
+                  tgatAattaaAgtttattggaaa Ac cttta+cc ttccGAAcAAga  Gt AAaca taa  t c ga++atag   taa   + +AAggtA 
+  VFPENVAR 114788 TGATAATTAAAGTTTATTGGAAATACTCTTTAACCTTTCCGAACAAGAATGTAAAACAATAAA-TACTGATAATAGgttTAAATACTGAAGGTAA 114695
+                  689********************************************************9876.68999******98877888899********* PP
+
+   5s_rRNA     93 Gtttttatcag 103   
+                  Gtttt  + ag
+  VFPENVAR 114694 GTTTTATCAAG 114684
+                  ***99988775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (105 nodes)
+Target sequences:                          1  (263926 residues searched)
+Residues passing SSV filter:          117192  (0.444); expected (0.02)
+Residues passing bias filter:           3098  (0.0117); expected (0.02)
+Residues passing Vit filter:             493  (0.00187); expected (0.003)
+Residues passing Fwd filter:             279  (0.00106); expected (3e-05)
+Total number of hits:                      1  (0.000398)
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 3017.67
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/rRNA/5s_rRNA/VFPENVAR.sto
+[ok]

@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/grpE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFMELPLA/VFMELPLA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/grpE/grpE_VFMELPLA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       grpE_prot  [M=145]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    4.7e-28   96.4  20.5    5.5e-28   96.2  20.5    1.1  1  VFMELPLA_3968  [94055 - 93648] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMELPLA_3968  [94055 - 93648] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   96.2  20.5   8.4e-32   5.5e-28      11     142 ..       6     136 .]       1     136 [] 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 96.2 bits;  conditional E-value: 8.4e-32
+      grpE_prot  11 kklkkkyleliaeienikkrllk.....elkkikkkskekiiknilpiiDsleislknskekklkegikitlkllknilkknnvkkIkpkkfekfn 101
+                    k+lkk +++l++e+++ik+ + k     +l k+k++++ ++i+ i+p++D+++++ +     k k+++ ++l +lk+ilkk +++ I+pk ++++n
+  VFMELPLA_3968   6 KNLKKVCKNLKKENNKIKRGFFKlfkllKLYKKKTTKNYDVIDYIIPFLDNIKYIGSF----KDKKKHVHCLIFLKYILKKIKLDIIRPKLLDDYN 97 
+                    4555556666666665555443311111455667778899***********9987653....44566788999*********************** PP
+
+      grpE_prot 102 PkyhqailsikkkkksnlifnvLqkGYiiknkvlRPaLVsv 142
+                    P++hq+i+s+ +kkk  +i++vL+kGY+++nk+lRPaLV++
+  VFMELPLA_3968  98 PYIHQVIFSTYSKKK--KILKVLKKGYVFCNKILRPALVCI 136
+                    ********9887665..7**********************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (145 nodes)
+Target sequences:                       6533  (179433 residues searched)
+Passed MSV filter:                       376  (0.057554); expected 130.7 (0.02)
+Passed bias filter:                       48  (0.00734731); expected 130.7 (0.02)
+Passed Vit filter:                         2  (0.000306138); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000153069); expected 0.1 (1e-05)
+Initial search space (Z):               6533  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 14560.35
+//
+[ok]

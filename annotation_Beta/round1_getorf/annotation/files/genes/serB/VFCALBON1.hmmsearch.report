@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/serB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFCALBON1/VFCALBON1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/serB/serB_VFCALBON1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       serB_prot  [M=210]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    8.1e-22   76.4  46.0    8.1e-22   76.4  46.0    2.0  2  VFCALBON1_2215  [87330 - 87992] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALBON1_2215  [87330 - 87992] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.3   0.5     0.079   4.7e+02     161     171 ..       5      15 ..       1      22 [. 0.36
+   2 !   76.4  46.0   1.3e-25   8.1e-22       3     209 ..      20     217 ..      15     218 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -1.3 bits;  conditional E-value: 0.079
+       serB_prot 161 kkkkikkkkii 171
+                     kkkk kkkki+
+  VFCALBON1_2215   5 KKKKSKKKKIM 15 
+                     22222223332 PP
+
+  == domain 2  score: 76.4 bits;  conditional E-value: 1.3e-25
+       serB_prot   3 laiFDLDkTliniDcEkllikvlykkkiiskkilkkskkfykdykkgklnikkyi.kyiskvinklkkkkil.inffvksiikvinkkll.kilk 94 
+                     + iFDLD+Tli+ D E +++ +++k+++i+k+i+++ kk y +y ++kl+ k+yi  y +k+ + + + +++  + ++k +  +i+ k++ + l 
+  VFCALBON1_2215  20 INIFDLDHTLISTDSEIEYVLIINKRNLIKKEIINQCKKLYIEYINNKLDTKRYIcIYRKKIYKTITNINNNqREQLIKELENKIRDKIFdRTLR 114
+                     89****************************************************84688888776665544314567777777777777623444 PP
+
+       serB_prot  95 kekkkkkkiiisTSSskllskkikkllkiknlistklekkkkkytgkvlgviNigkgKvknlkkwikkkkikkkkiiFysDSinDlpLllksdkk 189
+                     +  + +kk ii TSS++ + k i +      + +tk++  +       ++ +N++  K +n++k+i  +    k i+Fy+DS nD+  + +s+k+
+  VFCALBON1_2215 115 IIARCEKK-IILTSSNDYICKDICRR-----IFVTKAIASN-------NKCNNYKRYKTYNIMKYIYLQRYSIKRIVFYTDSNNDISTIIFSNKA 196
+                     44444444.677*******9998654.....3444444333.......4578******************************************* PP
+
+       serB_prot 190 yivN.pdkkllkllenkkiki 209
+                     +i+N  +++++ l+++k+i++
+  VFCALBON1_2215 197 IIINiHNNQIYDLINKKNIRL 217
+                     ****446799*******9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (210 nodes)
+Target sequences:                       5973  (174896 residues searched)
+Passed MSV filter:                       397  (0.0664658); expected 119.5 (0.02)
+Passed bias filter:                       56  (0.00937552); expected 119.5 (0.02)
+Passed Vit filter:                         8  (0.00133936); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.00016742); expected 0.1 (1e-05)
+Initial search space (Z):               5973  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8312.46
+//
+[ok]

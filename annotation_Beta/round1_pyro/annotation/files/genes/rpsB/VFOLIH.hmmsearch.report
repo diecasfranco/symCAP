@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFOLIH/VFOLIH_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/rpsB/rpsB_VFOLIH.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsB_prot  [M=340]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    6.2e-29   94.4  91.6    1.3e-19   63.7  56.9    2.0  2  VFOLIH_96  [87058 - 86384] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOLIH_96  [87058 - 86384] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   63.7  56.9   8.3e-22   1.3e-19       1     139 [.       1     134 [.       1     138 [. 0.91
+   2 !   30.4  37.7   1.1e-11   1.8e-09      88     196 ..     118     222 ..     113     224 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 63.7 bits;  conditional E-value: 8.3e-22
+  rpsB_prot   1 MneilkkilkkkinighkiklinpllkkyikkkykkiniikkkkilkeikklffflkkfkkkkkniLfistkknhkkiikkffkkinifflkkwkgGtiT 100
+                M++++k ++k+ i++g+k+k+in+++k+ i++k+k++++i+++ki+++i+k ++ l k++kk+kniL+i+++k +kk+ik++f+++n++f +++++G++T
+  VFOLIH_96   1 MIRYIKLFKKNLIDTGIKSKNINFINKNLISNKKKNKYFININKIMFNIIKSSKALFKYYKKNKNILIIFDSKFVKKKIKNIFNFKNVKFSENINCGNFT 100
+                999************************************************************************************************* PP
+
+  rpsB_prot 101 NfkkikknnkkkinnlkklpdiifiidpkknksilkEak 139
+                Nf++++k+nkk+  +   + + i+    kkn si+k ++
+  VFOLIH_96 101 NFEILIKENKKH--K---ILKKILFNSNKKNLSIYKKVR 134
+                *******99985..3...333344445578899998654 PP
+
+  == domain 2  score: 30.4 bits;  conditional E-value: 1.1e-11
+  rpsB_prot  88 ifflkkwkgGtiTNfkkikknnkkkinnlkklpdiifiidpkknk.silkEakkkkiktiilsdsnynkknkdffIpiNddSeksiifilkqiyi.llKk 185
+                i f+++ k+  +  +kk+++n k k + + ++p+ii+ + +k++k s++kE+kk++ik+i++ + ++n+k ++++I+i d+S+k+i++il++i + +l  
+  VFOLIH_96 118 ILFNSNKKN--LSIYKKVRNNIKNKPIDIFEYPKIILDLRIKNKKhSFYKECKKLNIKIISFLCLKNNNKYINIPIYI-DKSFKCINLILEIIKKnFL-- 212
+                556666665..44489999****999**************97655389******************************.79**********9965144.. PP
+
+  rpsB_prot 186 ikiknlyknkn 196
+                 + +++y+nk+
+  VFOLIH_96 213 -NYEKIYQNKK 222
+                .4456676665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (340 nodes)
+Target sequences:                        161  (42883 residues searched)
+Passed MSV filter:                       153  (0.950311); expected 3.2 (0.02)
+Passed bias filter:                       51  (0.31677); expected 3.2 (0.02)
+Passed Vit filter:                        49  (0.304348); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00621118); expected 0.0 (1e-05)
+Initial search space (Z):                161  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 1026.80
+//
+[ok]

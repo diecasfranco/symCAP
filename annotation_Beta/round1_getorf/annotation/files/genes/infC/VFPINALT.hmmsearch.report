@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/infC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFPINALT/VFPINALT_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/infC/infC_VFPINALT.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       infC_prot  [M=154]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.8e-31  105.8  32.7    6.5e-31  105.6  32.7    1.0  1  VFPINALT_4209  [64676 - 64233] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPINALT_4209  [64676 - 64233] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  105.6  32.7   1.1e-34   6.5e-31       1     152 [.       5     148 .]       5     148 .] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 105.6 bits;  conditional E-value: 1.1e-34
+      infC_prot   1 MlIkLIdsngkflgiieikeAikiAkkknldLikinkklkpkiYklgdykkyifkkkKkkkkkkkktKeiklktnIsknDykikikkIkkflkkkf 96 
+                    M ++LId+ng fl++i+++eA+k+Ak  n++L+ +n+k++p +Ykl+d     + kkK  ++ +kk+Kei++k+ I+k+D+++ki+kI+k+lkkkf
+  VFPINALT_4209   5 MIVNLIDQNGIFLRKINLEEAKKKAKLLNKKLVLVNSKSSPITYKLFDQ----YVKKK--RTLQKKIKEINFKLCIHKQDLYVKIRKIIKLLKKKF 94 
+                    99********************************************983....55555..5677899***************************** PP
+
+      infC_prot  97 nvkiiIklkgreiekkelikklikkiekdlskkikvkkkikknnnniiiliknkkk 152
+                     vk+iI++k++   +++ ik+++++i k + k+ik+++ ++++ +n++ li++++k
+  VFPINALT_4209  95 CVKLIIRTKNK--LEENSIKNFFSEIFKIIPKFIKKNSPMNFKAGNYYTLIFPNEK 148
+                    ******98876..5566799*******************************99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (154 nodes)
+Target sequences:                       6078  (160809 residues searched)
+Passed MSV filter:                       717  (0.117966); expected 121.6 (0.02)
+Passed bias filter:                       95  (0.0156301); expected 121.6 (0.02)
+Passed Vit filter:                         8  (0.00131622); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000329056); expected 0.1 (1e-05)
+Initial search space (Z):               6078  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4347.75
+//
+[ok]

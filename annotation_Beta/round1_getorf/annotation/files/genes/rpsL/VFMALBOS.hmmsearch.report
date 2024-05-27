@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsL_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFMALBOS/VFMALBOS_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rpsL/rpsL_VFMALBOS.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsL_prot  [M=128]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.7e-52  172.4  10.7    5.1e-52  172.2  10.7    1.0  1  VFMALBOS_199  [9984 - 10379] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMALBOS_199  [9984 - 10379] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  172.2  10.7   1.9e-55   5.1e-52       1     126 [.       2     128 ..       2     132 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 172.2 bits;  conditional E-value: 1.9e-55
+     rpsL_prot   1 mktinqlikklkkkkkkkknsl.lkknpfkkgictkvytttpkkpnsalrkvakvklsekkevicyipgeghnlqehsvvlirggrvkdlpgvkyhl 96 
+                   m t++q+ik  +k+kkkk+  l l+k p k+gic +vyt tp+kpnsalrkvakvkl+++ e++ yipgegh lqehs vl+rgg+vkdl gvk hl
+  VFMALBOS_199   2 MVTLQQVIKGARKNKKKKRRVLaLNKCPQKRGICLRVYTVTPRKPNSALRKVAKVKLTNRYEIVAYIPGEGHGLQEHSNVLVRGGKVKDLTGVKCHL 98 
+                   7799*****9998877766554399************************************************************************ PP
+
+     rpsL_prot  97 vrgvydlegvkkrkssrskygtkknvkkkk 126
+                   +rg ydl gv +r+ssrskyg kk  k+++
+  VFMALBOS_199  99 IRGKYDLMGVINRRSSRSKYGIKKLRKDER 128
+                   **********************99776544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (128 nodes)
+Target sequences:                       2768  (73377 residues searched)
+Passed MSV filter:                        36  (0.0130058); expected 55.4 (0.02)
+Passed bias filter:                       12  (0.00433526); expected 55.4 (0.02)
+Passed Vit filter:                         1  (0.000361272); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000361272); expected 0.0 (1e-05)
+Initial search space (Z):               2768  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9742.34
+//
+[ok]

@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsF_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFCIXPIL/VFCIXPIL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rpsF/rpsF_VFCIXPIL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsF_prot  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.5e-18   65.7  13.1    1.5e-18   65.7  13.1    2.0  2  VFCIXPIL_5397  [88398 - 87946] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCIXPIL_5397  [88398 - 87946] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.2   6.9         1   8.1e+03      53      81 ..      25      53 ..      14      54 .. 0.83
+   2 !   65.7  13.1   1.9e-22   1.5e-18       2      92 ..      54     144 ..      51     150 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -4.2 bits;  conditional E-value: 1
+      rpsF_prot 53 kalYfliffkknkkileiikkkikykkei 81
+                   k++Y++i +  +  i  +i+k++ +k +i
+  VFCIXPIL_5397 25 KSIYIFIYLYISIYIYIYINKFFGLKMKI 53
+                   68999999999999999999998777665 PP
+
+  == domain 2  score: 65.7 bits;  conditional E-value: 1.9e-22
+      rpsF_prot   2 iYeiviilkkklineslqiikkivkkikkkki.lkiknlgkrkLsYkIkkqkkalYfliffkknkkileiikkkikykkeilRylilkikkk 92 
+                    +Ye++ii+k  li  ++++++k+vk+ikk+ i +  k++ krkL+Y I ++k+alY+l++fk + ++l+++++++kyk +++R+li+k++  
+  VFCIXPIL_5397  54 YYEMIIIHKA-LIGANIRFVEKVVKIIKKDGIvIFKKIFPKRKLAYVIGGNKMALYTLLQFKASVRVLMKVREFLKYKANLIRFLIIKNPYF 144
+                    8**9999875.78999************987615556789************************************************9865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (100 nodes)
+Target sequences:                       8061  (201530 residues searched)
+Passed MSV filter:                       727  (0.0901873); expected 161.2 (0.02)
+Passed bias filter:                      103  (0.0127776); expected 161.2 (0.02)
+Passed Vit filter:                         6  (0.000744325); expected 8.1 (0.001)
+Passed Fwd filter:                         1  (0.000124054); expected 0.1 (1e-05)
+Initial search space (Z):               8061  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6221.29
+//
+[ok]

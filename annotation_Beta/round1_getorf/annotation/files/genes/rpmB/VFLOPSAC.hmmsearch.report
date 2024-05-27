@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFLOPSAC/VFLOPSAC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rpmB/rpmB_VFLOPSAC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmB_prot  [M=64]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.5e-15   55.4  25.0      3e-15   55.1  25.0    1.1  1  VFLOPSAC_5704  [32280 - 32050] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLOPSAC_5704  [32280 - 32050] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.1  25.0   4.5e-19     3e-15       1      62 [.      19      75 ..      19      77 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 55.1 bits;  conditional E-value: 4.5e-19
+      rpmB_prot  1 MsrkclltkKktlfGNkvSkSkkktkRkFkvNikkkkifiknknikiklstkaikilkklkk 62
+                   Msr c++ kK+t++G+ vS+Skk+++R+F++Nikk+ki  kn n+++k+stk++k +   +k
+  VFLOPSAC_5704 19 MSRLCFINKKRTIKGKIVSNSKKRNIRFFFPNIKKIKI--KNFNFYFKISTKSFKKF---FK 75
+                   *********************************98765..6788999*****99743...33 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (64 nodes)
+Target sequences:                       6621  (175585 residues searched)
+Passed MSV filter:                      1381  (0.208579); expected 132.4 (0.02)
+Passed bias filter:                      229  (0.0345869); expected 132.4 (0.02)
+Passed Vit filter:                        34  (0.00513518); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000151035); expected 0.1 (1e-05)
+Initial search space (Z):               6621  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3808.73
+//
+[ok]

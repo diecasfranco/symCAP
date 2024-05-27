@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/xxxVFCOTACU02_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFISSCOL1/VFISSCOL1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/xxxVFCOTACU02/xxxVFCOTACU02_VFISSCOL1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFCOTACU_xxxVFCOTACU_02  [M=199]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    1.6e-24   85.9  65.0    1.6e-24   85.9  65.0    3.4  3  VFISSCOL1_1234  [45226 - 46698] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFISSCOL1_1234  [45226 - 46698] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   85.9  65.0   2.4e-28   1.6e-24       4     194 ..      21     216 ..      18     220 .. 0.90
+   2 ?   -9.7  12.3         1   6.7e+03      38      90 ..     233     282 ..     218     370 .. 0.60
+   3 ?   -3.2   7.7      0.55   3.7e+03      44     114 ..     377     452 ..     354     463 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 85.9 bits;  conditional E-value: 2.4e-28
+  VFCOTACU_xxxVFCOTACU_02   4 kkilskkeeikifkkiekyyrliiniitkfpfiinqiikifskslvncfkyenfinfiyi..knklskvkkysdikniknlnisik 87 
+                              +k+lskkeei ifkkie + + ii+iit fpfiin +ikif+ s+ n +kye fin++yi  knk+ k+k   d   + n    i 
+           VFISSCOL1_1234  21 RKLLSKKEEIVIFKKIEYFNKKIISIITLFPFIINSLIKIFNNSFYNSIKYEKFINYVYInkKNKILKIKSLYDKIFFNNKYYFIY 106
+                              699********************************************************977899*****99999999999***** PP
+
+  VFCOTACU_xxxVFCOTACU_02  88 dlffflkkvflffnfeyniknfliiktlseylylfrysdsvffylikifknkvklffklekkil.ifylkknkyrk..ikknffni 170
+                              +lff +kk+fl ++++   ++  +ik +s  l +f+ys+svf y+ kifk  ++ +++ ek i   f+l  n+     i  n++ni
+           VFISSCOL1_1234 107 ELFFKIKKLFLNISMKKK-ESVYVIKKISNILSIFKYSESVFSYITKIFKTNIEKYIENEKNIYkYFFLNLNEEDAvfISNNILNI 191
+                              ********9998888755.567799*************************************9735778888765422799***** PP
+
+  VFCOTACU_xxxVFCOTACU_02 171 kk.iklsflikkflfanslkkkkif 194
+                              +   k+ +likkf+fan   kk  f
+           VFISSCOL1_1234 192 RLnKKIIYLIKKFFFANLYNKKLNF 216
+                              9515799**********99888655 PP
+
+  == domain 2  score: -9.7 bits;  conditional E-value: 1
+  VFCOTACU_xxxVFCOTACU_02  38 nqiikifskslvncfkyenfinfiyiknklskvkkysdikniknlnisikdlf 90 
+                              n   k f   ++n f y  +   i +++ l  +   s  kn  n  +++ dl+
+           VFISSCOL1_1234 233 N-YYKKFFALFINFFSYYRLQKRIMVESNLRLILSIS--KNYLNRGVNFNDLI 282
+                              3.33334445667777777767777766666665443..55555555555554 PP
+
+  == domain 3  score: -3.2 bits;  conditional E-value: 0.55
+  VFCOTACU_xxxVFCOTACU_02  44 fskslvnc.fkyenfinf....iyiknklskvkkysdikniknlnisikdlfffl...kkvflffnfeyniknfliikt 114
+                              +sks+v+   +y n  nf    i +     k+ +y+ ik  kn   +ik++++ +   +  ++ + f    knf  ++ 
+           VFISSCOL1_1234 377 MSKSIVSLeSRYNNDENFsldeIIVDKNQKKIDEYTLIKETKN---NIKNILLNIpekESKIIKMRFGIGYKNFKTLEK 452
+                              4677776523565555552222555555678888988887666...233333322110222344555666677765554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (199 nodes)
+Target sequences:                       6725  (181135 residues searched)
+Passed MSV filter:                      1580  (0.234944); expected 134.5 (0.02)
+Passed bias filter:                      145  (0.0215613); expected 134.5 (0.02)
+Passed Vit filter:                        10  (0.00148699); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000148699); expected 0.1 (1e-05)
+Initial search space (Z):               6725  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5006.36
+//
+[ok]

@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFSTEMIN/VFSTEMIN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rpmA/rpmA_VFSTEMIN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmA_prot  [M=80]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.6e-32  109.8   2.3    1.7e-32  109.7   2.3    1.0  1  VFSTEMIN_3169  [78662 - 78402] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFSTEMIN_3169  [78662 - 78402] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  109.7   2.3   3.2e-36   1.7e-32       1      79 [.       8      86 ..       8      87 .] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 109.7 bits;  conditional E-value: 3.2e-36
+      rpmA_prot  1 mAkKKaagslknGRdskskrLGiKkfsgelvkkGniiirqrGtkfksglntkigkdytiyslkkGkvlfkkkk.kkivnv 79
+                   mAkKKaagsl+nGRds+skrLG+K+fsg + ++G i+irqrG+++k+gl+t++gkd+ti+++k+G+v++++++ +k+v+v
+  VFSTEMIN_3169  8 MAKKKAAGSLRNGRDSHSKRLGVKIFSG-IAQSGAILIRQRGARVKCGLSTYFGKDFTIHAHKTGYVIWYNRHgRKYVSV 86
+                   9*************************99.679**********************************99877652678887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (80 nodes)
+Target sequences:                       5380  (158524 residues searched)
+Passed MSV filter:                        44  (0.00817844); expected 107.6 (0.02)
+Passed bias filter:                       29  (0.00539033); expected 107.6 (0.02)
+Passed Vit filter:                         2  (0.000371747); expected 5.4 (0.001)
+Passed Fwd filter:                         1  (0.000185874); expected 0.1 (1e-05)
+Initial search space (Z):               5380  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 12168.35
+//
+[ok]

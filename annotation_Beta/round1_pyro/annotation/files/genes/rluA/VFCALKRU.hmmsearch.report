@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFCALKRU/VFCALKRU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/rluA/rluA_VFCALKRU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluA_prot  [M=243]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.1e-53  174.1  41.2    2.8e-35  115.3  26.2    2.0  2  VFCALKRU_33  [32232 - 32972]
+    7.5e-32  104.1  19.5    8.8e-32  103.9  19.5    1.0  1  VFCALKRU_54  [53339 - 53731]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALKRU_33  [32232 - 32972]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  115.3  26.2     4e-37   2.8e-35       3     173 ..       9     169 ..       7     170 .. 0.92
+   2 !   65.6   9.3   5.9e-22   4.2e-20     125     215 ..     163     243 ..     163     245 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 115.3 bits;  conditional E-value: 4e-37
+    rluA_prot   3 kkknifikkskviikiIykdenfivlkKkkklslypi.kkkneisilgkiy..kiigekifkklklisrlDfetlGiilislnkkfykklkkkiknkl 97 
+                   kk+ifi+++++++++I++++++++++Kkk++++y++ +k++++s+lgk++  +ii+++i+ ++++++r+D+ ++Gii+i+++++++k+++  +k++l
+  VFCALKRU_33   9 HKKIIFITTEAGTVHLIKATTAINFIRKKKAELIYKTtYKECCESTLGKLMktNIINKRIY-RFGILNRIDIVASGIIIIAKTAYISKQIILLHKQQL 105
+                  69*********************************963699********984359****96.8*********************************** PP
+
+    rluA_prot  98 ikkeYilivkgllkikkklvssagylkkkknkiltnkkkikssvfsktkikiieliklkkknyslllckissGktH 173
+                  ikk+Y+++v+g++k       sa++l+++ nk +++k++++ss    +++ki++li lk+ +++ll+ck    k+H
+  VFCALKRU_33 106 IKKIYYAQVLGYIK-------SAQVLHQQLNK-YHTKHTTHSS---LVTLKIKPLILLKHLQQTLLKCKQL-NKYH 169
+                  ***********986.......6789******9.8999999986...5789******************965.4777 PP
+
+  == domain 2  score: 65.6 bits;  conditional E-value: 5.9e-22
+    rluA_prot 125 kkknkiltnkkkikssvfsktkikiieliklkkknyslllckissGktHQirshlkkigikIlgdkkygkknKkfkknnLhlwklkfvlkk 215
+                  k+ nk +++k++++ss    +++ki++li lk+ +++ll+ck++sGk+HQir++lk+ig++I+++++++kk        L+l+k+kf++++
+  VFCALKRU_33 163 KQLNK-YHTKHTTHSS---LVTLKIKPLILLKHLQQTLLKCKTYSGKYHQIRHMLKTIGKPIVFKHLEPKK------LLLTLYKIKFYTYN 243
+                  56666.7788888875...6789********************************************9975......58*********998 PP
+
+>> VFCALKRU_54  [53339 - 53731]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  103.9  19.5   1.2e-33   8.8e-32      73     215 ..       2     127 ..       1     129 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 103.9 bits;  conditional E-value: 1.2e-33
+    rluA_prot  73 tlGiilislnkkfykklkkkiknklikkeYilivkgllkikkklvssagylkkkknkiltnkkkikssvfsktkikiieliklkkknyslllckissG 170
+                  ++Gii+i+++++++k+++  +k++likk+Y+++v+g++k       sa++l+++ nk +++k++++ss    +++ki++li lk+ +++ll+ck++sG
+  VFCALKRU_54   2 ASGIIIIAKTAYISKQIILLHKQQLIKKIYYAQVLGYIK-------SAQVLHQQLNK-YHTKHTTHSS---LVTLKIKPLILLKHLQQTLLKCKTYSG 88 
+                  69**********************************986.......6789******9.8999999986...5789*********************** PP
+
+    rluA_prot 171 ktHQirshlkkigikIlgdkkygkknKkfkknnLhlwklkfvlkk 215
+                  k+HQir++lk+ig++I+++++++kk        L+l+k+kf++++
+  VFCALKRU_54  89 KYHQIRHMLKTIGKPIVFKHLEPKK------LLLTLYKIKFYTYN 127
+                  *********************9975......58*********998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (243 nodes)
+Target sequences:                        142  (37288 residues searched)
+Passed MSV filter:                        95  (0.669014); expected 2.8 (0.02)
+Passed bias filter:                        2  (0.0140845); expected 2.8 (0.02)
+Passed Vit filter:                         2  (0.0140845); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.0140845); expected 0.0 (1e-05)
+Initial search space (Z):                142  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1838.88
+//
+[ok]

@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/infC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFAGAHAV/VFAGAHAV_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/infC/infC_VFAGAHAV.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       infC_prot  [M=154]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.6e-43  145.6  44.6    4.4e-43  145.3  44.6    1.0  1  VFAGAHAV_4499  [70623 - 70171] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFAGAHAV_4499  [70623 - 70171] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  145.3  44.6   6.6e-47   4.4e-43       1     153 [.       1     149 [.       1     150 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 145.3 bits;  conditional E-value: 6.6e-47
+      infC_prot   1 MlIkLIdsngkflgiieikeAikiAkkknldLikinkklkpkiYklgdykkyifkkkKkkkkkkkktKeiklktnIsknDykikikkIkkflkkkf 96 
+                    M IkLId+ngkflg+++i+ Ai++Ak++nldLiki+ ++k+kiYklg++kky+f+kkKkkk + +k+Keik+kt I+k+Dyk+kikkI +flkkk+
+  VFAGAHAV_4499   1 MYIKLIDNNGKFLGTVDINFAIHEAKSRNLDLIKISGNSKQKIYKLGNFKKYLFDKKKKKK-RLSKSKEIKFKTIICKYDYKVKIKKILNFLKKKY 95 
+                    9******************************************************988765.67899***************************** PP
+
+      infC_prot  97 nvkiiIklkgreiekkelikklikkiekdlskkikvkkkikknnnniiiliknkkkk 153
+                    nvki+I+  ++   kke+++ ++++i+kdlskk+ ++k +k nn+niii+i ++  k
+  VFAGAHAV_4499  96 NVKIVIFSLSK---KKEINDGFLNNIIKDLSKKFLLNKILKYNNKNIIINILSSVYK 149
+                    ******99875...678999*******************************998776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (154 nodes)
+Target sequences:                       6567  (174681 residues searched)
+Passed MSV filter:                       845  (0.128674); expected 131.3 (0.02)
+Passed bias filter:                       88  (0.0134003); expected 131.3 (0.02)
+Passed Vit filter:                        22  (0.00335008); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000152277); expected 0.1 (1e-05)
+Initial search space (Z):               6567  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9151.58
+//
+[ok]

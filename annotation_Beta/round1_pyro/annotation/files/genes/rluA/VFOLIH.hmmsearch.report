@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFOLIH/VFOLIH_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/rluA/rluA_VFOLIH.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluA_prot  [M=243]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    4.5e-70  229.4  56.4    5.5e-70  229.1  56.4    1.0  1  VFOLIH_40  [37838 - 38533]
+    2.4e-14   47.0  12.7    2.8e-14   46.7  12.7    1.1  1  VFOLIH_66  [63548 - 63862]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOLIH_40  [37838 - 38533]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  229.1  56.4   6.9e-72   5.5e-70       3     239 ..       6     228 ..       4     231 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 229.1 bits;  conditional E-value: 6.9e-72
+  rluA_prot   3 kkknifikkskvi.ikiIykdenfivlkKkkklslypikkkneisilgkiykiigekif..kklklisrlDfetlGiilislnkkfykklkkkiknklik 99 
+                ++kn+fik+++++ +kiI++++nfi+++K  k+s+ypi+kk +i+i+++iy++igekif  k++++isrlDfet+Gi+li         lkkkik ++ik
+  VFOLIH_40   6 IRKNFFIKNKNYNcLKIINEENNFIIFDKIIKSSFYPIEKKGNINIISCIYNLIGEKIFyiKNCGIISRLDFETKGIFLI---------LKKKIKLEKIK 96 
+                89*******998647*******************************************95569***************98.........78999****** PP
+
+  rluA_prot 100 keYilivkgllkikkklv.ssagylkkkknkiltnkkkikssvfsktkikiieliklkkknyslllckissGktHQirshlkkigikIlgdkkygkknKk 198
+                k+Y++i+k+   +kkk+v +++gy+kkkkn+i+++kkk+   vf+k+       ik+kk+ +++++ck+s+GktHQirs+l++++i+Ilgdkkyg++nK+
+  VFOLIH_40  97 KKYLAISKC---CKKKCVfYTKGYIKKKKNRIIYTKKKTIYPVFTKFI------IKTKKRGFNVIVCKFSRGKTHQIRSSLNYLSIRILGDKKYGFFNKY 187
+                ********9...566655279**********99999998889****95......5789****************************************** PP
+
+  rluA_prot 199 fkknnLhlwklkfvlkkkknkffslPnknlikyyrkigfkK 239
+                ++++nLh+w+l+f++++++++++s+Pn+n+iky++ki+f K
+  VFOLIH_40 188 YQESNLHSWNLNFYINNNNYNYYSFPNRNFIKYFFKINFPK 228
+                ***************************************97 PP
+
+>> VFOLIH_66  [63548 - 63862]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.7  12.7   3.4e-16   2.8e-14     143     231 ..      11     101 ..       1     103 [. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 46.7 bits;  conditional E-value: 3.4e-16
+  rluA_prot 143 sktkikiieliklkkknyslllckissGktHQirshlkkigikIlgdkkygkk..nKkfkknnLhlw.klk.fvlkkkknkf...fslPnknliky 231
+                s t+ik   ++k+  k +s+l+++i++G+tHQir+hl++ig ++lgdkkyg++  nK+  ++n+ l+ k   f+  k+k++f   +++P+ ++iky
+  VFOLIH_66  11 SLTYIK---ILKFY-KILSVLKIEIFTGRTHQIRQHLSYIGCPVLGDKKYGNFylNKNIYNKNIFLFfKETiFYDTKRKKIFniiLKVPK-KFIKY 101
+                445555...55554.5799********************************864477766655555414332555555554422256774.68887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (243 nodes)
+Target sequences:                        161  (42883 residues searched)
+Passed MSV filter:                       148  (0.919255); expected 3.2 (0.02)
+Passed bias filter:                        9  (0.0559006); expected 3.2 (0.02)
+Passed Vit filter:                         9  (0.0559006); expected 0.2 (0.001)
+Passed Fwd filter:                         3  (0.0186335); expected 0.0 (1e-05)
+Initial search space (Z):                161  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2265.71
+//
+[ok]

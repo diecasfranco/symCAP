@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaX_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFISSCOL1/VFISSCOL1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/dnaX/dnaX_VFISSCOL1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaX_prot  [M=341]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+   4.3e-101  331.5  63.8    1.9e-98  322.8  53.6    2.0  2  VFISSCOL1_63  [62112 - 63173]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFISSCOL1_63  [62112 - 63173]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  322.8  53.6  1.3e-100   1.9e-98       4     298 ..       2     294 ..       1     308 [. 0.95
+   2 !   12.2   5.8   3.7e-06   0.00054     294     335 ..     309     350 ..     292     353 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 322.8 bits;  conditional E-value: 1.3e-100
+     dnaX_prot   4 slYekYkPkklkefiGqkeiikslkylikkknlpssyifyGkkGtGKtslsriffkllnckkkkkicnkcklCkskksidfleidaasnRkvedike 100
+                   slY+kY P++lk+f+G+k iik l y+ k+kn+ps++i+yG+kGtGKtslsri++kllnckkk +ic+kc++  +k ++d+++idaasnRk+e+i  
+  VFISSCOL1_63   2 SLYKKYIPNNLKQFYGHKIIIKLLIYFKKNKNVPSCFIIYGPKGTGKTSLSRIIYKLLNCKKK-NICKKCEN--NKFNSDYIDIDAASNRKIEEIIL 95 
+                   79**********************************************************875.78988874..67889****************** PP
+
+     dnaX_prot 101 ileeikykPifskykviviDEahmLSkysfnfLLkilenlnknikiifitteikkiPetiksRCllleFkkiskkeiykklkeiskkekikiskksl 197
+                   ++++i   P++ k+k+++iDE +mLS+ysfn+LLk++e+l+k+++++f+tt+ikkiP+ti+sRC++l+ +k+++ eiy ++k iskke+ik++kks+
+  VFISSCOL1_63  96 LFRKIYTLPLNGKFKIFSIDESQMLSNYSFNYLLKKIEKLPKHVVVLFLTTNIKKIPDTIISRCFILKLEKFNIIEIYYYIKIISKKERIKMTKKSM 192
+                   ************************************************************************************************* PP
+
+     dnaX_prot 198 klisklseGslRdaLvlLeklvslsk.kkinskkvlkilnllkkkilykllklilkkkkkkllklikkiikkkidfkeilkkllevinkiiikkfnk 293
+                    l++++s+GslRdaLvlLe ++sls+ kki+sk v+ki+n+++++i++++l +ilk+kkkk++k++ ++  kki++  +l k++e+ink ++ k nk
+  VFISSCOL1_63 193 LLMAENSSGSLRDALVLLEYSYSLSDyKKITSKLVYKITNTINENIIFNFLIIILKNKKKKMNKFLFFLFIKKINLFIFLIKIIEFINKFLFFKSNK 289
+                   ********************999875389***************************************************************99988 PP
+
+     dnaX_prot 294 kkkkk 298
+                   k+ + 
+  VFISSCOL1_63 290 KYINY 294
+                   87554 PP
+
+  == domain 2  score: 12.2 bits;  conditional E-value: 3.7e-06
+     dnaX_prot 294 kkkkkklkkllklrklllkeikylktlelkflnflyiilkli 335
+                    k+k  +kkl  +rk++ +ei+++k++ +k++ f+yi++ l 
+  VFISSCOL1_63 309 LKNKLLIKKLDVIRKKISNEIFFFKKFPNKINGFKYILYILT 350
+                   235678999***************************999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (341 nodes)
+Target sequences:                        147  (39040 residues searched)
+Passed MSV filter:                       124  (0.843537); expected 2.9 (0.02)
+Passed bias filter:                        7  (0.047619); expected 2.9 (0.02)
+Passed Vit filter:                         5  (0.0340136); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00680272); expected 0.0 (1e-05)
+Initial search space (Z):                147  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 1632.71
+//
+[ok]

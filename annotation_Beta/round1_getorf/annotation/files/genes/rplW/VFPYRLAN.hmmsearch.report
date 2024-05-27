@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplW_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFPYRLAN/VFPYRLAN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rplW/rplW_VFPYRLAN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplW_prot  [M=63]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.4e-22   78.3  15.5    1.4e-22   78.3  15.5    1.4  2  VFPYRLAN_2969  [113790 - 114038] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPYRLAN_2969  [113790 - 114038] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.3      0.48   3.3e+03      23      28 ..       7      12 ..       2      13 .. 0.69
+   2 !   78.3  15.5   2.1e-26   1.4e-22       1      63 []      17      83 .]      17      83 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 0.48
+      rplW_prot 23 lisFit 28
+                   +isFit
+  VFPYRLAN_2969  7 IISFIT 12
+                   578876 PP
+
+  == domain 2  score: 78.3 bits;  conditional E-value: 2.1e-26
+      rplW_prot  1 MKKlklyrlsttkkInnenkiklisFitdrkltkqklkylfks...itKint.lnlknkKliiLklk 63
+                   MKK++++++s++k+In++nk+k+isF+tdr+++k+++++l+++   i+Kin+ ++++nkK++iL+l+
+  VFPYRLAN_2969 17 MKKIEFTFFSSLKRINDFNKNKKISFLTDRSVRKENVLFLLRKkyrIVKINSlIRSNNKKMFILSLE 83
+                   *****************************************976779****945***********97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (63 nodes)
+Target sequences:                       6724  (191711 residues searched)
+Passed MSV filter:                       745  (0.110797); expected 134.5 (0.02)
+Passed bias filter:                      107  (0.0159131); expected 134.5 (0.02)
+Passed Vit filter:                        12  (0.00178465); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000148721); expected 0.1 (1e-05)
+Initial search space (Z):               6724  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5021.53
+//
+[ok]

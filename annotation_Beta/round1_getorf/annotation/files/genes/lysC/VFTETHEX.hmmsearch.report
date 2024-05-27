@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/lysC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFTETHEX/VFTETHEX_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/lysC/lysC_VFTETHEX.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lysC_prot  [M=378]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    2.6e-90  301.6  30.4    2.6e-90  301.6  30.4    2.9  2  VFTETHEX_662  [26454 - 28577] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETHEX_662  [26454 - 28577] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?  -12.0  13.8         1   5.6e+03     147     151 ..     142     146 ..       7     267 .. 0.59
+   2 !  301.6  30.4   4.7e-94   2.6e-90       1     372 [.     311     704 ..     311     708 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -12.0 bits;  conditional E-value: 1
+     lysC_prot 147 tLerG 151
+                    L rG
+  VFTETHEX_662 142 NLLRG 146
+                   33333 PP
+
+  == domain 2  score: 301.6 bits;  conditional E-value: 4.7e-94
+     lysC_prot   1 mkiivhKyGGtsLgnikrikkvakklkkyvkkgkklivivSAiygaTnllskilkkk...kekkkskekdvllsiGEqissallssllkkkkikstf 94 
+                   mk+ vhKyGGtsLgni ri +v++++kk+v+ g k++v+vSA++g+T  l k ++k    +++  sk +d +ls GEqis+ +l  +lk+k+ik++ 
+  VFTETHEX_662 311 MKLLVHKYGGTSLGNIGRIINVSNRIKKIVDLGFKILVVVSAMNGITSELFKKYNKLflgSNFIYSKFYDLILSSGEQISVGFLGDILKSKGIKVSY 407
+                   9*************************************************999999622245677999***************************** PP
+
+     lysC_prot  95 lnswqiPiitekkrenskIkyinkkkikkklkkykiiiisGfQGinkkgnittLerGgSDtsAvviakvlklkkCyiytDvdGiyslDPnliktakk 191
+                   l swqiPi+t+ +++ns+I +i  +ki +++ ++++iii GfQG+n+++++ttL rGgSD+sA++ia+ l++  C+iytDv+Giys DP ++  +k 
+  VFTETHEX_662 408 LMSWQIPILTDSNFSNSRILKIDVSKILRYFLENDVIIIPGFQGVNSNNELTTLGRGGSDNSAIEIASRLNS-PCFIYTDVNGIYSADPLKYLGSKL 503
+                   **********************************************************************97.6*********************** PP
+
+     lysC_prot 192 ikkinykeliElssvGskvlaieslysaiknkikivvlssfkkyk.fdel..kktktiikkkktlvkllk..ssnellikikkilkllkeiek.eni 282
+                   ikkin +e++Elss+Gskvl++es++s+i+++++  vlssf+k+k ++++  k t++i +   + +kll   +s +++ikikk   +   ++  +  
+  VFTETHEX_662 504 IKKINCWEILELSSTGSKVLQLESVISCISKNVRTFVLSSFSKFKgMKKEfnKGTEIIFNDYFKGKKLLNvsDSILFFIKIKKKFDFKGVLKMlDGF 600
+                   ******************************************998444331144445555554555655411555789*****99987766543678 PP
+
+     lysC_prot 283 eidlikitknt....lfft..inkee....lkk...lkkkikkikkvvkisiiGlgikkckkellkilklikklnikii.inssElkisfltkkkne 365
+                    id+i++ +++    l f   +n+++    + k   +++ i kik++ kisii lgi+++k++++ki+ ++ ++ ik + ++ sE+kisfl+kkk+ 
+  VFTETHEX_662 601 FIDNITFFNKShsryLSFSleTNNNYnlnyFVKcldKNNFIFKIKRLRKISIIKLGINRYKNNFYKIFSFLFSNHIKFYcLSLSEIKISFLIKKKHF 697
+                   89999987764333355541133332111122221134567899999******************************9845889***********99 PP
+
+     lysC_prot 366 kkvlkll 372
+                    +v k+l
+  VFTETHEX_662 698 FIVNKYL 704
+                   8777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (378 nodes)
+Target sequences:                       5597  (156392 residues searched)
+Passed MSV filter:                       248  (0.0443095); expected 111.9 (0.02)
+Passed bias filter:                       38  (0.00678935); expected 111.9 (0.02)
+Passed Vit filter:                         5  (0.000893336); expected 5.6 (0.001)
+Passed Fwd filter:                         1  (0.000178667); expected 0.1 (1e-05)
+Initial search space (Z):               5597  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8858.78
+//
+[ok]

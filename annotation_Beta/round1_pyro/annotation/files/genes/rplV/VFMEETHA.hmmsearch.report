@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplV_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFMEETHA/VFMEETHA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/rplV/rplV_VFMEETHA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplV_prot  [M=110]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.9e-14   45.8  30.6    5.7e-14   45.7  30.6    1.0  1  VFMEETHA_103  [88278 - 88616]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMEETHA_103  [88278 - 88616]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.7  30.6   4.6e-16   5.7e-14       7     108 ..       7     105 ..       1     108 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 45.7 bits;  conditional E-value: 4.6e-16
+     rplV_prot   7 lkniniSakKikrliksikkislnnilnllkiifnkasviikkllksifsnlkkkniknllklkiyelfanksksiKkiiyrAKGrsdiikkrysNi 103
+                     + niS kKi   ik+ikki+++ ++ +   ++ k + i+ +++  ++++ k k++ nl ++ki  ++ank k++Kkiiy +KGrs+iik+++  +
+  VFMEETHA_103   7 KLKSNISLKKICVYIKYIKKIKFEMAYKICTKNNSKIYLILSNIFNLALKYFKIKKL-NLKNIKIDYMYANKYKTFKKIIYLSKGRSSIIKRKS--V 100
+                   3467*************************999*******************999876.7999****************************9886..4 PP
+
+     rplV_prot 104 ylvit 108
+                   +++++
+  VFMEETHA_103 101 FINLK 105
+                   55554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (110 nodes)
+Target sequences:                        123  (30800 residues searched)
+Passed MSV filter:                       112  (0.910569); expected 2.5 (0.02)
+Passed bias filter:                       12  (0.097561); expected 2.5 (0.02)
+Passed Vit filter:                        10  (0.0813008); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00813008); expected 0.0 (1e-05)
+Initial search space (Z):                123  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1680.61
+//
+[ok]

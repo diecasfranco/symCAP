@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaQ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFSACSP1/VFSACSP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/dnaQ/dnaQ_VFSACSP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaQ_prot  [M=175]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    2.6e-62  202.0  14.2    2.8e-62  201.9  14.2    1.0  1  VFSACSP1_22  [20052 - 19549] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFSACSP1_22  [20052 - 19549] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  201.9  14.2   3.7e-64   2.8e-62       5     170 ..       2     165 ..       1     167 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 201.9 bits;  conditional E-value: 3.7e-64
+    dnaQ_prot   5 lvlDtettGlnlkkgDRiiEialveiikkkitkkvfhsylktkkkiskeaykiHkikkkfLkkkkkFkeiskklkkfiknsllvaHNakFDikflkkE 102
+                  l+lD+ettGl++++ DRiiEi+++e+++  it k +h+y+ tk+ isk+a+ +H+i+++fL+k k+F + ++++ kfi+ +l++aHNa+FDi+flkkE
+  VFSACSP1_22   2 LFLDIETTGLSPDR-DRIIEICIIEVVNLIIT-KRYHRYIYTKRYISKHAFLVHGITNSFLRKYKCFYHSAQSIIKFINGDLIIAHNAQFDISFLKKE 97 
+                  89**********86.9***********98776.679************************************************************** PP
+
+    dnaQ_prot 103 yklikkkikfkaiDtlkiarkifpgkkNslkslckrlkikkkkiHsAleDakilakvfiklkkkqkki 170
+                  +++i+++i++++ D+l+i+rk++p+kkNs++++ckrl+i++k++HsA +Da +lak +i+++++q+++
+  VFSACSP1_22  98 FERININIHLRYKDSLDIFRKKYPNKKNSMNAICKRLSIDNKNAHSAKHDALNLAKACIITLSSQRSL 165
+                  **********************************************************9999998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (175 nodes)
+Target sequences:                         75  (15277 residues searched)
+Passed MSV filter:                        16  (0.213333); expected 1.5 (0.02)
+Passed bias filter:                        4  (0.0533333); expected 1.5 (0.02)
+Passed Vit filter:                         1  (0.0133333); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.0133333); expected 0.0 (1e-05)
+Initial search space (Z):                 75  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2511.75
+//
+[ok]

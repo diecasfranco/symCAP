@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFLACSP/VFLACSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/dnaB/dnaB_VFLACSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaB_prot  [M=421]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.2e-120  395.2  84.2   3.6e-120  395.1  84.2    1.0  1  VFLACSP_91  [84654 - 83383] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLACSP_91  [84654 - 83383] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  395.1  84.2  2.4e-122  3.6e-120       4     418 ..       4     422 ..       1     423 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 395.1 bits;  conditional E-value: 2.4e-122
+   dnaB_prot   4 llskkiekillallllnkkllkkikkklkekdfklkknkiifkiikkllkkkkkidlilllnkikkkkkkiklkyinsliklkikklnikkyikilkkk 102
+                 +++k + ++++  +l++kk +++i+kk+ +k  k+k  + i +i+k++++ ++++++ +++  +kkk++ +  k +n l k+++k++++k +i  +   
+  VFLACSP_91   4 KKLKLFISFMILKFLKSKKKFNYIYKKIFKKVKKFKYINRILEIFKNYYNMNNSFEYEKFKFLLKKKDEFFFNKILNFLKKKNYKNYKTKLIIMNILLL 102
+                 55666778899999*******************************************99876666655555445555556778999******9999998 PP
+
+   dnaB_prot 103 silrkllkilkkilkkikkkklkikkiikkikkkikklk.kkkkkklsikkelkkilkkilkkkkk..kyiktgfkklDkiilgfkpGdliiiAGRPst 198
+                  ++  ++ +l + +k+i kkk+ki+ki+ +i+  i+k+  kkk+++l+i+k+l+ i+kki+ ++k+  +yiktgf+klD+ii gf+pGdliiiAGRPst
+  VFLACSP_91 103 CNKIVFSYYLYNKSKDILKKKSKISKIFLDINVLISKYFyKKKDNNLKINKCLDLIKKKIKDNSKNliNYIKTGFSKLDDIIVGFNPGDLIIIAGRPST 201
+                 88889999999**********************99986516677899*************9766543389***************************** PP
+
+   dnaB_prot 199 GKTsfclnicenisikkkkkvlffSLEMskeqilirllssiskieskkilkkklnkkelkkikkalkkikkskiyindssnltleklkkkikkil.kkk 296
+                 GKT+fc+n++++i+ ++kk+++f+SLEM ke ilirl+s+ ski+s+ki++kk+n  e+kki++ ++ +k++kiyi++  +++++++kk+i++il k+k
+  VFLACSP_91 202 GKTAFCINLINKIYNNYKKSIFFCSLEMPKESILIRLISLKSKIDSNKIKRKKINYLEKKKIINVISAMKNYKIYISEGGDYSFNNIKKNIENILlKHK 300
+                 ********************************************************************************************9862678 PP
+
+   dnaB_prot 297 kiklviiDYlQLikikkkkenrnneiseiSrsLKkiakelkipiiviSQLNRnieqRidkkPilSDLrdSGslEQDADlilflskeesyekkkekieli 395
+                 +i l+ +DYlQLi+++++kenrn+eis+ S+++Kkia  +kipii+iSQLNRn+e+RidkkP++SDL+dSGs+EQDAD+i+fl+k+++  +++++i++ 
+  VFLACSP_91 301 DIILISVDYLQLIQFNNNKENRNIEISKFSMYFKKIALLYKIPIILISQLNRNLESRIDKKPLMSDLKDSGSIEQDADIIIFLYKNNYLIENNNEINFH 399
+                 8999*********************************************************************************************** PP
+
+   dnaB_prot 396 vaKnRnGptgsikLkflkkytkF 418
+                 +aKnRnG++g++kL f  ++++F
+  VFLACSP_91 400 IAKNRNGKIGNFKLIFDGSINEF 422
+                 ********************999 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (421 nodes)
+Target sequences:                        149  (39581 residues searched)
+Passed MSV filter:                       136  (0.912752); expected 3.0 (0.02)
+Passed bias filter:                       25  (0.167785); expected 3.0 (0.02)
+Passed Vit filter:                        24  (0.161074); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00671141); expected 0.0 (1e-05)
+Initial search space (Z):                149  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 1609.74
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rluD_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFZOPTEN/VFZOPTEN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rluD/rluD_VFZOPTEN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rluD_prot  [M=222]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    1.5e-28   98.6  70.6    1.5e-28   98.6  70.6    2.2  2  VFZOPTEN_725  [30249 - 31022] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFZOPTEN_725  [30249 - 31022] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   8.3      0.24   1.6e+03      78     116 ..       5      48 ..       1      52 [. 0.48
+   2 !   98.6  70.6   2.3e-32   1.5e-28       4     220 ..      42     254 ..      38     256 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 0.24
+     rluD_prot  78 rktysiikklfkkrkikkyylvlekis...lkikkn..kFyikn 116
+                   +  y++i  l+ k  i+ +yl++++ +   ++ikk+   F  k+
+  VFZOPTEN_725   5 YNLYTFILLLYSKMLINSIYLKITGNKllfYNIKKKieTFIHKK 48 
+                   45556666677777777777777654411134555411233322 PP
+
+  == domain 2  score: 98.6 bits;  conditional E-value: 2.3e-32
+     rluD_prot   4 evflkkkkkkikiiyenkyfiivkkkkkilvydt.knvkknilsl....gkkiflnkkrlgilnRlDkdtsGiiiisknrktysiikklfkkrkikk 95 
+                   e+f+ kkk    +++  +++ii++kkk+ l+y++  ++kkn+lsl     +kifl  +++gi++R+D++tsGi+ii+ n+++y ++k +fk+rkikk
+  VFZOPTEN_725  42 ETFIHKKKFYNPMLFYSRNYIIFYKKKNFLIYNVfLKFKKNFLSLlynfNNKIFL-INKCGIVHRIDFNTSGIVIIANNNFFYYYLKYIFKNRKIKK 137
+                   799999887777888999**************953789***99873332467776.689************************************** PP
+
+     rluD_prot  96 yylvlekislkikknk....Fyiknflv.kfklngkfsvtyikkilsykkvfsiliikiltGrkhQIrkqlsiiGyPivgdklygkkikaknivLfs 187
+                   yylv + +++kikk++    F+ k++++ k k+n+k+s++ +k ++   k + ++i+kiltGrk+QI+++l++          y  ki+++ni+L +
+  VFZOPTEN_725 138 YYLVSFFSTKKIKKKFriigFLFKKNIYsKKKENFKYSISLFKFLY-NFKNSYVFICKILTGRKNQIKIHLNY----------Y-LKINFNNIILNF 222
+                   *************98655557767666537889*******998765.556789*****************974..........4.46899******* PP
+
+     rluD_prot 188 wklsfalkkekikfyslirkkilkkliksnkkv 220
+                   wk++f+ k +k ++ys i ++i+k++  +n k+
+  VFZOPTEN_725 223 WKVIFYYK-NKKTYYSAIDSRIIKIFRNKNEKK 254
+                   ****9975.56689**********996655543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (222 nodes)
+Target sequences:                       6422  (172141 residues searched)
+Passed MSV filter:                      1408  (0.219246); expected 128.4 (0.02)
+Passed bias filter:                      148  (0.0230458); expected 128.4 (0.02)
+Passed Vit filter:                        16  (0.00249144); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.000155715); expected 0.1 (1e-05)
+Initial search space (Z):               6422  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6290.06
+//
+[ok]

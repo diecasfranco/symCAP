@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplR_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFBEB/VFBEB_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/rplR/rplR_VFBEB.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplR_prot  [M=111]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    2.5e-11   37.0   9.4    7.5e-10   32.2   9.4    2.0  1  VFBEB_111  [93119 - 93403]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBEB_111  [93119 - 93403]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.2   9.4   6.1e-12   7.5e-10       5     108 ..       3      93 ..       1      94 [. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 32.2 bits;  conditional E-value: 6.1e-12
+  rplR_prot   5 klkkelknkyillvkKtNkhiyiqvfiyiknkiitscStneKliknilkkkkkkknsffkikilskilikkliarnikklkfnksnykfkgkvkliyn.s 103
+                k+k ++k   +++vkK+ +h+y++++    +++++s+St +      lk k     s      l+  +  +l++ ni ++ f+  ny+fkg +k+++  +
+  VFBEB_111   3 KHKFKFKPIPTVFVKKSCRHFYLNLYFSPLRRVFFSVSTLS------LKTK-----S---LSYLADYFCSVLKSLNIFRIYFDCFNYPFKGNIKKLFFlF 88 
+                445556666789**************************986......2222.....2...33467778889999*******************9887515 PP
+
+  rplR_prot 104 lkkkf 108
+                lk+ f
+  VFBEB_111  89 LKNGF 93 
+                55544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (111 nodes)
+Target sequences:                        123  (30827 residues searched)
+Passed MSV filter:                        77  (0.626016); expected 2.5 (0.02)
+Passed bias filter:                        2  (0.0162602); expected 2.5 (0.02)
+Passed Vit filter:                         2  (0.0162602); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00813008); expected 0.0 (1e-05)
+Initial search space (Z):                123  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1297.92
+//
+[ok]

@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplR_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFMYCCUN/VFMYCCUN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rplR/rplR_VFMYCCUN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplR_prot  [M=111]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.4e-16   59.4  35.5    1.8e-16   59.1  35.5    1.1  1  VFMYCCUN_2890  [110823 - 111167] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMYCCUN_2890  [110823 - 111167] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.1  35.5   2.8e-20   1.8e-16       1     109 [.      15     114 ..      15     115 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 59.1 bits;  conditional E-value: 2.8e-20
+      rplR_prot   1 mkkkklkkelknkyillvkKtNkhiyiqvfiyiknkiitscStneKliknilkkkkkkknsffkikilskilikkliarnikklkfnksnykfkgk 96 
+                    mk+kklkke+knk+  ++kKtNkhiy+  +i  ++ki++scSt eK +kn        kn+f++i+i+sk+li kl++rni +  +n  ++k  gk
+  VFMYCCUN_2890  15 MKIKKLKKEKKNKFFFKYKKTNKHIYL--YICFEKKILFSCSTVEKKFKNLN-----LKNNFYSIEIISKVLISKLKNRNIIR--INTIKKKNTGK 101
+                    9*************************7..88889***************963.....4699********************65..677888999** PP
+
+      rplR_prot  97 vkliynslkkkfl 109
+                    + ++ n lkk+++
+  VFMYCCUN_2890 102 YNFLLNILKKENF 114
+                    *********9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (111 nodes)
+Target sequences:                       6484  (171150 residues searched)
+Passed MSV filter:                      1445  (0.222856); expected 129.7 (0.02)
+Passed bias filter:                      190  (0.0293029); expected 129.7 (0.02)
+Passed Vit filter:                        29  (0.00447255); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000154226); expected 0.1 (1e-05)
+Initial search space (Z):               6484  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 6364.82
+//
+[ok]

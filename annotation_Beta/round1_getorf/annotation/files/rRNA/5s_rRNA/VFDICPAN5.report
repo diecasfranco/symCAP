@@ -1,0 +1,53 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/RNAs/5s_rRNA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/genomes/VFDICPAN5.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/rRNA/5s_rRNA/VFDICPAN5.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5s_rRNA  [M=105]
+Scores for complete hits:
+    E-value  score  bias  Sequence   start    end  Description
+    ------- ------ -----  --------   -----  -----  -----------
+    8.7e-23   77.5   8.1  VFDICPAN5 105262 105159 
+
+
+Annotation for each hit  (and alignments):
+>> VFDICPAN5  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   77.5   8.1   8.7e-23         1       103 [.    105262    105159 ..    105262    105157 ..    122171    0.95
+
+  Alignment:
+  score: 77.5 bits
+    5s_rRNA      1 tgatAattaaAgtttattggaaacAccctt.tatccattccGAAcAAgataGttAAacagtaatttgccgaagatagtaatatgcaAAggtAgG 93    
+                   tgatAatt+ Ag tta+tgg aacAc ctt tatccattccGAAcAAg taGttAA+cagtaattt+cc aa+atag+++t tgc AAg tAgG
+  VFDICPAN5 105262 TGATAATTTGAGATTACTGGCAACACACTTtTATCCATTCCGAACAAGTTAGTTAAGCAGTAATTTACCTAAAATAGGCTTTTGCTAAGATAGG 105169
+                   689***********************98752689************************************************************ PP
+
+    5s_rRNA     94 tttttatcag 103   
+                   +ttt+a+ ag
+  VFDICPAN5 105168 GTTTAACAAG 105159
+                   *****99987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (105 nodes)
+Target sequences:                          1  (244342 residues searched)
+Residues passing SSV filter:           47169  (0.193); expected (0.02)
+Residues passing bias filter:           6077  (0.0249); expected (0.02)
+Residues passing Vit filter:             248  (0.00101); expected (0.003)
+Residues passing Fwd filter:             248  (0.00101); expected (3e-05)
+Total number of hits:                      1  (0.000426)
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5441.65
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/rRNA/5s_rRNA/VFDICPAN5.sto
+[ok]

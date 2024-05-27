@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsI_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFUGYLON/VFUGYLON_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rpsI/rpsI_VFUGYLON.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsI_prot  [M=130]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.1e-34  117.6  12.1    1.5e-34  117.2  12.1    1.2  1  VFUGYLON_4802  [15026 - 14613] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFUGYLON_4802  [15026 - 14613] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  117.2  12.1   2.9e-38   1.5e-34       7     130 .]      22     138 .]      16     138 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 117.2 bits;  conditional E-value: 2.9e-38
+      rpsI_prot   7 laakGkkkssvakvlikkGkgkiiinnknifryfknitkkelinevlkaidylkfdikvtvkGGGilsqikairlalsrcllkydskyknilkelk 102
+                    +++kG+kk+s a vlik+G+g+ +inn ++++  k+ ++  ++       + ++fd ++ vkGGGi sqi air a+++++l++d  ykni+k+ +
+  VFUGYLON_4802  22 YHGKGRKKTSQASVLIKNGSGNYFINNFKVQINIKKLFEPSIL------TKMKTFDFIIAVKGGGINSQIDAIRCAICNAFLEIDISYKNIFKDKN 111
+                    6789***********************9999888887776654......355789***************************************** PP
+
+      rpsI_prot 103 llkyDsrvverkkiGfvksrkkkqfskr 130
+                     ++ D r+verkkiGf+ksrk+kqfskr
+  VFUGYLON_4802 112 YIN-DNRKVERKKIGFKKSRKRKQFSKR 138
+                    997.9**********************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (130 nodes)
+Target sequences:                       5249  (143985 residues searched)
+Passed MSV filter:                       237  (0.0451515); expected 105.0 (0.02)
+Passed bias filter:                       59  (0.0112402); expected 105.0 (0.02)
+Passed Vit filter:                         3  (0.000571537); expected 5.2 (0.001)
+Passed Fwd filter:                         1  (0.000190512); expected 0.1 (1e-05)
+Initial search space (Z):               5249  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8124.99
+//
+[ok]

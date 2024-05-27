@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFOECSP1/VFOECSP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rpsB/rpsB_VFOECSP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsB_prot  [M=340]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    6.1e-45  152.3  49.8    6.1e-45  152.3  49.8    1.4  2  VFOECSP1_4166  [71053 - 70340] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOECSP1_4166  [71053 - 70340] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -6.9   3.5         1   6.2e+03     186     194 ..      35      43 ..      15      55 .. 0.45
+   2 !  152.3  49.8   9.9e-49   6.1e-45       1     183 [.      67     237 ..      67     238 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: -6.9 bits;  conditional E-value: 1
+      rpsB_prot 186 ikiknlykn 194
+                    i i  +++n
+  VFOECSP1_4166  35 ILILGYLNN 43 
+                    122222222 PP
+
+  == domain 2  score: 152.3 bits;  conditional E-value: 9.9e-49
+      rpsB_prot   1 MneilkkilkkkinighkiklinpllkkyikkkykkiniikkkkilkeikklffflkkfkkkkkniLfistkknhkkiikkffkkinifflkkwkg 96 
+                    M+ ++k++l ++++igh++k++np ++kyi++++kkinii+ +k+++++k++++f+k++++k+++i+fi+tk+n ++++k++f+++ ++f+++wkg
+  VFOECSP1_4166  67 MKILIKEMLLNDVHIGHYNKYKNPKMEKYIYCTIKKINIINLNKTINKLKQVIKFIKNNQIKRREIIFICTKDNLNNLLKHYFRNK-YIFIDHWKG 161
+                    8999*******************************************************************************995.679****** PP
+
+      rpsB_prot  97 GtiTNfkkikknnkkkinnlkklpdiifiidpkknksilkEakkkkiktiilsdsnynkknkdffIpiNddSeksiifilkqiyill 183
+                    G++TN          ki+ + k++++ fiid++++k+i++E++k++ik+i+++d+n+   +++++Ip+NddS+ksi +i+k+i++++
+  VFOECSP1_4166 162 GYYTN----------KIFSF-KNIKVAFIIDTNHHKVIINELEKSQIKIISICDTNSDLLKINYIIPANDDSFKSISYIIKIILKFI 237
+                    ****9..........56765.5789***********************************************************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (340 nodes)
+Target sequences:                       6169  (159389 residues searched)
+Passed MSV filter:                      1434  (0.232453); expected 123.4 (0.02)
+Passed bias filter:                      108  (0.0175069); expected 123.4 (0.02)
+Passed Vit filter:                        20  (0.00324202); expected 6.2 (0.001)
+Passed Fwd filter:                         1  (0.000162101); expected 0.1 (1e-05)
+Initial search space (Z):               6169  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 11060.45
+//
+[ok]

@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplK_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFLIBAN/VFLIBAN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rplK/rplK_VFLIBAN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplK_prot  [M=130]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.5e-42  140.8  19.8    9.8e-42  140.6  19.8    1.0  1  VFLIBAN_39  [1202 - 1639] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLIBAN_39  [1202 - 1639] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  140.6  19.8   1.5e-45   9.8e-42       3     128 ..      25     145 ..      22     146 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 140.6 bits;  conditional E-value: 1.5e-45
+   rplK_prot   3 iikliikagkakpkspigsiLGqkgiNikkFckkfnkltkklkkgaeipvlikikkkkkfkiiiksptvsflikkllkikkgkkkkinkeilkkiykik 101
+                 ++kl+ik++kakp+s+i+s+LG+kgiNi +Fckkfn++t+klk++++ipv+++ik +kk+ki++k+p vs++ikk+ ++k    k+ink+ilkki+ +k
+  VFLIBAN_39  25 LVKLKIKPQKAKPNSNISSALGPKGINIIEFCKKFNTVTSKLKTKDLIPVFVYIK-NKKYKIVLKTPYVSYYIKKFANNK----KTINKSILKKIFLLK 118
+                 58***************************************************96.578*****************9865....579************ PP
+
+   rplK_prot 102 kkdlNtlnkkkilkiIlGtakSmgiky 128
+                 + ++Ntl+kkk++kiIlGta+Smg++y
+  VFLIBAN_39 119 RTSFNTLCKKKVFKIILGTARSMGFDY 145
+                 ************************988 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (130 nodes)
+Target sequences:                       6700  (175872 residues searched)
+Passed MSV filter:                       565  (0.0843284); expected 134.0 (0.02)
+Passed bias filter:                       77  (0.0114925); expected 134.0 (0.02)
+Passed Vit filter:                         8  (0.00119403); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000149254); expected 0.1 (1e-05)
+Initial search space (Z):               6700  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8622.48
+//
+[ok]

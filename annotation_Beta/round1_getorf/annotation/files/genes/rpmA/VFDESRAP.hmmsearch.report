@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFDESRAP/VFDESRAP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rpmA/rpmA_VFDESRAP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmA_prot  [M=80]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.1e-34  117.0   6.1    1.2e-34  116.9   6.1    1.0  1  VFDESRAP_3780  [103587 - 103354] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFDESRAP_3780  [103587 - 103354] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  116.9   6.1   1.8e-38   1.2e-34       1      72 [.       2      73 ..       2      78 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 116.9 bits;  conditional E-value: 1.8e-38
+      rpmA_prot  1 mAkKKaagslknGRdskskrLGiKkfsgelvkkGniiirqrGtkfksglntkigkdytiyslkkGkvlfkkk 72
+                   mAkKKa+gs+knGRds+skrLG+K+ + + v++Gnii+rq+Gt++++glntk+g+d ti+s+k+Gkv+f+k 
+  VFDESRAP_3780  2 MAKKKATGSVKNGRDSISKRLGVKIGNLQNVRPGNIIVRQKGTNLICGLNTKMGRDRTIFSIKNGKVFFSKG 73
+                   9********************************************************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (80 nodes)
+Target sequences:                       6589  (179196 residues searched)
+Passed MSV filter:                        51  (0.00774017); expected 131.8 (0.02)
+Passed bias filter:                       23  (0.00349067); expected 131.8 (0.02)
+Passed Vit filter:                         1  (0.000151768); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000151768); expected 0.1 (1e-05)
+Initial search space (Z):               6589  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11830.54
+//
+[ok]

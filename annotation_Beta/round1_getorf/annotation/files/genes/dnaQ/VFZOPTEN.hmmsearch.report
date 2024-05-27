@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaQ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFZOPTEN/VFZOPTEN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/dnaQ/dnaQ_VFZOPTEN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaQ_prot  [M=175]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    8.4e-68  226.2  28.0    9.5e-68  226.0  28.0    1.0  1  VFZOPTEN_4914  [51632 - 51072] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFZOPTEN_4914  [51632 - 51072] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  226.0  28.0   1.5e-71   9.5e-68       2     173 ..      10     181 ..       8     183 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 226.0 bits;  conditional E-value: 1.5e-71
+      dnaQ_prot   2 krllvlDtettGlnlkkgDRiiEialveiikkkitkkvfhsylktkkkiskeaykiHkikkkfLkkkkkFkeiskklkkfiknsllvaHNakFDik 97 
+                    k+++++DtettGl ++kgDRiiE+a+++i k+k+ + +fhs++++kkkisk++ykiHki+k+f+k+kkkFk+++kk+++fi n++lvaHNakFD+k
+  VFZOPTEN_4914  10 KKYIIIDTETTGLYPNKGDRIIELAMIKIYKNKVID-TFHSFFNVKKKISKSSYKIHKINKDFIKNKKKFKNKIKKIDSFIGNNILVAHNAKFDLK 104
+                    79*******************************997.6********************************************************** PP
+
+      dnaQ_prot  98 flkkEyklikkkikfkaiDtlkiarkifpgkkNslkslckrlkikkk.kiHsAleDakilakvfiklkkkqkkikak 173
+                    flk+Eyk+++k++ f  iDtlkia+kifpgkkN+l +lc+r+kik + ++HsA +Dak+lak+fi ++++qk+ik k
+  VFZOPTEN_4914 105 FLKNEYKILNKRRVFFSIDTLKIAKKIFPGKKNTLGKLCERFKIKIFnRMHSAKNDAKMLAKLFILFNNNQKNIKRK 181
+                    *********************************************87269**********************99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (175 nodes)
+Target sequences:                       6422  (172141 residues searched)
+Passed MSV filter:                       291  (0.045313); expected 128.4 (0.02)
+Passed bias filter:                       34  (0.0052943); expected 128.4 (0.02)
+Passed Vit filter:                         1  (0.000155715); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.000155715); expected 0.1 (1e-05)
+Initial search space (Z):               6422  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 16862.36
+//
+[ok]

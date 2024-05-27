@@ -25,7 +25,7 @@ start_time = time.time()
 # ------- Parameters to be specified before each run ------- #
 
   ### Where output folders etc. will be created
-work_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round6_getorf"
+work_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf"
 
   ### Folder with genomes to annotate. Any fasta files in that dir will be regarded as genomes for annotation
 genomes_for_annotation_dir = "/home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/genomes/"

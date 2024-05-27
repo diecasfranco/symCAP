@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaQ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFUGYOPS/VFUGYOPS_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/dnaQ/dnaQ_VFUGYOPS.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaQ_prot  [M=175]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    4.9e-67  218.2  17.6    5.3e-67  218.1  17.6    1.0  1  VFUGYOPS_51  [45719 - 45207] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFUGYOPS_51  [45719 - 45207] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  218.1  17.6   3.9e-69   5.3e-67       3     170 ..       2     168 ..       1     170 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 218.1 bits;  conditional E-value: 3.9e-69
+    dnaQ_prot   3 rllvlDtettGlnlkkgDRiiEialveiikkkitkkvfhsylktkkkiskeaykiHkikkkfLkkkkkFkeiskklkkfiknsllvaHNakFDikflk 100
+                  r+l++DtettGln+kk DRiiEia+vei+++k+t+++fh+yl++ +k+sk aykiH+i+++fLk+kkkF++i+ ++k+f++n++++aHN++FD+ ++k
+  VFUGYOPS_51   2 RILSIDTETTGLNIKK-DRIIEIACVEIVDYKLTGRYFHKYLNPCMKVSKGAYKIHNISNAFLKNKKKFIDIFYDFKNFVRNDKIIAHNSRFDVGMIK 98 
+                  89***********975.********************************************************************************* PP
+
+    dnaQ_prot 101 kEyklikkkikfkaiDtlkiarkifpgkkNslkslckrlkikkkkiHsAleDakilakvfiklkkkqkki 170
+                  +E+ likkk+++++ Dtl+ +rkifp+kkN+l+s++krl+ikkkk+H A  Da++lak++ik+kk qk++
+  VFUGYOPS_51  99 RELLLIKKKMNLNFRDTLEHFRKIFPNKKNDLESIAKRLNIKKKKTHGAKLDAIVLAKCYIKTKKIQKEL 168
+                  ******************************************************************9976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (175 nodes)
+Target sequences:                        136  (34208 residues searched)
+Passed MSV filter:                        66  (0.485294); expected 2.7 (0.02)
+Passed bias filter:                        2  (0.0147059); expected 2.7 (0.02)
+Passed Vit filter:                         1  (0.00735294); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00735294); expected 0.0 (1e-05)
+Initial search space (Z):                136  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4251.21
+//
+[ok]

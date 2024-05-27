@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplU_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFBRI/VFBRI_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rplU/rplU_VFBRI.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplU_prot  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.1e-18   63.1  28.4    9.5e-18   62.9  28.4    1.1  1  VFBRI_3700  [99999 - 99679] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBRI_3700  [99999 - 99679] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   62.9  28.4   1.5e-21   9.5e-18       2      97 ..      15     106 ..      14     107 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 62.9 bits;  conditional E-value: 1.5e-21
+   rplU_prot   2 iiifeykgkQyliekkklikiknfkkkkkkikikkilllkkkkkiiiGkPyikklkleiklelikkkkkksiKFkrRKRYkiikgfkkkkyklkik 97 
+                 +iifey +kQy+++kk  iki+n+k  kk+i ++k+ll+ k+kk+ iGkPyikk k+++kl++ + kkk s K krRKRY++i g+k    +++i 
+  VFBRI_3700  15 MIIFEYLKKQYIYNKK-PIKIENCK--KKYIETDKVLLIFKDKKVQIGKPYIKK-KIKFKLIKEEIKKKESGKIKRRKRYRKIFGYKIRSGIFEIV 106
+                 79**********9876.58999986..689**********************97.89999999999*********************988777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (106 nodes)
+Target sequences:                       6467  (175227 residues searched)
+Passed MSV filter:                       770  (0.119066); expected 129.3 (0.02)
+Passed bias filter:                       85  (0.0131437); expected 129.3 (0.02)
+Passed Vit filter:                         3  (0.000463894); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000154631); expected 0.1 (1e-05)
+Initial search space (Z):               6467  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10191.15
+//
+[ok]

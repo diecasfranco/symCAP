@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/xxxVFCALBON01_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFCALBON1/VFCALBON1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/xxxVFCALBON01/xxxVFCALBON01_VFCALBON1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFCALBON_xxxVFCALBON_01  [M=65]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.1e-42  133.1   0.4    9.6e-42  132.0   0.3    1.7  2  VFCALBON1_75  [67300 - 66845] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALBON1_75  [67300 - 66845] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  132.0   0.3   6.6e-44   9.6e-42       1      65 []       1      65 [.       1      65 [. 0.99
+   2 ?   -2.6   0.0      0.48        70      40      58 ..     117     135 ..     112     140 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 132.0 bits;  conditional E-value: 6.6e-44
+  VFCALBON_xxxVFCALBON_01  1 mqvrlidsngkylglfslqqaiieakkrdldlikinskvnpqvfrlgdyhkyiynrnktsspihr 65
+                             mqvrlidsngkylglfslqqaiieakkrdldlikinskvnpqvfrlgdyhkyiynrnktsspihr
+             VFCALBON1_75  1 MQVRLIDSNGKYLGLFSLQQAIIEAKKRDLDLIKINSKVNPQVFRLGDYHKYIYNRNKTSSPIHR 65
+                             8***************************************************************8 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.48
+  VFCALBON_xxxVFCALBON_01  40 npqvfrlgdyhkyiynrnk 58 
+                                 ++ ++  h  +y  n 
+             VFCALBON1_75 117 EESIISFAILHSILYRSNT 135
+                              5556666667888887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (65 nodes)
+Target sequences:                        145  (37062 residues searched)
+Passed MSV filter:                        18  (0.124138); expected 2.9 (0.02)
+Passed bias filter:                        8  (0.0551724); expected 2.9 (0.02)
+Passed Vit filter:                         1  (0.00689655); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00689655); expected 0.0 (1e-05)
+Initial search space (Z):                145  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3349.57
+//
+[ok]

@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/xxxBZ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFCALKRU/VFCALKRU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/xxxBZ/xxxBZ_VFCALKRU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       xxxBZ_prot  [M=110]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    8.5e-71  228.4  15.4    9.4e-71  228.3  15.4    1.0  1  VFCALKRU_112  [103505 - 103173] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALKRU_112  [103505 - 103173] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  228.3  15.4   6.6e-73   9.4e-71       1     110 []       1     110 [.       1     110 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 228.3 bits;  conditional E-value: 6.6e-73
+    xxxBZ_prot   1 mfvvfvyngvqyyldsvttlkfkgnfpcgrvlittvllvlfnnvcyfgmpyvtnfsvvvfaslfattkqrslifkrrhrfkrvvgfkksvfvlklqg 97 
+                   mfvvf+yng+qyyl+s+t+lkfkgnfpcgrv+ittvllvlfnnvcyfgmpyv+nfs+v+fas+f+ttkq+sl+fkrrhrfkrvvgfkksvfvl+lq+
+  VFCALKRU_112   1 MFVVFMYNGFQYYLNSTTPLKFKGNFPCGRVFITTVLLVLFNNVCYFGMPYVPNFSIVIFASHFSTTKQHSLFFKRRHRFKRVVGFKKSVFVLQLQC 97 
+                   9************************************************************************************************ PP
+
+    xxxBZ_prot  98 vyfngqkkssrfc 110
+                   vyfngqkkssrfc
+  VFCALKRU_112  98 VYFNGQKKSSRFC 110
+                   ************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (110 nodes)
+Target sequences:                        142  (37288 residues searched)
+Passed MSV filter:                        20  (0.140845); expected 2.8 (0.02)
+Passed bias filter:                        5  (0.0352113); expected 2.8 (0.02)
+Passed Vit filter:                         1  (0.00704225); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00704225); expected 0.0 (1e-05)
+Initial search space (Z):                142  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4604.50
+//
+[ok]

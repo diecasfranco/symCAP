@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/xxxVFUGYLON06_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFIDISP1/VFIDISP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/xxxVFUGYLON06/xxxVFUGYLON06_VFIDISP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFUGYLON_xxxVFUGYLON06  [M=157]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.5e-23   81.6  37.1    3.5e-23   81.6  37.1    2.0  2  VFIDISP1_4381  [72776 - 72165] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFIDISP1_4381  [72776 - 72165] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.2   2.0     0.031     2e+02      14      48 ..       1      33 [.       1      39 [. 0.65
+   2 !   81.6  37.1   5.4e-27   3.5e-23       5     155 ..      46     198 ..      42     200 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 1.2 bits;  conditional E-value: 0.031
+  VFUGYLON_xxxVFUGYLON06 14 fikyinifylkkvyfifdkndlyfklaikfikkln 48
+                            fi+yi +f      ++f  + ++fk +  ++k ln
+           VFIDISP1_4381  1 FIEYIKLFLPSAFGYLFSNSIFFFKKS--YFKYLN 33
+                            678888887777777777766666654..344444 PP
+
+  == domain 2  score: 81.6 bits;  conditional E-value: 5.4e-27
+  VFUGYLON_xxxVFUGYLON06   5 imlkkalklfikyinifylkkvyfifdkndlyfklaikfikklnmgfvfvkkpgiltninlikkknlkriilgemirrgffl.kkky 90 
+                             +mlkk++  f+ yin   lk++yf+f+k ++ fk  + f+kkln+ f fvkkpg++tn+ ++k k lkr il ++i+++  + k++ 
+           VFIDISP1_4381  46 FMLKKSILKFVSYIN--NLKEIYFLFEKKNILFKKIFFFLKKLNLKFFFVKKPGFFTNFKFFKSKILKRKILIKIIEKSKKIeKQRI 130
+                             79************9..59*********************************************************99987725578 PP
+
+  VFUGYLON_xxxVFUGYLON06  91 yklynkecsftlkd.anclfv..nnrkiikeanslnsnvisftknmdknikypiyvk.kiffykalqki 155
+                             yk y k  ++ l      +f+   n   ikea sl  ++isftkn++knikypi++k ki+f + l ki
+           VFIDISP1_4381 131 YKKY-KNINYNLNKlPKVIFLadYNLNTIKEAKSLGIDIISFTKNFNKNIKYPIFIKnKIIFIEVLNKI 198
+                             9988.56778775415677762257889****************************86899****9998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (157 nodes)
+Target sequences:                       6438  (171017 residues searched)
+Passed MSV filter:                      1185  (0.184063); expected 128.8 (0.02)
+Passed bias filter:                      155  (0.0240758); expected 128.8 (0.02)
+Passed Vit filter:                        13  (0.00201926); expected 6.4 (0.001)
+Passed Fwd filter:                         1  (0.000155328); expected 0.1 (1e-05)
+Initial search space (Z):               6438  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 13114.45
+//
+[ok]

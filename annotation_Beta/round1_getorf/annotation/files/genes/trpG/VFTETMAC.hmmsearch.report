@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/trpG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFTETMAC/VFTETMAC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/trpG/trpG_VFTETMAC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trpG_prot  [M=186]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    8.5e-38  128.6  28.7    9.6e-38  128.4  28.7    1.0  1  VFTETMAC_4399  [34895 - 34314] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETMAC_4399  [34895 - 34314] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  128.4  28.7   1.8e-41   9.6e-38       1     182 [.       9     193 ..       9     194 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 128.4 bits;  conditional E-value: 1.8e-41
+      trpG_prot   1 millldnydsftynvyelliilkfkvkvlkkikki.....fklsdfkliciGPGtgsPenykvllfklskvylfiPiiGiclGhqilGklfklkik 91 
+                    m++++dn dsft+n+yel++  k k+ v+k+ +++     ++  ++k i +GPG  +P n+k  +  ++++y    i+G clGhqi+  +f+  ik
+  VFTETMAC_4399   9 MVIIIDNIDSFTFNIYELIKKTKKKIIVIKFNETNnilisIIYYKIKTIILGPGPKNPYNKKKSKKIIKNNYIKNKILGFCLGHQIICCFFGSIIK 104
+                    99*************************998754431111134468899************************************************ PP
+
+      trpG_prot  92 kakkivhGllekivvkndvlsigiPieievvrynslvvkadsralikissvkfkevmilkhkvlPiiGiqfhPdsflcfyGkkiiknfllv 182
+                    k++ki+hG++ ki   +++   +   +i++vrynsl+  ++++ +i     k ke+mi k k+l i  iq+hPds+l++  +kiik ++++
+  VFTETMAC_4399 105 KTRKIIHGKIAKILFIKKIK--NRDKKIKIVRYNSLITTKNKNINILSIEKKTKEIMITKNKILDISTIQYHPDSILSKISNKIIKTIIKK 193
+                    *************9999875..557899****************99999999**********************************99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (186 nodes)
+Target sequences:                       5405  (148947 residues searched)
+Passed MSV filter:                       240  (0.0444033); expected 108.1 (0.02)
+Passed bias filter:                       28  (0.00518039); expected 108.1 (0.02)
+Passed Vit filter:                         1  (0.000185014); expected 5.4 (0.001)
+Passed Fwd filter:                         1  (0.000185014); expected 0.1 (1e-05)
+Initial search space (Z):               5405  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 13446.58
+//
+[ok]

@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/smpB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFTRYOCC/VFTRYOCC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/smpB/smpB_VFTRYOCC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       smpB_prot  [M=116]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    7.4e-15   48.0  39.7    8.4e-15   47.8  39.7    1.1  1  VFTRYOCC_62  [62640 - 62993]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTRYOCC_62  [62640 - 62993]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.8  39.7   6.9e-17   8.4e-15       7     111 ..       8     110 ..       1     116 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 47.8 bits;  conditional E-value: 6.9e-17
+    smpB_prot   7 kikrkilkkiiaGlllkskevkkiKkgklsikklkikkknkelfini.kkkkriklLLkkkeiekiikllkkKklklliknifiiknlvKleiiilkk 103
+                  ++ +ki +k+ aGlllk+++ k iK++ ++ k+ ki+  ++e+ i+i kk+++iklLLkk+ei ki k+  +    ++i+n+f ++nl+K+++ i+k+
+  VFTRYOCC_62   8 IKGKKIAFKVTAGLLLKNNQAKYIKNKIFNNKNTKIICFKNEFKIKInKKEIYIKLLLKKEEIRKIKKYNTN---LIKINNFFYKNNLIKVKLEIIKN 102
+                  33466779*************************************9626778**************999654...699******************99 PP
+
+    smpB_prot 104 kkkkklkk 111
+                  k + k k+
+  VFTRYOCC_62 103 KLEYKKKN 110
+                  97655443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (116 nodes)
+Target sequences:                        123  (31959 residues searched)
+Passed MSV filter:                       103  (0.837398); expected 2.5 (0.02)
+Passed bias filter:                       16  (0.130081); expected 2.5 (0.02)
+Passed Vit filter:                        16  (0.130081); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00813008); expected 0.0 (1e-05)
+Initial search space (Z):                123  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1234.11
+//
+[ok]

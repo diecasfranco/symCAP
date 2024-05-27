@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genomes/VFUGYLON/VFUGYLON_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_pyro//annotation/files/genes/rplA/rplA_VFUGYLON.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplA_prot  [M=198]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      5e-39  127.4  42.2    5.5e-39  127.2  42.2    1.0  1  VFUGYLON_3  [1555 - 2112]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFUGYLON_3  [1555 - 2112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  127.2  42.2   4.3e-41   5.5e-39       2     197 ..       4     184 ..       1     185 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 127.2 bits;  conditional E-value: 4.3e-41
+   rplA_prot   2 inklikiikkllnkkfkfnetinisikfktkkkinlkkiiilpnkikrkkkilfvnklnlknikffnkleiknikkikkykilftnnesykkllkkkki 100
+                 +n+l+++++kl++ +++ + tin++++f  kk+++lk++ ilpn i+r++++ ++  +n++n+kffnk++i ++kk+ k+++l++nne++kk+   ++i
+  VFUGYLON_3   4 KNTLRFVYEKLCK-HSDVIRTINLVLNF--KKNTKLKTYTILPNGIERNINVASL--VNFENVKFFNKDNIGELKKM-KFDVLYSNNEGLKKI---NNI 93 
+                 4789*******96.589******98876..678899*************999887..5789*************997.7**********9987...689 PP
+
+   rplA_prot 101 kkylkkkkillsknfgnvsdnfkniknikkgklkklnidkkkiinivigkikfkykklisNlnflikkilkfLkknnikikkifikttqsksfklsk 197
+                 +k+l kk  ++skn+g++sd+++n+k+i +g+l++l +dk+ i++++++k++f+y+k++sN+++    i++f++++ni++ +++i+++++ks+ l++
+  VFUGYLON_3  94 RKILGKK--FPSKNLGTLSDDICNLKYIVEGRLINLVTDKYDILHTFFAKTNFSYEKMYSNFSH----IKNFIYQKNIFPERVYIYINFNKSILLEY 184
+                 9***987..8****************************************************86....6899*********************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (198 nodes)
+Target sequences:                        127  (30959 residues searched)
+Passed MSV filter:                       123  (0.968504); expected 2.5 (0.02)
+Passed bias filter:                       33  (0.259843); expected 2.5 (0.02)
+Passed Vit filter:                        33  (0.259843); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00787402); expected 0.0 (1e-05)
+Initial search space (Z):                127  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1333.58
+//
+[ok]

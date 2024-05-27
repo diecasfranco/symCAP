@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/smpB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFPROSP/VFPROSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/smpB/smpB_VFPROSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       smpB_prot  [M=116]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    5.7e-14   49.8  38.3    6.7e-14   49.6  38.3    1.1  1  VFPROSP_2568  [38406 - 38056] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPROSP_2568  [38406 - 38056] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.6  38.3   1.9e-17   6.7e-14      10     103 ..      16     108 ..       9     117 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 49.6 bits;  conditional E-value: 1.9e-17
+     smpB_prot  10 rkilkkiiaGlllkskevkkiKkgklsikklkikkknkelfinikkkkriklLLkkkeiekiikllkkKklklliknifiiknlvKleiiilkk 103
+                   ++ +k+ii+Gll+ ++ vk iK +k++ik +ki  ++++lfi  ++  ++k+L++kke eki  l+k K+ k+++ ni+ii+n++Kl+i i k+
+  VFPROSP_2568  16 YICMKNIICGLLIPKNLVKLIKYNKINIKLIKINLIKNKLFIDYNNY-KLKILINKKEEEKILVLIKTKNYKIKVLNILIINNIIKLKIKINKN 108
+                   67899*************************************99875.68****************************************9875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (116 nodes)
+Target sequences:                       3568  (92545 residues searched)
+Passed MSV filter:                       484  (0.13565); expected 71.4 (0.02)
+Passed bias filter:                       62  (0.0173767); expected 71.4 (0.02)
+Passed Vit filter:                        12  (0.00336323); expected 3.6 (0.001)
+Passed Fwd filter:                         1  (0.000280269); expected 0.0 (1e-05)
+Initial search space (Z):               3568  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5677.31
+//
+[ok]

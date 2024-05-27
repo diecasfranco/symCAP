@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/erpA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFPENROR/VFPENROR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/erpA/erpA_VFPENROR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       erpA_prot  [M=99]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.1e-49  165.8  24.1    1.1e-49  165.8  24.1    1.4  2  VFPENROR_6534  [17585 - 17235] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPENROR_6534  [17585 - 17235] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.5   0.4      0.45   3.2e+03      75      87 ..       4      16 ..       1      18 [. 0.47
+   2 !  165.8  24.1   1.5e-53   1.1e-49       1      99 []      19     117 .]      19     117 .] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: -2.5 bits;  conditional E-value: 0.45
+      erpA_prot 75 nlsykleiknnii 87
+                   n+  k++ k +i+
+  VFPENROR_6534  4 NWLCKIKKKKTIL 16
+                   4444555554444 PP
+
+  == domain 2  score: 165.8 bits;  conditional E-value: 1.5e-53
+      erpA_prot   1 mkyiyvskknllllkkllkkkilfiyvsgqgckgikynflkkkkiiglrlnkniytdilsffyiknsklkikkenlsykleiknniikkkckcgis 96 
+                    mkyi+vskkn+lll+kl++k+ilfiyvsg+gc+gikynf+kkkk++g++l+kniytd++sf+yi+nskl+i+k+++sy+++iknniikkkc+cgis
+  VFPENROR_6534  19 MKYINVSKKNILLLNKLIGKNILFIYVSGNGCMGIKYNFCKKKKSSGICLYKNIYTDLFSFIYIVNSKLYICKRDFSYVFKIKNNIIKKKCSCGIS 114
+                    9*********************************************************************************************** PP
+
+      erpA_prot  97 fki 99 
+                    fki
+  VFPENROR_6534 115 FKI 117
+                    **8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (99 nodes)
+Target sequences:                       7046  (191592 residues searched)
+Passed MSV filter:                       908  (0.128867); expected 140.9 (0.02)
+Passed bias filter:                      131  (0.0185921); expected 140.9 (0.02)
+Passed Vit filter:                         6  (0.000851547); expected 7.0 (0.001)
+Passed Fwd filter:                         1  (0.000141924); expected 0.1 (1e-05)
+Initial search space (Z):               7046  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 9328.33
+//
+[ok]

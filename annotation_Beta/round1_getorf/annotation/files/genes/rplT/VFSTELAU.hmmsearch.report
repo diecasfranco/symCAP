@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genomes/VFSTELAU/VFSTELAU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round1_getorf/annotation/files/genes/rplT/rplT_VFSTELAU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplT_prot  [M=118]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.6e-43  145.7   8.4    2.3e-43  145.1   8.4    1.2  1  VFSTELAU_3502  [45350 - 44907] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFSTELAU_3502  [45350 - 44907] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  145.1   8.4   4.8e-47   2.3e-43       1     107 [.      32     137 ..      32     145 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 145.1 bits;  conditional E-value: 4.8e-47
+      rplT_prot   1 MsRvkssvvskkkrkkllkktkgFigRRknvyriakqAyiksllysyrDrrkkkrilrrkwikkinfflkefnikYskfikllkkknillnrkily 96 
+                    M+R+k+sv++kk+r+ +lkktkgFigRRknvy+ia++Ayiksl+y+yrD+r+kkr++rr+wi++i+++l++f+++Ys+fi l+k+ n+ +nr +l+
+  VFSTELAU_3502  32 MARSKTSVPFKKHRRLFLKKTKGFIGRRKNVYKIAHNAYIKSLCYVYRDTRCKKRDYRRFWISNISKHLEMFDVSYSRFICLCKD-NTSFNRLVLS 126
+                    9********************************************************************************9986.679******* PP
+
+      rplT_prot  97 elvkekkleil 107
+                    ++v+ek+l ++
+  VFSTELAU_3502 127 QCVDEKILPLV 137
+                    ***99876543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (118 nodes)
+Target sequences:                       4826  (141655 residues searched)
+Passed MSV filter:                       195  (0.0404061); expected 96.5 (0.02)
+Passed bias filter:                       60  (0.0124327); expected 96.5 (0.02)
+Passed Vit filter:                         3  (0.000621633); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000207211); expected 0.0 (1e-05)
+Initial search space (Z):               4826  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10233.35
+//
+[ok]
