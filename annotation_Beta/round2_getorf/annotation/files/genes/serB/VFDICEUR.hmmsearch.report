@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/serB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFDICEUR/VFDICEUR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/serB/serB_VFDICEUR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       serB_prot  [M=210]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.7e-63  212.0  31.1    2.7e-63  212.0  31.1    1.8  2  VFDICEUR_2437  [91342 - 92112] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFDICEUR_2437  [91342 - 92112] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   3.2       0.1   6.8e+02      30      64 ..      16      50 ..       6      52 .. 0.54
+   2 !  212.0  31.1     4e-67   2.7e-63       2     210 .]      50     256 ..      49     256 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 0.1
+      serB_prot 30 iiskkilkks.kkfykdykkgklnikkyikyiskvi 64
+                   +++  i+kk  +   k+y+k   n kk   yi+k++
+  VFDICEUR_2437 16 LVNLIIMKKPtNIQIKNYNKA-NNYKKNPIYINKIL 50
+                   455555555313344566654.35666666666665 PP
+
+  == domain 2  score: 212.0 bits;  conditional E-value: 4e-67
+      serB_prot   2 klaiFDLDkTliniDcEkllikvlykkkiiskkilkkskkfykdykkgklnikkyikyiskvink..lkkkkilinffvksiikvinkkllkilkk 95 
+                    +++iFDLDkT++++DcE+l++k+++kkk+i  ++l+++++f+kdy kg++n++ +++++++vi+k  lk+k+ +inffv+   k+i+k++++++ k
+  VFDICEUR_2437  50 LISIFDLDKTITKVDCEGLFYKIAFKKKLIPSTVLNTFRQFHKDYDKGQFNAQAHFNFQNTVIAKykLKTKHRFINFFVN---KYIKKNIYTYIVK 142
+                    699************************************************************86336789999***987...8999********* PP
+
+      serB_prot  96 ekkkkkkiiisTSSskllskkikkl.lkiknlistklekkkkkytgkvlgviNigkgKvknlkkwikkkkikkkkiiFysDSinDlpLllksdkky 190
+                    ++ +k   iisTSS++l++++++k+ lk+k++i+t+ ++kkk     +l+viN+g +Kv+n+k+w+k++++++++ +Fy+DS+nD+pLl+++ ++y
+  VFDICEUR_2437 143 QLLQKPLTIISTSSNELMATAVNKIlLKNKHIIYTSNHNKKK-----GLKVINHGVNKVTNIKIWLKQHELTNYILEFYTDSENDYPLLKAAHIRY 233
+                    **********************775279********999985.....7899********************************************* PP
+
+      serB_prot 191 ivNpdkkll...kllenkkikil 210
+                    i+Np++kll   kl+en++i+il
+  VFDICEUR_2437 234 IINPQEKLLnksKLFENRTILIL 256
+                    *******96444899***99985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (210 nodes)
+Target sequences:                       6719  (181892 residues searched)
+Passed MSV filter:                       300  (0.0446495); expected 134.4 (0.02)
+Passed bias filter:                       38  (0.0056556); expected 134.4 (0.02)
+Passed Vit filter:                         6  (0.00089299); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000148832); expected 0.1 (1e-05)
+Initial search space (Z):               6719  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8296.73
+//
+[ok]

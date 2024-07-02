@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/carA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFOMMLON/VFOMMLON_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/carA/carA_VFOMMLON.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       carA_prot  [M=345]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+   3.9e-141  463.1  44.6   4.4e-141  463.0  44.6    1.0  1  VFOMMLON_60  [53740 - 54759]
+    1.3e-15   50.3  20.7    1.6e-15   50.0  20.7    1.2  1  VFOMMLON_40  [36875 - 36333] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOMMLON_60  [53740 - 54759]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  463.0  44.6    6e-143  4.4e-141       4     342 ..       4     338 ..       1     339 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 463.0 bits;  conditional E-value: 6e-143
+    carA_prot   4 lelsngkvfkaksigykknfygeivfntsnlGyqevltDPsYlNqilvfsssniGntGinlkdlESnriwlsaiivknlskffsnfrskksllkflkk 101
+                    + n+k+f   ++gykknf+gei+fntsn+Gyqe+ltDPsY+N+ilvf+s+niGntGin++d+ES+riwl aiivknls f+s+++s+k ++ flkk
+  VFOMMLON_60   4 TLIINKKKFFLDAFGYKKNFFGEIIFNTSNVGYQETLTDPSYYNKILVFTSVNIGNTGINIFDNESHRIWLGAIIVKNLSLFYSHYHSYKGIYYFLKK 101
+                  44668899999*************************************************************************************** PP
+
+    carA_prot 102 nkvivletkdtreiikkikkkknnkalilfkkkkklkkkkvkklkkvstkinyllnekklvlkkkknnifkkkilvidfGlKknilrelskkniflii 199
+                  nkv++l++k+tr+++k+i+kkk+n a+i+fkkkkk+k+k  k  k++st+ +++++ekk+++kk++ nifk+ki+v+dfGlK+nilr+++  n +lii
+  VFOMMLON_60 102 NKVLILKSKSTRDLVKEIRKKKTN-AYIFFKKKKKIKNKIKKPSKNSSTNLCFSYCEKKNYIKKNFYNIFKNKIIVLDFGLKYNILRNIK--NNYLII 196
+                  *******************98865.89*************************************************************96..569999 PP
+
+    carA_prot 200 inykkiikkikkikpdgivlsnGPGnpkiykklikkikkiikkipilgIClGHQiislslglkikkmkvGhhgiNhpvkflkkllissQNHnylvknk 297
+                  +nyk +i+ +kkikp+gi+l+nGPGnp+ y+++ kki ki+kkip l+IClGHQi+ +s + ki+kmkvGhhgiNhp+k++k+++i+sQNH+++v++k
+  VFOMMLON_60 197 LNYK-NINFYKKIKPKGIILTNGPGNPCLYNSIKKKILKITKKIPTLAICLGHQILFFSSNSKISKMKVGHHGINHPIKIKKRIYITSQNHDFVVNKK 293
+                  **98.5799***************************************************************************************** PP
+
+    carA_prot 298 nkiyslfDktnQGiikkkiitlQGHPEasPGtkdlkfiFkkfkkl 342
+                  +ki slfD+tnQG+ikkki++lQGHPE++PG++dl+fiFkkf k 
+  VFOMMLON_60 294 SKIKSLFDNTNQGFIKKKIFSLQGHPEGCPGPEDLNFIFKKFLKS 338
+                  ******************************************986 PP
+
+>> VFOMMLON_40  [36875 - 36333] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.0  20.7   2.2e-17   1.6e-15     184     341 ..      13     178 ..       1     180 [. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 50.0 bits;  conditional E-value: 2.2e-17
+    carA_prot 184 knilrelskknifliiinykkiik...kikkikpdgivlsnGPGnpkiykklikkikkiikkipilgIClGHQiislslglkikkmkvGhhgiNhpvk 278
+                  +ni +   +k+     +ny k +k   k+  ++p  +v+ +GP  p +y k+ + +k + + +  +gIClGHQiis++ g ki+  k+ +hg    ++
+  VFOMMLON_40  13 FNIKNFFISKKHKSKTLNYFKLNKiiiKVLIYRP-NLVIGSGPDSPYKYFKIYNFLKIFYSYLYFIGICLGHQIISCFFGSKISISKKIKHGKASRIY 109
+                  4554444444444445555444440004444555.599**********************************************99999***999998 PP
+
+    carA_prot 279 flk.kllissQNHnylvknknkiyslfDktnQGiik...kkiitlQGHPEa..sPGtkdlkfiFkkfkk 341
+                  +++ k+ i   N   + ++++ ++ ++ k+n G++    k+i+++Q HPE+  s G+k++   F+k++k
+  VFOMMLON_40 110 LNEiKINIMIYNSLNIKIRNEFFIYFIIKKNYGLMFqkfKNILSFQYHPESyfSYGNKKIFKYFSKYNK 178
+                  87656777777864444444445556668899986423468*********9444566665555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (345 nodes)
+Target sequences:                        144  (36411 residues searched)
+Passed MSV filter:                       122  (0.847222); expected 2.9 (0.02)
+Passed bias filter:                       17  (0.118056); expected 2.9 (0.02)
+Passed Vit filter:                        16  (0.111111); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.0138889); expected 0.0 (1e-05)
+Initial search space (Z):                144  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 1636.33
+//
+[ok]

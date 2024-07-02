@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rsmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFCALKRU/VFCALKRU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rsmA/rsmA_VFCALKRU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmA_prot  [M=204]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    9.7e-53  177.7  25.3    9.7e-53  177.7  25.3    2.3  2  VFCALKRU_6154  [15172 - 14408] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALKRU_6154  [15172 - 14408] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  177.7  25.3   1.5e-56   9.7e-53       3     191 ..       7     200 ..       4     211 .. 0.93
+   2 !    2.4   0.4    0.0069        45     182     204 .]     210     232 ..     202     232 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 177.7 bits;  conditional E-value: 1.5e-56
+      rsmA_prot   3 kldkvFllskkklkkiikkiiskkkiiiEigsGyGnltkfllkk.kkkil.liEidnkiskfLkkkf.kknvkiinknilnfnfrplkkitiigni 95 
+                    ++d vF+lsk  +  ++ +i+++k++++E+gsG+Gnl++++l + +++++ liE++++++++L+++  ++nv+++n n+l f+f++++++t+i+n+
+  VFCALKRU_6154   7 NSDIVFWLSKFPVIGATVDIYLYKGMVVEVGSGIGNLIYQFLVWfCTRLFlLIEVNSVFCEVLVFLLaYNNVIVYNVNFLVFAFFAYIYVTFISNA 102
+                    7899**********************************998886468875279***********9984599************************* PP
+
+      rsmA_prot  96 PYsiskkilkkllknkrnIkkqyimlqkeylekilkikaikfflykllykikkllklkkedFdPkpkvnsvfikmvpkkis..knsenfinksffn 189
+                    P+sis ++l+kll+++ +I +qy+mlq e++ +i+++ aikff+y+l+y++++l+++k++ FdP ++v+++f+ m+pk+i+  ++s++f+++s+f 
+  VFCALKRU_6154 103 PFSISLALLYKLLCYRFVIICQYLMLQFELYLAIFVAVAIKFFCYLLYYFCRMLMFFKGDVFDPPVAVSTIFFVMYPKYIPyeTKSIYFFIISYFA 198
+                    ******************************************************************************98533899*********7 PP
+
+      rsmA_prot 190 kk 191
+                      
+  VFCALKRU_6154 199 IL 200
+                    55 PP
+
+  == domain 2  score: 2.4 bits;  conditional E-value: 0.0069
+      rsmA_prot 182 finksffnkkkkkkleeliflll 204
+                    f++  + + + +k+l+e++f+++
+  VFCALKRU_6154 210 FFQGFITIYNSNKRLWEFYFCIV 232
+                    5655445556789********96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (204 nodes)
+Target sequences:                       6591  (179938 residues searched)
+Passed MSV filter:                       429  (0.0650888); expected 131.8 (0.02)
+Passed bias filter:                       53  (0.00804127); expected 131.8 (0.02)
+Passed Vit filter:                         2  (0.000303444); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000151722); expected 0.1 (1e-05)
+Initial search space (Z):               6591  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8021.73
+//
+[ok]

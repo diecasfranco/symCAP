@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/groES_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFMYCCUN/VFMYCCUN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/groES/groES_VFMYCCUN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       groES_prot  [M=85]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.7e-13   49.1  25.0    1.7e-13   49.1  25.0    2.0  2  VFMYCCUN_2079  [81542 - 81844] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMYCCUN_2079  [81542 - 81844] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.7   4.0     0.035   2.3e+02       7      79 ..       7      24 ..       1      25 [. 0.37
+   2 !   49.1  25.0   2.7e-17   1.7e-13       2      84 ..      23      99 ..      21     100 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 0.7 bits;  conditional E-value: 0.035
+     groES_prot  7 nnyiilkkikkkkkskilikkkkkkkniGkVvfikknkkkkikkgdiviykkyssnkikiknkkYifikykni 79
+                   n+yi  kki  kk+                                                       +k+i
+  VFMYCCUN_2079  7 NKYIYNKKIFFKKN-------------------------------------------------------MKKI 24
+                   44444444433332.......................................................3333 PP
+
+  == domain 2  score: 49.1 bits;  conditional E-value: 2.7e-17
+     groES_prot  2 kikplnnyiilkkikkkkkskilikkkkkkkniGkVvfikknkkkkikkgdiviykkyssnkikiknkkYifikykniiaklk 84
+                   ki+p+nn++i+k +   kkski+  ++  k+niGkVvfi+ n  kkik+gd++i++  s +k++  + kYi++kyk+ii ++k
+  VFMYCCUN_2079 23 KIIPINNFVIIKLLI--KKSKII--NNLMKSNIGKVVFINCN--KKIKIGDKIIFSTPSLKKLNYLSSKYIYLKYKKIIGIIK 99
+                   799********9875..567887..5567899*******765..67999*******************************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (85 nodes)
+Target sequences:                       6484  (171150 residues searched)
+Passed MSV filter:                      1217  (0.187693); expected 129.7 (0.02)
+Passed bias filter:                      197  (0.0303825); expected 129.7 (0.02)
+Passed Vit filter:                        14  (0.00215916); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000154226); expected 0.1 (1e-05)
+Initial search space (Z):               6484  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 3061.32
+//
+[ok]

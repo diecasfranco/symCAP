@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplR_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFPENVAR/VFPENVAR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/rplR/rplR_VFPENVAR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplR_prot  [M=111]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    2.2e-21   69.6  24.8    2.5e-21   69.4  24.8    1.1  1  VFPENVAR_138  [125259 - 125567]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPENVAR_138  [125259 - 125567]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.4  24.8   1.7e-23   2.5e-21      17     109 ..       5      94 ..       1      97 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 69.4 bits;  conditional E-value: 1.7e-23
+     rplR_prot  17 lvkKtNkhiyiqvfiyiknki.itscStneKliknilkkkkkkknsffkikilskilikkliarnikklkfnksnykfkgkvkliynslkkkfl 109
+                   ++ K+Nkh+y  v+i  ++ki i+scStn+K++kn  +k+k   ++f+ki+ ls+il  +l +rni+ l+fn  +ykfk+k+k ++n+l  k++
+  VFPENVAR_138   5 FLYKSNKHFY--VYILNNKKIpIFSCSTNNKIVKNLYEKNK--DKRFYKIYCLSEILSSMLNSRNINMLNFNSGKYKFKCKIKALFNYLIIKNI 94 
+                   678*******..599999999899***********998876..568******************************************987776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (111 nodes)
+Target sequences:                        151  (39684 residues searched)
+Passed MSV filter:                       138  (0.913907); expected 3.0 (0.02)
+Passed bias filter:                        8  (0.0529801); expected 3.0 (0.02)
+Passed Vit filter:                         7  (0.0463576); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00662252); expected 0.0 (1e-05)
+Initial search space (Z):                151  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1302.85
+//
+[ok]

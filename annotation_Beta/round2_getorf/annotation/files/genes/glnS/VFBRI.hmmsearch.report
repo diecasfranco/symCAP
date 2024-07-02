@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/glnS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFBRI/VFBRI_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/glnS/glnS_VFBRI.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnS_prot  [M=443]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-20   72.9  22.5    1.1e-20   72.9  22.5    2.2  2  VFBRI_4191  [82013 - 80790] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBRI_4191  [82013 - 80790] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.9  22.5   1.7e-24   1.1e-20      16     148 ..      30     165 ..      27     169 .. 0.87
+   2 ?   -8.2  57.4         1   6.5e+03     178     423 ..     150     380 ..     147     404 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 72.9 bits;  conditional E-value: 1.7e-24
+   glnS_prot  16 iktRFaPEPsgyLHiGHlKciyiNykiskkfkgkfilRiDDtNPekskkkyvkkIikdikklglkkkik.itfsSdyfkkly.kiakklikkklayids 112
+                 ++tRFaP Psg LH+G +++ +i   +skk++gkf+lRiD+t+ ++skkky+k+Ii d+k +g+k k k + f  ++ kk+y k+a  l+kkk+a i++
+  VFBRI_4191  30 VITRFAPSPSGNLHLGNIRSAIIPWAFSKKKRGKFFLRIDNTDKNRSKKKYIKRIIIDLKWIGIKIKEKdVIFQ-KKRKKIYqKYALMLVKKKKAKIKK 127
+                 78*************************************************************99655516665.566777747999************ PP
+
+   glnS_prot 113 qkkkkfklnkgnyk..kkgkksiflkrkikenlyllkk 148
+                     k+++nk++ +  + ++k+i++++k+++n+ +++k
+  VFBRI_4191 128 DGSIKYIINKKKIVnwRENRKKIVISNKNIKNFTIIRK 165
+                 *9999999998876124677889999999999999986 PP
+
+  == domain 2  score: -8.2 bits;  conditional E-value: 1
+   glnS_prot 178 iiyRikkkkhfikkkvkiyPtYDfsnsicDriekishSiCtkEFennkilYnyyiklYnkiykkkklpkQiEfskL.eiknvklsKRkikklikkkkik 275
+                 i++  k+ k+f+  + +   tY+fs  i D i k++h +   + ++n       i+ +  i+kk   pk i +s + ++++ klsKR+ +k +   k k
+  VFBRI_4191 150 IVISNKNIKNFTIIRKNGMATYNFSSVIDDLIMKVTHIFRGVDHIDNTA---KQINIFDSIKKK--KPKYIHISNItNFEGKKLSKRSNSKSVFYFKKK 243
+                 55555778889888888899*****************999999999985...578999999876..59******9967*********999988887766 PP
+
+   glnS_prot 276 kwndkrlltlkglinrgisikslikfvkktgytkknslikisllkkiiiknlkkkvl.kkikiilkpik.iiikkkkeifiekkkkikslfflkkkkki 372
+                  +  + +  ++ + n g +++   kf+ k ++ k+    ki+ +kk   k + +k l  + +++ k+   +++k+   ++i+++++++ +  + kk ki
+  VFBRI_4191 244 GFLPEAV--FNYISNTGKNNE--EKFFDKKDFVKNF---KIENIKKSPTKFNLRKLLwYNKSYLRKNKDlFKKKEIIDLVINRSNRLSEVEKILKKVKI 335
+                 6665555..567788998887..4899999998864...555666666665554443133344444444044444456789999999988888889999 PP
+
+   glnS_prot 373 isnllyikkiikikliiiknnkikkkkvyleikklkinekiiikkigiFkl 423
+                 +++++++kk++  +++++    +kkk+ +++ + ++ n  i i+k  +F +
+  VFBRI_4191 336 KKYIFSKKKMFFHIFNFF---LKKKKNNFIKFR-ISRNFCISIRK--FFFK 380
+                 998888777665555554...444444444432.22222233333..2221 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (443 nodes)
+Target sequences:                       6467  (175227 residues searched)
+Passed MSV filter:                       798  (0.123396); expected 129.3 (0.02)
+Passed bias filter:                       74  (0.0114427); expected 129.3 (0.02)
+Passed Vit filter:                        36  (0.00556672); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000154631); expected 0.1 (1e-05)
+Initial search space (Z):               6467  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 6690.24
+//
+[ok]

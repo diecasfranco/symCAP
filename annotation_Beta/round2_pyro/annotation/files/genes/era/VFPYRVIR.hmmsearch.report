@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/era_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFPYRVIR/VFPYRVIR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/era/era_VFPYRVIR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       era_prot  [M=355]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.9e-45  148.6  47.3    2.2e-45  148.4  47.3    1.0  1  VFPYRVIR_69  [64651 - 65079]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPYRVIR_69  [64651 - 65079]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  148.4  47.3   1.5e-47   2.2e-45       1     138 [.       1     138 [.       1     141 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 148.4 bits;  conditional E-value: 1.5e-47
+     era_prot   1 mlnllligkkkkclffikkilkirnvsfyefdlrvfffvkkeilvrillinLnkikkkvvekkkdvlkidyilyisdnfvdlekkkksffiknkkkff 98 
+                  mln+lligkk++c+ff+kkilkirn+sfy+fdlrvfff+kk+++++i++inL+ki+k+++e+k ++lki+ +lyis+ ++dl++k+++ffiknk+k+f
+  VFPYRVIR_69   1 MLNILLIGKKNECIFFVKKILKIRNISFYDFDLRVFFFQKKGKSAKIFFINLDKIDKDFLEEKINILKIKCVLYISKYNTDLKRKYHFFFIKNKIKIF 98 
+                  99************************************************************************************************ PP
+
+     era_prot  99 likkkfknflsknffiikykklgFlFlikklkkskkkkkk 138
+                  ++k+ fknf+sknff+iky+++gFlFl+k++kk+kkkkk+
+  VFPYRVIR_69  99 FVKEYFKNFRSKNFFFIKYNVSGFLFLLKEFKKKKKKKKN 138
+                  *******************************998888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (355 nodes)
+Target sequences:                        149  (38919 residues searched)
+Passed MSV filter:                       141  (0.946309); expected 3.0 (0.02)
+Passed bias filter:                       13  (0.0872483); expected 3.0 (0.02)
+Passed Vit filter:                        12  (0.0805369); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.0134228); expected 0.0 (1e-05)
+Initial search space (Z):                149  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 1313.44
+//
+[ok]

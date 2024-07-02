@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/lysA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFTETIMP/VFTETIMP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/lysA/lysA_VFTETIMP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       lysA_prot  [M=372]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   1.5e-150  499.6  82.1   1.5e-150  499.6  82.1    1.5  2  VFTETIMP_2473  [101359 - 100004] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETIMP_2473  [101359 - 100004] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.5   0.6     0.013        69      54     108 ..      28      81 ..      16      83 .. 0.70
+   2 !  499.6  82.1  2.8e-154  1.5e-150       3     372 .]      78     452 .]      75     452 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 0.5 bits;  conditional E-value: 0.013
+      lysA_prot  54 ikkkklgfEvVSigEiklllklkikkkkiifSGvcKskkeikfaikkk.igfisve 108
+                    ik+  + +  VSi+   l++++ ik +k+++   +K +k i +++kkk i+ i++ 
+  VFTETIMP_2473  28 IKNIFCIYLSVSINL--LITTNLIKLQKVVLPEKGKPSKLILTIMKKKvIEKINIK 81 
+                    555556666777753..344556899999999999988888776665527889986 PP
+
+  == domain 2  score: 499.6 bits;  conditional E-value: 2.8e-154
+      lysA_prot   3 kkikklikkyktpifiYskkkilknikklkk.kkikifyAlKaNyNkkiikiikkkklgfEvVSigEiklllklkikkkkiifSGvcKskkeikfa 97 
+                    ++ik+likky+tp+f+Yskkki++nik +kk kkikifyA+KaNyN+kii+iik+k +gfE+VS+gEik+l+klkik+kkiifSGvcK+k++ikf+
+  VFTETIMP_2473  78 INIKNLIKKYRTPFFVYSKKKIMENIKFFKKnKKIKIFYAIKANYNSKIIEIIKNKIYGFETVSVGEIKKLIKLKIKPKKIIFSGVCKKKSDIKFC 173
+                    689*************************986378************************************************************** PP
+
+      lysA_prot  98 ikkkigfisveSleElkrilklskkkktkiilklNlnikvktnkkiktgkkknKFGikkkelkkiiklikkkkikikglgfHlGSqiksskpyika 193
+                    +kk++g+isveS++Elkri+k+++ kk+kiilklNlnik+kt+kki t+ +++KFGi+kke+kki+++++++kiki +lgfH+GSqi s+kpyika
+  VFTETIMP_2473 174 KKKNLGYISVESYKELKRIKKYCH-KKIKIILKLNLNIKAKTDKKILTCIEETKFGINKKEIKKILSYSTRNKIKIFALGFHIGSQILSEKPYIKA 268
+                    *********************997.579******************************************************************** PP
+
+      lysA_prot 194 ikkiikiskkl...kikikiiniGGGiginykkkkkkkkkllkkilklikk..kkikiiiEpGRsiianscvtiakveyiKknkkknfaiidiGme 284
+                    ikki ki+ k+   +i ik+iniGGG+giny+kkk++k   +kki+k+ikk  + ++iiiEpGR+iiansc+tiakveyiKknkkk+faiidiGme
+  VFTETIMP_2473 269 IKKISKIYIKFkkkNIIIKNINIGGGFGINYNKKKNNKIIKFKKIIKKIKKliNPKNIIIEPGRYIIANSCITIAKVEYIKKNKKKRFAIIDIGME 364
+                    ******986551115679******************************998555789*************************************** PP
+
+      lysA_prot 285 siiRpaLYksyHkiknlkkrk.kkkkydivGpiCEstDilakkiklsikkgdyliildtGaYClSmrsnYNlrkkpkeilikkkkikki 372
+                    siiRp+LYksyHkik lkk+k kkkky+ivGpiCEstD ++kk +++ik+g+++ii+dtGaYClSmrs+YN+rkkp+eili+++k++ki
+  VFTETIMP_2473 365 SIIRPMLYKSYHKIKVLKKEKtKKKKYEIVGPICESTDKFCKK-RIKIKEGSFIIIYDTGAYCLSMRSKYNIRKKPLEILISNNKYFKI 452
+                    *****************987626789***************97.69***************************************9886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (372 nodes)
+Target sequences:                       5315  (150197 residues searched)
+Passed MSV filter:                       288  (0.0541863); expected 106.3 (0.02)
+Passed bias filter:                       34  (0.00639699); expected 106.3 (0.02)
+Passed Vit filter:                         3  (0.00056444); expected 5.3 (0.001)
+Passed Fwd filter:                         1  (0.000188147); expected 0.1 (1e-05)
+Initial search space (Z):               5315  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7462.49
+//
+[ok]

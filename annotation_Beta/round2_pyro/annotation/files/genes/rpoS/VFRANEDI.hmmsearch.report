@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpoS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFRANEDI/VFRANEDI_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/rpoS/rpoS_VFRANEDI.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpoS_prot  [M=313]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.4e-12   40.4  21.6    1.7e-08   27.1   1.0    2.7  3  VFRANEDI_46  [45910 - 47310]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFRANEDI_46  [45910 - 47310]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.7   2.9      0.26        38      94     132 ..     118     153 ..      44     220 .. 0.61
+   2 !   21.5   9.8   5.7e-09   8.1e-07      76     247 ..     197     355 ..     159     387 .. 0.76
+   3 !   27.1   1.0   1.2e-10   1.7e-08     253     304 ..     402     453 ..     358     460 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -3.7 bits;  conditional E-value: 0.26
+    rpoS_prot  94 nkfikevkei.kglylrylerkermvkeskyivywvikvl 132
+                  n f++ ++++ k l +r+l   + +++    i ++ ++  
+  VFRANEDI_46 118 NSFVNYINNVyKNLLFRFLRLEKCFIR----IYFYLMNSS 153
+                  334444433323333344333333333....333333333 PP
+
+  == domain 2  score: 21.5 bits;  conditional E-value: 5.7e-09
+    rpoS_prot  76 rinkdklrkeyignyikrnkfikevkeikglylrylerkermvkeskyivywvikvlrirreelkeliqegvlgiyrafyrfnneigcrfttycsywv 173
+                   i k+k+  +      k n +  e+   kg        +++++   + ++  v k +r +   + +l+qeg +g+ +++ rf+   g +f+ty ++w+
+  VFRANEDI_46 197 LIIKKKIFVNIGILKDKSNEYFTEISYYKG-------NRKKIIESNQRLIISVSKNYRNKGLPFSDLLQEGNIGLIKSIERFDYRKGYKFSTYSTWWI 287
+                  444444433322223344555555554444.......56677877788889999******9************************************* PP
+
+    rpoS_prot 174 kqymllakkkkryfivysgevkeykkekllrvdsleskdiglddkkgvmevigdkvkvekvirkerkllkirri 247
+                  +q +  +    + +i    +v  ++ e l +++ l+     +++k    e i  k+++   + k +k+  i +i
+  VFRANEDI_46 288 RQSITRSIADSSRLI----RVPVHMTEILSKINNLKKDYFIVNNKYPSTEYIQHKLNIS--LDKIKKVTAISKI 355
+                  **9988877777777....5667788889999999988888999999999999998885..5566666666655 PP
+
+  == domain 3  score: 27.1 bits;  conditional E-value: 1.2e-10
+    rpoS_prot 253 eldereklilierlkikkkkkltlfelgkilglskervrqiekkviliirdk 304
+                   l+ re  il  r+++  ++ +tl e+gk++g+++er+rqie++++  ir+ 
+  VFRANEDI_46 402 FLNIRESTILKMRFGLYGNRSMTLEEIGKVFGVTRERIRQIENNSLNKIRNS 453
+                  4899****************************************99988875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (313 nodes)
+Target sequences:                        144  (38234 residues searched)
+Passed MSV filter:                        42  (0.291667); expected 2.9 (0.02)
+Passed bias filter:                        3  (0.0208333); expected 2.9 (0.02)
+Passed Vit filter:                         1  (0.00694444); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00694444); expected 0.0 (1e-05)
+Initial search space (Z):                144  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2015.05
+//
+[ok]

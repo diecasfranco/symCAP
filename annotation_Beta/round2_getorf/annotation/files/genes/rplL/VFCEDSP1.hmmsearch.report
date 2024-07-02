@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplL_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFCEDSP1/VFCEDSP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rplL/rplL_VFCEDSP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplL_prot  [M=115]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    7.2e-24   81.9  27.0    8.2e-13   46.2  13.1    2.0  2  VFCEDSP1_62  [2711 - 3118] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCEDSP1_62  [2711 - 3118] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.0   9.2   2.2e-14     7e-11       1      47 [.       1      47 [.       1      52 [. 0.91
+   2 !   46.2  13.1   2.5e-16   8.2e-13      28     115 .]      47     134 ..      43     134 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 40.0 bits;  conditional E-value: 2.2e-14
+    rplL_prot  1 MkvkkifkeickLnlleileLikklekkFnikklekekkkkkkkekk 47
+                 Mkvk+if++ickLnl+ei++Li+++++kFn+ kl+++k+k+  ke+k
+  VFCEDSP1_62  1 MKVKEIFNDICKLNLMEIMSLIELIKEKFNLGKLKEKKEKEGMKENK 47
+                 *********************************99999888777765 PP
+
+  == domain 2  score: 46.2 bits;  conditional E-value: 2.5e-16
+    rplL_prot  28 kFnikklekekkkkkkkekkkfkiklkeigenkisvIklikeitnldLlesKkivdklpklikkniekkeakeikkkfeklgakveik 115
+                  k n ++  +++k+ kk++   +ki+l +i+ +ki +Ik+++  +++dL ++K++++klpk++++++++++++ +kk +e +++++eik
+  VFCEDSP1_62  47 KGNKEEGLDNEKSIKKDNMVLKKIVLMKINGSKIGLIKFLRSYLKIDLRKAKELTEKLPKVLINKQKDEQISLFKKGLEGIDCEIEIK 134
+                  44555555666666777778899**************************************************************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (115 nodes)
+Target sequences:                       3236  (86217 residues searched)
+Passed MSV filter:                        55  (0.0169963); expected 64.7 (0.02)
+Passed bias filter:                       15  (0.00463535); expected 64.7 (0.02)
+Passed Vit filter:                         2  (0.000618047); expected 3.2 (0.001)
+Passed Fwd filter:                         1  (0.000309023); expected 0.0 (1e-05)
+Initial search space (Z):               3236  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3387.89
+//
+[ok]

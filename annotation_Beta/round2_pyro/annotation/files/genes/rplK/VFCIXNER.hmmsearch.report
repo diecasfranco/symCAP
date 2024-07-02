@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplK_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFCIXNER/VFCIXNER_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/rplK/rplK_VFCIXNER.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplK_prot  [M=130]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.3e-46  148.6  12.7    8.3e-46  148.4  12.7    1.0  1  VFCIXNER_2  [1270 - 1680]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCIXNER_2  [1270 - 1680]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  148.4  12.7   5.4e-48   8.3e-46       3     129 ..       2     133 ..       1     134 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 148.4 bits;  conditional E-value: 5.4e-48
+   rplK_prot   3 iikliikagkakpkspigsiLGqkgiNikkFckkfnkltkklkkgaeipvlikikkkkkfkiiiksptvsflikkllkikkgkk.....kkinkeilkk 96 
+                  +kliika+ a+pk+pigs+LGqkgiN+++Fckkfn+lt++++kga+ip+l++i+k+k+f+i+i+spt+s+l+k++l+i kg+k     ++++k+il+k
+  VFCIXNER_2   2 FVKLIIKAQLASPKPPIGSMLGQKGINVPDFCKKFNNLTTNFEKGALIPTLVYIEKDKTFTIKINSPTISYLFKTILNIPKGSKdgsviGYFDKNILNK 100
+                 59*****************************************************************************9986533222688******* PP
+
+   rplK_prot  97 iykikkkdlNtlnkkkilkiIlGtakSmgikyk 129
+                 i+kikk d+N++ kk+i+k+I+G+akS+g+ yk
+  VFCIXNER_2 101 ILKIKKPDINAFYKKSIKKVIIGSAKSIGLIYK 133
+                 *****************************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (130 nodes)
+Target sequences:                        154  (42289 residues searched)
+Passed MSV filter:                       129  (0.837662); expected 3.1 (0.02)
+Passed bias filter:                        5  (0.0324675); expected 3.1 (0.02)
+Passed Vit filter:                         5  (0.0324675); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00649351); expected 0.0 (1e-05)
+Initial search space (Z):                154  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2608.03
+//
+[ok]

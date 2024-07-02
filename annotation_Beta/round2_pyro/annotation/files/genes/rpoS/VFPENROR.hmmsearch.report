@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpoS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFPENROR/VFPENROR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/rpoS/rpoS_VFPENROR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpoS_prot  [M=313]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.7e-12   40.3  49.9    1.7e-09   30.5  18.1    2.6  2  VFPENROR_55  [48395 - 49636]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPENROR_55  [48395 - 49636]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0  26.3   2.2e-06   0.00035      30     216 ..      95     287 ..      77     308 .. 0.66
+   2 !   30.5  18.1   1.1e-11   1.7e-09     213     309 ..     316     410 ..     289     412 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 2.2e-06
+    rpoS_prot  30 ineliekmklkvigkerkksrkkievvdkskenglrkmerkvkgilrinkdkl..rkeyignyik.rnkfikev.kei.kglylrylerkermvkesk 122
+                  i +li k    ++     k +k ++ ++k   n  +   +k+  il  + +kl  + ++i + ++ + k ik+  k i k   l+ + rk +m+    
+  VFPENROR_55  95 ISKLIIKDLYSILIFFYEKIKKIEKTLNKKYLNIKKCNIKKIYDILDYEDKKLflKINFIESILNtKSKNIKKSyKIIkKNKSLNEISRK-KMIDHNF 191
+                  445555444444443333444444445555455444445677777777666642256777766532445554430334223445555555.6888777 PP
+
+    rpoS_prot 123 yivywvikvlrirreelkeliqegvlgiyrafyrfnneigcrfttycsywvkqymllakkkkryfivys.gevkeykk.ekllrvdsleskdigld 216
+                   +v    k +  +   + +l+qeg lg+ +a+ +fn +   +f+ty ++w++q +  a   ++  i      v++  k +k+ + d ++  di l+
+  VFPENROR_55 192 RLVISISKKYSNKGLSFSDLVQEGNLGLIKAINKFNYKKKNKFSTYATWWIRQSITRAISDQSRTIRIPvHMVENLNKiNKICKEDNVNIEDINLK 287
+                  7777888999999999**************************************999887777766554145666544488889999999999875 PP
+
+  == domain 2  score: 30.5 bits;  conditional E-value: 1.1e-11
+    rpoS_prot 213 iglddkkgvmevigdkvkvekvirkerkllkirriikwikeldereklilierlkikkkkkltlfelgkilglskervrqiekkviliirdklkeik 309
+                  i  +d+  + ++i dk   +++i  e k  k   + k +k l  re  il  r++i +kk +tl  +gk++g+++ervrqie+ +i  i++k k ik
+  VFPENROR_55 316 IKENDNTNLYDIIEDKK--NDFIEEEVKKEKRIIVKKLLKSLSYRESKILKLRFGIENKKCMTLERIGKLFGITRERVRQIENVAIKKIKKKKKIIK 410
+                  4457889999*****85..57887777665544566899**************************************************99988776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (313 nodes)
+Target sequences:                        158  (41133 residues searched)
+Passed MSV filter:                        80  (0.506329); expected 3.2 (0.02)
+Passed bias filter:                        2  (0.0126582); expected 3.2 (0.02)
+Passed Vit filter:                         1  (0.00632911); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00632911); expected 0.0 (1e-05)
+Initial search space (Z):                158  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2058.17
+//
+[ok]

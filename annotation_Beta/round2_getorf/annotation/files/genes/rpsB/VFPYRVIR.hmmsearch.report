@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFPYRVIR/VFPYRVIR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rpsB/rpsB_VFPYRVIR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsB_prot  [M=339]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.4e-27   95.3  97.2    1.4e-27   95.3  97.2    1.4  2  VFPYRVIR_4570  [77235 - 76147] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPYRVIR_4570  [77235 - 76147] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -5.7   2.9         1   6.7e+03     170     182 ..       2      14 ..       1      16 [. 0.75
+   2 !   95.3  97.2   2.1e-31   1.4e-27       1     338 [.      27     362 ..      27     363 .] 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -5.7 bits;  conditional E-value: 1
+      rpsB_prot 170 ksiifflkqiyil 182
+                    k i fflk i+++
+  VFPYRVIR_4570   2 KLISFFLKTIILF 14 
+                    6688999988876 PP
+
+  == domain 2  score: 95.3 bits;  conditional E-value: 2.1e-31
+      rpsB_prot   1 MnkilkkilkkkinighkiklinpllkkyikkkykkiniikkkkilkkikklffflkkflkkkkniLfistkknhkkiikkffkkinffflnkwkg 96 
+                    M k ++ +lk+k+n+   + + ++++k  i +++++i+++k  +i++k+kk++f+l k + +kk+ L+i++kk+++  +kk+f+ + +   +++ +
+  VFPYRVIR_4570  27 MSKGTNFFLKNKCNLIGTSDF-YKVNKDLIISNKNGIFFLKHDNIISKFKKVLFILRKSILNKKKTLIICKKKKVNF-FKKKFRGKYIRVCKNFFN 120
+                    677778899****97555555.557788888999************************************9998764.344444443444455556 PP
+
+      rpsB_prot  97 GtiTNfkeikknkkkkinklkklPdiifiidpkknksilkEskkkkiktiilsdsnynyknvdffIpinddseksiifflkqiyillKkikikn.l 191
+                    G+i N       k +k+n +++++ +  + d      +++E++k+kik i+ls +n+ + + d+ + +n++ + si+f+ +q++++ Kk+  +  +
+  VFPYRVIR_4570 121 GFISN-------KIRKYNGVENIISFGKVSD-----YVFNEISKSKIKGILLSIDNSLKSKPDIHLLVNTNIKSSINFVSNQMVNIEKKNSYNYpF 204
+                    66655.......4444555544443333344.....3578**************************************************986548 PP
+
+      rpsB_prot 192 yknkniYff.kkkkkkviliiKlktksdlfikkkYfkYkikkiikkl.kkkkkn...ikkilkklsnfYnekikilgfkkikkknlf..yynhknk 280
+                    +k+kn+Y+f kkk+ k i+ii lk+ +dlfi+kkYf+ ++kki + +  +kk n   ik+++kk+++fYnek+ki g+k i+ + +f  +y h+n+
+  VFPYRVIR_4570 205 FKKKNMYYFcKKKSYKKIVIIVLKIRQDLFIHKKYFSLTMKKITNSFfLRKKGNicfIKNKMKKMCQFYNEKMKIVGIKSINCRLNFinFYLHNNR 300
+                    9****998834566799***************************975234443423379**********************976544338999999 PP
+
+      rpsB_prot 281 ylclkk.kkkknnilllhiiani....knilknefyknfikfknksikdyikkkkikikiyli 338
+                     l+++   k+k ++++++ii n+     +i kn f ++fi +  k+i + ik++   ik +++
+  VFPYRVIR_4570 301 KLSFSIyRKEKDKEIVKKIIMNLisleDKIGKNFFNEEFIFNPSKTIGNIIKNS-SIIKTFFV 362
+                    998875134455566666666651111567888888899999999999877655.55676665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (339 nodes)
+Target sequences:                       6706  (191271 residues searched)
+Passed MSV filter:                      1551  (0.231285); expected 134.1 (0.02)
+Passed bias filter:                      173  (0.0257978); expected 134.1 (0.02)
+Passed Vit filter:                        32  (0.00477185); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.00014912); expected 0.1 (1e-05)
+Initial search space (Z):               6706  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 8509.96
+//
+[ok]

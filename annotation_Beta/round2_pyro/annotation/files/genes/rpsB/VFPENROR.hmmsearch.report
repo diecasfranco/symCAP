@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFPENROR/VFPENROR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/rpsB/rpsB_VFPENROR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsB_prot  [M=339]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    9.1e-22   70.8  85.3    1.3e-13   44.0  44.1    2.1  2  VFPENROR_96  [84091 - 83414] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPENROR_96  [84091 - 83414] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.0  44.1     8e-16   1.3e-13       1     115 [.       1     116 [.       1     128 [. 0.93
+   2 !   28.0  39.7   6.1e-11   9.6e-09      85     196 ..     117     223 ..     113     225 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 44.0 bits;  conditional E-value: 8e-16
+    rpsB_prot   1 MnkilkkilkkkinighkiklinpllkkyikkkykkiniikkkkilkkikklffflkkflkkkkniLfistkknhkkiikkffkkinffflnkwkgGt 98 
+                  M+k+lk ++k+ i+ g   k+i+ l+k +i+kk+ k ++i++kk++ + +k +++l kf +kkkniL+is++k +kk+i+k++k++n++  +++k+G+
+  VFPENROR_96   1 MIKYLKLFKKNFIDKGELCKEIKVLNKSFISKKKDKSYFINIKKTILNTIKSSKILLKFCIKKKNILIISDSKFIKKKIEKIIKYKNVKISENIKSGN 98 
+                  999*********************************************************************************************** PP
+
+    rpsB_prot  99 iTNfkei.kknkkkkink 115
+                  +TNf+ + ++nkk+ki k
+  VFPENROR_96  99 FTNFSSLlRENKKHKILK 116
+                  ****98626788888865 PP
+
+  == domain 2  score: 28.0 bits;  conditional E-value: 6.1e-11
+    rpsB_prot  85 kinffflnkwkgGtiTNfkeikknkkkkinklkklPdiifiidpkknk.silkEskkkkiktiilsdsnynyknvdffIpinddseksiifflkqiyi 181
+                  ki   f +k k+ ++  +++i++n+k+k +++   P+++f + +k++k +++kE+kk++ik+i++ + + n+k +d++I+ n + +k+i+f+l+ i  
+  VFPENROR_96 117 KIL--FKSKKKKINL--YNRIRNNIKNKPINIFDSPKLVFDFRIKNKKnIFYKECKKLNIKIISFLCLKDNNKYIDIPIYFNYKIIKNIKFILELIKA 210
+                  443..3344333223..579999********************988772568********************************************** PP
+
+    rpsB_prot 182 llKkikiknlyknkn 196
+                  ++Kk +  ++ykn++
+  VFPENROR_96 211 VFKKYE--KIYKNNK 223
+                  ***985..7777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (339 nodes)
+Target sequences:                        158  (41133 residues searched)
+Passed MSV filter:                       153  (0.968354); expected 3.2 (0.02)
+Passed bias filter:                       48  (0.303797); expected 3.2 (0.02)
+Passed Vit filter:                        46  (0.291139); expected 0.2 (0.001)
+Passed Fwd filter:                         1  (0.00632911); expected 0.0 (1e-05)
+Initial search space (Z):                158  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 1043.31
+//
+[ok]

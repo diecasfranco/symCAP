@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpoA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFTETMAC/VFTETMAC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rpoA/rpoA_VFTETMAC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpoA_prot  [M=282]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.2e-31  108.4  35.5    1.4e-31  108.1  35.5    1.0  1  VFTETMAC_2328  [99059 - 99712] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETMAC_2328  [99059 - 99712] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  108.1  35.5   2.6e-35   1.4e-31       8     208 ..      16     216 ..      11     218 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 108.1 bits;  conditional E-value: 2.6e-35
+      rpoA_prot   8 ikklnkekikiklrylkkklieeilnilrriifstskkkliekininnkkeEFsyidgieeDileiilnikkirLklkkckkiklkiskkgrkflk 103
+                    i kl+k+k++i l+ ++k+l+  ++n lr+i+fs    + i +  i+  k+ + yidgi eD+leii+nikki + + +c+ki + i kkg++++ 
+  VFTETMAC_2328  16 IIKLSKNKVNIELGNISKNLGIVVANFLRKILFSL-GGYCIYYLRIKGLKHQYNYIDGIVEDVLEIIVNIKKIDFFIGNCEKIFISIYKKGPCIIS 110
+                    5689*****************************86.689********************************************************* PP
+
+      rpoA_prot 104 akdlqirkfckilNkkkiiakikkkkklnitlkIgkkikkkeinlnkkneikiksttnpikkiafkikkkks..nlylkintnktispiklfkksi 197
+                    a+d+++++f   +   + i +i+++  +ni + I k +++ +     kn+i i+   +p+++i ++ikk+k    +++ i t + i+p++++   +
+  VFTETMAC_2328 111 ANDFKVKNFFIPF-FDNYICEITSNLSINIEIGIKKGFGYFDKSEYIKNKIFINNCFSPVRNIKYSIKKNKFfeSIFFTIITKRSINPLNIYYYCL 205
+                    ********96444.455799*************************************************9953379******************** PP
+
+      rpoA_prot 198 kkllkninftt 208
+                    k ll ++nf++
+  VFTETMAC_2328 206 KLLLDQFNFLN 216
+                    ********985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (282 nodes)
+Target sequences:                       5405  (148947 residues searched)
+Passed MSV filter:                       812  (0.150231); expected 108.1 (0.02)
+Passed bias filter:                       61  (0.0112858); expected 108.1 (0.02)
+Passed Vit filter:                        16  (0.00296022); expected 5.4 (0.001)
+Passed Fwd filter:                         1  (0.000185014); expected 0.1 (1e-05)
+Initial search space (Z):               5405  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 4113.47
+//
+[ok]

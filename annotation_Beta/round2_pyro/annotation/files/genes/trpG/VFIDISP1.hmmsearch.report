@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/trpG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFIDISP1/VFIDISP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/trpG/trpG_VFIDISP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trpG_prot  [M=186]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    4.8e-45  147.0  22.2    5.6e-45  146.9  22.2    1.0  1  VFIDISP1_35  [33770 - 33213] (REVERSE SENSE)
+    5.7e-13   42.5   6.6    5.7e-13   42.5   6.6    2.8  3  VFIDISP1_55  [51219 - 52280]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFIDISP1_35  [33770 - 33213] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  146.9  22.2   7.6e-47   5.6e-45       1     181 [.       1     178 [.       1     184 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 146.9 bits;  conditional E-value: 7.6e-47
+    trpG_prot   1 millldnydsftynvyelliilkfkvkvlkkikkifklsdfkliciGPGtgsPenykvllfklskvylfiPiiGiclGhqilGklfklkikkakkivh 98 
+                  mi l++n dsftyn+ e++i    +vk+ +  ++  +++  ++ic+  G g+    k+ +  l+++y+   iiGiclGhqil  +f++k+k +k+i+h
+  VFIDISP1_35   1 MISLIENLDSFTYNIKEFFIK-VLNVKIFNCFNSK-NVN-SNIICLSSGGGQIYDSKFSISFLNNNYKNKKIIGICLGHQILSYFFGCKMKISKNILH 95 
+                  999**************9976.4799***999875.554.578******************************************************* PP
+
+    trpG_prot  99 Gllekiv.vkndvlsigiPieievvrynslvvkadsralikissvkfkevmilkhkvlPiiGiqfhPdsflcfyGkkiiknfll 181
+                  G+  k+   k++v+ + iP  ++++ryns+++ ++++  i i  +   evm l+hk +Pi GiqfhP+s+ + +Gk++ikn+l 
+  VFIDISP1_35  96 GKTSKMFfYKKNVFQNFIPLYSYFCRYNSITILINNNFSI-IMKNFDNEVMFLEHKFYPIYGIQFHPESINSNFGKRLIKNVLF 178
+                  **998752699*********************99988765.66777889********************************975 PP
+
+>> VFIDISP1_55  [51219 - 52280]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.4   0.1      0.97        70     130     153 ..       4      28 ..       2      32 .. 0.57
+   2 ?   -1.9   5.8      0.32        24      14      81 ..     122     196 ..     111     205 .. 0.58
+   3 !   42.5   6.6   7.8e-15   5.7e-13      18     123 ..     208     307 ..     203     336 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -3.4 bits;  conditional E-value: 0.97
+    trpG_prot 130 kadsralikiss.vkfkevmilkhk 153
+                  ++++++li +s    fk   ilk+k
+  VFIDISP1_55   4 NQKKNCLILLSNgKSFKANSILKKK 28 
+                  5566666666652346666666655 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.32
+    trpG_prot  14 nvyelliilk..fkvkvlkkikkifkl.sdfklic.iGPGtgsPenykvllfklskvylf...iPiiGiclGhqi 81 
+                  n+ +++ +lk  +++ + +kikki+ l ++fk++  +     + eny++  f l+k+  f   i ii + l  +i
+  VFIDISP1_55 122 NLVKFVRLLKnkYSIIIHNKIKKIKFLcKNFKYLKyVSYYNFFSENYNYSNFFLKKNNFFlkkIFIINLGLKNNI 196
+                  555555555411456667888887654256776641455566778888888888887665111444444444555 PP
+
+  == domain 3  score: 42.5 bits;  conditional E-value: 7.8e-15
+    trpG_prot  18 lliilkfkvkvlkkikkifklsdfkliciGPGtgsPenykvllfklskvylfiPiiGiclGhqilGklfklkikkakkivhGllekivvkndv.lsig 114
+                  +++ +kfk+  +kki+ +        i i  G g P+ y+ l+ k+sk+    P++Gic+Ghqi+    + kikk ++  hG+ + ++ +n++ +s +
+  VFIDISP1_55 208 IVSNYKFKISYIKKINPDG-------ILISNGPGDPRIYPNLVKKISKITNLFPLLGICMGHQIICISKNSKIKKMQFGQHGINHPVKYNNNFyISSQ 298
+                  6667788887777776653.......344555568****************************************************99998514444 PP
+
+    trpG_prot 115 iPieievvr 123
+                       +v++
+  VFIDISP1_55 299 NHNYCSVIK 307
+                  444455554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (186 nodes)
+Target sequences:                        146  (36943 residues searched)
+Passed MSV filter:                        66  (0.452055); expected 2.9 (0.02)
+Passed bias filter:                        3  (0.0205479); expected 2.9 (0.02)
+Passed Vit filter:                         2  (0.0136986); expected 0.1 (0.001)
+Passed Fwd filter:                         2  (0.0136986); expected 0.0 (1e-05)
+Initial search space (Z):                146  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1684.15
+//
+[ok]

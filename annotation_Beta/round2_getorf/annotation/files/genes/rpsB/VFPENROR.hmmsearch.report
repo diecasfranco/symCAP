@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpsB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFPENROR/VFPENROR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rpsB/rpsB_VFPENROR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpsB_prot  [M=339]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.7e-20   70.3  85.7    7.3e-12   43.7  44.5    2.1  2  VFPENROR_4729  [84103 - 83417] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPENROR_4729  [84103 - 83417] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.7  44.5     1e-15   7.3e-12       1     115 [.       5     120 ..       5     132 .. 0.93
+   2 !   27.6  40.1   8.2e-11   5.8e-07      85     196 ..     121     227 ..     117     229 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 43.7 bits;  conditional E-value: 1e-15
+      rpsB_prot   1 MnkilkkilkkkinighkiklinpllkkyikkkykkiniikkkkilkkikklffflkkflkkkkniLfistkknhkkiikkffkkinffflnkwkg 96 
+                    M+k+lk ++k+ i+ g   k+i+ l+k +i+kk+ k ++i++kk++ + +k +++l kf +kkkniL+is++k +kk+i+k++k++n++  +++k+
+  VFPENROR_4729   5 MIKYLKLFKKNFIDKGELCKEIKVLNKSFISKKKDKSYFINIKKTILNTIKSSKILLKFCIKKKNILIISDSKFIKKKIEKIIKYKNVKISENIKS 100
+                    999********************************************************************************************* PP
+
+      rpsB_prot  97 GtiTNfkei.kknkkkkink 115
+                    G++TNf+ + ++nkk+ki k
+  VFPENROR_4729 101 GNFTNFSSLlRENKKHKILK 120
+                    ******98626788888865 PP
+
+  == domain 2  score: 27.6 bits;  conditional E-value: 8.2e-11
+      rpsB_prot  85 kinffflnkwkgGtiTNfkeikknkkkkinklkklPdiifiidpkknk.silkEskkkkiktiilsdsnynyknvdffIpinddseksiifflkqi 179
+                    ki   f +k k+ ++  +++i++n+k+k +++   P+++f + +k++k +++kE+kk++ik+i++ + + n+k +d++I+ n + +k+i+f+l+ i
+  VFPENROR_4729 121 KIL--FKSKKKKINL--YNRIRNNIKNKPINIFDSPKLVFDFRIKNKKnIFYKECKKLNIKIISFLCLKDNNKYIDIPIYFNYKIIKNIKFILELI 212
+                    443..3344333223..579999********************988772568******************************************** PP
+
+      rpsB_prot 180 yillKkikiknlyknkn 196
+                      ++Kk +  ++ykn++
+  VFPENROR_4729 213 KAVFKKYE--KIYKNNK 227
+                    *****985..7777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (339 nodes)
+Target sequences:                       7046  (191592 residues searched)
+Passed MSV filter:                      1900  (0.269657); expected 140.9 (0.02)
+Passed bias filter:                      200  (0.0283849); expected 140.9 (0.02)
+Passed Vit filter:                        55  (0.00780585); expected 7.0 (0.001)
+Passed Fwd filter:                         1  (0.000141924); expected 0.1 (1e-05)
+Initial search space (Z):               7046  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 6439.47
+//
+[ok]

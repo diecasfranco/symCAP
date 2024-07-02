@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/def_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFPINALT/VFPINALT_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/def/def_VFPINALT.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       def_prot  [M=140]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    3.2e-53  172.4  14.6    3.6e-53  172.2  14.6    1.0  1  VFPINALT_13  [13342 - 13791]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPINALT_13  [13342 - 13791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  172.2  14.6   2.7e-55   3.6e-53       1     138 [.       1     138 [.       1     140 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 172.2 bits;  conditional E-value: 2.7e-55
+     def_prot   1 MillypnkiLkkkskkikkkknilklikklkkillnkkgiaiaaiQigirkrifilklkkkillfinpkilwkSkekiiskEgCLSiknfyikikRsk 98 
+                  M+++ypnkiLkkks++++k+++++++i++ ++il+ +++i+i+ +Q+g++krif +k+kkkil+finp i+wkS+e  ++ EgC+Si++fy+k++Rs+
+  VFPINALT_13   1 MLIIYPNKILKKKSSYLRKNDSFNNFINEANDILKLNTNIGISGVQLGFKKRIFAIKYKKKILFFINPEIIWKSNESNFYSEGCISIPDFYTKKNRSN 98 
+                  99************************************************************************************************ PP
+
+     def_prot  99 yiiikvenlnkkkkkiflknflsiciQHEidHlngilind 138
+                  +i+ik++nl +kkk++f kn++s+ciQHEidHlng+lind
+  VFPINALT_13  99 FIKIKAFNLLFKKKIFFAKNLYSACIQHEIDHLNGKLIND 138
+                  **************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (140 nodes)
+Target sequences:                        136  (35230 residues searched)
+Passed MSV filter:                       103  (0.757353); expected 2.7 (0.02)
+Passed bias filter:                        2  (0.0147059); expected 2.7 (0.02)
+Passed Vit filter:                         2  (0.0147059); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00735294); expected 0.0 (1e-05)
+Initial search space (Z):                136  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 3620.25
+//
+[ok]

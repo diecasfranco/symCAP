@@ -1,0 +1,48 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFRANEDI/VFRANEDI_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rpmA/rpmA_VFRANEDI.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpmA_prot  [M=80]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      2e-36  122.6   9.7    2.2e-36  122.5   9.7    1.0  1  VFRANEDI_3609  [106245 - 106006] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFRANEDI_3609  [106245 - 106006] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  122.5   9.7   3.3e-40   2.2e-36       1      79 [.       3      79 ..       3      80 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 122.5 bits;  conditional E-value: 3.3e-40
+      rpmA_prot  1 mAkKKaagslknGRdskskrLGiKkfsgelvkkGniiirqrGtkfksglntkigkdytiyslkkGkvlfkkkkkkivnv 79
+                   mAkKKa+gs++nGRds+skrLGiKk +g+ v+ Gnii+rq+Gtkfk+g+ntkigkd+tiys+kkGkvlf k++  iv+v
+  VFRANEDI_3609  3 MAKKKATGSVRNGRDSISKRLGIKKGNGSSVTGGNIIVRQKGTKFKCGTNTKIGKDHTIYSIKKGKVLFLKNR--IVCV 79
+                   9********************************************************************9875..4444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (80 nodes)
+Target sequences:                       6526  (179288 residues searched)
+Passed MSV filter:                        52  (0.00796813); expected 130.5 (0.02)
+Passed bias filter:                       26  (0.00398406); expected 130.5 (0.02)
+Passed Vit filter:                         1  (0.000153233); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000153233); expected 0.1 (1e-05)
+Initial search space (Z):               6526  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 11715.01
+//
+[ok]

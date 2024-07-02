@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFORGSP/VFORGSP_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rplT/rplT_VFORGSP.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplT_prot  [M=118]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    7.2e-37  124.6  22.7    8.5e-37  124.4  22.7    1.0  1  VFORGSP_4580  [70241 - 69900] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFORGSP_4580  [70241 - 69900] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  124.4  22.7   1.3e-40   8.5e-37       1     109 [.       2     110 ..       2     113 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 124.4 bits;  conditional E-value: 1.3e-40
+     rplT_prot   1 MsRvkssvvskkkrkkllkktkgFigRRknvyriakqAyiksllysyrDrrkkkrilrrkwikkinfflke..fnikYskfikllkkknillnrkil 95 
+                   M+R+k++ v k+++kk+l+ktkgFigRRk++yriakqAyiksl+ys+rDrr++++ilrr++i+kin+fl++   ni+Ysk+i +++kk+ +lnrkil
+  VFORGSP_4580   2 MTRAKRTNV-KSRHKKILNKTKGFIGRRKSCYRIAKQAYIKSLIYSRRDRRRRHSILRRNNITKINYFLRRkfQNITYSKLIFNISKKT-ILNRKIL 96 
+                   9****9875.9**********************************************************863269*********98765.69***** PP
+
+     rplT_prot  96 yelvkekkleilnl 109
+                   +e+++++++e ++ 
+  VFORGSP_4580  97 CEIINKDYAEAFYK 110
+                   ******99998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (118 nodes)
+Target sequences:                       6573  (178829 residues searched)
+Passed MSV filter:                       336  (0.0511182); expected 131.5 (0.02)
+Passed bias filter:                       56  (0.0085197); expected 131.5 (0.02)
+Passed Vit filter:                         2  (0.000304275); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000152138); expected 0.1 (1e-05)
+Initial search space (Z):               6573  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10863.39
+//
+[ok]

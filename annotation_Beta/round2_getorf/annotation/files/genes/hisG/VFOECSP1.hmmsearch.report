@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/hisG_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFOECSP1/VFOECSP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/hisG/hisG_VFOECSP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       hisG_prot  [M=192]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.1e-27   94.0  32.7    3.7e-27   93.8  32.7    1.0  1  VFOECSP1_1466  [60169 - 60759] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFOECSP1_1466  [60169 - 60759] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   93.8  32.7     6e-31   3.7e-27       6     182 ..       8     185 ..       4     196 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 93.8 bits;  conditional E-value: 6e-31
+      hisG_prot   6 vksGrilelllkky..kskllekn..srkliltnnknlikfilikekdldfyfknkkidfaiiGldfyleknl.kfkyikldlfkCklsliskkne 96 
+                    + +Grile   kky   +k l++n  s+k+i+ +n n + ++ ik  d++++++++     iiG d y e  + kf y  l++fkC+lsli+kk  
+  VFOECSP1_1466   8 ILKGRILEY-SKKYliSNKFLKINfkSKKIIIDTNLNFLNVLFIKYLDIKYFYSKNPTAIGIIGKDIYYEYYInKFLYFDLNFFKCRLSLITKKTA 102
+                    789****96.566523356666664489******************************************99878*****************9875 PP
+
+      hisG_prot  97 knkkklictkytkiskrllksknkelvkinGsvesclilklcdyiidivdtGktlkanklkkikil.ksiysvllfkklkkniklkk 182
+                       ++li+tky +i k+    +n +++ i Gs e+ l lk ++yi+div++G tlk n+l ++kil  +i ++l+f k+  n+k+  
+  VFOECSP1_1466 103 -IPNNLIATKYINIFKS---RFNNKVIYISGSTEAPLLLKYTEYILDIVNSGVTLKINNLIEKKILiNNITPILIFYKNNINYKIII 185
+                    .6789********9765...56778999*********************************99998357*********999999854 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (192 nodes)
+Target sequences:                       6169  (159389 residues searched)
+Passed MSV filter:                       366  (0.0593289); expected 123.4 (0.02)
+Passed bias filter:                       41  (0.00664613); expected 123.4 (0.02)
+Passed Vit filter:                         1  (0.000162101); expected 6.2 (0.001)
+Passed Fwd filter:                         1  (0.000162101); expected 0.1 (1e-05)
+Initial search space (Z):               6169  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 15259.00
+//
+[ok]

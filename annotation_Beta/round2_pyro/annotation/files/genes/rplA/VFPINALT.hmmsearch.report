@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFPINALT/VFPINALT_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/rplA/rplA_VFPINALT.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplA_prot  [M=198]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-21   70.2  48.9    2.1e-21   70.0  48.9    1.0  1  VFPINALT_3  [1652 - 2188]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPINALT_3  [1652 - 2188]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.0  48.9   1.5e-23   2.1e-21       4     197 ..       2     175 ..       1     176 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 70.0 bits;  conditional E-value: 1.5e-23
+   rplA_prot   4 klikiikkllnkkfkfnetinisikfktkkkinlkkiiilpnkikrkkkilfv..nklnlknikffnkle.iknikkikkykilftnnesykkllkkkk 99 
+                 ++++i+++l+    +f++t+ni+++f  k+ + lk i++++++i rk++++f+  +k+nlk + ++++++ ++n +k+kk  ++f++ +s+++l+k   
+  VFPINALT_3   2 NIKRIYDELFG---DFCKTVNIVVNF--KQDVSLKVIVNYKFPILRKSIFIFFlkKKINLKGVYSYKEINsVYNAYKNKK-VFVFSDIFSLSYLKK--- 91 
+                 67899999997...79*****98876..68899**************999887334689********9854899999987.599999999999865... PP
+
+   rplA_prot 100 ikkylkkkkillsknfgnvsdnfkniknikkgklkklnidkkkiinivigkikfkykklisNlnflikkilkfLkknnikikkifikttqsksfklsk 197
+                   +++kkkki + +n++       +i+nik g+++++ ++k ++++++++ ++f++k+++ Nl++    +l ++k +n kik+++i++++sksf l++
+  VFPINALT_3  92 --SLFKKKKIQKVSNLD-------FISNIKLGHYFEFLSCK-NFLQAIVARTNFSLKEFKFNLSL----LLRNIKYLNFKIKNVYIYHSHSKSFLLDE 175
+                 ..467888887776655.......5678999******9987.69**************8887765....5678889999***************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (198 nodes)
+Target sequences:                        136  (35230 residues searched)
+Passed MSV filter:                       129  (0.948529); expected 2.7 (0.02)
+Passed bias filter:                       51  (0.375); expected 2.7 (0.02)
+Passed Vit filter:                        50  (0.367647); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00735294); expected 0.0 (1e-05)
+Initial search space (Z):                136  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1082.70
+//
+[ok]

@@ -1,0 +1,55 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/hisE_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFMEETHA/VFMEETHA_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/hisE/hisE_VFMEETHA.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       hisE_prot  [M=92]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.6e-15   54.1  18.4    5.6e-15   54.1  18.4    1.3  2  VFMEETHA_1206  [50216 - 50524] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFMEETHA_1206  [50216 - 50524] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.2   0.2      0.79   4.2e+03      72      76 ..       9      13 ..       4      18 .. 0.46
+   2 !   54.1  18.4   1.1e-18   5.6e-15       1      88 [.      19     100 ..      19     102 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -3.2 bits;  conditional E-value: 0.79
+      hisE_prot 72 eihki 76
+                    + k+
+  VFMEETHA_1206  9 IKKKV 13
+                   22232 PP
+
+  == domain 2  score: 54.1 bits;  conditional E-value: 1.1e-18
+      hisE_prot   1 mikkiyesikkslkkkkfsyikllikdkeklrrkvleeayeliketlkkplnkkrlvnefcdllfhilllieihkispklikeemanr 88 
+                    mikk+++ ikk+ kk   sy   l k+k+ ++rk++eeaye+i+e       kk+++nef dll+h l+ i    i+ k i ++++nr
+  VFMEETHA_1206  19 MIKKLFKLIKKK-KKYVLSYTIKLLKNKKLIKRKIMEEAYEFIDEKS-----KKNIINEFIDLLYHCLVFIIYNDIKIKDINKKIKNR 100
+                    9********997.667889988899*******************975.....5667*************999999*******999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (92 nodes)
+Target sequences:                       5283  (137917 residues searched)
+Passed MSV filter:                       238  (0.0450502); expected 105.7 (0.02)
+Passed bias filter:                       45  (0.00851789); expected 105.7 (0.02)
+Passed Vit filter:                         3  (0.000567859); expected 5.3 (0.001)
+Passed Fwd filter:                         1  (0.000189286); expected 0.1 (1e-05)
+Initial search space (Z):               5283  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10540.48
+//
+[ok]

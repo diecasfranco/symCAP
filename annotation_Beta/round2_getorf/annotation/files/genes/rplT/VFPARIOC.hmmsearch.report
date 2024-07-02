@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplT_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFPARIOC/VFPARIOC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rplT/rplT_VFPARIOC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplT_prot  [M=118]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.1e-37  126.4  26.7    2.4e-37  126.2  26.7    1.0  1  VFPARIOC_4579  [73610 - 73260] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPARIOC_4579  [73610 - 73260] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  126.2  26.7   3.5e-41   2.4e-37       2     108 ..       3     110 ..       2     116 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 126.2 bits;  conditional E-value: 3.5e-41
+      rplT_prot   2 sRvkssvvskkkrkkllkktkgFigRRknvyriakqAyiksllysyrDrrkkkrilrrkwikkinfflkefnikYskfikllkkknillnrkilye 97 
+                    +Rvk ++++kkk+kk+++++kgF gRRknvy+i+kqA +ksl+ysyrDr+kkk ++r+ wik+inf+l +++ikY+kf+ +lk +n++l+rk+l++
+  VFPARIOC_4579   3 TRVKFCISRKKKKKKIFNLSKGFKGRRKNVYKISKQAVLKSLIYSYRDRKKKKTNIRKIWIKTINFYLTKYKIKYNKFMFNLKYNNFILDRKLLCY 98 
+                    8*********************************************************************************************99 PP
+
+      rplT_prot  98 lvkekkl.eiln 108
+                      k++k+ +i n
+  VFPARIOC_4579  99 FLKNNKYiDIKN 110
+                    887766514444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (118 nodes)
+Target sequences:                       6724  (178081 residues searched)
+Passed MSV filter:                       618  (0.0919096); expected 134.5 (0.02)
+Passed bias filter:                       92  (0.0136823); expected 134.5 (0.02)
+Passed Vit filter:                         5  (0.000743605); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000148721); expected 0.1 (1e-05)
+Initial search space (Z):               6724  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10746.65
+//
+[ok]

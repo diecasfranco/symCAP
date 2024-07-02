@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rpoS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFCOTACU/VFCOTACU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rpoS/rpoS_VFCOTACU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rpoS_prot  [M=313]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    5.8e-12   43.9  30.6    2.4e-06   25.5   8.5    2.5  2  VFCOTACU_1214  [47151 - 48032] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCOTACU_1214  [47151 - 48032] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.2  19.5   1.4e-08   9.7e-05      79     248 ..      17     204 ..       4     216 .. 0.63
+   2 !   25.5   8.5   3.5e-10   2.4e-06     219     302 ..     198     279 ..     162     285 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 20.2 bits;  conditional E-value: 1.4e-08
+      rpoS_prot  79 kdklrkeyignyikrnkfike..vkeikglylryle...rkermvkesky.ivywvikvlrirreelkeliqegvlgiyrafyrfnneigcrftty 168
+                    k+++ k+++    k+n f k   +k++  l+++y+      ++m+ e +  +v+   k +      + +l qegv+g+ +++ +f+  +g +f+ty
+  VFCOTACU_1214  17 KKNIYKDFLL--KKKNLFFKSsyIKKLFNLFIKYISfyrLYKKMIVELNLrLVMSIAKKYSKNDVSIEDLTQEGVMGLIKSMDKFDYRMGYKFSTY 110
+                    3445566653..366777764347888888888874221357899888762556666888888999****************************** PP
+
+      rpoS_prot 169 csywvkqymllakkkkryfivysgevkey...........kkekllr.vdsleskdiglddkk..gvmevigdkvkvekvirkerkllkirrii 248
+                     ++w+kq +     +++ +i    ++++y           kk+  l     + sk i l +kk    + + g  v +++ i k+ k      ii
+  VFCOTACU_1214 111 STWWIKQSITRYIANHSRLIKIPVHINDYlikikkvildyKKKYNLEpKIKFISKKIHLSEKKikFFLSIDGSTVSINEKIVKNNKESSYEEII 204
+                    *******986544455555555555555521100000000444333211234467777776652135666677777777777776666666665 PP
+
+  == domain 2  score: 25.5 bits;  conditional E-value: 3.5e-10
+      rpoS_prot 219 kgvmevigdkvkvekvirkerkllkirriikw.ikeldereklilierlkikkkkkltlfelgkilglskervrqiekkviliir 302
+                        e+i +    e+ + ke     ++ i+k  +k +  +ek i+  r++i  +k  tl e+gk lg+++er+rqie k+i  ++
+  VFCOTACU_1214 198 SSYEEIIHNE---EECLEKETLNSELKNIVKSlLKTIPTKEKKIIKMRFGIDGNKPKTLEEIGKKLGVTRERIRQIESKAINRLK 279
+                    4445555543...778899999999999999526999******************************************997655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (313 nodes)
+Target sequences:                       6691  (179478 residues searched)
+Passed MSV filter:                       251  (0.0375131); expected 133.8 (0.02)
+Passed bias filter:                       49  (0.00732327); expected 133.8 (0.02)
+Passed Vit filter:                         5  (0.000747272); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000149454); expected 0.1 (1e-05)
+Initial search space (Z):               6691  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 10014.81
+//
+[ok]

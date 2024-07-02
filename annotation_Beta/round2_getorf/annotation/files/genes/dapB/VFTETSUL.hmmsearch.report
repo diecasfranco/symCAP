@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dapB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFTETSUL/VFTETSUL_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/dapB/dapB_VFTETSUL.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dapB_prot  [M=210]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.4e-68  228.7  58.0    1.4e-68  228.7  58.0    1.9  2  VFTETSUL_3006  [83447 - 82695] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFTETSUL_3006  [83447 - 82695] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   4.8      0.16   8.8e+02      14      41 ..       2      31 ..       1      35 [. 0.43
+   2 !  228.7  58.0   2.7e-72   1.4e-68       2     210 .]      34     247 ..      32     247 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 0.16
+      dapB_prot 14 kkiikflkkkkikiklnkk..kkkkkkikk 41
+                   kki+k  ++kk+ i+++kk  k+ +kkikk
+  VFTETSUL_3006  2 KKIYKNCRRKKYVIQTSKKlyKNINKKIKK 31
+                   455666666665555554411222233333 PP
+
+  == domain 2  score: 228.7 bits;  conditional E-value: 2.7e-72
+      dapB_prot   2 kilisgykGkigkkiikflkk.kkikikl.nkk..kkkkkkikksdiiidFsnkknllkllklclkkkkkiiiGTTgfnkkeiklikklskkipif 93 
+                    kil+sgy+Gkigkki+k +kk +kik++l nkk  k+ +k+i+k++iiidFs+kkn+lk+lk+c++k+kk+iiGTTgf+kke k+ikk++kk+pif
+  VFTETSUL_3006  34 KILLSGYTGKIGKKILKEIKKnNKIKLYLiNKKnkKNLNKYIEKTKIIIDFSTKKNSLKILKKCKNKNKKLIIGTTGFTKKEKKYIKKIAKKTPIF 129
+                    8**************9988762678988623331033467899***************************************************** PP
+
+      dapB_prot  94 issNfNleflkflkilkkskkllkkmkvkiieiHnkkKkdsPSGssilikkilkkk.kissiRigniiGkHkiifsnknnkisikHkilnrksflk 188
+                    +++N+Nl flk++ki+++s+k+lkkm+++iie+Hnk+Kkd+PSGs+++i+k lk+k k++siR g+i+GkHkiif+nk+++i ++Hk+l+ ksf+k
+  VFTETSUL_3006 130 LDYNINLCFLKYIKIIEFSNKILKKMNKYIIESHNKNKKDKPSGSYYKICKKLKEKiKYCSIRRGKILGKHKIIFFNKTDEIILEHKCLSTKSFTK 225
+                    ***************************************************9997659************************************** PP
+
+      dapB_prot 189 glikiikfikkkkkGlysikdi 210
+                    +++kii++ikkk++Gly++++i
+  VFTETSUL_3006 226 NIKKIIDYIKKKNNGLYNMESI 247
+                    ******************9976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (210 nodes)
+Target sequences:                       5341  (149480 residues searched)
+Passed MSV filter:                       681  (0.127504); expected 106.8 (0.02)
+Passed bias filter:                       72  (0.0134806); expected 106.8 (0.02)
+Passed Vit filter:                        18  (0.00337016); expected 5.3 (0.001)
+Passed Fwd filter:                         1  (0.000187231); expected 0.1 (1e-05)
+Initial search space (Z):               5341  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5516.27
+//
+[ok]

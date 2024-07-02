@@ -1,0 +1,48 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/RNAs/5s_rRNA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/genomes/VFBRI.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/rRNA/5s_rRNA/VFBRI.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5s_rRNA  [M=105]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+      5e-17   58.9  12.0  VFBRI    101925 101831 
+
+
+Annotation for each hit  (and alignments):
+>> VFBRI  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   58.9  12.0     5e-17         9       103 ..    101925    101831 ..    101935    101829 ..    119393    0.94
+
+  Alignment:
+  score: 58.9 bits
+  5s_rRNA      9 aaAgtttattggaaacAccctttatccattccGAAcAAgataGttAAacagtaatttgccgaagatag.taatatgcaAAggtAgGtttttatcag 103   
+                 a+Ag+    tggaa  Ac ctt a ccattccGAAcAAga aGttAAaca+ +   tgccga+gatag t a atgcaAA gtAgG+  tt+tcag
+    VFBRI 101925 ATAGCAATATGGAACAACACTTAA-CCATTCCGAACAAGAAAGTTAAACATATTAGTGCCGATGATAGcTTAAATGCAAAAGTAGGGAATTGTCAG 101831
+                 567888899***********9999.*******************************************9999********************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (105 nodes)
+Target sequences:                          1  (238786 residues searched)
+Residues passing SSV filter:          100668  (0.422); expected (0.02)
+Residues passing bias filter:           4316  (0.0181); expected (0.02)
+Residues passing Vit filter:             269  (0.00113); expected (0.003)
+Residues passing Fwd filter:             269  (0.00113); expected (3e-05)
+Total number of hits:                      1  (0.000398)
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 2811.44
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/rRNA/5s_rRNA/VFBRI.sto
+[ok]

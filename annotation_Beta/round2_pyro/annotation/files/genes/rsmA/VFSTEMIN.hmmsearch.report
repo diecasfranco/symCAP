@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rsmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFSTEMIN/VFSTEMIN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/rsmA/rsmA_VFSTEMIN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmA_prot  [M=204]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    4.2e-23   75.3  18.4    3.1e-22   72.5  18.4    1.9  1  VFSTEMIN_14  [14387 - 13932] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFSTEMIN_14  [14387 - 13932] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.5  18.4   2.5e-24   3.1e-22       6     132 ..       4     132 ..       1     151 [. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 72.5 bits;  conditional E-value: 2.5e-24
+    rsmA_prot   6 kvFllskkklkkiikki.iskkkiiiEigsGyGnltkfllkk.kkkilliEidnkiskfLkkkfkknvkiinknilnfnfrplkkitiigniPYsisk 101
+                  k F  ++  +kk+ k+i i+++ ++iE++ GyGn+ ++l +    k+l+iE+dn+i++ L   f++ +  i +ni+++nf  ++++ i+gniPY+is+
+  VFSTEMIN_14   4 KHFC-KTTLAKKLCKNIhILQNIKMIELAAGYGNISRYLCHItSCKMLCIELDNQIYNRLSLSFANMICHIRCNIKHINFVHFGRVCIFGNIPYYISS 100
+                  5554.55677888887735667789*************99861569***************************************************9 PP
+
+    rsmA_prot 102 kilkkllknkrnIkkqyim.lqkeylekilki 132
+                   i  ++   kr+I  q i  ++ + ++ i ++
+  VFSTEMIN_14 101 YINHIINTDKRYIVIQDIYnISTSSFKHINIK 132
+                  98777766777666554432444444444443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (204 nodes)
+Target sequences:                        125  (30438 residues searched)
+Passed MSV filter:                        43  (0.344); expected 2.5 (0.02)
+Passed bias filter:                        2  (0.016); expected 2.5 (0.02)
+Passed Vit filter:                         1  (0.008); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.008); expected 0.0 (1e-05)
+Initial search space (Z):                125  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1857.15
+//
+[ok]

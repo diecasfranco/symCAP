@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rsmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFCALBON1/VFCALBON1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rsmA/rsmA_VFCALBON1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmA_prot  [M=204]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+      1e-21   76.3  37.2      1e-21   76.3  37.2    1.5  2  VFCALBON1_5596  [15199 - 14423] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALBON1_5596  [15199 - 14423] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   76.3  37.2   1.7e-25     1e-21       3     203 ..      14     219 ..      10     222 .. 0.84
+   2 ?   -5.6   8.6         1     6e+03      83     121 ..     197     234 ..     182     253 .. 0.41
+
+  Alignments for each domain:
+  == domain 1  score: 76.3 bits;  conditional E-value: 1.7e-25
+       rsmA_prot   3 kldkvFllskkklkkiikkiiskkkiiiEigsGyGnltkfllkkkkkilliEidnkiskfLkkkfkk..nvkiinknilnfnfrplkkitiigni 95 
+                     +l++vFl++   l  + k ii+     iE+gsGyG+lt+ +l  + +++liE+d+  +  L  k++   n+ ++   i ++ f  +k+i++i++i
+  VFCALBON1_5596  14 SLSQVFLTNYSFLLLLSKIIILG-YLNIEVGSGYGQLTDIFLFSNLRYILIEKDSMLCRHLITKYIDlvNISVLSVSIFDLCFYGFKYINVISSI 107
+                     479****9988777766666665.5668*************************************964488899********************* PP
+
+       rsmA_prot  96 PYsiskkilkkllknkrnIkkqyimlqkeylekilkikaikfflykllykikkllklkkedFdPkpkvnsvfik......mvpkkisknsenfin 184
+                     PY +s  +++ +++n+     ++i++q+ey+ +++++k    f+  ++y   +++ + +  F+P+p+v s+fi       +++++  ++  +f++
+  VFCALBON1_5596 108 PYHLSGLFISFFISNHYLFSSINIIIQREYYYSLFLFKF-LGFI--YYYMFVSIIHIDRYYFYPIPNVYSIFISclrrivFYKYYCMNSCFAFLK 199
+                     *********************************998753.4444..4666678899****************75333333788889999999999 PP
+
+       rsmA_prot 185 k.sffnkkkkkkleelifll 203
+                     + sff  +++ + +e++f +
+  VFCALBON1_5596 200 YfSFFYINNNRSHYEILFYV 219
+                     74677777777788887654 PP
+
+  == domain 2  score: -5.6 bits;  conditional E-value: 1
+       rsmA_prot  83 frplkkitiigni.P.YsiskkilkkllknkrnIkkqyiml 121
+                     f  + +   i+n+ + Y+i   +++ l+ nk ++  ++i++
+  VFCALBON1_5596 197 FLKYFSFFYINNNrShYEI---LFYVLYINKLVLTYSFILI 234
+                     3333333333332121222...2223344444444444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (204 nodes)
+Target sequences:                       5973  (174896 residues searched)
+Passed MSV filter:                       754  (0.126235); expected 119.5 (0.02)
+Passed bias filter:                       53  (0.00887326); expected 119.5 (0.02)
+Passed Vit filter:                         4  (0.00066968); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.00016742); expected 0.1 (1e-05)
+Initial search space (Z):               5973  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7520.96
+//
+[ok]

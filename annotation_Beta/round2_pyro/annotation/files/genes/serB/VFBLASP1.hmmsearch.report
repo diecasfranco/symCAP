@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/serB_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFBLASP1/VFBLASP1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/serB/serB_VFBLASP1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       serB_prot  [M=210]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    2.3e-25   82.7  41.2      1e-24   80.6  41.2    1.8  1  VFBLASP1_102  [88441 - 89034]
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBLASP1_102  [88441 - 89034]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.6  41.2   6.7e-27     1e-24       1     210 []       1     187 [.       1     187 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 80.6 bits;  conditional E-value: 6.7e-27
+     serB_prot   1 mklaiFDLDkTliniDcEkllikvlykkkiiskkilkkskkfykdykkgklnikkyikyiskvinklkkkkilinffvksiikvinkkllkilkkek 97 
+                   m+ ++ DLD+T+i  DcE +++++l + k  ++ki  ++kkf+++ykk+kln ++y +++ k+  ++k  + ++n f+k +i  i kk++ i+++  
+  VFBLASP1_102   1 MRNYLMDLDETIIPFDCEYEFLNFLSDLKS-ERKIKYRNKKFFNQYKKQKLNYRNYSNFLLKIKDYFK--ERFLNNFLKNLI--IFKKVVSIINT-- 90 
+                   566789*******************98775.667777899*********************9877765..579999999875..789*****975.. PP
+
+     serB_prot  98 kkkkkiiisTSSskllskkikkllkiknlistklekkkkkytgkvlgviNigkgKvknlkkwikkkkikkkkiiFysDSinDlpLllksdkkyivNp 194
+                      ++i++sTSS  ++skki  +lkik+lis++              + Nig  K+ n+  +  k+k+ +kki+F sDS+nDlp + + + +++vNp
+  VFBLASP1_102  91 ---SNILVSTSSKFFISKKIISILKIKYLISSSN-------------IKNIGRYKIFNFILFYLKNKLLFKKIYFLSDSMNDLPSMIFFKNSIMVNP 171
+                   ...68*************************9864.............4599999*****9999999******************************* PP
+
+     serB_prot 195 dkkllkllenkkikil 210
+                   +    k+l + ki+++
+  VFBLASP1_102 172 KISEEKILSENKINFI 187
+                   *999999999999886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (210 nodes)
+Target sequences:                        148  (37213 residues searched)
+Passed MSV filter:                       132  (0.891892); expected 3.0 (0.02)
+Passed bias filter:                        8  (0.0540541); expected 3.0 (0.02)
+Passed Vit filter:                         8  (0.0540541); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00675676); expected 0.0 (1e-05)
+Initial search space (Z):                148  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1557.92
+//
+[ok]

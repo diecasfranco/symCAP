@@ -1,0 +1,53 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/RNAs/5s_rRNA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/genomes/VFHYALUT.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/rRNA/5s_rRNA/VFHYALUT.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5s_rRNA  [M=105]
+Scores for complete hits:
+    E-value  score  bias  Sequence  start    end  Description
+    ------- ------ -----  --------  -----  -----  -----------
+    6.1e-14   49.1  12.7  VFHYALUT 109448 109349 
+
+
+Annotation for each hit  (and alignments):
+>> VFHYALUT  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   49.1  12.7   6.1e-14         3       102 ..    109448    109349 ..    109450    109346 ..    126824    0.89
+
+  Alignment:
+  score: 49.1 bits
+   5s_rRNA      3 atAattaaAgtt.tattggaaacAccctttatccattccGAAcAAgataGttAAacagtaatttgccgaagatagtaatatgcaAAggtAgGttt 96    
+                  a Aat a+Ag+  t ttg aaacAc ctt a ccattccGAA AAga +GttAAa a  +   tgccgaa+atag +a + gc+AAg tAgG+  
+  VFHYALUT 109448 ACAATAATAGCAaTGTTGAAAACACACTTAA-CCATTCCGAATAAGAATGTTAAAAACATTAGTGCCGAAAATAGCTAATAGCGAAGATAGGGAA 109355
+                  5566666677651557888999******999.*************************************************************** PP
+
+   5s_rRNA     97 ttatca 102   
+                  tt+tca
+  VFHYALUT 109354 TTGTCA 109349
+                  *99987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (105 nodes)
+Target sequences:                          1  (253648 residues searched)
+Residues passing SSV filter:          102664  (0.405); expected (0.02)
+Residues passing bias filter:           3799  (0.015); expected (0.02)
+Residues passing Vit filter:             260  (0.00103); expected (0.003)
+Residues passing Fwd filter:             260  (0.00103); expected (3e-05)
+Total number of hits:                      1  (0.000394)
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 3245.83
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/rRNA/5s_rRNA/VFHYALUT.sto
+[ok]

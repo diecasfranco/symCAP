@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/dnaN_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFCIXNER/VFCIXNER_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/dnaN/dnaN_VFCIXNER.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dnaN_prot  [M=362]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    9.6e-31  100.3  82.5    1.1e-30  100.0  82.5    1.0  1  VFCIXNER_106  [100770 - 100081] (REVERSE SENSE)
+    6.4e-19   61.4  27.0    6.9e-19   61.2  27.0    1.0  1  VFCIXNER_105  [99844 - 99578] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCIXNER_106  [100770 - 100081] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.0  82.5   1.5e-32   1.1e-30       4     209 ..       7     219 ..       1     225 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 100.0 bits;  conditional E-value: 1.5e-32
+     dnaN_prot   4 ikkkeiikflkiinllkkkkk.knllikienkkiififknenekvil..ikk..kkkikkkisflieyeklkkiiktiknkeyikldlkkkkliikn 95 
+                   ++ k+i +f++i++ l++k + kn+++ i++k++ +i+k+++e++ +  ik+  k++++k+  fli+y++ +kii+tiknk +i+l+l kk++i+ +
+  VFCIXNER_106   7 FEIKDIVYFFNIFSRLNQKGDkKNIILIIKKKYFFLIMKRKKETIKSkdIKNynKNNTNKRRIFLINYQSFFKIINTIKNK-KISLYLVKKNIICLK 102
+                   7899*************997526899999999*******9999886522554113445666789***************86.7************99 PP
+
+     dnaN_prot  96 knfkf.itkikkkknkyikiikkkkklkkkikieskillkilesniillkvfinkeeginivikk.kkikifstDgfRmifvkkklkkkn..knlkf 188
+                   kn+++ +++i+++kn+ iki k+k+k+k++i+i++ ++lk++ sni +lk++++  +g+ + ikk +kiki+stD+fRm+++++++kk n  +n+kf
+  VFCIXNER_106 103 KNSIYlYINIINIKNN-IKITKQKNKYKNYISIKKTKMLKAIISNIYILKKSYKVLSGVVFHIKKnEKIKILSTDNFRMSYFSSNIKKYNikNNVKF 198
+                   9999835688777765.9********************************************987269******************9755216789* PP
+
+     dnaN_prot 189 nisknvlkflikvikkskkss 209
+                    i++nv+++l+ +i+k+k+++
+  VFCIXNER_106 199 LIKRNVIETLYLIINKKKTTK 219
+                   **************9999865 PP
+
+>> VFCIXNER_105  [99844 - 99578] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.2  27.0     9e-21   6.9e-19     279     361 ..       1      87 [.       1      88 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 61.2 bits;  conditional E-value: 9e-21
+     dnaN_prot 279 dieikkkkiiikfknsekeklkekIki....kknnkkkkikLNlkflmdFlkikkskkiilfiknkkskiilksknknlkYliMPil 361
+                   +i+++  ki ++++n+ekek++ekI +    k++n+ kki++N+++l+++lki k++ i + ++ kk++i++ksk+ ++kY++MPi+
+  VFCIXNER_105   1 MITFSPLKISVTVNNFEKEKFIEKIENnnfiKNKNNIKKICINTDYLIEPLKIIKDENILIRYNYKKNIILIKSKKPKFKYFLMPIE 87 
+                   6899999******************75222145566689***********************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (362 nodes)
+Target sequences:                        154  (42289 residues searched)
+Passed MSV filter:                       141  (0.915584); expected 3.1 (0.02)
+Passed bias filter:                       26  (0.168831); expected 3.1 (0.02)
+Passed Vit filter:                        26  (0.168831); expected 0.2 (0.001)
+Passed Fwd filter:                         2  (0.012987); expected 0.0 (1e-05)
+Initial search space (Z):                154  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1811.74
+//
+[ok]

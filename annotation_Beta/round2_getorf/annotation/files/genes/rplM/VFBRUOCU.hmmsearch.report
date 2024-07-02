@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rplM_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFBRUOCU/VFBRUOCU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rplM/rplM_VFBRUOCU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rplM_prot  [M=103]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    8.3e-12   43.9   7.4    1.4e-11   43.2   7.4    1.3  1  VFBRUOCU_5380  [16681 - 16370] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFBRUOCU_5380  [16681 - 16370] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.2   7.4   2.3e-15   1.4e-11       3      98 ..       3     101 ..       2     104 .] 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 43.2 bits;  conditional E-value: 2.3e-15
+      rplM_prot   3 iiidlknkslGRiiskiikl.inkkkkkiiiinlkklkl...kklesk.klyykhtgypGGlksikfkellkknpiklikklikgMlpkkklfkni 93 
+                    +i++l+ +s GRiis+i+   i  +  ++ i+    + +   ++++ +  +yy+htgypGGl+si ++    +  + +i+++i  Mlpk++  ++i
+  VFBRUOCU_5380   3 MIFNLSLSSYGRIISLISTYaIRLYRLNMGILRHGFITIigcNNIDINpLVYYRHTGYPGGLRSIFINRS--NICRSFINRSIRCMLPKNNIGRYI 96 
+                    5799999**********9752555666665666555555121333333147*************987653..556789****************** PP
+
+      rplM_prot  94 lskik 98 
+                     +ki+
+  VFBRUOCU_5380  97 SKKII 101
+                    ***97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (103 nodes)
+Target sequences:                       5829  (167681 residues searched)
+Passed MSV filter:                       381  (0.0653628); expected 116.6 (0.02)
+Passed bias filter:                       59  (0.0101218); expected 116.6 (0.02)
+Passed Vit filter:                         4  (0.000686224); expected 5.8 (0.001)
+Passed Fwd filter:                         1  (0.000171556); expected 0.1 (1e-05)
+Initial search space (Z):               5829  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 7430.85
+//
+[ok]

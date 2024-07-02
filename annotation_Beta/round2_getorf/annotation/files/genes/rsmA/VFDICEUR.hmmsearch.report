@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rsmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFDICEUR/VFDICEUR_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rsmA/rsmA_VFDICEUR.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmA_prot  [M=204]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.2e-57  192.9  14.0    2.2e-57  192.9  14.0    1.9  2  VFDICEUR_6283  [15136 - 14411] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFDICEUR_6283  [15136 - 14411] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  192.9  14.0   3.2e-61   2.2e-57       3     190 ..       7     199 ..       4     211 .. 0.92
+   2 !    2.0   0.9    0.0096        65     181     204 .]     209     232 ..     198     232 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 192.9 bits;  conditional E-value: 3.2e-61
+      rsmA_prot   3 kldkvFllskkklkkiikkiiskkkiiiEigsGyGnltkfllkk.kkkill.iEidnkiskfLkkkfk.knvkiinknilnfnfrplkkitiigni 95 
+                    ++d vFl++ +++++i++k++++k+++iEigsG+Gnl+ +ll + ++++++ +Ei+ +++++L+++f+ +nv +++ ++l+f+f+p++++t+++n+
+  VFDICEUR_6283   7 SSDVVFLTAGNQAVFIVTKVYLYKGVVIEIGSGVGNLIFSLLGRfRDRLFClFEIEVVFCAVLLQLFIyNNVLVYHGDFLAFMFFPYVYVTVVSNM 102
+                    5789***********************************99986256887648**************5499************************* PP
+
+      rsmA_prot  96 PYsiskkilkkllknkrnIkkqyimlqkeylekilkikaikfflykllykikkllklkkedFdPkpkvnsvfikmvpkkis..knsenfinksffn 189
+                    P+sisk++l+kll+++ +I +qy+m+q e++++i++i ai+ffly+l+y++++l++l++ dFdP+++v++vf+ m+p++i+  ++s++f+n + f 
+  VFDICEUR_6283 103 PFSISKMLLFKLLCYRGSIVCQYLMMQLELYCSIFMIPAIRFFLYLLYYFYDVLVYLYGGDFDPVVTVSAVFFIMYPRYIPyeTSSVYFFNLANFL 198
+                    *****************************************************************************9986337899****99886 PP
+
+      rsmA_prot 190 k 190
+                     
+  VFDICEUR_6283 199 V 199
+                    5 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.0096
+      rsmA_prot 181 nfinksffnkkkkkkleeliflll 204
+                     f++  + +   +++ +e++f++l
+  VFDICEUR_6283 209 VFFKFFIAIYSTNVCRWEFYFCIL 232
+                    4555433444568999******97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (204 nodes)
+Target sequences:                       6719  (181892 residues searched)
+Passed MSV filter:                       424  (0.0631046); expected 134.4 (0.02)
+Passed bias filter:                       53  (0.00788808); expected 134.4 (0.02)
+Passed Vit filter:                         3  (0.000446495); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000148832); expected 0.1 (1e-05)
+Initial search space (Z):               6719  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 8197.32
+//
+[ok]

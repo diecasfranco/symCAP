@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/glnS_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFCALKRU/VFCALKRU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/glnS/glnS_VFCALKRU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnS_prot  [M=443]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.6e-14   52.6  12.3    2.5e-13   48.6   0.0    3.2  3  VFCALKRU_4319  [83150 - 81939] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCALKRU_4319  [83150 - 81939] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.6   0.0   3.9e-17   2.5e-13      16      91 ..       6      81 ..       3      99 .. 0.89
+   2 !    6.2   0.3   0.00029       1.9     196     216 ..     140     160 ..     127     172 .. 0.86
+   3 ?    0.1   6.0      0.02   1.3e+02     310     399 ..     294     383 ..     248     401 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 48.6 bits;  conditional E-value: 3.9e-17
+      glnS_prot 16 iktRFaPEPsgyLHiGHlKciyiNykiskkfkgkfilRiDDtNPekskkkyvkkIikdikklglkkkikitfsSdy 91
+                   + tRFaP Psg LHiG l+ ++i  +++ +  g fi+R+D tNP  s  ++    i+ ++ +++  +  ++    y
+  VFCALKRU_4319  6 VVTRFAPSPSGSLHIGNLRVVLITWVFAYINTGLFIIRFDSTNPVCSFVQFQLACIQLLQAFNITYNLVFNQCQRY 81
+                   67*******************************************************9*99999988777766555 PP
+
+  == domain 2  score: 6.2 bits;  conditional E-value: 0.00029
+      glnS_prot 196 yPtYDfsnsicDriekishSi 216
+                    +PtY+f+  i D + kis+ i
+  VFCALKRU_4319 140 FPTYNFCSVIDDHLMKISYII 160
+                    9****************9966 PP
+
+  == domain 3  score: 0.1 bits;  conditional E-value: 0.02
+      glnS_prot 310 knslikisllkkiiiknlkkkvlkkikiilkpikiiikkkkeifiekkkkiksl.fflkkkkkiisnllyikkiikikliiiknnkikkkk 399
+                    k+ +i     ++++ik +   +++ + ++++ i ++++k   +++ +  +++++ +f+ k   i+  l +i  +i++ + + ++ +i   +
+  VFCALKRU_4319 294 KEAIIRLVNTRSVVIKDIDYYYINYYLVLFSYIYVFVNKIIFYVLASYLEFNNClIFTSKCAAICGSLTSIYSTINM-FFFNSSVNIPALT 383
+                    34555666666677777777777777777777776666666666665555444303333333333344444333332.2233334444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (443 nodes)
+Target sequences:                       6591  (179938 residues searched)
+Passed MSV filter:                       336  (0.0509786); expected 131.8 (0.02)
+Passed bias filter:                       42  (0.00637233); expected 131.8 (0.02)
+Passed Vit filter:                        13  (0.00197239); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000151722); expected 0.1 (1e-05)
+Initial search space (Z):               6591  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 14290.15
+//
+[ok]

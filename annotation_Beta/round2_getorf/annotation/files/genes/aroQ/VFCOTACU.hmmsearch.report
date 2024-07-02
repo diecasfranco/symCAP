@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/aroQ_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFCOTACU/VFCOTACU_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/aroQ/aroQ_VFCOTACU.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aroQ_prot  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    4.2e-57  190.4  22.3    4.2e-57  190.4  22.3    1.8  2  VFCOTACU_2635  [103965 - 104690] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFCOTACU_2635  [103965 - 104690] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   0.6      0.14   9.7e+02      18      41 ..      30      53 ..       6      63 .. 0.57
+   2 !  190.4  22.3   6.3e-61   4.2e-57       1     141 [.      98     237 ..      98     239 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 0.14
+      aroQ_prot 18 ekkiYGkkslkkikklikkkfkkk 41
+                   ++++YG  ++     l+kk++k++
+  VFCOTACU_2635 30 NNDLYGIVTFIIFPFLLKKNIKTN 53
+                   334455554444444455555554 PP
+
+  == domain 2  score: 190.4 bits;  conditional E-value: 6.3e-61
+      aroQ_prot   1 mkikiinGpninllgiRekkiYGkkslkkikklikkkfkkklkilffqsnsEskiikkiqkskkkidyiiinlagfsYssisilDallaikikfiE 96 
+                    m ikiinGpnin+l++Rek+iYG  +++kikk+i+kkfk ++ki++fqsnsE+ iik+iq+s   +dy+i+n ag+sY+sisilDal+a++i+++E
+  VFCOTACU_2635  98 MIIKIINGPNINILKKREKNIYGGYDFNKIKKKINKKFK-NIKIKYFQSNSEYYIIKEIQRSFGVVDYFIVNFAGLSYYSISILDALIASNIPYVE 192
+                    89************************************7.689***************************************************** PP
+
+      aroQ_prot  97 vHisnifkreklrkksifskksigvisGlglygYilaieyilklk 141
+                    vHisni+krek+r+ksifsk+sig+i+G+glygY+l+i+y+++++
+  VFCOTACU_2635 193 VHISNIYKREKIRSKSIFSKNSIGIIIGMGLYGYYLSIKYLNSFN 237
+                    *****************************************9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (143 nodes)
+Target sequences:                       6691  (179478 residues searched)
+Passed MSV filter:                       296  (0.0442385); expected 133.8 (0.02)
+Passed bias filter:                       40  (0.00597818); expected 133.8 (0.02)
+Passed Vit filter:                         1  (0.000149454); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000149454); expected 0.1 (1e-05)
+Initial search space (Z):               6691  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 15472.10
+//
+[ok]

@@ -1,0 +1,53 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/RNAs/5s_rRNA.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/genomes/VFCALBON1.fasta
+# MSA of all hits saved to file:   /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/rRNA/5s_rRNA/VFCALBON1.sto
+# sequence reporting threshold:    E-value <= 1e-10
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5s_rRNA  [M=105]
+Scores for complete hits:
+    E-value  score  bias  Sequence   start    end  Description
+    ------- ------ -----  --------   -----  -----  -----------
+    4.1e-17   59.2   4.8  VFCALBON1 100792 100690 
+
+
+Annotation for each hit  (and alignments):
+>> VFCALBON1  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   59.2   4.8   4.1e-17         1       102 [.    100792    100690 ..    100792    100687 ..    117426    0.93
+
+  Alignment:
+  score: 59.2 bits
+    5s_rRNA      1 tgatAattaaAgtttattggaaacAccctttatccattccGAAcAAgataGttAAacagtaatttgccgaagatagtaatat.gcaAAggtAgG 93    
+                   tgatA  ta+Ag+ ta+tgg+aa Ac cttta+ cattccGAA AAg  aGttAAac gta    gcc a++atagt++tat gcaAAggtAgG
+  VFCALBON1 100792 TGATATCTATAGCGTACTGGGAATACTCTTTAAACATTCCGAATAAGTCAGTTAAACGGTACAGCGCCAATAATAGTCTTATgGCAAAGGTAGG 100699
+                   68999***********************************************************************9988872588999***** PP
+
+    5s_rRNA     94 tttttatca 102   
+                      ttatca
+  VFCALBON1 100698 ACGTTATCA 100690
+                   988888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (105 nodes)
+Target sequences:                          1  (234852 residues searched)
+Residues passing SSV filter:           59542  (0.254); expected (0.02)
+Residues passing bias filter:           1195  (0.00509); expected (0.02)
+Residues passing Vit filter:             244  (0.00104); expected (0.003)
+Residues passing Fwd filter:             244  (0.00104); expected (3e-05)
+Total number of hits:                      1  (0.000439)
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 4422.35
+//
+# Alignment of 1 hits satisfying inclusion thresholds saved to: /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/rRNA/5s_rRNA/VFCALBON1.sto
+[ok]

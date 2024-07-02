@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/infC_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFLOPSAC/VFLOPSAC_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/infC/infC_VFLOPSAC.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       infC_prot  [M=154]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.5e-40  131.7  44.9    1.6e-40  131.5  44.9    1.0  1  VFLOPSAC_77  [73085 - 72627] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFLOPSAC_77  [73085 - 72627] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  131.5  44.9   1.2e-42   1.6e-40       1     153 [.       1     152 [.       1     152 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 131.5 bits;  conditional E-value: 1.2e-42
+    infC_prot   1 MlIkLIdsngkflgiieikeAikiAkkknldLikinkklkpkiYklgdykkyifk.kkKkkkkkkkktKeiklktnIsknDykikikkIkkflkkkfn 97 
+                  MlIkLIds+gk+lgi+e ++A  iA k++ dLi+in+kl+p+iYk+g++kkyi++ kkK+kk+k++ +Kei+++++Is+nDy ik+kkI ++l k  +
+  VFLOPSAC_77   1 MLIKLIDSKGKYLGILEKSSARDIAFKEKNDLICINDKLTPNIYKIGNIKKYIYNlKKKRKKIKNNLIKEIRINLEISENDYSIKMKKIYSILIKFSS 98 
+                  9*****************************************************945667889999******************************** PP
+
+    infC_prot  98 vkiiIklkgreiekkelikklikkiekdlskkikvkkkikknnnniiiliknkkkk 153
+                  +ki+I+++ r+  kk++i+++i+ki+ d++++++++  +k+n +n++i+i+n+kkk
+  VFLOPSAC_77  99 IKIVILKRFRS--KKNIIDEFINKIKIDIKRNFNFSLFYKSNIKNCVINICNAKKK 152
+                  *****998886..6789***********************************9997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (154 nodes)
+Target sequences:                        142  (38760 residues searched)
+Passed MSV filter:                       133  (0.93662); expected 2.8 (0.02)
+Passed bias filter:                       18  (0.126761); expected 2.8 (0.02)
+Passed Vit filter:                        18  (0.126761); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00704225); expected 0.0 (1e-05)
+Initial search space (Z):                142  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1688.47
+//
+[ok]

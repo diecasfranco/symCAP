@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/rsmA_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFISSCOL1/VFISSCOL1_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/rsmA/rsmA_VFISSCOL1.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rsmA_prot  [M=204]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    7.7e-34  116.0  59.8    7.7e-34  116.0  59.8    1.9  2  VFISSCOL1_6201  [17498 - 16794] (REVERSE SENSE) 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFISSCOL1_6201  [17498 - 16794] (REVERSE SENSE) 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  116.0  59.8   1.1e-37   7.7e-34       3     196 ..       6     202 ..       4     206 .. 0.86
+   2 ?    0.5   7.0     0.027   1.8e+02     167     203 ..     189     224 ..     188     227 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 116.0 bits;  conditional E-value: 1.1e-37
+       rsmA_prot   3 kldkvFllskkklkkiikkiiskkkiiiEigsGyGnltkfllkkkkkilliEidnkiskfLkkkfk..knvkiinknilnfnfrpl.kkitiign 94 
+                     k+++vFl++ + + ++  k+++ ++ i+E gsGyGnlt+fl+ +++ki++iEid+ki+ +Lk+k+   k++k+in+++l+ n+ ++ kkit+i++
+  VFISSCOL1_6201   6 KHSQVFLIKIEII-ELLIKFMKCTNYIVEAGSGYGNLTDFLIRRCEKIYIIEIDKKICFYLKNKYSkiKKIKVINNDLLKTNINFFnKKITMISS 99 
+                     789*****76665.5566799999*****************************************63379*********9998877478****** PP
+
+       rsmA_prot  95 iPYsiskkilkkllknkrnIkkqyimlqkeyl.ekilkikaikfflykllykikkllklkkedFdPkpkvnsvfikmvpkkiskn..senfinks 186
+                     iPY +++k+++ ++knk   k ++i++ ++++ +ki+ ++++ ++l+++++   k ++++k++F+Pkpk++s+++ +  ++++kn  +enf+n++
+  VFISSCOL1_6201 100 IPYHLINKFINFFIKNKYIFKYLNIIIPYKFYtKKIYNKNNFYYYLFRYNFLEIKRIIISKNSFYPKPKIDSILLVLK-IRNNKNiiFENFFNMN 193
+                     ******************99**********88357899*************8777889***************99885.4444442368999987 PP
+
+       rsmA_prot 187 ffnkkkkkkl 196
+                     + n ++++k 
+  VFISSCOL1_6201 194 I-NFYYNIKR 202
+                     6.56666654 PP
+
+  == domain 2  score: 0.5 bits;  conditional E-value: 0.027
+       rsmA_prot 167 fikmvpkkisknsenfinksffnkkkkkkleelifll 203
+                     f++m+ +++  n++ ++  ++fnk+kk++l el++++
+  VFISSCOL1_6201 189 FFNMN-INFYYNIKRYFYFKIFNKIKKIELDELLIIF 224
+                     77775.7888999999999***********9987764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (204 nodes)
+Target sequences:                       6725  (181135 residues searched)
+Passed MSV filter:                      1342  (0.199554); expected 134.5 (0.02)
+Passed bias filter:                       98  (0.0145725); expected 134.5 (0.02)
+Passed Vit filter:                         7  (0.00104089); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000148699); expected 0.1 (1e-05)
+Initial search space (Z):               6725  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 6626.58
+//
+[ok]
