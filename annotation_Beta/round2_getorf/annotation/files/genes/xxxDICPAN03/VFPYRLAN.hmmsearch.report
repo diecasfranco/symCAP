@@ -1,0 +1,62 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/xxxDICPAN03_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genomes/VFPYRLAN/VFPYRLAN_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_getorf/annotation/files/genes/xxxDICPAN03/xxxDICPAN03_VFPYRLAN.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFDICPAN5_xxxDICPAN03  [M=108]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    3.3e-12   45.0   4.1    3.2e-11   41.8   0.0    3.0  3  VFPYRLAN_2329  [90734 - 91996] 
+
+
+Domain annotation for each sequence (and alignments):
+>> VFPYRLAN_2329  [90734 - 91996] 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.8   0.0   4.8e-15   3.2e-11      16     102 ..      23     108 ..       6     113 .. 0.92
+   2 ?   -0.3   0.2     0.067   4.5e+02      32      55 ..     173     195 ..     155     224 .. 0.57
+   3 !    2.7   0.1    0.0076        51      33      99 ..     259     320 ..     233     328 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 41.8 bits;  conditional E-value: 4.8e-15
+  VFDICPAN5_xxxDICPAN03  16 alpesksivirvlfitaflnkpivikhinlnedikvmlstlrrlghqityippyltintthkqqitthtlhlknsgitarlmcvfal 102
+                             +p sksi+ir+lf+  f  + i++k+++  ed+  m++ lr lg +i      lt+   h +  t   l++ +sg+tar++ ++ l
+          VFPYRLAN_2329  23 NIPSSKSILIRLLFMLFFSKEKIILKNFSCCEDVLSMITCLRGLGKKIKCKDSSLTFKK-HNKNSTKKKLYVGSSGLTARIIFMYLL 108
+                            48******************************************************975.7778899**************988866 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 0.067
+  VFDICPAN5_xxxDICPAN03  32 aflnkpivikhinlnedikvmlst 55 
+                             f+   ++  h+ ln++ik+ +s 
+          VFPYRLAN_2329 173 QFVTALLLNLHV-LNKEIKINISK 195
+                            333333333333.45555554443 PP
+
+  == domain 3  score: 2.7 bits;  conditional E-value: 0.0076
+  VFDICPAN5_xxxDICPAN03  33 flnkpivikhinlnedikvmlstlrrlghqityippyltintthkqqitthtlhlknsgitarlmcv 99 
+                            f+ k iv k   + ++i  +l+ l+++g +i yi   + +   +k++i + ++  k+   ++  +c+
+          VFPYRLAN_2329 259 FFKKSIVSK---VQKEIN-FLNVLKKIGLRIFYIKKKIFLRF-RKKKIYSISIDCKSIIDSSMSLCL 320
+                            333333332...344554.5899***********99888765.566676667766665555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (108 nodes)
+Target sequences:                       6724  (191711 residues searched)
+Passed MSV filter:                        96  (0.0142772); expected 134.5 (0.02)
+Passed bias filter:                       54  (0.00803093); expected 134.5 (0.02)
+Passed Vit filter:                         3  (0.000446163); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000148721); expected 0.1 (1e-05)
+Initial search space (Z):               6724  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 5434.29
+//
+[ok]

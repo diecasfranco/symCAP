@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/proteins/xxxVFAGAHAV03_prot.hmm
+# target sequence database:        /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genomes/VFIND2/VFIND2_orfs.fasta
+# per-dom hits tabular output:     /home/diego/Documents/metagenomes/annotation_symbio_merge/annotation_Beta/round2_pyro//annotation/files/genes/xxxVFAGAHAV03/xxxVFAGAHAV03_VFIND2.report
+# sequence reporting threshold:    E-value <= 1e-10
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       VFAGAHAV_xxxVFAGAHAV03  [M=164]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+      2e-12   40.6  29.5      2e-12   40.6  29.5    2.2  2  VFIND2_80  [73630 - 73121] (REVERSE SENSE)
+
+
+Domain annotation for each sequence (and alignments):
+>> VFIND2_80  [73630 - 73121] (REVERSE SENSE)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.7   1.5    0.0069         1     110     130 ..      10      30 ..       2      33 .. 0.56
+   2 !   40.6  29.5   1.4e-14     2e-12      29     151 ..      32     148 ..      25     168 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 2.7 bits;  conditional E-value: 0.0069
+  VFAGAHAV_xxxVFAGAHAV03 110 lknyinkqkqeissvinkfkk 130
+                             lk  i k+k e ++vi+k+k 
+               VFIND2_80  10 LKEIIMKRKNEYNNVISKIKN 30 
+                             455555666666666666554 PP
+
+  == domain 2  score: 40.6 bits;  conditional E-value: 1.4e-14
+  VFAGAHAV_xxxVFAGAHAV03  29 kyninyfknlsvyinkkknnlnnicyieyfkenikitpnkkkynniiynlikknknltvekhkkqiiikekelstleikailknyin 115
+                              ++i+yfk ls+ + kkk  l ni  i +   ni++ p++kky nii+ l  knkn+ +ek+k +i+ik+ els  ei   + ny n
+               VFIND2_80  32 YFDIDYFKELSIKFRKKKYFLKNISQIFFKGINIELVPDEKKYFNIIF-LSLKNKNFNIEKNKDRILIKKVELSYSEIIEEINNYKN 117
+                             469************************88889***************9.5668********************************99 PP
+
+  VFAGAHAV_xxxVFAGAHAV03 116 kqkqeissvinkfkksfkkqqielikkaeyitqink 151
+                             k       +   fkk   k+++ ++kk + i++  +
+               VFIND2_80 118 KTILRNKVI---FKKI--KEKLTILKKNKTISENEE 148
+                             976554444...4442..455667777776666544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (164 nodes)
+Target sequences:                        144  (38590 residues searched)
+Passed MSV filter:                       119  (0.826389); expected 2.9 (0.02)
+Passed bias filter:                        4  (0.0277778); expected 2.9 (0.02)
+Passed Vit filter:                         3  (0.0208333); expected 0.1 (0.001)
+Passed Fwd filter:                         1  (0.00694444); expected 0.0 (1e-05)
+Initial search space (Z):                144  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 1268.11
+//
+[ok]
